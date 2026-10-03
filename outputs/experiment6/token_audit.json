@@ -1,0 +1,36 @@
+{
+  "native_sequence_lengths": {
+    "table": [
+      24
+    ],
+    "repeat": [
+      23
+    ],
+    "one_demo": [
+      51
+    ],
+    "two_demo": [
+      78
+    ]
+  },
+  "answer_token_ids": [
+    1160,
+    2310,
+    2534,
+    2242,
+    1987,
+    1679,
+    2608,
+    2681,
+    2579,
+    2808,
+    1542,
+    3261,
+    3933,
+    4747,
+    4974,
+    3439
+  ],
+  "cases": 64,
+  "token_roundtrips_and_chunk_boundaries_verified": true
+}

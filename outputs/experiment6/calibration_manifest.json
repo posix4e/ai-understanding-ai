@@ -1,0 +1,15 @@
+{
+  "files": {
+    "experiment6/CALIBRATION_PLAN.md": "1c8c3d280798afd295b01a21786bd52440388dce6a650b267a3df9ae2d724192",
+    "experiment6/__init__.py": "bfe937303e0029962ba7b0a2aaced74faef9e28b0589862d25f5f098ee76675f",
+    "experiment6/calibrate.py": "d86d7715492c6a6b8f1e506b3f47c5995aa5b9bb42df2bd0d55e28596c53c922",
+    "experiment6/data.py": "bf129247fff674ad8746d54cdfa23f06dea603955e5f7fd77833a837dcccf7ab",
+    "experiment6/download_model.py": "cae48bc2d7f21ab4119ed98f55a851fbf1e952fa67872b8881b1c58094f40145",
+    "experiment6/model_adapter.py": "a91f3243dc81ce224b4185dc7b64071c7102f83c7333dbd907dbb7f524861b3f",
+    "experiment6/requirements.txt": "0790f0e271cfbe15d5d22de4b5a977b0f6f38cefe930bc4841ae1e87332a4388",
+    "experiment6/test_adapter.py": "0e5c83ff22d34410c168e1a529e634bba80eefcf8f0581f645b47065e50eb467",
+    "outputs/experiment6/calibration_inputs.json": "97d8cf7abf6c9a4080f6c0f49df8cff35332c4e6e5733e9506d4cd748602952e",
+    "outputs/experiment6/model_manifest.json": "1a7cde10716845998cb9f1eafe32da2400e9ac9182ef7ff27f40d61bcdc2f738",
+    "outputs/experiment6/token_audit.json": "e8ab8d4ed4185a50e6dbbc9981426cec1579c62818aadc06381c18dfb887d6c2"
+  }
+}
