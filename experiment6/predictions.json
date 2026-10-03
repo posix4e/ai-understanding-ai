@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "experiment": 6,
+  "prepared_date": "2026-10-03",
+  "model": "openai-community/gpt2",
+  "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "template": "one_demo",
+  "n": 512,
+  "queries_per_pair_position": 128,
+  "expected_aggregate": {
+    "native_accuracy": 0.85,
+    "grouped_canonical_accuracy": 0.45,
+    "guard_block0_accuracy": 0.5,
+    "guard_minus_mean_shams_conditional_target_probability": 0.02,
+    "guard_block5_accuracy": 0.55,
+    "guard_all_accuracy": 0.65
+  },
+  "subjective_intervals": {
+    "native_accuracy": [
+      0.6,
+      0.99
+    ],
+    "grouped_canonical_accuracy": [
+      0.2,
+      0.8
+    ],
+    "guard_block0_accuracy": [
+      0.2,
+      0.85
+    ],
+    "guard_minus_mean_shams_conditional_target_probability": [
+      -0.08,
+      0.12
+    ],
+    "guard_block5_accuracy": [
+      0.2,
+      0.9
+    ],
+    "guard_all_accuracy": [
+      0.25,
+      0.95
+    ]
+  },
+  "endpoint_definitions": {
+    "native_accuracy": {
+      "condition": "native",
+      "definition": "Accuracy selecting argmax among the sixteen answer tokens."
+    },
+    "grouped_canonical_accuracy": {
+      "condition": "grouped_canonical",
+      "definition": "Accuracy selecting argmax among the sixteen answer tokens."
+    },
+    "guard_block0_accuracy": {
+      "condition": "guard_block0",
+      "definition": "Accuracy selecting argmax among the sixteen answer tokens."
+    },
+    "guard_minus_mean_shams_conditional_target_probability": {
+      "condition": "guard_block0",
+      "definition": "Mean over cases of p16(target) under guard_block0 minus the equally weighted mean under sham_0 through sham_7; p16 conditions on all sixteen permitted answer tokens, not only the four displayed values."
+    },
+    "guard_block5_accuracy": {
+      "condition": "guard_block5",
+      "definition": "Accuracy selecting argmax among the sixteen answer tokens."
+    },
+    "guard_all_accuracy": {
+      "condition": "guard_all",
+      "definition": "Accuracy selecting argmax among the sixteen answer tokens."
+    }
+  },
+  "interval_interpretation": "Broad subjective plausibility intervals, not calibrated, with no asserted nominal coverage. Not sampling confidence intervals or exclusion rules.",
+  "absolute_error_tolerance": 0.1,
+  "forecast_scoring": "Report all six point errors and misses at tolerance .10, plus mean absolute error. Descriptive only; separate protocol defines causal pass decisions.",
+  "substantive_hypothesis": "The unchanged block-0 guard is unlikely to restore near-native final answers in this twelve-block pretrained model, although a modest benefit is plausible. Block-5 and all-block masks are secondary and cannot rescue the block-0 claim.",
+  "blinding": {
+    "allowed_evidence": [
+      "experiment6/CALIBRATION_PLAN.md",
+      "experiment6/data.py",
+      "experiment6/conditions.py",
+      "Earlier E1\u2013E5 evidence",
+      "Selected format name and sample size supplied without scores"
+    ],
+    "calibration_scores_read": false,
+    "checkpoint_metrics_read": false,
+    "calibration_logs_read": false,
+    "individual_e6_inputs_read": false,
+    "confirmatory_outcomes_read": false,
+    "e6_model_forwards_run": false,
+    "isolation": "Procedural role separation on a shared filesystem; not OS-enforced."
+  },
+  "scope": {
+    "checkpoint_count": 1,
+    "weights_changed": false,
+    "accuracy_is_restricted_choice": true,
+    "accuracy_is_unrestricted_generation": false,
+    "conditional_probability_denominator": "Sum of ordinary next-token probabilities of the sixteen permitted single-token answers 20 through 35.",
+    "sham_weighting": "Equal weight for all eight shams within the same case, then equal case mean.",
+    "no_numerical_forecasts_for": [
+      "individual shams",
+      "grouped_physical",
+      "raw target probability",
+      "total answer-token probability mass",
+      "unrestricted generation"
+    ],
+    "pretraining_overlap_auditable": false
+  }
+}

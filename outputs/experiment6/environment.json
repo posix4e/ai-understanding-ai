@@ -1,0 +1,30 @@
+{
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "torch": "2.14.1",
+    "numpy": "2.5.3",
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2",
+    "huggingface-hub": "0.36.2",
+    "safetensors": "0.8.0",
+    "regex": "2026.9.29",
+    "filelock": "4.0.9",
+    "requests": "2.34.2",
+    "packaging": "26.3",
+    "pyyaml": "6.0.3",
+    "tqdm": "4.70.1",
+    "fsspec": "2026.9.0",
+    "typing-extensions": "4.16.0",
+    "hf-xet": "1.6.0",
+    "urllib3": "2.8.0",
+    "certifi": "2026.7.22",
+    "charset-normalizer": "3.5.2",
+    "idna": "3.20"
+  },
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 4,
+  "torch_reused_from_original_environment": true,
+  "reuse_method": "isolated venv .pth to original .venv site-packages; original environment unchanged"
+}

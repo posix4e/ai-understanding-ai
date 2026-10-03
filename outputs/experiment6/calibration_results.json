@@ -1,0 +1,81 @@
+{
+  "registration": "38334a0670adc6980a802d39621e64f5d27cd1c0",
+  "summaries": [
+    {
+      "template": "table",
+      "n": 64,
+      "tokens": 24,
+      "choice_accuracy": 0.765625,
+      "full_vocab_accuracy": 0.765625,
+      "target_probability": 0.12587824399815872,
+      "answer_mass": 0.47128598345443606,
+      "query_accuracy": [
+        0.9375,
+        0.8125,
+        0.5625,
+        0.75
+      ],
+      "native_competence": false,
+      "seconds": 0.6093807919969549
+    },
+    {
+      "template": "repeat",
+      "n": 64,
+      "tokens": 23,
+      "choice_accuracy": 0.609375,
+      "full_vocab_accuracy": 0.609375,
+      "target_probability": 0.13015707189333625,
+      "answer_mass": 0.5714073590934277,
+      "query_accuracy": [
+        0.8125,
+        0.75,
+        0.375,
+        0.5
+      ],
+      "native_competence": false,
+      "seconds": 0.5113107500073966
+    },
+    {
+      "template": "one_demo",
+      "n": 64,
+      "tokens": 51,
+      "choice_accuracy": 0.96875,
+      "full_vocab_accuracy": 0.921875,
+      "target_probability": 0.22181693592574447,
+      "answer_mass": 0.5660714758560061,
+      "query_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        0.875
+      ],
+      "native_competence": true,
+      "seconds": 0.8843427499959944
+    },
+    {
+      "template": "two_demo",
+      "n": 64,
+      "tokens": 78,
+      "choice_accuracy": 0.90625,
+      "full_vocab_accuracy": 0.90625,
+      "target_probability": 0.3493385787587613,
+      "answer_mass": 0.7569090304896235,
+      "query_accuracy": [
+        0.9375,
+        0.8125,
+        0.9375,
+        0.9375
+      ],
+      "native_competence": true,
+      "seconds": 1.4417968329944415
+    }
+  ],
+  "selected_template": "one_demo",
+  "selected_competent": true,
+  "model_parameters": 124439808,
+  "estimated_confirmation_seconds_512": 106.12112999951933,
+  "confirmation_n": 512,
+  "seconds": 3.450512750001508,
+  "finished_at_utc": "2026-10-03T21:36:21.883724+00:00",
+  "reordered_or_repaired_forwards": 0
+}

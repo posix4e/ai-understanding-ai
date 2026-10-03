@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-10-03T21:36:18.382161+00:00",
+  "registration": "38334a0670adc6980a802d39621e64f5d27cd1c0",
+  "conditions": "native only",
+  "n_cases_per_template": 64,
+  "templates": [
+    "table",
+    "repeat",
+    "one_demo",
+    "two_demo"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "cases": 512,
+  "length": 51,
+  "chunk_lengths": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "all_roundtrips_and_boundaries_verified": true
+}

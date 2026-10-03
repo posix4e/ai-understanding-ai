@@ -1,0 +1,15 @@
+{
+  "n": 512,
+  "unique_association_maps": 512,
+  "calibration_maps_excluded": 64,
+  "association_map_overlap": 0,
+  "query_counts": {
+    "2": 128,
+    "1": 128,
+    "3": 128,
+    "0": 128
+  },
+  "seed": 10600002,
+  "generator_reconstruction_matches": true,
+  "pretraining_overlap_unknown": true
+}
