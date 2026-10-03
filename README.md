@@ -30,6 +30,8 @@ The [public preregistration](https://github.com/posix4e/ai-understanding-ai/comm
 and all 44 frozen file identities were verified at 14:45:51 UTC on 2026-10-03;
 confirmation began at 14:45:59 UTC. This is a causal result in six small trained
 models; field-wide novelty and transfer to other architectures remain unestablished.
+See the [updated papers and next-step recommendations](outputs/LITERATURE_UPDATE_2026-10-03.md),
+including the October 1 context-restoration paper found after E4 confirmation.
 
 ## Experiment 3: the strong position-binding explanation failed
 

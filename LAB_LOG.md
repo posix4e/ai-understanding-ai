@@ -280,3 +280,8 @@ and evidence, not private conversations or internal model reasoning.
 - The final record preserves E3's failure and E4's limitations. This is a
   reproducible causal result within the tested model family, not an established
   world-first discovery, universal mechanism, or arbitrary-layout solution.
+- A post-confirmation literature refresh found Geng et al.'s October 1, 2026
+  paper on intervention-objective misranking and intact-context restoration.
+  Its ranking endpoint and activation-replacement intervention differ from E4,
+  but it is a clear conceptual precedent. The dated update records this and
+  corrected CHIVE/HyVE version dates without changing frozen literature files.

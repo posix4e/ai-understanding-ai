@@ -55,7 +55,10 @@ confirmation began at 14:45:59 UTC. An independent skeptical role checked all
 See [full results](experiment4/RESULTS.md),
 [independent review](experiment4/SKEPTICAL_REVIEW.md),
 [retained forecast misses](experiment4/forecast_misses.csv), and
-[related-work audit](experiment3/RELATED_WORK.md). All model training and
+[related-work audit](experiment3/RELATED_WORK.md). A subsequent
+[literature update](LITERATURE_UPDATE_2026-10-03.md) adds an October 1 paper on
+repairing circuit rankings by restoring computational context, a relevant
+conceptual precedent. All model training and
 experimental evaluation ran locally on an M3 MacBook Air.
 
 The next informative test is to freeze this repair rule and evaluate it across
