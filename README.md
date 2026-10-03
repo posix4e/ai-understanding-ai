@@ -3,6 +3,10 @@
 An open, locally executed pilot: can an AI-written explanation of a tiny neural
 network predict its behavior under causal interventions?
 
+**[Read the paper website](https://posix4e.github.io/ai-understanding-ai/)** for a
+plain-language explanation, results, limits, and links to all evidence.
+See [which next steps earlier papers recommend](outputs/PAPER_NEXT_STEPS.md).
+
 ## Experiment 5: the repair transfers to fresh models and a complete layout class
 
 **All six newly trained models passed the preregistered primary test across all

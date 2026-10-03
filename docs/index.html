@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A planned test of a small AI repair: six new models, 105 input orders, and all errors kept. Read the paper, limits, code, and data.">
+  <meta name="theme-color" content="#f7f4ed">
+  <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/">
+  <title>A small AI repair that worked on new models | AI Understanding AI</title>
+  <link rel="stylesheet" href="./styles.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#main" aria-label="AI Understanding AI, page start">AI UNDERSTANDING AI<span class="wordmark-dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#explanation">The idea</a>
+      <a href="#results">Results &amp; limits</a>
+      <a href="#next-steps">Next steps</a>
+      <a href="#evidence">Evidence</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Research note <span aria-hidden="true">/</span> <time datetime="2026-10-03">3 October 2026</time></p>
+        <h1 id="page-title">A small AI repair that worked on new models.</h1>
+        <p class="hero-deck">Changing the order of a list made small AI models give wrong answers. We blocked selected internal connections. The answers became much more accurate.</p>
+        <p class="scope-line">A controlled study of a four-pair task. We give the repair the correct pairs and tags that record their original positions.</p>
+        <div class="hero-actions">
+          <a class="button" href="./paper.pdf">Read the paper <span class="file-tag">PDF · 7 pages</span><span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/posix4e/ai-understanding-ai">Code &amp; research record <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="status"><span class="status-dot" aria-hidden="true"></span>Research draft · Not peer reviewed</p>
+      </div>
+
+      <figure class="hero-result" aria-labelledby="comparison-title">
+        <div class="figure-heading"><span class="eyebrow">The main test</span><span class="figure-number">01</span></div>
+        <h2 id="comparison-title">More correct answers.<br> The same trained models.</h2>
+        <div class="comparison" role="img" aria-label="Accuracy across six models, averaged over 105 tested input orders: without the repair, 45.2 to 71.9 percent. With the repair, 99.986 to 100 percent. Each range shows differences between models.">
+          <div class="bar-group">
+            <div class="bar-label"><span>Tested orders, without repair</span><strong>45.2–71.9<span>%</span></strong></div>
+            <div class="bar-track before" aria-hidden="true"><span class="bar-solid" style="width:45.2%"></span><span class="bar-range" style="left:45.2%;width:26.7%"></span></div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-label"><span>Same orders, with repair</span><strong>99.986–100<span>%</span></strong></div>
+            <div class="bar-track after" aria-hidden="true"><span class="bar-solid" style="width:99.986%"></span><span class="bar-range" style="left:99.986%;width:0.014%"></span></div>
+          </div>
+          <div class="bar-axis" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div>
+        </div>
+        <figcaption>All six models used the same 1,024 new inputs, each tested in 105 orders. The orders include the original order. Each range shows differences between models. <a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/SKEPTICAL_REVIEW.md#what-the-primary-result-establishes">Check the numbers</a>.</figcaption>
+        <div class="study-scale" aria-label="Study size"><div><strong>6</strong><span>new models</span></div><div><strong>105</strong><span>input orders</span></div><div><strong>1,024</strong><span>new inputs</span></div></div>
+      </figure>
+    </section>
+
+    <section class="section wrap" id="explanation" aria-labelledby="explanation-title">
+      <div class="section-heading"><p class="eyebrow">01 / The idea</p><h2 id="explanation-title">A simple task.<br> A useful failure.</h2></div>
+      <div class="section-body">
+        <p class="lead">The model must find a value from its label.</p>
+        <p>Suppose a list contains four pairs. Label A has value 7. Label B has value 4. If we ask for A, the correct answer is 7.</p>
+        <figure class="pair-example">
+          <div class="example-heading"><span>Four known pairs</span><span class="example-badge">Illustration only</span></div>
+          <div class="pair-grid" aria-label="Label A has value 7, B has 4, C has 9, and D has 2.">
+            <div class="pair"><span class="token key">A</span><span class="pair-equals" aria-hidden="true">→</span><span class="token value">7</span></div>
+            <div class="pair"><span class="token key">B</span><span class="pair-equals" aria-hidden="true">→</span><span class="token value">4</span></div>
+            <div class="pair"><span class="token key">C</span><span class="pair-equals" aria-hidden="true">→</span><span class="token value">9</span></div>
+            <div class="pair"><span class="token key">D</span><span class="pair-equals" aria-hidden="true">→</span><span class="token value">2</span></div>
+          </div>
+          <div class="order-example"><span class="order-label">Original order</span><div class="token-row" aria-label="A, 7, B, 4, C, 9, D, 2"><span class="token key">A</span><span class="token value">7</span><span class="token key">B</span><span class="token value">4</span><span class="token key">C</span><span class="token value">9</span><span class="token key">D</span><span class="token value">2</span></div></div>
+          <div class="order-example"><span class="order-label">One changed order</span><div class="token-row" aria-label="A, B, C, D, 7, 4, 9, 2"><span class="token key">A</span><span class="token key">B</span><span class="token key">C</span><span class="token key">D</span><span class="token value">7</span><span class="token value">4</span><span class="token value">9</span><span class="token value">2</span></div></div>
+          <figcaption>The pairs stay the same. The order changes. Each item also keeps a tag for its original position. These tags are separate from labels A–D and are not shown here. This example explains the task; it is not measured test data.</figcaption>
+        </figure>
+        <p>The models learned the original order. They gave correct answers on the original test inputs. But changed orders let some internal parts receive information that they could not receive before.</p>
+        <ol class="mechanism-steps">
+          <li><span class="step-number" aria-hidden="true">1</span><div><h3>Change the order</h3><p>The same labels and values appear in a different sequence.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">2</span><div><h3>Change what can reach each part</h3><p>Extra labels can now send information to a value. This can lead to a wrong answer.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">3</span><div><h3>Block selected connections</h3><p>The repair limits which labels can send information to each value. It needs no additional training.</p></div></li>
+        </ol>
+        <aside class="plain-note"><strong>We supplied the structure.</strong> We gave the repair the correct pairs and original position tags. The model did not find those relationships for itself during this test.</aside>
+      </div>
+    </section>
+
+    <section class="section wrap" id="results" aria-labelledby="results-title">
+      <div class="section-heading"><p class="eyebrow">02 / What passed</p><h2 id="results-title">A new test,<br> set in advance.</h2><a class="text-link" href="https://github.com/posix4e/ai-understanding-ai/commit/de745644b5c71853755e8d53cc9b3dec2abdc2ed">Read the plan published before the test <span aria-hidden="true">↗</span></a></div>
+      <div class="section-body">
+        <p class="lead">All six new models passed the main requirements.</p>
+        <p>We published the test rules, inputs, trained models, and predictions before running the new test. We tested every order in the defined group of 105. We also made 624 comparisons using alternative connection patterns across those orders. The comparisons reuse inputs and are not independent tests.</p>
+        <div class="result-lines">
+          <div><span class="result-mark" aria-hidden="true">✓</span><div><h3>Answers stayed close to the original performance.</h3><p>We checked each order and each of the four pairs we could ask about. The lowest accuracy was 99.6%.</p></div></div>
+          <div><span class="result-mark" aria-hidden="true">✓</span><div><h3>The choice of connections mattered.</h3><p>The repair passed the required comparison with the average of the alternative patterns. The alternatives kept the same number of label connections and retained each value's own label.</p></div></div>
+          <div><span class="result-mark" aria-hidden="true">✓</span><div><h3>The saved evidence passed a separate audit.</h3><p>An independent program checked all 492 raw-data files and reproduced the study's decisions. This was a separate code check within the same research project, not an external replication.</p></div></div>
+        </div>
+        <p class="source-line"><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/RESULTS.md">Full results</a> · <a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/SKEPTICAL_REVIEW.md">Skeptical review</a> · <a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/independent_audit.json">Audit record</a></p>
+      </div>
+    </section>
+
+    <section class="limits-band" aria-labelledby="limits-title">
+      <div class="wrap limits-inner">
+        <div class="section-heading"><p class="eyebrow">03 / What did not fully work</p><h2 id="limits-title">The errors are<br> part of the result.</h2></div>
+        <div class="section-body">
+          <div class="failure-row"><div class="failure-number">15</div><div><h3>Wrong answers in the main test</h3><p>Five models made no errors. The sixth made 15 errors across 107,520 input-and-order combinations. The errors came from two inputs used in different orders.</p><p>One error was severe: the probability of the correct answer fell from about 99.9% to 0.9%. The excellent average did not prevent this failure.</p><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/primary_failure_cases.csv">Inspect every wrong answer <span class="file-tag">CSV</span></a></div></div>
+          <div class="failure-row"><div class="failure-number">2<span>/6</span></div><div><h3>Models missed a further prediction</h3><p>We put blocked connections back, one at a time. We predicted a minimum average increase for specific wrong answers, measured relative to other wrong answers. Two models did not meet that minimum with the required confidence.</p><p>The separate six-model claim for this test failed. It stays in the paper.</p><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/SKEPTICAL_REVIEW.md#negative-and-imperfect-predictions">Read the failed prediction</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="boundary-title">
+      <div class="section-heading"><p class="eyebrow">04 / A broader, separate test</p><h2 id="boundary-title">Other rules also worked.</h2></div>
+      <div class="section-body">
+        <p class="lead">We tested 2,415 other orders on 256 of the same inputs.</p>
+        <p>Two rules gave correct answers in every tested case, in all six models. At the first internal processing stage, one rule let each value receive information only from itself and its own label.</p>
+        <p>The models could answer correctly even when their internal processing differed from the original order. We still gave the rule the correct pair relationships.</p>
+        <p>These results apply to the 2,415-order test and its 256 inputs. We did not test this rule across all 2,520 orders on all 1,024 inputs. Repeating the same inputs in many orders does not create millions of independent examples.</p>
+        <a class="text-link" href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/RESULTS.md#separate-secondary-results">Compare all four rules <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section wrap" id="next-steps" aria-labelledby="next-steps-title">
+      <div class="section-heading"><p class="eyebrow">05 / What comes next</p><h2 id="next-steps-title">Test the limits<br> of the explanation.</h2></div>
+      <div class="section-body">
+        <p class="lead">Yes. Earlier papers suggest several of these next steps.</p>
+        <p>The directions below come from the authors. Our exact test of 105 orders and six new models was our own design.</p>
+        <div class="literature-list">
+          <article><p class="paper-date">1 October 2026 · Preprint</p><h3>Check whether an explanation predicts actual behavior.</h3><p>Geng and colleagues recommend fixed measures of behavior and checks with different scores and interventions. We measured correct answers and answer probabilities. We also tested alternative connections.</p><a href="https://arxiv.org/html/2610.02098v1">Read Geng et al., section 6 <span aria-hidden="true">↗</span></a></article>
+          <article><p class="paper-date">February 2026 · Journal paper / January 2026 · Updated preprint</p><h3>Test larger models and harder tasks.</h3><p>Tang and colleagues call for tests in larger, real-world models and more flexible tasks. Arora and colleagues propose real-world tests and questions that require several steps. These tests remain future work here.</p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0340088">Read Tang et al., Discussion <span aria-hidden="true">↗</span></a><span class="link-divider" aria-hidden="true"> · </span><a href="https://arxiv.org/html/2505.15105v3">Read Arora et al. <span aria-hidden="true">↗</span></a></article>
+          <article><p class="paper-date">August 2025 · Conference paper</p><h3>Check other parts of the model.</h3><p>Wu and colleagues recommend studying how attention works with other internal parts. Tang and colleagues also recommend finding and changing redundant pathways together. We have not completed these broader tests.</p><a href="https://arxiv.org/html/2502.01951v4">Read Wu et al., section 6 <span aria-hidden="true">↗</span></a></article>
+        </div>
+        <p><strong>Our proposed next tests:</strong> ask another group to repeat the study, use longer lists, and make the repair find pair relationships without our help. These are our specific proposals.</p>
+        <p>Each model has only 70,720 learned numbers, called parameters. The task has four pairs. We do not yet know whether the repair works in large language models.</p>
+        <aside class="plain-note"><strong>Why this is worth publishing</strong>We turned an explanation into a specific repair. Then we tested it on new models, with rules fixed in advance. The results show where it works and where it fails. This is evidence for a narrow claim that others can check. It is not yet a peer-reviewed finding.</aside>
+        <p class="source-line"><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/PAPER_NEXT_STEPS.md">Check each recommendation and its source</a> · <a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/LITERATURE_UPDATE_2026-10-03.md">Dated literature review</a></p>
+      </div>
+    </section>
+
+    <section class="evidence-section wrap" id="evidence" aria-labelledby="evidence-title">
+      <div class="evidence-heading"><div><p class="eyebrow">06 / Open evidence</p><h2 id="evidence-title">Read it. Check it. Repeat it.</h2></div><p>Every link below opens a named file. Large data files are not loaded by this page.</p></div>
+      <div class="evidence-grid">
+        <div class="evidence-group"><h3>The explanation</h3><ul>
+          <li><a href="./paper.pdf">Research paper<span>PDF · 7 pages</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/paper/paper.tex">Editable paper source<span>Standalone LaTeX</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/PLAIN_LANGUAGE_OVERVIEW.md">Plain-language overview<span>Short account</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/THEORY.md">What the equations guarantee<span>Proof and limits</span></a></li>
+        </ul></div>
+        <div class="evidence-group"><h3>The planned test</h3><ul>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/experiment5/PROTOCOL.md">Test rules and pass requirements<span>Protocol</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/experiment5/PREDICTION.md">Predictions made before the test<span>Forecast rationale</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/remote_lock.json">The public registration record<span>96 frozen file hashes</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/TRAINING_PLAN.md">How the new models were trained<span>Fixed six-model plan</span></a></li>
+        </ul></div>
+        <div class="evidence-group"><h3>The results, including failures</h3><ul>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/RESULTS.md">Full results<span>All study decisions</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/primary_failure_cases.csv">All wrong primary answers<span>CSV · 15 rows</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/forecasts_vs_results.csv">All forecasts versus results<span>CSV · 72 forecasts</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/forecast_misses.csv">The forecasts that missed<span>CSV · 7 misses</span></a></li>
+        </ul></div>
+        <div class="evidence-group"><h3>The checks and repeat instructions</h3><ul>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/REPRODUCE.md">Repeat or audit the study<span>Commands and environment</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/SKEPTICAL_REVIEW.md">Independent skeptical review<span>Findings and limits</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/independent_audit.json">Independent numerical audit<span>Machine-readable record</span></a></li>
+          <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/input_audit.json">Input-data audit<span>Historical exclusions</span></a></li>
+        </ul></div>
+      </div>
+      <details class="data-details">
+        <summary><span>Code, raw data, and earlier experiments</span><span class="details-sign" aria-hidden="true">+</span></summary>
+        <div class="data-details-body">
+          <p><strong>Large files:</strong> the full raw-data collection is about 2.025 GB. Open the directory to choose individual files. CSV tables can also be large.</p>
+          <ul class="data-links">
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/tree/main/experiment5">Frozen study code</a></li>
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/tree/main/outputs/experiment5/confirmatory">Raw results and per-model file ledgers · 2.025 GB collection</a></li>
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/tree/main/outputs/experiment5/checkpoints">The six trained model checkpoints</a></li>
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/condition_results.csv">Every condition mean · CSV</a></li>
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/per_query_results.csv">Every query-level result · CSV</a></li>
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment5/controls_summary.csv">Alternative connection patterns · CSV</a></li>
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/LAB_LOG.md">Research history, including experiments 1–4</a></li>
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/tree/main/outputs">Earlier results and failed explanations</a></li>
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/tree/main/outputs/paper">All paper files and figures</a></li>
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/paper/MANUSCRIPT_REVIEW.md">Manuscript review</a></li>
+            <li><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/PUBLICATION_ASSESSMENT.md">Publication assessment and remaining limits</a></li>
+          </ul>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div><a class="wordmark" href="#main">AI UNDERSTANDING AI<span class="wordmark-dot" aria-hidden="true">.</span></a><p>A small, open study. The evidence sets the limits.</p></div>
+    <div class="footer-notes"><p>AI-assisted research and writing.<br> Research draft. Not peer reviewed.</p><a href="https://github.com/posix4e/ai-understanding-ai/issues">Report a problem or ask a question <span aria-hidden="true">↗</span></a></div>
+  </footer>
+</body>
+</html>
