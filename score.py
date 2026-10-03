@@ -9,6 +9,7 @@ def percentile(values):
 
 def main():
     protocol=json.loads(Path('protocol.json').read_text())
+    folder=Path(protocol['confirmatory']['output_dir'])
     predictions=json.loads(Path('predictions.json').read_text())
     discovery=json.loads(Path('outputs/discovery/summary.json').read_text())
     result={}
@@ -16,7 +17,7 @@ def main():
     conditions.append('cross/keyK_valueV')
     rng=np.random.default_rng(protocol['bootstrap_seed'])
     for seed in protocol['model_seeds']:
-        raw=np.load(f'outputs/confirmatory/seed_{seed}.npz')
+        raw=np.load(folder/f'seed_{seed}.npz')
         y=np.stack([raw[c][:,0]-raw['base'][:,0] for c in conditions],axis=1)
         ai=np.array([predictions['expected_effect'][str(seed)][c] for c in conditions])
         def baseline(condition):
@@ -71,7 +72,7 @@ def main():
                 for name,pred in {**forecasts,'full_donor':donor.mean(0)}.items()}
             row['by_intervention_group'][group]['ai_minus_discovery_bootstrap_ci95']=percentile(group_gaps[group])
         result[str(seed)]=row
-    Path('outputs/confirmatory/scores.json').write_text(json.dumps(result,indent=2)+'\n')
+    (folder/'scores.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({s:{'scores':r['scores'],'primary_routing_contrast':r['primary_routing_contrast'],
                         'within_0_15':r['within_0_15']} for s,r in result.items()},indent=2))
 

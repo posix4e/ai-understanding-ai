@@ -50,3 +50,35 @@ and evidence, not private conversations or internal model reasoning.
   normal interval degenerates at 100%. Discovery's original output remains intact.
 - GitHub SSH push failed host-key verification; authenticated HTTPS succeeded.
   No host-key checks were disabled. The initial public commit includes failed runs.
+
+## 2026-10-03 08:40–08:42 — Original registration and aborted confirmation
+
+- Published original preregistration commit
+  `e3ea745929e44ed594667ce68330e7eda8b16acd`. GitHub API readback at
+  12:40:52 UTC verified the manifest and all 34 frozen Git blob identities.
+  The original manifest and outputs/remote_lock.json are retained.
+- Confirmation started at 12:41:45 UTC and stopped at the exact input audit,
+  before any confirmatory model forward pass. Among 12,288 recipient/donor
+  inputs, four training-overlap incidences were found (2 seed-0, 1 seed-1,
+  1 seed-2). No discovery, validation, or recipient-duplicate overlaps occurred.
+  outputs/confirmatory contains only start and failed audit artifacts.
+- This is an **aborted registered test**, not a successful confirmation. The
+  finite dictionary space made separate RNG seeds insufficient to guarantee
+  disjoint inputs; the exact guard worked. No predictions were scored.
+
+## 2026-10-03 — Separately registered v2 recovery
+
+- Revision v2 constructs an exact forbidden set of covered training streams,
+  reused validation, discovery recipients/donors, and trained-model smoke inputs.
+  Using the same candidate RNG streams, it rejects an entire recipient bundle
+  when any recipient/donor (including the both-swaps comparator) overlaps, then
+  continues deterministically until 2,048 accepted recipients. Duplicate accepted
+  recipients are also rejected. The filter uses no model outcomes.
+- Frozen NPZ includes recipients, all five donor arrays, original/alternative
+  targets, query positions and selected other pairs. Metadata records exact
+  rejection reasons, candidate indices and forbidden-set hash. This changes the
+  sampled population slightly and is a disclosed protocol amendment.
+- The blinded predictor reaffirmed all 159 numbers and decision gates unchanged.
+  Original predictions.json SHA-256 remains
+  `a869ea8eb4fdaa023cddb6de7ea3484ce624922ea31c78cb5d3e83254f3d004d`.
+  V2 will have a new manifest, remotely verified commit and output directory.

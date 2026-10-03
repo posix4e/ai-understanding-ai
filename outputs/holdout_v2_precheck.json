@@ -1,0 +1,17 @@
+{
+  "pass": true,
+  "collisions": {
+    "tokens": 0,
+    "donor_key": 0,
+    "donor_value": 0,
+    "donor_matched_key": 0,
+    "donor_matched_value": 0,
+    "donor_cross": 0,
+    "duplicate_recipients": 0
+  },
+  "n": 2048,
+  "forbidden_distinct_inputs": 2057974,
+  "forbidden_set_sha256": "efed96e6bf25fa068ff33488646ba34dd9ba9490ebb6b8c12b43f5a53e59398c",
+  "input_file_sha256": "836b9d400594eca82e3d2a124735622b78e73a4fcd1f57ea137be6018d67146f",
+  "method": "Reconstruct exact forbidden set; check frozen recipient and five donor arrays before any model forward"
+}

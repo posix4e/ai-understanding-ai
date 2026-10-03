@@ -10,6 +10,9 @@ def encode(tokens):
     return (array << (np.arange(9, dtype=np.uint64)*5)).sum(axis=1)
 
 def audit(protocol):
+    if protocol['confirmatory'].get('input_file'):
+        from prepare_holdout import audit_prepared
+        return audit_prepared(protocol)
     from evaluate import make_donors
     config=ModelConfig()
     p=protocol['confirmatory']

@@ -18,7 +18,7 @@ patches, test these accounts. They need not be exhaustive or mutually exclusive.
 
 ## Status
 
-Discovery complete; confirmation awaits preregistration. Three initial 2,000-step
+Discovery complete; revised confirmation awaits preregistration. Three initial 2,000-step
 runs achieved about 24–25% accuracy; longer training and higher learning rates
 also failed. Increasing embedding initialization SD recovered the task. The
 three final models achieved 100% accuracy on 1,024 discovery inputs. All failed
@@ -29,6 +29,13 @@ patches have near-zero effects. A separate prediction role sees discovery data
 only and will freeze numerical forecasts for held-out inputs and previously
 untested joint patches. Its explanation, protocol, executable code, checkpoints,
 and hashes will be committed and read back from GitHub before confirmation.
+
+The first registered test aborted before any model evaluation because exact
+holdout auditing found four training-overlap incidences. The failure is preserved
+in [the original audit](outputs/confirmatory/holdout_audit.json). A disclosed v2
+revision freezes 2,048 recipient/donor bundles after deterministic exact-overlap
+filtering (four rejected out of 2,052 candidates). Forecasts remain byte-identical;
+v2 requires its own public registration and remote verification.
 
 ## Execution and roles
 

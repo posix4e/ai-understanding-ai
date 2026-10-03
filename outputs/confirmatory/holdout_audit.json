@@ -1,0 +1,14 @@
+{
+  "method": "exact injective base32 encoding of all9 tokens; includes all donor inputs",
+  "distinct_confirmatory_inputs": 12288,
+  "collisions": {
+    "training_seed_0": 2,
+    "training_seed_1": 1,
+    "training_seed_2": 1,
+    "training_validation": 0,
+    "trained_model_smoke_inputs": 0,
+    "discovery_and_donors": 0,
+    "duplicate_confirmatory_recipients": 0
+  },
+  "pass": false
+}

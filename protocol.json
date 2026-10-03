@@ -4,7 +4,7 @@
   "checkpoint_dir": "outputs/trained",
   "batch_size": 128,
   "discovery": {"input_seed": 2000001, "n": 1024},
-  "confirmatory": {"input_seed": 3000001, "n": 2048},
+  "confirmatory": {"input_seed": 3000001, "n": 2048, "input_file": "outputs/holdout_v2.npz", "output_dir": "outputs/confirmatory_v2"},
   "training_audit_steps": {"0": 12000, "1": 2000, "2": 2000},
   "training_batch_size": 128,
   "training_validation_seed": 100000,

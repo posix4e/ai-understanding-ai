@@ -1,0 +1,38 @@
+{
+  "revision": "v2; v1 stopped at overlap gate before any confirmation forward",
+  "candidate_seed": 3000001,
+  "donor_seed": 13000001,
+  "candidate_batch_size": 128,
+  "candidates_considered": 2052,
+  "accepted": 2048,
+  "rejected": [
+    {
+      "candidate_index": 172,
+      "reasons": [
+        "donor_matched_key"
+      ]
+    },
+    {
+      "candidate_index": 648,
+      "reasons": [
+        "donor_cross"
+      ]
+    },
+    {
+      "candidate_index": 1244,
+      "reasons": [
+        "donor_cross"
+      ]
+    },
+    {
+      "candidate_index": 1253,
+      "reasons": [
+        "donor_value"
+      ]
+    }
+  ],
+  "forbidden_distinct_inputs": 2057974,
+  "forbidden_set_sha256": "efed96e6bf25fa068ff33488646ba34dd9ba9490ebb6b8c12b43f5a53e59398c",
+  "input_file_sha256": "836b9d400594eca82e3d2a124735622b78e73a4fcd1f57ea137be6018d67146f",
+  "policy": "Reject entire recipient and all donors on any exact forbidden-input match; reject duplicate accepted recipients; no model outputs used"
+}

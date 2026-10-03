@@ -32,7 +32,7 @@ def digest(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 def verify_lock():
-    lock = json.loads(Path('outputs/remote_lock.json').read_text())
+    lock = json.loads(Path('outputs/remote_lock_v2.json').read_text())
     for path, expected in lock['files'].items():
         if digest(path) != expected:
             raise RuntimeError(f'Frozen file changed: {path}')
@@ -43,12 +43,13 @@ def verify_lock():
         raise RuntimeError('Remote commit verification failed')
     return lock['commit']
 
-def make_donors(tokens, meta, generator):
+def make_donors(tokens, meta, generator, other=None):
     b = len(tokens)
     rows = torch.arange(b)
     a = meta['query_pair']
-    offset = torch.randint(1, 4, (b,), generator=generator)
-    other = (a + offset) % 4
+    if other is None:
+        offset = torch.randint(1, 4, (b,), generator=generator)
+        other = (a + offset) % 4
     remaining = torch.stack([torch.tensor([j for j in range(4) if j not in (int(x), int(y))])
                              for x, y in zip(a, other)])
     out = {}
@@ -97,17 +98,32 @@ def proportion_interval(values):
     return {'mean':p,'ci95':[float(center-radius),float(center+radius)],'method':'Wilson'}
 
 @torch.no_grad()
-def run(checkpoint, seed, count, batch_size, include_combinations=False):
+def run(checkpoint, seed, count, batch_size, include_combinations=False, input_file=None):
     model, metadata = load_model(checkpoint)
     generator = torch.Generator().manual_seed(seed)
     donor_generator = torch.Generator().manual_seed(seed+10000000)
+    prepared=np.load(input_file) if input_file else None
     arrays = {'tokens': [], 'query_pair': [], 'original': [], 'alternative': [], 'base': []}
     noops = {site: 0.0 for site in SITES}
     if include_combinations:
         noops.update({site:0.0 for site in COMBINATIONS})
     for start in range(0, count, batch_size):
-        tokens, original, meta = generate_batch(min(batch_size, count-start), generator, model.config)
-        donors, other, remaining = make_donors(tokens, meta, donor_generator)
+        if prepared is None:
+            tokens, original, meta = generate_batch(min(batch_size, count-start), generator, model.config)
+            donors, other, remaining = make_donors(tokens, meta, donor_generator)
+        else:
+            section=slice(start,min(start+batch_size,count))
+            tokens=torch.from_numpy(prepared['tokens'][section])
+            original=torch.from_numpy(prepared['original'][section])
+            meta={'query_pair':torch.from_numpy(prepared['query_pair'][section]),
+                  'values':tokens[:,1::2]-model.config.n_keys}
+            other=torch.from_numpy(prepared['other'][section])
+            donors,other,remaining=make_donors(tokens,meta,None,other=other)
+            for family,(calculated,a,b) in list(donors.items()):
+                frozen=torch.from_numpy(prepared['donor_'+family][section])
+                if not torch.equal(calculated,frozen):
+                    raise RuntimeError('Frozen donor mismatch')
+                donors[family]=(frozen,a,b)
         alternative = meta['values'][torch.arange(len(tokens)), other]
         base, cache = model(tokens, return_cache=True)
         for key, value in [('tokens', tokens.numpy()), ('query_pair',meta['query_pair'].numpy()),
@@ -149,6 +165,11 @@ def run(checkpoint, seed, count, batch_size, include_combinations=False):
             a,b=meta['query_pair'],other
             cross_tokens=donors['key'][0].clone()
             cross_tokens[:,1::2]=donors['value'][0][:,1::2]
+            if prepared is not None:
+                frozen=torch.from_numpy(prepared['donor_cross'][section])
+                if not torch.equal(cross_tokens,frozen):
+                    raise RuntimeError('Frozen cross donor mismatch')
+                cross_tokens=frozen
             cross_logits=model(cross_tokens)[:,-1]
             arrays.setdefault('cross/unpatched',[]).append(measure(cross_logits,original,alternative))
             patch={}
@@ -178,7 +199,7 @@ def main():
     torch.use_deterministic_algorithms(True)
     commit = verify_lock() if args.phase=='confirmatory' else None
     protocol=json.loads(Path('protocol.json').read_text())
-    folder=Path('outputs')/args.phase
+    folder=Path(protocol['confirmatory']['output_dir']) if args.phase=='confirmatory' else Path('outputs/discovery')
     if folder.exists():
         raise RuntimeError(f'Refusing to overwrite {folder}')
     folder.mkdir()
@@ -194,7 +215,8 @@ def main():
     for seed in protocol['model_seeds']:
         arrays, summary=run(Path(protocol['checkpoint_dir'])/f'seed_{seed}.pt',
                             protocol[args.phase]['input_seed'],protocol[args.phase]['n'],protocol['batch_size'],
-                            include_combinations=args.phase=='confirmatory')
+                            include_combinations=args.phase=='confirmatory',
+                            input_file=protocol['confirmatory'].get('input_file') if args.phase=='confirmatory' else None)
         np.savez_compressed(folder/f'seed_{seed}.npz',**arrays)
         summaries[str(seed)]=summary
         print(json.dumps({'phase':args.phase,'seed':seed,'accuracy':summary['base_accuracy']}),flush=True)
