@@ -1,0 +1,62 @@
+{
+  "scope": "input-only; no model checkpoint or forward; eight synthetic runner tests passed separately",
+  "additional_synthetic_crosslayer_oracle": {
+    "model_seed": 94137,
+    "synthetic_data_seed": 94138,
+    "mean": "exact target-probability equality with independent live masked hook",
+    "resample": "exact target-probability equality with independent live masked hook"
+  },
+  "base_forbidden_count": 2838765,
+  "base_forbidden_sha256": "b009d184a0d838d877b5d7aa0aa7559bdd78eacb358457aee240b2d81a5a0844",
+  "splits": {
+    "calibration": {
+      "n": 512,
+      "distinct_inputs_including_donors": 1536,
+      "forbidden_overlap": 0,
+      "earlier_split_overlap": 0,
+      "within_split_duplicate_inputs": 0,
+      "donor_invariants": "pass",
+      "matched_donors_changing_two_value_positions": 94,
+      "file_sha256": "d64e78ffdb2fa0717b8b901927b575a6452bc0d82d2fa69772c46e275f3ae1df"
+    },
+    "discovery": {
+      "n": 1024,
+      "distinct_inputs_including_donors": 3072,
+      "forbidden_overlap": 0,
+      "earlier_split_overlap": 0,
+      "within_split_duplicate_inputs": 0,
+      "donor_invariants": "pass",
+      "matched_donors_changing_two_value_positions": 236,
+      "file_sha256": "d2beef0e60c475254d509d6bf2d44696a2ad3e2cddf1c8096151752ccb2e73ec"
+    },
+    "confirmatory": {
+      "n": 2048,
+      "distinct_inputs_including_donors": 6144,
+      "forbidden_overlap": 0,
+      "earlier_split_overlap": 0,
+      "within_split_duplicate_inputs": 0,
+      "donor_invariants": "pass",
+      "matched_donors_changing_two_value_positions": 501,
+      "file_sha256": "125351f5ec28e9aa8c56bec2ad9d8f6763c1e3f80d9f548e018a3c8249de0e25"
+    }
+  },
+  "condition_grid": {
+    "discovery": 53,
+    "novel": 92,
+    "novel_family_counts": {
+      "pair": 36,
+      "triple_rescue": 24,
+      "cross_layer": 32
+    },
+    "novel_equivalent_to_discovery": 0,
+    "duplicate_novel_interventions": 0
+  },
+  "experiment1_frozen_file_hashes_unchanged": 45,
+  "source_sha256": {
+    "experiment2/data.py": "f3c2a50b11c500ef941223fb9d6ab9f134f28c61e2114acd0ae2e1eec3d91f04",
+    "experiment2/model.py": "abd802e97a5983b2dc2a2d72e68b8ec3972d47e77978e94f927bc5d24a77614e",
+    "experiment2/runner.py": "e2b15f55b67e59c31deda28f708a24487af21c811b80d5951e43677eb6db2eae",
+    "experiment2/test_runner.py": "b1f520f6c76b8a2814df79f95dd3aa9d76252396f9f1f5b11ee0434ea06a1df3",
+    "experiment2/conditions.json": "dc8ca7b5f1c56001aec242df88b0bc03754e6e3919ccde35444e8a345629ed95"
+  }
+}

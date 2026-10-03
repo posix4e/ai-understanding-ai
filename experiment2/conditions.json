@@ -1,0 +1,6358 @@
+{
+  "discovery": [
+    {
+      "id": "clean",
+      "group": "reference",
+      "ops": []
+    },
+    {
+      "id": "L1_mean_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_matched_h0",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L1_matched_h1",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L1_matched_h2",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L1_matched_h3",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L1_matched_all",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L1_noop",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "noop"
+        }
+      ]
+    },
+    {
+      "id": "L1_mlp_zero",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "mlp_out",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_mlp_mean",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "mlp_out",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_matched_h0",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L2_matched_h1",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L2_matched_h2",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L2_matched_h3",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L2_matched_all",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L2_noop",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "noop"
+        }
+      ]
+    },
+    {
+      "id": "L2_mlp_zero",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "mlp_out",
+          "positions": [
+            8
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_mlp_mean",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "mlp_out",
+          "positions": [
+            8
+          ],
+          "kind": "mean"
+        }
+      ]
+    }
+  ],
+  "novel": [
+    {
+      "id": "L1_mean_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_00",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_01",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_02",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_03",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_10",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_11",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_12",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_13",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_20",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_21",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_22",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_23",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_30",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_31",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_32",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_33",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_00",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_01",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_02",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_03",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_10",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_11",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_12",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_13",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_20",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_21",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_22",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_23",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_30",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_31",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_32",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_33",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    }
+  ],
+  "confirmatory": [
+    {
+      "id": "clean",
+      "group": "reference",
+      "ops": []
+    },
+    {
+      "id": "L1_mean_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_matched_h0",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L1_matched_h1",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L1_matched_h2",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L1_matched_h3",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L1_matched_all",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L1_noop",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "noop"
+        }
+      ]
+    },
+    {
+      "id": "L1_mlp_zero",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "mlp_out",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_mlp_mean",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "mlp_out",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_h0",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_h1",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_h2",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_h3",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_all",
+      "group": "familiar",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_wrong_position",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_matched_h0",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L2_matched_h1",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L2_matched_h2",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L2_matched_h3",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L2_matched_all",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "resample",
+          "donor": "matched_donor_tokens"
+        }
+      ]
+    },
+    {
+      "id": "L2_noop",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "kind": "noop"
+        }
+      ]
+    },
+    {
+      "id": "L2_mlp_zero",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "mlp_out",
+          "positions": [
+            8
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_mlp_mean",
+      "group": "control",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "mlp_out",
+          "positions": [
+            8
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_mean_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_zero_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L1_resample_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_mean_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "mean"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_zero_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "zero"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair01",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair02",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair03",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair12",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair13",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_pair23",
+      "group": "pair",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2,
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_rescue0",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_rescue1",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_rescue2",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "L2_resample_rescue3",
+      "group": "triple_rescue",
+      "ops": [
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "rescue",
+          "corruption": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_00",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_01",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_02",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_03",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_10",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_11",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_12",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_13",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_20",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_21",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_22",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_23",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_30",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_31",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_32",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_mean_33",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "mean"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_00",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_01",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_02",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_03",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_10",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_11",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_12",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_13",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_20",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_21",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_22",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_23",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_30",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            0
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_31",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            1
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_32",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            2
+          ],
+          "kind": "resample"
+        }
+      ]
+    },
+    {
+      "id": "cross_resample_33",
+      "group": "cross_layer",
+      "ops": [
+        {
+          "layer": 0,
+          "component": "z",
+          "positions": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        },
+        {
+          "layer": 1,
+          "component": "z",
+          "positions": [
+            8
+          ],
+          "heads": [
+            3
+          ],
+          "kind": "resample"
+        }
+      ]
+    }
+  ]
+}

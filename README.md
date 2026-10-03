@@ -3,6 +3,20 @@
 An open, locally executed pilot: can an AI-written explanation of a tiny neural
 network predict its behavior under causal interventions?
 
+## Experiment 2: head ablations and rescue
+
+Six models (the three original seeds plus three new seeds) now have frozen
+discovery data for single-head and all-head corruptions. The next registered
+test reserves 92 head-combination conditions across pairs, sole-head rescue,
+and cross-layer interventions. It compares an AI explanation against seven
+empirical baselines, including two with matching access to per-case discovery
+data. Controls are excluded from the primary, family-balanced score.
+
+See the [new protocol](experiment2/PROTOCOL.md),
+[prospective explanation](experiment2/PREDICTION.md), and
+[recent papers and next-step rationale](outputs/RECENT_PAPERS.md).
+Confirmation awaits remote preregistration verification; no results are claimed yet.
+
 ## Experiment 1: randomized dictionary lookup
 
 A two-layer causal transformer receives four randomized key-value pairs followed

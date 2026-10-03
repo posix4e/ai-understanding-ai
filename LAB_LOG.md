@@ -108,3 +108,33 @@ and evidence, not private conversations or internal model reasoning.
   input identities and timing. Its post hoc diagnostic excluding the cross test
   reverses the overall AI advantage in all seeds; this limitation is explicit
   in outputs/SKEPTICAL_REVIEW.md.
+
+## 2026-10-03 — Experiment 2 design and discovery
+
+- Continued locally with head-specific ablation and rescue. Experiment 1 frozen
+  files remain unchanged. Added a head-output hook in an isolated model copy;
+  its clean outputs match the original implementation exactly.
+- Trained additional seeds 3, 4 and 5 with the unchanged final training recipe
+  (2,000 updates, embedding SD 1.0). All reached 100% reused pilot-validation
+  accuracy. E2 uses six trained models; new seeds are reported separately.
+- Prepared identity-audited calibration (512), discovery (1,024) and confirmation
+  (2,048) bundles, disjoint from 2,838,765 forbidden E1/training inputs and from
+  one another. One discovery candidate was rejected; no confirmation candidates
+  were rejected. Donors preserve query key/location; active donors change the
+  answer and matched donors preserve it.
+- Fixed the complete condition grid before discovery: 53 discovery/control
+  conditions and 92 reserved compositions (36 head pairs, 24 sole-head rescues,
+  32 cross-layer combinations). The reviewer noted that sole-head rescue equals
+  corruption of the complementary three heads, so no rescue was shown in discovery.
+- Discovery clean accuracy was 100% in all six seeds. L1 single-head effects
+  vary strongly by seed; L2 single-head ablations leave substantial performance
+  that collapses under all-head corruption. These observations motivate testing
+  redundancy and head interactions, rather than assuming singleton effects add.
+- Primary scoring weights the three reserved families equally; controls do not
+  inflate it. Five initial baselines include additive, multiplicative, and
+  linear/logit head-count interpolation. Before registration, two paired-case
+  log-odds baselines were added to match the predictor's access to raw discovery
+  measurements. All seven formulas and forecasts precede confirmation.
+- Reviewed recent primary literature at the user's request; see
+  outputs/RECENT_PAPERS.md. CHIVE's lack of tool uplift and HyVE's validation
+  failures reinforce the need for stronger baselines and independently tested code.

@@ -1,0 +1,40 @@
+{
+  "base_forbidden_count": 2838765,
+  "base_forbidden_sha256": "b009d184a0d838d877b5d7aa0aa7559bdd78eacb358457aee240b2d81a5a0844",
+  "splits": {
+    "calibration": {
+      "seed": 5100001,
+      "donor_seed": 15100001,
+      "n": 512,
+      "candidates": 512,
+      "rejected": [],
+      "forbidden_before_sha256": "b009d184a0d838d877b5d7aa0aa7559bdd78eacb358457aee240b2d81a5a0844",
+      "file_sha256": "d64e78ffdb2fa0717b8b901927b575a6452bc0d82d2fa69772c46e275f3ae1df"
+    },
+    "discovery": {
+      "seed": 5200001,
+      "donor_seed": 15200001,
+      "n": 1024,
+      "candidates": 1025,
+      "rejected": [
+        {
+          "candidate": 702,
+          "reasons": [
+            "tokens"
+          ]
+        }
+      ],
+      "forbidden_before_sha256": "fb59430c70d086769d818b526847e7a9cea82de235f79f07c9fab9bd8a766851",
+      "file_sha256": "d2beef0e60c475254d509d6bf2d44696a2ad3e2cddf1c8096151752ccb2e73ec"
+    },
+    "confirmatory": {
+      "seed": 5300001,
+      "donor_seed": 15300001,
+      "n": 2048,
+      "candidates": 2048,
+      "rejected": [],
+      "forbidden_before_sha256": "c63e35752b947a08019683f008763b5da132d9137739c593fd503ba12fa8c42e",
+      "file_sha256": "125351f5ec28e9aa8c56bec2ad9d8f6763c1e3f80d9f548e018a3c8249de0e25"
+    }
+  }
+}
