@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-10-03T21:54:47.890132+00:00",
+  "registration": "6edaaac7c9a1eab41f4cc38ab700d212dcf866dc",
+  "n": 512,
+  "conditions": 15,
+  "parameters_sha256": "9727c8b37eeaef2943a17936a984ee4688ff3566e575fe6486fbcdf8722779b6",
+  "device": "cpu",
+  "dtype": "float64",
+  "source_parameter_dtype": "float32",
+  "probability_dtype": "float64",
+  "threads": 4
+}

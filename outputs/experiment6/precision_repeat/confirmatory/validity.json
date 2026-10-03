@@ -1,0 +1,21 @@
+{
+  "all_pass": true,
+  "checks": {
+    "complete_finite_outputs": true,
+    "parameters_unchanged": true,
+    "source_parameter_values_preserved": true,
+    "noop_probabilities": true,
+    "guard_first_block_values": true,
+    "first_block_query_suffix": true,
+    "unedited_first_block_keys": true
+  },
+  "diagnostics": {
+    "noop_probability_error": 0.0,
+    "guard_value_state_error": 2.1316282072803006e-14,
+    "query_suffix_state_error": 2.1316282072803006e-14,
+    "unedited_key_state_error": 0.0
+  },
+  "parameters_before_sha256": "9727c8b37eeaef2943a17936a984ee4688ff3566e575fe6486fbcdf8722779b6",
+  "parameters_after_sha256": "9727c8b37eeaef2943a17936a984ee4688ff3566e575fe6486fbcdf8722779b6",
+  "source_float32_parameter_sha256": "e563ffe10e2eefeaf9d9a869d4cb43369cdddbe6875789caec4e1abd7c6adfd9"
+}

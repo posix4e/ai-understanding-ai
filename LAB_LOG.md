@@ -359,3 +359,63 @@ and evidence, not private conversations or internal model reasoning.
   External replication, larger architectures, longer lists, and removal of
   supplied pair structure remain next tests. No venue acceptance or field-first
   claim is made. Earlier negative results remain unchanged.
+
+## 2026-10-03 21:45–21:59 UTC — E6 pretrained GPT-2 transfer test and precision repeat
+
+- Tested the unchanged public GPT-2 small checkpoint, revision
+  `607a30d783dfa663caf39e06633721c8d4cfcd7e`: 124,439,808 parameters and 12 blocks.
+  Native-only calibration had been registered separately and selected the
+  `one_demo` format. Confirmation used 512 new association maps, excluding the
+  64 calibration maps and balancing the requested pair across four strata.
+  This does not establish absence from GPT-2's unavailable pretraining corpus.
+- The original completed run was registered at
+  `6ae8866e675cead908ae40c1862e81ee269eaf42`, with 34 file identities remotely
+  verified at 21:45:01.999448 UTC. It ran from 21:45:05.167798 to
+  21:46:50.434420 UTC. An earlier native-only startup abort is also retained:
+  a probability-normalization check failed before any reordered forward.
+  Its disclosed correction kept model computation float32 and used float64
+  final softmax, with a new public registration before shifted evaluation.
+- The completed original run remains **implementation_invalid**. Maximum
+  first-block value and query-suffix state errors were 1.335144e-5 and
+  1.144409e-5, above the unchanged 1e-5 tolerance. All outputs were finite;
+  no-op and unedited-key errors were zero, and parameter hashes were unchanged.
+  All three behavioral repair criteria also failed. The original code, raw
+  arrays, scores, validity record, and independent audit remain unchanged.
+- Registered a disclosed precision follow-up at
+  `6edaaac7c9a1eab41f4cc38ab700d212dcf866dc`. All 129 file identities were
+  remotely verified at 21:54:42.791800 UTC; the run began at 21:54:47.890132
+  and finished at 21:59:40.414380 UTC. It promoted the exact original float32
+  parameter values to float64, kept all fifteen conditions and thresholds,
+  and reused all 512 dictionaries in the same order. It is a numerical repeat
+  informed by the first run, not an independent confirmation or replacement.
+- All implementation checks passed in float64. Maximum value and suffix
+  discrepancies were both 2.131628e-14. Source parameter values were preserved,
+  and promoted parameter hashes before and after inference agreed. Despite
+  valid first-block restoration, the primary repair classification was
+  **repair_failed**: improvement, near-native recovery, and mean-control
+  specificity all missed their registered requirements.
+- Restricted 16-choice accuracy was 477/512 (93.16%) in native order,
+  53/512 (10.35%) for canonical grouping, and 49/512 (9.57%) with the first-block
+  guard. The guard-minus-grouped accuracy contrast was -0.0078125, with paired
+  95% interval [-0.01953125, 0.00390625]. The native-minus-guard deficit was
+  0.8359375, with interval [0.802734375, 0.8671875]. The conditional-probability
+  advantage over the mean eight shams was about 0.000030, with an interval
+  spanning zero. These accuracy values were identical in the original run.
+- Restricted choice is distinct from unrestricted next-token prediction.
+  Unrestricted accuracy was 445/512 (86.91%) for native prompts and 0/512 for
+  canonical grouping and the primary guard. Applying the guard in all 12 blocks
+  achieved 160/512 (31.25%) restricted accuracy and 20/512 (3.91%) unrestricted
+  accuracy. This secondary condition cannot rescue the first-block hypothesis
+  and lacks its own matched-mask specificity test.
+- Separate saved-output audits verified each run's 64 batch files, merged
+  arrays, frozen inputs and model files, and independently reproduced 865
+  numerical scores and intervals per run. They ran no models. Internal-state
+  checks remain runner measurements; the saved final probabilities alone do
+  not reconstruct those states. The repeat supplies a valid negative result
+  for this fixed intervention on this reused sample. It does not isolate scale
+  from depth, pretraining, tokenizer, or prompt differences.
+- See the [E6 summary](outputs/experiment6/SUMMARY.md),
+  [precision results](outputs/experiment6/precision_repeat/RESULTS.md),
+  [precision comparison](outputs/experiment6/precision_repeat/comparison.json),
+  and [reproduction guide](outputs/experiment6/REPRODUCE.md). All experimental
+  inference remained local CPU; no training or inference API was used for E6.

@@ -1,0 +1,9 @@
+{
+  "registration": "6edaaac7c9a1eab41f4cc38ab700d212dcf866dc",
+  "remote_verified_via": "GitHub commits/main API",
+  "verified_at_utc": "2026-10-03T21:54:42.791800+00:00",
+  "manifest_sha256": "5f9fdaad2af001b2c5293b4ff0ab892a0ef3f9faaf713c30f868a50f2405ddfb",
+  "verified_files": 129,
+  "pretrained_float64_forwards_so_far": 0,
+  "scope": "Numerical repeat on the same 512 rows; not independent confirmation"
+}

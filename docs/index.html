@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A planned test of a small AI repair: six new models, 105 input orders, and all errors kept. Read the paper, limits, code, and data.">
+  <meta name="description" content="A repair worked in six small AI models. A separate GPT-2 test found its limit. Read both results, the paper, code, and data.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/">
   <title>A small AI repair that worked on new models | AI Understanding AI</title>
-  <link rel="stylesheet" href="./styles.css?v=1">
+  <link rel="stylesheet" href="./styles.css?v=2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,7 +24,7 @@
   <main id="main">
     <section class="hero wrap" aria-labelledby="page-title">
       <div class="hero-copy">
-        <p class="eyebrow">Research note <span aria-hidden="true">/</span> <time datetime="2026-10-03">3 October 2026</time></p>
+        <p class="eyebrow">Original small-model study <span aria-hidden="true">/</span> <time datetime="2026-10-03">3 October 2026</time></p>
         <h1 id="page-title">A small AI repair that worked on new models.</h1>
         <p class="hero-deck">Changing the order of a list made small AI models give wrong answers. We blocked selected internal connections. The answers became much more accurate.</p>
         <p class="scope-line">A controlled study of a four-pair task. We give the repair the correct pairs and tags that record their original positions.</p>
@@ -32,11 +32,12 @@
           <a class="button" href="./paper.pdf">Read the paper <span class="file-tag">PDF · 7 pages</span><span aria-hidden="true">↗</span></a>
           <a class="text-link" href="https://github.com/posix4e/ai-understanding-ai">Code &amp; research record <span aria-hidden="true">↗</span></a>
         </div>
+        <p class="plain-note"><strong>New: a test in pretrained GPT-2.</strong>The first-layer repair did not restore its answers. <a href="#gpt2">Read the follow-up result</a>.</p>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Research draft · Not peer reviewed</p>
       </div>
 
       <figure class="hero-result" aria-labelledby="comparison-title">
-        <div class="figure-heading"><span class="eyebrow">The main test</span><span class="figure-number">01</span></div>
+        <div class="figure-heading"><span class="eyebrow">Original six-model test</span><span class="figure-number">01</span></div>
         <h2 id="comparison-title">More correct answers.<br> The same trained models.</h2>
         <div class="comparison" role="img" aria-label="Accuracy across six models, averaged over 105 tested input orders: without the repair, 45.2 to 71.9 percent. With the repair, 99.986 to 100 percent. Each range shows differences between models.">
           <div class="bar-group">
@@ -116,25 +117,47 @@
       </div>
     </section>
 
+    <section class="section wrap" id="gpt2" aria-labelledby="gpt2-title">
+      <div class="section-heading"><p class="eyebrow">05 / GPT-2 follow-up</p><h2 id="gpt2-title">The first-layer repair did not transfer.</h2><a class="text-link" href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment6/SUMMARY.md">Read the follow-up report <span aria-hidden="true">↗</span></a></div>
+      <div class="section-body">
+        <p class="lead">We tested a pretrained model with 124 million parameters.</p>
+        <p>GPT-2 has about 1,760 times as many learned numbers as our small models. It has 12 processing layers. We tested 512 four-pair lists under 15 conditions. We did not train the model again.</p>
+        <table class="followup-table">
+          <caption>Higher-precision repeat on the same 512 inputs. Percent of correct next-token answers.</caption>
+          <thead><tr><th scope="col">Input and repair</th><th scope="col">Among 16 choices</th><th scope="col">Across the full vocabulary</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Original order</th><td>93.2%</td><td>86.9%</td></tr>
+            <tr><th scope="row">Changed order, original position tags</th><td>10.4%</td><td>0.0%</td></tr>
+            <tr><th scope="row">Changed order, first-layer repair</th><td>9.6%</td><td>0.0%</td></tr>
+          </tbody>
+        </table>
+        <p>The repair restored the checked value states in the first layer. It did not restore correct final answers. It also failed the required comparison with eight alternative connection patterns.</p>
+        <p><strong>A numerical problem, kept in the record.</strong> The first run narrowly missed two checks for agreement between internal states. We then registered a repeat with more precise arithmetic. That repeat passed the implementation checks and failed all three repair requirements. It reused every input, so it is not an independent confirmation.</p>
+        <p>Applying the guard in all 12 layers raised 16-choice accuracy to 31.25%. This was a separate test and remained far below the original performance. It did not rescue the first-layer claim.</p>
+        <aside class="plain-note"><strong>What this tells us</strong>Matching an early internal state can be too little to repair the answer. This result concerns one GPT-2 checkpoint and an artificial change in text order. Size, depth, training, and text format all differ from our small models. We cannot say which difference caused the failure.</aside>
+        <p class="source-line"><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment6/RESULTS.md">Original run</a> · <a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment6/precision_repeat/RESULTS.md">Precision-repeat results</a> · <a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment6/precision_repeat/independent_audit.json">Separate code audit</a> · <a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/experiment6/REPRODUCE.md">Code, data, and repeat guide</a></p>
+      </div>
+    </section>
+
     <section class="section wrap" id="next-steps" aria-labelledby="next-steps-title">
-      <div class="section-heading"><p class="eyebrow">05 / What comes next</p><h2 id="next-steps-title">Test the limits<br> of the explanation.</h2></div>
+      <div class="section-heading"><p class="eyebrow">06 / What comes next</p><h2 id="next-steps-title">Test the limits<br> of the explanation.</h2></div>
       <div class="section-body">
         <p class="lead">Yes. Earlier papers suggest several of these next steps.</p>
         <p>The directions below come from the authors. Our exact test of 105 orders and six new models was our own design.</p>
         <div class="literature-list">
           <article><p class="paper-date">1 October 2026 · Preprint</p><h3>Check whether an explanation predicts actual behavior.</h3><p>Geng and colleagues recommend fixed measures of behavior and checks with different scores and interventions. We measured correct answers and answer probabilities. We also tested alternative connections.</p><a href="https://arxiv.org/html/2610.02098v1">Read Geng et al., section 6 <span aria-hidden="true">↗</span></a></article>
-          <article><p class="paper-date">February 2026 · Journal paper / January 2026 · Updated preprint</p><h3>Test larger models and harder tasks.</h3><p>Tang and colleagues call for tests in larger, real-world models and more flexible tasks. Arora and colleagues propose real-world tests and questions that require several steps. These tests remain future work here.</p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0340088">Read Tang et al., Discussion <span aria-hidden="true">↗</span></a><span class="link-divider" aria-hidden="true"> · </span><a href="https://arxiv.org/html/2505.15105v3">Read Arora et al. <span aria-hidden="true">↗</span></a></article>
+          <article><p class="paper-date">February 2026 · Journal paper / January 2026 · Updated preprint</p><h3>Test larger models and harder tasks.</h3><p>Tang and colleagues call for tests in larger, real-world models and more flexible tasks. Arora and colleagues propose real-world tests and questions that require several steps. Our GPT-2 follow-up begins testing a pretrained model. Harder tasks and broader model comparisons remain open.</p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0340088">Read Tang et al., Discussion <span aria-hidden="true">↗</span></a><span class="link-divider" aria-hidden="true"> · </span><a href="https://arxiv.org/html/2505.15105v3">Read Arora et al. <span aria-hidden="true">↗</span></a></article>
           <article><p class="paper-date">August 2025 · Conference paper</p><h3>Check other parts of the model.</h3><p>Wu and colleagues recommend studying how attention works with other internal parts. Tang and colleagues also recommend finding and changing redundant pathways together. We have not completed these broader tests.</p><a href="https://arxiv.org/html/2502.01951v4">Read Wu et al., section 6 <span aria-hidden="true">↗</span></a></article>
         </div>
         <p><strong>Our proposed next tests:</strong> ask another group to repeat the study, use longer lists, and make the repair find pair relationships without our help. These are our specific proposals.</p>
-        <p>Each model has only 70,720 learned numbers, called parameters. The task has four pairs. We do not yet know whether the repair works in large language models.</p>
+        <p>The six models in the original paper each have 70,720 parameters. The separate GPT-2 follow-up tests one much larger pretrained model, while keeping a simple four-pair task. Its first-layer repair failed.</p>
         <aside class="plain-note"><strong>Why this is worth publishing</strong>We turned an explanation into a specific repair. Then we tested it on new models, with rules fixed in advance. The results show where it works and where it fails. This is evidence for a narrow claim that others can check. It is not yet a peer-reviewed finding.</aside>
         <p class="source-line"><a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/PAPER_NEXT_STEPS.md">Check each recommendation and its source</a> · <a href="https://github.com/posix4e/ai-understanding-ai/blob/main/outputs/LITERATURE_UPDATE_2026-10-03.md">Dated literature review</a></p>
       </div>
     </section>
 
     <section class="evidence-section wrap" id="evidence" aria-labelledby="evidence-title">
-      <div class="evidence-heading"><div><p class="eyebrow">06 / Open evidence</p><h2 id="evidence-title">Read it. Check it. Repeat it.</h2></div><p>Every link below opens a named file. Large data files are not loaded by this page.</p></div>
+      <div class="evidence-heading"><div><p class="eyebrow">07 / Open evidence</p><h2 id="evidence-title">Read it. Check it. Repeat it.</h2></div><p>Every link below opens a named file. Large data files are not loaded by this page.</p></div>
       <div class="evidence-grid">
         <div class="evidence-group"><h3>The explanation</h3><ul>
           <li><a href="./paper.pdf">Research paper<span>PDF · 7 pages</span></a></li>

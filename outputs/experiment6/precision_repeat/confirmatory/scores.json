@@ -1,0 +1,2293 @@
+{
+  "gates": {
+    "implementation_valid": true,
+    "native_overall_at_least_80_percent": true,
+    "every_native_query_at_least_70_percent": true,
+    "damage_point_at_least_10_percentage_points": true,
+    "damage_ci_lower_above_zero": true,
+    "repair_accuracy_ci_lower_above_5_percentage_points": false,
+    "native_minus_guard_accuracy_ci_upper_at_most_5_percentage_points": false,
+    "specificity_conditional_probability_ci_lower_above_02": false
+  },
+  "failed_gates": [
+    "repair_accuracy_ci_lower_above_5_percentage_points",
+    "native_minus_guard_accuracy_ci_upper_at_most_5_percentage_points",
+    "specificity_conditional_probability_ci_lower_above_02"
+  ],
+  "classification": "repair_failed",
+  "all_pass": false,
+  "n": 512,
+  "conditions": {
+    "native": {
+      "restricted_accuracy": {
+        "mean": 0.931640625,
+        "ci95": [
+          0.91015625,
+          0.951171875
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.869140625,
+        "ci95": [
+          0.841796875,
+          0.896484375
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.20297897353773636,
+        "ci95": [
+          0.19621855329134538,
+          0.21007779614090671
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.3576487357037046,
+        "ci95": [
+          0.3478479782935981,
+          0.36739169923348614
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.5539457595293036,
+        "ci95": [
+          0.5466569573553627,
+          0.5613136047636169
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 1.0,
+            "wilson_ci95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 1.0,
+            "wilson_ci95": [
+              0.9708630437264916,
+              1.0
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.25445076274311407
+          },
+          "conditional_target_probability": {
+            "mean": 0.437256638159048
+          },
+          "candidate_probability_mass": {
+            "mean": 0.5761952203862902
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.9375,
+            "wilson_ci95": [
+              0.8815120889557413,
+              0.9679930743049387
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.90625,
+            "wilson_ci95": [
+              0.8432700274269215,
+              0.945556195600853
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.21101095779738946
+          },
+          "conditional_target_probability": {
+            "mean": 0.35584337794547444
+          },
+          "candidate_probability_mass": {
+            "mean": 0.5800274218985007
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.9375,
+            "wilson_ci95": [
+              0.8815120889557413,
+              0.9679930743049387
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.875,
+            "wilson_ci95": [
+              0.8065737291824854,
+              0.9215735536123834
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.19013814338773782
+          },
+          "conditional_target_probability": {
+            "mean": 0.3348668672627896
+          },
+          "candidate_probability_mass": {
+            "mean": 0.5509798718268097
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.8515625,
+            "wilson_ci95": [
+              0.7797727087736895,
+              0.9028653688464999
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.6953125,
+            "wilson_ci95": [
+              0.6108489916080531,
+              0.7683943848476078
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.1563160302227042
+          },
+          "conditional_target_probability": {
+            "mean": 0.3026280594475063
+          },
+          "candidate_probability_mass": {
+            "mean": 0.5085805240056137
+          }
+        }
+      }
+    },
+    "grouped_physical": {
+      "restricted_accuracy": {
+        "mean": 0.09765625,
+        "ci95": [
+          0.07421875,
+          0.123046875
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.005205074725047099,
+        "ci95": [
+          0.0047118546235260005,
+          0.005748976510303236
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.07104401030757435,
+        "ci95": [
+          0.06711767038505233,
+          0.07529394907274363
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.12278828521190907,
+        "ci95": [
+          0.11621233214671402,
+          0.1297524729174553
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1875,
+            "wilson_ci95": [
+              0.12936141696376852,
+              0.2638491807071743
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.001223201658565329
+          },
+          "conditional_target_probability": {
+            "mean": 0.09199146639156701
+          },
+          "candidate_probability_mass": {
+            "mean": 0.011921341762803066
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1875,
+            "wilson_ci95": [
+              0.12936141696376852,
+              0.2638491807071743
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0031747779010014377
+          },
+          "conditional_target_probability": {
+            "mean": 0.09834386420062086
+          },
+          "candidate_probability_mass": {
+            "mean": 0.03192740947865219
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.015625,
+            "wilson_ci95": [
+              0.004295449710144082,
+              0.055180976679817195
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004404773936920519
+          },
+          "conditional_target_probability": {
+            "mean": 0.05921925381205269
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07824871915173644
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.012017545403701112
+          },
+          "conditional_target_probability": {
+            "mean": 0.0346214568260568
+          },
+          "candidate_probability_mass": {
+            "mean": 0.36905567045444454
+          }
+        }
+      }
+    },
+    "grouped_canonical": {
+      "restricted_accuracy": {
+        "mean": 0.103515625,
+        "ci95": [
+          0.080078125,
+          0.12890625
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.005116041276428236,
+        "ci95": [
+          0.0046498561857373066,
+          0.005660963679687142
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.07424956450988374,
+        "ci95": [
+          0.07009857818178034,
+          0.07858798055834255
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.10742304383331669,
+        "ci95": [
+          0.1017510314024784,
+          0.11345001901439894
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1953125,
+            "wilson_ci95": [
+              0.1359396128283779,
+              0.2724407199007913
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0012675919273062376
+          },
+          "conditional_target_probability": {
+            "mean": 0.09486348136874401
+          },
+          "candidate_probability_mass": {
+            "mean": 0.012668588858336
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.203125,
+            "wilson_ci95": [
+              0.1425573819359227,
+              0.2809926858514729
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.003495898612018563
+          },
+          "conditional_target_probability": {
+            "mean": 0.10280892614883777
+          },
+          "candidate_probability_mass": {
+            "mean": 0.03387427575760512
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.015625,
+            "wilson_ci95": [
+              0.004295449710144082,
+              0.055180976679817195
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004468389703486175
+          },
+          "conditional_target_probability": {
+            "mean": 0.061010220733656875
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07589649202013254
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.01123228486290197
+          },
+          "conditional_target_probability": {
+            "mean": 0.038315629788296265
+          },
+          "candidate_probability_mass": {
+            "mean": 0.3072528186971931
+          }
+        }
+      }
+    },
+    "grouped_noop": {
+      "restricted_accuracy": {
+        "mean": 0.103515625,
+        "ci95": [
+          0.080078125,
+          0.12890625
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.005116041276428236,
+        "ci95": [
+          0.0046498561857373066,
+          0.005660963679687142
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.07424956450988374,
+        "ci95": [
+          0.07009857818178034,
+          0.07858798055834255
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.10742304383331669,
+        "ci95": [
+          0.1017510314024784,
+          0.11345001901439894
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1953125,
+            "wilson_ci95": [
+              0.1359396128283779,
+              0.2724407199007913
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0012675919273062376
+          },
+          "conditional_target_probability": {
+            "mean": 0.09486348136874401
+          },
+          "candidate_probability_mass": {
+            "mean": 0.012668588858336
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.203125,
+            "wilson_ci95": [
+              0.1425573819359227,
+              0.2809926858514729
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.003495898612018563
+          },
+          "conditional_target_probability": {
+            "mean": 0.10280892614883777
+          },
+          "candidate_probability_mass": {
+            "mean": 0.03387427575760512
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.015625,
+            "wilson_ci95": [
+              0.004295449710144082,
+              0.055180976679817195
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004468389703486175
+          },
+          "conditional_target_probability": {
+            "mean": 0.061010220733656875
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07589649202013254
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.01123228486290197
+          },
+          "conditional_target_probability": {
+            "mean": 0.038315629788296265
+          },
+          "candidate_probability_mass": {
+            "mean": 0.3072528186971931
+          }
+        }
+      }
+    },
+    "guard_block0": {
+      "restricted_accuracy": {
+        "mean": 0.095703125,
+        "ci95": [
+          0.072265625,
+          0.12109375
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.004958956870820638,
+        "ci95": [
+          0.00448405895958455,
+          0.00549490450462233
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.07010798423331768,
+        "ci95": [
+          0.0662569919863889,
+          0.07424368779353069
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.11513958671202454,
+        "ci95": [
+          0.10871067188292172,
+          0.12205114175911609
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1796875,
+            "wilson_ci95": [
+              0.12282459974516051,
+              0.25521626286755583
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0010165562313974776
+          },
+          "conditional_target_probability": {
+            "mean": 0.08928342354143977
+          },
+          "candidate_probability_mass": {
+            "mean": 0.010453938409752714
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1796875,
+            "wilson_ci95": [
+              0.12282459974516051,
+              0.25521626286755583
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.003001915671673628
+          },
+          "conditional_target_probability": {
+            "mean": 0.09570272908096285
+          },
+          "candidate_probability_mass": {
+            "mean": 0.031538367634207795
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0234375,
+            "wilson_ci95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.00452537957480338
+          },
+          "conditional_target_probability": {
+            "mean": 0.059994106301660355
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07935552804132173
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.011291976005408067
+          },
+          "conditional_target_probability": {
+            "mean": 0.03545167800920776
+          },
+          "candidate_probability_mass": {
+            "mean": 0.3392105127628159
+          }
+        }
+      }
+    },
+    "sham_0": {
+      "restricted_accuracy": {
+        "mean": 0.09375,
+        "ci95": [
+          0.0703125,
+          0.119140625
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.004882647785239738,
+        "ci95": [
+          0.004414439774491629,
+          0.005409401118035421
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.07007364071075176,
+        "ci95": [
+          0.06620373170053982,
+          0.07421646486022362
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.11358258927514567,
+        "ci95": [
+          0.10714408877194476,
+          0.12045773391676404
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.171875,
+            "wilson_ci95": [
+              0.11633115948147267,
+              0.24653996807301726
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0009839880339362471
+          },
+          "conditional_target_probability": {
+            "mean": 0.08893174894704682
+          },
+          "candidate_probability_mass": {
+            "mean": 0.010183128117964468
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1796875,
+            "wilson_ci95": [
+              0.12282459974516051,
+              0.25521626286755583
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0029292984873255717
+          },
+          "conditional_target_probability": {
+            "mean": 0.09568187554841698
+          },
+          "candidate_probability_mass": {
+            "mean": 0.030789057638352824
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0234375,
+            "wilson_ci95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004463362831423913
+          },
+          "conditional_target_probability": {
+            "mean": 0.06026115057545128
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07788531980837138
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.011153941788273223
+          },
+          "conditional_target_probability": {
+            "mean": 0.03541978777209193
+          },
+          "candidate_probability_mass": {
+            "mean": 0.33547285153589396
+          }
+        }
+      }
+    },
+    "sham_1": {
+      "restricted_accuracy": {
+        "mean": 0.09375,
+        "ci95": [
+          0.0703125,
+          0.119140625
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.0048815311020114,
+        "ci95": [
+          0.004413556514773436,
+          0.005409984169448285
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.07007387661037603,
+        "ci95": [
+          0.06620327527351016,
+          0.07421713364287791
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.11354845915012188,
+        "ci95": [
+          0.10709541122334627,
+          0.12041961151997738
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.171875,
+            "wilson_ci95": [
+              0.11633115948147267,
+              0.24653996807301726
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0009835931577109659
+          },
+          "conditional_target_probability": {
+            "mean": 0.08893212133810098
+          },
+          "candidate_probability_mass": {
+            "mean": 0.010178905313453456
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1796875,
+            "wilson_ci95": [
+              0.12282459974516051,
+              0.25521626286755583
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.002927342860363907
+          },
+          "conditional_target_probability": {
+            "mean": 0.09567389690095689
+          },
+          "candidate_probability_mass": {
+            "mean": 0.030776321219970034
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0234375,
+            "wilson_ci95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004464352082189704
+          },
+          "conditional_target_probability": {
+            "mean": 0.06026472795348558
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07788263986314813
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.011150836307781024
+          },
+          "conditional_target_probability": {
+            "mean": 0.03542476024896074
+          },
+          "candidate_probability_mass": {
+            "mean": 0.33535597020391594
+          }
+        }
+      }
+    },
+    "sham_2": {
+      "restricted_accuracy": {
+        "mean": 0.09765625,
+        "ci95": [
+          0.07421875,
+          0.123046875
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.004851363071008207,
+        "ci95": [
+          0.004382530319952371,
+          0.005373111798592529
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.07015289032030352,
+        "ci95": [
+          0.0662782613305146,
+          0.07429243261784635
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.11294970989492553,
+        "ci95": [
+          0.10654761248512146,
+          0.11985334206879321
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.171875,
+            "wilson_ci95": [
+              0.11633115948147267,
+              0.24653996807301726
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.000976762737361346
+          },
+          "conditional_target_probability": {
+            "mean": 0.08877304181691842
+          },
+          "candidate_probability_mass": {
+            "mean": 0.010142865129460391
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1875,
+            "wilson_ci95": [
+              0.12936141696376852,
+              0.2638491807071743
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.002929362193981119
+          },
+          "conditional_target_probability": {
+            "mean": 0.09639395833863501
+          },
+          "candidate_probability_mass": {
+            "mean": 0.030577824357627865
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.03125,
+            "wilson_ci95": [
+              0.01221826524505338,
+              0.07759763126136077
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004433482087251787
+          },
+          "conditional_target_probability": {
+            "mean": 0.06009558894077423
+          },
+          "candidate_probability_mass": {
+            "mean": 0.0775718557371061
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.011065845265438575
+          },
+          "conditional_target_probability": {
+            "mean": 0.035348972184886404
+          },
+          "candidate_probability_mass": {
+            "mean": 0.3335062943555077
+          }
+        }
+      }
+    },
+    "sham_3": {
+      "restricted_accuracy": {
+        "mean": 0.09765625,
+        "ci95": [
+          0.07421875,
+          0.123046875
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.0048502690129368555,
+        "ci95": [
+          0.004382288493843451,
+          0.005372404582023797
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.07015322925612877,
+        "ci95": [
+          0.06627568810067296,
+          0.07429302521163389
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.1129139838292913,
+        "ci95": [
+          0.10651893187196845,
+          0.119814154420473
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.171875,
+            "wilson_ci95": [
+              0.11633115948147267,
+              0.24653996807301726
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.000976331566568837
+          },
+          "conditional_target_probability": {
+            "mean": 0.08877237588085764
+          },
+          "candidate_probability_mass": {
+            "mean": 0.010138396999567624
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1875,
+            "wilson_ci95": [
+              0.12936141696376852,
+              0.2638491807071743
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0029273171842238697
+          },
+          "conditional_target_probability": {
+            "mean": 0.09638580614898598
+          },
+          "candidate_probability_mass": {
+            "mean": 0.030564248822776058
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.03125,
+            "wilson_ci95": [
+              0.01221826524505338,
+              0.07759763126136077
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004434464899047358
+          },
+          "conditional_target_probability": {
+            "mean": 0.06009955499556077
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07756849394042423
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.011062962401907357
+          },
+          "conditional_target_probability": {
+            "mean": 0.03535517999911066
+          },
+          "candidate_probability_mass": {
+            "mean": 0.33338479555439726
+          }
+        }
+      }
+    },
+    "sham_4": {
+      "restricted_accuracy": {
+        "mean": 0.09765625,
+        "ci95": [
+          0.07421875,
+          0.123046875
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.004928924397427531,
+        "ci95": [
+          0.004456897137687888,
+          0.00545905200942751
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.07019421086701128,
+        "ci95": [
+          0.06633992442538116,
+          0.0743410648725252
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.1144944211207166,
+        "ci95": [
+          0.10805928446563204,
+          0.12143851065956165
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1796875,
+            "wilson_ci95": [
+              0.12282459974516051,
+              0.25521626286755583
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0010083068003324995
+          },
+          "conditional_target_probability": {
+            "mean": 0.08910583628593931
+          },
+          "candidate_probability_mass": {
+            "mean": 0.010407931944643487
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1875,
+            "wilson_ci95": [
+              0.12936141696376852,
+              0.2638491807071743
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0030012705220206957
+          },
+          "conditional_target_probability": {
+            "mean": 0.09640896207453825
+          },
+          "candidate_probability_mass": {
+            "mean": 0.031313535726450376
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0234375,
+            "wilson_ci95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004498176724465808
+          },
+          "conditional_target_probability": {
+            "mean": 0.059863152391941135
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07903357791179913
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.011207943542891119
+          },
+          "conditional_target_probability": {
+            "mean": 0.035398892715626365
+          },
+          "candidate_probability_mass": {
+            "mean": 0.3372226388999734
+          }
+        }
+      }
+    },
+    "sham_5": {
+      "restricted_accuracy": {
+        "mean": 0.099609375,
+        "ci95": [
+          0.076171875,
+          0.125
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.004820466721636109,
+        "ci95": [
+          0.004351971421643621,
+          0.005344101459842951
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.06997834593026275,
+        "ci95": [
+          0.06608943485381445,
+          0.07410788679767509
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.11338929634608197,
+        "ci95": [
+          0.10691728783988093,
+          0.12038170457195423
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1796875,
+            "wilson_ci95": [
+              0.12282459974516051,
+              0.25521626286755583
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0009853087418591451
+          },
+          "conditional_target_probability": {
+            "mean": 0.08887732951089691
+          },
+          "candidate_probability_mass": {
+            "mean": 0.010225377041182891
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1875,
+            "wilson_ci95": [
+              0.12936141696376852,
+              0.2638491807071743
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0029086372049289258
+          },
+          "conditional_target_probability": {
+            "mean": 0.09602986088415277
+          },
+          "candidate_probability_mass": {
+            "mean": 0.030590089140790068
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.03125,
+            "wilson_ci95": [
+              0.01221826524505338,
+              0.07759763126136077
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004405625344226366
+          },
+          "conditional_target_probability": {
+            "mean": 0.060054128854391285
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07733726428194704
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.010982295595530002
+          },
+          "conditional_target_probability": {
+            "mean": 0.034952064471610034
+          },
+          "candidate_probability_mass": {
+            "mean": 0.3354044549204078
+          }
+        }
+      }
+    },
+    "sham_6": {
+      "restricted_accuracy": {
+        "mean": 0.099609375,
+        "ci95": [
+          0.076171875,
+          0.125
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.004819146654740812,
+        "ci95": [
+          0.0043513626137067895,
+          0.0053431797296698315
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.06997757382465167,
+        "ci95": [
+          0.06608737637671888,
+          0.07410194271528832
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.11335229560180823,
+        "ci95": [
+          0.10688208568427526,
+          0.12035878032859845
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1796875,
+            "wilson_ci95": [
+              0.12282459974516051,
+              0.25521626286755583
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0009847896016826998
+          },
+          "conditional_target_probability": {
+            "mean": 0.08887597652476995
+          },
+          "candidate_probability_mass": {
+            "mean": 0.010220464334626788
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1875,
+            "wilson_ci95": [
+              0.12936141696376852,
+              0.2638491807071743
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0029066169025961873
+          },
+          "conditional_target_probability": {
+            "mean": 0.0960221156750613
+          },
+          "candidate_probability_mass": {
+            "mean": 0.030577031046040884
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.03125,
+            "wilson_ci95": [
+              0.01221826524505338,
+              0.07759763126136077
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004406327977150005
+          },
+          "conditional_target_probability": {
+            "mean": 0.06005420419586129
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07733449709811924
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.010978852137534353
+          },
+          "conditional_target_probability": {
+            "mean": 0.034957998902914095
+          },
+          "candidate_probability_mass": {
+            "mean": 0.335277189928446
+          }
+        }
+      }
+    },
+    "sham_7": {
+      "restricted_accuracy": {
+        "mean": 0.09765625,
+        "ci95": [
+          0.07421875,
+          0.123046875
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.004901032725211479,
+        "ci95": [
+          0.004429151632005088,
+          0.005429549297883958
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.0700202417175998,
+        "ci95": [
+          0.06612499354826928,
+          0.07416858452703338
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.11499123480503762,
+        "ci95": [
+          0.10844789550497626,
+          0.1220551812516312
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1796875,
+            "wilson_ci95": [
+              0.12282459974516051,
+              0.25521626286755583
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0010173801811785342
+          },
+          "conditional_target_probability": {
+            "mean": 0.08921074076619787
+          },
+          "candidate_probability_mass": {
+            "mean": 0.010494875858901654
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1875,
+            "wilson_ci95": [
+              0.12936141696376852,
+              0.2638491807071743
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0029808093736430176
+          },
+          "conditional_target_probability": {
+            "mean": 0.096030343004578
+          },
+          "candidate_probability_mass": {
+            "mean": 0.0313389711204975
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0234375,
+            "wilson_ci95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004473310417490721
+          },
+          "conditional_target_probability": {
+            "mean": 0.05982255934930088
+          },
+          "candidate_probability_mass": {
+            "mean": 0.0788410123005478
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.011132630928533643
+          },
+          "conditional_target_probability": {
+            "mean": 0.03501732375032239
+          },
+          "candidate_probability_mass": {
+            "mean": 0.33929007994020355
+          }
+        }
+      }
+    },
+    "guard_block5": {
+      "restricted_accuracy": {
+        "mean": 0.10546875,
+        "ci95": [
+          0.080078125,
+          0.13090820312499973
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.00514883787098179,
+        "ci95": [
+          0.004678570737852392,
+          0.005696627341272852
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.07462969213782925,
+        "ci95": [
+          0.07053616592779138,
+          0.07900842958458978
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.11024067200276359,
+        "ci95": [
+          0.10430951115368084,
+          0.11653305492123141
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.2109375,
+            "wilson_ci95": [
+              0.14921308750498039,
+              0.28950671534064165
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0013749294211613228
+          },
+          "conditional_target_probability": {
+            "mean": 0.09731188770070537
+          },
+          "candidate_probability_mass": {
+            "mean": 0.01319131641357434
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1953125,
+            "wilson_ci95": [
+              0.1359396128283779,
+              0.2724407199007913
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.003433718451250536
+          },
+          "conditional_target_probability": {
+            "mean": 0.10298670468543844
+          },
+          "candidate_probability_mass": {
+            "mean": 0.03346053301227786
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.015625,
+            "wilson_ci95": [
+              0.004295449710144082,
+              0.055180976679817195
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004513895412147801
+          },
+          "conditional_target_probability": {
+            "mean": 0.06114309867294182
+          },
+          "candidate_probability_mass": {
+            "mean": 0.07640210234935002
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.0112728081993675
+          },
+          "conditional_target_probability": {
+            "mean": 0.03707707749223138
+          },
+          "candidate_probability_mass": {
+            "mean": 0.31790873623585214
+          }
+        }
+      }
+    },
+    "guard_all": {
+      "restricted_accuracy": {
+        "mean": 0.3125,
+        "ci95": [
+          0.2890625,
+          0.3359375
+        ]
+      },
+      "unrestricted_accuracy": {
+        "mean": 0.0390625,
+        "ci95": [
+          0.0234375,
+          0.0546875
+        ]
+      },
+      "raw_target_probability": {
+        "mean": 0.01772943472350514,
+        "ci95": [
+          0.016193256399923105,
+          0.019425163358372112
+        ]
+      },
+      "conditional_target_probability": {
+        "mean": 0.12598046922329048,
+        "ci95": [
+          0.12085969929070496,
+          0.13156483687622594
+        ]
+      },
+      "candidate_probability_mass": {
+        "mean": 0.10397062390563394,
+        "ci95": [
+          0.09907969800990947,
+          0.10905784904221358
+        ]
+      },
+      "candidate_argmax_tie_rows": 0,
+      "per_query": {
+        "0": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.9453125,
+            "wilson_ci95": [
+              0.8914150997002529,
+              0.9732597986186536
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.15625,
+            "wilson_ci95": [
+              0.10348354800906658,
+              0.22904810942897047
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.05337165770302464
+          },
+          "conditional_target_probability": {
+            "mean": 0.26781495589424176
+          },
+          "candidate_probability_mass": {
+            "mean": 0.18722392099573013
+          }
+        },
+        "1": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.1875,
+            "wilson_ci95": [
+              0.12936141696376852,
+              0.2638491807071743
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.005598668507438449
+          },
+          "conditional_target_probability": {
+            "mean": 0.09777535209769295
+          },
+          "candidate_probability_mass": {
+            "mean": 0.05384359981140271
+          }
+        },
+        "2": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.09375,
+            "wilson_ci95": [
+              0.054443804399147026,
+              0.15672997257307855
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.004920886787814683
+          },
+          "conditional_target_probability": {
+            "mean": 0.07527773143282858
+          },
+          "candidate_probability_mass": {
+            "mean": 0.06319904883273905
+          }
+        },
+        "3": {
+          "n": 128,
+          "restricted_accuracy": {
+            "mean": 0.0234375,
+            "wilson_ci95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          },
+          "unrestricted_accuracy": {
+            "mean": 0.0,
+            "wilson_ci95": [
+              0.0,
+              0.029136956273508416
+            ]
+          },
+          "raw_target_probability": {
+            "mean": 0.007026525895742784
+          },
+          "conditional_target_probability": {
+            "mean": 0.06305383746839871
+          },
+          "candidate_probability_mass": {
+            "mean": 0.11161592598266387
+          }
+        }
+      }
+    }
+  },
+  "contrasts": {
+    "damage_native_minus_grouped_accuracy": {
+      "mean": 0.828125,
+      "ci95": [
+        0.794921875,
+        0.859375
+      ]
+    },
+    "repair_guard_minus_grouped_accuracy": {
+      "mean": -0.0078125,
+      "ci95": [
+        -0.01953125,
+        0.00390625
+      ]
+    },
+    "deficit_native_minus_guard_accuracy": {
+      "mean": 0.8359375,
+      "ci95": [
+        0.802734375,
+        0.8671875
+      ]
+    },
+    "specificity_guard_minus_mean_shams_conditional_probability": {
+      "mean": 2.9983078681988433e-05,
+      "ci95": [
+        -2.2036478447958055e-05,
+        8.280474861681432e-05
+      ]
+    },
+    "guard_minus_grouped_raw_target_probability": {
+      "mean": -0.0001570844056075987,
+      "ci95": [
+        -0.00025182658780706753,
+        -5.887288709168097e-05
+      ]
+    },
+    "guard_minus_grouped_candidate_mass": {
+      "mean": 0.007716542878707839,
+      "ci95": [
+        0.006255437290070632,
+        0.00909160866297279
+      ]
+    },
+    "guard_minus_best_point_sham_conditional_probability_descriptive": {
+      "sham": "sham_4",
+      "mean": -8.622663369358232e-05
+    },
+    "secondary_guard_block5_minus_grouped_accuracy": {
+      "mean": 0.001953125,
+      "ci95": [
+        -0.00390625,
+        0.007861328124999734
+      ]
+    },
+    "secondary_guard_all_minus_grouped_accuracy": {
+      "mean": 0.208984375,
+      "ci95": [
+        0.181640625,
+        0.23442382812499973
+      ]
+    }
+  },
+  "runner_validity": {
+    "all_pass": true,
+    "checks": {
+      "complete_finite_outputs": true,
+      "parameters_unchanged": true,
+      "source_parameter_values_preserved": true,
+      "noop_probabilities": true,
+      "guard_first_block_values": true,
+      "first_block_query_suffix": true,
+      "unedited_first_block_keys": true
+    },
+    "diagnostics": {
+      "noop_probability_error": 0.0,
+      "guard_value_state_error": 2.1316282072803006e-14,
+      "query_suffix_state_error": 2.1316282072803006e-14,
+      "unedited_key_state_error": 0.0
+    },
+    "parameters_before_sha256": "9727c8b37eeaef2943a17936a984ee4688ff3566e575fe6486fbcdf8722779b6",
+    "parameters_after_sha256": "9727c8b37eeaef2943a17936a984ee4688ff3566e575fe6486fbcdf8722779b6",
+    "source_float32_parameter_sha256": "e563ffe10e2eefeaf9d9a869d4cb43369cdddbe6875789caec4e1abd7c6adfd9"
+  },
+  "bootstrap": {
+    "seed": 10600003,
+    "draws": 2000,
+    "unit": "dictionary row",
+    "stratified_by": "query_pair",
+    "shared_across_conditions": true
+  },
+  "scoring": "16-choice argmax; ties resolved by first index in frozen candidate order",
+  "interval_scope": "Individual paired percentile intervals; not simultaneous intervals.",
+  "raw_sha256": {
+    "native": "9c85f6a1f067c38f3832528180009c280155287923be53a82dd5495f1d7d3a5c",
+    "grouped_physical": "58febe8163739961a2a543d1fbb87d3b6f6a6d07f55ed5b97417607e69898a1a",
+    "grouped_canonical": "7e91673f7beae88e2ceb6e828d80008613cae060b52a788beac680324b672cf6",
+    "grouped_noop": "7e91673f7beae88e2ceb6e828d80008613cae060b52a788beac680324b672cf6",
+    "guard_block0": "c6aa3768d748a7b88741d8f0679251ad683372f3a48dbd972b460ccf443bd1b4",
+    "sham_0": "0d38684f46a7df8b16b75df5d2c52d3d9ca1d6a5aecb5182926771595fc9af11",
+    "sham_1": "d4e7ced2bc46b035acb312b3782771df600e5860ab6936153ac4ff9d71263805",
+    "sham_2": "5c0e223db7ec67a9dad2373df78386e33ffe1a2794a5a7a49529bb97e6711a63",
+    "sham_3": "9031c0a157d1f05822d80e5a17949a49fcfb4ff96adea354d114c8df520c8e31",
+    "sham_4": "0e93c33826afb07526433488aaa4cad9a6b24a03ee8966a2425020fad9f7a09f",
+    "sham_5": "c2553bce65db675a2700eb8559efbc1babb9365cbbca8457331dc508cbc634a2",
+    "sham_6": "c19b6285b058947a1a941248f4a7ea5b78a5d361c197b9e6239b327aedda359e",
+    "sham_7": "d041323860c01f7ab40ae0d815c12ce0062d4eecd5177e7ddcdc8fb120fce67b",
+    "guard_block5": "0fb8c169c94b6eafd2691b6ba570ab92111a3c02366b7e7f47a1269a1ac62dc4",
+    "guard_all": "3bf5a10127823ecb4e5bf47b1e4613097871a47ec5ca00ffa878c8ca4769ae26"
+  },
+  "protocol_sha256": "084ac5849d1170cb7d9bd29dd39a0182025efad5eb0ad88499b6e4d221788dfc",
+  "inputs_sha256": "1fa038409577b5a7eec75cdcdee4cf3d547e7707da1eccf75158594be46410fe"
+}

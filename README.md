@@ -1,11 +1,50 @@
 # AI understanding AI
 
-An open, locally executed pilot: can an AI-written explanation of a tiny neural
+An open, locally executed study: can an AI-written explanation of a neural
 network predict its behavior under causal interventions?
 
 **[Read the paper website](https://posix4e.github.io/ai-understanding-ai/)** for a
 plain-language explanation, results, limits, and links to all evidence.
 See [which next steps earlier papers recommend](outputs/PAPER_NEXT_STEPS.md).
+
+## Experiment 6: the first-block repair failed to transfer to pretrained GPT-2
+
+**The repair that worked in the tiny models did not recover lookup behavior in
+this pretrained GPT-2 test.** GPT-2 small has 124,439,808 parameters and 12 blocks.
+Its weights were not trained or fitted here. A native-only calibration selected
+one prompt format before testing 512 new dictionaries in fifteen fixed conditions.
+
+The original float32 run remains classified **implementation_invalid**: two
+first-block state errors exceeded the fixed numerical tolerance. A separately
+registered float64 repeat passed all implementation checks but failed **all three
+primary repair criteria**: improvement, near-native recovery, and advantage over
+the average of eight matched masks. This repeat reused the same 512 dictionaries;
+it is a disclosed numerical follow-up, not an independent confirmation.
+
+| Condition in the float64 repeat | Correct among 16 answer choices | Correct unrestricted next token |
+| --- | ---: | ---: |
+| Original order | 477/512 (93.16%) | 445/512 (86.91%) |
+| Grouped order with original position tags | 53/512 (10.35%) | 0/512 (0%) |
+| Primary first-block guard | 49/512 (9.57%) | 0/512 (0%) |
+| Guard in all 12 blocks, secondary | 160/512 (31.25%) | 20/512 (3.91%) |
+
+The 16-choice score ranks a fixed set of numeric answer tokens. It is not
+ordinary text-generation accuracy. The secondary all-block result cannot rescue
+the failed primary claim. First-block value states were restored to within
+2.14e-14 in the repeat, but restoring those states did not restore final answers.
+This is one checkpoint, one selected format, and an externally supplied mask;
+it does not establish that model size alone caused the difference.
+
+Read the [E6 summary](outputs/experiment6/SUMMARY.md),
+[precision-repeat results](outputs/experiment6/precision_repeat/RESULTS.md),
+[original result](outputs/experiment6/RESULTS.md),
+[independent repeat audit](outputs/experiment6/precision_repeat/independent_audit.json),
+and [reproduction guide](outputs/experiment6/REPRODUCE.md).
+Both the [original registration](https://github.com/posix4e/ai-understanding-ai/commit/6ae8866e675cead908ae40c1862e81ee269eaf42)
+and [precision-repeat registration](https://github.com/posix4e/ai-understanding-ai/commit/6edaaac7c9a1eab41f4cc38ab700d212dcf866dc)
+were publicly verified before their respective runs. Original files, failures,
+thresholds, and predictions remain preserved. All model inference ran locally
+on CPU.
 
 ## Experiment 5: the repair transfers to fresh models and a complete layout class
 
@@ -226,8 +265,10 @@ can establish effects of specified interventions without uniquely identifying th
 represented algorithm. Exploratory findings and confirmatory results are kept
 separate; failures and deviations remain visible.
 
-Experiments 3 and 4 tested one changed layout and a specified repair. Next: test
-the repair across held-out layouts and newly trained models, isolate which
-edges are necessary, and investigate the retained failure case. Comparisons
-across position schemes and intervention-induced states would test broader
-mechanistic claims. These further experiments have not run.
+Experiment 5 tested a complete layout class and six new training seeds; its
+primary repair passed, while a separate edge-effect claim failed in two models.
+Experiment 6 then tested the first-block repair in pretrained GPT-2 and found
+that it did not recover final answers, even in a numerically valid repeat.
+Further tests of longer lists, other position schemes, and propagation through
+later blocks would require separate plans. The current results establish neither
+a universal repair nor a mechanism shared by all language models.

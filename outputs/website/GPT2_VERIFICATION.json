@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-10-03T22:11:56.737827+00:00",
+  "scope": "E6 follow-up website and frozen evidence",
+  "local_url": "http://127.0.0.1:8768/",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "document_width": 1280
+    },
+    {
+      "width": 375,
+      "height": 844,
+      "document_width": 375
+    }
+  ],
+  "html_links_checked": 57,
+  "precision_manifest_files_unchanged": 128,
+  "original_paper_unchanged": true,
+  "independent_scientific_audit": "../experiment6/precision_repeat/independent_audit.json",
+  "source_hashes": {
+    "docs/index.html": "5140a10591fec5048cba676c287a915eb683d6639bd2183955141b686e227a62",
+    "docs/styles.css": "39d49c9d1b35c4d49c575f435b5c0385fbdca7732d8ec5de344a7294cdd2c2db",
+    "docs/paper.pdf": "1994dd810ff49aabec46be4c40c9d04e4d278a45fc7b3a104db6b00f53a64036"
+  }
+}

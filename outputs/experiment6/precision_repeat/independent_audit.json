@@ -1,0 +1,369 @@
+{
+  "audit_kind": "independent_saved_output_audit_after_registration",
+  "registration": "6edaaac7c9a1eab41f4cc38ab700d212dcf866dc",
+  "model_forwards": 0,
+  "official_analysis_imports": false,
+  "audit_tool_sha256": "7b1ac32c470f0d5715a4d3906768c20251b2bc4bef16ee95edb5d4f1efa8a9b7",
+  "started_utc": "2026-10-03T22:08:25.333760+00:00",
+  "registered_files": {
+    "count": 128,
+    "all_unchanged": true,
+    "sha256": {
+      "experiment6/CALIBRATION_PLAN.md": "1c8c3d280798afd295b01a21786bd52440388dce6a650b267a3df9ae2d724192",
+      "experiment6/DESIGN_REVIEW.md": "91c16e647b4109b191591009df0c0820a422fa174b5e06dc5c5e76353f2410f8",
+      "experiment6/PRECISION_PLAN.md": "31173d70a3ef798164820368138af38541da1eb9cd7067dd68ccf25b57e65f28",
+      "experiment6/PREDICTION.md": "78a540e1cee14c97de9468090ef862c0a595e458230db1b410f192c1ecb05d9b",
+      "experiment6/PROTOCOL.md": "4addb7b4301840bbd04104d098886689e707469abcde70ba5d336d65eb216b2e",
+      "experiment6/__init__.py": "bfe937303e0029962ba7b0a2aaced74faef9e28b0589862d25f5f098ee76675f",
+      "experiment6/calibrate.py": "d86d7715492c6a6b8f1e506b3f47c5995aa5b9bb42df2bd0d55e28596c53c922",
+      "experiment6/compare_precision.py": "057c72c6b3fd9d326d8ac47f26670875a8cf1b30e6eb2895232d7b05d08d60ac",
+      "experiment6/conditions.py": "a94b07884ca84e00d133e164a4a1b339e9d966e6464ce98c2c7b1d7faf1db6ba",
+      "experiment6/data.py": "bf129247fff674ad8746d54cdfa23f06dea603955e5f7fd77833a837dcccf7ab",
+      "experiment6/download_model.py": "cae48bc2d7f21ab4119ed98f55a851fbf1e952fa67872b8881b1c58094f40145",
+      "experiment6/model_adapter.py": "a91f3243dc81ce224b4185dc7b64071c7102f83c7333dbd907dbb7f524861b3f",
+      "experiment6/precision_protocol.json": "084ac5849d1170cb7d9bd29dd39a0182025efad5eb0ad88499b6e4d221788dfc",
+      "experiment6/precision_repeat.py": "ccfdd9d5361d5ca75e9a8304dc766aa6f2fd3a1bdf42198dd10b45bfef491b07",
+      "experiment6/predictions.json": "d1fabe8908a631fa904ced8f12139c9ebb5ebfe76660f6078401ae9fc707447a",
+      "experiment6/protocol.json": "3c5c62958e11f73ea065ab08cd48e09fab96a4b1df15848472d7f1128f112d8c",
+      "experiment6/requirements.txt": "0790f0e271cfbe15d5d22de4b5a977b0f6f38cefe930bc4841ae1e87332a4388",
+      "experiment6/run_phase.py": "6f869f967091f056b29c85e9a368c314cc2300188c29da340cddad5cef6d27b8",
+      "experiment6/score.py": "d4750a7719d41a11edf214dd389fb848d4227f2e31883b0f76667a38f852bd42",
+      "experiment6/test_adapter.py": "0e5c83ff22d34410c168e1a529e634bba80eefcf8f0581f645b47065e50eb467",
+      "experiment6/test_conditions.py": "df19152a513c8877f11980971c60ae2dee427e9364dbf438393be085ff36ae28",
+      "experiment6/test_score.py": "08c3243e0cb3934443ca13835f0e8d0fecd793e7747213f453b040c0531913c2",
+      "outputs/experiment6/RESULTS.md": "328deaba7305069876cac08bb2470031ca7f47eeecb591c896fed8bb77e0853a",
+      "outputs/experiment6/all_predictions.csv": "8e3868fe8d34673a1f117ba667545c58555ff22e2c976c68c891b5829fd22be9",
+      "outputs/experiment6/attempt1_aborted_native_check/ABORT.json": "5a48741bac5d8c29113e2c4f9b7fc1a2340ad8d0e0ef1ad5162a114c56c2b44a",
+      "outputs/experiment6/attempt1_aborted_native_check/remote_lock.json": "91f4b14700a415bc6e3ca077c029e7080328f3e5ec1cd8d7ce3ba9ad18ca879b",
+      "outputs/experiment6/attempt1_aborted_native_check/started.json": "d7a84ed01008fbd88f5432758e60c83d9c8ddc75dcaf9e51b2788aab875a85f8",
+      "outputs/experiment6/calibration_inputs.json": "97d8cf7abf6c9a4080f6c0f49df8cff35332c4e6e5733e9506d4cd748602952e",
+      "outputs/experiment6/calibration_manifest.json": "3af0f1885d9c297b2e30a6aef6caf1acc449b82afce009ebf0031387c4cc37f3",
+      "outputs/experiment6/calibration_results.json": "7fb6be91c2ee54c3bba34a88b5e4ca33941a94f56e868350b148c5289776c5a1",
+      "outputs/experiment6/calibration_rows.csv": "9e8182427357985c014392ec0f71f83e76876f2a8088090524efb4725954df67",
+      "outputs/experiment6/calibration_started.json": "e4ce524f5b77ad69553ddf78a454281b804fd5a181e48318dc038ccf358830d5",
+      "outputs/experiment6/confirmation_inputs.json": "1fa038409577b5a7eec75cdcdee4cf3d547e7707da1eccf75158594be46410fe",
+      "outputs/experiment6/confirmation_manifest.json": "95aebbef63eb32a592f73bb0653e5d1dc1f72dad076bd851d78e6b7efe86e517",
+      "outputs/experiment6/confirmation_token_audit.json": "fb5489d53c837fd9ce11da8329440271548c4b113af5d730320cdcec43426a9c",
+      "outputs/experiment6/confirmatory/batches/batch_0000.npz": "771eb1ce70c07fd19898d0d76a8c2c45b4e0cc13fd24777dc1948df8da95d8d0",
+      "outputs/experiment6/confirmatory/batches/batch_0008.npz": "d7c06b17d0d64071acc4c9d11daa60468ac0c34b51bcdd86558d1f107aba5e9c",
+      "outputs/experiment6/confirmatory/batches/batch_0016.npz": "07c02d01473f21f641eb3bea54d76b09b38cfc65faf129a66e1589913a0365c5",
+      "outputs/experiment6/confirmatory/batches/batch_0024.npz": "f0a041571581cf70a4a0567dd338dde459351fe7be511790943e8ef6bba1b2ea",
+      "outputs/experiment6/confirmatory/batches/batch_0032.npz": "36fce36db2d1705fa4e1664e00b7ceef0d0572257df5afe68175a461462aa8eb",
+      "outputs/experiment6/confirmatory/batches/batch_0040.npz": "e8f00a19832645c97d80ea2a9fa6b771b3c9c2d7e36440708a17c0fd01a20a65",
+      "outputs/experiment6/confirmatory/batches/batch_0048.npz": "d00bb6081882a9ec56d3ecfb3837c76bf3bff66c464bde441b2aeffd3099aa3d",
+      "outputs/experiment6/confirmatory/batches/batch_0056.npz": "43cb47feffa3e84cb0cb54f5f59d5ff5b28d27a27d878009fb05c15e8b08cb17",
+      "outputs/experiment6/confirmatory/batches/batch_0064.npz": "c806d4990a37a1e96135a7e8d71777aab6623726cdd59f6560bbdf78cf45f45e",
+      "outputs/experiment6/confirmatory/batches/batch_0072.npz": "e2e894c2dc2c71f4f18a9d2ecdebfdb00d94e67c503d4c10c865d15be8d6ce36",
+      "outputs/experiment6/confirmatory/batches/batch_0080.npz": "e3308e7b867604f862c02260980a481ba3393e9bda68b1c6e67703b8435ce07f",
+      "outputs/experiment6/confirmatory/batches/batch_0088.npz": "2e46d3bb52674be770fe9e4f5038e8072381b768a7edaa21294c931ed6a35639",
+      "outputs/experiment6/confirmatory/batches/batch_0096.npz": "680eb10bd3568d082a28688ed55a88ff07a2d80e24f89d9de4de99e38d7c95d2",
+      "outputs/experiment6/confirmatory/batches/batch_0104.npz": "5a79250c4788706c63bd5d866102a45e81655748e9531d339fb394f468b8c5b5",
+      "outputs/experiment6/confirmatory/batches/batch_0112.npz": "a1b313688587b4e92073b8cc64f21bc0cc418a922400c9434e15c67a809a731a",
+      "outputs/experiment6/confirmatory/batches/batch_0120.npz": "bf11c78f29ae5302a04d1f9b6dc34f2f80bf2993dbb9f55abc24f04e71da8c55",
+      "outputs/experiment6/confirmatory/batches/batch_0128.npz": "ae0736e945049556f9c92a169e605e5366ea9386a5cafda37b09eeaa1d0152d4",
+      "outputs/experiment6/confirmatory/batches/batch_0136.npz": "d82cbd615a0f4fdfcb4ebefc82423a6744ee72889ae274159dd6843a92d0f1be",
+      "outputs/experiment6/confirmatory/batches/batch_0144.npz": "9914b6cb97155e094d261a277018ea3eb2f846904826dfe346cb2f8a87102d06",
+      "outputs/experiment6/confirmatory/batches/batch_0152.npz": "578fc4fdc0c500cd3b14b12fb070dde6635ac39274380d352186bc7c80134029",
+      "outputs/experiment6/confirmatory/batches/batch_0160.npz": "d2bb3ee720ba0db5bd4096a39ec31a4f5c87ee4c38354c6b62150aa9211aff7a",
+      "outputs/experiment6/confirmatory/batches/batch_0168.npz": "a15e5cd30fe5a9a39c631ef54886c6aa4a03fc59e1fb4f5aea078b9efe8b7595",
+      "outputs/experiment6/confirmatory/batches/batch_0176.npz": "8117a23e09c8d6f844d4bacc385a5c11e818c61d5951c6027c9b68687eea5974",
+      "outputs/experiment6/confirmatory/batches/batch_0184.npz": "bd1e6a5c0f9353fe3e4e434f84be150a507e215c9a03dc364f30b7a84ab103ac",
+      "outputs/experiment6/confirmatory/batches/batch_0192.npz": "279d44034bae7e2ce481d521fc4e6eb867d8cfabf7e2feac098990496018c98c",
+      "outputs/experiment6/confirmatory/batches/batch_0200.npz": "8a5eb62877cd4120bb83b7a5aeaafe847b5b9ab1e90d5cf7656c341cfca1e829",
+      "outputs/experiment6/confirmatory/batches/batch_0208.npz": "46d0d623f127e6288c47a67b577b7384ab4f92c5a82ff92a4feb6a3f3ba89740",
+      "outputs/experiment6/confirmatory/batches/batch_0216.npz": "47be1d26a5aeb57847bb1d4d020f5450d9572d5228e36a2ce67a59991d6e3a01",
+      "outputs/experiment6/confirmatory/batches/batch_0224.npz": "bf16120c73b1f37748eb1bb617433f63440dd90a9b38eccb7974ce5a4f73be47",
+      "outputs/experiment6/confirmatory/batches/batch_0232.npz": "6b07d2ccdfa867a25648051e84d90aea4c9dda7d2f7eda5af25fb6a53e77a2e5",
+      "outputs/experiment6/confirmatory/batches/batch_0240.npz": "b84605a4b88492752fbab916ea2721ea167137d7d09254646e72d4f79ebbea95",
+      "outputs/experiment6/confirmatory/batches/batch_0248.npz": "92e36ac0af8aa0e32d21303a6a31b8726375b3570f2b1d3c96fbef0e062a797a",
+      "outputs/experiment6/confirmatory/batches/batch_0256.npz": "726f09691deec5a49f44d5fe8941cd9d6690f5503c0f2f8a25436b062c7c97e5",
+      "outputs/experiment6/confirmatory/batches/batch_0264.npz": "90abbf83e0156744ce1ff9f7382a4daacec5c10a9823ac90d3c04b3c6b4909ae",
+      "outputs/experiment6/confirmatory/batches/batch_0272.npz": "edd737d04f1d78a6342ff3a83bbde66afe3accfbb4e74b534c6bfc85b03d5ecf",
+      "outputs/experiment6/confirmatory/batches/batch_0280.npz": "6d96a967c4dadabd651c2deb8284060a5f487da09678484688342fc548b7f41d",
+      "outputs/experiment6/confirmatory/batches/batch_0288.npz": "2f18d005790dec73e80918946cf67819e6c1c4af203135b461ebc0e6f3f97c50",
+      "outputs/experiment6/confirmatory/batches/batch_0296.npz": "cfde34bb2661cfd5346e52d364b1ae22614afc31e1a521fd8354ac3fcbe4a658",
+      "outputs/experiment6/confirmatory/batches/batch_0304.npz": "41e418242c6c14df0349562a412fd7dc1a1640204ae727d83567c18e0ed4cbab",
+      "outputs/experiment6/confirmatory/batches/batch_0312.npz": "b7a81dafb70ea715c64da36f30d41a7efe85d490af164d5a411dcf0ec8eb634f",
+      "outputs/experiment6/confirmatory/batches/batch_0320.npz": "8ec7afb22c9af05d1e869b5d5bb4d48dd132f063dfc17ab41bd0391dd165c86d",
+      "outputs/experiment6/confirmatory/batches/batch_0328.npz": "289fd04af13869c0f4f15e0ae148e00a2bc96c45f58794ed543d75ef85a76f16",
+      "outputs/experiment6/confirmatory/batches/batch_0336.npz": "688568ef76cf3926ca17f14851ecefcda17d0db30e925717d76e35ce1d0668da",
+      "outputs/experiment6/confirmatory/batches/batch_0344.npz": "783b18e36d444a29b2154138445673b31b2349d63c2e224ffba5199326a406c2",
+      "outputs/experiment6/confirmatory/batches/batch_0352.npz": "1a3da0407356d34be6f64b22120b85a93af8070cf1ef5a144343381f20c43a55",
+      "outputs/experiment6/confirmatory/batches/batch_0360.npz": "0c4a0221df43068c0c3b645d403e1a48c7397809270603acd5c17aaf6bf6ddc1",
+      "outputs/experiment6/confirmatory/batches/batch_0368.npz": "ad1107c567dcd553cde232b9a85967feb9a1629c045b3976a74ce4981746e954",
+      "outputs/experiment6/confirmatory/batches/batch_0376.npz": "38ae9f87375b5bca56ea139f832f1a0aab1cbfce4d4e3edf7f44802a565b99a4",
+      "outputs/experiment6/confirmatory/batches/batch_0384.npz": "06baff77310c8e90d11a736a79450286f16df9b6b021b5e0447697ba92b8b89e",
+      "outputs/experiment6/confirmatory/batches/batch_0392.npz": "7469fe24a821acc10cae2369f835a370b12fd5f51ca73430a2cbd14e50b02f89",
+      "outputs/experiment6/confirmatory/batches/batch_0400.npz": "e0f719c9767a4cb5c23703c0eb34f1d70fb242a1967fac5a2fefc855d61d1cfa",
+      "outputs/experiment6/confirmatory/batches/batch_0408.npz": "69d973c8bef9c300add620c6a6455b0e2b982902a0f7f11ca0fab38adcb2eee3",
+      "outputs/experiment6/confirmatory/batches/batch_0416.npz": "1fffbc5ac77c7625671b483ec0b6b7144683a17c1865e792cbc6014581466ff9",
+      "outputs/experiment6/confirmatory/batches/batch_0424.npz": "fa6cc766e18a03aa95f3046183b33247ce68307de98fe60532c36c7b3710f3b3",
+      "outputs/experiment6/confirmatory/batches/batch_0432.npz": "ebf7b699939614cb0dac1cdeb72c5f169281d96d87e69a452bc80fa1bd383af4",
+      "outputs/experiment6/confirmatory/batches/batch_0440.npz": "128bb72c9437ee1d6d595fc988f2862c3797d6bf10e918821e2dcfed4873a88e",
+      "outputs/experiment6/confirmatory/batches/batch_0448.npz": "f077f9db22e79e1116676aa25e63a38bdc8a0a12d23be0835bd0d7b6be24b289",
+      "outputs/experiment6/confirmatory/batches/batch_0456.npz": "cad5fd0fe8d6972ff3ac380396087bc5b4e38e1068a3fce9e771f1325c56ce8f",
+      "outputs/experiment6/confirmatory/batches/batch_0464.npz": "4b57d6698c329a48cb59a56e48d134ec3923f187d5fd709695659de2d499718f",
+      "outputs/experiment6/confirmatory/batches/batch_0472.npz": "212b3bfda19cff77f7a406a5bd174f82698ffa52e16f59cd543105190ac86acd",
+      "outputs/experiment6/confirmatory/batches/batch_0480.npz": "96a0147dec80243631d2b8e8e94b62894acadae901859aae3a11dce9d2605713",
+      "outputs/experiment6/confirmatory/batches/batch_0488.npz": "73c89a1147c5f24b8779b2af7e4be600f6e3345cf1a91d9fbb7d4c6cab5f9e78",
+      "outputs/experiment6/confirmatory/batches/batch_0496.npz": "13f9b4b8bd3bf8fe0250c2eab034735c29e35360a57ecaeea87d7fa738bcb84f",
+      "outputs/experiment6/confirmatory/batches/batch_0504.npz": "24c876cf5e8ead5273d8d9208355683d0e08cd88f1f143a4beed4c3b8260cc4e",
+      "outputs/experiment6/confirmatory/finished.json": "083c4f5e8ad7f1fd4579f2ea59e30865f29e0ca7ee866cc439746b007a74fd69",
+      "outputs/experiment6/confirmatory/grouped_canonical.npz": "1734864abe4cc7137a9050992f0d86f754f306978f9b45d4021e1b52ec57db51",
+      "outputs/experiment6/confirmatory/grouped_noop.npz": "1734864abe4cc7137a9050992f0d86f754f306978f9b45d4021e1b52ec57db51",
+      "outputs/experiment6/confirmatory/grouped_physical.npz": "79c6dde8f76a1e150a8fcaa6cc463b91e50ea9c3c58623828de8427211c2f9b7",
+      "outputs/experiment6/confirmatory/guard_all.npz": "e070573ca91172aeaa173635a52976546dd5c751f0a947285b65fbc79c04c290",
+      "outputs/experiment6/confirmatory/guard_block0.npz": "de4048bf92fb4a0414b3d276510692b3d5031e0c62b1321995b32da927e92a47",
+      "outputs/experiment6/confirmatory/guard_block5.npz": "5bafa9e6030ea1b6226f70024b72d75a3eff4ef4a59ee4884c577d357c5c4ffc",
+      "outputs/experiment6/confirmatory/ledger.json": "2b0383be06966ab0606d4e50778832ac0b2895be6caaec06a61a8dd0a2172b49",
+      "outputs/experiment6/confirmatory/native.npz": "c60efc555314d0e244a279cd3de3dd1027a1625ed4e20d37260cde6db6c2e306",
+      "outputs/experiment6/confirmatory/scores.json": "942dce51ebef7afb701668099f294859c6e40227b71608a3be9447039c8061c5",
+      "outputs/experiment6/confirmatory/sham_0.npz": "67ce446494e742adc261d8215821ce29ba4dc27445426df4b96201e61b15ac95",
+      "outputs/experiment6/confirmatory/sham_1.npz": "4fba570e60b1d8494a3a27f168403aa10146c74465ccb018ba1fa663a275f1bf",
+      "outputs/experiment6/confirmatory/sham_2.npz": "788f9d9a4815fc3ed72d19f80e4865bad738c47405732631f51887d281c26e20",
+      "outputs/experiment6/confirmatory/sham_3.npz": "8bd0965401ecb88fb48ea4cdd4f41badc408da4c81c8f671efe5e883f8ee44fd",
+      "outputs/experiment6/confirmatory/sham_4.npz": "34a2450bd6b405facc25144e2191b4f0d50a98e979c1290d3fea501ec85fc353",
+      "outputs/experiment6/confirmatory/sham_5.npz": "5761d9b0700beec5ad085a4f98f1b1140bf9fadc1bd8cf741ad3ddad57f19633",
+      "outputs/experiment6/confirmatory/sham_6.npz": "407ffd8e618a1d83dbfb0cbd79b1e993b3314d6b37e3afeca897f45694c9fbe5",
+      "outputs/experiment6/confirmatory/sham_7.npz": "07fd722b2db0278936f3072ce72ea6d3e1c5f4bb4651ebd72a268774e4e3667d",
+      "outputs/experiment6/confirmatory/started.json": "4057b5236bb206ca22fc1674280621f16491472ff0e01ccb285655ab29726413",
+      "outputs/experiment6/confirmatory/validity.json": "45dd7ee880d7d2db148783d83cb9e7de7d6d8b7baaa9a1b8ae846c33a584ce7b",
+      "outputs/experiment6/environment.json": "f00e963c3ec54b752527ed79c59aa7f0127a3bf218d0092edc1cadcc577d47c1",
+      "outputs/experiment6/forecast_scores.json": "aec84406ec25fbc36282f2e404e7922acdbd014fd963c056258f755549388234",
+      "outputs/experiment6/forecasts_vs_results.csv": "dd32c074fe0b1174ed9a59ac2e6e1abc6b09b004b83cd173e2b036becf341016",
+      "outputs/experiment6/independent_audit.json": "d74618ef2d0a5e7d3ed3e9edf29bbe24b47bcdeb31058861d963ec45c71ee1b4",
+      "outputs/experiment6/input_audit.json": "b0e8ae840e0c946fbef699750a0f7328faa03e9d052593381b671687c8e8e463",
+      "outputs/experiment6/model_manifest.json": "1a7cde10716845998cb9f1eafe32da2400e9ac9182ef7ff27f40d61bcdc2f738",
+      "outputs/experiment6/probability_diagnostic.json": "5c76263be838532c03e78621d55bbe6ad501e299faa61887c546dc8b1b52ed98",
+      "outputs/experiment6/remote_lock.json": "4b9259812f976b2e7a0474194df5c392db571a690bcd6b257786c36401d747a0",
+      "outputs/experiment6/token_audit.json": "e8ab8d4ed4185a50e6dbbc9981426cec1579c62818aadc06381c18dfb887d6c2"
+    }
+  },
+  "model_and_labels": {
+    "model_files_verified": 7,
+    "answer_ids_match_vocabulary": true,
+    "labels_from_frozen_inputs": true,
+    "unique_maps": 512,
+    "calibration_overlap": 0
+  },
+  "saved_arrays": {
+    "merged_conditions": 15,
+    "batch_files": 64,
+    "rows_per_condition": 512,
+    "all_batch_hashes_match": true,
+    "all_merged_hashes_match": true,
+    "batch_arrays_equal_merged_arrays": true,
+    "all_rows_covered_once": true,
+    "all_probabilities_finite_and_valid": true
+  },
+  "implementation_evidence_scope": {
+    "independent_candidate_noop_max_error": 0.0,
+    "runner_reported_validity_flags_consistent": true,
+    "full_states_reconstructed": false,
+    "full_vocabulary_noop_reconstructed": false,
+    "runtime_parameter_hashes_independently_reconstructed": false,
+    "source_value_preservation_independently_reconstructed": false,
+    "limitation": "State identities, full-vocabulary no-op and runtime parameter hashes are runner-reported measurements, not independently recoverable from saved candidate probabilities. Frozen checkpoint file hashes were independently checked."
+  },
+  "official_score_comparison": {
+    "numeric_scalars": 865,
+    "max_absolute_difference": 5.551115123125783e-17,
+    "absolute_tolerance": 1e-10,
+    "all_compared_fields_agree": true,
+    "scores_sha256": "9c0a8fb30c8fbb054b3143f2203b6c9ae0e10a47bd6f20bf2328087e8d418697"
+  },
+  "independent_recomputation": {
+    "classification": "repair_failed",
+    "all_primary_gates_pass": false,
+    "gates": {
+      "implementation_valid": true,
+      "native_overall_at_least_80_percent": true,
+      "every_native_query_at_least_70_percent": true,
+      "damage_point_at_least_10_percentage_points": true,
+      "damage_ci_lower_above_zero": true,
+      "repair_accuracy_ci_lower_above_5_percentage_points": false,
+      "native_minus_guard_accuracy_ci_upper_at_most_5_percentage_points": false,
+      "specificity_conditional_probability_ci_lower_above_02": false
+    },
+    "contrasts": {
+      "damage_native_minus_grouped_accuracy": {
+        "mean": 0.828125,
+        "ci95": [
+          0.794921875,
+          0.859375
+        ]
+      },
+      "repair_guard_minus_grouped_accuracy": {
+        "mean": -0.0078125,
+        "ci95": [
+          -0.01953125,
+          0.00390625
+        ]
+      },
+      "deficit_native_minus_guard_accuracy": {
+        "mean": 0.8359375,
+        "ci95": [
+          0.802734375,
+          0.8671875
+        ]
+      },
+      "specificity_guard_minus_mean_shams_conditional_probability": {
+        "mean": 2.9983078681988433e-05,
+        "ci95": [
+          -2.2036478447958055e-05,
+          8.280474861681432e-05
+        ]
+      },
+      "guard_minus_grouped_raw_target_probability": {
+        "mean": -0.0001570844056075987,
+        "ci95": [
+          -0.00025182658780706753,
+          -5.887288709168097e-05
+        ]
+      },
+      "guard_minus_grouped_candidate_mass": {
+        "mean": 0.007716542878707839,
+        "ci95": [
+          0.006255437290070632,
+          0.00909160866297279
+        ]
+      },
+      "guard_minus_best_point_sham_conditional_probability_descriptive": {
+        "sham": "sham_4",
+        "mean": -8.622663369358232e-05
+      },
+      "secondary_guard_block5_minus_grouped_accuracy": {
+        "mean": 0.001953125,
+        "ci95": [
+          -0.00390625,
+          0.007861328124999734
+        ]
+      },
+      "secondary_guard_all_minus_grouped_accuracy": {
+        "mean": 0.208984375,
+        "ci95": [
+          0.181640625,
+          0.23442382812499973
+        ]
+      }
+    },
+    "condition_means": {
+      "native": {
+        "restricted_accuracy": 0.931640625,
+        "unrestricted_accuracy": 0.869140625,
+        "raw_target_probability": 0.20297897353773636,
+        "conditional_target_probability": 0.3576487357037046,
+        "candidate_probability_mass": 0.5539457595293036
+      },
+      "grouped_physical": {
+        "restricted_accuracy": 0.09765625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.005205074725047099,
+        "conditional_target_probability": 0.07104401030757435,
+        "candidate_probability_mass": 0.12278828521190907
+      },
+      "grouped_canonical": {
+        "restricted_accuracy": 0.103515625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.005116041276428236,
+        "conditional_target_probability": 0.07424956450988374,
+        "candidate_probability_mass": 0.10742304383331669
+      },
+      "grouped_noop": {
+        "restricted_accuracy": 0.103515625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.005116041276428236,
+        "conditional_target_probability": 0.07424956450988374,
+        "candidate_probability_mass": 0.10742304383331669
+      },
+      "guard_block0": {
+        "restricted_accuracy": 0.095703125,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004958956870820638,
+        "conditional_target_probability": 0.07010798423331768,
+        "candidate_probability_mass": 0.11513958671202454
+      },
+      "sham_0": {
+        "restricted_accuracy": 0.09375,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004882647785239738,
+        "conditional_target_probability": 0.07007364071075176,
+        "candidate_probability_mass": 0.11358258927514567
+      },
+      "sham_1": {
+        "restricted_accuracy": 0.09375,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.0048815311020114,
+        "conditional_target_probability": 0.07007387661037603,
+        "candidate_probability_mass": 0.11354845915012188
+      },
+      "sham_2": {
+        "restricted_accuracy": 0.09765625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004851363071008207,
+        "conditional_target_probability": 0.07015289032030352,
+        "candidate_probability_mass": 0.11294970989492553
+      },
+      "sham_3": {
+        "restricted_accuracy": 0.09765625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.0048502690129368555,
+        "conditional_target_probability": 0.07015322925612877,
+        "candidate_probability_mass": 0.1129139838292913
+      },
+      "sham_4": {
+        "restricted_accuracy": 0.09765625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004928924397427531,
+        "conditional_target_probability": 0.07019421086701128,
+        "candidate_probability_mass": 0.1144944211207166
+      },
+      "sham_5": {
+        "restricted_accuracy": 0.099609375,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004820466721636109,
+        "conditional_target_probability": 0.06997834593026275,
+        "candidate_probability_mass": 0.11338929634608197
+      },
+      "sham_6": {
+        "restricted_accuracy": 0.099609375,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004819146654740812,
+        "conditional_target_probability": 0.06997757382465167,
+        "candidate_probability_mass": 0.11335229560180823
+      },
+      "sham_7": {
+        "restricted_accuracy": 0.09765625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004901032725211479,
+        "conditional_target_probability": 0.0700202417175998,
+        "candidate_probability_mass": 0.11499123480503762
+      },
+      "guard_block5": {
+        "restricted_accuracy": 0.10546875,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.00514883787098179,
+        "conditional_target_probability": 0.07462969213782925,
+        "candidate_probability_mass": 0.11024067200276359
+      },
+      "guard_all": {
+        "restricted_accuracy": 0.3125,
+        "unrestricted_accuracy": 0.0390625,
+        "raw_target_probability": 0.01772943472350514,
+        "conditional_target_probability": 0.12598046922329048,
+        "candidate_probability_mass": 0.10397062390563394
+      }
+    },
+    "bootstrap": {
+      "seed": 10600003,
+      "draws": 2000,
+      "paired": true,
+      "stratified": true
+    }
+  },
+  "all_audit_checks_pass": true,
+  "protocol_path": "experiment6/precision_protocol.json",
+  "manifest_path": "outputs/experiment6/precision_manifest.json",
+  "outcomes_path": "outputs/experiment6/precision_repeat/confirmatory",
+  "finished_utc": "2026-10-03T22:08:27.082581+00:00"
+}
