@@ -5,17 +5,34 @@ network predict its behavior under causal interventions?
 
 ## Experiment 2: head ablations and rescue
 
-Six models (the three original seeds plus three new seeds) now have frozen
-discovery data for single-head and all-head corruptions. The next registered
-test reserves 92 head-combination conditions across pairs, sole-head rescue,
-and cross-layer interventions. It compares an AI explanation against seven
-empirical baselines, including two with matching access to per-case discovery
-data. Controls are excluded from the primary, family-balanced score.
+**All six models passed Experiment 2's registered prediction and baseline
+comparison gates.** The test reserved 92 combinations of head ablations,
+sole-head rescues and cross-layer interventions per model, across the original
+three seeds and three new training seeds. No-op checks passed and clean held-out
+lookup accuracy was 100% in every model.
+
+The frozen explanation's family-balanced RMSE was **0.042–0.075** on mean target
+probability, below the fixed 0.10 threshold. **502/552 novel forecasts** were
+within 0.10; the per-model range was 78–88 out of 92, above the required 74.
+It beat the strongest of seven frozen baselines in each model, with paired
+95% loss-difference intervals below zero. Two baselines used matching per-case
+discovery information. Controls do not contribute to the primary score.
+
+This does not mean every forecast was right: **50 novel forecasts missed the
+tolerance**, with a worst error of **25.3 percentage points**. The explanation is a discovery-fitted, second-order numerical model
+of head interactions, not a uniquely identified internal algorithm. Its cross-layer
+predictions equal one empirical baseline; added value there is not established.
+
+Read [Experiment 2 results](outputs/experiment2/RESULTS.md),
+[all forecasts and errors](outputs/experiment2/forecasts_vs_results.csv), and
+[the independent skeptical review](outputs/experiment2/SKEPTICAL_REVIEW.md).
 
 See the [new protocol](experiment2/PROTOCOL.md),
 [prospective explanation](experiment2/PREDICTION.md), and
 [recent papers and next-step rationale](outputs/RECENT_PAPERS.md).
-Confirmation awaits remote preregistration verification; no results are claimed yet.
+The [preregistration commit](https://github.com/posix4e/ai-understanding-ai/commit/f4b3f1d73952e4fa449b2d4bf1f139769b0d75ad)
+and all 62 frozen file identities were remotely verified at 14:00:33 UTC on
+2026-10-03; confirmation started at 14:00:49 UTC. Experiment 1 remains preserved.
 
 ## Experiment 1: randomized dictionary lookup
 
@@ -119,6 +136,7 @@ can establish effects of specified interventions without uniquely identifying th
 represented algorithm. Exploratory findings and confirmatory results are kept
 separate; failures and deviations remain visible.
 
-Next: preregister head-specific ablations and rescue patches, more training seeds,
-varying key/value distances, and a broader routing/content composition test against
-a symbolic binding baseline. This pilot is complete; the next experiment has not run.
+Experiment 2 completed the head-ablation/rescue extension. Next: test varied
+dictionary layouts and genuinely held-out model/task settings, compare stronger
+interaction models, and measure whether interventions create unnatural internal
+states. These further experiments have not run.

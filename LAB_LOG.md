@@ -138,3 +138,32 @@ and evidence, not private conversations or internal model reasoning.
 - Reviewed recent primary literature at the user's request; see
   outputs/RECENT_PAPERS.md. CHIVE's lack of tool uplift and HyVE's validation
   failures reinforce the need for stronger baselines and independently tested code.
+
+## 2026-10-03 10:00–10:02 — Experiment 2 confirmation
+
+- Published registration `f4b3f1d73952e4fa449b2d4bf1f139769b0d75ad`.
+  Exact remote manifest/tree readback verified all 62 frozen file identities at
+  14:00:33 UTC, before the confirmation start at 14:00:49 UTC.
+- Evaluated 145 conditions on 2,048 cases for each of six models, including 92
+  reserved combinations (552 primary model-condition forecasts). All six clean
+  accuracies were 100%; no-op target-probability discrepancies were exactly zero.
+- All six models passed fixed predictive-adequacy gates and the paired comparison
+  against the best of seven baselines. AI family-balanced RMSE ranged 0.042–0.075.
+  Counts within 0.10 were 84, 83, 78, 85, 88, 84 out of 92, totaling 502/552.
+  The 50 misses remain visible; passing the registered aggregate criterion does
+  not imply per-condition or per-case perfection.
+- Cross-layer forecasts equal the case-logit-additive baseline by construction;
+  improvement over that baseline comes from within-layer interaction allocation.
+  The frozen explanation is a numerical surrogate informed by discovery, not
+  proof of unique semantic circuitry or natural head necessity.
+- Scoring, thresholds, forecasts, calibration tensors, inputs and checkpoints
+  were unchanged after registration. Report and raw results are under
+  outputs/experiment2; the original experiment remains intact.
+- Independent numerical review confirmed raw-array means, all 62 frozen hashes,
+  timing and paired intervals. Misses comprise 19 pair and 31 triple/rescue
+  conditions; the largest error is 0.25264. Triple/rescue family RMSE exceeds
+  0.10 in seeds 1 and 2 even though the predeclared balanced score passes.
+- As an explicitly post hoc diagnostic, the AI's point-estimate advantage
+  survives removing any single novel condition or any whole family in each
+  seed. No new confidence intervals were registered for this diagnostic. Unlike
+  E1, the overall advantage is not carried by one exceptional condition.
