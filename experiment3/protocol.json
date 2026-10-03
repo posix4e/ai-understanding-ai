@@ -1,0 +1,29 @@
+{
+  "experiment": 3,
+  "question": "Do parity-preserving trained position labels redirect content-addressed retrieval to the specifically implied value?",
+  "model_seeds": [0, 1, 2, 3, 4, 5],
+  "n": 2048,
+  "input_seed": 7100001,
+  "no_shifted_discovery": true,
+  "no_new_training": true,
+  "no_per_model_fit": true,
+  "primary": "All nine derangements, paired with their coherent slot-permutation controls; every condition and seed must meet point thresholds.",
+  "gates": {
+    "original_native_accuracy_min": 0.95,
+    "original_noop_max_probability_error": 0.000001,
+    "each_derangement_slot_accuracy_min": 0.90,
+    "each_matched_coherent_original_accuracy_min": 0.95,
+    "each_seed_mean_derangement_slot_minus_original_probability_ci95_lower_gt": 0.80
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 7200001,
+    "unit": "dictionary row; stratified within each of four query positions",
+    "pairing": "same row weights across all conditions and all six seeds",
+    "aggregation": "equal weight over nine derangements within each row before resampling"
+  },
+  "numeric_forecast_tolerance": 0.15,
+  "forecast_scope": "All 50 conditions, with controls and native-grouped references separately identified. Numeric adequacy is reported separately from mechanistic gates.",
+  "claim_scope": "Causal control of binding by externally assigned positional coordinates in six existing tiny trained models. Does not establish spontaneous layout transfer, unique internal algorithm, or novelty over all literature.",
+  "stopping": "Run the whole fixed grid once after public registration, retain every failure, and report all gates. No new maps, model selection or threshold changes after outcomes. Follow-up discoveries need a separately registered test."
+}

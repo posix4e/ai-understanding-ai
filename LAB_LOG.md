@@ -167,3 +167,39 @@ and evidence, not private conversations or internal model reasoning.
   survives removing any single novel condition or any whole family in each
   seed. No new confidence intervals were registered for this diagnostic. Unlike
   E1, the overall advantage is not carried by one exceptional condition.
+
+## 2026-10-03 — Experiment 3 prospective design
+
+- Continued toward a stronger structural finding. E3 asks whether externally
+  supplied position coordinates control which key and value become associated.
+  It does not reuse E2's fitted response surrogate or claim spontaneous transfer
+  to a new task format. No shifted-model discovery measurements were collected.
+- Kept all six existing checkpoints, all nine tokens, query index 8 and physical
+  causal masking fixed. Grouped all keys before all values. Enumerated every
+  four-slot permutation under coherent key/value coordinate changes and under
+  value-only changes: 50 total conditions, including references and a no-op.
+  Both manipulated families preserve key/value parity and use the same trained
+  position IDs exactly once. The value-only hypothesis predicts the specific
+  inverse-permutation answer, rather than generic disruption.
+- Primary grid: all nine derangements and their matched coherent controls.
+  The blinded role fixed 1,200 numerical forecasts without inspecting E3 inputs
+  or executing models. Main gates require every primary accuracy cell to pass
+  plus a paired confidence-separation gate in every seed. Numeric misses will
+  be reported independently, without changing their fixed .15 tolerance.
+- Selected 2,048 new association dictionaries from 2,127 candidates. Rejected
+  79 if any of their 96 pair-order/query variants matched historical data.
+  Independent enumeration found zero overlap for all 196,608 accepted variants
+  against 2,849,517 audited prior inputs. Query indices are balanced at 512 each.
+- Synthetic runner tests use random untrained weights only. Before freezing,
+  review aligned a draft bootstrap-seed mismatch and a logit-versus-probability
+  no-op wording mismatch. Full class probabilities were added to support the
+  promised secondary comparisons. No E3 trained-model outcome informed these
+  changes. E1-v2 and E2 frozen file hashes remain intact.
+- Existing literature already studies position dependence and positional
+  generalization. The narrower question here is prospective, answer-specific
+  rebinding using only trained in-range coordinates; a successful test would
+  establish a result in these models, not priority over the entire literature.
+- A targeted primary-source search before confirmation found an especially
+  close precedent in Tang, Lake and Jazayeri (PLOS ONE, February 2026, Fig. 12).
+  The related-work audit therefore calls E3 a controlled replication/extension
+  candidate. Known positional steering is not being presented as a first discovery.

@@ -1,0 +1,39 @@
+{
+  "pass": true,
+  "scope": "Input-only audit. Rebuilt earlier forbidden set with audited E2 helper; independently encoded E2 rows, all dictionary permutations, queries and grouped rows using Python integer base32. No checkpoint loaded or model forwarded.",
+  "n": 2048,
+  "unique_unordered_dictionaries": 2048,
+  "query_counts": [
+    512,
+    512,
+    512,
+    512
+  ],
+  "independently_checked_dictionary_variants": 196608,
+  "variant_prior_overlap": 0,
+  "grouped_prior_overlap": 0,
+  "forbidden_distinct_inputs": 2849517,
+  "forbidden_sha256": "57554a91f5eceaa61de4e28294658c16cea91da591ad20bf2de451139ae216c3",
+  "input_sha256": "94ab4afe95acc166945135aa306af3d9e8b08c280bef1de9d03d246f1ba1e041",
+  "candidate_count": 2127,
+  "rejection_count": 79,
+  "targets_and_query_metadata_consistent": true,
+  "random_weight_runner_tests_passed": 8,
+  "synthetic_scoring_tests_passed": 8,
+  "independently_reconstructed_forecasts": 1200,
+  "reviewed_source_sha256": {
+    "experiment3/data.py": "c5c1b47a171f4bc200a37a7922dd0f5d16131764ad9254e7bae9e1ed70a7e0f9",
+    "experiment3/conditions.py": "045e421802fad3ee46e56c55298d9b5a2ece2208f1b2fde2f87a4d59bdbd16aa",
+    "experiment3/conditions.json": "03067e4643c2a1b0db100427eef9964410010a6aa45fb283ba481fbb1d67704c",
+    "experiment3/runner.py": "03d65a24282a4fbce995ff8103a1fd5683a3e6c21fd44f02781f93757a6609e5",
+    "experiment3/test_runner.py": "760a63c73b458d827f63cbb6c0b8e85d038880679f93720b2d629af7000558b1",
+    "experiment3/score.py": "967410ec415958d7cdaa35c53f06c01a05b19a7376efd138b75541ba427b4827",
+    "experiment3/test_score.py": "049da201b3179e1a7182a42bc6d0601f3b55cc65e9050a412a894873a5d7ff94",
+    "experiment3/run_phase.py": "73e8b2d6e018ea48ad9f6b803c93803a42891741b772b4026d611fddcba9a2a3",
+    "experiment3/preregister.py": "cec962a57ea81c3fdbc9dd97c7edfc8593583e6d7867f8b2194ec906a61740de",
+    "experiment3/protocol.json": "24c080e6281d11dda6885f369c4bd904fb861842fc5eb86b5a92666ea88eef78",
+    "experiment3/predictions.json": "4ae40d1dfc96034d3c9db7615649fff03ee38150c345984d11d72cf2ac70be12",
+    "experiment3/PREDICTION.md": "4e526dadde93282de755273f15f22be10a754e9afe410b1003842b3cff77ce3a",
+    "experiment3/PROTOCOL.md": "58f9b030b21d28638b63a17f6572f68e7e844af0173f53e28df102cfdfe043a2"
+  }
+}

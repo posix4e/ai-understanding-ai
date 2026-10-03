@@ -1,0 +1,2332 @@
+[
+  {
+    "id": "original_native",
+    "family": "reference",
+    "layout_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "position_ids": null,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "original_noop",
+    "family": "reference",
+    "layout_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "grouped_native",
+    "family": "reference",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": null,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": false,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "grouped_canonical",
+    "family": "reference",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_0132",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      6,
+      4,
+      1,
+      3,
+      7,
+      5,
+      8
+    ],
+    "permutation": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_0132",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      7,
+      5,
+      8
+    ],
+    "permutation": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_0213",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      4,
+      2,
+      6,
+      1,
+      5,
+      3,
+      7,
+      8
+    ],
+    "permutation": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_0213",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      5,
+      3,
+      7,
+      8
+    ],
+    "permutation": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "slot_value_by_query": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_0231",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      4,
+      6,
+      2,
+      1,
+      5,
+      7,
+      3,
+      8
+    ],
+    "permutation": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_0231",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      5,
+      7,
+      3,
+      8
+    ],
+    "permutation": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "slot_value_by_query": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "slot_key_by_value": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_0312",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      6,
+      2,
+      4,
+      1,
+      7,
+      3,
+      5,
+      8
+    ],
+    "permutation": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_0312",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      7,
+      3,
+      5,
+      8
+    ],
+    "permutation": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "slot_value_by_query": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "slot_key_by_value": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_0321",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      6,
+      4,
+      2,
+      1,
+      7,
+      5,
+      3,
+      8
+    ],
+    "permutation": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_0321",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      7,
+      5,
+      3,
+      8
+    ],
+    "permutation": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "slot_value_by_query": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "slot_key_by_value": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_1023",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      2,
+      0,
+      4,
+      6,
+      3,
+      1,
+      5,
+      7,
+      8
+    ],
+    "permutation": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_1023",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      3,
+      1,
+      5,
+      7,
+      8
+    ],
+    "permutation": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "slot_value_by_query": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_1032",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      2,
+      0,
+      6,
+      4,
+      3,
+      1,
+      7,
+      5,
+      8
+    ],
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "coherent_control"
+  },
+  {
+    "id": "value_1032",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      3,
+      1,
+      7,
+      5,
+      8
+    ],
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "slot_value_by_query": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "slot_key_by_value": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "value_derangement"
+  },
+  {
+    "id": "coherent_1203",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      2,
+      4,
+      0,
+      6,
+      3,
+      5,
+      1,
+      7,
+      8
+    ],
+    "permutation": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_1203",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      3,
+      5,
+      1,
+      7,
+      8
+    ],
+    "permutation": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "slot_value_by_query": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "slot_key_by_value": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_1230",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      2,
+      4,
+      6,
+      0,
+      3,
+      5,
+      7,
+      1,
+      8
+    ],
+    "permutation": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "coherent_control"
+  },
+  {
+    "id": "value_1230",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      3,
+      5,
+      7,
+      1,
+      8
+    ],
+    "permutation": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "slot_value_by_query": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "slot_key_by_value": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "value_derangement"
+  },
+  {
+    "id": "coherent_1302",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      2,
+      6,
+      0,
+      4,
+      3,
+      7,
+      1,
+      5,
+      8
+    ],
+    "permutation": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "coherent_control"
+  },
+  {
+    "id": "value_1302",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      3,
+      7,
+      1,
+      5,
+      8
+    ],
+    "permutation": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "slot_value_by_query": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "slot_key_by_value": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "value_derangement"
+  },
+  {
+    "id": "coherent_1320",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      2,
+      6,
+      4,
+      0,
+      3,
+      7,
+      5,
+      1,
+      8
+    ],
+    "permutation": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_1320",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      3,
+      7,
+      5,
+      1,
+      8
+    ],
+    "permutation": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "slot_value_by_query": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "slot_key_by_value": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_2013",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      4,
+      0,
+      2,
+      6,
+      5,
+      1,
+      3,
+      7,
+      8
+    ],
+    "permutation": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_2013",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      5,
+      1,
+      3,
+      7,
+      8
+    ],
+    "permutation": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "slot_value_by_query": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "slot_key_by_value": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_2031",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      4,
+      0,
+      6,
+      2,
+      5,
+      1,
+      7,
+      3,
+      8
+    ],
+    "permutation": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "coherent_control"
+  },
+  {
+    "id": "value_2031",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      5,
+      1,
+      7,
+      3,
+      8
+    ],
+    "permutation": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "slot_value_by_query": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "slot_key_by_value": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "value_derangement"
+  },
+  {
+    "id": "coherent_2103",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      4,
+      2,
+      0,
+      6,
+      5,
+      3,
+      1,
+      7,
+      8
+    ],
+    "permutation": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_2103",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      5,
+      3,
+      1,
+      7,
+      8
+    ],
+    "permutation": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "slot_value_by_query": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "slot_key_by_value": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_2130",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      4,
+      2,
+      6,
+      0,
+      5,
+      3,
+      7,
+      1,
+      8
+    ],
+    "permutation": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_2130",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      5,
+      3,
+      7,
+      1,
+      8
+    ],
+    "permutation": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "slot_value_by_query": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "slot_key_by_value": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_2301",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      4,
+      6,
+      0,
+      2,
+      5,
+      7,
+      1,
+      3,
+      8
+    ],
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "coherent_control"
+  },
+  {
+    "id": "value_2301",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      5,
+      7,
+      1,
+      3,
+      8
+    ],
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "slot_value_by_query": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "slot_key_by_value": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "value_derangement"
+  },
+  {
+    "id": "coherent_2310",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      4,
+      6,
+      2,
+      0,
+      5,
+      7,
+      3,
+      1,
+      8
+    ],
+    "permutation": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "coherent_control"
+  },
+  {
+    "id": "value_2310",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      5,
+      7,
+      3,
+      1,
+      8
+    ],
+    "permutation": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "slot_value_by_query": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "slot_key_by_value": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "value_derangement"
+  },
+  {
+    "id": "coherent_3012",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      6,
+      0,
+      2,
+      4,
+      7,
+      1,
+      3,
+      5,
+      8
+    ],
+    "permutation": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "coherent_control"
+  },
+  {
+    "id": "value_3012",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      1,
+      3,
+      5,
+      8
+    ],
+    "permutation": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "slot_value_by_query": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "slot_key_by_value": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "value_derangement"
+  },
+  {
+    "id": "coherent_3021",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      6,
+      0,
+      4,
+      2,
+      7,
+      1,
+      5,
+      3,
+      8
+    ],
+    "permutation": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_3021",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      1,
+      5,
+      3,
+      8
+    ],
+    "permutation": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "slot_value_by_query": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "slot_key_by_value": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_3102",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      6,
+      2,
+      0,
+      4,
+      7,
+      3,
+      1,
+      5,
+      8
+    ],
+    "permutation": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_3102",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      3,
+      1,
+      5,
+      8
+    ],
+    "permutation": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "slot_value_by_query": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "slot_key_by_value": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_3120",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      6,
+      2,
+      4,
+      0,
+      7,
+      3,
+      5,
+      1,
+      8
+    ],
+    "permutation": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "value_3120",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      3,
+      5,
+      1,
+      8
+    ],
+    "permutation": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "slot_value_by_query": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "slot_key_by_value": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "slot_mapping_defined": true,
+    "derangement": false,
+    "primary_group": null
+  },
+  {
+    "id": "coherent_3201",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      6,
+      4,
+      0,
+      2,
+      7,
+      5,
+      1,
+      3,
+      8
+    ],
+    "permutation": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "coherent_control"
+  },
+  {
+    "id": "value_3201",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      5,
+      1,
+      3,
+      8
+    ],
+    "permutation": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "slot_value_by_query": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "slot_key_by_value": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "value_derangement"
+  },
+  {
+    "id": "coherent_3210",
+    "family": "coherent",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      6,
+      4,
+      2,
+      0,
+      7,
+      5,
+      3,
+      1,
+      8
+    ],
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "slot_value_by_query": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_key_by_value": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "coherent_control"
+  },
+  {
+    "id": "value_3210",
+    "family": "value_only",
+    "layout_indices": [
+      0,
+      2,
+      4,
+      6,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "position_ids": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      5,
+      3,
+      1,
+      8
+    ],
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "slot_value_by_query": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "slot_key_by_value": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "slot_mapping_defined": true,
+    "derangement": true,
+    "primary_group": "value_derangement"
+  }
+]
