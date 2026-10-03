@@ -1,0 +1,75 @@
+{
+  "pass": true,
+  "scope": "Input-only independent encoding, permutation enumeration and metadata checks. Historical E1 reconstruction reuses previously audited E2 helper; E2/E3/E4 arrays and six new training streams are independently added. No checkpoint/model forward. Rejection order not replayed.",
+  "n": 1024,
+  "boundary_n": 256,
+  "query_counts": [
+    256,
+    256,
+    256,
+    256
+  ],
+  "boundary_query_counts": [
+    64,
+    64,
+    64,
+    64
+  ],
+  "unique_unordered_association_dictionaries": 1024,
+  "unique_selected_token_bags": 1024,
+  "targets_and_queries_consistent": true,
+  "all_96_native_variant_checks": 98304,
+  "native_variant_overlap": 0,
+  "all_2520_layouts_times_four_queries_checks": 10321920,
+  "all_layout_query_overlap": 0,
+  "prior_nonnative_token_bags": 4095,
+  "prior_token_bag_overlap": 0,
+  "forbidden_distinct_inputs": 4393029,
+  "forbidden_sha256": "6470990d86830f053fa523122168c95ee7adc9b33d47601509ba3909c1d86bb0",
+  "input_sha256": "75ca219d2b023d392f255c89a76f8951fb852e6c07c1f578394206dbf77756e4",
+  "candidates": 1078,
+  "rejections": 54,
+  "new_training_reconstruction": [
+    {
+      "seed": 6,
+      "metadata_sha256": "c393aeb77fd716fa46fdecae013bad0d977d5f7ae870bf7015da70269c2971a2",
+      "training_examples_reconstructed": 256000
+    },
+    {
+      "seed": 7,
+      "metadata_sha256": "e40c7917c3563e0ed3c3b892add455fe8c0887db765870a6c5852da4667d509e",
+      "training_examples_reconstructed": 256000
+    },
+    {
+      "seed": 8,
+      "metadata_sha256": "262f14784cfa39e19a85ecf07c8a80d0a85b7ce347d9b0f53fbc21232d5ac1e1",
+      "training_examples_reconstructed": 256000
+    },
+    {
+      "seed": 9,
+      "metadata_sha256": "b15c86a3491360a8d902e0dcd70f1fee1ef81a915a54ee0fa5d6d49190d2c303",
+      "training_examples_reconstructed": 256000
+    },
+    {
+      "seed": 10,
+      "metadata_sha256": "8fa2742cda9f5ca9bd1fecdadce2ae81eaead01c4ca52497a9c704fab9ed5d84",
+      "training_examples_reconstructed": 256000
+    },
+    {
+      "seed": 11,
+      "metadata_sha256": "5ceb5b836d6be2e8f62ec78806f03ef50f429dcce43adde7138b15f9a920ea5d",
+      "training_examples_reconstructed": 256000
+    }
+  ],
+  "random_weight_runner_tests_passed": 9,
+  "combined_synthetic_tests_passed": 19,
+  "independent_heterogeneous_edge_mean_ci_max_error": 0.0,
+  "numeric_forecast_count": 72,
+  "prior_manifest_dependency_rehash_counts": {
+    "E1v2": 44,
+    "E2": 61,
+    "E3": 41,
+    "E4": 43
+  },
+  "prior_manifest_dependency_mismatches": []
+}

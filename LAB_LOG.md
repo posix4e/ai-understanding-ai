@@ -285,3 +285,38 @@ and evidence, not private conversations or internal model reasoning.
   Its ranking endpoint and activation-replacement intervention differ from E4,
   but it is a clear conceptual precedent. The dated update records this and
   corrected CHIVE/HyVE version dates without changing frozen literature files.
+
+## 2026-10-03 — Publication study and E5 prospective design
+
+- The new goal is a publishable research study, not merely a public positive
+  repository result. An independent gap review identified the main limitation:
+  E4 used one serialization and the six checkpoints already inspected during
+  discovery. The candidate contribution is prospective transfer of a specified
+  repair across a complete finite family and fresh training seeds.
+- Publicly fixed seeds 6–11 and the unchanged training recipe in commit
+  `d85ac669c219ca15c0fd6752efac797dd2eb206a`, read back from GitHub before training.
+  All six final 2,000-step checkpoints are retained without replacement or
+  extended training. All reached 100% native monitoring-validation accuracy;
+  this is not confirmatory evidence. Each training run took about 17 seconds.
+- Independent combinatorial checks found 2,520 pair-respecting layouts, of which
+  exactly 105 preserve value order and permit native L1 value-state restoration
+  by deletion. The latter class contains 729 correct/alternative masks, including
+  624 shams and 102 layouts with genuine alternatives. Three have no sham.
+  Architectural state identities are separated from empirical answer recovery.
+- E5 primary grid has 1,044 layout/condition cells per seed on 1,024 dictionaries.
+  A separate all-2,415-layout boundary panel compares four fixed policies on the
+  first 256 cases. Six single-edge readditions test a specified wrong-answer
+  prediction on the full 1,024 cases. All conditions and all query positions
+  remain in the record; secondary findings cannot rescue a failed primary claim.
+- Generated 1,024 fresh dictionaries from 1,078 candidates, rejecting 54 before
+  any E5 trained-model evaluation. Independently audited 10,321,920 legal
+  layout/query representations against 4,393,029 prior-input identities, with
+  zero overlap. A further unordered-token-bag exclusion covers earlier grouped
+  inputs. All six new training streams were reconstructed for this audit.
+- The predictor fixed 72 aggregate numerical forecasts without E5 checkpoint
+  metrics, inputs or outcomes. It did not pretend to predict every individual
+  condition numerically. Prospective tolerance is .05; causal gates are separate.
+  Source and scorer validation use synthetic arrays and random weights only.
+- All model computation remains local CPU. No E5 shifted-layout forward has
+  run during design. Public registration and exact remote verification must
+  precede confirmation; original E1–E4 manifests remain intact.

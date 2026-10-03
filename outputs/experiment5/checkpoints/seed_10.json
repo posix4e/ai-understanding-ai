@@ -1,0 +1,37 @@
+{
+  "seed": 10,
+  "training_data_seed": 1010,
+  "steps": 2000,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "gradient_clip_norm": 1.0,
+  "optimizer": "AdamW",
+  "threads": 4,
+  "device": "cpu",
+  "config": {
+    "n_keys": 16,
+    "n_values": 16,
+    "n_pairs": 4,
+    "d_model": 64,
+    "n_heads": 4,
+    "d_mlp": 128,
+    "n_layers": 2,
+    "embedding_std": 1.0
+  },
+  "parameter_count": 70720,
+  "validation_seed": 100000,
+  "validation_role": "pilot/discovery only; reused during training",
+  "torch_version": "2.14.1",
+  "python_version": "3.14.8",
+  "elapsed_seconds": 15.838250374989002,
+  "final_metrics": {
+    "step": 2000,
+    "train_loss": 0.0006860632041934877,
+    "train_accuracy": 1.0,
+    "validation_loss": 0.0006025881477398798,
+    "validation_accuracy": 1.0,
+    "validation_count": 5120,
+    "elapsed_seconds": 15.837756791996071
+  }
+}

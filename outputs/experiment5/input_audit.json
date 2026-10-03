@@ -1,0 +1,245 @@
+{
+  "n": 1024,
+  "boundary_n": 256,
+  "boundary_selection": "first 256 accepted rows; fixed before outcomes",
+  "input_seed": 10100001,
+  "query_counts": [
+    256,
+    256,
+    256,
+    256
+  ],
+  "boundary_query_counts": [
+    64,
+    64,
+    64,
+    64
+  ],
+  "candidate_batch_size": 128,
+  "candidates": 1078,
+  "rejected": [
+    {
+      "candidate": 19,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 26,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 67,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 76,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 106,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 118,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 124,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 127,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 145,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 170,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 222,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 223,
+      "reason": "prior_non_native_token_bag"
+    },
+    {
+      "candidate": 248,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 271,
+      "reason": "prior_non_native_token_bag"
+    },
+    {
+      "candidate": 274,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 279,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 294,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 297,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 306,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 384,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 387,
+      "reason": "prior_non_native_token_bag"
+    },
+    {
+      "candidate": 395,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 400,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 411,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 431,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 457,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 468,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 474,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 488,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 507,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 512,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 526,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 545,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 657,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 674,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 694,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 698,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 708,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 716,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 724,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 762,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 778,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 788,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 820,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 882,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 904,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 920,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 936,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 944,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 985,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1019,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1030,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1033,
+      "reason": "prior_associations_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1070,
+      "reason": "prior_associations_any_pair_order_or_query"
+    }
+  ],
+  "forbidden_distinct_inputs": 4393029,
+  "forbidden_sha256": "6470990d86830f053fa523122168c95ee7adc9b33d47601509ba3909c1d86bb0",
+  "prior_non_native_token_bag_count": 4095,
+  "unique_dictionaries": 1024,
+  "input_sha256": "75ca219d2b023d392f255c89a76f8951fb852e6c07c1f578394206dbf77756e4",
+  "pass": true,
+  "scope": "All prior audited training/validation/E1/E2/E3/E4 inputs plus new seeds6\u201311 training. Reject all96native pair-order/query variants. Additionally reject any E3/E4 key/value token bag regardless of associations, excluding collisions with prior grouped inputs under every possible new layout. Boundary is a declared subset, not independent data."
+}

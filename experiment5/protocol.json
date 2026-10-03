@@ -1,0 +1,39 @@
+{
+  "experiment": 5,
+  "question": "Does a fixed causal-visibility repair transfer across the complete restorable serialization class and fresh model seeds?",
+  "model_seeds": [6, 7, 8, 9, 10, 11],
+  "n": 1024,
+  "boundary_n": 256,
+  "input_seed": 10100001,
+  "batch_size": 128,
+  "layouts_per_shard": 32,
+  "discovery": "Published E1–E4 evidence; no E5 shifted-layout discovery or fitted repair. Fresh seed list and training recipe were publicly fixed before training.",
+  "gates": {
+    "native_accuracy_min": 0.95,
+    "noop_max_probability_error": 0.000001,
+    "identity_tolerance": 0.00001,
+    "correct_each_layout_query_accuracy_min": 0.95,
+    "native_minus_correct_probability_ci95_upper_le": 0.01,
+    "correct_minus_mean_shams_probability_ci95_lower_gt": 0.02
+  },
+  "secondary_gates": {
+    "boundary_logical_prefix_accuracy_min": 0.95,
+    "boundary_own_key_self_accuracy_min": 0.95,
+    "edge_wrong_value_difference_of_changes_ci95_lower_gt": 0.05
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 10200001,
+    "boundary_seed": 10200002,
+    "unit": "dictionary row, resampled within each of four query strata",
+    "pairing": "identical row weights across all layouts, interventions and seeds within each panel; edge panel shares primary weights",
+    "primary_aggregation": "equal105layout mean; controls equal mean within each of102eligiblelayouts then equal mean acrosslayouts",
+    "edge_aggregation": "equal six edges; each edge uses only its source-key query stratum, renormalized to unit weight",
+    "boundary_aggregation": "equal2415layout mean, first256 dictionaries; separately seeded bootstrap is paired within that panel but is not independent new data"
+  },
+  "numeric_forecast_tolerance": 0.05,
+  "numeric_forecast_scope": "72 aggregate forecasts:12endpoints x6seeds. No per-condition numerical prediction claim.",
+  "primary_claim": "Every validity, per-layout/query recovery, native-deficit and mean-control gate must pass in every seed. Secondary passes cannot rescue a primary failure.",
+  "boundary_fixed_key_order_subpanel": "Physical K0 K1 K2 K3 followed by every24valueorders:23boundarylayouts plus primary canonicalgrouping reference.",
+  "stopping": "Evaluate every declared condition on every declared seed once. No outcome-dependent exclusions, new seeds, changed predictions, altered thresholds or repair fitting. Deterministic crash resumption may reuse completed verified shards under the same frozen code and checkpoint identities; it cannot replace saved outcomes."
+}

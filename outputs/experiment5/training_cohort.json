@@ -1,0 +1,135 @@
+{
+  "plan_commit": "d85ac669c219ca15c0fd6752efac797dd2eb206a",
+  "started_at_utc": "2026-10-03T15:59:26.743366+00:00",
+  "seeds": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "runs": [
+    {
+      "seed": 6,
+      "command": [
+        "/Users/posix4e/Documents/Codex/2026-10-03/ai-understanding-ai/.venv/bin/python",
+        "train.py",
+        "--seed",
+        "6",
+        "--steps",
+        "2000",
+        "--threads",
+        "4",
+        "--embedding-std",
+        "1.0",
+        "--output-dir",
+        "outputs/experiment5/checkpoints"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 16.869374333007727,
+      "log": "outputs/experiment5/training_seed_6.log"
+    },
+    {
+      "seed": 7,
+      "command": [
+        "/Users/posix4e/Documents/Codex/2026-10-03/ai-understanding-ai/.venv/bin/python",
+        "train.py",
+        "--seed",
+        "7",
+        "--steps",
+        "2000",
+        "--threads",
+        "4",
+        "--embedding-std",
+        "1.0",
+        "--output-dir",
+        "outputs/experiment5/checkpoints"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 16.778785959002562,
+      "log": "outputs/experiment5/training_seed_7.log"
+    },
+    {
+      "seed": 8,
+      "command": [
+        "/Users/posix4e/Documents/Codex/2026-10-03/ai-understanding-ai/.venv/bin/python",
+        "train.py",
+        "--seed",
+        "8",
+        "--steps",
+        "2000",
+        "--threads",
+        "4",
+        "--embedding-std",
+        "1.0",
+        "--output-dir",
+        "outputs/experiment5/checkpoints"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 16.924076249997597,
+      "log": "outputs/experiment5/training_seed_8.log"
+    },
+    {
+      "seed": 9,
+      "command": [
+        "/Users/posix4e/Documents/Codex/2026-10-03/ai-understanding-ai/.venv/bin/python",
+        "train.py",
+        "--seed",
+        "9",
+        "--steps",
+        "2000",
+        "--threads",
+        "4",
+        "--embedding-std",
+        "1.0",
+        "--output-dir",
+        "outputs/experiment5/checkpoints"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 16.87922637500742,
+      "log": "outputs/experiment5/training_seed_9.log"
+    },
+    {
+      "seed": 10,
+      "command": [
+        "/Users/posix4e/Documents/Codex/2026-10-03/ai-understanding-ai/.venv/bin/python",
+        "train.py",
+        "--seed",
+        "10",
+        "--steps",
+        "2000",
+        "--threads",
+        "4",
+        "--embedding-std",
+        "1.0",
+        "--output-dir",
+        "outputs/experiment5/checkpoints"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 16.933215416996973,
+      "log": "outputs/experiment5/training_seed_10.log"
+    },
+    {
+      "seed": 11,
+      "command": [
+        "/Users/posix4e/Documents/Codex/2026-10-03/ai-understanding-ai/.venv/bin/python",
+        "train.py",
+        "--seed",
+        "11",
+        "--steps",
+        "2000",
+        "--threads",
+        "4",
+        "--embedding-std",
+        "1.0",
+        "--output-dir",
+        "outputs/experiment5/checkpoints"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 17.102626332998625,
+      "log": "outputs/experiment5/training_seed_11.log"
+    }
+  ],
+  "finished_at_utc": "2026-10-03T16:01:08.233250+00:00"
+}

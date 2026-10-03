@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "experiment": 5,
+  "prepared_date": "2026-10-03",
+  "forecast_scope": "Twelve aggregate point forecasts per seed; no individual-condition numerical forecasts.",
+  "training_seeds": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "blinding": {
+    "evidence": [
+      "Published E3/E4 results",
+      "Outcome-independent E5 condition specification"
+    ],
+    "e5_checkpoint_metrics_read": false,
+    "e5_inputs_read": false,
+    "e5_outcomes_read": false,
+    "e5_model_forwards_run": false,
+    "isolation": "procedural_shared_filesystem"
+  },
+  "expected_aggregate": {
+    "6": {
+      "native_mean_probability": 0.999,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.995,
+      "primary_correct_accuracy": 0.998,
+      "primary_correct_min_layout_query_accuracy": 0.98,
+      "primary_native_minus_correct_probability": 0.004,
+      "primary_correct_minus_mean_shams_probability": 0.08,
+      "boundary_logical_prefix_accuracy": 0.985,
+      "boundary_own_key_self_accuracy": 0.98,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 0.98,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 0.97,
+      "edge_wrong_value_difference_of_changes": 0.12
+    },
+    "7": {
+      "native_mean_probability": 0.999,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.995,
+      "primary_correct_accuracy": 0.998,
+      "primary_correct_min_layout_query_accuracy": 0.98,
+      "primary_native_minus_correct_probability": 0.004,
+      "primary_correct_minus_mean_shams_probability": 0.08,
+      "boundary_logical_prefix_accuracy": 0.985,
+      "boundary_own_key_self_accuracy": 0.98,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 0.98,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 0.97,
+      "edge_wrong_value_difference_of_changes": 0.12
+    },
+    "8": {
+      "native_mean_probability": 0.999,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.995,
+      "primary_correct_accuracy": 0.998,
+      "primary_correct_min_layout_query_accuracy": 0.98,
+      "primary_native_minus_correct_probability": 0.004,
+      "primary_correct_minus_mean_shams_probability": 0.08,
+      "boundary_logical_prefix_accuracy": 0.985,
+      "boundary_own_key_self_accuracy": 0.98,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 0.98,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 0.97,
+      "edge_wrong_value_difference_of_changes": 0.12
+    },
+    "9": {
+      "native_mean_probability": 0.999,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.995,
+      "primary_correct_accuracy": 0.998,
+      "primary_correct_min_layout_query_accuracy": 0.98,
+      "primary_native_minus_correct_probability": 0.004,
+      "primary_correct_minus_mean_shams_probability": 0.08,
+      "boundary_logical_prefix_accuracy": 0.985,
+      "boundary_own_key_self_accuracy": 0.98,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 0.98,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 0.97,
+      "edge_wrong_value_difference_of_changes": 0.12
+    },
+    "10": {
+      "native_mean_probability": 0.999,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.995,
+      "primary_correct_accuracy": 0.998,
+      "primary_correct_min_layout_query_accuracy": 0.98,
+      "primary_native_minus_correct_probability": 0.004,
+      "primary_correct_minus_mean_shams_probability": 0.08,
+      "boundary_logical_prefix_accuracy": 0.985,
+      "boundary_own_key_self_accuracy": 0.98,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 0.98,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 0.97,
+      "edge_wrong_value_difference_of_changes": 0.12
+    },
+    "11": {
+      "native_mean_probability": 0.999,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.995,
+      "primary_correct_accuracy": 0.998,
+      "primary_correct_min_layout_query_accuracy": 0.98,
+      "primary_native_minus_correct_probability": 0.004,
+      "primary_correct_minus_mean_shams_probability": 0.08,
+      "boundary_logical_prefix_accuracy": 0.985,
+      "boundary_own_key_self_accuracy": 0.98,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 0.98,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 0.97,
+      "edge_wrong_value_difference_of_changes": 0.12
+    }
+  },
+  "endpoint_definitions": {
+    "native_mean_probability": "Mean original-answer softmax probability for the native reference over all 1024 cases.",
+    "native_accuracy": "Fraction of native-reference full-16-class argmax predictions equal to the original answer over all 1024 cases.",
+    "primary_correct_mean_probability": "Equal-layout mean original-answer probability under correct guards across all 105 layouts and 1024 cases.",
+    "primary_correct_accuracy": "Equal-layout mean correct-guard accuracy across all 105 layouts and 1024 cases.",
+    "primary_correct_min_layout_query_accuracy": "Minimum accuracy among all 105 times 4 correct-guard layout/query cells, with 256 cases per query.",
+    "primary_native_minus_correct_probability": "Paired native minus correct-guard original-answer probability, equally averaged over 105 layouts.",
+    "primary_correct_minus_mean_shams_probability": "Within each of 102 eligible layouts, correct-guard original-answer probability minus the equal mean of every feasible sham; then equal mean over eligible layouts. The 624 shams are not pooled with equal weight across layouts.",
+    "boundary_logical_prefix_accuracy": "Equal-layout mean logical_prefix accuracy over 2415 layouts and the first 256 balanced cases.",
+    "boundary_own_key_self_accuracy": "Equal-layout mean own_key_self accuracy over 2415 layouts and the first 256 balanced cases.",
+    "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": "Fraction of all 2415 times 4 logical_prefix layout/query cells with point accuracy at least .95; 64 cases per query.",
+    "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": "Fraction of all 2415 times 4 own_key_self layout/query cells with point accuracy at least .95; 64 cases per query.",
+    "edge_wrong_value_difference_of_changes": "For each added edge Vi<-Kj, restrict to query Kj. Per case compute [P_edge(Vi)-P_correct(Vi)] minus the mean of [P_edge(Vk)-P_correct(Vk)] for the two displayed wrong values k not in {i,j}. Average cases within the eligible query stratum, then average all six edge means equally. Correct refers to grouped correct guard."
+  },
+  "absolute_error_tolerance": 0.05,
+  "forecast_interpretation": "Judgmental point estimates, identical across unseen seeds; tolerance is practical, not a confidence or predictive interval. Report all 72 errors and misses plus MAE/RMSE separately from scientific decisions.",
+  "primary_design": {
+    "cases": 1024,
+    "cases_per_query": 256,
+    "layouts": 105,
+    "correct_masks": 105,
+    "shams": 624,
+    "total_masks": 729,
+    "specificity_eligible_layouts": 102,
+    "layout_weighting": "equal",
+    "sham_weighting": "equal within layout, then equal over eligible layouts"
+  },
+  "boundary_design": {
+    "cases": 256,
+    "case_selection": "first 256 balanced primary cases",
+    "cases_per_query": 64,
+    "layouts": 2415,
+    "conditions": [
+      "unguarded",
+      "keyguard",
+      "logical_prefix",
+      "own_key_self"
+    ],
+    "missing_context_scope": "Both earlier keys and earlier values may be absent."
+  },
+  "primary_gates": {
+    "each_layout_query_accuracy_minimum": 0.95,
+    "native_minus_correct_probability_upper_95_maximum": 0.01,
+    "correct_minus_mean_shams_probability_lower_95_strict_minimum": 0.02,
+    "global_rule": "All validity and primary empirical gates must pass in every fixed seed; no exclusions or replacements."
+  },
+  "secondary_gates": {
+    "boundary_logical_prefix_overall_accuracy_minimum": 0.95,
+    "boundary_own_key_self_overall_accuracy_minimum": 0.95,
+    "boundary_layout_query_fraction_gate": null,
+    "edge_difference_of_changes_lower_95_strict_minimum": 0.05,
+    "global_rule": "Each endpoint has a separate all-six-seed decision; no secondary result rescues primary failure."
+  },
+  "validity": {
+    "native_accuracy_minimum": 0.95,
+    "full_class_noop_max_absolute_error": 1e-06,
+    "primary_correct_l1_values_vs_native_max_absolute_error": 1e-05,
+    "primary_full_oracle_vs_native_full_class_max_absolute_error": 1e-05,
+    "boundary_own_key_self_l1_values_vs_native_own_key_self_max_absolute_error": 1e-05,
+    "all_outputs_finite_complete_and_consistent": true,
+    "all_panels_l1_query_vs_native_max_absolute_error": 1e-05,
+    "all_panels_l1_keys_vs_unguarded_layout_max_absolute_error": 1e-05
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "method": "query-stratified paired dictionary-row multinomial",
+    "primary_and_edge_seed": 10200001,
+    "boundary_seed": 10200002,
+    "shared_weights": "Within each panel, identical row weights across all layouts, conditions, and seeds.",
+    "edge_weighting": "Use normalized global bootstrap weights within each edge eligible query stratum, then equal mean of six edges; q0 is descriptive only for this contrast.",
+    "scope": "Conditional on fixed checkpoints and input distribution; no across-model inference; pointwise intervals are not simultaneous."
+  }
+}
