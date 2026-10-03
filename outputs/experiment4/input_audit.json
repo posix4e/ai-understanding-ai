@@ -1,0 +1,286 @@
+{
+  "n": 2048,
+  "input_seed": 8100001,
+  "candidate_batch_size": 128,
+  "query_assignment": "accepted row index modulo 4; no model outcomes used",
+  "query_counts": [
+    512,
+    512,
+    512,
+    512
+  ],
+  "forbidden_distinct_inputs": 2853613,
+  "forbidden_sha256": "25511781b63fabdfa3ec696a11d84c8def46570ac6d834434c91089010faee2c",
+  "candidates": 2114,
+  "rejected": [
+    {
+      "candidate": 23,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 57,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 74,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 100,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 127,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 135,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 172,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 186,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 245,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 260,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 389,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 409,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 410,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 443,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 473,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 499,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 541,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 550,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 553,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 596,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 636,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 672,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 682,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 689,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 700,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 751,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 783,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 824,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 951,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 956,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 982,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1004,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1064,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1077,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1108,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1128,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1149,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1151,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1188,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1263,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1333,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1394,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1411,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1459,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1512,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1554,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1574,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1644,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1647,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1650,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1690,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1691,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1784,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1796,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1836,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1856,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1926,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1936,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 1978,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 2009,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 2036,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 2052,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 2053,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 2083,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 2101,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    },
+    {
+      "candidate": 2104,
+      "reason": "prior_dictionary_any_pair_order_or_query"
+    }
+  ],
+  "unique_dictionaries": 2048,
+  "grouped_prior_collisions": 0,
+  "input_sha256": "9ee60746699fd35a084a714af9e01111d716a01f31da06ebd1556d4b63c681a0",
+  "pass": true,
+  "scope": "Exclude all 96 variants (24 pair orders x four query choices) of each candidate association dictionary against every audited training, validation, E1, E2 and E3 input. Also exclude duplicate unordered association dictionaries within E4. Reused trained checkpoints. Each dictionary appears with one balanced query and is shared across all conditions and seeds."
+}

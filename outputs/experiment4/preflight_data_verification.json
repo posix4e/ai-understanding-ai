@@ -1,0 +1,47 @@
+{
+  "pass": true,
+  "scope": "Input-only independent variant enumeration and scalar base32 encoding. Historical E1 base reconstructed using previously audited E2 helper, E2 and E3 rows added with independent encoding. No model checkpoint loaded or model forwarded. Rejection order not replayed.",
+  "n": 2048,
+  "unique_unordered_dictionaries": 2048,
+  "query_counts": [
+    512,
+    512,
+    512,
+    512
+  ],
+  "targets_and_queries_consistent": true,
+  "independently_checked_dictionary_variants": 196608,
+  "variant_prior_overlap": 0,
+  "grouped_prior_overlap": 0,
+  "forbidden_distinct_inputs": 2853613,
+  "forbidden_sha256": "25511781b63fabdfa3ec696a11d84c8def46570ac6d834434c91089010faee2c",
+  "input_sha256": "9ee60746699fd35a084a714af9e01111d716a01f31da06ebd1556d4b63c681a0",
+  "candidates": 2114,
+  "rejections": 66,
+  "random_weight_runner_tests_passed": 10,
+  "synthetic_scoring_tests_passed": 10,
+  "independently_reconstructed_forecasts": 180,
+  "prior_frozen_hash_checks": {
+    "E1_v2": 45,
+    "E2": 62,
+    "E3": 42
+  },
+  "reviewed_source_sha256": {
+    "experiment4/DESIGN_REVIEW.md": "772ccee98721a9143a312689f50d34212e1961445c156ebf9996c9ce93391591",
+    "experiment4/PREDICTION.md": "5e06f27c4be9af0032f07bfd988dd6b63be7a0ed9d52220a9b9ff393f0b47a78",
+    "experiment4/PROTOCOL.md": "8f13dcf2578cd2ff420e0612af04fadd9a659ff2fdabfaab99c3604075e382e1",
+    "experiment4/__init__.py": "97bd53d2a565050d451d56b3ea9f53918cfbe8fe2dce8dcbd667fbf21cb35a80",
+    "experiment4/conditions.json": "3485bb6247631455c1343e2ac6a106cbdca7c613f2dcdb03663e1d40f14d7e2c",
+    "experiment4/conditions.py": "6af365d0388137d31dcd34799a15a0c66854881d960b089e16d8b9d3fcccb3f3",
+    "experiment4/data.py": "48faccd72c0dbac252454db5fda11d18e05f7eb58b10f6d6cedce4ac5443306b",
+    "experiment4/predictions.json": "5cde5efd505df094e07bd40c2feee3d898a9e02d0f23be0c522b777920121920",
+    "experiment4/preregister.py": "98ed72c1c5d4d02c513ca2f8743ea185de10745e5c74359f62f9f754fc7c0180",
+    "experiment4/protocol.json": "914a24386fdf5598dded8800630e7108106c51d0178784f063813e1e86e75907",
+    "experiment4/report.py": "40f9640028e19c257833bfbb1cd7e6cffaec2487a37f40889edba1bfdeca6b4b",
+    "experiment4/run_phase.py": "4622d69e00325cc608b55437c6fe594315badeda4654302c6c57ff506fd22405",
+    "experiment4/runner.py": "2a51374e4473aa31fec447ae5693fa49d927a9d5ec3c3652eb6c054c685e6147",
+    "experiment4/score.py": "34ffc8dde172d09f431920e2c91fec0da06f724a2c488cf49939601fcc44bd33",
+    "experiment4/test_runner.py": "bb8c4685d74e62e203108cbd50c8db0afdf4dd7a09b1f825ea1bfe866f223f6c",
+    "experiment4/test_score.py": "4aa43e80e2f42085be01fd1902ad40ff836fe40d3cee3b84445d3392d5b5a5de"
+  }
+}

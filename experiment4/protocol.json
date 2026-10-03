@@ -1,0 +1,29 @@
+{
+  "experiment": 4,
+  "question": "Does restoring training-time key visibility repair grouped-layout retrieval more than matched sparsification controls?",
+  "model_seeds": [0, 1, 2, 3, 4, 5],
+  "n": 2048,
+  "input_seed": 8100001,
+  "discovery": "Published E3 outcomes; no E4 trained-model discovery or new fitting",
+  "no_new_training": true,
+  "correct_guard": "guard_a0_b3",
+  "gates": {
+    "native_accuracy_min": 0.95,
+    "grouped_noop_max_probability_error": 0.000001,
+    "identity_tolerance": 0.00001,
+    "correct_guard_each_query_accuracy_min": 0.95,
+    "guard_minus_grouped_probability_ci95_lower_gt": 0.30,
+    "guard_minus_mean_eight_controls_probability_ci95_lower_gt": 0.05
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 8200001,
+    "unit": "dictionary row; stratified within the four query indices",
+    "pairing": "shared row weights across every condition and six seeds",
+    "control_aggregation": "equal mean of the eight wrong masks within row before resampling"
+  },
+  "numeric_forecast_tolerance": 0.15,
+  "numeric_forecast_endpoints": ["original_probability", "accuracy"],
+  "claim_scope": "Empirical sufficiency of removing a specified set of newly exposed L1 key edges to restore outputs, with advantage over the mean of row-degree-matched controls, in six existing checkpoints. Algebraic restoration controls do not count as discoveries.",
+  "stopping": "Evaluate all 15 frozen conditions once for all seeds. No outcome-based model, input, control, threshold or forecast revision. Preserve failures; follow-ups require a separate registration."
+}

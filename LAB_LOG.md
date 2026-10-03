@@ -223,3 +223,28 @@ and evidence, not private conversations or internal model reasoning.
   sets: grouped values receive keys from later logical slots that were masked
   in training. Restoring key visibility may repair binding. This is not yet a
   verified explanation; it will require a new registration and new inputs.
+
+## 2026-10-03 — Experiment 4 prospective visibility repair
+
+- Developed a distinct, falsifiable repair after E3's failure. In grouped
+  canonical layout, Vi gains access to keys Kj with j>i that were masked during
+  training. The correct guard removes those six key-edge types in every L1
+  head, without changing weights or transplanting native activations.
+- The L1 value and query restoration follows algebraically from their restored
+  predecessor sets. It is explicitly an implementation check, not a discovery.
+  Final-answer recovery remains empirical because L1 key-node states still
+  differ and can influence the second layer.
+- Enumerated the complete nine masks that preserve each true key and exactly
+  match per-value removal counts (3,2,1,0). The correct guard competes with the
+  mean of all eight alternatives; every alternative and the best one will be
+  reported. Oracle native-state patches separate value repair from key repair.
+  Total: 15 fixed conditions in all six existing checkpoints.
+- Frozen decisions require correct-guard accuracy at least .95 in every query
+  stratum, paired probability improvement over unguarded grouping above .30,
+  and improvement over the mean eight matched masks above .05, using confidence
+  bounds in every seed. No superiority to every alternative is assumed.
+- Prepared 2,048 new association dictionaries from 2,114 candidates, rejecting
+  66 for prior-data overlap under any of their 96 variants. Independent checks
+  found zero overlap against 2,853,613 prior inputs including E3. No E4 trained
+  forward has run. The predictor committed 180 forecasts using E3 only as
+  disclosed discovery evidence; oracle identities do not count as new findings.

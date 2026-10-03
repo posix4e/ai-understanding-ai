@@ -1,0 +1,372 @@
+[
+  {
+    "id": "native",
+    "family": "reference",
+    "layout": "native",
+    "guard_keep_keys": null,
+    "restore": null,
+    "attention_noop": false,
+    "a": null,
+    "b": null,
+    "is_correct_guard": false,
+    "oracle": false
+  },
+  {
+    "id": "grouped_canonical",
+    "family": "reference",
+    "layout": "grouped",
+    "guard_keep_keys": null,
+    "restore": null,
+    "attention_noop": false,
+    "a": null,
+    "b": null,
+    "is_correct_guard": false,
+    "oracle": false
+  },
+  {
+    "id": "grouped_noop",
+    "family": "reference",
+    "layout": "grouped",
+    "guard_keep_keys": null,
+    "restore": null,
+    "attention_noop": true,
+    "a": null,
+    "b": null,
+    "is_correct_guard": false,
+    "oracle": false
+  },
+  {
+    "id": "restore_keys",
+    "family": "oracle",
+    "layout": "grouped",
+    "guard_keep_keys": null,
+    "restore": "keys",
+    "attention_noop": false,
+    "a": null,
+    "b": null,
+    "is_correct_guard": false,
+    "oracle": true
+  },
+  {
+    "id": "guard_restore_keys",
+    "family": "oracle",
+    "layout": "grouped",
+    "guard_keep_keys": [
+      [
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "restore": "keys",
+    "attention_noop": false,
+    "a": null,
+    "b": null,
+    "is_correct_guard": true,
+    "oracle": true
+  },
+  {
+    "id": "restore_values",
+    "family": "oracle",
+    "layout": "grouped",
+    "guard_keep_keys": null,
+    "restore": "values",
+    "attention_noop": false,
+    "a": null,
+    "b": null,
+    "is_correct_guard": false,
+    "oracle": true
+  },
+  {
+    "id": "guard_a0_b0",
+    "family": "matched_guard",
+    "layout": "grouped",
+    "guard_keep_keys": [
+      [
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "restore": null,
+    "attention_noop": false,
+    "a": 0,
+    "b": 0,
+    "is_correct_guard": false,
+    "oracle": false
+  },
+  {
+    "id": "guard_a0_b1",
+    "family": "matched_guard",
+    "layout": "grouped",
+    "guard_keep_keys": [
+      [
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "restore": null,
+    "attention_noop": false,
+    "a": 0,
+    "b": 1,
+    "is_correct_guard": false,
+    "oracle": false
+  },
+  {
+    "id": "guard_a0_b3",
+    "family": "matched_guard",
+    "layout": "grouped",
+    "guard_keep_keys": [
+      [
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "restore": null,
+    "attention_noop": false,
+    "a": 0,
+    "b": 3,
+    "is_correct_guard": true,
+    "oracle": false
+  },
+  {
+    "id": "guard_a2_b0",
+    "family": "matched_guard",
+    "layout": "grouped",
+    "guard_keep_keys": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "restore": null,
+    "attention_noop": false,
+    "a": 2,
+    "b": 0,
+    "is_correct_guard": false,
+    "oracle": false
+  },
+  {
+    "id": "guard_a2_b1",
+    "family": "matched_guard",
+    "layout": "grouped",
+    "guard_keep_keys": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "restore": null,
+    "attention_noop": false,
+    "a": 2,
+    "b": 1,
+    "is_correct_guard": false,
+    "oracle": false
+  },
+  {
+    "id": "guard_a2_b3",
+    "family": "matched_guard",
+    "layout": "grouped",
+    "guard_keep_keys": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "restore": null,
+    "attention_noop": false,
+    "a": 2,
+    "b": 3,
+    "is_correct_guard": false,
+    "oracle": false
+  },
+  {
+    "id": "guard_a3_b0",
+    "family": "matched_guard",
+    "layout": "grouped",
+    "guard_keep_keys": [
+      [
+        0
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "restore": null,
+    "attention_noop": false,
+    "a": 3,
+    "b": 0,
+    "is_correct_guard": false,
+    "oracle": false
+  },
+  {
+    "id": "guard_a3_b1",
+    "family": "matched_guard",
+    "layout": "grouped",
+    "guard_keep_keys": [
+      [
+        0
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "restore": null,
+    "attention_noop": false,
+    "a": 3,
+    "b": 1,
+    "is_correct_guard": false,
+    "oracle": false
+  },
+  {
+    "id": "guard_a3_b3",
+    "family": "matched_guard",
+    "layout": "grouped",
+    "guard_keep_keys": [
+      [
+        0
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ]
+    ],
+    "restore": null,
+    "attention_noop": false,
+    "a": 3,
+    "b": 3,
+    "is_correct_guard": false,
+    "oracle": false
+  }
+]
