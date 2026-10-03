@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-03T21:18:30.564222+00:00",
+  "url": "https://posix4e.github.io/ai-understanding-ai/",
+  "deployed_commit": "16aa72d7a29a84d596294dbd0b617e1eb4fec9c4",
+  "deployment_run": "https://github.com/posix4e/ai-understanding-ai/actions/runs/37153084976",
+  "deployment_conclusion": "success",
+  "files": {
+    "index.html": {
+      "http_status": 200,
+      "matches_repository": true,
+      "sha256": "ce9484bbd633b530e93687f5ced4eb87690baac07d12463143ea94bd0ea83f38"
+    },
+    "styles.css": {
+      "http_status": 200,
+      "matches_repository": true,
+      "sha256": "2d3378aae38a41007555ae0c212c6a1023f27751aadaaf399d7b161e2275796b"
+    },
+    "paper.pdf": {
+      "http_status": 200,
+      "matches_repository": true,
+      "sha256": "1994dd810ff49aabec46be4c40c9d04e4d278a45fc7b3a104db6b00f53a64036"
+    }
+  },
+  "checked_link_targets": 51,
+  "layout_widths_without_horizontal_overflow": [
+    320,
+    390,
+    662,
+    1280
+  ],
+  "browser_console_errors": [],
+  "review": "Desktop and phone layouts inspected. Navigation and expandable data index checked. Scientific wording checked against E5 audit. Source recommendations reviewed separately."
+}
