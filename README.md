@@ -18,12 +18,17 @@ patches, test these accounts. They need not be exhaustive or mutually exclusive.
 
 ## Status
 
-Local pilot underway. Three initial 2,000-step runs achieved about 24–25% accuracy,
-close to choosing one of the four displayed values. These failures are preserved.
-Longer training and recovery are exploratory. No confirmatory results have been
-generated. A separate prediction role will receive discovery data only. Its
-explanation, numerical forecasts, protocol, executable code, and file hashes will
-be pushed to GitHub and verified remotely before confirmation.
+Discovery complete; confirmation awaits preregistration. Three initial 2,000-step
+runs achieved about 24–25% accuracy; longer training and higher learning rates
+also failed. Increasing embedding initialization SD recovered the task. The
+three final models achieved 100% accuracy on 1,024 discovery inputs. All failed
+runs are preserved. See [training recovery](outputs/training_recovery.md).
+
+Key-swap discovery patches favor routing through keys at value positions; query
+patches have near-zero effects. A separate prediction role sees discovery data
+only and will freeze numerical forecasts for held-out inputs and previously
+untested joint patches. Its explanation, protocol, executable code, checkpoints,
+and hashes will be committed and read back from GitHub before confirmation.
 
 ## Execution and roles
 

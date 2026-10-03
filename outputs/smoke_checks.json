@@ -1,0 +1,32 @@
+[
+  {
+    "model_seed": 0,
+    "test_data_seed": 47821,
+    "examples": 8,
+    "identity_patch_sites": 18,
+    "max_identity_error": 0.0,
+    "causal_mask": "pass",
+    "final_residual_patch": "pass",
+    "data_invariants": "pass"
+  },
+  {
+    "model_seed": 1,
+    "test_data_seed": 47821,
+    "examples": 8,
+    "identity_patch_sites": 18,
+    "max_identity_error": 0.0,
+    "causal_mask": "pass",
+    "final_residual_patch": "pass",
+    "data_invariants": "pass"
+  },
+  {
+    "model_seed": 2,
+    "test_data_seed": 47821,
+    "examples": 8,
+    "identity_patch_sites": 18,
+    "max_identity_error": 0.0,
+    "causal_mask": "pass",
+    "final_residual_patch": "pass",
+    "data_invariants": "pass"
+  }
+]

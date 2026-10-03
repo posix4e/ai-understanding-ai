@@ -1,0 +1,18 @@
+{
+  "experiment": "1-pilot",
+  "model_seeds": [0, 1, 2],
+  "checkpoint_dir": "outputs/trained",
+  "batch_size": 128,
+  "discovery": {"input_seed": 2000001, "n": 1024},
+  "confirmatory": {"input_seed": 3000001, "n": 2048},
+  "training_audit_steps": {"0": 12000, "1": 2000, "2": 2000},
+  "training_batch_size": 128,
+  "training_validation_seed": 100000,
+  "training_validation_batches": 20,
+  "training_validation_batch_size": 256,
+  "primary_metric": "mean delta of P(alternative target)-P(original target), patched minus recipient",
+  "primary_contrast": "key/l2_k_values minus key/l2_q_query",
+  "no_op_logit_tolerance": 1e-6,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 4100001
+}

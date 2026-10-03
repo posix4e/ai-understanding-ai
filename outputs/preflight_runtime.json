@@ -1,0 +1,47 @@
+{
+  "scope": "fresh random weights; pilot-only synthetic inputs; no trained checkpoint loaded",
+  "torch_version": "2.14.1",
+  "model_seed": 734821,
+  "data_seed": 834822,
+  "checks": {
+    "n_heads_1": {
+      "task_shapes_and_target_indexing": "pass",
+      "causal_suffix_invariance_and_attention_mask": {
+        "status": "pass",
+        "max_difference": 0.0
+      },
+      "all_site_noop_and_index_forms": {
+        "status": "pass",
+        "sites": 18,
+        "index_forms": 4,
+        "max_difference": 0.0
+      },
+      "patch_exact_selection_cache_inputs_and_donor_isolation": "pass",
+      "qkv_pre_norm_scaled_attention_residual_semantics": "pass",
+      "layer_boundary_equivalence_and_component_locality": "pass",
+      "invalid_site_and_shape_rejection": "pass"
+    },
+    "n_heads_4": {
+      "task_shapes_and_target_indexing": "pass",
+      "causal_suffix_invariance_and_attention_mask": {
+        "status": "pass",
+        "max_difference": 0.0
+      },
+      "all_site_noop_and_index_forms": {
+        "status": "pass",
+        "sites": 18,
+        "index_forms": 4,
+        "max_difference": 0.0
+      },
+      "patch_exact_selection_cache_inputs_and_donor_isolation": "pass",
+      "qkv_pre_norm_scaled_attention_residual_semantics": "pass",
+      "layer_boundary_equivalence_and_component_locality": "pass",
+      "invalid_site_and_shape_rejection": "pass"
+    }
+  },
+  "files_sha256": {
+    "model.py": "f476004e2d9a3b64d99eafac22397eaeb1a2a8f76227c43632a63e9994f74c90",
+    "train.py": "f4616251a8e179cedf593bd4a39666246ae7820e311730dbc1031fbaf31f199b",
+    "work/preflight_runtime.py": "41ff3dec24b0b01d653963840fefc50ec3715010ad1f092a065e0c02804e0d38"
+  }
+}

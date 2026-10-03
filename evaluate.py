@@ -21,6 +21,12 @@ SITES = {
     'l2_k_wrong_values': (1, 'k', 'wrong_values'),
 }
 FAMILIES = ['key', 'value', 'matched_key', 'matched_value']
+COMBINATIONS = {
+    'joint_l2_kq': ['l2_k_values', 'l2_q_query'],
+    'joint_l2_kv': ['l2_k_values', 'l2_v_values'],
+    'joint_l2_qv': ['l2_q_query', 'l2_v_values'],
+    'joint_l1_values_query': ['l1_resid_values', 'l1_resid_query'],
+}
 
 def digest(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -84,13 +90,21 @@ def interval(values):
     se = float(np.std(values, ddof=1)/np.sqrt(len(values)))
     return {'mean': mean, 'se': se, 'ci95': [mean-1.96*se, mean+1.96*se]}
 
+def proportion_interval(values):
+    p=float(np.mean(values)); n=len(values); z=1.96
+    center=(p+z*z/(2*n))/(1+z*z/n)
+    radius=z*np.sqrt(p*(1-p)/n+z*z/(4*n*n))/(1+z*z/n)
+    return {'mean':p,'ci95':[float(center-radius),float(center+radius)],'method':'Wilson'}
+
 @torch.no_grad()
-def run(checkpoint, seed, count, batch_size):
+def run(checkpoint, seed, count, batch_size, include_combinations=False):
     model, metadata = load_model(checkpoint)
     generator = torch.Generator().manual_seed(seed)
     donor_generator = torch.Generator().manual_seed(seed+10000000)
     arrays = {'tokens': [], 'query_pair': [], 'original': [], 'alternative': [], 'base': []}
     noops = {site: 0.0 for site in SITES}
+    if include_combinations:
+        noops.update({site:0.0 for site in COMBINATIONS})
     for start in range(0, count, batch_size):
         tokens, original, meta = generate_batch(min(batch_size, count-start), generator, model.config)
         donors, other, remaining = make_donors(tokens, meta, donor_generator)
@@ -103,8 +117,15 @@ def run(checkpoint, seed, count, batch_size):
         for site, (layer, component, kind) in SITES.items():
             patched = model(tokens, patch={(layer,component):(slice(None),cache[layer,component])})
             noops[site] = max(noops[site], float((patched-base).abs().max()))
+        if include_combinations:
+            for name,sites in COMBINATIONS.items():
+                patch={(SITES[s][0],SITES[s][1]):(slice(None),cache[SITES[s][0],SITES[s][1]]) for s in sites}
+                patched=model(tokens,patch=patch)
+                noops[name]=max(noops[name],float((patched-base).abs().max()))
+        donor_caches={}
         for family, (donor_tokens, a, b) in donors.items():
             logits, donor_cache = model(donor_tokens, return_cache=True)
+            donor_caches[family]=donor_cache
             arrays.setdefault(family+'/unpatched', []).append(measure(logits[:,-1],original,alternative))
             # For matched donors active sites follow the irrelevant exchanged pairs;
             # wrong sites use the complementary pair (including queried association).
@@ -114,16 +135,38 @@ def run(checkpoint, seed, count, batch_size):
                 mixed = patch_tensor(cache[layer,component],donor_cache[layer,component],kind,a,b,unused)
                 patched = model(tokens, patch={(layer,component):(slice(None),mixed)})[:,-1]
                 arrays.setdefault(family+'/'+site, []).append(measure(patched,original,alternative))
+            if include_combinations:
+                for name,sites in COMBINATIONS.items():
+                    patch={}
+                    for site in sites:
+                        layer,component,kind=SITES[site]
+                        current=patch.get((layer,component),(None,cache[layer,component]))[1]
+                        mixed=patch_tensor(current,donor_cache[layer,component],kind,a,b,unused)
+                        patch[layer,component]=(slice(None),mixed)
+                    patched=model(tokens,patch=patch)[:,-1]
+                    arrays.setdefault(family+'/'+name,[]).append(measure(patched,original,alternative))
+        if include_combinations:
+            a,b=meta['query_pair'],other
+            cross_tokens=donors['key'][0].clone()
+            cross_tokens[:,1::2]=donors['value'][0][:,1::2]
+            cross_logits=model(cross_tokens)[:,-1]
+            arrays.setdefault('cross/unpatched',[]).append(measure(cross_logits,original,alternative))
+            patch={}
+            for component,family in [('k','key'),('v','value')]:
+                mixed=patch_tensor(cache[1,component],donor_caches[family][1,component],'values',a,b,remaining)
+                patch[1,component]=(slice(None),mixed)
+            patched=model(tokens,patch=patch)[:,-1]
+            arrays.setdefault('cross/keyK_valueV',[]).append(measure(patched,original,alternative))
     arrays = {key:np.concatenate(values) for key,values in arrays.items()}
     summary = {'checkpoint':str(checkpoint),'checkpoint_sha256':digest(checkpoint),
                'input_seed':seed,'n':count,'noop_max_logit_error':noops,
-               'base_accuracy':interval(arrays['base'][:,2]),'conditions':{},
+               'base_accuracy':proportion_interval(arrays['base'][:,2]),'conditions':{},
                'accuracy_by_query_pair':{str(i):float(arrays['base'][arrays['query_pair']==i,2].mean()) for i in range(4)}}
     for key,value in arrays.items():
         if '/' in key:
             summary['conditions'][key] = {'effect':interval(value[:,0]-arrays['base'][:,0]),
-                                          'alternative_rate':interval(value[:,1]),
-                                          'original_rate':interval(value[:,2])}
+                                          'alternative_rate':proportion_interval(value[:,1]),
+                                          'original_rate':proportion_interval(value[:,2])}
     return arrays, summary
 
 def main():
@@ -141,10 +184,17 @@ def main():
     folder.mkdir()
     (folder/'start.json').write_text(json.dumps({'phase':args.phase,'preregistration_commit':commit,
         'utc':datetime.now(timezone.utc).isoformat()},indent=2)+'\n')
+    if args.phase=='confirmatory':
+        from audit_holdout import audit
+        audit_result=audit(protocol)
+        (folder/'holdout_audit.json').write_text(json.dumps(audit_result,indent=2)+'\n')
+        if not audit_result['pass']:
+            raise RuntimeError('Input overlap detected: stop and report; no silent exclusions')
     summaries={}
     for seed in protocol['model_seeds']:
         arrays, summary=run(Path(protocol['checkpoint_dir'])/f'seed_{seed}.pt',
-                            protocol[args.phase]['input_seed'],protocol[args.phase]['n'],protocol['batch_size'])
+                            protocol[args.phase]['input_seed'],protocol[args.phase]['n'],protocol['batch_size'],
+                            include_combinations=args.phase=='confirmatory')
         np.savez_compressed(folder/f'seed_{seed}.npz',**arrays)
         summaries[str(seed)]=summary
         print(json.dumps({'phase':args.phase,'seed':seed,'accuracy':summary['base_accuracy']}),flush=True)

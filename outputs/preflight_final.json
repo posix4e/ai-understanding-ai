@@ -1,0 +1,118 @@
+{
+  "scope": "fresh random weights; pilot-only synthetic inputs; no trained checkpoint loaded",
+  "torch_version": "2.14.1",
+  "model_seed": 734821,
+  "data_seed": 834822,
+  "checks": {
+    "n_heads_1": {
+      "task_shapes_and_target_indexing": "pass",
+      "causal_suffix_invariance_and_attention_mask": {
+        "status": "pass",
+        "max_difference": 0.0
+      },
+      "all_site_noop_and_index_forms": {
+        "status": "pass",
+        "sites": 18,
+        "index_forms": 4,
+        "max_difference": 0.0
+      },
+      "patch_exact_selection_cache_inputs_and_donor_isolation": "pass",
+      "qkv_pre_norm_scaled_attention_residual_semantics": "pass",
+      "layer_boundary_equivalence_and_component_locality": "pass",
+      "invalid_site_and_shape_rejection": "pass",
+      "exhaustive_per_row_mixed_tensor_selection": {
+        "status": "pass",
+        "ordered_pair_selections": 12,
+        "ranks": [
+          3,
+          4
+        ]
+      },
+      "all_donor_families_and_answer_invariants": {
+        "status": "pass",
+        "families": 4
+      },
+      "all_evaluator_conditions_batched_vs_individual_and_noop": {
+        "status": "pass",
+        "conditions": 36,
+        "examples_per_condition": 11,
+        "max_logit_difference": 2.123415470123291e-07,
+        "tolerance": 2e-06
+      },
+      "last_layer_nonquery_q_structural_negative_control": "pass",
+      "joint_patch_union_noop_order_and_individual_equivalence": {
+        "status": "pass",
+        "conditions": 16,
+        "examples_per_condition": 11,
+        "max_logit_difference": 2.123415470123291e-07,
+        "tolerance": 2e-06
+      },
+      "cross_donor_keyK_valueV_selection_equivalence_noop_and_both_swap_map": {
+        "status": "pass",
+        "max_logit_difference": 1.4901161193847656e-07,
+        "tolerance": 2e-06
+      },
+      "probability_contrast_sign_and_accuracy_metric": "pass",
+      "wilson_interval_boundary_non_degeneracy_and_symmetry": "pass"
+    },
+    "n_heads_4": {
+      "task_shapes_and_target_indexing": "pass",
+      "causal_suffix_invariance_and_attention_mask": {
+        "status": "pass",
+        "max_difference": 0.0
+      },
+      "all_site_noop_and_index_forms": {
+        "status": "pass",
+        "sites": 18,
+        "index_forms": 4,
+        "max_difference": 0.0
+      },
+      "patch_exact_selection_cache_inputs_and_donor_isolation": "pass",
+      "qkv_pre_norm_scaled_attention_residual_semantics": "pass",
+      "layer_boundary_equivalence_and_component_locality": "pass",
+      "invalid_site_and_shape_rejection": "pass",
+      "exhaustive_per_row_mixed_tensor_selection": {
+        "status": "pass",
+        "ordered_pair_selections": 12,
+        "ranks": [
+          3,
+          4
+        ]
+      },
+      "all_donor_families_and_answer_invariants": {
+        "status": "pass",
+        "families": 4
+      },
+      "all_evaluator_conditions_batched_vs_individual_and_noop": {
+        "status": "pass",
+        "conditions": 36,
+        "examples_per_condition": 11,
+        "max_logit_difference": 2.086162567138672e-07,
+        "tolerance": 2e-06
+      },
+      "last_layer_nonquery_q_structural_negative_control": "pass",
+      "joint_patch_union_noop_order_and_individual_equivalence": {
+        "status": "pass",
+        "conditions": 16,
+        "examples_per_condition": 11,
+        "max_logit_difference": 2.086162567138672e-07,
+        "tolerance": 2e-06
+      },
+      "cross_donor_keyK_valueV_selection_equivalence_noop_and_both_swap_map": {
+        "status": "pass",
+        "max_logit_difference": 2.086162567138672e-07,
+        "tolerance": 2e-06
+      },
+      "probability_contrast_sign_and_accuracy_metric": "pass",
+      "wilson_interval_boundary_non_degeneracy_and_symmetry": "pass"
+    }
+  },
+  "files_sha256": {
+    "model.py": "4d7f55f3695c8569b23255cf6bb7c00971c16dd38ad214ef820ce7d9c4a1ee98",
+    "train.py": "be4d452ab2bc93197935b3154c993d852aa7af5adc31b2824d9def9e89770496",
+    "evaluate.py": "204d53e77ac92fa25467aa2b70883c33e446f8ef935b454345e06a52ca229e3a",
+    "score.py": "2d6b404f8e8ad5bb712da87ac26fcfe96aeff3099be7e68f0cfffdde5d6d8f76",
+    "protocol.json": "641c992124503081266d121f1084aabccd510d8321de6796f0fcd2d55f61d609",
+    "tests/preflight.py": "5de63108235cd860068d8b224757dad569a256be4763fc6a9a6433b61a70c2e4"
+  }
+}
