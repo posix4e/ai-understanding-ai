@@ -1,0 +1,3 @@
+# Preserve generated document and vector bytes; their whitespace is renderer output.
+*.pdf binary
+outputs/paper/figures/*.svg -whitespace

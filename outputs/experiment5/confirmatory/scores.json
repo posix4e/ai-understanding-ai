@@ -1,0 +1,2558 @@
+{
+  "6": {
+    "aggregate": {
+      "native_mean_probability": 0.9993637800216675,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.9993609209910833,
+      "primary_correct_accuracy": 1.0,
+      "primary_correct_min_layout_query_accuracy": 1.0,
+      "primary_native_minus_correct_probability": 2.8085645421266738e-06,
+      "primary_correct_minus_mean_shams_probability": 0.09803751984376892,
+      "boundary_logical_prefix_accuracy": 1.0,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "boundary_own_key_self_accuracy": 1.0,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "edge_wrong_value_difference_of_changes": 0.06000217708790687
+    },
+    "comparisons": {
+      "native_minus_correct": {
+        "mean": 2.8085645421266738e-06,
+        "ci95": [
+          1.775517621786587e-06,
+          3.8766711700821596e-06
+        ]
+      },
+      "correct_minus_mean_shams": {
+        "mean": 0.09803751984376892,
+        "ci95": [
+          0.0905568158027112,
+          0.1059329444606943
+        ]
+      },
+      "correct_probability": {
+        "mean": 0.9993609209910833,
+        "ci95": [
+          0.9993497372578297,
+          0.9993715318367771
+        ]
+      },
+      "correct_accuracy": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "boundary": {
+      "unguarded": {
+        "accuracy": {
+          "mean": 0.6857676630434782,
+          "ci95": [
+            0.6505848861283644,
+            0.7215847001164597
+          ]
+        },
+        "probability": {
+          "mean": 0.6760101009220922,
+          "ci95": [
+            0.6432127768870628,
+            0.7104216852416803
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 0.34347826086956523
+      },
+      "keyguard": {
+        "accuracy": {
+          "mean": 0.9965919384057971,
+          "ci95": [
+            0.9921265608825052,
+            0.9998835403726708
+          ]
+        },
+        "probability": {
+          "mean": 0.9956103963172804,
+          "ci95": [
+            0.9913351647090519,
+            0.9987961046643671
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 0.996583850931677
+      },
+      "logical_prefix": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9993713232060976,
+          "ci95": [
+            0.9993475419681449,
+            0.999392972932403
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      },
+      "own_key_self": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9993745545762174,
+          "ci95": [
+            0.9993535187986572,
+            0.9993942963477734
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      }
+    },
+    "boundary_fixed_key_order": {
+      "layouts": 23,
+      "conditions": {
+        "unguarded": {
+          "accuracy": {
+            "mean": 0.640625,
+            "ci95": [
+              0.593745754076087,
+              0.6912364130434783
+            ]
+          },
+          "probability": {
+            "mean": 0.6239122045958415,
+            "ci95": [
+              0.5823439615569534,
+              0.6694459318982114
+            ]
+          }
+        },
+        "keyguard": {
+          "accuracy": {
+            "mean": 0.9949048913043478,
+            "ci95": [
+              0.9887907608695652,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.994090866623478,
+            "ci95": [
+              0.988217449086199,
+              0.9985849524491325
+            ]
+          }
+        },
+        "logical_prefix": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993734506424518,
+            "ci95": [
+              0.9993494093076467,
+              0.9993958787688905
+            ]
+          }
+        },
+        "own_key_self": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993764585106755,
+            "ci95": [
+              0.9993551905899631,
+              0.9993965950667979
+            ]
+          }
+        }
+      }
+    },
+    "grouped_reference_boundary_rows": {
+      "unguarded": {
+        "probability": 0.6235315799713135,
+        "accuracy": 0.640625
+      },
+      "correct": {
+        "probability": 0.9993728995323181,
+        "accuracy": 1.0
+      }
+    },
+    "edge": {
+      "mean": 0.06000217708790687,
+      "ci95": [
+        0.051239264350108366,
+        0.07000239790158004
+      ]
+    },
+    "per_edge": {
+      "edge_v0_k1": {
+        "mean": 0.047556268154333114,
+        "ci95": [
+          0.030619950414039133,
+          0.066615394377136
+        ]
+      },
+      "edge_v0_k2": {
+        "mean": 0.08882532165039514,
+        "ci95": [
+          0.064791987901207,
+          0.11529447601554076
+        ]
+      },
+      "edge_v0_k3": {
+        "mean": 0.17845657900284007,
+        "ci95": [
+          0.1385283128231242,
+          0.2223472989989816
+        ]
+      },
+      "edge_v1_k2": {
+        "mean": 0.03343386051361685,
+        "ci95": [
+          0.02277824170065553,
+          0.04615907248976436
+        ]
+      },
+      "edge_v1_k3": {
+        "mean": 0.011273796391267688,
+        "ci95": [
+          0.003134757457912385,
+          0.0220021880543671
+        ]
+      },
+      "edge_v2_k3": {
+        "mean": 0.00046723655474334436,
+        "ci95": [
+          0.0001621825096580487,
+          0.0008846622422508442
+        ]
+      }
+    },
+    "validity_gates": {
+      "finite_complete_consistent": true,
+      "native_accuracy": true,
+      "noop_full_probability": true,
+      "correct_l1_value_native": true,
+      "correct_l1_query_native": true,
+      "all_l1_key_baseline": true,
+      "all_l1_query_native": true,
+      "oracle_full_probability": true,
+      "own_key_self_l1_value_reference": true
+    },
+    "primary_gates": {
+      "every_layout_query_accuracy": true,
+      "native_minus_correct_upper": true,
+      "correct_minus_mean_shams_lower": true
+    },
+    "secondary_gates": {
+      "boundary_logical_prefix": true,
+      "boundary_own_key_self": true,
+      "edge_redirection": true
+    },
+    "manipulation_maxima": {
+      "noop_full_probability": 0.0,
+      "correct_l1_value_native": 1.430511474609375e-06,
+      "correct_l1_query_native": 1.9073486328125e-06,
+      "all_l1_key_baseline": 0.0,
+      "all_l1_query_native": 1.9073486328125e-06,
+      "oracle_full_probability": 2.384185791015625e-07,
+      "own_key_self_l1_value_reference": 0.0
+    },
+    "primary_failed_cells": 0,
+    "worst_primary_cells": [
+      {
+        "layout": "layout_64201357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993318915367126,
+        "n": 256
+      },
+      {
+        "layout": "layout_62013457",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993319511413574,
+        "n": 256
+      },
+      {
+        "layout": "layout_62401357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993331432342529,
+        "n": 256
+      },
+      {
+        "layout": "layout_62014357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993342161178589,
+        "n": 256
+      },
+      {
+        "layout": "layout_62041357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993342757225037,
+        "n": 256
+      },
+      {
+        "layout": "layout_64021357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993346929550171,
+        "n": 256
+      },
+      {
+        "layout": "layout_64012357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993351101875305,
+        "n": 256
+      },
+      {
+        "layout": "layout_60213457",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993380904197693,
+        "n": 256
+      },
+      {
+        "layout": "layout_26401357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993383884429932,
+        "n": 256
+      },
+      {
+        "layout": "layout_24601357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993389248847961,
+        "n": 256
+      },
+      {
+        "layout": "layout_60123457",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993390440940857,
+        "n": 256
+      },
+      {
+        "layout": "layout_60214357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993402361869812,
+        "n": 256
+      },
+      {
+        "layout": "layout_60241357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.999340295791626,
+        "n": 256
+      },
+      {
+        "layout": "layout_24061357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993405342102051,
+        "n": 256
+      },
+      {
+        "layout": "layout_24016357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993411302566528,
+        "n": 256
+      },
+      {
+        "layout": "layout_60124357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993412494659424,
+        "n": 256
+      },
+      {
+        "layout": "layout_24013657",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993413090705872,
+        "n": 256
+      },
+      {
+        "layout": "layout_24013567",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993413686752319,
+        "n": 256
+      },
+      {
+        "layout": "layout_60421357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993414878845215,
+        "n": 256
+      },
+      {
+        "layout": "layout_60412357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993418455123901,
+        "n": 256
+      }
+    ],
+    "specificity_eligible_layouts": 102,
+    "panels_complete": {
+      "references": 1,
+      "primary": 105,
+      "boundary": 2415,
+      "edge_panel": 1
+    }
+  },
+  "7": {
+    "aggregate": {
+      "native_mean_probability": 0.9993605613708496,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.9990781962692424,
+      "primary_correct_accuracy": 0.9998604910714286,
+      "primary_correct_min_layout_query_accuracy": 0.99609375,
+      "primary_native_minus_correct_probability": 0.00028232616068202244,
+      "primary_correct_minus_mean_shams_probability": 0.2064110819376653,
+      "boundary_logical_prefix_accuracy": 1.0,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "boundary_own_key_self_accuracy": 1.0,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "edge_wrong_value_difference_of_changes": 0.0464537032330009
+    },
+    "comparisons": {
+      "native_minus_correct": {
+        "mean": 0.00028232616068202244,
+        "ci95": [
+          8.397853356048793e-05,
+          0.000623293196135603
+        ]
+      },
+      "correct_minus_mean_shams": {
+        "mean": 0.2064110819376653,
+        "ci95": [
+          0.19779075453271966,
+          0.2147633408347641
+        ]
+      },
+      "correct_probability": {
+        "mean": 0.9990781962692424,
+        "ci95": [
+          0.9987398691121788,
+          0.9992784954382486
+        ]
+      },
+      "correct_accuracy": {
+        "mean": 0.9998604910714286,
+        "ci95": [
+          0.9995814732142857,
+          1.0
+        ]
+      }
+    },
+    "boundary": {
+      "unguarded": {
+        "accuracy": {
+          "mean": 0.5806224120082816,
+          "ci95": [
+            0.5446669173783644,
+            0.6166649278597308
+          ]
+        },
+        "probability": {
+          "mean": 0.5632004923136443,
+          "ci95": [
+            0.5297518787097729,
+            0.5962940615826455
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 0.23167701863354037
+      },
+      "keyguard": {
+        "accuracy": {
+          "mean": 0.9926501035196688,
+          "ci95": [
+            0.9854640997023809,
+            0.9982693614130435
+          ]
+        },
+        "probability": {
+          "mean": 0.9917874218967422,
+          "ci95": [
+            0.9850389240570384,
+            0.9971879544679687
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 0.918944099378882
+      },
+      "logical_prefix": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9991229215091169,
+          "ci95": [
+            0.9987874764460621,
+            0.9993589366013238
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      },
+      "own_key_self": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9991238625102155,
+          "ci95": [
+            0.9987891011202191,
+            0.9993600211361969
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      }
+    },
+    "boundary_fixed_key_order": {
+      "layouts": 23,
+      "conditions": {
+        "unguarded": {
+          "accuracy": {
+            "mean": 0.4945652173913044,
+            "ci95": [
+              0.4461616847826087,
+              0.543656589673913
+            ]
+          },
+          "probability": {
+            "mean": 0.47512391474808674,
+            "ci95": [
+              0.4320535039881206,
+              0.5185841034912715
+            ]
+          }
+        },
+        "keyguard": {
+          "accuracy": {
+            "mean": 0.9911684782608696,
+            "ci95": [
+              0.9830163043478262,
+              0.9979619565217391
+            ]
+          },
+          "probability": {
+            "mean": 0.9908853348446349,
+            "ci95": [
+              0.9836526574581275,
+              0.9970045539683002
+            ]
+          }
+        },
+        "logical_prefix": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993592089588713,
+            "ci95": [
+              0.9993193305740335,
+              0.9993888754455839
+            ]
+          }
+        },
+        "own_key_self": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993610547794758,
+            "ci95": [
+              0.9993209258367247,
+              0.9993900513013257
+            ]
+          }
+        }
+      }
+    },
+    "grouped_reference_boundary_rows": {
+      "unguarded": {
+        "probability": 0.47618022561073303,
+        "accuracy": 0.49609375
+      },
+      "correct": {
+        "probability": 0.9993582963943481,
+        "accuracy": 1.0
+      }
+    },
+    "edge": {
+      "mean": 0.0464537032330009,
+      "ci95": [
+        0.038125684092689315,
+        0.05538756192354891
+      ]
+    },
+    "per_edge": {
+      "edge_v0_k1": {
+        "mean": 0.025634973695356056,
+        "ci95": [
+          0.011419972653321685,
+          0.04298635364142589
+        ]
+      },
+      "edge_v0_k2": {
+        "mean": 0.049625237856549376,
+        "ci95": [
+          0.02863001549231393,
+          0.07292102480821613
+        ]
+      },
+      "edge_v0_k3": {
+        "mean": 0.05980765894317974,
+        "ci95": [
+          0.03911094397418423,
+          0.08326163352968773
+        ]
+      },
+      "edge_v1_k2": {
+        "mean": 0.0012840600550176884,
+        "ci95": [
+          0.0001532003509130242,
+          0.003173336324335229
+        ]
+      },
+      "edge_v1_k3": {
+        "mean": 0.03938410578392659,
+        "ci95": [
+          0.022505110557524556,
+          0.058457148725322566
+        ]
+      },
+      "edge_v2_k3": {
+        "mean": 0.10298618323001385,
+        "ci95": [
+          0.08108345407411388,
+          0.128222082637219
+        ]
+      }
+    },
+    "validity_gates": {
+      "finite_complete_consistent": true,
+      "native_accuracy": true,
+      "noop_full_probability": true,
+      "correct_l1_value_native": true,
+      "correct_l1_query_native": true,
+      "all_l1_key_baseline": true,
+      "all_l1_query_native": true,
+      "oracle_full_probability": true,
+      "own_key_self_l1_value_reference": true
+    },
+    "primary_gates": {
+      "every_layout_query_accuracy": true,
+      "native_minus_correct_upper": true,
+      "correct_minus_mean_shams_lower": true
+    },
+    "secondary_gates": {
+      "boundary_logical_prefix": true,
+      "boundary_own_key_self": true,
+      "edge_redirection": false
+    },
+    "manipulation_maxima": {
+      "noop_full_probability": 0.0,
+      "correct_l1_value_native": 1.9073486328125e-06,
+      "correct_l1_query_native": 1.1920928955078125e-06,
+      "all_l1_key_baseline": 0.0,
+      "all_l1_query_native": 1.1920928955078125e-06,
+      "oracle_full_probability": 1.1920928955078125e-07,
+      "own_key_self_l1_value_reference": 0.0
+    },
+    "primary_failed_cells": 0,
+    "worst_primary_cells": [
+      {
+        "layout": "layout_46201357",
+        "query_pair": 2,
+        "accuracy": 0.99609375,
+        "probability": 0.9901832342147827,
+        "n": 256
+      },
+      {
+        "layout": "layout_46021357",
+        "query_pair": 2,
+        "accuracy": 0.99609375,
+        "probability": 0.9902013540267944,
+        "n": 256
+      },
+      {
+        "layout": "layout_46012357",
+        "query_pair": 2,
+        "accuracy": 0.99609375,
+        "probability": 0.9902017712593079,
+        "n": 256
+      },
+      {
+        "layout": "layout_06421357",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9937182068824768,
+        "n": 256
+      },
+      {
+        "layout": "layout_06412357",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9937182664871216,
+        "n": 256
+      },
+      {
+        "layout": "layout_06142357",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9937191009521484,
+        "n": 256
+      },
+      {
+        "layout": "layout_06214357",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.993720531463623,
+        "n": 256
+      },
+      {
+        "layout": "layout_06213457",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9937210083007812,
+        "n": 256
+      },
+      {
+        "layout": "layout_06124357",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9937212467193604,
+        "n": 256
+      },
+      {
+        "layout": "layout_06241357",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9937213063240051,
+        "n": 256
+      },
+      {
+        "layout": "layout_06123457",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9937217235565186,
+        "n": 256
+      },
+      {
+        "layout": "layout_04621357",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9944249391555786,
+        "n": 256
+      },
+      {
+        "layout": "layout_04612357",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9944249987602234,
+        "n": 256
+      },
+      {
+        "layout": "layout_40621357",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9944580793380737,
+        "n": 256
+      },
+      {
+        "layout": "layout_40612357",
+        "query_pair": 0,
+        "accuracy": 0.99609375,
+        "probability": 0.9944581985473633,
+        "n": 256
+      },
+      {
+        "layout": "layout_20614357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9976426362991333,
+        "n": 256
+      },
+      {
+        "layout": "layout_20641357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9976426959037781,
+        "n": 256
+      },
+      {
+        "layout": "layout_20613457",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.997642993927002,
+        "n": 256
+      },
+      {
+        "layout": "layout_02614357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9977197647094727,
+        "n": 256
+      },
+      {
+        "layout": "layout_02641357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9977197647094727,
+        "n": 256
+      }
+    ],
+    "specificity_eligible_layouts": 102,
+    "panels_complete": {
+      "references": 1,
+      "primary": 105,
+      "boundary": 2415,
+      "edge_panel": 1
+    }
+  },
+  "8": {
+    "aggregate": {
+      "native_mean_probability": 0.9993641376495361,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.9993552231434955,
+      "primary_correct_accuracy": 1.0,
+      "primary_correct_min_layout_query_accuracy": 1.0,
+      "primary_native_minus_correct_probability": 8.954087250111036e-06,
+      "primary_correct_minus_mean_shams_probability": 0.11752304330814599,
+      "boundary_logical_prefix_accuracy": 1.0,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "boundary_own_key_self_accuracy": 1.0,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "edge_wrong_value_difference_of_changes": 0.10470842428227584
+    },
+    "comparisons": {
+      "native_minus_correct": {
+        "mean": 8.954087250111036e-06,
+        "ci95": [
+          6.2458820286244516e-06,
+          1.2634432918966671e-05
+        ]
+      },
+      "correct_minus_mean_shams": {
+        "mean": 0.11752304330814599,
+        "ci95": [
+          0.10931880760068112,
+          0.12585573926295027
+        ]
+      },
+      "correct_probability": {
+        "mean": 0.9993552231434955,
+        "ci95": [
+          0.9993403431558926,
+          0.9993684395023489
+        ]
+      },
+      "correct_accuracy": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "boundary": {
+      "unguarded": {
+        "accuracy": {
+          "mean": 0.6406945522774327,
+          "ci95": [
+            0.6112672263198758,
+            0.6695399035973084
+          ]
+        },
+        "probability": {
+          "mean": 0.6298289676244293,
+          "ci95": [
+            0.6020647800826908,
+            0.6573059228265205
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 0.30300207039337473
+      },
+      "keyguard": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9993194541462946,
+          "ci95": [
+            0.9992676547375136,
+            0.9993612057024175
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      },
+      "logical_prefix": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9993685387843336,
+          "ci95": [
+            0.9993477977494956,
+            0.9993886614411537
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      },
+      "own_key_self": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9993664303047325,
+          "ci95": [
+            0.9993473805102503,
+            0.9993854106533077
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      }
+    },
+    "boundary_fixed_key_order": {
+      "layouts": 23,
+      "conditions": {
+        "unguarded": {
+          "accuracy": {
+            "mean": 0.6212635869565217,
+            "ci95": [
+              0.5806725543478262,
+              0.6633873980978261
+            ]
+          },
+          "probability": {
+            "mean": 0.6034968388021468,
+            "ci95": [
+              0.5675191556246363,
+              0.6410755338798271
+            ]
+          }
+        },
+        "keyguard": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993201355530841,
+            "ci95": [
+              0.9992741722861588,
+              0.9993596701746117
+            ]
+          }
+        },
+        "logical_prefix": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993739710088172,
+            "ci95": [
+              0.9993537529250203,
+              0.9993930279611326
+            ]
+          }
+        },
+        "own_key_self": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993703810639841,
+            "ci95": [
+              0.9993519782615097,
+              0.9993886783820294
+            ]
+          }
+        }
+      }
+    },
+    "grouped_reference_boundary_rows": {
+      "unguarded": {
+        "probability": 0.6040281057357788,
+        "accuracy": 0.625
+      },
+      "correct": {
+        "probability": 0.9993727207183838,
+        "accuracy": 1.0
+      }
+    },
+    "edge": {
+      "mean": 0.10470842428227584,
+      "ci95": [
+        0.09510701769802513,
+        0.11462961928063133
+      ]
+    },
+    "per_edge": {
+      "edge_v0_k1": {
+        "mean": 0.060959206657859255,
+        "ci95": [
+          0.04107672045104991,
+          0.08205313189247868
+        ]
+      },
+      "edge_v0_k2": {
+        "mean": 0.05208947695445065,
+        "ci95": [
+          0.031133819255627894,
+          0.07654752288989732
+        ]
+      },
+      "edge_v0_k3": {
+        "mean": 0.438760560174444,
+        "ci95": [
+          0.3972245145549138,
+          0.48114283538771896
+        ]
+      },
+      "edge_v1_k2": {
+        "mean": 0.01450261888441906,
+        "ci95": [
+          0.0072649209649921056,
+          0.023301179810268077
+        ]
+      },
+      "edge_v1_k3": {
+        "mean": 0.0592257175959332,
+        "ci95": [
+          0.04025067346488141,
+          0.08122451290952469
+        ]
+      },
+      "edge_v2_k3": {
+        "mean": 0.002712965306267634,
+        "ci95": [
+          0.0003171180212292568,
+          0.00700733032342931
+        ]
+      }
+    },
+    "validity_gates": {
+      "finite_complete_consistent": true,
+      "native_accuracy": true,
+      "noop_full_probability": true,
+      "correct_l1_value_native": true,
+      "correct_l1_query_native": true,
+      "all_l1_key_baseline": true,
+      "all_l1_query_native": true,
+      "oracle_full_probability": true,
+      "own_key_self_l1_value_reference": true
+    },
+    "primary_gates": {
+      "every_layout_query_accuracy": true,
+      "native_minus_correct_upper": true,
+      "correct_minus_mean_shams_lower": true
+    },
+    "secondary_gates": {
+      "boundary_logical_prefix": true,
+      "boundary_own_key_self": true,
+      "edge_redirection": true
+    },
+    "manipulation_maxima": {
+      "noop_full_probability": 0.0,
+      "correct_l1_value_native": 1.430511474609375e-06,
+      "correct_l1_query_native": 1.6689300537109375e-06,
+      "all_l1_key_baseline": 0.0,
+      "all_l1_query_native": 1.6689300537109375e-06,
+      "oracle_full_probability": 1.1920928955078125e-07,
+      "own_key_self_l1_value_reference": 0.0
+    },
+    "primary_failed_cells": 0,
+    "worst_primary_cells": [
+      {
+        "layout": "layout_24601357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9991918802261353,
+        "n": 256
+      },
+      {
+        "layout": "layout_24061357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9991933107376099,
+        "n": 256
+      },
+      {
+        "layout": "layout_24016357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9991940259933472,
+        "n": 256
+      },
+      {
+        "layout": "layout_24013657",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9991942644119263,
+        "n": 256
+      },
+      {
+        "layout": "layout_24013567",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9991943836212158,
+        "n": 256
+      },
+      {
+        "layout": "layout_26401357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993079900741577,
+        "n": 256
+      },
+      {
+        "layout": "layout_26041357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993103742599487,
+        "n": 256
+      },
+      {
+        "layout": "layout_26013457",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993107318878174,
+        "n": 256
+      },
+      {
+        "layout": "layout_26014357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993107318878174,
+        "n": 256
+      },
+      {
+        "layout": "layout_02641357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.999316394329071,
+        "n": 256
+      },
+      {
+        "layout": "layout_02614357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9993171691894531,
+        "n": 256
+      },
+      {
+        "layout": "layout_02613457",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9993178844451904,
+        "n": 256
+      },
+      {
+        "layout": "layout_20461357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993184804916382,
+        "n": 256
+      },
+      {
+        "layout": "layout_20641357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993188381195068,
+        "n": 256
+      },
+      {
+        "layout": "layout_20613457",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993191957473755,
+        "n": 256
+      },
+      {
+        "layout": "layout_20614357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993191957473755,
+        "n": 256
+      },
+      {
+        "layout": "layout_20416357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.999319314956665,
+        "n": 256
+      },
+      {
+        "layout": "layout_20413657",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993195533752441,
+        "n": 256
+      },
+      {
+        "layout": "layout_20413567",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993196725845337,
+        "n": 256
+      },
+      {
+        "layout": "layout_20163457",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993206262588501,
+        "n": 256
+      }
+    ],
+    "specificity_eligible_layouts": 102,
+    "panels_complete": {
+      "references": 1,
+      "primary": 105,
+      "boundary": 2415,
+      "edge_panel": 1
+    }
+  },
+  "9": {
+    "aggregate": {
+      "native_mean_probability": 0.9994214177131653,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.9994032440330124,
+      "primary_correct_accuracy": 1.0,
+      "primary_correct_min_layout_query_accuracy": 1.0,
+      "primary_native_minus_correct_probability": 1.8209186826078955e-05,
+      "primary_correct_minus_mean_shams_probability": 0.2593844652297022,
+      "boundary_logical_prefix_accuracy": 1.0,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "boundary_own_key_self_accuracy": 1.0,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "edge_wrong_value_difference_of_changes": 0.21199641308788902
+    },
+    "comparisons": {
+      "native_minus_correct": {
+        "mean": 1.8209186826078955e-05,
+        "ci95": [
+          1.1539717781404901e-05,
+          2.66366673722142e-05
+        ]
+      },
+      "correct_minus_mean_shams": {
+        "mean": 0.2593844652297022,
+        "ci95": [
+          0.24844796367832195,
+          0.27055831878969955
+        ]
+      },
+      "correct_probability": {
+        "mean": 0.9994032440330124,
+        "ci95": [
+          0.9993891147581772,
+          0.9994166992440228
+        ]
+      },
+      "correct_accuracy": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "boundary": {
+      "unguarded": {
+        "accuracy": {
+          "mean": 0.39568614130434776,
+          "ci95": [
+            0.3574398291925465,
+            0.4356728374094203
+          ]
+        },
+        "probability": {
+          "mean": 0.38401818107230135,
+          "ci95": [
+            0.34865682264544284,
+            0.42091447386414205
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 0.05755693581780538
+      },
+      "keyguard": {
+        "accuracy": {
+          "mean": 0.9948385740165632,
+          "ci95": [
+            0.9897998350155279,
+            0.9987173670419254
+          ]
+        },
+        "probability": {
+          "mean": 0.9935254421631927,
+          "ci95": [
+            0.9885296474310757,
+            0.9974712736500616
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 0.9778467908902692
+      },
+      "logical_prefix": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9994078888346712,
+          "ci95": [
+            0.9993821652507019,
+            0.9994308689933566
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      },
+      "own_key_self": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9994138027139309,
+          "ci95": [
+            0.9993923603337402,
+            0.9994327456310538
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      }
+    },
+    "boundary_fixed_key_order": {
+      "layouts": 23,
+      "conditions": {
+        "unguarded": {
+          "accuracy": {
+            "mean": 0.34782608695652173,
+            "ci95": [
+              0.29431895380434786,
+              0.4038722826086957
+            ]
+          },
+          "probability": {
+            "mean": 0.32557731637842174,
+            "ci95": [
+              0.2799792656898738,
+              0.37204945435825887
+            ]
+          }
+        },
+        "keyguard": {
+          "accuracy": {
+            "mean": 0.9891304347826088,
+            "ci95": [
+              0.9802989130434783,
+              0.9966032608695652
+            ]
+          },
+          "probability": {
+            "mean": 0.9881775102548704,
+            "ci95": [
+              0.9794750321965031,
+              0.9954504826280597
+            ]
+          }
+        },
+        "logical_prefix": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993921011159925,
+            "ci95": [
+              0.9993236589387221,
+              0.9994368529671033
+            ]
+          }
+        },
+        "own_key_self": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993949549414379,
+            "ci95": [
+              0.9993282981439614,
+              0.9994364687626289
+            ]
+          }
+        }
+      }
+    },
+    "grouped_reference_boundary_rows": {
+      "unguarded": {
+        "probability": 0.3219645023345947,
+        "accuracy": 0.34375
+      },
+      "correct": {
+        "probability": 0.9993917942047119,
+        "accuracy": 1.0
+      }
+    },
+    "edge": {
+      "mean": 0.21199641308788902,
+      "ci95": [
+        0.19344423089046173,
+        0.23024464310777107
+      ]
+    },
+    "per_edge": {
+      "edge_v0_k1": {
+        "mean": 0.16182471072144922,
+        "ci95": [
+          0.1251689157393961,
+          0.2007690609856342
+        ]
+      },
+      "edge_v0_k2": {
+        "mean": 0.26946192369952415,
+        "ci95": [
+          0.22351677260553676,
+          0.318284891609209
+        ]
+      },
+      "edge_v0_k3": {
+        "mean": 0.3559987721419149,
+        "ci95": [
+          0.3043401453429067,
+          0.40960145158412686
+        ]
+      },
+      "edge_v1_k2": {
+        "mean": 0.09173828797941108,
+        "ci95": [
+          0.06209108236151211,
+          0.1239971754208287
+        ]
+      },
+      "edge_v1_k3": {
+        "mean": 0.37637831977792224,
+        "ci95": [
+          0.32302322559193697,
+          0.4282535907311734
+        ]
+      },
+      "edge_v2_k3": {
+        "mean": 0.016576464939413116,
+        "ci95": [
+          0.008868200087296978,
+          0.025990927059698295
+        ]
+      }
+    },
+    "validity_gates": {
+      "finite_complete_consistent": true,
+      "native_accuracy": true,
+      "noop_full_probability": true,
+      "correct_l1_value_native": true,
+      "correct_l1_query_native": true,
+      "all_l1_key_baseline": true,
+      "all_l1_query_native": true,
+      "oracle_full_probability": true,
+      "own_key_self_l1_value_reference": true
+    },
+    "primary_gates": {
+      "every_layout_query_accuracy": true,
+      "native_minus_correct_upper": true,
+      "correct_minus_mean_shams_lower": true
+    },
+    "secondary_gates": {
+      "boundary_logical_prefix": true,
+      "boundary_own_key_self": true,
+      "edge_redirection": true
+    },
+    "manipulation_maxima": {
+      "noop_full_probability": 0.0,
+      "correct_l1_value_native": 1.9073486328125e-06,
+      "correct_l1_query_native": 1.1920928955078125e-06,
+      "all_l1_key_baseline": 0.0,
+      "all_l1_query_native": 1.1920928955078125e-06,
+      "oracle_full_probability": 1.1920928955078125e-07,
+      "own_key_self_l1_value_reference": 0.0
+    },
+    "primary_failed_cells": 0,
+    "worst_primary_cells": [
+      {
+        "layout": "layout_24601357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9992676377296448,
+        "n": 256
+      },
+      {
+        "layout": "layout_24061357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.999272346496582,
+        "n": 256
+      },
+      {
+        "layout": "layout_24016357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9992730617523193,
+        "n": 256
+      },
+      {
+        "layout": "layout_46201357",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992731213569641,
+        "n": 256
+      },
+      {
+        "layout": "layout_24013657",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9992732405662537,
+        "n": 256
+      },
+      {
+        "layout": "layout_24013567",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.999273419380188,
+        "n": 256
+      },
+      {
+        "layout": "layout_40621357",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992793798446655,
+        "n": 256
+      },
+      {
+        "layout": "layout_40261357",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992811679840088,
+        "n": 256
+      },
+      {
+        "layout": "layout_40216357",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992818832397461,
+        "n": 256
+      },
+      {
+        "layout": "layout_40213657",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992819428443909,
+        "n": 256
+      },
+      {
+        "layout": "layout_40612357",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992820024490356,
+        "n": 256
+      },
+      {
+        "layout": "layout_40213567",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992820620536804,
+        "n": 256
+      },
+      {
+        "layout": "layout_40126357",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992837905883789,
+        "n": 256
+      },
+      {
+        "layout": "layout_40162357",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992837905883789,
+        "n": 256
+      },
+      {
+        "layout": "layout_40123657",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992839097976685,
+        "n": 256
+      },
+      {
+        "layout": "layout_40123567",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9992839694023132,
+        "n": 256
+      },
+      {
+        "layout": "layout_26401357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9992966055870056,
+        "n": 256
+      },
+      {
+        "layout": "layout_06241357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.999312698841095,
+        "n": 256
+      },
+      {
+        "layout": "layout_02641357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9993155002593994,
+        "n": 256
+      },
+      {
+        "layout": "layout_02461357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9993180632591248,
+        "n": 256
+      }
+    ],
+    "specificity_eligible_layouts": 102,
+    "panels_complete": {
+      "references": 1,
+      "primary": 105,
+      "boundary": 2415,
+      "edge_panel": 1
+    }
+  },
+  "10": {
+    "aggregate": {
+      "native_mean_probability": 0.9993953704833984,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.9993927105396454,
+      "primary_correct_accuracy": 1.0,
+      "primary_correct_min_layout_query_accuracy": 1.0,
+      "primary_native_minus_correct_probability": 2.7144843313318913e-06,
+      "primary_correct_minus_mean_shams_probability": 0.046009879713818674,
+      "boundary_logical_prefix_accuracy": 1.0,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "boundary_own_key_self_accuracy": 1.0,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "edge_wrong_value_difference_of_changes": 0.05312677221277769
+    },
+    "comparisons": {
+      "native_minus_correct": {
+        "mean": 2.7144843313318913e-06,
+        "ci95": [
+          1.2498422126703278e-06,
+          3.98147648887894e-06
+        ]
+      },
+      "correct_minus_mean_shams": {
+        "mean": 0.046009879713818674,
+        "ci95": [
+          0.03871170336926529,
+          0.05372213585874839
+        ]
+      },
+      "correct_probability": {
+        "mean": 0.9993927105396454,
+        "ci95": [
+          0.9993804956413389,
+          0.9994031388734722
+        ]
+      },
+      "correct_accuracy": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "boundary": {
+      "unguarded": {
+        "accuracy": {
+          "mean": 0.6751714544513457,
+          "ci95": [
+            0.6433886112189441,
+            0.7070494872541406
+          ]
+        },
+        "probability": {
+          "mean": 0.6747226034956633,
+          "ci95": [
+            0.6445630710127283,
+            0.7044812102211261
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 0.34130434782608693
+      },
+      "keyguard": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9993770041971566,
+          "ci95": [
+            0.9993505801870628,
+            0.9994010084970829
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      },
+      "logical_prefix": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.999393972044128,
+          "ci95": [
+            0.9993733916646058,
+            0.9994144382117669
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      },
+      "own_key_self": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9993935340726228,
+          "ci95": [
+            0.9993721587952987,
+            0.9994145211615642
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      }
+    },
+    "boundary_fixed_key_order": {
+      "layouts": 23,
+      "conditions": {
+        "unguarded": {
+          "accuracy": {
+            "mean": 0.64453125,
+            "ci95": [
+              0.6015625,
+              0.6875
+            ]
+          },
+          "probability": {
+            "mean": 0.6416879638171908,
+            "ci95": [
+              0.6029511156042006,
+              0.6808104234139707
+            ]
+          }
+        },
+        "keyguard": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.999375134109236,
+            "ci95": [
+              0.9993481165397933,
+              0.9994001864971916
+            ]
+          }
+        },
+        "logical_prefix": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.999395950646747,
+            "ci95": [
+              0.9993734757714581,
+              0.9994168558231373
+            ]
+          }
+        },
+        "own_key_self": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993944902317193,
+            "ci95": [
+              0.9993711751503567,
+              0.999416199029403
+            ]
+          }
+        }
+      }
+    },
+    "grouped_reference_boundary_rows": {
+      "unguarded": {
+        "probability": 0.6414211988449097,
+        "accuracy": 0.64453125
+      },
+      "correct": {
+        "probability": 0.9993956685066223,
+        "accuracy": 1.0
+      }
+    },
+    "edge": {
+      "mean": 0.05312677221277769,
+      "ci95": [
+        0.04500486273366194,
+        0.06134467246955274
+      ]
+    },
+    "per_edge": {
+      "edge_v0_k1": {
+        "mean": 0.022585410102142323,
+        "ci95": [
+          0.011084356159644527,
+          0.03762766832556788
+        ]
+      },
+      "edge_v0_k2": {
+        "mean": 0.23859915160986844,
+        "ci95": [
+          0.19837717548762016,
+          0.2821618976865663
+        ]
+      },
+      "edge_v0_k3": {
+        "mean": 0.047413248858289236,
+        "ci95": [
+          0.03045855461468556,
+          0.06914601258898773
+        ]
+      },
+      "edge_v1_k2": {
+        "mean": 0.01001612214448011,
+        "ci95": [
+          0.00407300623805471,
+          0.018301242242629988
+        ]
+      },
+      "edge_v1_k3": {
+        "mean": 6.379768818143283e-05,
+        "ci95": [
+          2.2488564240091823e-05,
+          0.0001239136228601056
+        ]
+      },
+      "edge_v2_k3": {
+        "mean": 8.290216465089983e-05,
+        "ci95": [
+          5.391684555875464e-05,
+          0.00011741634422487434
+        ]
+      }
+    },
+    "validity_gates": {
+      "finite_complete_consistent": true,
+      "native_accuracy": true,
+      "noop_full_probability": true,
+      "correct_l1_value_native": true,
+      "correct_l1_query_native": true,
+      "all_l1_key_baseline": true,
+      "all_l1_query_native": true,
+      "oracle_full_probability": true,
+      "own_key_self_l1_value_reference": true
+    },
+    "primary_gates": {
+      "every_layout_query_accuracy": true,
+      "native_minus_correct_upper": true,
+      "correct_minus_mean_shams_lower": true
+    },
+    "secondary_gates": {
+      "boundary_logical_prefix": true,
+      "boundary_own_key_self": true,
+      "edge_redirection": false
+    },
+    "manipulation_maxima": {
+      "noop_full_probability": 0.0,
+      "correct_l1_value_native": 1.6689300537109375e-06,
+      "correct_l1_query_native": 1.1920928955078125e-06,
+      "all_l1_key_baseline": 0.0,
+      "all_l1_query_native": 1.3113021850585938e-06,
+      "oracle_full_probability": 1.1920928955078125e-07,
+      "own_key_self_l1_value_reference": 0.0
+    },
+    "primary_failed_cells": 0,
+    "worst_primary_cells": [
+      {
+        "layout": "layout_60421357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993415474891663,
+        "n": 256
+      },
+      {
+        "layout": "layout_60412357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.999341607093811,
+        "n": 256
+      },
+      {
+        "layout": "layout_60142357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993425607681274,
+        "n": 256
+      },
+      {
+        "layout": "layout_60214357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993431568145752,
+        "n": 256
+      },
+      {
+        "layout": "layout_60124357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993432760238647,
+        "n": 256
+      },
+      {
+        "layout": "layout_60213457",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993432760238647,
+        "n": 256
+      },
+      {
+        "layout": "layout_60241357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993433356285095,
+        "n": 256
+      },
+      {
+        "layout": "layout_60123457",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993433952331543,
+        "n": 256
+      },
+      {
+        "layout": "layout_64012357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993435144424438,
+        "n": 256
+      },
+      {
+        "layout": "layout_64021357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993435144424438,
+        "n": 256
+      },
+      {
+        "layout": "layout_64201357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.999343752861023,
+        "n": 256
+      },
+      {
+        "layout": "layout_62014357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993442296981812,
+        "n": 256
+      },
+      {
+        "layout": "layout_62013457",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993442893028259,
+        "n": 256
+      },
+      {
+        "layout": "layout_62041357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993443489074707,
+        "n": 256
+      },
+      {
+        "layout": "layout_62401357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.999346137046814,
+        "n": 256
+      },
+      {
+        "layout": "layout_06421357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993729591369629,
+        "n": 256
+      },
+      {
+        "layout": "layout_06412357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993730783462524,
+        "n": 256
+      },
+      {
+        "layout": "layout_46021357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993734359741211,
+        "n": 256
+      },
+      {
+        "layout": "layout_46012357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993734955787659,
+        "n": 256
+      },
+      {
+        "layout": "layout_46201357",
+        "query_pair": 3,
+        "accuracy": 1.0,
+        "probability": 0.9993736743927002,
+        "n": 256
+      }
+    ],
+    "specificity_eligible_layouts": 102,
+    "panels_complete": {
+      "references": 1,
+      "primary": 105,
+      "boundary": 2415,
+      "edge_panel": 1
+    }
+  },
+  "11": {
+    "aggregate": {
+      "native_mean_probability": 0.9993780851364136,
+      "native_accuracy": 1.0,
+      "primary_correct_mean_probability": 0.99935605017679,
+      "primary_correct_accuracy": 1.0,
+      "primary_correct_min_layout_query_accuracy": 1.0,
+      "primary_native_minus_correct_probability": 2.199904549689388e-05,
+      "primary_correct_minus_mean_shams_probability": 0.15016433540206778,
+      "boundary_logical_prefix_accuracy": 1.0,
+      "boundary_logical_prefix_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "boundary_own_key_self_accuracy": 1.0,
+      "boundary_own_key_self_fraction_layout_query_accuracy_ge_0_95": 1.0,
+      "edge_wrong_value_difference_of_changes": 0.08875625840631879
+    },
+    "comparisons": {
+      "native_minus_correct": {
+        "mean": 2.199904549689388e-05,
+        "ci95": [
+          4.86044383641122e-06,
+          5.4462144894169296e-05
+        ]
+      },
+      "correct_minus_mean_shams": {
+        "mean": 0.15016433540206778,
+        "ci95": [
+          0.1384171406223073,
+          0.1618148032326196
+        ]
+      },
+      "correct_probability": {
+        "mean": 0.99935605017679,
+        "ci95": [
+          0.9993144804493584,
+          0.9993828042086706
+        ]
+      },
+      "correct_accuracy": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "boundary": {
+      "unguarded": {
+        "accuracy": {
+          "mean": 0.5926840709109731,
+          "ci95": [
+            0.5530111688017599,
+            0.6309863887810558
+          ]
+        },
+        "probability": {
+          "mean": 0.5798694393060828,
+          "ci95": [
+            0.5423335808799257,
+            0.6151671136913636
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 0.10175983436853002
+      },
+      "keyguard": {
+        "accuracy": {
+          "mean": 0.9975478778467909,
+          "ci95": [
+            0.9935785455486543,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9968978273744706,
+          "ci95": [
+            0.9930809845321156,
+            0.9993306198417149
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      },
+      "logical_prefix": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9993765733240454,
+          "ci95": [
+            0.9993539400601795,
+            0.9993987827375844
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      },
+      "own_key_self": {
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "probability": {
+          "mean": 0.9993741546334278,
+          "ci95": [
+            0.9993513282635162,
+            0.9993961216456774
+          ]
+        },
+        "fraction_layout_query_accuracy_ge_0_95": 1.0
+      }
+    },
+    "boundary_fixed_key_order": {
+      "layouts": 23,
+      "conditions": {
+        "unguarded": {
+          "accuracy": {
+            "mean": 0.5337975543478262,
+            "ci95": [
+              0.48012058423913045,
+              0.5861073369565217
+            ]
+          },
+          "probability": {
+            "mean": 0.5134222063346694,
+            "ci95": [
+              0.4649031447825181,
+              0.559589941644346
+            ]
+          }
+        },
+        "keyguard": {
+          "accuracy": {
+            "mean": 0.9977921195652174,
+            "ci95": [
+              0.9943953804347826,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9970134439341644,
+            "ci95": [
+              0.9936000212303201,
+              0.9992433694216584
+            ]
+          }
+        },
+        "logical_prefix": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993708369868767,
+            "ci95": [
+              0.9993405725543751,
+              0.99939636891561
+            ]
+          }
+        },
+        "own_key_self": {
+          "accuracy": {
+            "mean": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "probability": {
+            "mean": 0.9993679524480323,
+            "ci95": [
+              0.9993391387048178,
+              0.9993925815068551
+            ]
+          }
+        }
+      }
+    },
+    "grouped_reference_boundary_rows": {
+      "unguarded": {
+        "probability": 0.5100271701812744,
+        "accuracy": 0.53125
+      },
+      "correct": {
+        "probability": 0.9993699193000793,
+        "accuracy": 1.0
+      }
+    },
+    "edge": {
+      "mean": 0.08875625840631879,
+      "ci95": [
+        0.07600319389242599,
+        0.1023845712014992
+      ]
+    },
+    "per_edge": {
+      "edge_v0_k1": {
+        "mean": 0.05907249123513525,
+        "ci95": [
+          0.037294468243208645,
+          0.08393281110838491
+        ]
+      },
+      "edge_v0_k2": {
+        "mean": 0.05386065300046439,
+        "ci95": [
+          0.03260464361389762,
+          0.07899759514097203
+        ]
+      },
+      "edge_v0_k3": {
+        "mean": 0.28708539158627033,
+        "ci95": [
+          0.2397487605438247,
+          0.33321107477322587
+        ]
+      },
+      "edge_v1_k2": {
+        "mean": 0.030480861528224823,
+        "ci95": [
+          0.017521272390692243,
+          0.046066759172337844
+        ]
+      },
+      "edge_v1_k3": {
+        "mean": 0.0611997678561671,
+        "ci95": [
+          0.03669678677553111,
+          0.08817973054624291
+        ]
+      },
+      "edge_v2_k3": {
+        "mean": 0.04083838442332555,
+        "ci95": [
+          0.022529095553926272,
+          0.06153900735487977
+        ]
+      }
+    },
+    "validity_gates": {
+      "finite_complete_consistent": true,
+      "native_accuracy": true,
+      "noop_full_probability": true,
+      "correct_l1_value_native": true,
+      "correct_l1_query_native": true,
+      "all_l1_key_baseline": true,
+      "all_l1_query_native": true,
+      "oracle_full_probability": true,
+      "own_key_self_l1_value_reference": true
+    },
+    "primary_gates": {
+      "every_layout_query_accuracy": true,
+      "native_minus_correct_upper": true,
+      "correct_minus_mean_shams_lower": true
+    },
+    "secondary_gates": {
+      "boundary_logical_prefix": true,
+      "boundary_own_key_self": true,
+      "edge_redirection": true
+    },
+    "manipulation_maxima": {
+      "noop_full_probability": 0.0,
+      "correct_l1_value_native": 1.6689300537109375e-06,
+      "correct_l1_query_native": 1.6689300537109375e-06,
+      "all_l1_key_baseline": 0.0,
+      "all_l1_query_native": 1.9073486328125e-06,
+      "oracle_full_probability": 1.1920928955078125e-07,
+      "own_key_self_l1_value_reference": 0.0
+    },
+    "primary_failed_cells": 0,
+    "worst_primary_cells": [
+      {
+        "layout": "layout_04621357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9986761212348938,
+        "n": 256
+      },
+      {
+        "layout": "layout_04612357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9986780285835266,
+        "n": 256
+      },
+      {
+        "layout": "layout_04261357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9986903667449951,
+        "n": 256
+      },
+      {
+        "layout": "layout_04216357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9987016320228577,
+        "n": 256
+      },
+      {
+        "layout": "layout_04213657",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9987024068832397,
+        "n": 256
+      },
+      {
+        "layout": "layout_04213567",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9987025856971741,
+        "n": 256
+      },
+      {
+        "layout": "layout_04126357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9987120032310486,
+        "n": 256
+      },
+      {
+        "layout": "layout_04123657",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9987128376960754,
+        "n": 256
+      },
+      {
+        "layout": "layout_04123567",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9987130165100098,
+        "n": 256
+      },
+      {
+        "layout": "layout_04162357",
+        "query_pair": 0,
+        "accuracy": 1.0,
+        "probability": 0.9987138509750366,
+        "n": 256
+      },
+      {
+        "layout": "layout_24601357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993163347244263,
+        "n": 256
+      },
+      {
+        "layout": "layout_24061357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993181824684143,
+        "n": 256
+      },
+      {
+        "layout": "layout_24013657",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.999319314956665,
+        "n": 256
+      },
+      {
+        "layout": "layout_24016357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.999319314956665,
+        "n": 256
+      },
+      {
+        "layout": "layout_24013567",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993194341659546,
+        "n": 256
+      },
+      {
+        "layout": "layout_26401357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993313550949097,
+        "n": 256
+      },
+      {
+        "layout": "layout_26041357",
+        "query_pair": 1,
+        "accuracy": 1.0,
+        "probability": 0.9993369579315186,
+        "n": 256
+      },
+      {
+        "layout": "layout_46201357",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.999337911605835,
+        "n": 256
+      },
+      {
+        "layout": "layout_46021357",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.9993388056755066,
+        "n": 256
+      },
+      {
+        "layout": "layout_46012357",
+        "query_pair": 2,
+        "accuracy": 1.0,
+        "probability": 0.999340295791626,
+        "n": 256
+      }
+    ],
+    "specificity_eligible_layouts": 102,
+    "panels_complete": {
+      "references": 1,
+      "primary": 105,
+      "boundary": 2415,
+      "edge_panel": 1
+    }
+  }
+}

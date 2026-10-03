@@ -3,6 +3,38 @@
 An open, locally executed pilot: can an AI-written explanation of a tiny neural
 network predict its behavior under causal interventions?
 
+## Experiment 5: the repair transfers to fresh models and a complete layout class
+
+**All six newly trained models passed the preregistered primary test across all
+105 orders that permit native first-layer value-state restoration.** The fixed
+repair achieved 99.986–100% accuracy; the worst layout/query cell was 255/256
+(99.609%). It exceeded the mean degree-matched alternatives by 4.60–25.94
+percentage points of target probability. There were 624 alternative-mask
+conditions across 102 eligible layouts. This comparison does not establish a
+unique or minimal repair.
+
+On the remaining 2,415 pair-respecting orders, two stronger deletion policies
+made no errors on the registered 256-dictionary subset. Native-state restoration
+is not generally guaranteed there. A separate prediction that each model's
+single-edge effect exceeds a fixed magnitude **failed in two models**. Seed 7
+also made 15 primary errors involving two dictionaries. These failures remain
+in the evidence; 65/72 aggregate numeric forecasts met the fixed .05 tolerance.
+
+Read the [plain-language overview](outputs/PLAIN_LANGUAGE_OVERVIEW.md),
+[paper](outputs/paper/paper.pdf), [editable LaTeX](outputs/paper/paper.tex),
+[complete results](outputs/experiment5/RESULTS.md),
+[independent outcome audit](outputs/experiment5/SKEPTICAL_REVIEW.md), and
+[reproduction guide](outputs/experiment5/REPRODUCE.md).
+The [paper build guide](paper/README.md) records its data and rendering steps.
+
+All 96 frozen file identities in the
+[public registration](https://github.com/posix4e/ai-understanding-ai/commit/de745644b5c71853755e8d53cc9b3dec2abdc2ed)
+were verified before evaluation. The separate audit checked all 492 raw shards,
+64,272 condition cells, and registered decisions without model forwards.
+This is a bounded synthetic study of an externally supplied repair, not proof
+of exact recovery, an independently discovered algorithm, or transfer to large
+language models. The manuscript is prepared for review and has not been peer reviewed.
+
 ## Experiment 4: restoring key visibility repairs the failure
 
 **A separately preregistered repair restored 99.95–100% lookup accuracy in all

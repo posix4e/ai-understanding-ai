@@ -320,3 +320,42 @@ and evidence, not private conversations or internal model reasoning.
 - All model computation remains local CPU. No E5 shifted-layout forward has
   run during design. Public registration and exact remote verification must
   precede confirmation; original E1–E4 manifests remain intact.
+
+## 2026-10-03 16:46–17:10 UTC — Experiment 5 confirmation and publication package
+
+- Published registration `de745644b5c71853755e8d53cc9b3dec2abdc2ed` and verified
+  all 96 file identities at 16:46:17.917703 UTC. Confirmation started at
+  16:46:45.385492 and finished at 17:10:11.284599 UTC. No frozen scientific
+  files or decision rules changed after registration.
+- Every validity and primary gate passed in all six fresh models. Correct-guard
+  primary accuracy was 100% in five models and 99.9860% in seed 7. Its 15 wrong
+  predictions involved two dictionary rows across 15 layouts; the worst
+  layout/query accuracy was 255/256. A severe individual error lowered the
+  correct-answer probability from .999083 to .008674 despite restored value
+  states. The key-state oracle restores native outputs.
+- The complete matched-control comparison passed in all six models. Mean
+  target-probability advantage was .0460–.2594; every paired lower bound
+  exceeded .02. Controls match row degree and own-key retention, not attention
+  mass or perturbation size. No uniqueness or minimality claim follows.
+- Logical-prefix and own-key/self boundary accuracy was 100% on the same fixed
+  256-dictionary subset across all 2,415 boundary layouts. These are empirical
+  observations, not a universal exact-restoration result. Future-key deletion
+  alone had high average performance but retained individual-cell failures.
+- The separate all-six edge magnitude claim failed in seeds 7 and 10. All six
+  point effects were positive; direction is weaker than the registered
+  lower-bound requirement. Numeric forecast accuracy was 65/72 within .05,
+  MAE .02075, RMSE .03597; all seven misses are retained.
+- Independent audit recomputed all 64,272 condition cells, 21,301,248 saved
+  case-condition observations, 2,520 primary layout/query gates, bootstrap
+  comparisons, and numerical forecasts from 492 hash-verified raw shards.
+  Every decision agrees; maximum aggregate discrepancy is 5.46e-8. This audit
+  ran no models. The observations share dictionaries and are not independent
+  replications. Saved state errors remain runner measurements, validated by
+  the frozen synthetic suite.
+- Prepared a research manuscript, standalone editable LaTeX, figures, complete
+  reproduction instructions, and an ASD-STE100-inspired plain-language overview.
+  The contribution is prospective transfer across fresh models and a complete
+  finite class; prior binding, positional, and context-restoration work is cited.
+  External replication, larger architectures, longer lists, and removal of
+  supplied pair structure remain next tests. No venue acceptance or field-first
+  claim is made. Earlier negative results remain unchanged.

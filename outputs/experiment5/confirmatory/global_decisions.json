@@ -1,0 +1,11 @@
+{
+  "all_six_valid": true,
+  "all_six_recovery": true,
+  "all_six_specificity": true,
+  "primary_claim_pass": true,
+  "secondary": {
+    "boundary_logical_prefix": true,
+    "boundary_own_key_self": true,
+    "edge_redirection": false
+  }
+}

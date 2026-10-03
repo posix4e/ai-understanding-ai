@@ -1,0 +1,7 @@
+{
+  "count": 72,
+  "mae": 0.020754257929774176,
+  "rmse": 0.03597132604566606,
+  "within_tolerance": 65,
+  "fraction_within_tolerance": 0.9027777777777778
+}

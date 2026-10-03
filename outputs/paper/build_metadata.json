@@ -1,0 +1,23 @@
+{
+  "input": "outputs/paper/manuscript.json",
+  "input_sha256": "283d57bfe28868fba54b9e5f6d15ef29a49cf0301f88a6f88c9338bbff824091",
+  "pages": 7,
+  "pdf": "outputs/paper/paper.pdf",
+  "tex": "outputs/paper/paper.tex",
+  "figures": {
+    "control_gain": {
+      "png": "outputs/paper/figures/control_gain.png",
+      "svg": "outputs/paper/figures/control_gain.svg"
+    },
+    "boundary_policies": {
+      "png": "outputs/paper/figures/boundary_policies.png",
+      "svg": "outputs/paper/figures/boundary_policies.svg"
+    },
+    "edge_enrichment": {
+      "png": "outputs/paper/figures/edge_enrichment.png",
+      "svg": "outputs/paper/figures/edge_enrichment.svg"
+    }
+  },
+  "shared_content": "Both renderers consume the same JSON; paragraph latex overrides are formatting supplied by the author.",
+  "pdf_text_characters": 19677
+}

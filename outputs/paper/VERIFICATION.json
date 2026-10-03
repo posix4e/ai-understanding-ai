@@ -1,0 +1,10 @@
+{
+  "pdf_pages": 7,
+  "paragraphs_matched_to_pdf_and_tex": 29,
+  "standalone_tex": true,
+  "native_latex_compilation": "success",
+  "all_pdf_pages_visually_inspected": true,
+  "manuscript_sha256": "283d57bfe28868fba54b9e5f6d15ef29a49cf0301f88a6f88c9338bbff824091",
+  "pdf_sha256": "1994dd810ff49aabec46be4c40c9d04e4d278a45fc7b3a104db6b00f53a64036",
+  "tex_sha256": "532dfbbf3690a21e603d2ecf70d9a50051d9866f743ada16a394751532a532b2"
+}
