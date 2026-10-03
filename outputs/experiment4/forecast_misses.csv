@@ -1,0 +1,5 @@
+seed,condition,family,oracle,metric,forecast,observed,error,absolute_error,within_tolerance
+3,guard_a3_b0,matched_guard,False,original_probability,0.677700447535,0.9043459932984756,0.22664554576347562,0.22664554576347562,False
+3,guard_a3_b0,matched_guard,False,accuracy,0.6873828125,0.90966796875,0.22228515625,0.22228515625,False
+3,guard_a3_b1,matched_guard,False,original_probability,0.677700447535,0.905449882462839,0.22774943492783895,0.22774943492783895,False
+3,guard_a3_b1,matched_guard,False,accuracy,0.6873828125,0.91015625,0.2227734375,0.2227734375,False

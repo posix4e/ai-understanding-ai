@@ -1,0 +1,7 @@
+{
+  "experiment": 4,
+  "utc": "2026-10-03T14:45:59.874058+00:00",
+  "preregistration_commit": "b11245db8da95c4a98f9b25a452e828b7c3abe72",
+  "verified_blob_count": 44,
+  "execution": "Local CPU, four torch threads; no training or inference API"
+}

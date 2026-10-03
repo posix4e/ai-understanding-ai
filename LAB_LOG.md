@@ -248,3 +248,35 @@ and evidence, not private conversations or internal model reasoning.
   found zero overlap against 2,853,613 prior inputs including E3. No E4 trained
   forward has run. The predictor committed 180 forecasts using E3 only as
   disclosed discovery evidence; oracle identities do not count as new findings.
+
+## 2026-10-03 14:45–14:46 UTC — Experiment 4 confirmation
+
+- Published preregistration `b11245db8da95c4a98f9b25a452e828b7c3abe72` and
+  remotely verified all 44 file identities at 14:45:51.004522 UTC. Confirmation
+  began at 14:45:59.874058 and finished at 14:46:09.609038 UTC. No frozen source,
+  thresholds, inputs, forecasts or checkpoints changed after registration.
+- Every validity, recovery and mean-control specificity gate passed in all six
+  models. Unguarded grouped accuracy was 28.9–58.2%; the guard achieved 100% in
+  seeds 0–4 and 2047/2048 (99.95%) in seed 5. The worst query cell was 511/512.
+  Every lower confidence bound for target-probability improvement exceeded .30
+  over grouping and .05 over the equally weighted eight matched masks.
+- The empirical result is final behavioral recovery despite altered first-layer
+  key states. Guaranteed value-state restoration and full-state oracle equality
+  are implementation checks. No new training or model fitting occurred.
+- Several alternative masks also meet the per-query recovery threshold. Seed 1's
+  best alternative nearly ties the correct guard. The mask is not uniquely
+  sufficient, and the controls match degrees rather than attention mass or norms.
+- Seed 5 row 260 is a counterexample to exact sufficiency: the guard fails, while
+  native and full guard-plus-key oracle succeed. Its target probability is about
+  .136 versus .999536 under native. Changed key states can still matter.
+- 176/180 numeric forecasts met the fixed .15 tolerance (104/108 for the matched
+  guard family). All four misses concern seed 3's a3/b0 and a3/b1 controls,
+  which performed better than predicted. The largest absolute error is .22775.
+- The independent skeptical review checked 44 frozen hashes, all 90 raw cells,
+  180 forecast errors, 450 Wilson intervals and 18 bootstrap comparisons using
+  its own integer-stratified implementation (agreement within 1e-12). It checked
+  recorded state discrepancies and prior synthetic implementation tests; full
+  residual vectors were not saved. It ran no new model forwards.
+- The final record preserves E3's failure and E4's limitations. This is a
+  reproducible causal result within the tested model family, not an established
+  world-first discovery, universal mechanism, or arbitrary-layout solution.

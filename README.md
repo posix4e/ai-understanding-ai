@@ -3,6 +3,34 @@
 An open, locally executed pilot: can an AI-written explanation of a tiny neural
 network predict its behavior under causal interventions?
 
+## Experiment 4: restoring key visibility repairs the failure
+
+**A separately preregistered repair restored 99.95–100% lookup accuracy in all
+six models, from 28.9–58.2% on the same fresh grouped inputs.** Keeping the
+original position labels had not been enough. Blocking six newly exposed
+key-attention edges per first-layer head restored the visibility each value had
+during training, without retraining or copying native activations.
+
+All registered gates passed on 2,048 new dictionaries per model, including
+recovery in every query position and a mean target-probability advantage over
+eight masks with matching edge counts. That advantage was 10.6–34.6 percentage
+points across models. Some alternative masks nearly tied the repair, and one
+guarded example still failed; this does not establish a unique or exact repair.
+
+The nontrivial result is final-answer recovery while first-layer key states
+remain altered. Restoration of the value states follows algebraically from the
+intervention and is an implementation check. **176/180 numeric forecasts** met
+the fixed .15 tolerance; the four misses underestimated two controls in one
+model. E3's failed predictions remain unchanged below.
+
+Read [the finding](outputs/FINDING.md), [complete E4 results](outputs/experiment4/RESULTS.md),
+[independent review](outputs/experiment4/SKEPTICAL_REVIEW.md), and
+[all forecast misses](outputs/experiment4/forecast_misses.csv).
+The [public preregistration](https://github.com/posix4e/ai-understanding-ai/commit/b11245db8da95c4a98f9b25a452e828b7c3abe72)
+and all 44 frozen file identities were verified at 14:45:51 UTC on 2026-10-03;
+confirmation began at 14:45:59 UTC. This is a causal result in six small trained
+models; field-wide novelty and transfer to other architectures remain unestablished.
+
 ## Experiment 3: the strong position-binding explanation failed
 
 **All six models failed the preregistered structural-transfer claim.** Grouping
@@ -23,9 +51,9 @@ Read [the complete E3 results](outputs/experiment3/RESULTS.md),
 demonstrates positional steering; this is a prospective test of a stronger,
 systematic prediction in our six models, not a claim of discovering that idea.
 
-The failure motivates a separate test of changed causal visibility: grouped
+The failure motivated E4's separate test of changed causal visibility: grouped
 values can attend to keys that were always in their future during training.
-That explanation remains a hypothesis until separately tested.
+E4 confirmed a specified repair on fresh inputs; it does not rescue E3's claim.
 
 ## Experiment 2: head ablations and rescue
 
@@ -155,12 +183,13 @@ Scoring and reporting consume saved arrays only. All
 ## Claim limits
 
 Explaining one trained model does not establish how learning works or explain
-frontier AI. Three training seeds remain a small pilot. Causal transplantation
+frontier AI. Six training seeds remain a small pilot. Causal transplantation
 can establish effects of specified interventions without uniquely identifying the
 represented algorithm. Exploratory findings and confirmatory results are kept
 separate; failures and deviations remain visible.
 
-Experiment 2 completed the head-ablation/rescue extension. Next: test varied
-dictionary layouts and genuinely held-out model/task settings, compare stronger
-interaction models, and measure whether interventions create unnatural internal
-states. These further experiments have not run.
+Experiments 3 and 4 tested one changed layout and a specified repair. Next: test
+the repair across held-out layouts and newly trained models, isolate which
+edges are necessary, and investigate the retained failure case. Comparisons
+across position schemes and intervention-induced states would test broader
+mechanistic claims. These further experiments have not run.

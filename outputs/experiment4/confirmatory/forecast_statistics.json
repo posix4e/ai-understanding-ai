@@ -1,0 +1,34 @@
+{
+  "all_15": {
+    "count": 180,
+    "mae": 0.04410879125842411,
+    "rmse": 0.067153641173566,
+    "within_tolerance": 176,
+    "fraction_within_tolerance": 0.9777777777777777,
+    "max_absolute_error": 0.22774943492783895
+  },
+  "matched_guards_9": {
+    "count": 108,
+    "mae": 0.06902563663049786,
+    "rmse": 0.08630869048121083,
+    "within_tolerance": 104,
+    "fraction_within_tolerance": 0.9629629629629629,
+    "max_absolute_error": 0.22774943492783895
+  },
+  "oracles_3": {
+    "count": 36,
+    "mae": 0.008723236284430414,
+    "rmse": 0.01157706020481333,
+    "within_tolerance": 36,
+    "fraction_within_tolerance": 1.0,
+    "max_absolute_error": 0.02490234375
+  },
+  "references_3": {
+    "count": 36,
+    "mae": 0.0047438101161965795,
+    "rmse": 0.008152247150942793,
+    "within_tolerance": 36,
+    "fraction_within_tolerance": 1.0,
+    "max_absolute_error": 0.02392578125
+  }
+}
