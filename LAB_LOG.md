@@ -82,3 +82,29 @@ and evidence, not private conversations or internal model reasoning.
   Original predictions.json SHA-256 remains
   `a869ea8eb4fdaa023cddb6de7ea3484ce624922ea31c78cb5d3e83254f3d004d`.
   V2 will have a new manifest, remotely verified commit and output directory.
+
+## 2026-10-03 08:45–08:49 — V2 confirmation
+
+- Published v2 commit `b2d3bdd55db2dd9a8f2f3f2548dabe9fe8f53b37` and read
+  back its exact manifest and all 45 frozen file identities at 12:45:04 UTC.
+  Confirmation's start record is 12:48:07 UTC; the exact audit passed before
+  model forwards. Original v1 evidence was included in the new manifest.
+- All three models answered 2,048/2,048 recipient lookups correctly. All 159
+  mean forecasts passed the fixed absolute-error bound 0.15; largest error
+  0.002686. Key/K-minus-query/Q primary contrasts were 1.998133, 1.997834 and
+  1.998322; every bootstrap lower bound exceeded the threshold 1.5.
+- Cross-donor cancellation original-answer accuracies were 100%, 99.951%,
+  99.951%. Seed 1 and seed 2 each made one error to a third value. Small nonzero
+  effects are retained; exact invariance was not observed. Value/V transfer also
+  failed on four seed-1 cases and one seed-2 case.
+- The explanation beat zero, full-donor transfer and empirical/additive baselines
+  overall. Its advantage over empirical/additive forecasts is driven by the
+  single prospectively selected cross-donor test. The empirical discovery-mean
+  baseline was slightly better on familiar interventions in all three seeds.
+- No forecasts, scoring code, checkpoints, conditions or gates were changed
+  after v2 freeze. Post-outcome build_report.py only formats saved results and
+  evaluates the existing gates. All outcomes and controls remain public.
+- Independent skeptical review reproduced the key arithmetic, gates, hashes,
+  input identities and timing. Its post hoc diagnostic excluding the cross test
+  reverses the overall AI advantage in all seeds; this limitation is explicit
+  in outputs/SKEPTICAL_REVIEW.md.

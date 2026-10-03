@@ -16,26 +16,45 @@ keys are written into subsequent value positions; or the query carries a positio
 pointer to the answer. Key-swap and value-swap donors, plus targeted activation
 patches, test these accounts. They need not be exhaustive or mutually exclusive.
 
-## Status
+## Result: a narrow compositional prediction succeeded
 
-Discovery complete; revised confirmation awaits preregistration. Three initial 2,000-step
-runs achieved about 24–25% accuracy; longer training and higher learning rates
-also failed. Increasing embedding initialization SD recovered the task. The
-three final models achieved 100% accuracy on 1,024 discovery inputs. All failed
-runs are preserved. See [training recovery](outputs/training_recovery.md).
+All three models achieved **100% accuracy on 2,048 held-out lookup inputs**.
+All **159 frozen mean-effect forecasts** (53 interventions per model) passed the
+fixed absolute-error tolerance 0.15. The largest mean forecast error was **0.00269**.
+Results favor key-dependent routing information at value positions: L2 key
+patches redirect lookup, value patches transfer content, and query patches have
+near-zero effects. This does not uniquely identify the represented algorithm.
 
-Key-swap discovery patches favor routing through keys at value positions; query
-patches have near-zero effects. A separate prediction role sees discovery data
-only and will freeze numerical forecasts for held-out inputs and previously
-untested joint patches. Its explanation, protocol, executable code, checkpoints,
-and hashes will be committed and read back from GitHub before confirmation.
+The strongest unseen intervention combined keys from a key-swap donor with
+values from a value-swap donor. The explanation predicted cancellation back to
+the original answer: this occurred in **100%, 99.95%, and 99.95%** of cases.
+A simple additive baseline predicted the opposite effect. This one intervention
+drives the overall forecast advantage; the empirical discovery baseline was
+slightly better on familiar interventions. Individual patch failures are retained.
+
+Read the **[results and limitations](outputs/RESULTS.md)**,
+[independent skeptical review](outputs/SKEPTICAL_REVIEW.md), and
+[complete forecast table](outputs/forecasts_vs_results.csv).
+
+## Registration and failures
+
+Initial runs achieved about 24–25% accuracy; longer training and higher learning
+rates also failed. Increasing embedding initialization SD recovered the task.
+All attempts and checkpoints are preserved in the
+[training recovery record](outputs/training_recovery.md).
 
 The first registered test aborted before any model evaluation because exact
 holdout auditing found four training-overlap incidences. The failure is preserved
 in [the original audit](outputs/confirmatory/holdout_audit.json). A disclosed v2
-revision freezes 2,048 recipient/donor bundles after deterministic exact-overlap
-filtering (four rejected out of 2,052 candidates). Forecasts remain byte-identical;
-v2 requires its own public registration and remote verification.
+revision froze 2,048 recipient/donor bundles after deterministic exact-overlap
+filtering (four rejected out of 2,052 candidates). Forecasts remained byte-identical.
+
+The [v2 preregistration](https://github.com/posix4e/ai-understanding-ai/commit/b2d3bdd55db2dd9a8f2f3f2548dabe9fe8f53b37)
+was read back from GitHub, checking all 45 frozen file identities at 12:45:04 UTC
+on 2026-10-03. Confirmation started at 12:48:07 UTC. See the
+[remote verification](outputs/remote_lock_v2.json), [protocol](PROTOCOL.md),
+[explanation](PREDICTION.md), [numeric forecasts](predictions.json), and
+[frozen hashes](preregistration_manifest_v2.json).
 
 ## Execution and roles
 
@@ -44,8 +63,8 @@ All training and experimental computation runs on an Apple M3 MacBook Air with
 experiments. AI research roles run in the existing Codex session (Astra requested
 for implementer, blinded predictor, and skeptical reviewer); these conversational
 roles are not locally hosted model inference. Blinding is procedural, not an OS
-security boundary: roles share a filesystem, and confirmation outputs will not
-exist until the forecast is frozen. Only concise scientific outputs are published.
+security boundary: roles shared a filesystem, and confirmation outputs did not
+exist until forecasts were frozen. Only concise scientific outputs are published.
 
 See [machine metadata](outputs/machine.json), [lab log](LAB_LOG.md), and
 [dependencies](requirements.txt). Checkpoints and raw results are versioned.
@@ -55,11 +74,28 @@ See [machine metadata](outputs/machine.json), [lab log](LAB_LOG.md), and
 ```sh
 uv venv .venv --python python3.14
 uv pip install --python .venv/bin/python -r requirements.txt
-.venv/bin/python train.py --seed 0 --steps 2000 --threads 4 --output-dir outputs/checkpoints
+.venv/bin/python tests/preflight.py
+.venv/bin/python train.py --seed 0 --steps 2000 --threads 4 --embedding-std 1.0 --output-dir outputs/retrained
 ```
 
-Repeat with seeds 1 and 2 for the initial pilot. Final commands and preregistration
-will be recorded as the pilot matures. Do not overwrite archived runs.
+Repeat with seeds 1 and 2. The new output directory preserves published checkpoints.
+Commands for every exploratory attempt are in the training record. To rerun the
+exact frozen evaluation, preserve the published results first:
+
+```sh
+mkdir -p work
+mv outputs/confirmatory_v2 work/published-confirmatory-v2
+.venv/bin/python evaluate.py --phase confirmatory
+.venv/bin/python score.py
+.venv/bin/python build_report.py
+```
+
+Use a fresh checkout or a new archive directory for each rerun. The evaluator
+requires GitHub CLI access for a read-only remote check, verifies frozen hashes,
+repeats the exact overlap audit, and refuses to overwrite existing results.
+Scoring and reporting consume saved arrays only. All
+[checkpoints](outputs/trained), [frozen inputs](outputs/holdout_v2.npz),
+[raw outcomes and scores](outputs/confirmatory_v2) are included.
 
 ## Claim limits
 
@@ -68,3 +104,7 @@ frontier AI. Three training seeds remain a small pilot. Causal transplantation
 can establish effects of specified interventions without uniquely identifying the
 represented algorithm. Exploratory findings and confirmatory results are kept
 separate; failures and deviations remain visible.
+
+Next: preregister head-specific ablations and rescue patches, more training seeds,
+varying key/value distances, and a broader routing/content composition test against
+a symbolic binding baseline. This pilot is complete; the next experiment has not run.

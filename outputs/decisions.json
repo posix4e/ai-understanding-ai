@@ -1,0 +1,44 @@
+{
+  "0": {
+    "gates": {
+      "finite_outputs": true,
+      "recipient_accuracy": true,
+      "active_donor_accuracy": true,
+      "noops": true,
+      "routing_contrast": true,
+      "all_forecasts": true,
+      "cross_effect": true,
+      "cross_original_accuracy": true,
+      "ai_beats_additive_overall": true
+    },
+    "all_pass": true
+  },
+  "1": {
+    "gates": {
+      "finite_outputs": true,
+      "recipient_accuracy": true,
+      "active_donor_accuracy": true,
+      "noops": true,
+      "routing_contrast": true,
+      "all_forecasts": true,
+      "cross_effect": true,
+      "cross_original_accuracy": true,
+      "ai_beats_additive_overall": true
+    },
+    "all_pass": true
+  },
+  "2": {
+    "gates": {
+      "finite_outputs": true,
+      "recipient_accuracy": true,
+      "active_donor_accuracy": true,
+      "noops": true,
+      "routing_contrast": true,
+      "all_forecasts": true,
+      "cross_effect": true,
+      "cross_original_accuracy": true,
+      "ai_beats_additive_overall": true
+    },
+    "all_pass": true
+  }
+}
