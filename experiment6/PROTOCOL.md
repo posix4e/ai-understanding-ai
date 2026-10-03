@@ -7,7 +7,8 @@ input reordering in pretrained GPT-2 small? This is one unchanged pretrained
 checkpoint, not a test that isolates model size from architecture or training.
 The model has 124,439,808 learned parameters and 12 transformer blocks. The
 custom E5 model had 70,720 parameters and two blocks. Inference stays local:
-CPU float32, four threads, evaluation mode, eager attention, no KV cache.
+CPU float32 model computation, four threads, evaluation mode, eager attention,
+no KV cache. Normalize final logits into probabilities using float64 softmax.
 
 ## Calibration and fresh data
 

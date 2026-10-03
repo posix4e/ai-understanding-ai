@@ -1,10 +1,10 @@
 {
-  "prepared_utc": "2026-10-03T21:40:48.088428+00:00",
+  "prepared_utc": "2026-10-03T21:44:26.924159+00:00",
   "files": {
     "experiment6/CALIBRATION_PLAN.md": "1c8c3d280798afd295b01a21786bd52440388dce6a650b267a3df9ae2d724192",
-    "experiment6/DESIGN_REVIEW.md": "924df27fbdd6377a5d117b11c66ebe5100e7a4178caf94c5e1f4ebdf10b62d95",
+    "experiment6/DESIGN_REVIEW.md": "91c16e647b4109b191591009df0c0820a422fa174b5e06dc5c5e76353f2410f8",
     "experiment6/PREDICTION.md": "78a540e1cee14c97de9468090ef862c0a595e458230db1b410f192c1ecb05d9b",
-    "experiment6/PROTOCOL.md": "1061c8c799aeac6440aea4cc944351edde50ef1560573731659f4124206753d9",
+    "experiment6/PROTOCOL.md": "4addb7b4301840bbd04104d098886689e707469abcde70ba5d336d65eb216b2e",
     "experiment6/__init__.py": "bfe937303e0029962ba7b0a2aaced74faef9e28b0589862d25f5f098ee76675f",
     "experiment6/calibrate.py": "d86d7715492c6a6b8f1e506b3f47c5995aa5b9bb42df2bd0d55e28596c53c922",
     "experiment6/conditions.py": "a94b07884ca84e00d133e164a4a1b339e9d966e6464ce98c2c7b1d7faf1db6ba",
@@ -12,13 +12,16 @@
     "experiment6/download_model.py": "cae48bc2d7f21ab4119ed98f55a851fbf1e952fa67872b8881b1c58094f40145",
     "experiment6/model_adapter.py": "a91f3243dc81ce224b4185dc7b64071c7102f83c7333dbd907dbb7f524861b3f",
     "experiment6/predictions.json": "d1fabe8908a631fa904ced8f12139c9ebb5ebfe76660f6078401ae9fc707447a",
-    "experiment6/protocol.json": "608d27c8c4cc7bd44f0828bbf55b67b70d66af6240b3e02f9018abb3ad13d3f1",
+    "experiment6/protocol.json": "3c5c62958e11f73ea065ab08cd48e09fab96a4b1df15848472d7f1128f112d8c",
     "experiment6/requirements.txt": "0790f0e271cfbe15d5d22de4b5a977b0f6f38cefe930bc4841ae1e87332a4388",
-    "experiment6/run_phase.py": "c4f9b6904c87b1247d2f4c97af82b0e3decd12e904876d12d20e876111f9ff22",
+    "experiment6/run_phase.py": "6f869f967091f056b29c85e9a368c314cc2300188c29da340cddad5cef6d27b8",
     "experiment6/score.py": "d4750a7719d41a11edf214dd389fb848d4227f2e31883b0f76667a38f852bd42",
     "experiment6/test_adapter.py": "0e5c83ff22d34410c168e1a529e634bba80eefcf8f0581f645b47065e50eb467",
     "experiment6/test_conditions.py": "df19152a513c8877f11980971c60ae2dee427e9364dbf438393be085ff36ae28",
     "experiment6/test_score.py": "08c3243e0cb3934443ca13835f0e8d0fecd793e7747213f453b040c0531913c2",
+    "outputs/experiment6/attempt1_aborted_native_check/ABORT.json": "5a48741bac5d8c29113e2c4f9b7fc1a2340ad8d0e0ef1ad5162a114c56c2b44a",
+    "outputs/experiment6/attempt1_aborted_native_check/remote_lock.json": "91f4b14700a415bc6e3ca077c029e7080328f3e5ec1cd8d7ce3ba9ad18ca879b",
+    "outputs/experiment6/attempt1_aborted_native_check/started.json": "d7a84ed01008fbd88f5432758e60c83d9c8ddc75dcaf9e51b2788aab875a85f8",
     "outputs/experiment6/calibration_inputs.json": "97d8cf7abf6c9a4080f6c0f49df8cff35332c4e6e5733e9506d4cd748602952e",
     "outputs/experiment6/calibration_manifest.json": "3af0f1885d9c297b2e30a6aef6caf1acc449b82afce009ebf0031387c4cc37f3",
     "outputs/experiment6/calibration_results.json": "7fb6be91c2ee54c3bba34a88b5e4ca33941a94f56e868350b148c5289776c5a1",
@@ -29,8 +32,14 @@
     "outputs/experiment6/environment.json": "f00e963c3ec54b752527ed79c59aa7f0127a3bf218d0092edc1cadcc577d47c1",
     "outputs/experiment6/input_audit.json": "b0e8ae840e0c946fbef699750a0f7328faa03e9d052593381b671687c8e8e463",
     "outputs/experiment6/model_manifest.json": "1a7cde10716845998cb9f1eafe32da2400e9ac9182ef7ff27f40d61bcdc2f738",
+    "outputs/experiment6/probability_diagnostic.json": "5c76263be838532c03e78621d55bbe6ad501e299faa61887c546dc8b1b52ed98",
     "outputs/experiment6/token_audit.json": "e8ab8d4ed4185a50e6dbbc9981426cec1579c62818aadc06381c18dfb887d6c2"
   },
   "trained_shifted_or_repaired_forwards_before_freeze": 0,
-  "supersedes_before_execution": "f2b8bd9"
+  "supersedes_before_execution": "f2b8bd9",
+  "supersedes_before_shifted_execution": [
+    "f2b8bd9",
+    "5093cb6bfbc3d88e16fbbd1d36adf2ec3185c128"
+  ],
+  "native_diagnostic_note": "First eight native confirmation prompts were evaluated to diagnose normalization; no accuracy/repair scores inspected."
 }

@@ -34,6 +34,16 @@ name in the added tokenizer check. The corrected runner and refreshed manifest
 were publicly registered before any shifted/repaired trained-model forward.
 No outcome, threshold, input or scientific condition changed.
 
+The next registration (`5093cb6`) stopped on the first native batch because the
+runtime's float32 softmax over 50,257 tokens produced sums of 1.000039–1.000059.
+No batch results or shifted/repaired forwards occurred. The start record and a
+native-only numerical diagnostic are retained in the outputs. Float64 softmax
+of the same float32 logits gave sums within 9e-15 of one; maximum individual
+probability difference was 1.69e-5. A new public registration changes only the
+final softmax precision and documentation. It retains every validity tolerance,
+behavioral threshold, input, model parameter, condition and forecast. Calibration
+remains as originally recorded; its format choice used untied answer accuracies.
+
 ## Interpretation limits fixed in advance
 
 The claim concerns one checkpoint, one calibrated lookup format and one grouped

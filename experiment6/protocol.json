@@ -444,5 +444,6 @@
       "a": 0,
       "b": 3
     }
-  ]
+  ],
+  "probability_dtype": "float64"
 }

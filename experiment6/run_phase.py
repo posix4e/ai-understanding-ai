@@ -81,7 +81,8 @@ def main():
     started = time.perf_counter()
     write_json(target / "started.json", {"at_utc": datetime.now(timezone.utc).isoformat(),
                "registration": args.registration, "n": len(cases), "conditions": len(CONDITIONS),
-               "parameters_sha256": before, "device": "cpu", "dtype": "float32", "threads": torch.get_num_threads()})
+               "parameters_sha256": before, "device": "cpu", "dtype": "float32",
+               "probability_dtype": "float64", "threads": torch.get_num_threads()})
     ids = torch.stack([e.ids for e in encoded])
     answer_ids = torch.tensor(protocol["candidate_token_ids"])
     target_indices = np.array([VALUES.index(c["values"][c["query_pair"]]) for c in cases], dtype=np.int64)
@@ -104,9 +105,11 @@ def main():
             inputs = batch[:, permutation]
             positions = (permutation if condition["position_mode"] == "canonical" else torch.arange(length)).expand(len(batch), -1)
             result = adapter(inputs, position_ids=positions, layer_masks=masks[name], capture_first_block=True)
-            probabilities = result.logits.softmax(-1)
+            # Retain float32 model computation; normalize the large vocabulary
+            # in float64 to avoid the measured native softmax summation error.
+            probabilities = result.logits.double().softmax(-1)
             assert bool(torch.isfinite(probabilities).all()) and bool(torch.isfinite(result.first_block).all()), name
-            assert bool(torch.allclose(probabilities.sum(-1), torch.ones(len(batch)), atol=1e-6, rtol=0))
+            assert bool(torch.allclose(probabilities.sum(-1), torch.ones(len(batch), dtype=torch.float64), atol=1e-6, rtol=0))
             state = result.first_block[:, torch.argsort(permutation)]
             selected = probabilities[:, answer_ids].numpy().copy()
             top = result.logits.argmax(-1).numpy().copy()

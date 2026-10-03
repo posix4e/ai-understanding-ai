@@ -1,0 +1,9 @@
+{
+  "registration": "5093cb6bfbc3d88e16fbbd1d36adf2ec3185c128",
+  "remote_verified_via": "GitHub commits/main API",
+  "verified_at_utc": "2026-10-03T21:42:03.901241+00:00",
+  "manifest_sha256": "6136f5da3c7abf72586f75811d3b4ea8f503a2109dd9ed3c0323b4764a0b1025",
+  "verified_files": 30,
+  "shifted_or_repaired_pretrained_forwards_so_far": 0,
+  "synthetic_full_runner_preflight": "15 conditions on random12-block fixture; all validity, row and hash checks passed"
+}

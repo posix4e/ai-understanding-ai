@@ -1,0 +1,9 @@
+{
+  "reason": "float32 large-vocabulary softmax probability-sum error in first native batch",
+  "registration": "5093cb6bfbc3d88e16fbbd1d36adf2ec3185c128",
+  "saved_batch_count": 0,
+  "shifted_or_repaired_forwards": 0,
+  "diagnostic": "outputs/experiment6/probability_diagnostic.json",
+  "fix": "float64 final softmax of unchanged float32 logits; no threshold changed",
+  "at_utc": "2026-10-03T21:44:26.919185+00:00"
+}
