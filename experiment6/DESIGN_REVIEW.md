@@ -28,6 +28,12 @@ The root agent observed the native-only calibration to choose the format under
 the registered rule. No agent observed shifted GPT-2 outcomes before the
 confirmation registration. No frozen E1–E5 file was changed.
 
+The first public confirmation registration (`f2b8bd9`) was superseded before
+execution. Final static review caught a helper name shadowed by a local tensor
+name in the added tokenizer check. The corrected runner and refreshed manifest
+were publicly registered before any shifted/repaired trained-model forward.
+No outcome, threshold, input or scientific condition changed.
+
 ## Interpretation limits fixed in advance
 
 The claim concerns one checkpoint, one calibrated lookup format and one grouped

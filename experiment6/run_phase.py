@@ -12,7 +12,7 @@ import torch
 from transformers import AutoTokenizer
 
 from experiment6.conditions import CONDITIONS, construct_mask
-from experiment6.data import VALUES, answer_ids, encode_case
+from experiment6.data import VALUES, answer_ids as tokenize_answer_ids, encode_case
 from experiment6.model_adapter import GPT2Adapter
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -67,7 +67,7 @@ def main():
     assert len(cases) == protocol["n"]
     tokenizer = AutoTokenizer.from_pretrained(ROOT / "work/models/gpt2", local_files_only=True)
     assert protocol["values"] == VALUES
-    assert protocol["candidate_token_ids"] == answer_ids(tokenizer)
+    assert protocol["candidate_token_ids"] == tokenize_answer_ids(tokenizer)
     encoded = [encode_case(tokenizer, c, protocol["template"]) for c in cases]
     assert len({x.ids.numel() for x in encoded}) == 1
     length = encoded[0].ids.numel()
