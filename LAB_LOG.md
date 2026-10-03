@@ -203,3 +203,23 @@ and evidence, not private conversations or internal model reasoning.
   close precedent in Tang, Lake and Jazayeri (PLOS ONE, February 2026, Fig. 12).
   The related-work audit therefore calls E3 a controlled replication/extension
   candidate. Known positional steering is not being presented as a first discovery.
+
+## 2026-10-03 14:25–14:29 UTC — Experiment 3 confirmation
+
+- Published registration `42fd4236ecfa0535dacf9ddf6c824c41bd66f02e` and
+  remotely verified all 42 file identities at 14:25:09 UTC. Confirmation began
+  at 14:28:14 UTC and the complete report was generated at 14:28:55 UTC.
+- All six original-layout accuracies were 100% and no-op discrepancies zero.
+  Nevertheless every one of the 108 primary accuracy gates failed. The
+  all-six mechanistic conjunction failed; no thresholds or predictions changed.
+- Grouped-native accuracy was 19.3–20.9%; canonical position-label repair
+  produced only 28.9–58.8%. Nine-derangement mean slot-minus-original probability
+  margins ranged .107–.487, far below the registered lower-CI requirement .80.
+  Partial position-guided redirection does not rescue the strong claim.
+- Only 263 of 1,200 forecasts met .15 tolerance; all 937 misses are retained.
+  The largest error was .697. The stronger structural explanation failed even
+  though E2's fitted numerical surrogate passed its intervention-grid test.
+- A prospective next hypothesis follows from the changed causal predecessor
+  sets: grouped values receive keys from later logical slots that were masked
+  in training. Restoring key visibility may repair binding. This is not yet a
+  verified explanation; it will require a new registration and new inputs.

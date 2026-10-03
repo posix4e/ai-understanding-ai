@@ -1,0 +1,26 @@
+{
+  "all": {
+    "count": 1200,
+    "mae": 0.3938921683306125,
+    "rmse": 0.44850641016226167,
+    "within_tolerance": 263,
+    "fraction_within_tolerance": 0.21916666666666668,
+    "max_absolute_error": 0.69705078125
+  },
+  "primary_18": {
+    "count": 432,
+    "mae": 0.4107106798120721,
+    "rmse": 0.45754628048855234,
+    "within_tolerance": 86,
+    "fraction_within_tolerance": 0.19907407407407407,
+    "max_absolute_error": 0.69705078125
+  },
+  "primary_value_9": {
+    "count": 216,
+    "mae": 0.31160900899546057,
+    "rmse": 0.3823358596073333,
+    "within_tolerance": 86,
+    "fraction_within_tolerance": 0.39814814814814814,
+    "max_absolute_error": 0.69705078125
+  }
+}

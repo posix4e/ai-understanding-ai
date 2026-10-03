@@ -3,6 +3,30 @@
 An open, locally executed pilot: can an AI-written explanation of a tiny neural
 network predict its behavior under causal interventions?
 
+## Experiment 3: the strong position-binding explanation failed
+
+**All six models failed the preregistered structural-transfer claim.** Grouping
+the four keys before the four values reduced accuracy to 19–21%, despite 100%
+accuracy on the original alternating layout. Restoring the original positional
+labels raised accuracy only to 29–59%. Labels alone were not enough.
+
+The test covered all 24 slot permutations, with matched coherent key/value
+changes and value-only changes that predicted a particular wrong answer.
+All **108 primary accuracy cells** missed their required thresholds, and
+**937 of 1,200 numerical forecasts** missed the fixed .15 tolerance. The
+implementation and no-op checks passed. Partial answer redirection occurred,
+but it fell far short of the committed claim.
+
+Read [the complete E3 results](outputs/experiment3/RESULTS.md),
+[every forecast miss](outputs/experiment3/forecast_misses.csv), and
+[the related-work audit](outputs/experiment3/RELATED_WORK.md). Prior work already
+demonstrates positional steering; this is a prospective test of a stronger,
+systematic prediction in our six models, not a claim of discovering that idea.
+
+The failure motivates a separate test of changed causal visibility: grouped
+values can attend to keys that were always in their future during training.
+That explanation remains a hypothesis until separately tested.
+
 ## Experiment 2: head ablations and rescue
 
 **All six models passed Experiment 2's registered prediction and baseline
