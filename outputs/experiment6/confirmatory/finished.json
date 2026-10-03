@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-10-03T21:46:50.434420+00:00",
+  "registration": "6ae8866e675cead908ae40c1862e81ee269eaf42",
+  "n": 512,
+  "conditions": 15,
+  "seconds": 105.2668262909865,
+  "validity_pass": false,
+  "files": {
+    "grouped_canonical.npz": "1734864abe4cc7137a9050992f0d86f754f306978f9b45d4021e1b52ec57db51",
+    "grouped_noop.npz": "1734864abe4cc7137a9050992f0d86f754f306978f9b45d4021e1b52ec57db51",
+    "grouped_physical.npz": "79c6dde8f76a1e150a8fcaa6cc463b91e50ea9c3c58623828de8427211c2f9b7",
+    "guard_all.npz": "e070573ca91172aeaa173635a52976546dd5c751f0a947285b65fbc79c04c290",
+    "guard_block0.npz": "de4048bf92fb4a0414b3d276510692b3d5031e0c62b1321995b32da927e92a47",
+    "guard_block5.npz": "5bafa9e6030ea1b6226f70024b72d75a3eff4ef4a59ee4884c577d357c5c4ffc",
+    "native.npz": "c60efc555314d0e244a279cd3de3dd1027a1625ed4e20d37260cde6db6c2e306",
+    "sham_0.npz": "67ce446494e742adc261d8215821ce29ba4dc27445426df4b96201e61b15ac95",
+    "sham_1.npz": "4fba570e60b1d8494a3a27f168403aa10146c74465ccb018ba1fa663a275f1bf",
+    "sham_2.npz": "788f9d9a4815fc3ed72d19f80e4865bad738c47405732631f51887d281c26e20",
+    "sham_3.npz": "8bd0965401ecb88fb48ea4cdd4f41badc408da4c81c8f671efe5e883f8ee44fd",
+    "sham_4.npz": "34a2450bd6b405facc25144e2191b4f0d50a98e979c1290d3fea501ec85fc353",
+    "sham_5.npz": "5761d9b0700beec5ad085a4f98f1b1140bf9fadc1bd8cf741ad3ddad57f19633",
+    "sham_6.npz": "407ffd8e618a1d83dbfb0cbd79b1e993b3314d6b37e3afeca897f45694c9fbe5",
+    "sham_7.npz": "07fd722b2db0278936f3072ce72ea6d3e1c5f4bb4651ebd72a268774e4e3667d"
+  }
+}

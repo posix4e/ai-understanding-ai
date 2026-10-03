@@ -1,0 +1,51 @@
+{
+  "forecasts": [
+    {
+      "endpoint": "native_accuracy",
+      "predicted": 0.85,
+      "observed": 0.931640625,
+      "absolute_error": 0.08164062500000002,
+      "within_tolerance": true
+    },
+    {
+      "endpoint": "grouped_canonical_accuracy",
+      "predicted": 0.45,
+      "observed": 0.103515625,
+      "absolute_error": 0.346484375,
+      "within_tolerance": false
+    },
+    {
+      "endpoint": "guard_block0_accuracy",
+      "predicted": 0.5,
+      "observed": 0.095703125,
+      "absolute_error": 0.404296875,
+      "within_tolerance": false
+    },
+    {
+      "endpoint": "guard_minus_mean_shams_conditional_target_probability",
+      "predicted": 0.02,
+      "observed": 2.983455279265913e-05,
+      "absolute_error": 0.019970165447207342,
+      "within_tolerance": true
+    },
+    {
+      "endpoint": "guard_block5_accuracy",
+      "predicted": 0.55,
+      "observed": 0.10546875,
+      "absolute_error": 0.44453125000000004,
+      "within_tolerance": false
+    },
+    {
+      "endpoint": "guard_all_accuracy",
+      "predicted": 0.65,
+      "observed": 0.3125,
+      "absolute_error": 0.3375,
+      "within_tolerance": false
+    }
+  ],
+  "within_tolerance": 2,
+  "total": 6,
+  "mae": 0.2724038817412012,
+  "absolute_tolerance": 0.1,
+  "descriptive_only": true
+}

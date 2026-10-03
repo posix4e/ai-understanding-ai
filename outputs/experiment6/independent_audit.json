@@ -1,0 +1,270 @@
+{
+  "audit_kind": "independent_saved_output_audit_after_registration",
+  "registration": "6ae8866e675cead908ae40c1862e81ee269eaf42",
+  "model_forwards": 0,
+  "official_analysis_imports": false,
+  "audit_tool_sha256": "367465b65b87a08491a19bb06f587414b6955a9ef2401aac22befe6abe33e9d0",
+  "started_utc": "2026-10-03T21:50:48.730297+00:00",
+  "registered_files": {
+    "count": 33,
+    "all_unchanged": true,
+    "sha256": {
+      "experiment6/CALIBRATION_PLAN.md": "1c8c3d280798afd295b01a21786bd52440388dce6a650b267a3df9ae2d724192",
+      "experiment6/DESIGN_REVIEW.md": "91c16e647b4109b191591009df0c0820a422fa174b5e06dc5c5e76353f2410f8",
+      "experiment6/PREDICTION.md": "78a540e1cee14c97de9468090ef862c0a595e458230db1b410f192c1ecb05d9b",
+      "experiment6/PROTOCOL.md": "4addb7b4301840bbd04104d098886689e707469abcde70ba5d336d65eb216b2e",
+      "experiment6/__init__.py": "bfe937303e0029962ba7b0a2aaced74faef9e28b0589862d25f5f098ee76675f",
+      "experiment6/calibrate.py": "d86d7715492c6a6b8f1e506b3f47c5995aa5b9bb42df2bd0d55e28596c53c922",
+      "experiment6/conditions.py": "a94b07884ca84e00d133e164a4a1b339e9d966e6464ce98c2c7b1d7faf1db6ba",
+      "experiment6/data.py": "bf129247fff674ad8746d54cdfa23f06dea603955e5f7fd77833a837dcccf7ab",
+      "experiment6/download_model.py": "cae48bc2d7f21ab4119ed98f55a851fbf1e952fa67872b8881b1c58094f40145",
+      "experiment6/model_adapter.py": "a91f3243dc81ce224b4185dc7b64071c7102f83c7333dbd907dbb7f524861b3f",
+      "experiment6/predictions.json": "d1fabe8908a631fa904ced8f12139c9ebb5ebfe76660f6078401ae9fc707447a",
+      "experiment6/protocol.json": "3c5c62958e11f73ea065ab08cd48e09fab96a4b1df15848472d7f1128f112d8c",
+      "experiment6/requirements.txt": "0790f0e271cfbe15d5d22de4b5a977b0f6f38cefe930bc4841ae1e87332a4388",
+      "experiment6/run_phase.py": "6f869f967091f056b29c85e9a368c314cc2300188c29da340cddad5cef6d27b8",
+      "experiment6/score.py": "d4750a7719d41a11edf214dd389fb848d4227f2e31883b0f76667a38f852bd42",
+      "experiment6/test_adapter.py": "0e5c83ff22d34410c168e1a529e634bba80eefcf8f0581f645b47065e50eb467",
+      "experiment6/test_conditions.py": "df19152a513c8877f11980971c60ae2dee427e9364dbf438393be085ff36ae28",
+      "experiment6/test_score.py": "08c3243e0cb3934443ca13835f0e8d0fecd793e7747213f453b040c0531913c2",
+      "outputs/experiment6/attempt1_aborted_native_check/ABORT.json": "5a48741bac5d8c29113e2c4f9b7fc1a2340ad8d0e0ef1ad5162a114c56c2b44a",
+      "outputs/experiment6/attempt1_aborted_native_check/remote_lock.json": "91f4b14700a415bc6e3ca077c029e7080328f3e5ec1cd8d7ce3ba9ad18ca879b",
+      "outputs/experiment6/attempt1_aborted_native_check/started.json": "d7a84ed01008fbd88f5432758e60c83d9c8ddc75dcaf9e51b2788aab875a85f8",
+      "outputs/experiment6/calibration_inputs.json": "97d8cf7abf6c9a4080f6c0f49df8cff35332c4e6e5733e9506d4cd748602952e",
+      "outputs/experiment6/calibration_manifest.json": "3af0f1885d9c297b2e30a6aef6caf1acc449b82afce009ebf0031387c4cc37f3",
+      "outputs/experiment6/calibration_results.json": "7fb6be91c2ee54c3bba34a88b5e4ca33941a94f56e868350b148c5289776c5a1",
+      "outputs/experiment6/calibration_rows.csv": "9e8182427357985c014392ec0f71f83e76876f2a8088090524efb4725954df67",
+      "outputs/experiment6/calibration_started.json": "e4ce524f5b77ad69553ddf78a454281b804fd5a181e48318dc038ccf358830d5",
+      "outputs/experiment6/confirmation_inputs.json": "1fa038409577b5a7eec75cdcdee4cf3d547e7707da1eccf75158594be46410fe",
+      "outputs/experiment6/confirmation_token_audit.json": "fb5489d53c837fd9ce11da8329440271548c4b113af5d730320cdcec43426a9c",
+      "outputs/experiment6/environment.json": "f00e963c3ec54b752527ed79c59aa7f0127a3bf218d0092edc1cadcc577d47c1",
+      "outputs/experiment6/input_audit.json": "b0e8ae840e0c946fbef699750a0f7328faa03e9d052593381b671687c8e8e463",
+      "outputs/experiment6/model_manifest.json": "1a7cde10716845998cb9f1eafe32da2400e9ac9182ef7ff27f40d61bcdc2f738",
+      "outputs/experiment6/probability_diagnostic.json": "5c76263be838532c03e78621d55bbe6ad501e299faa61887c546dc8b1b52ed98",
+      "outputs/experiment6/token_audit.json": "e8ab8d4ed4185a50e6dbbc9981426cec1579c62818aadc06381c18dfb887d6c2"
+    }
+  },
+  "model_and_labels": {
+    "model_files_verified": 7,
+    "answer_ids_match_vocabulary": true,
+    "labels_from_frozen_inputs": true,
+    "unique_maps": 512,
+    "calibration_overlap": 0
+  },
+  "saved_arrays": {
+    "merged_conditions": 15,
+    "batch_files": 64,
+    "rows_per_condition": 512,
+    "all_batch_hashes_match": true,
+    "all_merged_hashes_match": true,
+    "batch_arrays_equal_merged_arrays": true,
+    "all_rows_covered_once": true,
+    "all_probabilities_finite_and_valid": true
+  },
+  "implementation_evidence_scope": {
+    "independent_candidate_noop_max_error": 0.0,
+    "runner_reported_validity_flags_consistent": true,
+    "full_states_reconstructed": false,
+    "full_vocabulary_noop_reconstructed": false,
+    "runtime_parameter_hashes_independently_reconstructed": false,
+    "limitation": "State identities, full-vocabulary no-op and runtime parameter hashes are runner-reported measurements, not independently recoverable from saved candidate probabilities. Frozen checkpoint file hashes were independently checked."
+  },
+  "official_score_comparison": {
+    "numeric_scalars": 865,
+    "max_absolute_difference": 5.551115123125783e-17,
+    "absolute_tolerance": 1e-10,
+    "all_compared_fields_agree": true,
+    "scores_sha256": "942dce51ebef7afb701668099f294859c6e40227b71608a3be9447039c8061c5"
+  },
+  "independent_recomputation": {
+    "classification": "implementation_invalid",
+    "all_primary_gates_pass": false,
+    "gates": {
+      "implementation_valid": false,
+      "native_overall_at_least_80_percent": true,
+      "every_native_query_at_least_70_percent": true,
+      "damage_point_at_least_10_percentage_points": true,
+      "damage_ci_lower_above_zero": true,
+      "repair_accuracy_ci_lower_above_5_percentage_points": false,
+      "native_minus_guard_accuracy_ci_upper_at_most_5_percentage_points": false,
+      "specificity_conditional_probability_ci_lower_above_02": false
+    },
+    "contrasts": {
+      "damage_native_minus_grouped_accuracy": {
+        "mean": 0.828125,
+        "ci95": [
+          0.794921875,
+          0.859375
+        ]
+      },
+      "repair_guard_minus_grouped_accuracy": {
+        "mean": -0.0078125,
+        "ci95": [
+          -0.01953125,
+          0.00390625
+        ]
+      },
+      "deficit_native_minus_guard_accuracy": {
+        "mean": 0.8359375,
+        "ci95": [
+          0.802734375,
+          0.8671875
+        ]
+      },
+      "specificity_guard_minus_mean_shams_conditional_probability": {
+        "mean": 2.983455279265913e-05,
+        "ci95": [
+          -2.2098434414620393e-05,
+          8.266169025977195e-05
+        ]
+      },
+      "guard_minus_grouped_raw_target_probability": {
+        "mean": -0.00015708648392128265,
+        "ci95": [
+          -0.0002518498089834676,
+          -5.887243734916942e-05
+        ]
+      },
+      "guard_minus_grouped_candidate_mass": {
+        "mean": 0.007716627831777249,
+        "ci95": [
+          0.0062554730697135285,
+          0.009091627325846676
+        ]
+      },
+      "guard_minus_best_point_sham_conditional_probability_descriptive": {
+        "sham": "sham_4",
+        "mean": -8.646196651724419e-05
+      },
+      "secondary_guard_block5_minus_grouped_accuracy": {
+        "mean": 0.001953125,
+        "ci95": [
+          -0.00390625,
+          0.007861328124999734
+        ]
+      },
+      "secondary_guard_all_minus_grouped_accuracy": {
+        "mean": 0.208984375,
+        "ci95": [
+          0.181640625,
+          0.23442382812499973
+        ]
+      }
+    },
+    "condition_means": {
+      "native": {
+        "restricted_accuracy": 0.931640625,
+        "unrestricted_accuracy": 0.869140625,
+        "raw_target_probability": 0.20297980357289921,
+        "conditional_target_probability": 0.3576498202198223,
+        "candidate_probability_mass": 0.5539460079121231
+      },
+      "grouped_physical": {
+        "restricted_accuracy": 0.09765625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.005205067076999724,
+        "conditional_target_probability": 0.07104398627417388,
+        "candidate_probability_mass": 0.12278832364546506
+      },
+      "grouped_canonical": {
+        "restricted_accuracy": 0.103515625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.005116045163095505,
+        "conditional_target_probability": 0.07424955695182814,
+        "candidate_probability_mass": 0.10742302975057223
+      },
+      "grouped_noop": {
+        "restricted_accuracy": 0.103515625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.005116045163095505,
+        "conditional_target_probability": 0.07424955695182814,
+        "candidate_probability_mass": 0.10742302975057223
+      },
+      "guard_block0": {
+        "restricted_accuracy": 0.095703125,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004958958679174223,
+        "conditional_target_probability": 0.07010784575740472,
+        "candidate_probability_mass": 0.11513965758234948
+      },
+      "sham_0": {
+        "restricted_accuracy": 0.095703125,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004882655335881873,
+        "conditional_target_probability": 0.07007346337648812,
+        "candidate_probability_mass": 0.11358274516608072
+      },
+      "sham_1": {
+        "restricted_accuracy": 0.09375,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.0048815377610900434,
+        "conditional_target_probability": 0.07007385177104494,
+        "candidate_probability_mass": 0.11354838180697974
+      },
+      "sham_2": {
+        "restricted_accuracy": 0.09765625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.0048513816799492454,
+        "conditional_target_probability": 0.07015282560680122,
+        "candidate_probability_mass": 0.11294972824391317
+      },
+      "sham_3": {
+        "restricted_accuracy": 0.09765625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004850293042469832,
+        "conditional_target_probability": 0.07015338488147072,
+        "candidate_probability_mass": 0.11291403960734245
+      },
+      "sham_4": {
+        "restricted_accuracy": 0.09765625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004928939085803909,
+        "conditional_target_probability": 0.07019430772392198,
+        "candidate_probability_mass": 0.11449448159939449
+      },
+      "sham_5": {
+        "restricted_accuracy": 0.099609375,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004820489098484719,
+        "conditional_target_probability": 0.06997831189211007,
+        "candidate_probability_mass": 0.11338938269661056
+      },
+      "sham_6": {
+        "restricted_accuracy": 0.099609375,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004819156950792356,
+        "conditional_target_probability": 0.06997763808017415,
+        "candidate_probability_mass": 0.11335248559336317
+      },
+      "sham_7": {
+        "restricted_accuracy": 0.09765625,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.004901033902622004,
+        "conditional_target_probability": 0.07002030630488534,
+        "candidate_probability_mass": 0.11499125258902285
+      },
+      "guard_block5": {
+        "restricted_accuracy": 0.10546875,
+        "unrestricted_accuracy": 0.0,
+        "raw_target_probability": 0.005148846897703337,
+        "conditional_target_probability": 0.07462989453938829,
+        "candidate_probability_mass": 0.11024075898835517
+      },
+      "guard_all": {
+        "restricted_accuracy": 0.3125,
+        "unrestricted_accuracy": 0.0390625,
+        "raw_target_probability": 0.017729491129179556,
+        "conditional_target_probability": 0.1259803063674949,
+        "candidate_probability_mass": 0.10397077116999844
+      }
+    },
+    "bootstrap": {
+      "seed": 10600003,
+      "draws": 2000,
+      "paired": true,
+      "stratified": true
+    }
+  },
+  "all_audit_checks_pass": true,
+  "finished_utc": "2026-10-03T21:50:49.418030+00:00"
+}

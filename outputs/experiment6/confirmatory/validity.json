@@ -1,0 +1,19 @@
+{
+  "all_pass": false,
+  "checks": {
+    "complete_finite_outputs": true,
+    "parameters_unchanged": true,
+    "noop_probabilities": true,
+    "guard_first_block_values": false,
+    "first_block_query_suffix": false,
+    "unedited_first_block_keys": true
+  },
+  "diagnostics": {
+    "noop_probability_error": 0.0,
+    "guard_value_state_error": 1.33514404296875e-05,
+    "query_suffix_state_error": 1.1444091796875e-05,
+    "unedited_key_state_error": 0.0
+  },
+  "parameters_before_sha256": "e563ffe10e2eefeaf9d9a869d4cb43369cdddbe6875789caec4e1abd7c6adfd9",
+  "parameters_after_sha256": "e563ffe10e2eefeaf9d9a869d4cb43369cdddbe6875789caec4e1abd7c6adfd9"
+}

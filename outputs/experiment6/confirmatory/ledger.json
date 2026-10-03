@@ -1,0 +1,386 @@
+[
+  {
+    "file": "batches/batch_0000.npz",
+    "sha256": "771eb1ce70c07fd19898d0d76a8c2c45b4e0cc13fd24777dc1948df8da95d8d0",
+    "begin": 0,
+    "end": 8
+  },
+  {
+    "file": "batches/batch_0008.npz",
+    "sha256": "d7c06b17d0d64071acc4c9d11daa60468ac0c34b51bcdd86558d1f107aba5e9c",
+    "begin": 8,
+    "end": 16
+  },
+  {
+    "file": "batches/batch_0016.npz",
+    "sha256": "07c02d01473f21f641eb3bea54d76b09b38cfc65faf129a66e1589913a0365c5",
+    "begin": 16,
+    "end": 24
+  },
+  {
+    "file": "batches/batch_0024.npz",
+    "sha256": "f0a041571581cf70a4a0567dd338dde459351fe7be511790943e8ef6bba1b2ea",
+    "begin": 24,
+    "end": 32
+  },
+  {
+    "file": "batches/batch_0032.npz",
+    "sha256": "36fce36db2d1705fa4e1664e00b7ceef0d0572257df5afe68175a461462aa8eb",
+    "begin": 32,
+    "end": 40
+  },
+  {
+    "file": "batches/batch_0040.npz",
+    "sha256": "e8f00a19832645c97d80ea2a9fa6b771b3c9c2d7e36440708a17c0fd01a20a65",
+    "begin": 40,
+    "end": 48
+  },
+  {
+    "file": "batches/batch_0048.npz",
+    "sha256": "d00bb6081882a9ec56d3ecfb3837c76bf3bff66c464bde441b2aeffd3099aa3d",
+    "begin": 48,
+    "end": 56
+  },
+  {
+    "file": "batches/batch_0056.npz",
+    "sha256": "43cb47feffa3e84cb0cb54f5f59d5ff5b28d27a27d878009fb05c15e8b08cb17",
+    "begin": 56,
+    "end": 64
+  },
+  {
+    "file": "batches/batch_0064.npz",
+    "sha256": "c806d4990a37a1e96135a7e8d71777aab6623726cdd59f6560bbdf78cf45f45e",
+    "begin": 64,
+    "end": 72
+  },
+  {
+    "file": "batches/batch_0072.npz",
+    "sha256": "e2e894c2dc2c71f4f18a9d2ecdebfdb00d94e67c503d4c10c865d15be8d6ce36",
+    "begin": 72,
+    "end": 80
+  },
+  {
+    "file": "batches/batch_0080.npz",
+    "sha256": "e3308e7b867604f862c02260980a481ba3393e9bda68b1c6e67703b8435ce07f",
+    "begin": 80,
+    "end": 88
+  },
+  {
+    "file": "batches/batch_0088.npz",
+    "sha256": "2e46d3bb52674be770fe9e4f5038e8072381b768a7edaa21294c931ed6a35639",
+    "begin": 88,
+    "end": 96
+  },
+  {
+    "file": "batches/batch_0096.npz",
+    "sha256": "680eb10bd3568d082a28688ed55a88ff07a2d80e24f89d9de4de99e38d7c95d2",
+    "begin": 96,
+    "end": 104
+  },
+  {
+    "file": "batches/batch_0104.npz",
+    "sha256": "5a79250c4788706c63bd5d866102a45e81655748e9531d339fb394f468b8c5b5",
+    "begin": 104,
+    "end": 112
+  },
+  {
+    "file": "batches/batch_0112.npz",
+    "sha256": "a1b313688587b4e92073b8cc64f21bc0cc418a922400c9434e15c67a809a731a",
+    "begin": 112,
+    "end": 120
+  },
+  {
+    "file": "batches/batch_0120.npz",
+    "sha256": "bf11c78f29ae5302a04d1f9b6dc34f2f80bf2993dbb9f55abc24f04e71da8c55",
+    "begin": 120,
+    "end": 128
+  },
+  {
+    "file": "batches/batch_0128.npz",
+    "sha256": "ae0736e945049556f9c92a169e605e5366ea9386a5cafda37b09eeaa1d0152d4",
+    "begin": 128,
+    "end": 136
+  },
+  {
+    "file": "batches/batch_0136.npz",
+    "sha256": "d82cbd615a0f4fdfcb4ebefc82423a6744ee72889ae274159dd6843a92d0f1be",
+    "begin": 136,
+    "end": 144
+  },
+  {
+    "file": "batches/batch_0144.npz",
+    "sha256": "9914b6cb97155e094d261a277018ea3eb2f846904826dfe346cb2f8a87102d06",
+    "begin": 144,
+    "end": 152
+  },
+  {
+    "file": "batches/batch_0152.npz",
+    "sha256": "578fc4fdc0c500cd3b14b12fb070dde6635ac39274380d352186bc7c80134029",
+    "begin": 152,
+    "end": 160
+  },
+  {
+    "file": "batches/batch_0160.npz",
+    "sha256": "d2bb3ee720ba0db5bd4096a39ec31a4f5c87ee4c38354c6b62150aa9211aff7a",
+    "begin": 160,
+    "end": 168
+  },
+  {
+    "file": "batches/batch_0168.npz",
+    "sha256": "a15e5cd30fe5a9a39c631ef54886c6aa4a03fc59e1fb4f5aea078b9efe8b7595",
+    "begin": 168,
+    "end": 176
+  },
+  {
+    "file": "batches/batch_0176.npz",
+    "sha256": "8117a23e09c8d6f844d4bacc385a5c11e818c61d5951c6027c9b68687eea5974",
+    "begin": 176,
+    "end": 184
+  },
+  {
+    "file": "batches/batch_0184.npz",
+    "sha256": "bd1e6a5c0f9353fe3e4e434f84be150a507e215c9a03dc364f30b7a84ab103ac",
+    "begin": 184,
+    "end": 192
+  },
+  {
+    "file": "batches/batch_0192.npz",
+    "sha256": "279d44034bae7e2ce481d521fc4e6eb867d8cfabf7e2feac098990496018c98c",
+    "begin": 192,
+    "end": 200
+  },
+  {
+    "file": "batches/batch_0200.npz",
+    "sha256": "8a5eb62877cd4120bb83b7a5aeaafe847b5b9ab1e90d5cf7656c341cfca1e829",
+    "begin": 200,
+    "end": 208
+  },
+  {
+    "file": "batches/batch_0208.npz",
+    "sha256": "46d0d623f127e6288c47a67b577b7384ab4f92c5a82ff92a4feb6a3f3ba89740",
+    "begin": 208,
+    "end": 216
+  },
+  {
+    "file": "batches/batch_0216.npz",
+    "sha256": "47be1d26a5aeb57847bb1d4d020f5450d9572d5228e36a2ce67a59991d6e3a01",
+    "begin": 216,
+    "end": 224
+  },
+  {
+    "file": "batches/batch_0224.npz",
+    "sha256": "bf16120c73b1f37748eb1bb617433f63440dd90a9b38eccb7974ce5a4f73be47",
+    "begin": 224,
+    "end": 232
+  },
+  {
+    "file": "batches/batch_0232.npz",
+    "sha256": "6b07d2ccdfa867a25648051e84d90aea4c9dda7d2f7eda5af25fb6a53e77a2e5",
+    "begin": 232,
+    "end": 240
+  },
+  {
+    "file": "batches/batch_0240.npz",
+    "sha256": "b84605a4b88492752fbab916ea2721ea167137d7d09254646e72d4f79ebbea95",
+    "begin": 240,
+    "end": 248
+  },
+  {
+    "file": "batches/batch_0248.npz",
+    "sha256": "92e36ac0af8aa0e32d21303a6a31b8726375b3570f2b1d3c96fbef0e062a797a",
+    "begin": 248,
+    "end": 256
+  },
+  {
+    "file": "batches/batch_0256.npz",
+    "sha256": "726f09691deec5a49f44d5fe8941cd9d6690f5503c0f2f8a25436b062c7c97e5",
+    "begin": 256,
+    "end": 264
+  },
+  {
+    "file": "batches/batch_0264.npz",
+    "sha256": "90abbf83e0156744ce1ff9f7382a4daacec5c10a9823ac90d3c04b3c6b4909ae",
+    "begin": 264,
+    "end": 272
+  },
+  {
+    "file": "batches/batch_0272.npz",
+    "sha256": "edd737d04f1d78a6342ff3a83bbde66afe3accfbb4e74b534c6bfc85b03d5ecf",
+    "begin": 272,
+    "end": 280
+  },
+  {
+    "file": "batches/batch_0280.npz",
+    "sha256": "6d96a967c4dadabd651c2deb8284060a5f487da09678484688342fc548b7f41d",
+    "begin": 280,
+    "end": 288
+  },
+  {
+    "file": "batches/batch_0288.npz",
+    "sha256": "2f18d005790dec73e80918946cf67819e6c1c4af203135b461ebc0e6f3f97c50",
+    "begin": 288,
+    "end": 296
+  },
+  {
+    "file": "batches/batch_0296.npz",
+    "sha256": "cfde34bb2661cfd5346e52d364b1ae22614afc31e1a521fd8354ac3fcbe4a658",
+    "begin": 296,
+    "end": 304
+  },
+  {
+    "file": "batches/batch_0304.npz",
+    "sha256": "41e418242c6c14df0349562a412fd7dc1a1640204ae727d83567c18e0ed4cbab",
+    "begin": 304,
+    "end": 312
+  },
+  {
+    "file": "batches/batch_0312.npz",
+    "sha256": "b7a81dafb70ea715c64da36f30d41a7efe85d490af164d5a411dcf0ec8eb634f",
+    "begin": 312,
+    "end": 320
+  },
+  {
+    "file": "batches/batch_0320.npz",
+    "sha256": "8ec7afb22c9af05d1e869b5d5bb4d48dd132f063dfc17ab41bd0391dd165c86d",
+    "begin": 320,
+    "end": 328
+  },
+  {
+    "file": "batches/batch_0328.npz",
+    "sha256": "289fd04af13869c0f4f15e0ae148e00a2bc96c45f58794ed543d75ef85a76f16",
+    "begin": 328,
+    "end": 336
+  },
+  {
+    "file": "batches/batch_0336.npz",
+    "sha256": "688568ef76cf3926ca17f14851ecefcda17d0db30e925717d76e35ce1d0668da",
+    "begin": 336,
+    "end": 344
+  },
+  {
+    "file": "batches/batch_0344.npz",
+    "sha256": "783b18e36d444a29b2154138445673b31b2349d63c2e224ffba5199326a406c2",
+    "begin": 344,
+    "end": 352
+  },
+  {
+    "file": "batches/batch_0352.npz",
+    "sha256": "1a3da0407356d34be6f64b22120b85a93af8070cf1ef5a144343381f20c43a55",
+    "begin": 352,
+    "end": 360
+  },
+  {
+    "file": "batches/batch_0360.npz",
+    "sha256": "0c4a0221df43068c0c3b645d403e1a48c7397809270603acd5c17aaf6bf6ddc1",
+    "begin": 360,
+    "end": 368
+  },
+  {
+    "file": "batches/batch_0368.npz",
+    "sha256": "ad1107c567dcd553cde232b9a85967feb9a1629c045b3976a74ce4981746e954",
+    "begin": 368,
+    "end": 376
+  },
+  {
+    "file": "batches/batch_0376.npz",
+    "sha256": "38ae9f87375b5bca56ea139f832f1a0aab1cbfce4d4e3edf7f44802a565b99a4",
+    "begin": 376,
+    "end": 384
+  },
+  {
+    "file": "batches/batch_0384.npz",
+    "sha256": "06baff77310c8e90d11a736a79450286f16df9b6b021b5e0447697ba92b8b89e",
+    "begin": 384,
+    "end": 392
+  },
+  {
+    "file": "batches/batch_0392.npz",
+    "sha256": "7469fe24a821acc10cae2369f835a370b12fd5f51ca73430a2cbd14e50b02f89",
+    "begin": 392,
+    "end": 400
+  },
+  {
+    "file": "batches/batch_0400.npz",
+    "sha256": "e0f719c9767a4cb5c23703c0eb34f1d70fb242a1967fac5a2fefc855d61d1cfa",
+    "begin": 400,
+    "end": 408
+  },
+  {
+    "file": "batches/batch_0408.npz",
+    "sha256": "69d973c8bef9c300add620c6a6455b0e2b982902a0f7f11ca0fab38adcb2eee3",
+    "begin": 408,
+    "end": 416
+  },
+  {
+    "file": "batches/batch_0416.npz",
+    "sha256": "1fffbc5ac77c7625671b483ec0b6b7144683a17c1865e792cbc6014581466ff9",
+    "begin": 416,
+    "end": 424
+  },
+  {
+    "file": "batches/batch_0424.npz",
+    "sha256": "fa6cc766e18a03aa95f3046183b33247ce68307de98fe60532c36c7b3710f3b3",
+    "begin": 424,
+    "end": 432
+  },
+  {
+    "file": "batches/batch_0432.npz",
+    "sha256": "ebf7b699939614cb0dac1cdeb72c5f169281d96d87e69a452bc80fa1bd383af4",
+    "begin": 432,
+    "end": 440
+  },
+  {
+    "file": "batches/batch_0440.npz",
+    "sha256": "128bb72c9437ee1d6d595fc988f2862c3797d6bf10e918821e2dcfed4873a88e",
+    "begin": 440,
+    "end": 448
+  },
+  {
+    "file": "batches/batch_0448.npz",
+    "sha256": "f077f9db22e79e1116676aa25e63a38bdc8a0a12d23be0835bd0d7b6be24b289",
+    "begin": 448,
+    "end": 456
+  },
+  {
+    "file": "batches/batch_0456.npz",
+    "sha256": "cad5fd0fe8d6972ff3ac380396087bc5b4e38e1068a3fce9e771f1325c56ce8f",
+    "begin": 456,
+    "end": 464
+  },
+  {
+    "file": "batches/batch_0464.npz",
+    "sha256": "4b57d6698c329a48cb59a56e48d134ec3923f187d5fd709695659de2d499718f",
+    "begin": 464,
+    "end": 472
+  },
+  {
+    "file": "batches/batch_0472.npz",
+    "sha256": "212b3bfda19cff77f7a406a5bd174f82698ffa52e16f59cd543105190ac86acd",
+    "begin": 472,
+    "end": 480
+  },
+  {
+    "file": "batches/batch_0480.npz",
+    "sha256": "96a0147dec80243631d2b8e8e94b62894acadae901859aae3a11dce9d2605713",
+    "begin": 480,
+    "end": 488
+  },
+  {
+    "file": "batches/batch_0488.npz",
+    "sha256": "73c89a1147c5f24b8779b2af7e4be600f6e3345cf1a91d9fbb7d4c6cab5f9e78",
+    "begin": 488,
+    "end": 496
+  },
+  {
+    "file": "batches/batch_0496.npz",
+    "sha256": "13f9b4b8bd3bf8fe0250c2eab034735c29e35360a57ecaeea87d7fa738bcb84f",
+    "begin": 496,
+    "end": 504
+  },
+  {
+    "file": "batches/batch_0504.npz",
+    "sha256": "24c876cf5e8ead5273d8d9208355683d0e08cd88f1f143a4beed4c3b8260cc4e",
+    "begin": 504,
+    "end": 512
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "registration": "6ae8866e675cead908ae40c1862e81ee269eaf42",
+  "remote_verified_via": "GitHub commits/main API",
+  "verified_at_utc": "2026-10-03T21:45:01.999448+00:00",
+  "manifest_sha256": "95aebbef63eb32a592f73bb0653e5d1dc1f72dad076bd851d78e6b7efe86e517",
+  "verified_files": 34,
+  "shifted_or_repaired_pretrained_forwards_so_far": 0,
+  "prior_native_only_abort": "outputs/experiment6/attempt1_aborted_native_check/ABORT.json"
+}
