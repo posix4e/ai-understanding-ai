@@ -1,0 +1,101 @@
+{
+  "n": 128,
+  "seed": 10700001,
+  "unique_association_maps": 128,
+  "excluded_prior_maps": 576,
+  "overlap": 0,
+  "query_counts": [
+    32,
+    32,
+    32,
+    32
+  ],
+  "tokens": 51,
+  "conditions": [
+    {
+      "id": "native",
+      "grouped": false,
+      "patch": false,
+      "mask": "physical",
+      "guard": false
+    },
+    {
+      "id": "grouped",
+      "grouped": true,
+      "patch": false,
+      "mask": "physical",
+      "guard": false
+    },
+    {
+      "id": "grouped_noop",
+      "grouped": true,
+      "patch": false,
+      "mask": "noop",
+      "guard": false
+    },
+    {
+      "id": "guard_physical",
+      "grouped": true,
+      "patch": false,
+      "mask": "physical",
+      "guard": true
+    },
+    {
+      "id": "keypatch_physical",
+      "grouped": true,
+      "patch": true,
+      "mask": "physical",
+      "guard": true
+    },
+    {
+      "id": "guard_delete",
+      "grouped": true,
+      "patch": false,
+      "mask": "delete",
+      "guard": true
+    },
+    {
+      "id": "keypatch_delete",
+      "grouped": true,
+      "patch": true,
+      "mask": "delete",
+      "guard": true
+    },
+    {
+      "id": "guard_add",
+      "grouped": true,
+      "patch": false,
+      "mask": "add",
+      "guard": true
+    },
+    {
+      "id": "keypatch_add",
+      "grouped": true,
+      "patch": true,
+      "mask": "add",
+      "guard": true
+    },
+    {
+      "id": "guard_transport",
+      "grouped": true,
+      "patch": false,
+      "mask": "transport",
+      "guard": true
+    },
+    {
+      "id": "keypatch_transport",
+      "grouped": true,
+      "patch": true,
+      "mask": "transport",
+      "guard": true
+    },
+    {
+      "id": "transport_all",
+      "grouped": true,
+      "patch": false,
+      "mask": "transport_all",
+      "guard": false
+    }
+  ],
+  "pretrained_E7_forwards": 0
+}
