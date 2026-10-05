@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T13:01:29.273175+00:00",
+  "at_utc": "2026-10-05T13:49:56.871196+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -205,11 +205,31 @@
         {
           "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/plan.json",
           "source_sha256": "3d34bef825581d13f12e60b68fdff91896000654be0d8f5d184949a6e634b50a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/COMPLETE.json",
+          "source_sha256": "de647f3ba2fad1fc75f5f3b3622bdc65e1b1e0fbe7f80c456d018ae72a32a63b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/REPORT.json",
+          "source_sha256": "d304babc3ae24f9a67ece94ef2ff44b42756d2bee9a29762a4a7775c90463fd8"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/INDEPENDENT_AUDIT.json",
+          "source_sha256": "1158b0f70d12a99284d967cfe108a92087a359528242b687ac15839cd2cbacb5"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TRANSPLANT_V2_PREPARATION/DEVELOPMENT_TERMINAL_REVIEW.json",
+          "source_sha256": "2fe4b52dc2f5d2eb98d46b79c95d613f769a9a52f07ff11f93da5c8fd84cca9d"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/plan.json",
+          "source_sha256": "94f2b56135cb3de13a00c0cd20e32e2e376306bf188e95b06610386f908c9eb4"
         }
       ],
-      "transformation": "Three previously reviewed primary papers summarized in plain language. Development status now comes from the terminal STOP record and registered plan; no training losses or partial model outputs were inspected.",
-      "sha256": "1dddd127e9a130b9d50bfd256fc421edead3c6e400e94183598e94f531664f4a",
-      "bytes": 3005
+      "transformation": "Three previously reviewed primary papers summarized in plain language, with current development status bound to V2 completion, report, independent audit and terminal review. The prior V1 stop remains included. No raw learned arrays or partial model outputs copied.",
+      "sha256": "0b02649132218561296aeb791fc678e71aa318b8b5870c26dfc3fcb0adb5b04c",
+      "bytes": 4217
     },
     {
       "file": "organ-development-stop-summary.json",
@@ -227,6 +247,39 @@
       "transformation": "Metadata only. Controller and worker identities, local absolute paths, training losses, learned module arrays and partial model outputs are omitted.",
       "sha256": "1446fab8d573df7e5fc15926739d1cacd0ef5f83ed9e6d155a52688760455151",
       "bytes": 2180
+    },
+    {
+      "file": "organ-development-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/COMPLETE.json",
+          "source_sha256": "de647f3ba2fad1fc75f5f3b3622bdc65e1b1e0fbe7f80c456d018ae72a32a63b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/REPORT.json",
+          "source_sha256": "d304babc3ae24f9a67ece94ef2ff44b42756d2bee9a29762a4a7775c90463fd8"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/INDEPENDENT_AUDIT.json",
+          "source_sha256": "1158b0f70d12a99284d967cfe108a92087a359528242b687ac15839cd2cbacb5"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TRANSPLANT_V2_PREPARATION/DEVELOPMENT_TERMINAL_REVIEW.json",
+          "source_sha256": "2fe4b52dc2f5d2eb98d46b79c95d613f769a9a52f07ff11f93da5c8fd84cca9d"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/plan.json",
+          "source_sha256": "94f2b56135cb3de13a00c0cd20e32e2e376306bf188e95b06610386f908c9eb4"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/plan.json",
+          "source_sha256": "3d34bef825581d13f12e60b68fdff91896000654be0d8f5d184949a6e634b50a"
+        }
+      ],
+      "transformation": "Selected completed aggregate counts, registered gates and reviewed limitations only. No raw output-score arrays, learned weights, memory values, training-loss sequences, account details or process identifiers copied.",
+      "sha256": "0d6a5242c53a1745bdcc31e970c0d93c6d93c3cad881348f3697b4aa9d1be6e6",
+      "bytes": 8983
     }
   ],
   "absolute_local_path_redactions": 0,

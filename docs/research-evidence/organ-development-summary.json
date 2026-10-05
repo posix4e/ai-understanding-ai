@@ -1,0 +1,282 @@
+{
+  "record_type": "DERIVED_PUBLIC_COMPLETED_NEGATIVE_DEVELOPMENT_SUMMARY",
+  "created_at_utc": "2026-10-05T13:49:56.871196+00:00",
+  "completed_at_utc": "2026-10-05T13:41:36.906481+00:00",
+  "study": "ORGAN_DEVELOPMENT_V2",
+  "status": "DEVELOPMENT_READINESS_FAILED",
+  "interpretation": "The same-recipe second development attempt completed normally. Its saved-record integrity audit passed, but its original learning requirement failed.",
+  "relation_to_first_attempt": "Separate second attempt after the first run lost its controller. Same worlds, question sets, training order, model settings, work budget and success rules. Prior-exposed development worlds are not blind confirmation. V1 STOP remains unchanged.",
+  "setup": {
+    "worlds": 4,
+    "states_per_world": 8,
+    "actions_per_world": 3,
+    "host": "ibm-granite/granite-3.1-1b-a400m-instruct",
+    "host_weights_frozen": true,
+    "bridge_trainable_weights": 66752,
+    "comparison_model_trainable_weights": 66752,
+    "organ_weights_each": 1664,
+    "module_interface": "One query-independent transition memory per world. Each row identifies a state and action and carries centered next-state probabilities.",
+    "comparison": "Host plus internal connector versus a comparison network receiving the same captured prefix features and rule memory. Parameter count is matched; frozen compute, pretraining, width and backend are not."
+  },
+  "organ_fidelity": {
+    "dev00": {
+      "correct": 24,
+      "total": 24
+    },
+    "dev01": {
+      "correct": 24,
+      "total": 24
+    },
+    "dev02": {
+      "correct": 24,
+      "total": 24
+    },
+    "dev03": {
+      "correct": 24,
+      "total": 24
+    }
+  },
+  "organ_fidelity_scope": "All24 one-step transitions in each organ’s own training world. This is not unseen-rule generalization.",
+  "scoring": "Unique highest score among eight next-state labels. Exact score ties fail. These are selected-label scores, not generated free-text answers.",
+  "question_groups": {
+    "1": "One-action questions used for training",
+    "2": "Two-action questions used for training",
+    "3": "Fixed three-action probes, containing each action once, in the same four worlds"
+  },
+  "pooled_by_action_length": {
+    "host": {
+      "1": {
+        "correct": 16,
+        "total": 96,
+        "ties": 18
+      },
+      "2": {
+        "correct": 45,
+        "total": 288,
+        "ties": 48
+      },
+      "3": {
+        "correct": 17,
+        "total": 192,
+        "ties": 33
+      }
+    },
+    "bypass": {
+      "1": {
+        "correct": 12,
+        "total": 96,
+        "ties": 0
+      },
+      "2": {
+        "correct": 36,
+        "total": 288,
+        "ties": 0
+      },
+      "3": {
+        "correct": 24,
+        "total": 192,
+        "ties": 0
+      }
+    }
+  },
+  "per_world": {
+    "host": {
+      "dev00:length1": {
+        "correct": 3,
+        "total": 24,
+        "ties": 4
+      },
+      "dev00:length2": {
+        "correct": 10,
+        "total": 72,
+        "ties": 11
+      },
+      "dev01:length1": {
+        "correct": 5,
+        "total": 24,
+        "ties": 5
+      },
+      "dev01:length2": {
+        "correct": 8,
+        "total": 72,
+        "ties": 17
+      },
+      "dev02:length1": {
+        "correct": 5,
+        "total": 24,
+        "ties": 1
+      },
+      "dev02:length2": {
+        "correct": 19,
+        "total": 72,
+        "ties": 3
+      },
+      "dev03:length1": {
+        "correct": 3,
+        "total": 24,
+        "ties": 8
+      },
+      "dev03:length2": {
+        "correct": 8,
+        "total": 72,
+        "ties": 17
+      },
+      "dev00:length3": {
+        "correct": 6,
+        "total": 48,
+        "ties": 3
+      },
+      "dev01:length3": {
+        "correct": 4,
+        "total": 48,
+        "ties": 14
+      },
+      "dev02:length3": {
+        "correct": 3,
+        "total": 48,
+        "ties": 2
+      },
+      "dev03:length3": {
+        "correct": 4,
+        "total": 48,
+        "ties": 14
+      }
+    },
+    "bypass": {
+      "dev00:length1": {
+        "correct": 3,
+        "total": 24,
+        "ties": 0
+      },
+      "dev00:length2": {
+        "correct": 9,
+        "total": 72,
+        "ties": 0
+      },
+      "dev01:length1": {
+        "correct": 3,
+        "total": 24,
+        "ties": 0
+      },
+      "dev01:length2": {
+        "correct": 9,
+        "total": 72,
+        "ties": 0
+      },
+      "dev02:length1": {
+        "correct": 3,
+        "total": 24,
+        "ties": 0
+      },
+      "dev02:length2": {
+        "correct": 9,
+        "total": 72,
+        "ties": 0
+      },
+      "dev03:length1": {
+        "correct": 3,
+        "total": 24,
+        "ties": 0
+      },
+      "dev03:length2": {
+        "correct": 9,
+        "total": 72,
+        "ties": 0
+      },
+      "dev00:length3": {
+        "correct": 6,
+        "total": 48,
+        "ties": 0
+      },
+      "dev01:length3": {
+        "correct": 6,
+        "total": 48,
+        "ties": 0
+      },
+      "dev02:length3": {
+        "correct": 6,
+        "total": 48,
+        "ties": 0
+      },
+      "dev03:length3": {
+        "correct": 6,
+        "total": 48,
+        "ties": 0
+      }
+    }
+  },
+  "comparison_model_final_choice": {
+    "state": 4,
+    "questions": 576,
+    "ties": 0
+  },
+  "original_requirements": {
+    "per_world_both_arms_one_action_correct_at_least": 22,
+    "per_world_one_action_total": 24,
+    "per_world_both_arms_two_action_correct_at_least": 65,
+    "per_world_two_action_total": 72,
+    "per_world_host_three_action_correct_at_least": 36,
+    "per_world_three_action_total": 48
+  },
+  "gates": {
+    "implementation_pass": true,
+    "organ_fidelity_pass": true,
+    "training_readiness_pass": false,
+    "host_longer_probe_readiness_pass": false,
+    "overall_learning_requirement_pass": false,
+    "independent_integrity_audit": "PASS",
+    "independent_terminal_review": "PASS_OF_NEGATIVE_RESULT"
+  },
+  "work": {
+    "full_host_evaluations": 6723,
+    "comparison_model_evaluations": 6720,
+    "organ_evaluations": 1604,
+    "organ_training_updates": 1600,
+    "connector_training_updates": 6144,
+    "comparison_training_updates": 6144,
+    "total_training_updates": 13888,
+    "final_question_rows": 576,
+    "paid_calls": 0,
+    "elapsed_seconds": 1392.9887372919766,
+    "elapsed_minutes": 23.216478954866275
+  },
+  "saved_score_diagnostic_limit": "Independent review of the saved one-step-choice calculation did not isolate a failure specific to composing steps. Poor local choices and error cancellation prevent that interpretation. This was symbolic arithmetic on saved choices, not a new recurrent-model run.",
+  "limitations": [
+    "Failure already includes questions used in training; it is not solely a failure on longer action sequences.",
+    "Correct local organ predictions do not establish that the host or comparison model accessed and used those rules.",
+    "The counts do not establish general host advantage, host inferiority or statistical significance.",
+    "The cause was not isolated; no numerical precision or internal-attention explanation is established.",
+    "This does not establish that heterogeneous organs are useless.",
+    "No unseen-rule transplant, blind confirmation or novel mechanism was demonstrated.",
+    "No automatic retry, additional epochs or architecture experiment follows from this result.",
+    "Full prefix tensors were captured and transferred during the run; prediction records retain their hashes, not the tensors themselves."
+  ],
+  "next_question": "Distinguish access to rule information from correct use of that information before a new architecture study.",
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/COMPLETE.json",
+      "source_sha256": "de647f3ba2fad1fc75f5f3b3622bdc65e1b1e0fbe7f80c456d018ae72a32a63b"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/REPORT.json",
+      "source_sha256": "d304babc3ae24f9a67ece94ef2ff44b42756d2bee9a29762a4a7775c90463fd8"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/INDEPENDENT_AUDIT.json",
+      "source_sha256": "1158b0f70d12a99284d967cfe108a92087a359528242b687ac15839cd2cbacb5"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_TRANSPLANT_V2_PREPARATION/DEVELOPMENT_TERMINAL_REVIEW.json",
+      "source_sha256": "2fe4b52dc2f5d2eb98d46b79c95d613f769a9a52f07ff11f93da5c8fd84cca9d"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/plan.json",
+      "source_sha256": "94f2b56135cb3de13a00c0cd20e32e2e376306bf188e95b06610386f908c9eb4"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/plan.json",
+      "source_sha256": "3d34bef825581d13f12e60b68fdff91896000654be0d8f5d184949a6e634b50a"
+    }
+  ],
+  "transformation": "Selected completed aggregate counts, registered gates and reviewed limitations only. No raw output-score arrays, learned weights, memory values, training-loss sequences, account details or process identifiers copied."
+}

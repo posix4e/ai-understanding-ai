@@ -1,6 +1,6 @@
 {
   "record_type": "DERIVED_PUBLIC_PRIOR_WORK_CONTEXT",
-  "created_at_utc": "2026-10-05T13:01:29.273175+00:00",
+  "created_at_utc": "2026-10-05T13:49:56.871196+00:00",
   "question": "Can a fixed language host and connector use a separately trained module with different world rules?",
   "organ_meaning": "An analogy for an internal part with a different job. An energy module scores possible next states; energy here is a learned score, not electrical power.",
   "established_precedents": [
@@ -26,8 +26,8 @@
       "limit": "The demonstration concerns video generation, not a language-model organ transplant."
     }
   ],
-  "current_development": "The four-world learned-energy development run stopped before final evaluation after its run controller disappeared. The module-training stage completed, but no final task grade or learning outcome exists.",
-  "development_limit": "The incomplete run cannot establish task learning or compare host and bypass performance. A future unseen-rule transplant still requires a separate fixed plan and has not run.",
+  "current_development": "The same-recipe second attempt completed and failed its original learning requirement. All four learned rule modules passed all 24 of 24 local transitions, but the host plus connector and the comparison model did not meet the training-task requirements. The first interrupted attempt remains closed.",
+  "development_limit": "Integrity-audit PASS confirms the records and calculations, not task success. These four development worlds were already used in training; no unseen-rule transplant or general architecture comparison was established. Failure to access or use the rules remains to be distinguished.",
   "novelty_established": false,
   "sources": [
     {
@@ -41,7 +41,27 @@
     {
       "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/plan.json",
       "source_sha256": "3d34bef825581d13f12e60b68fdff91896000654be0d8f5d184949a6e634b50a"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/COMPLETE.json",
+      "source_sha256": "de647f3ba2fad1fc75f5f3b3622bdc65e1b1e0fbe7f80c456d018ae72a32a63b"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/REPORT.json",
+      "source_sha256": "d304babc3ae24f9a67ece94ef2ff44b42756d2bee9a29762a4a7775c90463fd8"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/INDEPENDENT_AUDIT.json",
+      "source_sha256": "1158b0f70d12a99284d967cfe108a92087a359528242b687ac15839cd2cbacb5"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_TRANSPLANT_V2_PREPARATION/DEVELOPMENT_TERMINAL_REVIEW.json",
+      "source_sha256": "2fe4b52dc2f5d2eb98d46b79c95d613f769a9a52f07ff11f93da5c8fd84cca9d"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/plan.json",
+      "source_sha256": "94f2b56135cb3de13a00c0cd20e32e2e376306bf188e95b06610386f908c9eb4"
     }
   ],
-  "transformation": "Three previously reviewed primary papers summarized in plain language. Development status now comes from the terminal STOP record and registered plan; no training losses or partial model outputs were inspected."
+  "transformation": "Three previously reviewed primary papers summarized in plain language, with current development status bound to V2 completion, report, independent audit and terminal review. The prior V1 stop remains included. No raw learned arrays or partial model outputs copied."
 }

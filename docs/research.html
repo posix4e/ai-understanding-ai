@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Can a language model use a different internal module? A small connector check passed; the learning run stopped before final evaluation. Read the completed results and limits.">
+  <meta name="description" content="Can a language model use a different internal module? A completed second learning attempt failed its fixed requirements, although the small rule modules passed their own check. Read the completed results and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">A small connector ran inside a frozen language model and received one training update. That check used hand-built rules. A four-world study with learned energy modules stopped before final evaluation when its run controller was lost. It has no task grade. Earlier failed tests stay closed. The Cloudflare final audit stopped. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
+        <p class="scope-line">A second development attempt completed with the same learning recipe. Its small rule modules passed their own check, but the combined system failed the learning requirement. A separate calculation confirmed the counts. The first interrupted run and earlier failed tests stay in the record. The Cloudflare final audit remains stopped. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -35,7 +35,7 @@
         <div class="figure-heading"><p class="eyebrow">Two separate studies</p><span class="figure-number" aria-hidden="true">01</span></div>
         <h2 id="two-studies-title">Inside one model.<br> Between different models.</h2>
         <div class="result-lines">
-          <div><div><h3>Inside Granite: connect different parts</h3><p>The current question is whether a small module can supply useful world rules through a learned internal connector.</p></div></div>
+          <div><div><h3>Inside Granite: learning requirement failed</h3><p>The rule modules supplied correct next-state choices. The connector and comparison model did not meet the task requirements.</p></div></div>
           <div><div><h3>Cloudflare: final audit stopped</h3><p>The run to test choices between complete models stopped. It has no final scientific grade.</p></div></div>
         </div>
       </aside>
@@ -44,21 +44,39 @@
     <section class="section wrap" id="organs" aria-labelledby="organs-title">
       <div class="section-heading"><p class="eyebrow">Current direction / Different internal parts</p><h2 id="organs-title">A small world model inside a language model.</h2></div>
       <div class="section-body">
-        <p class="lead">“Organ” is an analogy for parts with different jobs.</p>
+        <p class="lead">The small parts learned their rules. The connected system did not pass its task check.</p>
+        <p>“Organ” is an analogy for parts with different jobs.</p>
         <p>Our module is trained to score which state should follow an action. It gives each possible next state an energy score: lower means a better match. Here, energy is a learned score, not electrical power. A small connector passes this information into the language model while it processes the question.</p>
         <p>This is an internal connection. It is different from sending a question to one of several separate models. The language model’s existing weights stay fixed while the connector learns.</p>
         <table class="followup-table followup-table--text">
-          <caption>Current evidence. The completed connector check and the stopped learning run have different limits.</caption>
+          <caption>Current evidence. The resource check, interrupted first attempt, and completed second attempt have different limits.</caption>
           <thead><tr><th scope="col">Step</th><th scope="col">Status</th><th scope="col">What it tells us</th></tr></thead>
           <tbody>
             <tr><th scope="row">Connector and resource check</th><td>Passed</td><td>A connector with 66,752 trainable weights ran inside Granite. One update changed the connector while the host weights stayed unchanged.</td></tr>
-            <tr><th scope="row">Learned rules in four small worlds</th><td>Stopped before final evaluation</td><td>The rule modules finished their training stage. Training of the connector and comparison model did not finish. No task grade exists.</td></tr>
+            <tr><th scope="row">First development attempt</th><td>Stopped before final evaluation</td><td>The run controller was lost. This attempt has no task grade.</td></tr>
+            <tr><th scope="row">Second attempt, same learning recipe</th><td>Completed; learning requirement failed</td><td>All four rule modules passed their own check. Both systems missed the required performance on training questions.</td></tr>
             <tr><th scope="row">Replace the module with unseen rules</th><td>Not run</td><td>This would test whether a fixed host and connector can use a new module.</td></tr>
           </tbody>
         </table>
-        <aside class="plain-note"><strong>The passed check used hand-built rules.</strong>It used one short input and a fixed table. No world model was trained. A training update is not evidence of better answers, useful planning, or a successful organ transplant.</aside>
+        <aside class="plain-note"><strong>The resource check used hand-built rules.</strong>It used one short input and a fixed table. No world model was trained. A training update is not evidence of better answers, useful planning, or a successful organ transplant.</aside>
         <p>Other researchers already connect different models. <a href="https://arxiv.org/html/2401.02412v1">CALM</a> connects internal language-model representations through a trained adapter. <a href="https://arxiv.org/html/2506.09985v1">V-JEPA 2</a> predicts future representations and uses them for planning. <a href="https://arxiv.org/html/2608.29904v1">Off-Manifold Refinement</a> uses a world model to guide a video generator through a trained adapter. These are precedents, not evidence that our proposed language-model transplant works.</p>
-        <aside class="plain-note"><strong>The learning run lost its controller.</strong>The program that supervised the run disappeared after an interruption. We stopped the remaining worker on 5 October at 12:59 UTC. Fourteen of 16 training rounds finished, with 5,652 of 6,144 paired updates complete. No final checkpoint, prediction panel, report, or independent result check was produced. This is an execution failure, not evidence that the model failed to learn.</aside>
+        <h3 id="organ-development">A completed second attempt failed the learning requirement.</h3>
+        <p>The second attempt kept the same worlds, model settings and training budget. It completed on 5 October at 13:41 UTC. Each learned energy module ranked the correct next state first for all 24 transitions in its own training world. That did not make the combined system reliable on the task.</p>
+        <p>We scored eight possible next states. A tie for the highest score counted as a failure. The comparison model received the same captured language features and rule information. These counts cover four worlds.</p>
+        <table class="followup-table">
+          <caption>Final scores from the same-recipe second development attempt. One- and two-action questions were used in training. Three-action questions were fixed longer probes.</caption>
+          <thead><tr><th scope="col">Question group</th><th scope="col">Host + connector correct</th><th scope="col">Comparison model correct</th><th scope="col">Host ties</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">One action · training</th><td>16 / 96</td><td>12 / 96</td><td>18</td></tr>
+            <tr><th scope="row">Two actions · training</th><td>45 / 288</td><td>36 / 288</td><td>48</td></tr>
+            <tr><th scope="row">Three actions · longer probes</th><td>17 / 192</td><td>24 / 192</td><td>33</td></tr>
+          </tbody>
+        </table>
+        <p>The comparison model chose state “4” for all 576 questions, with no tied top scores.</p>
+        <p>The fixed requirement applied to each world: both systems needed at least 22 of 24 correct one-action scores and 65 of 72 correct two-action scores. The host also needed 36 of 48 correct longer-probe scores. The run failed these requirements. The independent audit passed because it confirmed the records and calculations; it did not turn the learning failure into a success.</p>
+        <p>The run used 6,723 full host evaluations, 6,720 comparison-model evaluations and 1,604 energy-module evaluations. It completed 13,888 training updates in about 23.22 minutes, with no paid model calls. No unseen-rule transplant was tested. This result does not show that organs are useless, that numerical precision caused the failure, or that either architecture is generally better.</p>
+        <p class="source-line"><a href="./research-evidence/organ-development-summary.json">Completed second attempt, fixed requirements and independent checks</a></p>
+        <aside class="plain-note"><strong>The first learning run lost its controller.</strong>The program that supervised the run disappeared after an interruption. We stopped the remaining worker on 5 October at 12:59 UTC. Fourteen of 16 training rounds finished, with 5,652 of 6,144 paired updates complete. No final checkpoint, prediction panel, report, or independent result check was produced. This is an execution failure, not evidence that the model failed to learn.</aside>
         <p class="source-line"><a href="./research-evidence/organ-resource-summary.json">Completed connector check and limits</a> · <a href="./research-evidence/organ-development-stop-summary.json">Why the learning run stopped</a> · <a href="./research-evidence/heterogeneous-organs-context.json">Prior work and the current question</a> · <a href="#next">What comes next</a></p>
       </div>
     </section>
@@ -197,12 +215,12 @@
 
     <section class="limits-band" id="next" aria-labelledby="next-title">
       <div class="wrap limits-inner">
-        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Make the run reliable.<br> Then test learning.</h2></div>
+        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Find why the rules<br> were not used well.</h2></div>
         <div class="section-body">
           <p class="lead">A useful explanation must survive a new test.</p>
           <p>The copy-and-format idea around expert 9 remains closed. The language task passed, but the new measurement check failed. That failed plan stays closed. Its rules and results stay unchanged.</p>
-          <p>The stopped run was designed to test learned rules in four small worlds. A separate model received the same saved language features and rule information. Without the final evaluation, we cannot use this run to compare their task performance.</p>
-          <p>We are checking a controller that can continue when the chat is interrupted. A separately recorded second development attempt will keep the same worlds, model settings and training budget. The first run stays closed and its records stay visible. Partial training cannot replace the missing final test.</p>
+          <p>The second attempt completed, but it failed on the short training questions as well as the longer probes. We cannot describe this as only a failure to combine steps. The current evidence does not isolate why learning failed.</p>
+          <p>Before another architecture study, we need to separate two questions: can the connector access the rule information, and can the system use it to follow actions? A changed answer alone would not prove correct rule use. There is no automatic retry or extension of training. The first run stays closed and its records stay visible.</p>
           <p>A later transplant test would keep the language model and connector fixed, replace only the module that holds world rules, and test new action sequences. That test has not run. Even success in four training worlds would not prove transfer to unseen rules.</p>
           <p>We do not yet claim a new mechanism, a broadly reliable repair, or a novel research result.</p>
         </div>
@@ -217,7 +235,8 @@
       <div class="evidence-grid">
         <div class="evidence-group"><h3>The organ direction</h3><ul>
           <li><a href="./research-evidence/organ-resource-summary.json">Connector and resource check<span>One small input; fixed rules; no learned dynamics</span></a></li>
-          <li><a href="./research-evidence/organ-development-stop-summary.json">Learning run stopped<span>Run controller lost; no final task grade</span></a></li>
+          <li><a href="./research-evidence/organ-development-stop-summary.json">First learning run stopped<span>Run controller lost; no task grade for this attempt</span></a></li>
+          <li><a href="./research-evidence/organ-development-summary.json">Completed second attempt<span>Rule modules passed; task learning requirement failed</span></a></li>
           <li><a href="./research-evidence/heterogeneous-organs-context.json">Established model-composition work<span>CALM, V-JEPA 2 and video guidance</span></a></li>
           <li><a href="./research-evidence/granite-route-compute-summary.json">Direct intervention tool<span>Controls passed on two reused sentences</span></a></li>
         </ul></div>
