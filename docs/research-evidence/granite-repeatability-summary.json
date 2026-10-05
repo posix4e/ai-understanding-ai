@@ -1,0 +1,50 @@
+{
+  "study": "GRANITE_REPEATABILITY_V1",
+  "at_utc": "2026-10-05T00:49:10.695426+00:00",
+  "status": "COMPLETE_NUMERICAL_NONREPEATABILITY_REPRODUCED",
+  "plan_sha256": "248b1665549034a1b5abbc9db1e290be1d76fc873f71ae325a801199175eb045",
+  "plain_language": "The same fixed input produced two different score patterns. Both exactly reproduce previously saved patterns. This happens within single processes as well as across processes.",
+  "counts": {
+    "processes": 8,
+    "model_forwards": 84,
+    "principal_corrected_calls": 24,
+    "matching_prior": 7,
+    "matching_failed_bridge_current": 17,
+    "processes_switching_during_principal_repeats": 5,
+    "unequal_control_comparisons": 18,
+    "control_comparisons": 48
+  },
+  "raw_score_difference": {
+    "changed_coordinates": 46260,
+    "total_coordinates": 49155,
+    "max_abs_difference": 0.34375,
+    "highest_scoring_token_same": true
+  },
+  "audit": "Independent audit PASS for identity, completeness and numerical reproduction. Numerical repeatability is not established; it demonstrably fails in the tested setup.",
+  "trace_followup": {
+    "status": "POST_HOC_TRACE_ASSOCIATION",
+    "traced_calls": 8,
+    "prior_class": 4,
+    "current_class": 4,
+    "earliest_recorded_router_difference_zero_based_layer": 4,
+    "first_selected_expert_set_difference_zero_based_layer": 8,
+    "lesion_layer": 11,
+    "limit": "Differences are already recorded before the lesion. Earlier hidden states are incompletely observed; no initiating operation or backend kernel is identified. Traced calls do not reveal the internals of uninstrumented calls."
+  },
+  "consequences": [
+    "Original full-answer study remains stopped at814 completed cells; partial answers remain ungraded.",
+    "Highest-scoring next token is unchanged; completed-answer effects were not tested.",
+    "Previous failed scientific gates remain closed; no novel mechanism or organ claim.",
+    "Next specify a bounded earlier-operation localization diagnostic with intact repeats and observation controls."
+  ],
+  "generated_tokens": 0,
+  "paid_model_calls": 0,
+  "model_api_spend_usd": 0,
+  "evidence": {
+    "REGISTRATION.json": "fedb377f707c438d6577108675ef917cc9290659d96b8fcda4b9943f8e26d427",
+    "COMPLETE.json": "3b4e695884f085f87fb0be08ab95137a8d705ad57d23b940e378cbf550ddf52a",
+    "REPORT.json": "826d0f48a6377b1ff5048667972467d9a3a50c6d7e021191f21ec689d82a6483",
+    "INDEPENDENT_NUMERICAL_AUDIT.json": "97b81ad6a0a70af926a60b81bd59976abb2e687f76d358b8b5fe513eedb58a71",
+    "CROSS_AUDIT_COMPARISON.json": "4cc38d65c0d4256b038ac1d0004a9c83c22a17ec14670ca3858ff1f7d7f2b4bf"
+  }
+}

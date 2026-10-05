@@ -1,0 +1,168 @@
+{
+  "training_questions": 200,
+  "physical_training_cells": 1200,
+  "models": [
+    "llama",
+    "qwen",
+    "gptoss",
+    "gemma",
+    "glm",
+    "mistral"
+  ],
+  "per_model": {
+    "llama": {
+      "questions": 200,
+      "correct": 29,
+      "mean_quality": 0.145,
+      "saved_final_answer_absent": 0,
+      "only_correct_endpoint": 8,
+      "training_generation_cost_usd": 0.011609741
+    },
+    "qwen": {
+      "questions": 200,
+      "correct": 20,
+      "mean_quality": 0.1,
+      "saved_final_answer_absent": 150,
+      "only_correct_endpoint": 1,
+      "training_generation_cost_usd": 0.0661494457
+    },
+    "gptoss": {
+      "questions": 200,
+      "correct": 48,
+      "mean_quality": 0.24,
+      "saved_final_answer_absent": 83,
+      "only_correct_endpoint": 12,
+      "training_generation_cost_usd": 0.13068355
+    },
+    "gemma": {
+      "questions": 200,
+      "correct": 60,
+      "mean_quality": 0.3,
+      "saved_final_answer_absent": 0,
+      "only_correct_endpoint": 11,
+      "training_generation_cost_usd": 0.0114886
+    },
+    "glm": {
+      "questions": 200,
+      "correct": 28,
+      "mean_quality": 0.14,
+      "saved_final_answer_absent": 0,
+      "only_correct_endpoint": 5,
+      "training_generation_cost_usd": 0.0046273115
+    },
+    "mistral": {
+      "questions": 200,
+      "correct": 31,
+      "mean_quality": 0.155,
+      "saved_final_answer_absent": 0,
+      "only_correct_endpoint": 5,
+      "training_generation_cost_usd": 0.024989954999999998
+    }
+  },
+  "pairwise_rescue_counts": {
+    "llama": {
+      "llama": 0,
+      "qwen": 15,
+      "gptoss": 38,
+      "gemma": 43,
+      "glm": 16,
+      "mistral": 21
+    },
+    "qwen": {
+      "llama": 24,
+      "qwen": 0,
+      "gptoss": 35,
+      "gemma": 46,
+      "glm": 19,
+      "mistral": 26
+    },
+    "gptoss": {
+      "llama": 19,
+      "qwen": 7,
+      "gptoss": 0,
+      "gemma": 31,
+      "glm": 15,
+      "mistral": 17
+    },
+    "gemma": {
+      "llama": 12,
+      "qwen": 6,
+      "gptoss": 19,
+      "gemma": 0,
+      "glm": 9,
+      "mistral": 10
+    },
+    "glm": {
+      "llama": 17,
+      "qwen": 11,
+      "gptoss": 35,
+      "gemma": 41,
+      "glm": 0,
+      "mistral": 20
+    },
+    "mistral": {
+      "llama": 19,
+      "qwen": 15,
+      "gptoss": 34,
+      "gemma": 39,
+      "glm": 17,
+      "mistral": 0
+    }
+  },
+  "rescue_definition": "Row endpoint incorrect and column endpoint correct on the same training question",
+  "correct_endpoint_count_histogram": {
+    "0": 99,
+    "1": 42,
+    "2": 27,
+    "3": 15,
+    "4": 10,
+    "5": 7,
+    "6": 0
+  },
+  "all_endpoints_incorrect": 99,
+  "all_endpoints_correct": 0,
+  "hindsight_any_endpoint_correct": 101,
+  "best_fixed_training_endpoints": [
+    "gemma"
+  ],
+  "best_fixed_training_correct": 60,
+  "hindsight_gap_questions": 41,
+  "hindsight_gap_percentage_points": 20.5,
+  "training_generation_cost_usd": 0.2495486032,
+  "schema": "v4-completed-training-description-v1",
+  "created_at_utc": "2026-10-04T23:28:47.174716+00:00",
+  "source": {
+    "path": "cloudflare-router/research/audits/describe-v4-training.py",
+    "sha256": "1994398a45ed4df941018d433aeb7934505edc04e3b2f6831e65236fa32d3af6"
+  },
+  "inputs": [
+    {
+      "path": "outputs/routing-research/V4_CONTINUATION/freeze.json",
+      "sha256": "479e151acfad33f7ccca879b6e68c6be482fea8f8cc055312914d79d36f94122"
+    },
+    {
+      "path": "outputs/routing-research/V4_CONTINUATION/train-COLLECTED.json",
+      "sha256": "97ae2279545604970c2073db6257741c4fdaf70d76009a60a864fa06a1874b08"
+    },
+    {
+      "path": "outputs/routing-research/V4_CONTINUATION/FIT_COMPLETE.json",
+      "sha256": "c756eeeb6372e679ad7fb3b01477171dfa5534071891b794bec24cbf3808363e"
+    },
+    {
+      "path": "outputs/routing-research/V4_CONTINUATION/train-INDEPENDENT_GRADING.json",
+      "sha256": "e070b29bfd95b6d9e07bda6993e9b1bf92ace6eaf9cfd7d8e3d0c583011645ea"
+    }
+  ],
+  "scope": "Post-fit, descriptive training evidence only; no policy changes, significance tests or new inference",
+  "model_calls": 0,
+  "limitations": [
+    "These are the same 200 questions used for fitting. They are not held-out quality or a scientific advancement gate.",
+    "The best fixed training endpoint is named descriptively; this report does not select a deployed policy.",
+    "The hindsight union uses every saved answer and is an unattainable oracle without a reliable selector.",
+    "Questions come from the admitted short-input BBEH cohort, not a general ability test.",
+    "Scores include the frozen response parsing and 1024-token output cap. Incorrect scores do not distinguish ability from incomplete or unsupported outputs.",
+    "Absent saved final answers are not automatically evidence of a specific termination or reasoning failure.",
+    "The independent grader verified saved final strings, not original provider response bodies.",
+    "This measures differences between hosted model endpoints, not functions of internal MoE experts."
+  ]
+}

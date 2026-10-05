@@ -1,0 +1,264 @@
+{
+  "schema": "v4-training-delivery-description-v1",
+  "created_at_utc": "2026-10-04T23:30:08.529732+00:00",
+  "phase": "train",
+  "source": {
+    "path": "cloudflare-router/research/audits/describe-v4-training-delivery.py",
+    "sha256": "73825cf18be4f86a420f731385a624423d8af90aac17b80d845cb63728244da9"
+  },
+  "inputs": [
+    {
+      "path": "outputs/routing-research/V4_CONTINUATION/train-COLLECTED.json",
+      "sha256": "97ae2279545604970c2073db6257741c4fdaf70d76009a60a864fa06a1874b08"
+    },
+    {
+      "path": "outputs/routing-research/V4_CONTINUATION/train-responses.jsonl",
+      "sha256": "f022f4e53cdad172a5d120f158ea5f04c92aa0b58145fc3c185b274588217bb6"
+    },
+    {
+      "path": "outputs/routing-research/V4_CONTINUATION/train-INDEPENDENT_GRADING.json",
+      "sha256": "e070b29bfd95b6d9e07bda6993e9b1bf92ace6eaf9cfd7d8e3d0c583011645ea"
+    }
+  ],
+  "models": {
+    "gemma": {
+      "questions": 200,
+      "all_responses": {
+        "truncated": {
+          "false": 187,
+          "true": 13
+        },
+        "hitOutputCap": {
+          "false": 187,
+          "true": 13
+        },
+        "qualityFailure": {
+          "false": 187,
+          "true": 13
+        },
+        "finishReason": {
+          "\"stop\"": 187,
+          "\"length\"": 13
+        },
+        "responseStatus": {
+          "null": 200
+        }
+      },
+      "absent_saved_final_answer": 0,
+      "absent_final_responses": {
+        "truncated": {},
+        "hitOutputCap": {},
+        "qualityFailure": {},
+        "finishReason": {},
+        "responseStatus": {}
+      },
+      "output_allowance_tokens": {
+        "1024": 200
+      },
+      "recorded_output_tokens_at_or_above_allowance": 13,
+      "absent_final_output_tokens_at_or_above_allowance": 0
+    },
+    "glm": {
+      "questions": 200,
+      "all_responses": {
+        "truncated": {
+          "false": 200
+        },
+        "hitOutputCap": {
+          "false": 200
+        },
+        "qualityFailure": {
+          "false": 200
+        },
+        "finishReason": {
+          "\"stop\"": 200
+        },
+        "responseStatus": {
+          "null": 200
+        }
+      },
+      "absent_saved_final_answer": 0,
+      "absent_final_responses": {
+        "truncated": {},
+        "hitOutputCap": {},
+        "qualityFailure": {},
+        "finishReason": {},
+        "responseStatus": {}
+      },
+      "output_allowance_tokens": {
+        "1024": 200
+      },
+      "recorded_output_tokens_at_or_above_allowance": 0,
+      "absent_final_output_tokens_at_or_above_allowance": 0
+    },
+    "gptoss": {
+      "questions": 200,
+      "all_responses": {
+        "truncated": {
+          "true": 83,
+          "false": 117
+        },
+        "hitOutputCap": {
+          "true": 83,
+          "false": 117
+        },
+        "qualityFailure": {
+          "true": 83,
+          "false": 117
+        },
+        "finishReason": {
+          "null": 200
+        },
+        "responseStatus": {
+          "\"incomplete\"": 83,
+          "\"completed\"": 117
+        }
+      },
+      "absent_saved_final_answer": 83,
+      "absent_final_responses": {
+        "truncated": {
+          "true": 83
+        },
+        "hitOutputCap": {
+          "true": 83
+        },
+        "qualityFailure": {
+          "true": 83
+        },
+        "finishReason": {
+          "null": 83
+        },
+        "responseStatus": {
+          "\"incomplete\"": 83
+        }
+      },
+      "output_allowance_tokens": {
+        "1024": 200
+      },
+      "recorded_output_tokens_at_or_above_allowance": 83,
+      "absent_final_output_tokens_at_or_above_allowance": 83
+    },
+    "llama": {
+      "questions": 200,
+      "all_responses": {
+        "truncated": {
+          "false": 200
+        },
+        "hitOutputCap": {
+          "false": 197,
+          "true": 3
+        },
+        "qualityFailure": {
+          "false": 197,
+          "true": 3
+        },
+        "finishReason": {
+          "null": 200
+        },
+        "responseStatus": {
+          "null": 200
+        }
+      },
+      "absent_saved_final_answer": 0,
+      "absent_final_responses": {
+        "truncated": {},
+        "hitOutputCap": {},
+        "qualityFailure": {},
+        "finishReason": {},
+        "responseStatus": {}
+      },
+      "output_allowance_tokens": {
+        "1024": 200
+      },
+      "recorded_output_tokens_at_or_above_allowance": 3,
+      "absent_final_output_tokens_at_or_above_allowance": 0
+    },
+    "mistral": {
+      "questions": 200,
+      "all_responses": {
+        "truncated": {
+          "false": 200
+        },
+        "hitOutputCap": {
+          "false": 200
+        },
+        "qualityFailure": {
+          "false": 200
+        },
+        "finishReason": {
+          "\"stop\"": 200
+        },
+        "responseStatus": {
+          "null": 200
+        }
+      },
+      "absent_saved_final_answer": 0,
+      "absent_final_responses": {
+        "truncated": {},
+        "hitOutputCap": {},
+        "qualityFailure": {},
+        "finishReason": {},
+        "responseStatus": {}
+      },
+      "output_allowance_tokens": {
+        "1024": 200
+      },
+      "recorded_output_tokens_at_or_above_allowance": 0,
+      "absent_final_output_tokens_at_or_above_allowance": 0
+    },
+    "qwen": {
+      "questions": 200,
+      "all_responses": {
+        "truncated": {
+          "true": 150,
+          "false": 50
+        },
+        "hitOutputCap": {
+          "true": 150,
+          "false": 50
+        },
+        "qualityFailure": {
+          "true": 150,
+          "false": 50
+        },
+        "finishReason": {
+          "\"length\"": 150,
+          "\"stop\"": 50
+        },
+        "responseStatus": {
+          "null": 200
+        }
+      },
+      "absent_saved_final_answer": 150,
+      "absent_final_responses": {
+        "truncated": {
+          "true": 150
+        },
+        "hitOutputCap": {
+          "true": 150
+        },
+        "qualityFailure": {
+          "true": 150
+        },
+        "finishReason": {
+          "\"length\"": 150
+        },
+        "responseStatus": {
+          "null": 150
+        }
+      },
+      "output_allowance_tokens": {
+        "1024": 200
+      },
+      "recorded_output_tokens_at_or_above_allowance": 150,
+      "absent_final_output_tokens_at_or_above_allowance": 150
+    }
+  },
+  "model_calls": 0,
+  "limits": [
+    "Describes existing flags and usage; does not reconstruct original provider bodies or repair final-answer extraction.",
+    "A token-count cap hit is not by itself proof of the counterfactual answer or of model inability.",
+    "Correctness and cohort remain unchanged; this report selects no new policy and changes no inference settings.",
+    "Training data only. No selection, certification, final-audit or partial local-study outcomes read."
+  ]
+}

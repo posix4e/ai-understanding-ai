@@ -1,0 +1,131 @@
+{
+  "at_utc": "2026-10-05T02:00:40.613176+00:00",
+  "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
+  "files": [
+    {
+      "file": "granite-generalization-summary.json",
+      "copy_type": "verbatim_selected_summary",
+      "source_path": "outputs/moe-mechanisms/GRANITE_GENERALIZATION_V1/STUDY_SUMMARY.json",
+      "source_sha256": "c1097269402db09b4c990ab210f91733c968ab5732c200e72b43509fd487198c",
+      "sha256": "c1097269402db09b4c990ab210f91733c968ab5732c200e72b43509fd487198c",
+      "bytes": 11639
+    },
+    {
+      "file": "granite-wording-summary.json",
+      "copy_type": "verbatim_selected_summary",
+      "source_path": "outputs/moe-mechanisms/GRANITE_WORDING_V1/STUDY_SUMMARY.json",
+      "source_sha256": "7d9119eaae8e13445db213f13d09e0f078da3074ff7fbbfa228a08ab01a3a998",
+      "sha256": "7d9119eaae8e13445db213f13d09e0f078da3074ff7fbbfa228a08ab01a3a998",
+      "bytes": 12819
+    },
+    {
+      "file": "routing-training-summary.json",
+      "copy_type": "verbatim_selected_summary",
+      "source_path": "outputs/routing-research/V4_TRAIN_DESCRIPTIVE.json",
+      "source_sha256": "b81912a818400f70b5079ee6ebe8b9a86da3ebf5730a0d683a23b701ef04136f",
+      "sha256": "b81912a818400f70b5079ee6ebe8b9a86da3ebf5730a0d683a23b701ef04136f",
+      "bytes": 4961
+    },
+    {
+      "file": "routing-delivery-summary.json",
+      "copy_type": "verbatim_selected_summary",
+      "source_path": "outputs/routing-research/V4_TRAIN_DELIVERY_DIAGNOSTIC.json",
+      "source_sha256": "c50aa54df34073ed3ea6d8669869067f7b83537037e44b574eafdb2eff5340c1",
+      "sha256": "c50aa54df34073ed3ea6d8669869067f7b83537037e44b574eafdb2eff5340c1",
+      "bytes": 6737
+    },
+    {
+      "file": "routing-independent-check.json",
+      "copy_type": "verbatim_selected_summary",
+      "source_path": "outputs/routing-research/V4_TRAIN_DESCRIPTIVE_VERIFICATION.json",
+      "source_sha256": "6a5dfda07c5f2391ffe9a53c7ffb8e615c855e1026ae30462819f386452953c8",
+      "sha256": "6a5dfda07c5f2391ffe9a53c7ffb8e615c855e1026ae30462819f386452953c8",
+      "bytes": 1088
+    },
+    {
+      "file": "granite-pilot-answer-check.json",
+      "copy_type": "derived_public_summary",
+      "sha256": "75448f8f63cfde21b55be2ddff1ac85f094429ce0e9cbaa79d5cb9e365fd640d",
+      "bytes": 10137,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/GRANITE_PILOT_V1/20261004T213929983277Z-answer-diagnostic/INDEPENDENT_ANSWER_AUDIT.json",
+          "source_sha256": "e3316ddf9d976e00c32e243a4da1ca3c4e9d9f17f8ca4ee11c5590cb6adb2ae5"
+        }
+      ],
+      "transformation": "Internal review-agent identifier replaced with plain description; scientific values unchanged."
+    },
+    {
+      "file": "granite-repeatability-summary.json",
+      "copy_type": "verbatim_selected_summary",
+      "source_path": "outputs/moe-mechanisms/GRANITE_REPEATABILITY_V1/STUDY_SUMMARY.json",
+      "source_sha256": "2dc72c65fef6eac76bbc9dd72c9bfa175ac08319fcacc9312dace67b43b2eb37",
+      "sha256": "2dc72c65fef6eac76bbc9dd72c9bfa175ac08319fcacc9312dace67b43b2eb37",
+      "bytes": 2617
+    },
+    {
+      "file": "granite-early-trace-summary.json",
+      "copy_type": "verbatim_selected_summary",
+      "source_path": "outputs/moe-mechanisms/GRANITE_EARLY_TRACE_V1/STUDY_SUMMARY.json",
+      "source_sha256": "7d67be7d2b01afa7a0bf2946b30090e3e37e642d308ba217cf15e966036a6215",
+      "sha256": "7d67be7d2b01afa7a0bf2946b30090e3e37e642d308ba217cf15e966036a6215",
+      "bytes": 2984
+    },
+    {
+      "file": "granite-combine-replay-summary.json",
+      "copy_type": "verbatim_selected_summary",
+      "source_path": "outputs/moe-mechanisms/GRANITE_COMBINE_REPLAY_V1/STUDY_SUMMARY.json",
+      "source_sha256": "c80fd57cf7faec59e3c00bf2cdc1e4ff1ce0a36c2caafb505fdf35b5b98e1bba",
+      "sha256": "c80fd57cf7faec59e3c00bf2cdc1e4ff1ce0a36c2caafb505fdf35b5b98e1bba",
+      "bytes": 4120
+    },
+    {
+      "file": "granite-full-answer-stop-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/GRANITE_WORDING_ANSWERS_V1/STOPPED.json",
+          "source_sha256": "486c84ad3f1784ee2e6bafb3836b5bc96220e3af2608560ac39e7a8befec4fbb"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/GRANITE_REPEATABILITY_V1/STUDY_SUMMARY.json",
+          "source_sha256": "2dc72c65fef6eac76bbc9dd72c9bfa175ac08319fcacc9312dace67b43b2eb37"
+        }
+      ],
+      "sha256": "2b560dee446fd7eec93caff68c7f30bc1d361643185bda4955dd8a904324aeb5",
+      "bytes": 1325
+    },
+    {
+      "file": "routing-status-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/routing-research/V4_CONTINUATION/selection-COLLECTED.json",
+          "source_sha256": "99938988b9f8350437595bd6a36374cb08852fad3534d896f9348b0c14505c93"
+        },
+        {
+          "source_path": "outputs/routing-research/V4_CONTINUATION/selection-INDEPENDENT_GRADING.json",
+          "source_sha256": "0930201012fdaba953831fabc8ba08338b8872cb8ee6bbc5c05bd529c419dfe5"
+        },
+        {
+          "source_path": "outputs/routing-research/V4_CERTIFICATION_PROGRESS_20261005T0128.json",
+          "source_sha256": "bdc6f6ca57a6b953eb73043ffeda1c6d24225831396c3eec3ce93fc7a1c31739"
+        }
+      ],
+      "sha256": "642288036360e0f5d2a02d8dc08b41dacfb008f5dad9c14c83e2e1fe86687933",
+      "bytes": 1583
+    },
+    {
+      "file": "granite-competence-summary.json",
+      "copy_type": "verbatim_selected_summary",
+      "source_path": "outputs/moe-mechanisms/GRANITE_COMPETENCE_V1/STUDY_SUMMARY.json",
+      "source_sha256": "72ac6131c3cd424ced4de505d77e282792ed74556bc80d993f4cfeccde51d6c8",
+      "sha256": "72ac6131c3cd424ced4de505d77e282792ed74556bc80d993f4cfeccde51d6c8",
+      "bytes": 3709
+    }
+  ],
+  "absolute_local_path_redactions": 0,
+  "note": "Verbatim copies retain original source hashes. Derived records identify their source records and describe their transformations. Repository-relative evidence references are provenance, not bundled downloads. Large audits, raw traces and partial answers are excluded.",
+  "document_status": "research_in_progress_draft",
+  "internal_identifier_redactions": 1
+}

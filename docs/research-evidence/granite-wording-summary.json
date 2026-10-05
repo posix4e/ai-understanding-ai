@@ -1,0 +1,294 @@
+{
+  "schema_version": "wording-diagnostic-summary-v1",
+  "at_utc": "2026-10-04T22:53:40.654392+00:00",
+  "status": "complete; registered prediction and competence screen failed",
+  "artifact_sha256": {
+    "plan.json": "3f7ffc34156a57406603a81f4874fc33b5534776ee30a9788631c0bf19b28b5e",
+    "REGISTRATION.json": "6b9b0c0685d0af37f44a2e3eb5cf711271cd90e18e05c24becfd8da70f6558bc",
+    "COMPLETE.json": "842263a2957b223ad62a497a61e682dac86db02dd46f917171eec3abc72e6d65",
+    "REPORT.json": "5ae8c83cd3f6bc61ded6687e70d2d47eb759cd471ce4be829756d38c4c8ba4c0",
+    "responses.jsonl": "0b0c9a27b4ceda3ae5688cfe2f9aa1008266ee5161aef3d79e4d9dfa6884ad4a",
+    "controls.jsonl": "a525945a6219baffd674ffe3270bf7655264b4d1285b12281be9b4712e82f434",
+    "AUDIT_PREPARATION.json": "6792f7f96a75f0ac120c4c0ce09209f99bbae45c1bec6856ec69f0a584956d1b",
+    "INDEPENDENT_NUMERICAL_AUDIT.json": "0327f9b1e96b603c0317fc4e1d61b9ee957a29293df60963abe69e9857d8c1d5",
+    "INDEPENDENT_PROVENANCE_AUDIT.json": "578027c60b56f75b41031123419b7586826343deb40d52a47bca83d14d8f8799"
+  },
+  "sample": {
+    "sets": 24,
+    "permutations_per_set": 6,
+    "sequence_instances_per_cell": 144,
+    "registered_cases": 576,
+    "rows": 1728,
+    "wordings": [
+      "first",
+      "leftmost"
+    ],
+    "openings": [
+      "natural",
+      "answer"
+    ],
+    "conditions": [
+      "intact",
+      "zero",
+      "corrected"
+    ]
+  },
+  "primary_prediction": {
+    "contrast": "intact, answer opening, leftmost minus first",
+    "metric": "target_digit_probability conditional on canonical digits 0 through 9",
+    "estimate": -0.045365557649361656,
+    "ci_95_percentile": [
+      -0.06765973940647164,
+      -0.023723086015649875
+    ],
+    "minimum_effect": 0.1,
+    "effect_at_least_minimum": false,
+    "ci_lower_positive": false,
+    "supported": false
+  },
+  "competence_gate": {
+    "cell": "intact, leftmost wording, answer opening",
+    "conditional_digit_argmax_correct": 99,
+    "n_sequences": 144,
+    "rate": 0.6875,
+    "minimum_correct": 137,
+    "passed": false,
+    "interpretation": "Point-estimate planning gate, not full-answer accuracy or a 95% confidence guarantee."
+  },
+  "ready_for_causal_planning": false,
+  "summaries": {
+    "intact": {
+      "first": {
+        "natural": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.2576354723159633,
+            "whole_vocab_target_digit_probability": 0.2104926070804589,
+            "conditional_digit_argmax_correct": 0.3125,
+            "target_digit_margin": -0.484375,
+            "whole_vocab_digit_mass": 0.808485208434617,
+            "whole_vocab_argmax_is_digit": 0.9166666666666666,
+            "whole_vocab_argmax_is_target_digit": 0.2569444444444444,
+            "conditional_digit_argmax_tied": 0.09027777777777778
+          },
+          "conditional_digit_argmax_correct_count": 45,
+          "conditional_digit_argmax_tie_count": 13
+        },
+        "answer": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.5670575043362134,
+            "whole_vocab_target_digit_probability": 0.5591528964118286,
+            "conditional_digit_argmax_correct": 0.8819444444444444,
+            "target_digit_margin": 0.6953125,
+            "whole_vocab_digit_mass": 0.9854299994308404,
+            "whole_vocab_argmax_is_digit": 1.0,
+            "whole_vocab_argmax_is_target_digit": 0.8819444444444444,
+            "conditional_digit_argmax_tied": 0.013888888888888888
+          },
+          "conditional_digit_argmax_correct_count": 127,
+          "conditional_digit_argmax_tie_count": 2
+        }
+      },
+      "leftmost": {
+        "natural": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.3769931881949799,
+            "whole_vocab_target_digit_probability": 0.08880262759206768,
+            "conditional_digit_argmax_correct": 0.8263888888888888,
+            "target_digit_margin": 0.4930555555555556,
+            "whole_vocab_digit_mass": 0.22891129325724904,
+            "whole_vocab_argmax_is_digit": 0.0,
+            "whole_vocab_argmax_is_target_digit": 0.0,
+            "conditional_digit_argmax_tied": 0.06944444444444445
+          },
+          "conditional_digit_argmax_correct_count": 119,
+          "conditional_digit_argmax_tie_count": 10
+        },
+        "answer": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.5216919466868519,
+            "whole_vocab_target_digit_probability": 0.5159945979124472,
+            "conditional_digit_argmax_correct": 0.6875,
+            "target_digit_margin": 0.4409722222222222,
+            "whole_vocab_digit_mass": 0.98807190401021,
+            "whole_vocab_argmax_is_digit": 1.0,
+            "whole_vocab_argmax_is_target_digit": 0.6875,
+            "conditional_digit_argmax_tied": 0.06944444444444445
+          },
+          "conditional_digit_argmax_correct_count": 99,
+          "conditional_digit_argmax_tie_count": 10
+        }
+      }
+    },
+    "zero": {
+      "first": {
+        "natural": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.32327743788897,
+            "whole_vocab_target_digit_probability": 0.22527614206134816,
+            "conditional_digit_argmax_correct": 0.4305555555555556,
+            "target_digit_margin": -0.0920138888888889,
+            "whole_vocab_digit_mass": 0.6878901987326875,
+            "whole_vocab_argmax_is_digit": 0.4861111111111111,
+            "whole_vocab_argmax_is_target_digit": 0.22916666666666666,
+            "conditional_digit_argmax_tied": 0.1111111111111111
+          },
+          "conditional_digit_argmax_correct_count": 62,
+          "conditional_digit_argmax_tie_count": 16
+        },
+        "answer": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.5060689789811752,
+            "whole_vocab_target_digit_probability": 0.5025601930353535,
+            "conditional_digit_argmax_correct": 0.8541666666666666,
+            "target_digit_margin": 0.4930555555555556,
+            "whole_vocab_digit_mass": 0.9929266737172606,
+            "whole_vocab_argmax_is_digit": 1.0,
+            "whole_vocab_argmax_is_target_digit": 0.8541666666666666,
+            "conditional_digit_argmax_tied": 0.041666666666666664
+          },
+          "conditional_digit_argmax_correct_count": 123,
+          "conditional_digit_argmax_tie_count": 6
+        }
+      },
+      "leftmost": {
+        "natural": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.44882782208554467,
+            "whole_vocab_target_digit_probability": 0.1238584879559941,
+            "conditional_digit_argmax_correct": 0.8888888888888888,
+            "target_digit_margin": 0.7456597222222222,
+            "whole_vocab_digit_mass": 0.2668273255076535,
+            "whole_vocab_argmax_is_digit": 0.0,
+            "whole_vocab_argmax_is_target_digit": 0.0,
+            "conditional_digit_argmax_tied": 0.034722222222222224
+          },
+          "conditional_digit_argmax_correct_count": 128,
+          "conditional_digit_argmax_tie_count": 5
+        },
+        "answer": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.6609427337171664,
+            "whole_vocab_target_digit_probability": 0.6568603777407935,
+            "conditional_digit_argmax_correct": 0.9375,
+            "target_digit_margin": 1.1041666666666667,
+            "whole_vocab_digit_mass": 0.9937421232084451,
+            "whole_vocab_argmax_is_digit": 1.0,
+            "whole_vocab_argmax_is_target_digit": 0.9375,
+            "conditional_digit_argmax_tied": 0.027777777777777776
+          },
+          "conditional_digit_argmax_correct_count": 135,
+          "conditional_digit_argmax_tie_count": 4
+        }
+      }
+    },
+    "corrected": {
+      "first": {
+        "natural": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.32979136785493396,
+            "whole_vocab_target_digit_probability": 0.21797260918704225,
+            "conditional_digit_argmax_correct": 0.4236111111111111,
+            "target_digit_margin": -0.11631944444444445,
+            "whole_vocab_digit_mass": 0.6524969603792292,
+            "whole_vocab_argmax_is_digit": 0.3888888888888889,
+            "whole_vocab_argmax_is_target_digit": 0.18055555555555555,
+            "conditional_digit_argmax_tied": 0.14583333333333334
+          },
+          "conditional_digit_argmax_correct_count": 61,
+          "conditional_digit_argmax_tie_count": 21
+        },
+        "answer": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.5193774551061476,
+            "whole_vocab_target_digit_probability": 0.513933828550186,
+            "conditional_digit_argmax_correct": 0.8541666666666666,
+            "target_digit_margin": 0.5486111111111112,
+            "whole_vocab_digit_mass": 0.9892344612669982,
+            "whole_vocab_argmax_is_digit": 1.0,
+            "whole_vocab_argmax_is_target_digit": 0.8541666666666666,
+            "conditional_digit_argmax_tied": 0.0625
+          },
+          "conditional_digit_argmax_correct_count": 123,
+          "conditional_digit_argmax_tie_count": 9
+        }
+      },
+      "leftmost": {
+        "natural": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.4357730790671678,
+            "whole_vocab_target_digit_probability": 0.09738195822755678,
+            "conditional_digit_argmax_correct": 0.8541666666666666,
+            "target_digit_margin": 0.6545138888888888,
+            "whole_vocab_digit_mass": 0.21471099637693994,
+            "whole_vocab_argmax_is_digit": 0.0,
+            "whole_vocab_argmax_is_target_digit": 0.0,
+            "conditional_digit_argmax_tied": 0.041666666666666664
+          },
+          "conditional_digit_argmax_correct_count": 123,
+          "conditional_digit_argmax_tie_count": 6
+        },
+        "answer": {
+          "n_sequences": 144,
+          "n_sets": 24,
+          "means": {
+            "target_digit_probability": 0.675730570688458,
+            "whole_vocab_target_digit_probability": 0.6670915394622967,
+            "conditional_digit_argmax_correct": 0.9583333333333334,
+            "target_digit_margin": 1.1831597222222223,
+            "whole_vocab_digit_mass": 0.9870585237787809,
+            "whole_vocab_argmax_is_digit": 1.0,
+            "whole_vocab_argmax_is_target_digit": 0.9583333333333334,
+            "conditional_digit_argmax_tied": 0.027777777777777776
+          },
+          "conditional_digit_argmax_correct_count": 138,
+          "conditional_digit_argmax_tie_count": 4
+        }
+      }
+    }
+  },
+  "interpretation": [
+    "The supplied answer opening changes the effect of wording on digit preference; it is not a neutral format control.",
+    "Under natural opening, leftmost improves preference conditional on digits but reduces full-vocabulary probability of the target digit. No natural-leftmost case immediately chooses any digit.",
+    "Removing expert9 improves conditional digit choice in leftmost/Answer but not first/Answer. These secondary effects do not rescue either registered gate.",
+    "Natural continuations may begin with explanatory text. Immediate next-token results cannot establish their final answer correctness.",
+    "Do not launch the conditional instruction-state transfer on this failed competence screen."
+  ],
+  "next_evidence_needed": "Inspect complete generated answers under a separately fixed same-panel diagnostic before attributing a behavioral skill gain/loss to these immediate-token results.",
+  "audits": {
+    "numerical": "PASS",
+    "provenance": "PASS"
+  },
+  "novelty_claim": false,
+  "model_api_calls": 0,
+  "model_api_spend_usd": 0,
+  "limitations": [
+    "Immediate next-token readouts only: no generated answer, full-answer accuracy, or format-compliance claim.",
+    "Canonical digit conditioning is a readout, while the Answer: prefix changes the input and potentially computation.",
+    "Unordered sets, not permutations or crossed cells, are the uncertainty units.",
+    "The sampled sets come from a residual previously unseen pool; not a representative sample of general language tasks.",
+    "The sole primary contrast has its fixed threshold; all other paired effects and intervals are descriptive.",
+    "A passed planning screen does not establish an internal mechanism or automatically launch a causal experiment."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "study": "GRANITE_COMBINE_REPLAY_V1",
+  "status": "COMPLETE_AND_INDEPENDENTLY_AUDITED",
+  "at_utc": "2026-10-05T01:25:51.930148+00:00",
+  "plan_sha256": "1e59d2c208cdffd3b50954b5ba66cba3d24d95c2aad7eb4dcb1049c0e2cd7584",
+  "question": "Can the observed branch variation occur in native expert-output combination alone, using identical saved inputs?",
+  "coverage": {
+    "fresh_processes": 4,
+    "phase_trials": 384,
+    "setup_multiplications": 4,
+    "computed_multiplications": 260,
+    "index_add_calls": 256,
+    "model_forwards": 0,
+    "generated_tokens": 0,
+    "model_api_spend_usd": 0
+  },
+  "findings": {
+    "computed_product_raw_classes": 1,
+    "product_occurrences_including_128_reuses": 388,
+    "mps_combine": {
+      "calls": 64,
+      "output_classes": 2,
+      "class_counts": [
+        17,
+        47
+      ]
+    },
+    "mps_fixed_product_accumulate": {
+      "calls": 64,
+      "output_classes": 2,
+      "class_counts": [
+        15,
+        49
+      ]
+    },
+    "cpu_all_reductions": {
+      "calls": 128,
+      "output_classes": 1
+    },
+    "all_mps_process_by_reduction_phase_cells_variable": 4,
+    "output_classes_absent_from_original_traces": 0,
+    "branch_tensor_elements": 92160,
+    "changed_elements_between_output_classes": 1,
+    "absolute_change": 0.000244140625,
+    "coordinate": [
+      0,
+      74,
+      392
+    ]
+  },
+  "interpretation": "Variation is reproducible in the isolated fresh-zero allocation/index_add/view interval with immutable products and indices. Multiplication outputs are identical in this test. A specific internal kernel cause is not established.",
+  "posthoc_arithmetic": {
+    "registered": false,
+    "exact_sum": "-2390753451/68719476736",
+    "midpoint": "-285/8192",
+    "exact_minus_midpoint": "-171/68719476736",
+    "exact_sum_nearest_bf16": "0xbd0f",
+    "cpu_bf16": "0xbd0e",
+    "simulated_serial_fp32_orders": 40320,
+    "order_counts": {
+      "0xbd0e": 17268,
+      "0xbd0f": 23052
+    },
+    "independent_check": "PASS",
+    "interpretation": "Serial FP32 rounding order can produce both observed values. The simulation does not observe actual GPU order or predict its frequency. Repeatability alone does not imply exact-sum rounding accuracy."
+  },
+  "evidence": {
+    "outputs/moe-mechanisms/GRANITE_COMBINE_REPLAY_V1/REPORT.json": "2a90adfaa4128505b282a391436f170effdbedfe951d840c49199ac44fb48852",
+    "outputs/moe-mechanisms/GRANITE_COMBINE_REPLAY_V1/INDEPENDENT_NUMERICAL_AUDIT.json": "269c8a7c91a518f9ba8229961882a66f7e6f122e5b47aed41060b4e9add33ce6",
+    "outputs/moe-mechanisms/GRANITE_COMBINE_REPLAY_V1/CROSS_AUDIT_COMPARISON.json": "e83004f601c4ee302dd89817d8c727e50745b2be9c2506125b299c87c73e4a23",
+    "outputs/moe-mechanisms/GRANITE_COMBINE_REPLAY_V1/COMPLETE.json": "0232bef7966956e57d4514e1ae47d9fe8d90bd42717725ab2b823b28145f3715",
+    "outputs/moe-mechanisms/COMBINE_REPLAY_V1_AUDIT_PREPARATION/POSTHOC_COORDINATE_ARITHMETIC.json": "9065cf71ce130e8df3e01472b83894329e6efef0ead2552c45c60f88fadcc5b1",
+    "outputs/moe-mechanisms/COMBINE_REPLAY_V1_AUDIT_PREPARATION/POSTHOC_ARITHMETIC_INDEPENDENT_CHECK.json": "5d7e6b2ea239f8030594a93dd9764c5003f7c245b551fd9cd6c88ca9d808f603",
+    "outputs/moe-mechanisms/COMBINE_REPLAY_V1_AUDIT_PREPARATION/INDEX_ADDITION_PRIOR_ART.json": "2d660c4cf3a5aeb754a306949dfb8fca7044a58af5a5724554d6a9792fb2727f"
+  },
+  "next_step": "Close the bounded native-operator debugging branch. Prepare a new exploratory full-answer protocol with independent calibration competence, repeated same-workload shams, matched-exposure control lesions and explicit variability-aware analysis before fresh held-out tests.",
+  "limits": [
+    "One reused fixed-prefix coordinate and saved expert outputs; no general CPU correctness or MPS-wide failure claim.",
+    "No completed-answer effect or cognitive expert specialization is established.",
+    "Prior literature already reports MPS index-add repeatability failures and arithmetic-induced MoE divergence; no novelty claim.",
+    "All prior STOPs and failed scientific gates remain closed; the 814 partial full-answer responses remain ungraded."
+  ]
+}

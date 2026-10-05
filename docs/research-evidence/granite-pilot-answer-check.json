@@ -1,0 +1,180 @@
+{
+  "created_at_utc": "2026-10-04T21:41:23.986707+00:00",
+  "auditor": "Separate review agent; no model inference; tokenizer used only to check saved token decoding",
+  "status": "PASS_WITH_LIMITATIONS",
+  "checked_files_sha256": {
+    "outputs/moe-mechanisms/GRANITE_PILOT_V1/20261004T213929983277Z-answer-diagnostic/plan.json": "fa47fe86d9c1d2790c4720aa42702e26ac5b08c05c3d702c44c1c15e6662ebb4",
+    "outputs/moe-mechanisms/GRANITE_PILOT_V1/20261004T213929983277Z-answer-diagnostic/results.jsonl": "b9ec2d0f2b41e2f90b5fc640c6ef7028b8393885055deefc65dba1dd13b8a739",
+    "outputs/moe-mechanisms/GRANITE_PILOT_V1/20261004T213929983277Z-answer-diagnostic/report.json": "35e918a0c978be0b17197515a4bc96333c414ef833f322b2c6e28a7916ba60ba",
+    "outputs/moe-mechanisms/GRANITE_PILOT_V1/20261004T213718473036Z-intervention/results.jsonl": "08e09d70ba7dcddfa5de955ec88ee04f6076b1cab3d2fcbf2fac53612e37cbb7",
+    "outputs/moe-mechanisms/GRANITE_PILOT_V1/20261004T213718473036Z-intervention/INDEPENDENT_AUDIT.json": "884670e5f3b5e6db9d42bc6d59110d5638b07504fc9d119e97ef04d3a50fb41d",
+    "work/moe-model-cache/models--ibm-granite--granite-3.1-1b-a400m-instruct/snapshots/0da7a48b0276d500ce5922fd2b33944091fc6c09/generation_config.json": "df006c64ad35b18712527cb5130a7a13a4d8a7c5c23653feea59be88e2e2a4ca"
+  },
+  "source_checks": {
+    "research/moe-mechanisms/test_intervene.py": {
+      "expected": "ff5ce96c6cc6124e224eedd3976738daee8eb06884b2c4795d7e5ea8c9dcafce",
+      "actual": "ff5ce96c6cc6124e224eedd3976738daee8eb06884b2c4795d7e5ea8c9dcafce",
+      "matches": true
+    },
+    "research/moe-mechanisms/pilot.py": {
+      "expected": "916d365d383d5ce65073afa361d96ab2cfb6bf8ee772fc6d283772faf16a1328",
+      "actual": "916d365d383d5ce65073afa361d96ab2cfb6bf8ee772fc6d283772faf16a1328",
+      "matches": true
+    },
+    "research/moe-mechanisms/hooks.py": {
+      "expected": "53928edacacf1d1c486fe65c7f8dca17295c22a695729bfc36a7e988785515c1",
+      "actual": "53928edacacf1d1c486fe65c7f8dca17295c22a695729bfc36a7e988785515c1",
+      "matches": true
+    },
+    "research/moe-mechanisms/cases.py": {
+      "expected": "afb42fd1d9b44620271bdb43ad3eea010075ece2ac74a5f91049032d56dd4515",
+      "actual": "afb42fd1d9b44620271bdb43ad3eea010075ece2ac74a5f91049032d56dd4515",
+      "matches": true
+    },
+    "research/moe-mechanisms/test_hooks.py": {
+      "expected": "2eb037322c44c03c3635f4ebdf5e817381d143a757370819169c7c12144f77ca",
+      "actual": "2eb037322c44c03c3635f4ebdf5e817381d143a757370819169c7c12144f77ca",
+      "matches": true
+    },
+    "research/moe-mechanisms/intervene.py": {
+      "expected": "231c76087b15bc9047536e77b0f0828ff51fb8eaf7d23302e8a2c839206d955f",
+      "actual": "231c76087b15bc9047536e77b0f0828ff51fb8eaf7d23302e8a2c839206d955f",
+      "matches": true
+    },
+    "research/moe-mechanisms/diagnose_answers.py": {
+      "expected": "0828543eb4e310a18c183df125ad44351063050ec489d393e2dd9852d9d12312",
+      "actual": "0828543eb4e310a18c183df125ad44351063050ec489d393e2dd9852d9d12312",
+      "matches": true
+    }
+  },
+  "checks": {
+    "complete_report_matches_raw_records": true,
+    "six_unique_planned_conditions": true,
+    "free_routing_only": true,
+    "pilot_results_hash_matches": true,
+    "bound_sources_unchanged": true,
+    "output_token_decoding_matches_complete_text": true,
+    "all_answers_ended_with_eos_within_cap": true,
+    "strict_format_scores_recomputed": true,
+    "intact_top10_ids_unique_sorted": true,
+    "intact_top10_text_decodes": true,
+    "intact_target_best_other_margin_recomputed": true,
+    "intact_greedy_matches_top1_and_pilot": true,
+    "intact_target_other_number_margin_matches_pilot": true,
+    "intact_inspected_complete_answer_semantically_correct": true,
+    "factor-0.5-replay-0-gain-0_top10_ids_unique_sorted": true,
+    "factor-0.5-replay-0-gain-0_top10_text_decodes": true,
+    "factor-0.5-replay-0-gain-0_target_best_other_margin_recomputed": true,
+    "factor-0.5-replay-0-gain-0_greedy_matches_top1_and_pilot": true,
+    "factor-0.5-replay-0-gain-0_target_other_number_margin_matches_pilot": true,
+    "factor-0.5-replay-0-gain-0_inspected_complete_answer_semantically_correct": true,
+    "factor-0.5-replay-0-gain-1_top10_ids_unique_sorted": true,
+    "factor-0.5-replay-0-gain-1_top10_text_decodes": true,
+    "factor-0.5-replay-0-gain-1_target_best_other_margin_recomputed": true,
+    "factor-0.5-replay-0-gain-1_greedy_matches_top1_and_pilot": true,
+    "factor-0.5-replay-0-gain-1_target_other_number_margin_matches_pilot": true,
+    "factor-0.5-replay-0-gain-1_inspected_complete_answer_semantically_correct": true,
+    "factor-0.0-replay-0-gain-0_top10_ids_unique_sorted": true,
+    "factor-0.0-replay-0-gain-0_top10_text_decodes": true,
+    "factor-0.0-replay-0-gain-0_target_best_other_margin_recomputed": true,
+    "factor-0.0-replay-0-gain-0_greedy_matches_top1_and_pilot": true,
+    "factor-0.0-replay-0-gain-0_target_other_number_margin_matches_pilot": true,
+    "factor-0.0-replay-0-gain-0_inspected_complete_answer_semantically_correct": true,
+    "factor-0.0-replay-0-gain-1_top10_ids_unique_sorted": true,
+    "factor-0.0-replay-0-gain-1_top10_text_decodes": true,
+    "factor-0.0-replay-0-gain-1_target_best_other_margin_recomputed": true,
+    "factor-0.0-replay-0-gain-1_greedy_matches_top1_and_pilot": true,
+    "factor-0.0-replay-0-gain-1_target_other_number_margin_matches_pilot": true,
+    "factor-0.0-replay-0-gain-1_inspected_complete_answer_semantically_correct": true,
+    "random-expert-zero_top10_ids_unique_sorted": true,
+    "random-expert-zero_top10_text_decodes": true,
+    "random-expert-zero_target_best_other_margin_recomputed": true,
+    "random-expert-zero_greedy_matches_top1_and_pilot": true,
+    "random-expert-zero_target_other_number_margin_matches_pilot": true,
+    "random-expert-zero_inspected_complete_answer_semantically_correct": true,
+    "no_confirmation_or_paid_inference_claim": true
+  },
+  "failed_checks": [],
+  "inspection_results": [
+    {
+      "condition": "intact",
+      "full_text": "9",
+      "semantic_number_answer_correct_on_this_case": true,
+      "strict_requested_format_correct": true,
+      "target_minus_best_other": 0.5,
+      "bf16_representable_spacing_at_target_logit": 0.125,
+      "signed_margin_in_output_spacing_units": 4.0
+    },
+    {
+      "condition": "factor-0.5-replay-0-gain-0",
+      "full_text": "The first number in the list is 9.",
+      "semantic_number_answer_correct_on_this_case": true,
+      "strict_requested_format_correct": false,
+      "target_minus_best_other": -0.25,
+      "bf16_representable_spacing_at_target_logit": 0.125,
+      "signed_margin_in_output_spacing_units": -2.0
+    },
+    {
+      "condition": "factor-0.5-replay-0-gain-1",
+      "full_text": "The first number in the list is 9.",
+      "semantic_number_answer_correct_on_this_case": true,
+      "strict_requested_format_correct": false,
+      "target_minus_best_other": -0.25,
+      "bf16_representable_spacing_at_target_logit": 0.125,
+      "signed_margin_in_output_spacing_units": -2.0
+    },
+    {
+      "condition": "factor-0.0-replay-0-gain-0",
+      "full_text": "The first number in the list is 9.",
+      "semantic_number_answer_correct_on_this_case": true,
+      "strict_requested_format_correct": false,
+      "target_minus_best_other": -0.25,
+      "bf16_representable_spacing_at_target_logit": 0.125,
+      "signed_margin_in_output_spacing_units": -2.0
+    },
+    {
+      "condition": "factor-0.0-replay-0-gain-1",
+      "full_text": "9",
+      "semantic_number_answer_correct_on_this_case": true,
+      "strict_requested_format_correct": true,
+      "target_minus_best_other": 0.125,
+      "bf16_representable_spacing_at_target_logit": 0.125,
+      "signed_margin_in_output_spacing_units": 1.0
+    },
+    {
+      "condition": "random-expert-zero",
+      "full_text": "9",
+      "semantic_number_answer_correct_on_this_case": true,
+      "strict_requested_format_correct": true,
+      "target_minus_best_other": 0.875,
+      "bf16_representable_spacing_at_target_logit": 0.125,
+      "signed_margin_in_output_spacing_units": 7.0
+    }
+  ],
+  "summary": {
+    "tested_conditions": 6,
+    "semantic_correct_on_this_one_prompt": 6,
+    "strict_requested_format_correct": 3,
+    "conclusion": "For this prompt, all six tested free-routing conditions return the correct first number. The three observed first-token failures produce a complete correct sentence instead of the requested bare number. Gain correction restores bare-number formatting after full removal; it is not evidence of restoring lost number-retrieval ability."
+  },
+  "precision_assessment": {
+    "resolved": "The competing token is The. Full-zero-plus-gain wins by 0.125, one BF16 output spacing at these logits; half and full uncorrected lesions lose by 0.25, two such spacings.",
+    "unresolved": "Output spacing is not an error bound. These records do not determine whether the format flip persists at FP32; a separate sensitivity check is required."
+  },
+  "limitations": [
+    "Post-hoc diagnosis of one development-selected prompt; no held-out evidence or novel mechanism established.",
+    "All six diagnostic conditions use free downstream routing. The original full-zero replay-only first-token failure was not decoded here, so its semantic outcome remains untested.",
+    "Original top-10 logits, not full logits, are saved; arithmetic is checked conditional on the reported top-10 ranking.",
+    "Same checkpoint in BF16 with deterministic greedy generation; higher-precision robustness remains unresolved.",
+    "No prior audit or source record was modified."
+  ],
+  "record_type": "DERIVED_PUBLIC_SUMMARY",
+  "document_status": "research_in_progress_draft",
+  "derivation": "The internal review-agent identifier was replaced with a plain description. Scientific values and findings are unchanged. The original record is identified below.",
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/GRANITE_PILOT_V1/20261004T213929983277Z-answer-diagnostic/INDEPENDENT_ANSWER_AUDIT.json",
+      "source_sha256": "e3316ddf9d976e00c32e243a4da1ca3c4e9d9f17f8ca4ee11c5590cb6adb2ae5"
+    }
+  ]
+}

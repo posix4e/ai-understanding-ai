@@ -1,0 +1,31 @@
+{
+  "at_utc": "2026-10-04T23:31:36.705510+00:00",
+  "status": "PASS",
+  "scope": "Independent agreement on completed training descriptions; no held-out performance claim",
+  "compared": [
+    "all endpoint quality/counts",
+    "unique endpoint successes",
+    "full pairwise rescue matrix",
+    "oracle and best-fixed counts",
+    "all-fail and success histogram",
+    "all and absent-answer completion flags",
+    "output-limit counts"
+  ],
+  "artifacts": [
+    {
+      "path": "outputs/routing-research/V4_TRAIN_DESCRIPTIVE.json",
+      "sha256": "b81912a818400f70b5079ee6ebe8b9a86da3ebf5730a0d683a23b701ef04136f"
+    },
+    {
+      "path": "outputs/routing-research/V4_TRAIN_DELIVERY_DIAGNOSTIC.json",
+      "sha256": "c50aa54df34073ed3ea6d8669869067f7b83537037e44b574eafdb2eff5340c1"
+    },
+    {
+      "path": "outputs/routing-research/V4_TRAIN_COMPLEMENTARITY_INDEPENDENT.json",
+      "sha256": "5fab47aabbc4d8183c99de00c1d5c75c11dd41a60ffa4163cc0e89f0054798dd"
+    }
+  ],
+  "new_model_calls": 0,
+  "later_phase_outcomes_read": false,
+  "partial_local_answer_quality_read": false
+}

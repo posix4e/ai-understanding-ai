@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A research-in-progress snapshot. Identical expert outputs can combine into different internal values. A fresh number-copy test failed before expert changes. Read the checks and limits.">
+  <meta name="theme-color" content="#f7f4ed">
+  <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
+  <title>Research in progress | AI Understanding AI</title>
+  <link rel="stylesheet" href="./styles.css?v=2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="./index.html">AI UNDERSTANDING AI<span class="wordmark-dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#inside">Inside a model</a>
+      <a href="#routing">Model routing</a>
+      <a href="#evidence">Evidence</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
+        <h1 id="page-title">Can we predict and repair an AI mistake?</h1>
+        <p class="hero-deck">We want to understand why a model gives an answer. A useful explanation should predict when it will fail. It should also help us test a specific repair.</p>
+        <p class="scope-line">This is a research draft, not peer reviewed. The numerical checks found a limit on repeatability in this setup. A fresh copy test also failed before any expert was changed. We have no new cognitive mechanism or demonstrated repair. GPT-2 work is paused.</p>
+        <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
+        <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
+      </div>
+
+      <aside class="hero-result" aria-labelledby="two-studies-title">
+        <div class="figure-heading"><p class="eyebrow">Two separate studies</p><span class="figure-number" aria-hidden="true">01</span></div>
+        <h2 id="two-studies-title">Inside one model.<br> Between different models.</h2>
+        <div class="result-lines">
+          <div><div><h3>Granite: change an internal part</h3><p>We test wording, internal parts, and the computer arithmetic that combines their outputs.</p></div></div>
+          <div><div><h3>Cloudflare: choose a model</h3><p>Can a router choose which complete model should answer a question?</p></div></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section wrap" id="inside" aria-labelledby="inside-title">
+      <div class="section-heading"><p class="eyebrow">01 / Inside Granite</p><h2 id="inside-title">The first clue did not become a general repair.</h2></div>
+      <div class="section-body">
+        <p class="lead">A correct digit and a correctly formatted answer are different things.</p>
+        <p>Granite is a mixture-of-experts model, or MoE. It chooses among internal processing parts called experts. We switched off one expert at one layer. We also tested a correction that adjusted the strength of the remaining expert signals.</p>
+        <ol class="mechanism-steps">
+          <li><span class="step-number" aria-hidden="true">1</span><div><h3>A small pilot changed the format.</h3><p>One answer changed from a bare digit to a sentence containing the same correct digit. This clue came from one prompt selected during early testing.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">2</span><div><h3>The broader prediction failed.</h3><p>We tested 64 new digit lists with two question wordings. The correction helped the format with one wording and hurt it with the other. With the second wording, the unmodified model gave 26 correct answers out of 64. It gave 34 known wrong answers. Some replies could not be scored by the fixed rules. They remain unresolved.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">3</span><div><h3>A wording test also failed its requirements.</h3><p>We compared “first” with “leftmost.” We also supplied “Answer:” before some replies. This opening changed the result. The unmodified model’s immediate choice among digits did not meet the requirement for the next planned test.</p></div></li>
+        </ol>
+        <aside class="plain-note"><strong>The complete-answer test stopped.</strong>Its required first-step check failed: an initial score array did not match the earlier saved result. We stopped after 814 saved replies. Those replies remain ungraded. The numerical checks below do not supply a complete-answer result or cancel the failed predictions.</aside>
+        <p class="source-line"><a href="./research-evidence/granite-pilot-answer-check.json">Pilot answer check</a> · <a href="./research-evidence/granite-generalization-summary.json">Broader test summary</a> · <a href="./research-evidence/granite-wording-summary.json">Wording test summary</a> · <a href="./research-evidence/granite-full-answer-stop-summary.json">Why the full-answer test stopped</a></p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="numbers" aria-labelledby="numbers-title">
+      <div class="section-heading"><p class="eyebrow">02 / Check the numbers</p><h2 id="numbers-title">Adding the same numbers can give two results.</h2></div>
+      <div class="section-body">
+        <p class="lead">A tiny internal difference was followed by many different output scores.</p>
+        <p>Each expert produces numbers. The model multiplies these numbers by routing weights, then adds the contributions. We checked these steps with saved inputs from one question.</p>
+        <ol class="mechanism-steps">
+          <li><span class="step-number" aria-hidden="true">1</span><div><h3>The same question did not always give the same scores.</h3><p>Five of eight fresh program runs produced both earlier score patterns in their three main repeats. The highest-scoring next token stayed the same. We did not generate complete answers in these checks.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">2</span><div><h3>We found the first recorded difference.</h3><p>In 27 trace comparisons, the first difference appeared after the fourth layer combined its expert outputs. One of 92,160 internal numbers differed. The earlier recorded expert outputs, routing weights, and input values matched. This was before the layer where we had switched off an expert.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">3</span><div><h3>The combining step reproduced both results.</h3><p>We tested the saved numbers without running the full model. Multiplication gave identical products. Combining those fixed products on the Apple graphics processor, or GPU, produced both earlier results.</p></div></li>
+        </ol>
+        <table class="followup-table">
+          <caption>Completed saved-input test. Counts refer to operations; one trial can contain more than one operation.</caption>
+          <thead><tr><th scope="col">Operation checked</th><th scope="col">Count</th><th scope="col">Observed result</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Multiplication on CPU and GPU</th><td>260</td><td>Identical products</td></tr>
+            <tr><th scope="row">Combining on the GPU</th><td>128</td><td>Two earlier results</td></tr>
+            <tr><th scope="row">Combining on the CPU</th><td>128</td><td>One result each time</td></tr>
+          </tbody>
+        </table>
+        <p>The two combined outputs differed in one number, by about 0.000244. The GPU also varied when it reused one unchanged product. This narrows the observed variation to the combining code, including memory allocation and addition. It does not identify the exact internal cause.</p>
+        <aside class="plain-note"><strong>A later calculation offers a possible explanation.</strong>Computers round numbers. We simulated all 40,320 orders for adding eight saved contributions. Rounding during the additions could produce both observed values. This calculation came after the test. We did not measure the GPU’s actual addition order or explain how often each result occurs.</aside>
+        <p>For this one sum, the stable CPU result was not the closest value that the number format could store. A repeatable result is not necessarily the nearest result to an exact sum.</p>
+        <p>These checks concern one saved input and one software setup. They establish no specialist internal “organ,” new cognitive mechanism, or measured change in complete answers. We make no novelty claim.</p>
+        <p class="source-line"><a href="./research-evidence/granite-repeatability-summary.json">Repeated-input checks</a> · <a href="./research-evidence/granite-early-trace-summary.json">Earlier-layer traces</a> · <a href="./research-evidence/granite-combine-replay-summary.json">Saved-input test and later arithmetic</a></p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="calibration" aria-labelledby="calibration-title">
+      <div class="section-heading"><p class="eyebrow">03 / Check basic ability</p><h2 id="calibration-title">The model first needs to do the task.</h2></div>
+      <div class="section-body">
+        <p class="lead">A new copy task failed before we changed any expert.</p>
+        <p>We asked the unchanged model to copy the far-left number from a list of three two-digit numbers. The 24 questions came from eight lists, each shown in three orders. We repeated all 24 questions in a second fresh program run.</p>
+        <p>Each run needed at least 23 correct answers in the required two-digit format. Each gave eight. A separate code check confirmed the counts.</p>
+        <table class="followup-table">
+          <caption>Results in each run. The second run used the same 24 questions.</caption>
+          <thead><tr><th scope="col">Complete answer</th><th scope="col">Questions</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Correct number, two digits</th><td>8 / 24</td></tr>
+            <tr><th scope="row">Wrong number, one digit</th><td>12 / 24</td></tr>
+            <tr><th scope="row">Wrong number, two digits</th><td>4 / 24</td></tr>
+          </tbody>
+        </table>
+        <p>The one-digit replies ended normally. They were wrong complete numbers. The four wrong two-digit replies copied another number from the list. No reply was unclear under the fixed scoring rules, and none reached the output limit.</p>
+        <p>All 24 questions received the same answer text and generated tokens in both runs, although the question order changed. We did not retain every output score, so this does not show that all internal numbers were identical. Repeating the questions does not give us 48 independent questions.</p>
+        <aside class="plain-note"><strong>The test stopped at this required check.</strong>We did not select a comparison expert, run the instrumented repeats, remove an expert, or test the reserved questions. This result applies to this model, prompt, and setup. It cannot tell us what an expert removal would do.</aside>
+        <p class="source-line"><a href="./research-evidence/granite-competence-summary.json">Completed ability check and failed requirement</a></p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="routing" aria-labelledby="routing-title">
+      <div class="section-heading"><p class="eyebrow">04 / Between complete models</p><h2 id="routing-title">Different models can answer different questions.</h2></div>
+      <div class="section-body">
+        <p class="lead">The training set contains room for a better choice.</p>
+        <p>At the <time datetime="2026-10-05T01:30:45Z">5 October 2026, 01:30 UTC</time> snapshot, the selection phase was complete and its scoring had a separate check. Certification was running. This dated snapshot contains no final routing result.</p>
+        <p>We asked six hosted models the same 200 benchmark questions. These questions were used to fit the router. They are not an independent test of its performance.</p>
+        <table class="followup-table">
+          <caption>Completed training data. Correct means a pass under the fixed scoring rules.</caption>
+          <thead><tr><th scope="col">What we counted</th><th scope="col">Questions</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Best single model: Gemma</th><td>60 / 200</td></tr>
+            <tr><th scope="row">At least one of the six models was correct</th><td>101 / 200</td></tr>
+            <tr><th scope="row">Extra questions another model answered correctly, beyond Gemma</th><td>41</td></tr>
+            <tr><th scope="row">No model passed the scoring rules</th><td>99</td></tr>
+          </tbody>
+        </table>
+        <p>The 101 count uses all answers after we know their scores. It is a best-case choice made with hindsight. We have not shown that the router can find those answers on new questions.</p>
+        <aside class="plain-note"><strong>The output limit matters.</strong>Qwen had no saved final answer on 150 questions. GPT-OSS had none on 83. Each of these responses reached the 1,024-token output limit. Tokens are units of generated text. The records flag these responses as incomplete or cut short. This alone does not tell us what caused the missing final answer, or what a longer reply would contain.</aside>
+        <p>These results concern hosted models under one test setup. The counts do not show stable specialties. They do not measure the jobs of experts inside a model.</p>
+        <p class="source-line"><a href="./research-evidence/routing-training-summary.json">Training summary</a> · <a href="./research-evidence/routing-delivery-summary.json">Output-limit records</a> · <a href="./research-evidence/routing-independent-check.json">Separate numerical check</a> · <a href="./research-evidence/routing-status-summary.json">Phase status at this snapshot</a></p>
+      </div>
+    </section>
+
+    <section class="limits-band" id="next" aria-labelledby="next-title">
+      <div class="wrap limits-inner">
+        <div class="section-heading"><p class="eyebrow">05 / The next goal</p><h2 id="next-title">Check ability.<br> Then test a cause.</h2></div>
+        <div class="section-body">
+          <p class="lead">A useful explanation must survive a new test.</p>
+          <p>The numerical checks are complete. We are retiring the copy-and-format idea around the earlier expert, called expert 9, as the main research path. This failed copy test will remain closed.</p>
+          <p>We are drafting a different test of ordinary language: does a verb agree with its subject? The proposal would use no special answer-format instruction. Expert 9 would have no special role. This is a draft only. It has not been registered or tested.</p>
+          <p>First fix the questions and success rules, then check the unchanged model. Only a model that passes that check can support the next comparison. A later claim about a cause or repair would need repeated runs, suitable controls, and a separate test on fresh questions.</p>
+          <p>Failed predictions stay in the record. We do not yet claim a new mechanism or a broadly reliable repair.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="evidence-section wrap" id="evidence" aria-labelledby="evidence-title">
+      <div class="evidence-heading">
+        <div><p class="eyebrow">06 / Check the evidence</p><h2 id="evidence-title">Selected summary records.</h2></div>
+        <p>These JSON files contain selected summaries and source references. Derived summaries are labeled. Large audits, raw traces, and partial answers are not included. Separate code checks are part of this project, not an external replication. <a href="./research-evidence/manifest.json">Copy manifest</a>.</p>
+      </div>
+      <div class="evidence-grid">
+        <div class="evidence-group"><h3>Inside Granite</h3><ul>
+          <li><a href="./research-evidence/granite-pilot-answer-check.json">Pilot answer check<span>One selected prompt</span></a></li>
+          <li><a href="./research-evidence/granite-generalization-summary.json">Broader test<span>Results and failed requirements</span></a></li>
+          <li><a href="./research-evidence/granite-wording-summary.json">Wording test<span>Next-token results and limits</span></a></li>
+          <li><a href="./research-evidence/granite-full-answer-stop-summary.json">Stopped answer test<span>814 replies remain ungraded</span></a></li>
+          <li><a href="./research-evidence/granite-repeatability-summary.json">Repeated-input checks<span>Two score patterns</span></a></li>
+          <li><a href="./research-evidence/granite-early-trace-summary.json">Earlier-layer traces<span>First recorded difference</span></a></li>
+          <li><a href="./research-evidence/granite-combine-replay-summary.json">Saved-input test<span>Combining and rounding limits</span></a></li>
+          <li><a href="./research-evidence/granite-competence-summary.json">Basic ability check<span>8 of 24 correct in each run; test stopped</span></a></li>
+        </ul></div>
+        <div class="evidence-group"><h3>External model routing</h3><ul>
+          <li><a href="./research-evidence/routing-training-summary.json">Training results<span>Counts across six models</span></a></li>
+          <li><a href="./research-evidence/routing-delivery-summary.json">Output records<span>Limits and missing final answers</span></a></li>
+          <li><a href="./research-evidence/routing-independent-check.json">Independent calculation<span>Training counts checked again</span></a></li>
+          <li><a href="./research-evidence/routing-status-summary.json">Phase snapshot<span>5 Oct, 01:30 UTC · Certification was running</span></a></li>
+        </ul></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div><a class="wordmark" href="./index.html">AI UNDERSTANDING AI<span class="wordmark-dot" aria-hidden="true">.</span></a><p>The evidence sets the limits.</p></div>
+    <div class="footer-notes"><p>Research in progress · 5 October 2026, UTC.<br>AI-assisted research and writing. Not peer reviewed.</p><a href="./index.html">Original paper and earlier results</a></div>
+  </footer>
+</body>
+</html>

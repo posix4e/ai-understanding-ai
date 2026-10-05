@@ -1,0 +1,84 @@
+{
+  "status": "COMPLETE_BASELINE_GATE_FAILED",
+  "at_utc": "2026-10-05T01:52:54.078989+00:00",
+  "study": "GRANITE_COMPETENCE_V1",
+  "plan_sha256": "bb4e1b9e29f7c54da8c877ba5c249c3a78a1c4aef17511288b90852ff119f55a",
+  "primary_gate_pass": false,
+  "independent_audit_status": "PASS",
+  "actual_processes": 2,
+  "unique_questions": 24,
+  "unordered_sets": 8,
+  "repeated_blocks": 2,
+  "complete_answers": 48,
+  "model_forwards": 120,
+  "required_joint_per_block": 23,
+  "questions_per_block": 24,
+  "per_block": {
+    "u00": {
+      "n": 24,
+      "correct": 8,
+      "wrong": 16,
+      "unsupported": 0,
+      "truncated": 0,
+      "format": 12,
+      "joint": 8,
+      "correct_but_off_format": 0,
+      "content_correctness_bounds": [
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    "u01": {
+      "n": 24,
+      "correct": 8,
+      "wrong": 16,
+      "unsupported": 0,
+      "truncated": 0,
+      "format": 12,
+      "joint": 8,
+      "correct_but_off_format": 0,
+      "content_correctness_bounds": [
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    }
+  },
+  "answer_pattern_per_block": {
+    "correct_two_digit": 8,
+    "wrong_two_digit_from_other_list_position": 4,
+    "wrong_one_digit_ended_with_eos": 12,
+    "unsupported": 0,
+    "truncated": 0
+  },
+  "repeatability": {
+    "same_answer_and_token_sequence_across_blocks": 24,
+    "paired_questions": 24,
+    "full_logit_vectors_retained": false,
+    "limit": "No claim of exact full-vector or internal-state equality."
+  },
+  "not_run": [
+    "expert exposure matching",
+    "instrumented intact-sham phase",
+    "expert removal",
+    "held-out questions"
+  ],
+  "returned_lesions": 0,
+  "paid_calls": 0,
+  "model_api_spend_usd": 0,
+  "interpretation": "The intact model in this fixed setup does not meet the competence required to interpret expert removal on this two-digit copy task. This is a valid negative admission result. It is not a parser ambiguity, output-cap truncation, measured lesion effect, or evidence for or against a specialist expert.",
+  "next_decision": "Retire the copy/format expert9 hypothesis as the main path. Consider one fixed ordinary-language dependency competence screen with no answer-format instruction; expert9 has no privileged role. That separate proposal requires review before any inference. No wording/seed/cap retuning or rerun of this completed calibration.",
+  "limits": [
+    "Only24 questions drawn from8 unordered sets; repeats do not double the independent sample size.",
+    "Results apply to this checkpoint, prompt, BF16 MPS runtime and sampler, not all models or all copy tasks.",
+    "Two repeated processes show stable observed answers on these inputs but do not measure all runtime variation.",
+    "No novel mechanism, repair or publication-ready positive finding is established."
+  ],
+  "sources": {
+    "outputs/moe-mechanisms/GRANITE_COMPETENCE_V1/plan.json": "bb4e1b9e29f7c54da8c877ba5c249c3a78a1c4aef17511288b90852ff119f55a",
+    "outputs/moe-mechanisms/GRANITE_COMPETENCE_V1/REGISTRATION.json": "8cbbcfd415c7241e243fc148067a06fc10c974af5b530489d4cd1f55f26da403",
+    "outputs/moe-mechanisms/GRANITE_COMPETENCE_V1/COMPLETE.json": "4d707584cd9315610a65c75f2a664d6ab6cc9192e166ad4de339d6b26f30c309",
+    "outputs/moe-mechanisms/GRANITE_COMPETENCE_V1/BASELINE_GATE.json": "9ccbc59a634be01b0228a60c1f4b90f9260a2e2375929556bb29243f85c938f5",
+    "outputs/moe-mechanisms/GRANITE_COMPETENCE_V1/BASELINE_INDEPENDENT_AUDIT.json": "f95176bc63b7732bebf0c338d7c40a7a98c9f1c320f35c23fb0f04bfd2fea0f3",
+    "outputs/moe-mechanisms/COMPETENCE_V1_AUDIT_PREPARATION/TERMINAL_REVIEW.json": "fe5b51efd51b626cee0b0471c871363c6b64ada4d95ea552d9acdea78736e5b3"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "study": "GRANITE_EARLY_TRACE_V1",
+  "status": "COMPLETE_AND_INDEPENDENTLY_AUDITED",
+  "at_utc": "2026-10-05T01:09:55.786477+00:00",
+  "plan_sha256": "616f80f420d23e86443e58222f7d3f216b15410e420c42dcfd00866bc0235ece",
+  "coverage": {
+    "processes": 2,
+    "forwards": 48,
+    "traces": 16,
+    "events_per_trace": 134,
+    "within_condition_trace_pairs": 56,
+    "supplementary_cross_condition_trace_pairs": 64,
+    "bracket_pairs": 48
+  },
+  "summary": {
+    "within_condition_logits_unequal": 179,
+    "within_condition_logits_pairs": 552,
+    "bracket_unequal": 20,
+    "within_condition_first_recorded_difference_counts": {
+      "model.layers.3.block_sparse_moe:post": 27,
+      "identical": 29
+    }
+  },
+  "all_27_first_differences": {
+    "zero_based_layer": 3,
+    "module": "block_sparse_moe",
+    "event_index": 106,
+    "phase": "post",
+    "changed_elements": 1,
+    "branch_elements": 92160,
+    "absolute_change": 0.000244140625,
+    "earlier_recorded_values": "Identical, including gates/indices and ungated expert outputs.",
+    "matched_module_input_layouts": "Identical excluding memory pointers."
+  },
+  "within_condition_trace_pairs": {
+    "intact": {
+      "total": 28,
+      "different": 12
+    },
+    "corrected": {
+      "total": 28,
+      "different": 15
+    }
+  },
+  "untraced_before_after_brackets": {
+    "intact": {
+      "pairs": 8,
+      "unequal": 0
+    },
+    "corrected": {
+      "pairs": 8,
+      "unequal": 4
+    }
+  },
+  "independent_audit": "PASS",
+  "cross_audit": "4320 logit metric values agree exactly;120 trace pair boundary checks agree.",
+  "evidence": {
+    "REPORT.json": "f4bf955015d9a557886dfabc30914a23afcec3621cf21b95c91917f605377248",
+    "INDEPENDENT_NUMERICAL_AUDIT.json": "157b17d579557e16edb3ab3f97f119ee5030047392ff853c0873cb799ec38741",
+    "CROSS_AUDIT_COMPARISON.json": "cc87faa7ce952f309056d704a8d5cef6a1b7f59279e8e7ef9c23d8cb6b797d40",
+    "COMPLETE.json": "b709174f742aa77bf955de2be76972282a480c679b668d022dc0a2fe88b3ef23"
+  },
+  "scope": "Descriptive numerical localization on one reused input; no answer generation, paid calls, or original partial-answer grading.",
+  "next_step": "Specify one bounded saved-operand reproduction of native gate multiplication, zero allocation and index_add combination. Separate operation tests only if predefined to discriminate causes. A failure to reproduce does not erase full-model variation; avoid open-ended search. No original study restart.",
+  "limits": [
+    "First recorded boundary difference is not a proven initiating kernel.",
+    "Matching values/layouts do not match complete allocator/backend state.",
+    "Traced calls alter workload; bracket differences do not prove observer causation.",
+    "All highest-scoring next-token coordinates remain unchanged; full-answer effects are untested.",
+    "Prior literature already establishes numerical changes propagating through MoE routing; no novel cognitive mechanism or specialist expert is established."
+  ]
+}

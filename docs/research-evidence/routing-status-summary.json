@@ -1,0 +1,36 @@
+{
+  "record_type": "DERIVED_PUBLIC_STATUS_SUMMARY",
+  "created_at_utc": "2026-10-05T01:30:45.905863+00:00",
+  "derivation": "Phase metadata only. This summary excludes model answers, pending request identities, grades and live budget details.",
+  "selection": {
+    "collection": "complete",
+    "completed_at_utc": "2026-10-05T01:03:10.464Z",
+    "separate_grading_check": "PASS"
+  },
+  "certification": {
+    "state": "running_at_snapshot",
+    "last_saved_progress_at_utc": "2026-10-05T01:27:48.517020+00:00",
+    "local_process_observed_running_at_utc": "2026-10-05T01:30:45.905863+00:00"
+  },
+  "final_routing_result_available": false,
+  "limits": [
+    "This is a dated status snapshot, not a live progress display.",
+    "A completed selection phase or passed grading check is not independent evidence that routing improves performance.",
+    "No certification outcome or final routing result is reported."
+  ],
+  "sources": [
+    {
+      "source_path": "outputs/routing-research/V4_CONTINUATION/selection-COLLECTED.json",
+      "source_sha256": "99938988b9f8350437595bd6a36374cb08852fad3534d896f9348b0c14505c93"
+    },
+    {
+      "source_path": "outputs/routing-research/V4_CONTINUATION/selection-INDEPENDENT_GRADING.json",
+      "source_sha256": "0930201012fdaba953831fabc8ba08338b8872cb8ee6bbc5c05bd529c419dfe5"
+    },
+    {
+      "source_path": "outputs/routing-research/V4_CERTIFICATION_PROGRESS_20261005T0128.json",
+      "source_sha256": "bdc6f6ca57a6b953eb73043ffeda1c6d24225831396c3eec3ce93fc7a1c31739"
+    }
+  ],
+  "document_status": "research_in_progress_draft"
+}

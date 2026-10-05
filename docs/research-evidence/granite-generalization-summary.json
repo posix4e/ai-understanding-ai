@@ -1,0 +1,356 @@
+{
+  "schema_version": "granite-generalization-study-summary-v1",
+  "written_at_utc": "2026-10-04T22:18:03.367630+00:00",
+  "status": "complete; registered joint prediction unsupported",
+  "source_report": "REPORT.json",
+  "artifact_sha256": {
+    "plan.json": "ac2f2bcfbbe246eac223be70d0d647eb2e5ae64d4afcdb6fc452f5c5e7e7d451",
+    "REGISTRATION.json": "00eaac5847bfb26fc9be46415d4a4d0b2424448e356f341fdbb42b63d6b2952f",
+    "COMPLETE.json": "cbbf714c227ccb6786348ab44c16016342b30d53a8bed56853f3ccb951ddbb46",
+    "REPORT.json": "18d8bd53bced1d76b88d0df176fafe6ae8fc182aa070f8530e2048d3beeb2583",
+    "responses.jsonl": "a324d006c971237b35403f8c5cce154ee02a650d34dd2c596e4976a3c2e44011",
+    "controls.jsonl": "2cbe48997757c914b85dde0e9d0030d02a0cb1973ace951ef2e9af9c06a0a4eb",
+    "INDEPENDENT_GRADING_AUDIT.json": "f937ba7bbb46d2bdf88a250ea0281bd230b5f7a747288a3ae62d09db29185b06",
+    "INDEPENDENT_NUMERICAL_AUDIT.json": "f934796f092502493892000c422dc35a12c8962c19b4757e1dff5a2678393b08",
+    "AUDIT_PREPARATION.json": "4f4545e472723cb5243b72a460a406432ca49bd52af75faaea7f524667a17854"
+  },
+  "model": "ibm-granite/granite-3.1-1b-a400m-instruct",
+  "model_revision": "0da7a48b0276d500ce5922fd2b33944091fc6c09",
+  "sample": {
+    "triples": 64,
+    "wordings_per_triple": 2,
+    "conditions": [
+      "intact",
+      "zero",
+      "corrected",
+      "scaled"
+    ],
+    "rows": 512,
+    "uncertainty_unit": "triple, keeping its two wordings paired"
+  },
+  "counts": {
+    "pooled": {
+      "intact": {
+        "n": 128,
+        "content": {
+          "correct": 87,
+          "wrong": 34,
+          "unsupported": 7,
+          "truncated": 0
+        },
+        "content_correct": 87,
+        "format_compliant": 94,
+        "strict_joint_success": 60,
+        "correct_content_wrong_format": 27
+      },
+      "zero": {
+        "n": 128,
+        "content": {
+          "correct": 86,
+          "wrong": 20,
+          "unsupported": 22,
+          "truncated": 0
+        },
+        "content_correct": 86,
+        "format_compliant": 51,
+        "strict_joint_success": 31,
+        "correct_content_wrong_format": 55
+      },
+      "corrected": {
+        "n": 128,
+        "content": {
+          "correct": 83,
+          "wrong": 15,
+          "unsupported": 30,
+          "truncated": 0
+        },
+        "content_correct": 83,
+        "format_compliant": 60,
+        "strict_joint_success": 45,
+        "correct_content_wrong_format": 38
+      },
+      "scaled": {
+        "n": 128,
+        "content": {
+          "correct": 86,
+          "wrong": 40,
+          "unsupported": 2,
+          "truncated": 0
+        },
+        "content_correct": 86,
+        "format_compliant": 84,
+        "strict_joint_success": 44,
+        "correct_content_wrong_format": 42
+      }
+    },
+    "by_wording": {
+      "0": {
+        "intact": {
+          "n": 64,
+          "content": {
+            "correct": 61,
+            "wrong": 0,
+            "unsupported": 3,
+            "truncated": 0
+          },
+          "content_correct": 61,
+          "format_compliant": 34,
+          "strict_joint_success": 34,
+          "correct_content_wrong_format": 27
+        },
+        "zero": {
+          "n": 64,
+          "content": {
+            "correct": 64,
+            "wrong": 0,
+            "unsupported": 0,
+            "truncated": 0
+          },
+          "content_correct": 64,
+          "format_compliant": 9,
+          "strict_joint_success": 9,
+          "correct_content_wrong_format": 55
+        },
+        "corrected": {
+          "n": 64,
+          "content": {
+            "correct": 64,
+            "wrong": 0,
+            "unsupported": 0,
+            "truncated": 0
+          },
+          "content_correct": 64,
+          "format_compliant": 26,
+          "strict_joint_success": 26,
+          "correct_content_wrong_format": 38
+        },
+        "scaled": {
+          "n": 64,
+          "content": {
+            "correct": 63,
+            "wrong": 0,
+            "unsupported": 1,
+            "truncated": 0
+          },
+          "content_correct": 63,
+          "format_compliant": 21,
+          "strict_joint_success": 21,
+          "correct_content_wrong_format": 42
+        }
+      },
+      "1": {
+        "intact": {
+          "n": 64,
+          "content": {
+            "correct": 26,
+            "wrong": 34,
+            "unsupported": 4,
+            "truncated": 0
+          },
+          "content_correct": 26,
+          "format_compliant": 60,
+          "strict_joint_success": 26,
+          "correct_content_wrong_format": 0
+        },
+        "zero": {
+          "n": 64,
+          "content": {
+            "correct": 22,
+            "wrong": 20,
+            "unsupported": 22,
+            "truncated": 0
+          },
+          "content_correct": 22,
+          "format_compliant": 42,
+          "strict_joint_success": 22,
+          "correct_content_wrong_format": 0
+        },
+        "corrected": {
+          "n": 64,
+          "content": {
+            "correct": 19,
+            "wrong": 15,
+            "unsupported": 30,
+            "truncated": 0
+          },
+          "content_correct": 19,
+          "format_compliant": 34,
+          "strict_joint_success": 19,
+          "correct_content_wrong_format": 0
+        },
+        "scaled": {
+          "n": 64,
+          "content": {
+            "correct": 23,
+            "wrong": 40,
+            "unsupported": 1,
+            "truncated": 0
+          },
+          "content_correct": 23,
+          "format_compliant": 63,
+          "strict_joint_success": 23,
+          "correct_content_wrong_format": 0
+        }
+      }
+    }
+  },
+  "primary_format": {
+    "intact_minus_zero": {
+      "estimate": 0.3359375,
+      "ci_95_percentile": [
+        0.2578125,
+        0.4140625
+      ],
+      "minimum_pooled_effect": 0.05,
+      "pooled_effect_at_least_minimum": true,
+      "pooled_ci_lower_positive": true,
+      "pooled_passed": true,
+      "positive_each_wording": true,
+      "by_wording": {
+        "0": {
+          "estimate": 0.390625,
+          "favorable_discordant": 25,
+          "unfavorable_discordant": 0,
+          "discordant": 25,
+          "one_sided_exact_mcnemar_p": 2.9802322387695312e-08,
+          "role": "supplementary; not an additional joint-prediction gate"
+        },
+        "1": {
+          "estimate": 0.28125,
+          "favorable_discordant": 19,
+          "unfavorable_discordant": 1,
+          "discordant": 20,
+          "one_sided_exact_mcnemar_p": 2.002716064453125e-05,
+          "role": "supplementary; not an additional joint-prediction gate"
+        }
+      }
+    },
+    "corrected_minus_zero": {
+      "estimate": 0.0703125,
+      "ci_95_percentile": [
+        0.0,
+        0.140625
+      ],
+      "minimum_pooled_effect": 0.05,
+      "pooled_effect_at_least_minimum": true,
+      "pooled_ci_lower_positive": false,
+      "pooled_passed": false,
+      "positive_each_wording": false,
+      "by_wording": {
+        "0": {
+          "estimate": 0.265625,
+          "favorable_discordant": 17,
+          "unfavorable_discordant": 0,
+          "discordant": 17,
+          "one_sided_exact_mcnemar_p": 7.62939453125e-06,
+          "role": "supplementary; not an additional joint-prediction gate"
+        },
+        "1": {
+          "estimate": -0.125,
+          "favorable_discordant": 1,
+          "unfavorable_discordant": 9,
+          "discordant": 10,
+          "one_sided_exact_mcnemar_p": 0.9990234375,
+          "role": "supplementary; not an additional joint-prediction gate"
+        }
+      }
+    }
+  },
+  "content_harm": {
+    "zero": {
+      "possible_harm_triples": 9,
+      "n_triples": 64,
+      "possible_harm_triple_rate": 0.140625,
+      "one_sided_95_cp_upper": 0.23256644607030164,
+      "maximum_allowed_upper": 0.05,
+      "passed": false,
+      "prompt_counts": {
+        "possible_harm": 9,
+        "recognized_wrong": 0,
+        "unsupported": 9,
+        "truncated": 0,
+        "unresolved": 9
+      },
+      "triple_counts": {
+        "recognized_wrong": 0,
+        "unresolved": 9,
+        "both_wrong_and_unresolved": 0
+      },
+      "by_wording_possible_harm": {
+        "0": 0,
+        "1": 9
+      },
+      "denominator_note": "All 64 triples retained; no intact-success filtering."
+    },
+    "corrected": {
+      "possible_harm_triples": 12,
+      "n_triples": 64,
+      "possible_harm_triple_rate": 0.1875,
+      "one_sided_95_cp_upper": 0.2860176088001913,
+      "maximum_allowed_upper": 0.05,
+      "passed": false,
+      "prompt_counts": {
+        "possible_harm": 12,
+        "recognized_wrong": 0,
+        "unsupported": 12,
+        "truncated": 0,
+        "unresolved": 12
+      },
+      "triple_counts": {
+        "recognized_wrong": 0,
+        "unresolved": 12,
+        "both_wrong_and_unresolved": 0
+      },
+      "by_wording_possible_harm": {
+        "0": 0,
+        "1": 12
+      },
+      "denominator_note": "All 64 triples retained; no intact-success filtering."
+    }
+  },
+  "baseline_competence": {
+    "0": {
+      "parsed_correct": 61,
+      "n": 64,
+      "minimum_required": 61,
+      "passed": true
+    },
+    "1": {
+      "parsed_correct": 26,
+      "n": 64,
+      "minimum_required": 61,
+      "passed": false
+    }
+  },
+  "joint_prediction_supported": false,
+  "novelty_claim": false,
+  "interpretation": [
+    "Removing layer 11 expert 9 reduced one-digit format compliance under both registered wordings.",
+    "Gate-mass correction helped format under wording 0 and hurt it under wording 1; the pooled repair interval includes zero.",
+    "Under wording 0, both removal and correction yielded 64/64 parsed-correct full answers despite altered format.",
+    "Under wording 1, the intact model already gave 34 known wrong answers out of 64 and failed the baseline competence gate.",
+    "Unsupported replies remain unresolved. The nine and twelve possible-harm transitions are unsupported text, not recognized wrong answers.",
+    "This establishes neither a dedicated format expert nor a broadly reliable repair or unique mechanism."
+  ],
+  "audit_status": {
+    "grading": "PASS",
+    "numerical": "PASS"
+  },
+  "audit_independence_limit": "The grading auditor also authored the primary scorer, but used a separate audit implementation. The numerical auditor authored neither the primary scorer nor primary analysis.",
+  "limitations": [
+    "Two fresh wordings explicitly request one digit; not exact development-prompt replication.",
+    "All fixed-plan cells retained; no filtering on intact correctness or effect size.",
+    "Parsed content follows the frozen grammar; unparsed replies are not demonstrated preservation.",
+    "The content-harm bound concerns any worsening across two fixed wordings for a sampled triple.",
+    "Zero observed content harm still has a positive Clopper-Pearson upper bound.",
+    "Uncertainty is over sampled triples, not models, tasks, wordings, precision, or mechanism identity.",
+    "The conjunction supports only this narrow prediction and does not establish a unique explanation.",
+    "Only one selected expert, one model, one simple task and two fixed wordings.",
+    "64 ordered triples contain 48 unordered digit sets and are not balanced by target digit.",
+    "The scalar control matches gate mass, not activation norms or generated histories.",
+    "61 unsupported responses across 17 unique texts are retained without changing the registered grammar."
+  ],
+  "next_step": "Exploratory diagnosis of wording-dependent task interpretation versus response format, followed by a separately registered prediction if warranted; no new experiment launched by this summary.",
+  "model_api_calls": 0,
+  "model_api_spend_usd": 0
+}
