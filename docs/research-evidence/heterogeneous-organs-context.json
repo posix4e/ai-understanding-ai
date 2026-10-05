@@ -31,8 +31,8 @@
       "version_date": "2026-03-31",
       "url": "https://arxiv.org/html/2601.17094v2",
       "sections": [
-        "3.1–3.3",
-        "7.2–7.3"
+        "3.1\u20133.3",
+        "7.2\u20137.3"
       ],
       "summary": "Niimi links a Deep Boltzmann Machine to frozen GPT-2 through a trained soft-prompt adapter. It generates reviews, not temporal state predictions. Replacing either model requires adapter retraining. Time-series modeling remains future work."
     }
@@ -124,17 +124,41 @@
     {
       "source_path": "outputs/moe-mechanisms/ORGAN_ADDRESS_READ_V1_PREPARATION/TERMINAL_REVIEW.json",
       "source_sha256": "2bc0bf495933f8417d83385d52524ab7839e1c93cf142b4922ca5aff0179f122"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/plan.json",
+      "source_sha256": "3fff59be6b320911afa015550731a8ee34c9a07b0dc5771b23bf05466971873c"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/STOPPED.json",
+      "source_sha256": "8adb5448ac62a55671db079c61cd65ebe41ab6f143480ebd3fd5f0f8194fdd60"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/AUDIT_FAILURE.json",
+      "source_sha256": "e3867717e41a753faa19b041c63072d71407d2c942e83c0120830f88ac1480f7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/WORKER_COMPLETE.json",
+      "source_sha256": "b274f5437258677e1fcf84b895e2524d63419943934e84041fd5dd9e9cf5df96"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/STOP_ACCOUNTING.json",
+      "source_sha256": "e015bd2ff87b75044ab004a4d3f7cb6a2d69941656ce517852b1bd80e3142ac4"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1_PREPARATION/STOP_TERMINAL_REVIEW.json",
+      "source_sha256": "5d9ca0da837c57eaa025be8e54a58b9eb005b3f25e96512a125527352360f423"
     }
   ],
-  "transformation": "Reviewed primary-paper context and terminal development facts, extended with completed rule-access and offline address-reader results and bound independent checks. Earlier failures and stops remain unchanged. No raw model outputs copied.",
-  "updated_at_utc": "2026-10-05T15:29:43.610710+00:00",
+  "transformation": "Reviewed primary-paper context and terminal development facts, with completed rule-access and offline address-reader results plus the separate writer audit stop. Earlier failures and stops remain unchanged. No raw model outputs copied.",
+  "updated_at_utc": "2026-10-05T16:31:22.126179+00:00",
   "external_primary_sources": [
     {
       "url": "https://arxiv.org/html/2601.17094v2",
       "version_date": "2026-03-31",
       "sections": [
-        "3.1–3.3",
-        "7.2–7.3"
+        "3.1\u20133.3",
+        "7.2\u20137.3"
       ],
       "independently_read_at_utc": "2026-10-05T14:23:22.343278+00:00"
     }
@@ -143,5 +167,7 @@
   "diagnostic_limit": "The same four training worlds and one-action questions were reused. Whole-row forcing can change signal strength and the kind of input seen during training; earlier positions retain normal memory. No cause of the original learning failure, unseen-rule transfer or novelty is established.",
   "latest_address_reader": "A new offline supervised reader passed on 16 fitted combinations and 8 combinations excluded from the fit, with no state, action or joint address errors or ties. It used saved host vectors and made no new model calls.",
   "address_reader_limit": "All 24 questions use one template and were already exposed during development. Four identical world copies were collapsed before the split. This FP64 reader is separate from the failed connector and has not been installed live. It establishes no answer writing, composition, unseen-rule transfer, original-failure cause or novelty.",
-  "next_step": "Separately test an outcome-probability writer before any frozen assembly. This supplies an answer code as an interface positive control; it is not a transplant or reasoning result."
+  "next_step": "Resolve the audit path handling before any new scientific assessment. Joining reader and writer remains blocked pending a valid writer check. No automatic rerun or next study.",
+  "latest_writer_attempt": "The separate answer-writer attempt stopped because of a model-file path bug in the audit. Its saved answer scores remain ungraded; no behavioral pass or fail has been assigned.",
+  "writer_stop_limit": "The worker logged all 3,168 forwards and 2,048 updates, but the independent numerical audit did not complete. A later metadata and hash check did not grade answers or convert the STOP into a result. The separate offline reader remains passed; no joined system or unseen-rule transfer was tested."
 }

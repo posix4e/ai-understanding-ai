@@ -1,0 +1,78 @@
+{
+  "record_type": "DERIVED_PUBLIC_STOPPED_WRITER_SUMMARY",
+  "created_at_utc": "2026-10-05T16:31:22.126179+00:00",
+  "status": "WRITER_AUDIT_STOPPED_NO_VALID_BEHAVIORAL_RESULT",
+  "stopped_at_utc": "2026-10-05T16:26:34.566335+00:00",
+  "plain_result": "The separate answer-writer attempt stopped because of a model-file path bug in the audit. Its saved answer scores remain ungraded; no behavioral pass or fail has been assigned.",
+  "question": "Can a new connection make the frozen language host choose the supplied answer from eight candidate labels?",
+  "attempt_design": {
+    "writer": "One new bias-free linear connection with 8,192 trainable weights, supplied only eight outcome probabilities. The language host was fixed by the protocol.",
+    "scope": "An answer-code communication check. It does not test rule discovery, planning, a joined reader/writer or use of unseen world rules.",
+    "data_exposure": "The 24 question contexts and 96 saved probability vectors were already exposed in development. Eight question combinations were excluded only from this new writer fit."
+  },
+  "failure": {
+    "stage": "Independent audit, before numerical checks and answer scoring.",
+    "recorded_error": "Artifact escapes directory",
+    "explanation": "The audit required model files to remain inside a snapshot directory. Normal model-cache links point to files elsewhere in the same model cache, so the path check rejected them.",
+    "model_file_hash_followup": "A metadata-only follow-up confirmed that all nine resolved model files matched the registered hashes. This does not complete the failed numerical audit.",
+    "report_produced": false,
+    "study_complete_record_produced": false,
+    "behavioral_result": null
+  },
+  "work_accounting": {
+    "status": "Verified from stopped-run metadata, not from answer scoring",
+    "host_forwards_attempted": 3168,
+    "host_forwards_finished": 3168,
+    "host_forwards_unattempted": 0,
+    "backwards_finished": 2048,
+    "optimizer_updates_finished": 2048,
+    "paid_model_cost_usd": 0,
+    "answer_arrays_decoded_by_followup": 0,
+    "new_model_or_provider_calls_by_followup": 0
+  },
+  "integrity_followup": {
+    "collected_artifacts_hash_matched": 10474,
+    "model_files_hash_matched": 9,
+    "registered_sources_and_lineage_unchanged": true,
+    "original_processes_inactive": true,
+    "independent_numerical_audit_complete": false
+  },
+  "limits": [
+    "Completed training updates do not establish successful learning.",
+    "A metadata review and matching file hashes do not validate predictions, controls or scientific requirements.",
+    "No partial scores, behavioral pass/fail, rule composition, unseen-rule transfer or novelty are reported.",
+    "The original stopped records remain unchanged. No model or auditor restart, refit or evaluation extension was performed.",
+    "The earlier offline address-reader pass and all earlier failures and stops remain unchanged."
+  ],
+  "next_step": "Resolve the audit path handling before any new scientific assessment. Joining reader and writer remains blocked pending a valid writer check. No automatic rerun or next study.",
+  "scientific_result_available": false,
+  "novelty_established": false,
+  "original_attempt_closed": true,
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/plan.json",
+      "source_sha256": "3fff59be6b320911afa015550731a8ee34c9a07b0dc5771b23bf05466971873c"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/STOPPED.json",
+      "source_sha256": "8adb5448ac62a55671db079c61cd65ebe41ab6f143480ebd3fd5f0f8194fdd60"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/AUDIT_FAILURE.json",
+      "source_sha256": "e3867717e41a753faa19b041c63072d71407d2c942e83c0120830f88ac1480f7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/WORKER_COMPLETE.json",
+      "source_sha256": "b274f5437258677e1fcf84b895e2524d63419943934e84041fd5dd9e9cf5df96"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/STOP_ACCOUNTING.json",
+      "source_sha256": "e015bd2ff87b75044ab004a4d3f7cb6a2d69941656ce517852b1bd80e3142ac4"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1_PREPARATION/STOP_TERMINAL_REVIEW.json",
+      "source_sha256": "5d9ca0da837c57eaa025be8e54a58b9eb005b3f25e96512a125527352360f423"
+    }
+  ],
+  "transformation": "Stopped-run metadata and selected design context only. No answer scores, losses, probability values, weights, hidden states, process identifiers, account details or absolute local paths copied."
+}
