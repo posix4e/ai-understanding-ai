@@ -1,0 +1,153 @@
+{
+  "study": "GRANITE_AGREEMENT_V1",
+  "status": "COMPLETE_ADMISSION_PASSED",
+  "completed_at_utc": "2026-10-05T02:19:56.027176+00:00",
+  "summary_created_at_utc": "2026-10-05T02:21:53.900043+00:00",
+  "research_status": "Completed admission screen; no mechanism or novelty claim. Separate design review remains necessary.",
+  "plain_language": "The model preferred the sentence with the correct is or are in every tested pair in both runs. It also preferred that verb at the point where the verb must be chosen. This gives us a task the model can do under this fixed setup, so we can now design a careful test of how it does it.",
+  "model": {
+    "name": "ibm-granite/granite-3.1-1b-a400m-instruct",
+    "revision": "0da7a48b0276d500ce5922fd2b33944091fc6c09",
+    "weight_sha256": "ac02591061f1344027a7e7b11dbb4143f75f166c47dc09b742f5de3ab1dde1d1",
+    "runtime": {
+      "device": "mps",
+      "dtype": "bfloat16",
+      "attention": "eager",
+      "cache": false,
+      "seed": 42,
+      "threads": 4
+    }
+  },
+  "task": {
+    "template": "The {subject_form} near the {intervener_form} {verb} {predicate}.",
+    "lexical_families": 24,
+    "unique_pairs": 96,
+    "unique_candidate_sentences": 192,
+    "strata": [
+      "singular_same",
+      "singular_opposite",
+      "plural_same",
+      "plural_opposite"
+    ],
+    "fresh_process_blocks": 2,
+    "teacher_forced_forwards": 384,
+    "scoring": "Every post-BOS sentence token is scored under the model. The correct candidate must have greater full-sentence log probability, and the correct verb must have greater probability in the same prediction row of both candidate runs. No generated answers."
+  },
+  "results": {
+    "joint_success_by_block": {
+      "a00": {
+        "success": 96,
+        "total": 96
+      },
+      "a01": {
+        "success": 96,
+        "total": 96
+      }
+    },
+    "each_stratum_in_each_block": {
+      "joint_success": 24,
+      "total": 24,
+      "ties": 0
+    },
+    "joint_status_discordance_across_blocks": 0,
+    "admission_pass": true,
+    "same_candidate_full_saved_logit_raw_hash_matches": {
+      "matches": 192,
+      "total": 192
+    },
+    "same_candidate_all_saved_scores_exact_matches": {
+      "matches": 192,
+      "total": 192
+    },
+    "same_pair_metric_objects_exact_matches": {
+      "matches": 96,
+      "total": 96
+    },
+    "within_pair_prefix_score_differences": {
+      "nonzero": 0,
+      "total": 192
+    },
+    "within_pair_two_critical_margin_differences": {
+      "nonzero": 0,
+      "total": 192
+    },
+    "margin_ranges": {
+      "a00": {
+        "sentence_margin": {
+          "minimum": 0.12252446186244725,
+          "maximum": 11.275251231727104
+        },
+        "critical_from_grammatical": {
+          "minimum": 0.75,
+          "maximum": 7.0
+        },
+        "critical_from_ungrammatical": {
+          "minimum": 0.75,
+          "maximum": 7.0
+        }
+      },
+      "a01": {
+        "sentence_margin": {
+          "minimum": 0.12252446186244725,
+          "maximum": 11.275251231727104
+        },
+        "critical_from_grammatical": {
+          "minimum": 0.75,
+          "maximum": 7.0
+        },
+        "critical_from_ungrammatical": {
+          "minimum": 0.75,
+          "maximum": 7.0
+        }
+      }
+    }
+  },
+  "audit": {
+    "status": "PASS",
+    "primary_vs_independent_maximum_logsumexp_value_difference": 1.4210854715202004e-14,
+    "prospective_logsumexp_absolute_tolerance": 1e-09,
+    "gates_and_direct_critical_margins": "exact comparison",
+    "terminal_provenance_review": "PASS"
+  },
+  "cost_and_actions": {
+    "paid_calls": 0,
+    "estimated_provider_fees_usd": 0,
+    "generated_tokens": 0,
+    "returned_lesions": 0
+  },
+  "sources": {
+    "plan.json": {
+      "path": "outputs/moe-mechanisms/GRANITE_AGREEMENT_V1/plan.json",
+      "sha256": "bac9c3502a4f7d65e29f173aca38ca8c6d44e2b9c8117ddc796388171faf3aac"
+    },
+    "COMPLETE.json": {
+      "path": "outputs/moe-mechanisms/GRANITE_AGREEMENT_V1/COMPLETE.json",
+      "sha256": "37c46ea54d0397ef0b313d1c4e82e6b867228115db5a8157b22fed6696ad378a"
+    },
+    "REPORT.json": {
+      "path": "outputs/moe-mechanisms/GRANITE_AGREEMENT_V1/REPORT.json",
+      "sha256": "1f27afe726bea969166cbde6b0e4692478179af25d85d3623a38507c49f30a05"
+    },
+    "INDEPENDENT_NUMERICAL_AUDIT.json": {
+      "path": "outputs/moe-mechanisms/GRANITE_AGREEMENT_V1/INDEPENDENT_NUMERICAL_AUDIT.json",
+      "sha256": "5644e1cb4fdd2dd11e49979a9b8640bab52c8f79ab73712fd710f5b1add88648"
+    },
+    "REGISTRATION.json": {
+      "path": "outputs/moe-mechanisms/GRANITE_AGREEMENT_V1/REGISTRATION.json",
+      "sha256": "c3cd302e080283c48127cd9ad4c6ca4babbc4297b3b3db334a161eda3a4861b1"
+    },
+    "terminal_review": {
+      "path": "outputs/moe-mechanisms/AGREEMENT_V1_AUDIT_PREPARATION/TERMINAL_REVIEW.json",
+      "sha256": "a2d880b989535659122b54cd1143b88a00f82f05948d906f195a5c0a8adb1519"
+    }
+  },
+  "limitations": [
+    "This is a one-shot probability-preference admission screen on one checkpoint, one simple sentence template, and one fixed local BF16/MPS setup. It is not generated-answer accuracy or broad grammatical competence.",
+    "Twenty-four lexical families are the dependence units. Four contexts, two candidate sentences and repeated blocks are not independent lexical observations.",
+    "Both full-sentence and both within-row critical-verb preferences must be positive; ties fail. The same-number controls retain an intervening noun and phrase.",
+    "Matching saved output bits in these two blocks does not establish general determinism, identical hidden states, an underlying mechanism, expert specialization, or that earlier numerical failures are resolved.",
+    "The local plan was frozen before inference but was not externally registered; this is admission evidence, not an independent mechanism confirmation or novelty claim.",
+    "Reserved discovery and confirmation nouns were not evaluated here. A separately reviewed design is still required before expert selection or intervention."
+  ],
+  "next_step": "Review and freeze a separate mechanism study with fresh lexical families, calibrated controls and a held-out confirmation set before collecting interventions."
+}

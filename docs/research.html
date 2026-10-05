@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A research-in-progress snapshot. Identical expert outputs can combine into different internal values. A fresh number-copy test failed before expert changes. Read the checks and limits.">
+  <meta name="description" content="A research-in-progress snapshot. Identical expert outputs can combine into different internal values. A fresh copy test failed; a language-agreement check passed. Read the checks and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we predict and repair an AI mistake?</h1>
         <p class="hero-deck">We want to understand why a model gives an answer. A useful explanation should predict when it will fail. It should also help us test a specific repair.</p>
-        <p class="scope-line">This is a research draft, not peer reviewed. The numerical checks found a limit on repeatability in this setup. A fresh copy test also failed before any expert was changed. We have no new cognitive mechanism or demonstrated repair. GPT-2 work is paused.</p>
+        <p class="scope-line">This is a research draft, not peer reviewed. The numerical checks found a limit on repeatability in this setup. A fresh copy test failed before any expert was changed. A separate language check passed. We have no new cognitive mechanism or demonstrated repair. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -105,8 +105,30 @@
       </div>
     </section>
 
+    <section class="section wrap" id="agreement" aria-labelledby="agreement-title">
+      <div class="section-heading"><p class="eyebrow">04 / A reliable language behavior</p><h2 id="agreement-title">The verb follows the subject.</h2></div>
+      <div class="section-body">
+        <p class="lead">The language check passed all 96 comparisons in both runs.</p>
+        <p>Consider “The window near the walls is open.” The subject is one window, so the verb is “is.” The nearby word “walls” is plural. We tested whether the model gives a higher score to the correct verb even when this other noun has a different number.</p>
+        <p>We fixed 24 noun pairs before the test. Each supplied four sentence pairs: singular or plural subjects, with matching or opposite-number nouns in between. Each candidate sentence changed only “is” to “are,” or the reverse. We scored ordinary text directly, with no instruction to write an answer in a special format.</p>
+        <table class="followup-table">
+          <caption>Completed on 5 October 2026 at 02:19 UTC. A pass needs the correct verb and the grammatical whole sentence to receive higher scores.</caption>
+          <thead><tr><th scope="col">Sentence group</th><th scope="col">Run 1</th><th scope="col">Run 2</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Singular subject, matching noun</th><td>24 / 24</td><td>24 / 24</td></tr>
+            <tr><th scope="row">Singular subject, opposite-number noun</th><td>24 / 24</td><td>24 / 24</td></tr>
+            <tr><th scope="row">Plural subject, matching noun</th><td>24 / 24</td><td>24 / 24</td></tr>
+            <tr><th scope="row">Plural subject, opposite-number noun</th><td>24 / 24</td><td>24 / 24</td></tr>
+          </tbody>
+        </table>
+        <p>The rule required at least 23 of 24 passes in every group and each run. A separate program checked the saved scores and confirmed the result. The same 24 noun pairs underlie both runs; repetition does not create more independent language examples.</p>
+        <aside class="plain-note"><strong>This gives us a behavior to study.</strong>It does not yet explain which internal parts cause it. We changed no experts, generated no answers, and tested no repair. The earlier copy failures remain in the record.</aside>
+        <p class="source-line"><a href="./research-evidence/granite-agreement-summary.json">Language check, fixed rules and independent audit</a></p>
+      </div>
+    </section>
+
     <section class="section wrap" id="routing" aria-labelledby="routing-title">
-      <div class="section-heading"><p class="eyebrow">04 / Between complete models</p><h2 id="routing-title">Different models can answer different questions.</h2></div>
+      <div class="section-heading"><p class="eyebrow">05 / Between complete models</p><h2 id="routing-title">Different models can answer different questions.</h2></div>
       <div class="section-body">
         <p class="lead">The training set contains room for a better choice.</p>
         <p>At the <time datetime="2026-10-05T01:30:45Z">5 October 2026, 01:30 UTC</time> snapshot, the selection phase was complete and its scoring had a separate check. Certification was running. This dated snapshot contains no final routing result.</p>
@@ -130,20 +152,20 @@
 
     <section class="limits-band" id="next" aria-labelledby="next-title">
       <div class="wrap limits-inner">
-        <div class="section-heading"><p class="eyebrow">05 / The next goal</p><h2 id="next-title">Check ability.<br> Then test a cause.</h2></div>
+        <div class="section-heading"><p class="eyebrow">06 / The next goal</p><h2 id="next-title">Check ability.<br> Then test a cause.</h2></div>
         <div class="section-body">
           <p class="lead">A useful explanation must survive a new test.</p>
           <p>The numerical checks are complete. We are retiring the copy-and-format idea around the earlier expert, called expert 9, as the main research path. This failed copy test will remain closed.</p>
-          <p>We are drafting a different test of ordinary language: does a verb agree with its subject? The proposal would use no special answer-format instruction. Expert 9 would have no special role. This is a draft only. It has not been registered or tested.</p>
-          <p>First fix the questions and success rules, then check the unchanged model. Only a model that passes that check can support the next comparison. A later claim about a cause or repair would need repeated runs, suitable controls, and a separate test on fresh questions.</p>
-          <p>Failed predictions stay in the record. We do not yet claim a new mechanism or a broadly reliable repair.</p>
+          <p>The fixed language check passed. We can now design a test of what causes that behavior. Expert 9 has no special role in this new question.</p>
+          <p>Next, predict which internal change will damage this behavior, then test that prediction on fresh sentences. One question is whether changing an expert also changes the choices made by later parts of the model. This is a proposal, not a completed causal test. It needs unchanged-model controls before any damage or repair test.</p>
+          <p>The proposed contribution score is an existing research method. A useful finding would explain when it predicts real damage and why it fails. Failed predictions stay in the record. We do not yet claim a new mechanism or a broadly reliable repair.</p>
         </div>
       </div>
     </section>
 
     <section class="evidence-section wrap" id="evidence" aria-labelledby="evidence-title">
       <div class="evidence-heading">
-        <div><p class="eyebrow">06 / Check the evidence</p><h2 id="evidence-title">Selected summary records.</h2></div>
+        <div><p class="eyebrow">07 / Check the evidence</p><h2 id="evidence-title">Selected summary records.</h2></div>
         <p>These JSON files contain selected summaries and source references. Derived summaries are labeled. Large audits, raw traces, and partial answers are not included. Separate code checks are part of this project, not an external replication. <a href="./research-evidence/manifest.json">Copy manifest</a>.</p>
       </div>
       <div class="evidence-grid">
@@ -156,6 +178,7 @@
           <li><a href="./research-evidence/granite-early-trace-summary.json">Earlier-layer traces<span>First recorded difference</span></a></li>
           <li><a href="./research-evidence/granite-combine-replay-summary.json">Saved-input test<span>Combining and rounding limits</span></a></li>
           <li><a href="./research-evidence/granite-competence-summary.json">Basic ability check<span>8 of 24 correct in each run; test stopped</span></a></li>
+          <li><a href="./research-evidence/granite-agreement-summary.json">Language ability check<span>96 of 96 comparisons passed in both runs</span></a></li>
         </ul></div>
         <div class="evidence-group"><h3>External model routing</h3><ul>
           <li><a href="./research-evidence/routing-training-summary.json">Training results<span>Counts across six models</span></a></li>

@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T02:00:40.613176+00:00",
+  "at_utc": "2026-10-05T02:23:24.249232+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -122,6 +122,14 @@
       "source_sha256": "72ac6131c3cd424ced4de505d77e282792ed74556bc80d993f4cfeccde51d6c8",
       "sha256": "72ac6131c3cd424ced4de505d77e282792ed74556bc80d993f4cfeccde51d6c8",
       "bytes": 3709
+    },
+    {
+      "file": "granite-agreement-summary.json",
+      "copy_type": "verbatim_selected_summary",
+      "source_path": "outputs/moe-mechanisms/GRANITE_AGREEMENT_V1/STUDY_SUMMARY.json",
+      "source_sha256": "5016ce09737885f0e1097ca515a96c34d7f5e711fe61dce37175a829424aa312",
+      "sha256": "5016ce09737885f0e1097ca515a96c34d7f5e711fe61dce37175a829424aa312",
+      "bytes": 6188
     }
   ],
   "absolute_local_path_redactions": 0,
