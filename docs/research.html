@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A live energy connection passed its one-action check. A later native host check copied 192 of 192 states but added one correctly on 147 of 192. Read the fixed requirements and limits.">
+  <meta name="description" content="A live energy connection passed a narrow one-action check. A later Clef controller test failed its fixed requirements for using feedback to select useful organs. Read the results and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">The fixed reader, energy modules and writer work together for one action in four small known worlds. A later check of the host alone passed copying, but missed the fixed requirement for adding one. That planned hidden-state test is closed. Small checks of the open Laya decision model are now complete. Our proposed explanation did not pass. A later exact-rule check failed the starting accuracy requirement for a new internal test. Full coordination between different organs remains untested. Earlier failures and stops remain in the record. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
+        <p class="scope-line">The fixed reader, energy modules and writer work together for one action in four small known worlds. A later check of the host alone passed copying, but missed the fixed requirement for adding one. That planned hidden-state test is closed. Small checks of the open Laya decision model are now complete. Our proposed explanation did not pass. A later exact-rule check failed the starting accuracy requirement for a new internal test. A separate Clef test now completed its development panel but failed the requirements for selecting organs from feedback. Its held-out controller test did not run. Earlier failures and stops remain in the record. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -336,8 +336,21 @@
             <tr><td>Permission: true first</td><td>0 / 16</td><td>0 / 16</td><td>5 / 16</td></tr>
           </tbody></table>
           <p>The run completed 512 model calls on 64 constructed records. Separate code checks agreed on the result. No internal edits, fitting or held-out model calls followed. The question of separating name effects from fact use remains open. This result concerns Laya on these rules; it does not reject Jev, Clef, or the wider organ idea. <a href="./research-evidence/jev-selective-admission-summary.json">Accuracy check, plan and limits</a>.</p>
-          <p>A <a href="https://arxiv.org/html/2610.02586v1">recent preprint already tests misleading option names and several fixes</a>. Showing that names matter is not a new finding by itself. For the organ idea, the next useful question is whether a capable controller learns which specialist to trust from actual outcomes, and whether changing that feedback changes the right choices.</p>
-          <p>Choosing among different organs remains untested. The modules need different useful abilities and observable feedback. A future controller must be compared with the best fixed module, fixed rules, random choices and using every module, including cost. New-rule transfer and multi-action control remain untested. These local checks do not reopen the stopped Cloudflare study or start another experiment automatically.</p>
+          <p>A <a href="https://arxiv.org/html/2610.02586v1">recent preprint already tests misleading option names and several fixes</a>. Showing that names matter is not a new finding by itself. We next tested whether a controller could use actual outcomes to choose between useful organs.</p>
+          <h3 id="jev-feedback">Useful organs did not make feedback-based selection reliable.</h3>
+          <p>We trained two small next-state modules: a categorical predictor and an energy model. Each received more examples of a different capability, creating useful differences in reliability. The better-trained organ had already seen the queried transitions. Both used the same classification training objective. We then asked hosted Clef to choose between their predictions using past forecasts and outcomes.</p>
+          <p>The completed development panel had <strong>4 world families, 16 queries and 128 valid responses</strong>: four history settings, each shown with two combinations of module names and order. We supplied true feedback, hid the outcomes, swapped capability tags, or swapped module identities in one capability’s history.</p>
+          <table class="followup-table"><caption>Mean expected error of selecting an organ. Lower is better.</caption><thead><tr><th scope="col">Selection method</th><th scope="col">Error</th></tr></thead><tbody>
+            <tr><th scope="row">Clef with true feedback</th><td>0.5184</td></tr>
+            <tr><th scope="row">Clef with outcomes hidden</th><td>0.4971</td></tr>
+            <tr><th scope="row">Best fixed organ on development queries</th><td>0.8141</td></tr>
+            <tr><th scope="row">Reliability from all past outcomes</th><td>0.8009</td></tr>
+            <tr><th scope="row">Reliability tracked separately for each capability</th><td>0.0017</td></tr>
+          </tbody></table>
+          <p>We scored each organ’s forecast with sum Brier loss, then weighted that error by the probability of selecting it. This is different from scoring a mixture of the two forecasts. <strong>Only 2 of 8 requirements passed:</strong> improvement over global reliability and the fixed organ. Feedback benefit, the comparison with capability-specific reliability, both attribution-change checks, preservation of the unaffected capability, and consistency across names and order all failed. With true feedback, the preferred organ agreed across the renamed and reordered versions on only <strong>9 of 16 queries</strong>. These changes do not isolate a name-only cause.</p>
+          <p>The original attempt stopped after 69 requests when the provider returned an HTTP 529 error: 68 responses were valid. A separately declared amendment preserved those responses once and added 60 requests, completing the unchanged 128-response panel. There were 129 physical attempts in total. The original stop remains in the record. The failed development requirement closed the held-out controller test. A separately implemented recount and a terminal record review agreed with the completed audit; these are project checks, not an external replication.</p>
+          <aside class="plain-note"><strong>This is a negative development result.</strong>It does not identify an internal credit-assignment mechanism or show that energy models are superior. It tests neither new rules nor multi-step planning, and it establishes no novelty. The repeated variations are not independent tasks. <a href="./research-evidence/jev-feedback-summary.json">Completed panel, method, continuation and limits</a>.</aside>
+          <p>A useful next candidate is explicit memory of each organ’s reliability for each capability. We would then test where that simple method fails or generalizes when abilities change in fresh settings. This is a proposed next test, not an automatic new experiment or a reopening of the older stopped studies.</p>
           <p>We do not yet claim a new mechanism, a broadly reliable repair, or a novel research result.</p>
         </div>
       </div>
@@ -350,6 +363,7 @@
       </div>
       <div class="evidence-grid">
         <div class="evidence-group"><h3>The organ direction</h3><ul>
+          <li><a href="./research-evidence/jev-feedback-summary.json">Clef feedback selection check<span>Development requirements failed; held-out controller test not run</span></a></li>
           <li><a href="./research-evidence/jev-selective-admission-summary.json">Laya exact-rule accuracy check<span>All four starting accuracy requirements failed; internal test not run</span></a></li>
           <li><a href="./research-evidence/jev-controller-summary.json">Laya controller checks<span>Option-name effects; planned context-dominance explanation not supported</span></a></li>
           <li><a href="./research-evidence/organ-resource-summary.json">Connector and resource check<span>One small input; fixed rules; no learned dynamics</span></a></li>

@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T21:19:59.980015+00:00",
+  "at_utc": "2026-10-05T23:11:44.355882+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -904,6 +904,79 @@
       "transformation": "Selected aggregate results from the completed discovery gate and its independent checks. No raw activations, weights, per-case scores, process IDs, absolute paths or credentials copied. Earlier public result files remain unchanged.",
       "sha256": "200905f569ced11ff976bfa0ab8fadd35e4634f14d93edc86dd65fc2071d8e24",
       "bytes": 9740
+    },
+    {
+      "file": "jev-feedback-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1/plan.json",
+          "source_sha256": "56103ff9116daf6c85dc04d3b140c5c7db424f1af4081dbce55301d9c4f0250f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1/STOPPED.json",
+          "source_sha256": "1ceef5b607f3a6f7acdc62a8bb9e3e37dbe95102673e79b826ba23a8b4694b74"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/TERMINAL_OPERATIONAL_REVIEW.json",
+          "source_sha256": "0360b32257a48e4e5c3be53815487d4fcca47bbdadec18879b7630591cf5b53c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/BEHAVIORAL_PROTOCOL_DRAFT.json",
+          "source_sha256": "85a38ae61c9d6f761bf85f4d176b56c604431776ae54a77f80fa3f554de79577"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/ORGAN_WORK_CONTRACT.json",
+          "source_sha256": "8f743c7ef1b775c70eb83fdd68e755b5bb48af49b8eff647c530e30afef162e1"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/NUMERICAL_DESIGN_REVIEW.json",
+          "source_sha256": "85dc778244a3daea262dc2663d954851140db3c5509895b10c86fdaf758b046a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/CONTINUATION_AMENDMENT_DRAFT.json",
+          "source_sha256": "9adbd48b53c8c1eb2b9b758a4e8ea4652dc63d313be4bc9aa2c37311269d6f22"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/NEXT_OPERATIONAL_PATH_REVIEW.json",
+          "source_sha256": "47482f434569002c8b66db1d93e2da362808edda0ce511f82a18a8476525b8ce"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/CONTINUATION_IMPLEMENTATION_REVIEW.json",
+          "source_sha256": "2bf9c424a1bd80c53a897e28cd79071d6d49449553a592e2a70e226d5ac9361a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_CONTINUATION_V1/plan.json",
+          "source_sha256": "31271fe756a660ab5342f5464cc4dd7037060ab2daa5f7ab681060e57da09744"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_CONTINUATION_V1/development-COLLECTED.json",
+          "source_sha256": "75f51e410ec810f2018a55f417483bfedac29fd759d7974273e2af70535f174a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_CONTINUATION_V1/COMBINED_DEVELOPMENT_REPORT.json",
+          "source_sha256": "548d707ba28190a486c7c350a3b43239b77f480ba9c3346bb46bc2029485aacd"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_CONTINUATION_V1/COMBINED_DEVELOPMENT_AUDIT.json",
+          "source_sha256": "2d4bf0c55d4343f58fa35d0a10ce3628dc431b02daf48e0b309d26a3d5773950"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_CONTINUATION_V1/COMPLETE.json",
+          "source_sha256": "7495974a844445c080a8ca40e1d3d88a7a7edde35f6a0b71fad4a8a2e9c00fc5"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/CONTINUATION_TERMINAL_REVIEW.json",
+          "source_sha256": "945ae5da656ae36bf6f0cfd51862e4927f571b76dfbb8384af0f96e5f5572043"
+        },
+        {
+          "source_path": "work/jev-feedback-independent-recount/DEVELOPMENT_RECOUNT.json",
+          "source_sha256": "02909e867dbc2cf462f3d9d65be4e3822fd5474cfde95609c7aeb61c7a3a09df"
+        }
+      ],
+      "transformation": "Selected complete development aggregates, fixed method, disclosed continuation and limits. No raw answers, per-query probabilities, private account data, process identifiers, credentials, or absolute machine paths copied. Earlier public summary records remain unchanged.",
+      "sha256": "7f3ac4788107afe63a56b1942908a0ff03fecad58aafed6df25e509a8271175a",
+      "bytes": 9202
     }
   ],
   "absolute_local_path_redactions": 0,

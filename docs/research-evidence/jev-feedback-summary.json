@@ -1,0 +1,171 @@
+{
+  "record_type": "DERIVED_PUBLIC_FEEDBACK_CONTROLLER_DEVELOPMENT_SUMMARY",
+  "created_at_utc": "2026-10-05T23:11:13.741446+00:00",
+  "completed_at_utc": "2026-10-05T23:07:49.673955+00:00",
+  "status": "AMENDED_DEVELOPMENT_COMPLETE_VALID_NEGATIVE",
+  "plain_result": "Clef did not meet the fixed requirements for using outcome feedback to select between two useful learned organs. It beat global reliability and a fixed-organ baseline, but did worse with true outcomes than with outcomes hidden and was far worse than explicit capability-specific reliability. The held-out controller phase did not run.",
+  "design": {
+    "controller": "Hosted Cloudflare Clef typed-decision model",
+    "organs": [
+      "Categorical next-state predictor",
+      "Energy model with probabilities from softmax of negative energy"
+    ],
+    "training_objective": "Both organs used categorical cross-entropy. Their complementary reliability was induced by different training coverage, not established as inherent architecture specialties.",
+    "development_families": 4,
+    "unique_queries": 16,
+    "history_arms": [
+      "true_history",
+      "capability_swapped",
+      "c0_only_organ_swap",
+      "no_outcomes"
+    ],
+    "representations_per_query_arm": 2,
+    "representation_changes": "Module aliases and display order changed together.",
+    "valid_responses": 128,
+    "full_information": "The controller saw both organs' forecast vectors and historical outcomes; current outcomes were evaluator-only.",
+    "heldout_controller_calls": 0,
+    "heldout_controller_quality_scored": false,
+    "repeated_unit_limit": "128 responses reuse16 queries in4 related world families; they are not128 independent tasks."
+  },
+  "metric": {
+    "name": "Expected selected-organ sum Brier loss",
+    "formula": "Sum over organs of selection probability times that organ's sum-of-squared probability error against the observed next state.",
+    "lower_is_better": true,
+    "aggregation": "Average within family and capability across the two queries and both representations, then equally across capabilities and families.",
+    "not_forecast_mixture_loss": true,
+    "means": {
+      "controller_true_history": 0.5184291093833585,
+      "controller_outcomes_hidden": 0.49709089081106467,
+      "best_fixed_architecture": 0.814109555272134,
+      "global_historical_reliability": 0.8008875697782841,
+      "capability_conditioned_historical_reliability": 0.0017030500235410244
+    }
+  },
+  "fixed_requirements": {
+    "passed": 2,
+    "total": 8,
+    "results": {
+      "utility_gain_global": true,
+      "utility_gain_fixed": true,
+      "utility_gain_no_outcomes": false,
+      "conditional_noninferiority": false,
+      "capability_swap": false,
+      "local_c0_swap": false,
+      "local_c1_preservation": false,
+      "alias_all_strata": false
+    },
+    "gate_pass": false
+  },
+  "representation_check": {
+    "true_history_unique_choice_agreements": 9,
+    "paired_queries": 16,
+    "ties": 0,
+    "interpretation": "Joint alias/order sensitivity; this does not isolate a name-only cause."
+  },
+  "operational_history": {
+    "original_physical_attempts": 69,
+    "original_valid_responses": 68,
+    "original_http529_failures": 1,
+    "original_study_remains_stopped": true,
+    "separate_post_stop_amendment": true,
+    "new_physical_attempts": 60,
+    "all_physical_attempts": 129,
+    "valid_originals_reused_once": 68,
+    "combined_logical_responses": 128,
+    "scientific_rules_unchanged": true,
+    "original_protocol_completion": false,
+    "independent_replication": false,
+    "no_heldout_after_negative_development": true,
+    "failed_and_unused_reservations_retained": true
+  },
+  "checks": {
+    "composite_archive_audit": "PASS; scientific gate false is a valid negative result.",
+    "independence_limit": "Supplemental provenance and accounting were independently implemented; the frozen scientific metric code was reused by its original author. Separate source review was performed.",
+    "extra_terminal_review": "PASS; source, archive, lifecycle and attempt-accounting review.",
+    "extra_numerical_recount": {
+      "status": "PASS",
+      "numeric_comparisons": 960,
+      "maximum_absolute_difference": 4.440892098500626e-16,
+      "gate_count_hash_and_category_comparisons": "Exact agreement",
+      "scope": "Separately implemented calculation within the project, not an external replication."
+    }
+  },
+  "limits": [
+    "Development result only; no held-out controller confirmation.",
+    "The continuation was adopted after a provider failure and is explicitly separate from the original no-retry protocol.",
+    "Hosted weights were not pinned across the collection gap; input-dependent availability or serving changes cannot be ruled out.",
+    "History-label swaps are corrupted-attribution controls, not new real trajectories.",
+    "Training coverage created the organ reliability contrast; both architectures used the same classification objective.",
+    "The richer-coverage organ had trained on the queried state-action transitions. This tests access to existing learned knowledge, not both organs generalizing to unseen transitions.",
+    "No internal credit representation or causal circuit was measured.",
+    "No energy-model superiority, new-rule transfer, multi-step planning or novelty is established."
+  ],
+  "next_candidate": "Use explicit per-capability reliability memory, then test where it fails or generalizes when abilities change in fresh settings. This suggestion does not launch a new experiment.",
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1/plan.json",
+      "source_sha256": "56103ff9116daf6c85dc04d3b140c5c7db424f1af4081dbce55301d9c4f0250f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1/STOPPED.json",
+      "source_sha256": "1ceef5b607f3a6f7acdc62a8bb9e3e37dbe95102673e79b826ba23a8b4694b74"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/TERMINAL_OPERATIONAL_REVIEW.json",
+      "source_sha256": "0360b32257a48e4e5c3be53815487d4fcca47bbdadec18879b7630591cf5b53c"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/BEHAVIORAL_PROTOCOL_DRAFT.json",
+      "source_sha256": "85a38ae61c9d6f761bf85f4d176b56c604431776ae54a77f80fa3f554de79577"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/ORGAN_WORK_CONTRACT.json",
+      "source_sha256": "8f743c7ef1b775c70eb83fdd68e755b5bb48af49b8eff647c530e30afef162e1"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/NUMERICAL_DESIGN_REVIEW.json",
+      "source_sha256": "85dc778244a3daea262dc2663d954851140db3c5509895b10c86fdaf758b046a"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/CONTINUATION_AMENDMENT_DRAFT.json",
+      "source_sha256": "9adbd48b53c8c1eb2b9b758a4e8ea4652dc63d313be4bc9aa2c37311269d6f22"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/NEXT_OPERATIONAL_PATH_REVIEW.json",
+      "source_sha256": "47482f434569002c8b66db1d93e2da362808edda0ce511f82a18a8476525b8ce"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/CONTINUATION_IMPLEMENTATION_REVIEW.json",
+      "source_sha256": "2bf9c424a1bd80c53a897e28cd79071d6d49449553a592e2a70e226d5ac9361a"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_CONTINUATION_V1/plan.json",
+      "source_sha256": "31271fe756a660ab5342f5464cc4dd7037060ab2daa5f7ab681060e57da09744"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_CONTINUATION_V1/development-COLLECTED.json",
+      "source_sha256": "75f51e410ec810f2018a55f417483bfedac29fd759d7974273e2af70535f174a"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_CONTINUATION_V1/COMBINED_DEVELOPMENT_REPORT.json",
+      "source_sha256": "548d707ba28190a486c7c350a3b43239b77f480ba9c3346bb46bc2029485aacd"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_CONTINUATION_V1/COMBINED_DEVELOPMENT_AUDIT.json",
+      "source_sha256": "2d4bf0c55d4343f58fa35d0a10ce3628dc431b02daf48e0b309d26a3d5773950"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_CONTINUATION_V1/COMPLETE.json",
+      "source_sha256": "7495974a844445c080a8ca40e1d3d88a7a7edde35f6a0b71fad4a8a2e9c00fc5"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_FEEDBACK_CREDIT_V1_PREPARATION/CONTINUATION_TERMINAL_REVIEW.json",
+      "source_sha256": "945ae5da656ae36bf6f0cfd51862e4927f571b76dfbb8384af0f96e5f5572043"
+    },
+    {
+      "source_path": "work/jev-feedback-independent-recount/DEVELOPMENT_RECOUNT.json",
+      "source_sha256": "02909e867dbc2cf462f3d9d65be4e3822fd5474cfde95609c7aeb61c7a3a09df"
+    }
+  ],
+  "transformation": "Selected complete development aggregates, fixed method, disclosed continuation and limits. No raw answers, per-query probabilities, private account data, process identifiers, credentials, or absolute machine paths copied. Earlier public summary records remain unchanged."
+}
