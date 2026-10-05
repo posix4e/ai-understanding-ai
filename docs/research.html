@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Can a language model use a different internal module? The fixed reader passed a live connection check. A separate review recovered a passing writer result. The parts are not joined. Read the evidence and limits.">
+  <meta name="description" content="A fixed language model used a live energy module to rank next-state answers in four small known worlds. The one-action connection passed. Read the controls, earlier failures and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">The fixed address reader passed a live connection check on 24 known questions. A separate review of saved records recovered a passing answer-writer result after an audit bug. The original run remains stopped. The reader and writer have not been joined. Earlier failures and stops, including the Cloudflare final audit, remain in the record. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
+        <p class="scope-line">The fixed reader, learned energy modules and answer writer now work together for one action in four small known worlds. All 96 requested-rule choices passed. Deliberately changing the queried starting state changed all 96 choices to that rule’s answer. Earlier failures and stops, including the original writer run and Cloudflare final audit, remain in the record. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -35,7 +35,7 @@
         <div class="figure-heading"><p class="eyebrow">Two separate studies</p><span class="figure-number" aria-hidden="true">01</span></div>
         <h2 id="two-studies-title">Inside one model.<br> Between different models.</h2>
         <div class="result-lines">
-          <div><div><h3>Inside Granite: separate parts passed</h3><p>The fixed reader passed a live check. The writer passed a retrospective check of saved records. The parts have not been joined or tested with new world rules.</p></div></div>
+          <div><div><h3>Inside Granite: one-action connection passed</h3><p>The joined system ran the selected energy module and followed its one-action rules. It used known worlds and questions. New rules and multiple steps remain untested.</p></div></div>
           <div><div><h3>Cloudflare: final audit stopped</h3><p>The run to test choices between complete models stopped. It has no final scientific grade.</p></div></div>
         </div>
       </aside>
@@ -44,10 +44,10 @@
     <section class="section wrap" id="organs" aria-labelledby="organs-title">
       <div class="section-heading"><p class="eyebrow">Current direction / Different internal parts</p><h2 id="organs-title">A small world model inside a language model.</h2></div>
       <div class="section-body">
-        <p class="lead">The first connected system failed. A new reader now works on live model signals, and a separate answer writer passed its check. A working combined system remains untested.</p>
+        <p class="lead">The first connected system failed. A new, deliberately designed reader and writer now connect a live energy module to the fixed language model for one action.</p>
         <p>“Organ” is an analogy for parts with different jobs.</p>
         <p>Our module is trained to score which state should follow an action. It gives each possible next state an energy score: lower means a better match. Here, energy is a learned score, not electrical power. A small connector passes this information into the language model while it processes the question.</p>
-        <p>This is an internal connection. It is different from sending a question to one of several separate models. The language model’s existing weights stay fixed while the connector learns.</p>
+        <p>The connection reads and changes an internal language-model signal. The energy module runs on the CPU and sends its probabilities back into the model before the last four blocks. The reader and writer were trained in separate earlier checks. All parts stayed fixed during this joined test.</p>
         <table class="followup-table followup-table--text">
           <caption>Current evidence. Each completed check and stopped attempt has its own limits.</caption>
           <thead><tr><th scope="col">Step</th><th scope="col">Status</th><th scope="col">What it tells us</th></tr></thead>
@@ -60,6 +60,7 @@
             <tr><th scope="row">Original writer run</th><td>Stopped during audit</td><td>A file-location bug stopped the first audit before scoring. That STOP record remains unchanged.</td></tr>
             <tr><th scope="row">Separate writer recovery</th><td>Passed retrospective check</td><td>All 1,024 final choices matched the supplied answer code. No training or model calls were repeated.</td></tr>
             <tr><th scope="row">Fixed reader on live signals</th><td>Passed</td><td>All 24 starting states, actions and addresses were correct. No new fit or training was needed. The writer and rule modules were not run.</td></tr>
+            <tr><th scope="row">Live reader → energy module → writer</th><td>Passed one-action check</td><td>All 96 requested-rule answers and all 96 deliberately changed queries were followed. The system ran the energy modules; it did not use stored answer probabilities.</td></tr>
             <tr><th scope="row">Replace the module with unseen rules</th><td>Not run</td><td>This would test whether a fixed host and connector can use a new module.</td></tr>
           </tbody>
         </table>
@@ -112,7 +113,7 @@
           </tbody>
         </table>
         <p>This used one fixed mathematical fit with 64-bit arithmetic, plus a separate calculation to check it. No new language-model, rule-module or provider calls were made.</p>
-        <aside class="plain-note"><strong>This is a narrow development result.</strong>All 24 questions used one wording template and were already known during development. The eight check combinations were excluded only from this new fit. This offline check did not install the reader in a running model. The later <a href="#organ-live-reader">live connection check</a> is reported below. The reader remains separate from the old connector and has not written answers, combined action steps, or used new world rules. The earlier failures remain unchanged.</aside>
+        <aside class="plain-note"><strong>This is a narrow development result.</strong>All 24 questions used one wording template and were already known during development. The eight check combinations were excluded only from this new fit. This offline check did not install the reader in a running model. The later <a href="#organ-live-reader">live connection check</a> is reported below. At that stage, the reader had not been joined to an answer writer or rule module. The later <a href="#organ-live-energy">one-action connection</a> is reported below. Multiple action steps and new world rules remain untested. The earlier failures remain unchanged.</aside>
         <p class="source-line"><a href="./research-evidence/organ-address-reader-summary.json">Offline reader result, fixed split and independent checks</a></p>
         <h3 id="organ-writer">The original writer run stopped before grading.</h3>
         <p>This check was designed to train a new connection that makes the fixed language model choose among eight candidate answer labels from a supplied outcome-probability vector. It deliberately supplies the answer code. It does not ask the model to find a rule, plan actions, or use an unseen world.</p>
@@ -133,7 +134,7 @@
           </tbody>
         </table>
         <p>All 448 paired label switches followed both supplied codes. These pairs come from the 128 fit-excluded synthetic choices; they are not extra independent trials. All 72 no-change control comparisons matched exactly.</p>
-        <aside class="plain-note"><strong>This is an engineering recovery, not an organ transplant.</strong>All 24 question contexts and 96 saved probability vectors were already exposed during development. The reader passed a separate live check, but it has not been joined to the writer. The writer used cached probabilities; it did not run a replacement energy module. This result does not establish text generation, reasoning, calibrated probabilities, new-world transfer or novelty. It also does not explain why the old joint connector failed: the architecture, supervision and optimization differ.</aside>
+        <aside class="plain-note"><strong>This is an engineering recovery, not an organ transplant.</strong>All 24 question contexts and 96 saved probability vectors were already exposed during development. That recovery used cached probabilities and did not run an energy module. The reader and live energy module were joined to the writer only in the later <a href="#organ-live-energy">one-action check</a> below. This result does not establish text generation, reasoning, calibrated probabilities, new-world transfer or novelty. It also does not explain why the old joint connector failed: the architecture, supervision and optimization differ.</aside>
         <p class="source-line"><a href="./research-evidence/organ-writer-recovery-summary.json">Retrospective writer result, declared exception and checks</a> · <a href="./research-evidence/organ-writer-summary.json">Unchanged original stop record</a></p>
         <h3 id="organ-live-reader">The same reader worked while the model ran.</h3>
         <p>At 17:36 UTC, we completed a live check of the fixed reader. Without another fit, it identified the starting state, action and combined rule address on all 24 questions. There were no tied top scores. A separate calculation and a recount agreed.</p>
@@ -141,6 +142,22 @@
         <p>The reader copied one internal model vector to the CPU and applied its fixed 64-bit calculation. It did not change the signal or supply an answer. The full check took about 27 seconds, with no rule-module, answer-writer or paid provider calls.</p>
         <aside class="plain-note"><strong>This checks a connection, not an organ transplant.</strong>The 24 questions used one familiar wording template. Sixteen combinations had been used to fit the reader; eight had been excluded only from that fit. No reader, rule module and writer were joined in this check. It tested no new world rules, multiple action steps or new scientific mechanism. The earlier failed learning results remain unchanged.</aside>
         <p class="source-line"><a href="./research-evidence/organ-live-reader-summary.json">Live reader result, no-change controls and independent checks</a></p>
+        <h3 id="organ-live-energy">The joined system followed the live module’s rules.</h3>
+        <p>At 18:16 UTC, the reader, energy module and writer completed their first joined check. The reader took the starting state and action from the running language model. The selected learned module then scored all eight possible next states. The writer sent those probabilities into the model, which finished ranking the eight answer labels.</p>
+        <p>The check used 24 familiar questions in each of four small development worlds. All 96 choices matched the requested rule. We then deliberately queried the next numbered starting state, while leaving the question unchanged. All 96 choices followed this changed query, and none matched the original question’s answer.</p>
+        <table class="followup-table">
+          <caption>Completed live connection check. Ties counted as failures. The alternative-query condition checks which rule the output follows.</caption>
+          <thead><tr><th scope="col">Condition</th><th scope="col">Original question’s answer</th><th scope="col">Queried rule’s answer</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Query the requested state and action</th><td>96 / 96</td><td>96 / 96</td></tr>
+            <tr><th scope="row">Query a different starting state</th><td>0 / 96</td><td>96 / 96</td></tr>
+          </tbody>
+        </table>
+        <p>The reader identified the address on all 192 applications. The energy modules ranked the correct answer for all 192 actual queries. There were no tied answer choices, and all 96 original/changed-query pairs followed both selected rules.</p>
+        <p>With the connection off, each question had one model result that we compared with all four worlds: 10 of 96 resulting comparisons were correct. Giving all states equal probability, then restoring the unmodified model, gave the same result. These are 24 model calls per condition, not 96 independent questions. All 72 comparisons between the three control conditions had exactly matching output scores.</p>
+        <p>The full check took about 69 seconds: 264 language-model evaluations, 192 reader applications, 192 live energy-module evaluations and 216 writer applications. There was no new fit, training update or paid model call. All saved parameters stayed unchanged. Separate numerical checks, a recount and a terminal record review passed.</p>
+        <aside class="plain-note"><strong>This is a narrow working connection.</strong>It ranks eight labels for one action in four known toy worlds, using a designed reader and writer. It does not establish free-text generation, planning, transfer to new rules, an advantage from energy-based modeling, or a new scientific mechanism. It also does not explain why the earlier jointly trained connection failed. The same host and connections used all four existing modules; new modules remain untested.</aside>
+        <p class="source-line"><a href="./research-evidence/organ-live-energy-summary.json">Live energy connection: completed result, controls and limits</a></p>
         <aside class="plain-note"><strong>The first learning run lost its controller.</strong>The program that supervised the run disappeared after an interruption. We stopped the remaining worker on 5 October at 12:59 UTC. Fourteen of 16 training rounds finished, with 5,652 of 6,144 paired updates complete. No final checkpoint, prediction panel, report, or independent result check was produced. This is an execution failure, not evidence that the model failed to learn.</aside>
         <p class="source-line"><a href="./research-evidence/organ-resource-summary.json">Completed connector check and limits</a> · <a href="./research-evidence/organ-development-stop-summary.json">Why the learning run stopped</a> · <a href="./research-evidence/heterogeneous-organs-context.json">Prior work and the current question</a> · <a href="#next">What comes next</a></p>
       </div>
@@ -280,15 +297,15 @@
 
     <section class="limits-band" id="next" aria-labelledby="next-title">
       <div class="wrap limits-inner">
-        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Test the joined parts.<br> Then test new rules.</h2></div>
+        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Test new rules.<br> Then test who controls the steps.</h2></div>
         <div class="section-body">
           <p class="lead">A useful explanation must survive a new test.</p>
           <p>The copy-and-format idea around expert 9 remains closed. The language task passed, but its follow-up prediction check failed. That failed plan stays closed. Its rules and results stay unchanged.</p>
           <p>The second attempt completed, but it failed on the short training questions as well as the longer probes. We cannot describe this as only a failure to combine steps. The current evidence does not isolate why learning failed.</p>
           <p>The completed access check did not improve the total number of correct answers when we pointed the frozen connector to the relevant rule. A new reader first identified the requested address from saved signals on 24 exposed development questions. It then passed the live check above. This is a separate fitted reader, not a repair of the old connection or an explanation of its failure.</p>
-          <p>The writer now has a valid retrospective engineering assessment. The original run still remains stopped. The fixed reader also passed its live connection check. The next proposed test would join the reader, rule information and writer for one action. Using saved rule probabilities would test a connection to stored rules. Running a different trained energy module needs a separate check. No new study starts automatically.</p>
-          <p>The stronger question comes later: after we swap in a module trained on new world rules, can an intermediate state inside the host control the next rule query? If outside code updates the state or supplies the final answer, that is an external solver. Successful answer transfer alone does not show that the host performs the steps.</p>
-          <p>A later transplant test would keep the language model and connector fixed, replace only the rule module with one trained on new world rules, and test new action sequences. That test has not run. Even success in four training worlds would not prove transfer to unseen rules.</p>
+          <p>The joined one-action system now passed with actual energy-module calls. It used the four existing development worlds and fixed reader and writer. The next separate test should replace only the rule module with one trained on new world rules, while keeping the host and connections fixed. No new study starts automatically.</p>
+          <p>A table or another small predictor can supply the same eight probabilities. A matched substitution would test whether the energy model adds anything beyond a working interface. A stronger test would ask the host to use the module’s output in a further operation that the host can already perform. We would then change the intermediate state to test whether it controls the next query. If outside code performs the action steps, that does not show that the host performs them.</p>
+          <p>New-rule transfer and multi-action control need separate tests. Neither has run. The passing result in four known worlds does not establish either ability.</p>
           <p>We do not yet claim a new mechanism, a broadly reliable repair, or a novel research result.</p>
         </div>
       </div>
@@ -307,6 +324,7 @@
           <li><a href="./research-evidence/organ-rule-read-summary.json">Forced rule-access check<span>Controls passed; 10 of 96 correct with the relevant row</span></a></li>
           <li><a href="./research-evidence/organ-address-reader-summary.json">Offline address reader<span>16 fitted and 8 excluded combinations correct; exposed development only</span></a></li>
           <li><a href="./research-evidence/organ-live-reader-summary.json">Live reader connection check<span>24 of 24 addresses correct; no new fit or answer writing</span></a></li>
+          <li><a href="./research-evidence/organ-live-energy-summary.json">Live energy connection<span>96 requested and 96 changed queries followed; one action in known worlds</span></a></li>
           <li><a href="./research-evidence/organ-writer-recovery-summary.json">Recovered writer assessment<span>All fixed choices passed; retrospective engineering only</span></a></li>
           <li><a href="./research-evidence/organ-writer-summary.json">Original answer-writer stop<span>Unchanged dated record before recovery</span></a></li>
           <li><a href="./research-evidence/heterogeneous-organs-context.json">Established model-composition work<span>Energy models, frozen language models and video guidance</span></a></li>

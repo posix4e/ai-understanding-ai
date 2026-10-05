@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T17:41:47.833888+00:00",
+  "at_utc": "2026-10-05T18:21:45.539445+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -369,11 +369,39 @@
         {
           "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1_PREPARATION/TERMINAL_REVIEW.json",
           "source_sha256": "db60026c8bec1f411098b8ece197147d0d12690f7d82788a8a869a8493bcc772"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/plan.json",
+          "source_sha256": "53c52779e8c843e528af04acb1084d531e6f59ab000526ea937571bb100137ce"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/COMPLETE.json",
+          "source_sha256": "e28f55a426529491229637dd7978b240d2daf1f370c10c2474a72657a050f98f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/REPORT.json",
+          "source_sha256": "3ef369799652a752f8b001e9b5d852ac9e410b1e8b5944ef76d67ad09a5a9234"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "c8ad327da021752c3f1d5f9a550fa6b7c073aa9bc3da3d44ec1610f91c9644ce"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/WORKER_COMPLETE.json",
+          "source_sha256": "9097584b10c64b1ec7d2d4463c2128a81dd80e91894d5637bf9ba07dec785a16"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+          "source_sha256": "c0cd8e567dd5cb36aa14c08d73499ed0b5e084809dccf826d8668d9f6364b565"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1_PREPARATION/TERMINAL_REVIEW.json",
+          "source_sha256": "7cbd144158d4da4e132703989f2f1dcb85f385888abbee1fb781c4c111a100a7"
         }
       ],
-      "transformation": "Reviewed primary-paper context and terminal development facts, including the separate retrospective writer recovery and subsequent live reader connection check. Original stopped-run history and all earlier failures remain preserved. No raw model outputs copied.",
-      "sha256": "5b2b41b355c5f139c8081fcd59730898b477470a1e57457a0b9ab313dced6894",
-      "bytes": 15934,
+      "transformation": "Reviewed primary-paper context and terminal development facts, including the separate writer recovery, live reader check and completed live energy connection. Original stopped-run history and earlier failures remain preserved. No raw model outputs copied.",
+      "sha256": "ab73d980866c13d79aff2a553fb573860369c7a6bed5cc90cc1c7a631cd9d594",
+      "bytes": 18168,
       "external_primary_sources": [
         {
           "url": "https://arxiv.org/html/2601.17094v2",
@@ -640,6 +668,43 @@
       "transformation": "Selected completed aggregate counts, fixed method, control outcomes and reviewed limits only. No raw hidden states, reader coefficients, score vectors, process identifiers, private account details or absolute local paths copied.",
       "sha256": "16c1ad1042b13140ef1ecf59560de710cdefbfe77ef8ec1780b7e5ff1109966b",
       "bytes": 6131
+    },
+    {
+      "file": "organ-live-energy-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/plan.json",
+          "source_sha256": "53c52779e8c843e528af04acb1084d531e6f59ab000526ea937571bb100137ce"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/COMPLETE.json",
+          "source_sha256": "e28f55a426529491229637dd7978b240d2daf1f370c10c2474a72657a050f98f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/REPORT.json",
+          "source_sha256": "3ef369799652a752f8b001e9b5d852ac9e410b1e8b5944ef76d67ad09a5a9234"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "c8ad327da021752c3f1d5f9a550fa6b7c073aa9bc3da3d44ec1610f91c9644ce"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/WORKER_COMPLETE.json",
+          "source_sha256": "9097584b10c64b1ec7d2d4463c2128a81dd80e91894d5637bf9ba07dec785a16"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+          "source_sha256": "c0cd8e567dd5cb36aa14c08d73499ed0b5e084809dccf826d8668d9f6364b565"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1_PREPARATION/TERMINAL_REVIEW.json",
+          "source_sha256": "7cbd144158d4da4e132703989f2f1dcb85f385888abbee1fb781c4c111a100a7"
+        }
+      ],
+      "transformation": "Selected completed aggregate counts, fixed method, work totals, controls and reviewed limits only. No raw hidden states, scores, probabilities, model weights, process identifiers, private account details or absolute local paths copied. All earlier dated public summaries remain unchanged.",
+      "sha256": "23b901eedb7f1e11dcffac86ff0794a0489e615e82f4cbba0888706e229481b5",
+      "bytes": 8196
     }
   ],
   "absolute_local_path_redactions": 0,

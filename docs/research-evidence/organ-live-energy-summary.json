@@ -1,0 +1,165 @@
+{
+  "record_type": "DERIVED_PUBLIC_COMPLETED_LIVE_ENERGY_SUMMARY",
+  "created_at_utc": "2026-10-05T18:21:45.539445+00:00",
+  "status": "LIVE_ENERGY_ASSEMBLY_PASSED",
+  "completed_at_utc": "2026-10-05T18:16:53.236258+00:00",
+  "plain_result": "The fixed reader, learned energy modules and writer worked together for one action. All 96 requested-rule choices and all 96 deliberately changed queries followed the queried rule. The modules ran live; no cached answer probabilities were substituted.",
+  "question": "Can the existing fixed reader query a learned energy module while the language host runs, then pass its result through the existing fixed writer?",
+  "panel": {
+    "distinct_question_contexts": 24,
+    "question_templates": 1,
+    "known_development_worlds": 4,
+    "main_world_question_cells": 96,
+    "changed_query_cells": 96,
+    "original_reader_fit_combinations": 16,
+    "combinations_excluded_only_from_reader_fit": 8,
+    "exposure": "All questions and worlds were already exposed during development. No fresh-world confirmation or unseen-module transfer was tested."
+  },
+  "results": {
+    "main": {
+      "n": 96,
+      "resolved": 96,
+      "reader_state_correct": 96,
+      "reader_action_correct": 96,
+      "reader_address_correct": 96,
+      "organ_correct": 96,
+      "original_task_correct": 96,
+      "selected_query_correct": 96,
+      "host_ties": 0
+    },
+    "changed_query": {
+      "n": 96,
+      "resolved": 96,
+      "reader_state_correct": 96,
+      "reader_action_correct": 96,
+      "reader_address_correct": 96,
+      "organ_correct": 96,
+      "original_task_correct": 0,
+      "selected_query_correct": 96,
+      "host_ties": 0
+    },
+    "readiness_checks": {
+      "all192_routes_resolved": true,
+      "all192_reader_states_correct": true,
+      "all192_reader_actions_correct": true,
+      "all192_reader_addresses_correct": true,
+      "all192_organs_correct_for_actual_query": true,
+      "all96_main_original_targets_correct": true,
+      "all96_wrong_selected_query_targets_correct": true,
+      "all96_main_wrong_pairs_followed": true
+    },
+    "main_changed_query_pairs": {
+      "n": 96,
+      "both_followed": 96
+    },
+    "derived_world_pairs": {
+      "n": 144,
+      "both_followed": 144,
+      "same_outcome": 17,
+      "interpretation": "These 144 pairs reuse the 96 main choices. Seventeen pairs have the same correct answer, so144 pairs do not mean 144 answer changes."
+    },
+    "baselines": {
+      "native": {
+        "calls": 24,
+        "world_context_cells": 96,
+        "correct": 10,
+        "ties": 12,
+        "call_ties": 3
+      },
+      "uniform": {
+        "calls": 24,
+        "world_context_cells": 96,
+        "correct": 10,
+        "ties": 12,
+        "call_ties": 3
+      },
+      "restored": {
+        "calls": 24,
+        "world_context_cells": 96,
+        "correct": 10,
+        "ties": 12,
+        "call_ties": 3
+      }
+    },
+    "baseline_interpretation": "Each control condition made 24 actual host calls. Each call was compared with all four worlds, yielding 96 derived comparisons and 12 tied cells from 3 tied calls. These are not 96 independent questions per control."
+  },
+  "method": {
+    "reader": "Fixed CPU 64-bit address reader on the actual last prefix vector before host block 20. No expected state, action or answer entered the reader.",
+    "energy": "The selected original learned energy module ran on the CPU in 32-bit arithmetic, scoring 8 candidate next states for the reader-selected address. Softmax of negative energies supplied the actual probability vector.",
+    "writer": "The same fixed 8,192-weight writer received the actual probabilities and changed only the last prefix position before the final four language-model blocks.",
+    "changed_query": "Starting state shifted by 1 modulo 8 after reading, with action and question unchanged. The literal changed query was evaluated; no correct-answer fallback.",
+    "decision": "Strict unique ranking among the 8 candidate answer labels. Ties fail. This was not free-text generation.",
+    "independent_numerical_audit": "PASS",
+    "parent_terminal_recount": "PASS",
+    "independent_terminal_metadata_review": "PASS; metadata and opaque hashes, not an additional numeric rerun."
+  },
+  "controls": {
+    "full_vocabulary_pair_comparisons": 72,
+    "scores_per_call": 49155,
+    "all_control_output_pairs_byte_identical": true,
+    "maximum_absolute_control_output_error": 0.0,
+    "same_call_original_hidden_unchanged": true,
+    "returned_nonfinal_positions_unchanged": true,
+    "frozen_components_unchanged": true,
+    "original_flags_config_and_hooks_restored": true,
+    "interpretation": "Native, uniform-probability and restored conditions provide 3 pair comparisons per question. Exact output repeats describe the retained final-position scores, not every model activation."
+  },
+  "work": {
+    "host_forwards": 264,
+    "reader_applications": 192,
+    "energy_module_forwards": 192,
+    "writer_forwards": 216,
+    "analytical_fits": 0,
+    "backwards": 0,
+    "optimizer_steps": 0,
+    "provider_calls": 0,
+    "elapsed_seconds": 69.07003683401854
+  },
+  "limits": [
+    "A working designed one-step connection on four known toy worlds and 24 familiar one-template questions.",
+    "Eight-label ranking does not establish free-text generation, multiple action steps, planning or language-host reasoning.",
+    "The same host and connections used four existing modules; no independently trained new-world module was tested.",
+    "No energy-specific advantage was tested. A table or another predictor can provide the same eight probabilities.",
+    "Paired query and world contrasts reuse cells; they are not independent new trials.",
+    "Earlier failed learning results and the original writer STOP remain unchanged. The passing writer prerequisite belongs to a separate disclosed recovery.",
+    "Different architecture, supervision and optimization prevent attributing the old connection failure to a single cause."
+  ],
+  "next_step": "Review a fixed-interface swap to new world rules and a matched table or predictor substitution. A stronger later test would require the host to combine the organ output with a separately demonstrated host operation, and intervene on the intermediate state. No automatic launch.",
+  "scientific_confirmation": false,
+  "unseen_world_transfer": false,
+  "multistep_planning": false,
+  "energy_specific_advantage": false,
+  "original_bridge_repaired": false,
+  "novelty_established": false,
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/plan.json",
+      "source_sha256": "53c52779e8c843e528af04acb1084d531e6f59ab000526ea937571bb100137ce"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/COMPLETE.json",
+      "source_sha256": "e28f55a426529491229637dd7978b240d2daf1f370c10c2474a72657a050f98f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/REPORT.json",
+      "source_sha256": "3ef369799652a752f8b001e9b5d852ac9e410b1e8b5944ef76d67ad09a5a9234"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/INDEPENDENT_AUDIT.json",
+      "source_sha256": "c8ad327da021752c3f1d5f9a550fa6b7c073aa9bc3da3d44ec1610f91c9644ce"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1/WORKER_COMPLETE.json",
+      "source_sha256": "9097584b10c64b1ec7d2d4463c2128a81dd80e91894d5637bf9ba07dec785a16"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+      "source_sha256": "c0cd8e567dd5cb36aa14c08d73499ed0b5e084809dccf826d8668d9f6364b565"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1_PREPARATION/TERMINAL_REVIEW.json",
+      "source_sha256": "7cbd144158d4da4e132703989f2f1dcb85f385888abbee1fb781c4c111a100a7"
+    }
+  ],
+  "transformation": "Selected completed aggregate counts, fixed method, work totals, controls and reviewed limits only. No raw hidden states, scores, probabilities, model weights, process identifiers, private account details or absolute local paths copied. All earlier dated public summaries remain unchanged."
+}
