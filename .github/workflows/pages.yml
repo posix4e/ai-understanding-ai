@@ -18,11 +18,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  upload:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      artifact_name: ${{ steps.artifact.outputs.name }}
     steps:
       - name: Check out website files only
         uses: actions/checkout@v7
@@ -31,10 +30,23 @@ jobs:
           persist-credentials: false
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Name this upload
+        id: artifact
+        run: echo "name=github-pages-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" >> "$GITHUB_OUTPUT"
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
+          name: ${{ steps.artifact.outputs.name }}
+  deploy:
+    needs: upload
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: ${{ needs.upload.outputs.artifact_name }}
