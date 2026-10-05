@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Can a language model use a different internal module? A completed second learning attempt failed its fixed requirements, although the small rule modules passed their own check. Read the completed results and limits.">
+  <meta name="description" content="Can a language model use a different internal module? A new offline reader identified state and action on 24 exposed development questions. The original connected system still failed its task. Read the results and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">A second development attempt completed with the same learning recipe. Its small rule modules passed their own check, but the combined system failed the learning requirement. A later check passed its controls, but forcing access to the relevant rule did not rescue the answers. The first interrupted run and earlier failed tests stay in the record. The Cloudflare final audit remains stopped. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
+        <p class="scope-line">A new offline reader identified the starting state and action on all 24 development questions: 16 used for fitting and 8 excluded from that fit. It has not been installed in the model. The original combined system and the forced-rule check remain unsuccessful. Earlier stops stay in the record. The Cloudflare final audit remains stopped. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -35,7 +35,7 @@
         <div class="figure-heading"><p class="eyebrow">Two separate studies</p><span class="figure-number" aria-hidden="true">01</span></div>
         <h2 id="two-studies-title">Inside one model.<br> Between different models.</h2>
         <div class="result-lines">
-          <div><div><h3>Inside Granite: forced rule access did not improve the total score</h3><p>The rule modules learned their local rules. The combined system failed, and pointing its connector to the relevant rule did not rescue this fixed setup.</p></div></div>
+          <div><div><h3>Inside Granite: an offline address reader passed</h3><p>A new reader found the requested state and action in saved model vectors. This reader has not been joined to an answer writer or tested with new world rules.</p></div></div>
           <div><div><h3>Cloudflare: final audit stopped</h3><p>The run to test choices between complete models stopped. It has no final scientific grade.</p></div></div>
         </div>
       </aside>
@@ -44,7 +44,7 @@
     <section class="section wrap" id="organs" aria-labelledby="organs-title">
       <div class="section-heading"><p class="eyebrow">Current direction / Different internal parts</p><h2 id="organs-title">A small world model inside a language model.</h2></div>
       <div class="section-body">
-        <p class="lead">The small parts learned their rules. The connected system did not pass its task check.</p>
+        <p class="lead">The small parts learned their rules. The connected system failed. A new offline reader passed a narrow address check.</p>
         <p>“Organ” is an analogy for parts with different jobs.</p>
         <p>Our module is trained to score which state should follow an action. It gives each possible next state an energy score: lower means a better match. Here, energy is a learned score, not electrical power. A small connector passes this information into the language model while it processes the question.</p>
         <p>This is an internal connection. It is different from sending a question to one of several separate models. The language model’s existing weights stay fixed while the connector learns.</p>
@@ -55,7 +55,8 @@
             <tr><th scope="row">Connector and resource check</th><td>Passed</td><td>A connector with 66,752 trainable weights ran inside Granite. One update changed the connector while the host weights stayed unchanged.</td></tr>
             <tr><th scope="row">First development attempt</th><td>Stopped before final evaluation</td><td>The run controller was lost. This attempt has no task grade.</td></tr>
             <tr><th scope="row">Second attempt, same learning recipe</th><td>Completed; learning requirement failed</td><td>All four rule modules passed their own check. Both systems missed the required performance on training questions.</td></tr>
-            <tr><th scope="row">Force access to one rule</th><td>Controls passed; no rescue</td><td>Selecting the relevant rule row gave 10 of 96 correct choices, compared with 16 normally.</td></tr>
+            <tr><th scope="row">Force access to one rule</th><td>Controls passed; total score did not improve</td><td>Selecting the relevant rule row gave 10 of 96 correct choices, compared with 16 normally.</td></tr>
+            <tr><th scope="row">New address reader</th><td>Passed offline</td><td>16 of 16 fitted combinations and 8 of 8 excluded combinations were correct. All 24 were exposed development questions.</td></tr>
             <tr><th scope="row">Replace the module with unseen rules</th><td>Not run</td><td>This would test whether a fixed host and connector can use a new module.</td></tr>
           </tbody>
         </table>
@@ -96,6 +97,20 @@
         <p>We also checked whether each pair followed both selected rules: the original rule when given its row, and the alternative rule when given the other row. None of the 96 pairs did both.</p>
         <aside class="plain-note"><strong>This does not reject the organ idea.</strong>We forced a whole memory row at one position. This changed the mix of information and could change signal strength or differ from what the connector saw in training. Earlier question positions still received the normal rule information. These were reused development questions, not unseen worlds. The check does not isolate why the connection failed.</aside>
         <p class="source-line"><a href="./research-evidence/organ-rule-read-summary.json">Completed rule-access check, controls and limits</a></p>
+        <h3 id="organ-address-reader">A new reader identified the state and action in the question.</h3>
+        <p>A rule address has two parts: the starting state and the action. We fitted a new linear reader to recover these parts from saved language-model vectors. The fit did not use the next-state answers, the rule modules’ probabilities, or the old answer scores.</p>
+        <p>The saved vectors were identical across four copies of each question, one from each world. We collapsed these copies before splitting the 24 distinct questions into 16 for fitting and 8 for checking.</p>
+        <table class="followup-table">
+          <caption>Completed offline reader check. The starting state, action and combined address were all correct at the counts shown. There were no tied top scores.</caption>
+          <thead><tr><th scope="col">Question combinations</th><th scope="col">Correct address</th><th scope="col">Ties</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Used for this fit</th><td>16 / 16</td><td>0</td></tr>
+            <tr><th scope="row">Excluded from this fit</th><td>8 / 8</td><td>0</td></tr>
+          </tbody>
+        </table>
+        <p>This used one fixed mathematical fit with 64-bit arithmetic, plus a separate calculation to check it. No new language-model, rule-module or provider calls were made.</p>
+        <aside class="plain-note"><strong>This is a narrow development result.</strong>All 24 questions used one wording template and were already known during development. The eight check combinations were excluded only from this new fit. This reader is separate from the old connector and has not been installed in the model. It has not written answers, combined action steps, or used new world rules. The earlier failures remain unchanged.</aside>
+        <p class="source-line"><a href="./research-evidence/organ-address-reader-summary.json">Offline reader result, fixed split and independent checks</a></p>
         <aside class="plain-note"><strong>The first learning run lost its controller.</strong>The program that supervised the run disappeared after an interruption. We stopped the remaining worker on 5 October at 12:59 UTC. Fourteen of 16 training rounds finished, with 5,652 of 6,144 paired updates complete. No final checkpoint, prediction panel, report, or independent result check was produced. This is an execution failure, not evidence that the model failed to learn.</aside>
         <p class="source-line"><a href="./research-evidence/organ-resource-summary.json">Completed connector check and limits</a> · <a href="./research-evidence/organ-development-stop-summary.json">Why the learning run stopped</a> · <a href="./research-evidence/heterogeneous-organs-context.json">Prior work and the current question</a> · <a href="#next">What comes next</a></p>
       </div>
@@ -235,12 +250,13 @@
 
     <section class="limits-band" id="next" aria-labelledby="next-title">
       <div class="wrap limits-inner">
-        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Find why the rules<br> were not used well.</h2></div>
+        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Test reading and writing<br> as separate parts.</h2></div>
         <div class="section-body">
           <p class="lead">A useful explanation must survive a new test.</p>
           <p>The copy-and-format idea around expert 9 remains closed. The language task passed, but its follow-up prediction check failed. That failed plan stays closed. Its rules and results stay unchanged.</p>
           <p>The second attempt completed, but it failed on the short training questions as well as the longer probes. We cannot describe this as only a failure to combine steps. The current evidence does not isolate why learning failed.</p>
-          <p>The completed access check did not improve the total number of correct answers when we pointed the frozen connector to the relevant rule. It does not yet separate a failure to read the rule from a failure to use the delivered signal. A changed answer alone would not prove correct rule use. There is no automatic retry, extension of training, or larger study. The first run stays closed and its records stay visible.</p>
+          <p>The completed access check did not improve the total number of correct answers when we pointed the frozen connector to the relevant rule. A new offline reader now identifies the requested address on 24 exposed development questions. This is a separate fitted reader, not a repair of the old connection or an explanation of its failure.</p>
+          <p>Next, a separate writer check would supply an outcome-probability vector and test whether the frozen host can turn it into the right answer. This deliberately supplies an answer code. It is a check of the connection, not evidence of reasoning or a successful organ transplant. Only after separate checks of both parts would we consider joining them with their weights fixed. No next study starts automatically.</p>
           <p>A later transplant test would keep the language model and connector fixed, replace only the rule module with one trained on new world rules, and test new action sequences. That test has not run. Even success in four training worlds would not prove transfer to unseen rules.</p>
           <p>We do not yet claim a new mechanism, a broadly reliable repair, or a novel research result.</p>
         </div>
@@ -258,6 +274,7 @@
           <li><a href="./research-evidence/organ-development-stop-summary.json">First learning run stopped<span>Run controller lost; no task grade for this attempt</span></a></li>
           <li><a href="./research-evidence/organ-development-summary.json">Completed second attempt<span>Rule modules passed; task learning requirement failed</span></a></li>
           <li><a href="./research-evidence/organ-rule-read-summary.json">Forced rule-access check<span>Controls passed; 10 of 96 correct with the relevant row</span></a></li>
+          <li><a href="./research-evidence/organ-address-reader-summary.json">Offline address reader<span>16 fitted and 8 excluded combinations correct; exposed development only</span></a></li>
           <li><a href="./research-evidence/heterogeneous-organs-context.json">Established model-composition work<span>Energy models, frozen language models and video guidance</span></a></li>
           <li><a href="./research-evidence/granite-route-compute-summary.json">Direct intervention tool<span>Controls passed on two reused sentences</span></a></li>
         </ul></div>

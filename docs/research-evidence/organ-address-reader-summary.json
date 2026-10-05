@@ -1,0 +1,107 @@
+{
+  "record_type": "DERIVED_PUBLIC_COMPLETED_ADDRESS_READER_SUMMARY",
+  "created_at_utc": "2026-10-05T15:29:43.610710+00:00",
+  "status": "OFFLINE_ADDRESS_READER_ADMISSION_PASSED",
+  "completed_at_utc": "2026-10-05T15:26:13.009408+00:00",
+  "plain_result": "A new supervised linear reader recovered the starting state and action from saved language-model vectors on all 24 questions. It used 16 combinations for fitting and 8 for checking. None had tied top scores.",
+  "question": "Can we read which rule-table row a question asks for, before trying to write the rule outcome as an answer?",
+  "panel": {
+    "distinct_questions": 24,
+    "question_templates": 1,
+    "world_copies_per_question": 4,
+    "saved_observations": 96,
+    "duplicate_handling": "Four byte-identical world copies were collapsed before splitting. They are not 96 independent examples.",
+    "training_combinations": 16,
+    "combinations_excluded_from_this_fit": 8,
+    "split": "For starting state s, hold out action s modulo 3. The other two actions are used for fitting. All states and actions occur in fitting.",
+    "exposure": "All 24 questions and earlier model behavior were already exposed during development. Excluded means excluded from this new fit only; these are not fresh confirmation questions."
+  },
+  "results": {
+    "train": {
+      "n": 16,
+      "state_correct": 16,
+      "action_correct": 16,
+      "address_correct": 16,
+      "state_unresolved": 0,
+      "action_unresolved": 0,
+      "address_unresolved": 0
+    },
+    "held": {
+      "n": 8,
+      "state_correct": 8,
+      "action_correct": 8,
+      "address_correct": 8,
+      "state_unresolved": 0,
+      "action_unresolved": 0,
+      "address_unresolved": 0
+    },
+    "all": {
+      "n": 24,
+      "state_correct": 24,
+      "action_correct": 24,
+      "address_correct": 24,
+      "state_unresolved": 0,
+      "action_unresolved": 0,
+      "address_unresolved": 0
+    }
+  },
+  "method": {
+    "reader": "New factorized supervised linear address reader, outside the language model.",
+    "arithmetic": "FP64 (64-bit floating point). One fixed ridge fit; independent SVD reconstruction checked arithmetic and exact scoring decisions.",
+    "fit_targets": "The stated starting state and action, not the next-state answer.",
+    "excluded_fit_information": [
+      "World transition targets",
+      "Organ outcome probabilities",
+      "Old host answer scores"
+    ],
+    "gate": "Strict unique correct address for all 16 fitted and all 8 excluded combinations.",
+    "independent_audit": "PASS",
+    "terminal_recount": "PASS"
+  },
+  "work": {
+    "primary_analytical_fits": 1,
+    "independent_svd_reconstructions": 1,
+    "host_calls": 0,
+    "organ_calls": 0,
+    "provider_calls": 0,
+    "gradient_updates": 0
+  },
+  "limits": [
+    "This constructs a new offline reader; it does not show the old connector learned to read addresses.",
+    "The reader has not been installed in a live model or tested at the host arithmetic precision.",
+    "No answer writing, multi-step rule composition or use of unseen world rules was tested.",
+    "This does not identify the cause of the original learning failure or establish novelty.",
+    "The second development attempt and forced-row negative results remain unchanged."
+  ],
+  "next_step": "A separate writer positive control would test whether a supplied outcome-probability vector can produce the correct answer through the frozen host. Supplying that answer code is not an organ-transplant result. Joining reader and writer requires its own review; no automatic next study.",
+  "scientific_confirmation": false,
+  "original_bridge_repaired": false,
+  "novelty_established": false,
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_ADDRESS_READ_V1/plan.json",
+      "source_sha256": "0735ac5bbd8e1774f86f7fcd2fc8d7cd05c593f8d98db4d2a8ed9915f8f1ed99"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_ADDRESS_READ_V1/COMPLETE.json",
+      "source_sha256": "cc7786573bae6f4a8088561d9444abcd5a9350289f1af1f7b0e38f18c2921178"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_ADDRESS_READ_V1/REPORT.json",
+      "source_sha256": "2a268c928de6424574ed812390944f9db2148ddea63124649643c79291dac2d5"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_ADDRESS_READ_V1/INDEPENDENT_AUDIT.json",
+      "source_sha256": "6e7bc60ea1bab4168a0fce5124479614519f6b08f7aee749841f98c9b4704526"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_ADDRESS_READ_V1/FIT_COMPLETE.json",
+      "source_sha256": "15e5fa0bbd5325390cb33b55c0aadc2165bd2f6dfa839fddb1adeb8a41d09687"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_ADDRESS_READ_V1_PREPARATION/TERMINAL_REVIEW.json",
+      "source_sha256": "2bc0bf495933f8417d83385d52524ab7839e1c93cf142b4922ca5aff0179f122"
+    }
+  ],
+  "transformation": "Selected completed aggregate counts, work totals, method and limits only. No raw hidden states, coefficients, prediction vectors, process identifiers or private account details copied."
+}
