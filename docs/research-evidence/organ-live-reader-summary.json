@@ -1,0 +1,119 @@
+{
+  "record_type": "DERIVED_PUBLIC_COMPLETED_LIVE_READER_SUMMARY",
+  "created_at_utc": "2026-10-05T17:41:01.351557+00:00",
+  "status": "LIVE_READER_ADMISSION_PASSED",
+  "completed_at_utc": "2026-10-05T17:36:45.724756+00:00",
+  "plain_result": "The already fitted reader identified the starting state, action and combined rule address from live model signals on all 24 known questions. No new fit or training was used. The reader did not alter the captured host signal.",
+  "question": "Does the fixed address reader still work when applied while the unchanged language model runs?",
+  "panel": {
+    "distinct_questions": 24,
+    "question_templates": 1,
+    "original_reader_fit_combinations": 16,
+    "combinations_excluded_from_original_reader_fit": 8,
+    "exposure": "All 24 questions were already exposed during development. The eight check combinations were excluded only from the earlier reader fit; this is not a fresh confirmation panel."
+  },
+  "results": {
+    "train": {
+      "n": 16,
+      "state_correct": 16,
+      "state_unresolved": 0,
+      "action_correct": 16,
+      "action_unresolved": 0,
+      "address_correct": 16,
+      "address_unresolved": 0
+    },
+    "held": {
+      "n": 8,
+      "state_correct": 8,
+      "state_unresolved": 0,
+      "action_correct": 8,
+      "action_unresolved": 0,
+      "address_correct": 8,
+      "address_unresolved": 0
+    },
+    "all": {
+      "n": 24,
+      "state_correct": 24,
+      "state_unresolved": 0,
+      "action_correct": 24,
+      "action_unresolved": 0,
+      "address_correct": 24,
+      "address_unresolved": 0
+    }
+  },
+  "method": {
+    "reader": "The same frozen coefficients and normalization values from the offline reader.",
+    "arithmetic": "CPU FP64 (64-bit floating point), using the last prefix vector just before language-model block20. No expected address or answer enters the reader.",
+    "schedule": "For each of 24 questions: native host, read-only reader application, restored native host.",
+    "decision": "Strict unique largest score for starting state, action and combined address. Ties fail; no fallback or refit.",
+    "independent_audit": "PASS",
+    "parent_terminal_recount": "PASS",
+    "independent_terminal_metadata_review": "PASS; hashes, source and model identities, ownership, work counts and resources checked; no second raw-score grading claimed by that review."
+  },
+  "controls": {
+    "full_vocabulary_pair_comparisons": 72,
+    "full_vocabulary_scores_per_call": 49155,
+    "all_output_score_pairs_byte_identical": true,
+    "maximum_absolute_output_score_error": 0.0,
+    "all_captured_hidden_vector_pairs_byte_identical": true,
+    "maximum_absolute_captured_hidden_error": 0.0,
+    "same_call_captured_hidden_bytes_unchanged": true,
+    "frozen_host_and_reader_unchanged": true,
+    "original_ownership_restored": true,
+    "interpretation": "Three comparisons per question come from the same three calls. They are not 72 independent questions. These exact repeats describe the captured vectors and final-position scores, not every internal activation in the model."
+  },
+  "work": {
+    "host_forwards": 72,
+    "live_reader_applications": 24,
+    "analytical_fits": 0,
+    "backwards": 0,
+    "optimizer_steps": 0,
+    "organ_forwards": 0,
+    "writer_forwards": 0,
+    "provider_calls": 0,
+    "elapsed_seconds": 26.99568462499883
+  },
+  "limits": [
+    "This is an installed readout connection check on 24 known one-template questions, not a joined reader/rule-module/writer system.",
+    "The CPU FP64 reader uses an engineered state/action interface. It is separate from the failed original connector.",
+    "No energy model, world model, probability memory or answer writer ran in this check.",
+    "No new world rules, multiple action steps, general language understanding, reasoning or novelty were tested.",
+    "A passed reader and a separately passed writer do not establish that their combination works.",
+    "Earlier failed learning results and the original writer STOP remain unchanged. The passing writer assessment belongs to a separate disclosed recovery."
+  ],
+  "next_step": "Review a separate fixed one-action connection through rule information and the writer. Using cached probabilities would test stored rule access, not execution of a replacement energy model. New-rule transfer and multi-step host control require later separate tests. No automatic launch.",
+  "scientific_confirmation": false,
+  "original_bridge_repaired": false,
+  "novelty_established": false,
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1/plan.json",
+      "source_sha256": "c7cc9fde579fc5deccb5d4cdd41c98974919aea733a790c3f6ca998659a27779"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1/COMPLETE.json",
+      "source_sha256": "39fc10a5d9d9c898ea7f9b23fd94441019505dabbd2cb88f4c56fa3c02246bb7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1/REPORT.json",
+      "source_sha256": "1bb6873c5c27b92ec66b119cf0ca82fbdfb112b1e7b10fbd0cdb8075ba7d5e85"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1/INDEPENDENT_AUDIT.json",
+      "source_sha256": "c68d135a5d770b2890aa658aa6f07b049bc5d8d2977694812770930b4ad6e791"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1/WORKER_COMPLETE.json",
+      "source_sha256": "c137cb71775e659861b5d48cd40b82b90c7136752386b9d2c8012a477fbf69c6"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+      "source_sha256": "0c150b2a1f19588198acba3a78b2b03c3c680051b1dd2c737d72b0d0a9f82d2f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1_PREPARATION/TERMINAL_REVIEW.json",
+      "source_sha256": "db60026c8bec1f411098b8ece197147d0d12690f7d82788a8a869a8493bcc772"
+    }
+  ],
+  "transformation": "Selected completed aggregate counts, fixed method, control outcomes and reviewed limits only. No raw hidden states, reader coefficients, score vectors, process identifiers, private account details or absolute local paths copied."
+}

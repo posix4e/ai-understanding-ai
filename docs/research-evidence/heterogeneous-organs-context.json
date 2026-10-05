@@ -188,10 +188,38 @@
     {
       "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/TERMINAL_INTERPRETATION_REVIEW.json",
       "source_sha256": "57288f335ed5dcc9d83101ce41c93317f37c15abd7ec39b669203f63e0ae89fb"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1/plan.json",
+      "source_sha256": "c7cc9fde579fc5deccb5d4cdd41c98974919aea733a790c3f6ca998659a27779"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1/COMPLETE.json",
+      "source_sha256": "39fc10a5d9d9c898ea7f9b23fd94441019505dabbd2cb88f4c56fa3c02246bb7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1/REPORT.json",
+      "source_sha256": "1bb6873c5c27b92ec66b119cf0ca82fbdfb112b1e7b10fbd0cdb8075ba7d5e85"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1/INDEPENDENT_AUDIT.json",
+      "source_sha256": "c68d135a5d770b2890aa658aa6f07b049bc5d8d2977694812770930b4ad6e791"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1/WORKER_COMPLETE.json",
+      "source_sha256": "c137cb71775e659861b5d48cd40b82b90c7136752386b9d2c8012a477fbf69c6"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+      "source_sha256": "0c150b2a1f19588198acba3a78b2b03c3c680051b1dd2c737d72b0d0a9f82d2f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_READER_V1_PREPARATION/TERMINAL_REVIEW.json",
+      "source_sha256": "db60026c8bec1f411098b8ece197147d0d12690f7d82788a8a869a8493bcc772"
     }
   ],
-  "transformation": "Reviewed primary-paper context and terminal development facts, including the separate retrospective writer recovery. Original stopped-run history and all earlier failures remain preserved. No raw model outputs copied.",
-  "updated_at_utc": "2026-10-05T17:09:32.595967+00:00",
+  "transformation": "Reviewed primary-paper context and terminal development facts, including the separate retrospective writer recovery and subsequent live reader connection check. Original stopped-run history and all earlier failures remain preserved. No raw model outputs copied.",
+  "updated_at_utc": "2026-10-05T17:41:01.351557+00:00",
   "external_primary_sources": [
     {
       "url": "https://arxiv.org/html/2601.17094v2",
@@ -206,11 +234,13 @@
   "latest_diagnostic": "A completed fixed-weight check passed all required controls. Forcing access to the relevant whole rule row gave 10 of 96 correct choices, compared with 16 normally. None of 96 pairs followed both selected rules. Every forced setting changed the delivered signal.",
   "diagnostic_limit": "The same four training worlds and one-action questions were reused. Whole-row forcing can change signal strength and the kind of input seen during training; earlier positions retain normal memory. No cause of the original learning failure, unseen-rule transfer or novelty is established.",
   "latest_address_reader": "A new offline supervised reader passed on 16 fitted combinations and 8 combinations excluded from the fit, with no state, action or joint address errors or ties. It used saved host vectors and made no new model calls.",
-  "address_reader_limit": "All 24 questions use one template and were already exposed during development. Four identical world copies were collapsed before the split. This FP64 reader is separate from the failed connector and has not been installed live. It establishes no answer writing, composition, unseen-rule transfer, original-failure cause or novelty.",
-  "next_step": "Prospectively check the fixed reader on live host signals. Only after that separate admission should a fixed one-step assembly be reviewed. No automatic launch.",
+  "address_reader_limit": "The original offline reader used one template and 24 questions already exposed during development. Four identical world copies were collapsed before its split. The later live connection check is reported separately. The reader remains separate from the failed connector; neither check establishes answer writing, composition, new-rule transfer, the original failure cause or novelty.",
+  "next_step": "Review a separate one-action connection from the live reader through rule information to the fixed writer. Cached probability access and execution of a replacement energy model are different tests. New-rule transfer and an internal host-controlled next query remain later questions. No automatic launch.",
   "latest_writer_attempt": "Historical original attempt: stopped on 5 October at 16:26 UTC because the audit rejected normal model-cache links. No behavioral result existed at that stop. The original STOP and public stop summary remain unchanged.",
   "writer_stop_limit": "The original run never completed its audit. A metadata follow-up alone did not grade scores. The later result is in a separate disclosed retrospective recovery, not an original-protocol completion.",
   "latest_writer_recovery": "A separate retrospective audit passed the unchanged complete checker and all original writer gates: 128/128 fitted-context choices, 128/128 fit-excluded-context choices and 768/768 cached-organ-vector compatibility cells, with zero ties. A separate recount agreed. No model calls, updates or refits were repeated.",
-  "writer_recovery_limit": "An 8,192-weight writer ranks an explicitly supplied answer among eight candidates. All data were development-exposed. Its 448 label pairs reuse 128 choices. Cached probabilities are not an executed energy transplant; the offline reader remains uninstalled and unjoined. No generation, calibrated probabilities, reasoning, new rules or novelty is established. Changed architecture, supervision and optimization prevent attributing the old bridge failure to one cause.",
-  "later_mechanistic_question": "After a fixed-interface swap to an independently learned new-rule module, does an intermediate host state causally determine the next rule query? An external controller doing the rollout would answer a different question."
+  "writer_recovery_limit": "An 8,192-weight writer ranks an explicitly supplied answer among eight candidates. All data were development-exposed. Its 448 label pairs reuse 128 choices. Cached probabilities are not an executed energy transplant. The reader later passed a separate live read-only check, but it remains unjoined to this writer. No generation, calibrated probabilities, reasoning, new rules or novelty is established. Changed architecture, supervision and optimization prevent attributing the old bridge failure to one cause.",
+  "later_mechanistic_question": "After a fixed-interface swap to an independently learned new-rule module, does an intermediate host state causally determine the next rule query? An external controller doing the rollout would answer a different question.",
+  "latest_live_reader": "The fixed reader passed a prospective live connection check at 17:36 UTC: all 24 starting states, actions and addresses were correct with no ties, using no new fit or training. All 72 bracket comparisons had identical captured hidden vectors and final output scores. A separate arithmetic audit and parent recount passed.",
+  "live_reader_limit": "The run used 72 host evaluations and 24 CPU FP64 reader applications on already exposed questions. It observed host signals without changing them. No organ, writer, world-model computation, new rules or multi-step task was run. This is a connection check, not a joined-system or novelty result."
 }
