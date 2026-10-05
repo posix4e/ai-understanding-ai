@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T19:00:51.172132+00:00",
+  "at_utc": "2026-10-05T20:19:12.687283+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -774,6 +774,75 @@
       "transformation": "Selected completed aggregate counts, fixed rules, work totals and reviewed limits only. No raw score arrays, hidden states, model weights, process identifiers, account details or absolute local paths copied. All earlier dated public summaries remain unchanged.",
       "sha256": "0e68d01fea9bc76a5b611d26188c508a5c7e2815e117f2d0e2e6f1ee09529f4d",
       "bytes": 4897
+    },
+    {
+      "file": "jev-controller-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_ADMISSION_V1/plan.json",
+          "source_sha256": "caf3e3bb4d9c6b6edd3aac87933d1a95118dfc1616bed9d09a5ab8861ca8c17a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_ADMISSION_V1/COMPLETE.json",
+          "source_sha256": "461744602af04035c31df01b31a040dfb954aec168934b1ef217bc8fc7f22ce3"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_ADMISSION_V1/REPORT.json",
+          "source_sha256": "770a58049dd60c86593970ceb520727fa7309c9b3a6178f919e13addde2aff93"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_ADMISSION_V1/INDEPENDENT_RECOUNT.json",
+          "source_sha256": "34147749bb79edcd475de7c84030bf93d396acb3b0de9c92e5a4d6f8ffbf660f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_ADMISSION_V1/PARENT_RECOUNT.json",
+          "source_sha256": "4b6e63d80b559ee86eb12e4608afd3f9dc95bca4046b6d5fbb87f3479350df90"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V1/STOPPED.json",
+          "source_sha256": "53c15db954ea7c301bbe850efb847a9b9da5bdbc68d6f2e6bcdb846543323e72"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V1_PREPARATION/STOP_TERMINAL_REVIEW.json",
+          "source_sha256": "df00842bb0d73784552690bdfdb2330b32bda0878483a29cb5beda746f16bd9d"
+        },
+        {
+          "source_path": "research/moe-mechanisms/jev_laya_name_conflict_v2/OPERATIONAL_AMENDMENT.json",
+          "source_sha256": "ca4221387322fe49d0c6d5f6d7535c68ac297508f2f41a770a488cb04f044cf0"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2/plan.json",
+          "source_sha256": "76765220bfecabf64af0fb36560a212f405ee22853a48875b4d6bd49b3fa612c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2/COMPLETE.json",
+          "source_sha256": "ea5b82450bbf0c43bfd706ca3b60fda966d2bbd818cde9613c8a4a43dc3372ff"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2/REPORT.json",
+          "source_sha256": "56dd50831fefb17f2727d6db1615f1ca9c554083add0644d32a15e4180fe0c54"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2/INDEPENDENT_AUDIT.json",
+          "source_sha256": "0df292e172732ea598e9510c9817833548ea9cd51fc0f57162544527e7ff3fa8"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2_PREPARATION/PARENT_RECOUNT.json",
+          "source_sha256": "23588ca1ea5630c37f6952cfbe78d8387f4849fba43636cc2266c580a77dae9b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2_PREPARATION/TERMINAL_REVIEW.json",
+          "source_sha256": "325eb56030f0a36c0a30da1ee59987860b10ae5d75c42c7e6c17b5dd7c62b9f4"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2_PREPARATION/BOUNDARY_INTERPRETATION.json",
+          "source_sha256": "21455bdbe694f09b2f990bb75085d224be736fef3e62a070990907ae3a9e9ff0"
+        }
+      ],
+      "transformation": "Selected completed aggregate counts, fixed comparisons, operational history and reviewed limits. No raw hidden states, per-case scores, model weights, process identifiers, credentials or absolute local paths copied. Earlier public evidence records remain unchanged.",
+      "sha256": "afbb500f1ecbf78262d06b7f9bb61fa5ddaad1dc3d94ca6023e0e8d4065dfaff",
+      "bytes": 12330
     }
   ],
   "absolute_local_path_redactions": 0,

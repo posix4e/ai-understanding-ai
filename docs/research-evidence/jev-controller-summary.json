@@ -1,0 +1,261 @@
+{
+  "record_type": "DERIVED_PUBLIC_COMPLETED_LAYA_CONTROLLER_SUMMARY",
+  "created_at_utc": "2026-10-05T20:19:12.687283+00:00",
+  "completed_at_utc": "2026-10-05T20:16:24.071511+00:00",
+  "status": "CONFIRMATION_HYPOTHESIS_NOT_SUPPORTED",
+  "plain_result": "Option names affected this open Laya model on a selected panel. The registered prediction that other contextual positions would carry more of the name-binding contrast than option-marker positions was not supported. This does not establish a new mechanism or a reliable controller.",
+  "model": {
+    "name": "Laya",
+    "model_revision": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+    "source_revision": "a4a8921afebfd852bba0000475cfb6ab737a124c",
+    "scope": "A separate open typed-decision model. These local tests did not run TypeSafe Jev or Cloudflare Clef.",
+    "runtime": "Pinned CPU FP32, four threads, SDPA; attention fast path disabled consistently for observed and unobserved calls."
+  },
+  "initial_tool_check": {
+    "distinct_related_inputs": 8,
+    "distinct_correct": 3,
+    "forward_calls": 16,
+    "observer_pairs_byte_exact": 8,
+    "ties": 0,
+    "implementation_pass": true,
+    "competence_gate_pass": false,
+    "scope": "Eight related invented tool-selection inputs, each run twice. Tools had different actual behavior and supplied feedback. This is not a population accuracy estimate; the failed requirement remains closed."
+  },
+  "name_binding_panel": {
+    "selected_states": 32,
+    "discovery_states": 16,
+    "confirmation_states": 16,
+    "states_per_workflow": 8,
+    "selection": "Fixed hash selection, balanced by the synthetic reference class within each workflow; no model-score selection.",
+    "question_change": "Explicit binary question definitions and original state strings were retained, while the question type was converted to a two-option choice. This is not unchanged original-API benchmark accuracy.",
+    "name_bindings": {
+      "polar_aligned": {
+        "false": "no",
+        "true": "yes"
+      },
+      "polar_reversed": {
+        "false": "yes",
+        "true": "no"
+      },
+      "neutral_forward": {
+        "false": "0",
+        "true": "1"
+      },
+      "neutral_reverse": {
+        "false": "1",
+        "true": "0"
+      }
+    },
+    "reference": "Synthetic teacher labels and probabilities; not independently verified ground truth.",
+    "native_reference_agreement": [
+      {
+        "workflow": "invoice_processing",
+        "phase": "discovery",
+        "states": 8,
+        "orders": {
+          "false_true": {
+            "polar_aligned": 8,
+            "polar_reversed": 1,
+            "neutral_forward": 8,
+            "neutral_reverse": 8,
+            "denominator": 8
+          },
+          "true_false": {
+            "polar_aligned": 8,
+            "polar_reversed": 3,
+            "neutral_forward": 8,
+            "neutral_reverse": 8,
+            "denominator": 8
+          }
+        }
+      },
+      {
+        "workflow": "agent_trace_observability",
+        "phase": "discovery",
+        "states": 8,
+        "orders": {
+          "false_true": {
+            "polar_aligned": 4,
+            "polar_reversed": 7,
+            "neutral_forward": 4,
+            "neutral_reverse": 4,
+            "denominator": 8
+          },
+          "true_false": {
+            "polar_aligned": 4,
+            "polar_reversed": 3,
+            "neutral_forward": 5,
+            "neutral_reverse": 4,
+            "denominator": 8
+          }
+        }
+      },
+      {
+        "workflow": "customer_service",
+        "phase": "confirmation",
+        "states": 8,
+        "orders": {
+          "false_true": {
+            "polar_aligned": 5,
+            "polar_reversed": 4,
+            "neutral_forward": 5,
+            "neutral_reverse": 6,
+            "denominator": 8
+          },
+          "true_false": {
+            "polar_aligned": 5,
+            "polar_reversed": 4,
+            "neutral_forward": 5,
+            "neutral_reverse": 6,
+            "denominator": 8
+          }
+        }
+      },
+      {
+        "workflow": "security_incidents",
+        "phase": "confirmation",
+        "states": 8,
+        "orders": {
+          "false_true": {
+            "polar_aligned": 5,
+            "polar_reversed": 4,
+            "neutral_forward": 5,
+            "neutral_reverse": 5,
+            "denominator": 8
+          },
+          "true_false": {
+            "polar_aligned": 5,
+            "polar_reversed": 4,
+            "neutral_forward": 4,
+            "neutral_reverse": 5,
+            "denominator": 8
+          }
+        }
+      }
+    ],
+    "discovery_pass": true,
+    "clear_conflict_states": 5,
+    "clear_conflict_workflow": "invoice_processing",
+    "clear_conflict_definition": "All six aligned/neutral binding-by-order decisions agree with the reference, while reversed polar names produce a unique opposite decision in both orders. Both reference classes occur."
+  },
+  "boundary_test": {
+    "method": "At the encoder-to-head boundary, replace the two option-marker rows, the other rows, or both, using the corresponding aligned-name input as donor for the reversed-name input. Run the original two-layer decision head and scorer. Facts and option definitions are the same between donor and recipient.",
+    "confirmation_states": 16,
+    "native_calls": 256,
+    "head_only_calls": 128,
+    "identity_corner_checks": 64,
+    "all_identity_checks_byte_exact": true,
+    "registered_hypothesis": "Context dominance: G > 0 and T = (context-only margin - marker-only margin) - 0.25*G > 0, pooled and in each workflow/order, with the state-clustered bootstrap lower bound for pooled T above zero. G is the full-donor minus full-recipient reference-logit margin.",
+    "registered_hypothesis_supported": false,
+    "descriptive_mean_margin_changes": {
+      "marker_shapley": 0.43986093858256936,
+      "context_shapley": -0.0013752412050962448,
+      "interaction": -0.0010829204693436623
+    },
+    "primary_T": -0.5508576041320339,
+    "primary_T_95_percentile_interval": [
+      -1.4894001682434463,
+      0.20457373642129736
+    ],
+    "interval_unit": "State, with both orders averaged before workflow-stratified resampling; two fixed confirmation workflows, 2,000 draws.",
+    "interpretation": "Descriptively, marker-state swaps carried most average name-binding contrast on this panel. This opposite-direction observation is not a replacement primary success. Marker states are contextualized and have a direct residual path to the marker-only final scorer; other positions act through attention. Near-zero complement-swap effect does not establish ignored context, a name-specific circuit, or a deployable repair."
+  },
+  "checks": {
+    "implementation_pass": true,
+    "independent_audit_status": "PASS",
+    "parent_raw_recount_status": "PASS_INDEPENDENT_PARENT_RAW_RECOUNT",
+    "parent_raw_choices_match": true,
+    "terminal_metadata_status": "PASS_TERMINAL_METADATA_REVIEW_WITH_OPERATIONAL_LOG_APPEND_NOTE",
+    "terminal_log_note": "The audit hashed its empty stdout log before appending its terminal status JSON. The terminal review reconciles this one operational-log change; scientific records and source hashes did not change."
+  },
+  "operational_history": {
+    "first_name_conflict_attempt": "Stopped before the first model forward because a logging argument name collided. No model outcome was available. Original STOP and sources remain unchanged.",
+    "separate_v2": "A disclosed operational amendment changed the logging parameter and output context, while preserving selected states, model, inputs, methods and scientific rules. This is not an independent scientific replication.",
+    "first_attempt_model_forwards": 0
+  },
+  "work": {
+    "initial_tool_model_forwards": 16,
+    "name_conflict_native_encoder_calls": 256,
+    "name_conflict_head_only_calls": 128,
+    "name_conflict_total_controller_calls": 384,
+    "name_conflict_elapsed_owner_seconds": 75.91581758399843,
+    "training_updates": 0,
+    "analytical_fits": 0,
+    "provider_calls": 0,
+    "provider_spend_usd": 0
+  },
+  "limits": [
+    "Reference agreement was weaker in the other workflows; invoice behavior is not a universal direction of bias.",
+    "The checkpoint was studied on official test states without proof that these states were unseen during its training.",
+    "Bindings, orders and head interventions reuse the same 32 states; they are not 384 independent cases.",
+    "This tests one model and a particular computational boundary, not heterogeneous organ coordination, new-rule transfer or planning.",
+    "No failed test was reclassified as a success, and no new mechanism or broadly reliable fix is established."
+  ],
+  "next_step": "A heterogeneous controller remains a proposal. It needs modules with distinct useful abilities, observable feedback, and comparisons with fixed selection, simple rules, random selection and all-module execution at matched cost. A separate design would be required before another study.",
+  "novelty_established": false,
+  "deployable_fix": false,
+  "automatic_next_study": false,
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_ADMISSION_V1/plan.json",
+      "source_sha256": "caf3e3bb4d9c6b6edd3aac87933d1a95118dfc1616bed9d09a5ab8861ca8c17a"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_ADMISSION_V1/COMPLETE.json",
+      "source_sha256": "461744602af04035c31df01b31a040dfb954aec168934b1ef217bc8fc7f22ce3"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_ADMISSION_V1/REPORT.json",
+      "source_sha256": "770a58049dd60c86593970ceb520727fa7309c9b3a6178f919e13addde2aff93"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_ADMISSION_V1/INDEPENDENT_RECOUNT.json",
+      "source_sha256": "34147749bb79edcd475de7c84030bf93d396acb3b0de9c92e5a4d6f8ffbf660f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_ADMISSION_V1/PARENT_RECOUNT.json",
+      "source_sha256": "4b6e63d80b559ee86eb12e4608afd3f9dc95bca4046b6d5fbb87f3479350df90"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V1/STOPPED.json",
+      "source_sha256": "53c15db954ea7c301bbe850efb847a9b9da5bdbc68d6f2e6bcdb846543323e72"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V1_PREPARATION/STOP_TERMINAL_REVIEW.json",
+      "source_sha256": "df00842bb0d73784552690bdfdb2330b32bda0878483a29cb5beda746f16bd9d"
+    },
+    {
+      "source_path": "research/moe-mechanisms/jev_laya_name_conflict_v2/OPERATIONAL_AMENDMENT.json",
+      "source_sha256": "ca4221387322fe49d0c6d5f6d7535c68ac297508f2f41a770a488cb04f044cf0"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2/plan.json",
+      "source_sha256": "76765220bfecabf64af0fb36560a212f405ee22853a48875b4d6bd49b3fa612c"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2/COMPLETE.json",
+      "source_sha256": "ea5b82450bbf0c43bfd706ca3b60fda966d2bbd818cde9613c8a4a43dc3372ff"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2/REPORT.json",
+      "source_sha256": "56dd50831fefb17f2727d6db1615f1ca9c554083add0644d32a15e4180fe0c54"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2/INDEPENDENT_AUDIT.json",
+      "source_sha256": "0df292e172732ea598e9510c9817833548ea9cd51fc0f57162544527e7ff3fa8"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2_PREPARATION/PARENT_RECOUNT.json",
+      "source_sha256": "23588ca1ea5630c37f6952cfbe78d8387f4849fba43636cc2266c580a77dae9b"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2_PREPARATION/TERMINAL_REVIEW.json",
+      "source_sha256": "325eb56030f0a36c0a30da1ee59987860b10ae5d75c42c7e6c17b5dd7c62b9f4"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_NAME_CONFLICT_V2_PREPARATION/BOUNDARY_INTERPRETATION.json",
+      "source_sha256": "21455bdbe694f09b2f990bb75085d224be736fef3e62a070990907ae3a9e9ff0"
+    }
+  ],
+  "transformation": "Selected completed aggregate counts, fixed comparisons, operational history and reviewed limits. No raw hidden states, per-case scores, model weights, process identifiers, credentials or absolute local paths copied. Earlier public evidence records remain unchanged."
+}
