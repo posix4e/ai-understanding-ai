@@ -72,10 +72,38 @@
     {
       "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/plan.json",
       "source_sha256": "94f2b56135cb3de13a00c0cd20e32e2e376306bf188e95b06610386f908c9eb4"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/plan.json",
+      "source_sha256": "430a0399c1f0f7c657ffaf1e81aa8fa18cbe79b84e9839d8faf6e9468383d004"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/COMPLETE.json",
+      "source_sha256": "5d60f7ba703862d2210b2181e517b211d715de9e33c4f3ca0f27fad5de521fdf"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/REPORT.json",
+      "source_sha256": "4722c07e06bf672d1a2a12b312d3ef1c4bf74f0a33983ce998b50c0f7a836955"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/INDEPENDENT_AUDIT.json",
+      "source_sha256": "8daf54a0184ac17edeeb539e37281bcc5cba03ea6f0f671b6b844abf0bfc1e98"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/WORKER_COMPLETE.json",
+      "source_sha256": "1902e6a9e4303deae4b7426e55444bcee99e6662b138a1cfcb94bde2ebe1c26f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1_PREPARATION/TERMINAL_REVIEW.json",
+      "source_sha256": "92961c3c05dd143bffba955bf10b8d418e8bb28a3b6710f364a2d5250d689c52"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1_PREPARATION/ROOT_TERMINAL_COUNTS.json",
+      "source_sha256": "338eb7942f15f9a6530eb5f62ee5a08070564a00a1a20583c20e30fd10777e6f"
     }
   ],
-  "transformation": "Three previously reviewed primary papers plus a directly verified primary paper summarized in plain language, with current development status bound to V2 completion, report, independent audit and terminal review. The prior V1 stop remains included. No raw learned arrays or partial model outputs copied.",
-  "updated_at_utc": "2026-10-05T14:23:22.343278+00:00",
+  "transformation": "Reviewed primary-paper context and terminal development facts, extended with the completed rule-access report, audit, terminal review and independent parent recount. Earlier failures and stops remain unchanged. No raw model outputs copied.",
+  "updated_at_utc": "2026-10-05T14:47:26.975617+00:00",
   "external_primary_sources": [
     {
       "url": "https://arxiv.org/html/2601.17094v2",
@@ -86,5 +114,7 @@
       ],
       "independently_read_at_utc": "2026-10-05T14:23:22.343278+00:00"
     }
-  ]
+  ],
+  "latest_diagnostic": "A completed fixed-weight check passed all required controls. Forcing access to the relevant whole rule row gave 10 of 96 correct choices, compared with 16 normally. None of 96 pairs followed both selected rules. Every forced setting changed the delivered signal.",
+  "diagnostic_limit": "The same four training worlds and one-action questions were reused. Whole-row forcing can change signal strength and the kind of input seen during training; earlier positions retain normal memory. No cause of the original learning failure, unseen-rule transfer or novelty is established."
 }

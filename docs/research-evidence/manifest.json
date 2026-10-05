@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T14:23:22.343278+00:00",
+  "at_utc": "2026-10-05T14:47:26.975617+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -225,11 +225,39 @@
         {
           "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V2/plan.json",
           "source_sha256": "94f2b56135cb3de13a00c0cd20e32e2e376306bf188e95b06610386f908c9eb4"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/plan.json",
+          "source_sha256": "430a0399c1f0f7c657ffaf1e81aa8fa18cbe79b84e9839d8faf6e9468383d004"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/COMPLETE.json",
+          "source_sha256": "5d60f7ba703862d2210b2181e517b211d715de9e33c4f3ca0f27fad5de521fdf"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/REPORT.json",
+          "source_sha256": "4722c07e06bf672d1a2a12b312d3ef1c4bf74f0a33983ce998b50c0f7a836955"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "8daf54a0184ac17edeeb539e37281bcc5cba03ea6f0f671b6b844abf0bfc1e98"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/WORKER_COMPLETE.json",
+          "source_sha256": "1902e6a9e4303deae4b7426e55444bcee99e6662b138a1cfcb94bde2ebe1c26f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1_PREPARATION/TERMINAL_REVIEW.json",
+          "source_sha256": "92961c3c05dd143bffba955bf10b8d418e8bb28a3b6710f364a2d5250d689c52"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1_PREPARATION/ROOT_TERMINAL_COUNTS.json",
+          "source_sha256": "338eb7942f15f9a6530eb5f62ee5a08070564a00a1a20583c20e30fd10777e6f"
         }
       ],
-      "transformation": "Three previously reviewed primary papers plus a directly verified primary paper summarized in plain language, with current development status bound to V2 completion, report, independent audit and terminal review. The prior V1 stop remains included. No raw learned arrays or partial model outputs copied.",
-      "sha256": "66931326c162ad13369e3b1ccb1b18c784211a711141591a268683603594b513",
-      "bytes": 5159,
+      "transformation": "Reviewed primary-paper context and terminal development facts, extended with the completed rule-access report, audit, terminal review and independent parent recount. Earlier failures and stops remain unchanged. No raw model outputs copied.",
+      "sha256": "92cf6cdf6dd47651e2646e99c3f39408cc583e21d448f693ca7784c8e3b1c29f",
+      "bytes": 7031,
       "external_primary_sources": [
         {
           "url": "https://arxiv.org/html/2601.17094v2",
@@ -291,6 +319,43 @@
       "transformation": "Selected completed aggregate counts, registered gates and reviewed limitations only. No raw output-score arrays, learned weights, memory values, training-loss sequences, account details or process identifiers copied.",
       "sha256": "0d6a5242c53a1745bdcc31e970c0d93c6d93c3cad881348f3697b4aa9d1be6e6",
       "bytes": 8983
+    },
+    {
+      "file": "organ-rule-read-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/plan.json",
+          "source_sha256": "430a0399c1f0f7c657ffaf1e81aa8fa18cbe79b84e9839d8faf6e9468383d004"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/COMPLETE.json",
+          "source_sha256": "5d60f7ba703862d2210b2181e517b211d715de9e33c4f3ca0f27fad5de521fdf"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/REPORT.json",
+          "source_sha256": "4722c07e06bf672d1a2a12b312d3ef1c4bf74f0a33983ce998b50c0f7a836955"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "8daf54a0184ac17edeeb539e37281bcc5cba03ea6f0f671b6b844abf0bfc1e98"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/WORKER_COMPLETE.json",
+          "source_sha256": "1902e6a9e4303deae4b7426e55444bcee99e6662b138a1cfcb94bde2ebe1c26f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1_PREPARATION/TERMINAL_REVIEW.json",
+          "source_sha256": "92961c3c05dd143bffba955bf10b8d418e8bb28a3b6710f364a2d5250d689c52"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1_PREPARATION/ROOT_TERMINAL_COUNTS.json",
+          "source_sha256": "338eb7942f15f9a6530eb5f62ee5a08070564a00a1a20583c20e30fd10777e6f"
+        }
+      ],
+      "transformation": "Selected aggregate condition counts, control outcomes, work totals and limits from the completed bound report, independent audit, terminal recalculation and parent raw-score recount. No raw scores, memories, weights, process identifiers or private account details copied.",
+      "sha256": "208d6da3ffaa77901cd0b6c963d4ef713b3a697aec029d4cb86bcfc37ece96b0",
+      "bytes": 11436
     }
   ],
   "absolute_local_path_redactions": 0,

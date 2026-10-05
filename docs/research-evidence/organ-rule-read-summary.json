@@ -1,0 +1,362 @@
+{
+  "record_type": "DERIVED_PUBLIC_COMPLETED_RULE_ACCESS_SUMMARY",
+  "created_at_utc": "2026-10-05T14:47:26.975617+00:00",
+  "status": "COMPLETED_EXPLORATORY_DIAGNOSTIC_NO_AGGREGATE_RESCUE",
+  "completed_at_utc": "2026-10-05T14:33:35.094201+00:00",
+  "question": "Does pointing the frozen connector to the relevant learned rule row improve its one-action choices?",
+  "panel": {
+    "questions": 96,
+    "worlds": 4,
+    "conditions": 6,
+    "reuse": "All one-action questions from the same four development worlds, already used during training. No held-out world or question selection.",
+    "scoring": "Strict unique highest score among eight state labels. Ties are unresolved and not correct. No generated-text scoring."
+  },
+  "intervention": {
+    "position": "Only the final question-position attention row in the internal connector.",
+    "relevant_row": "Selected from the question starting state and action; no answer label used for addressing.",
+    "alternative_row": "Same action, fixed next starting state cyclically among eight states. The alternative rule has a different correct label for every question.",
+    "information": "A complete memory row contains the state/action address and learned next-state probabilities. Earlier positions retain their normal rule information."
+  },
+  "conditions": [
+    {
+      "condition": "original",
+      "label": "Normal connection",
+      "questions": 96,
+      "original_rule": {
+        "correct": 16,
+        "wrong": 62,
+        "unresolved": 18
+      },
+      "alternative_rule": {
+        "correct": 9,
+        "wrong": 69,
+        "unresolved": 18
+      },
+      "per_world_original_rule": {
+        "dev00": {
+          "wrong": 17,
+          "correct": 3,
+          "unresolved": 4
+        },
+        "dev01": {
+          "wrong": 14,
+          "correct": 5,
+          "unresolved": 5
+        },
+        "dev02": {
+          "wrong": 18,
+          "unresolved": 1,
+          "correct": 5
+        },
+        "dev03": {
+          "wrong": 13,
+          "correct": 3,
+          "unresolved": 8
+        }
+      }
+    },
+    {
+      "condition": "sham",
+      "label": "Unchanged check",
+      "questions": 96,
+      "original_rule": {
+        "correct": 16,
+        "wrong": 62,
+        "unresolved": 18
+      },
+      "alternative_rule": {
+        "correct": 9,
+        "wrong": 69,
+        "unresolved": 18
+      },
+      "per_world_original_rule": {
+        "dev00": {
+          "wrong": 17,
+          "correct": 3,
+          "unresolved": 4
+        },
+        "dev01": {
+          "wrong": 14,
+          "correct": 5,
+          "unresolved": 5
+        },
+        "dev02": {
+          "wrong": 18,
+          "unresolved": 1,
+          "correct": 5
+        },
+        "dev03": {
+          "wrong": 13,
+          "correct": 3,
+          "unresolved": 8
+        }
+      }
+    },
+    {
+      "condition": "uniform",
+      "label": "Equal weight to all rule rows",
+      "questions": 96,
+      "original_rule": {
+        "correct": 14,
+        "wrong": 73,
+        "unresolved": 9
+      },
+      "alternative_rule": {
+        "correct": 12,
+        "wrong": 75,
+        "unresolved": 9
+      },
+      "per_world_original_rule": {
+        "dev00": {
+          "wrong": 17,
+          "correct": 3,
+          "unresolved": 4
+        },
+        "dev01": {
+          "wrong": 18,
+          "correct": 4,
+          "unresolved": 2
+        },
+        "dev02": {
+          "wrong": 18,
+          "correct": 5,
+          "unresolved": 1
+        },
+        "dev03": {
+          "wrong": 20,
+          "correct": 2,
+          "unresolved": 2
+        }
+      }
+    },
+    {
+      "condition": "question_row",
+      "label": "Force relevant rule row",
+      "questions": 96,
+      "original_rule": {
+        "correct": 10,
+        "wrong": 69,
+        "unresolved": 17
+      },
+      "alternative_rule": {
+        "correct": 8,
+        "wrong": 71,
+        "unresolved": 17
+      },
+      "per_world_original_rule": {
+        "dev00": {
+          "wrong": 19,
+          "unresolved": 3,
+          "correct": 2
+        },
+        "dev01": {
+          "wrong": 17,
+          "unresolved": 2,
+          "correct": 5
+        },
+        "dev02": {
+          "wrong": 15,
+          "correct": 2,
+          "unresolved": 7
+        },
+        "dev03": {
+          "wrong": 18,
+          "unresolved": 5,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "condition": "wrong_source_row",
+      "label": "Force different starting-state rule row",
+      "questions": 96,
+      "original_rule": {
+        "correct": 10,
+        "wrong": 68,
+        "unresolved": 18
+      },
+      "alternative_rule": {
+        "correct": 7,
+        "wrong": 71,
+        "unresolved": 18
+      },
+      "per_world_original_rule": {
+        "dev00": {
+          "wrong": 18,
+          "unresolved": 4,
+          "correct": 2
+        },
+        "dev01": {
+          "unresolved": 3,
+          "wrong": 17,
+          "correct": 4
+        },
+        "dev02": {
+          "unresolved": 7,
+          "wrong": 16,
+          "correct": 1
+        },
+        "dev03": {
+          "wrong": 17,
+          "unresolved": 4,
+          "correct": 3
+        }
+      }
+    },
+    {
+      "condition": "restored",
+      "label": "Restore normal connection",
+      "questions": 96,
+      "original_rule": {
+        "correct": 16,
+        "wrong": 62,
+        "unresolved": 18
+      },
+      "alternative_rule": {
+        "correct": 9,
+        "wrong": 69,
+        "unresolved": 18
+      },
+      "per_world_original_rule": {
+        "dev00": {
+          "wrong": 17,
+          "correct": 3,
+          "unresolved": 4
+        },
+        "dev01": {
+          "wrong": 14,
+          "correct": 5,
+          "unresolved": 5
+        },
+        "dev02": {
+          "wrong": 18,
+          "unresolved": 1,
+          "correct": 5
+        },
+        "dev03": {
+          "wrong": 13,
+          "correct": 3,
+          "unresolved": 8
+        }
+      }
+    }
+  ],
+  "joint_following": {
+    "correct_pairs": 0,
+    "total_pairs": 96,
+    "per_world": {
+      "dev00": 0,
+      "dev01": 0,
+      "dev02": 0,
+      "dev03": 0
+    },
+    "definition": "Relevant-row condition uniquely chooses the original answer AND wrong-source-row condition uniquely chooses the alternative-rule answer for the same question."
+  },
+  "controls": {
+    "required_controls_passed": true,
+    "independent_audit": "PASS",
+    "terminal_review": "PASS_TERMINAL_REVIEW",
+    "independent_parent_recount": "PASS_INDEPENDENT_RAW_SCORE_RECOUNT",
+    "exact": "Saved selected-score replay; source input/memory/prefix identity; unchanged and restored bridge outputs/scores; nonfinal-position identity; prescribed attention rows; BF16 cast and add.",
+    "bounded_arithmetic": "Independent projection and softmax reconstruction passed the numerical allowances fixed before execution. This is not exact equality of all FP32 arithmetic.",
+    "frozen_state_and_restoration_passed": true,
+    "new_study_gate": "Controls admit this exploratory comparison; no new scientific-success threshold or confirmation was registered."
+  },
+  "delivered_signal": {
+    "returned_bridge_output_changed_questions_vs_original": {
+      "original": 0,
+      "sham": 0,
+      "uniform": 96,
+      "question_row": 96,
+      "wrong_source_row": 96,
+      "restored": 0
+    },
+    "eight_score_vectors_changed_questions_vs_original": {
+      "sham": 0,
+      "uniform": 96,
+      "question_row": 96,
+      "wrong_source_row": 96,
+      "restored": 0
+    },
+    "final_position_actual_displacement_l2": {
+      "original": {
+        "minimum": 3.593020140091048,
+        "maximum": 9.873462806716919
+      },
+      "sham": {
+        "minimum": 3.593020140091048,
+        "maximum": 9.873462806716919
+      },
+      "uniform": {
+        "minimum": 4.846104523290706,
+        "maximum": 4.849248318750464
+      },
+      "question_row": {
+        "minimum": 1.3992393049949963,
+        "maximum": 15.513922744816753
+      },
+      "wrong_source_row": {
+        "minimum": 1.400387141324476,
+        "maximum": 15.51183635070414
+      },
+      "restored": {
+        "minimum": 3.593020140091048,
+        "maximum": 9.873462806716919
+      }
+    },
+    "meaning": "All 96 interventions in each forced condition changed the delivered signal. Signal magnitude was not matched between conditions; these norms are descriptive."
+  },
+  "work": {
+    "host_forwards": 576,
+    "backwards": 0,
+    "optimizer_steps": 0,
+    "organ_forwards": 0,
+    "bypass_forwards": 0,
+    "generated_tokens": 0,
+    "provider_calls": 0,
+    "owner_elapsed_seconds": 136.7033898329828
+  },
+  "finding": "The relevant-row condition gave 10 of 96 correct choices, versus 16 normally, 14 under equal weighting and 10 under the wrong-source row. It did not improve the total score or produce joint rule following. Individual choices can improve despite the lower total.",
+  "limits": [
+    "This reuses exposed development questions in four worlds; it is not held-out generalization.",
+    "Forcing a whole row changes both address and probability features. It can alter signal magnitude and differ from the training distribution.",
+    "Only one query position is changed; earlier positions retain natural rule information.",
+    "The result does not isolate retrieval, training, interface, answer decoding or downstream computation as the cause.",
+    "No inference of significance, intrinsic architecture superiority, inability to use all rule representations, unseen-rule transplantation or novelty.",
+    "The original development requirement remains failed. No automatic retry, extra training or further study is authorized by this diagnostic."
+  ],
+  "development_readiness_still_failed": true,
+  "scientific_confirmation": false,
+  "novelty_established": false,
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/plan.json",
+      "source_sha256": "430a0399c1f0f7c657ffaf1e81aa8fa18cbe79b84e9839d8faf6e9468383d004"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/COMPLETE.json",
+      "source_sha256": "5d60f7ba703862d2210b2181e517b211d715de9e33c4f3ca0f27fad5de521fdf"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/REPORT.json",
+      "source_sha256": "4722c07e06bf672d1a2a12b312d3ef1c4bf74f0a33983ce998b50c0f7a836955"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/INDEPENDENT_AUDIT.json",
+      "source_sha256": "8daf54a0184ac17edeeb539e37281bcc5cba03ea6f0f671b6b844abf0bfc1e98"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1/WORKER_COMPLETE.json",
+      "source_sha256": "1902e6a9e4303deae4b7426e55444bcee99e6662b138a1cfcb94bde2ebe1c26f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1_PREPARATION/TERMINAL_REVIEW.json",
+      "source_sha256": "92961c3c05dd143bffba955bf10b8d418e8bb28a3b6710f364a2d5250d689c52"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_RULE_READ_V1_PREPARATION/ROOT_TERMINAL_COUNTS.json",
+      "source_sha256": "338eb7942f15f9a6530eb5f62ee5a08070564a00a1a20583c20e30fd10777e6f"
+    }
+  ],
+  "transformation": "Selected aggregate condition counts, control outcomes, work totals and limits from the completed bound report, independent audit, terminal recalculation and parent raw-score recount. No raw scores, memories, weights, process identifiers or private account details copied."
+}
