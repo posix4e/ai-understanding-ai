@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Can a language model use a different internal module? An offline reader passed a narrow check. A separate answer-writer attempt stopped because of an audit file-location bug and has no valid result. Read the evidence and limits.">
+  <meta name="description" content="Can a language model use a different internal module? An offline reader passed. A separate review recovered a passing answer-writer result after an audit bug. The parts are not joined. Read the evidence and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">The offline address reader passed its narrow development check. A separate answer-writer attempt stopped because of an audit file-location bug. It has no valid result. The reader has not been joined to a writer. Earlier failures and stops, including the Cloudflare final audit, remain in the record. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
+        <p class="scope-line">The offline address reader passed its narrow development check. A separate review of saved records recovered a passing answer-writer result after an audit bug. The original run remains stopped. The reader and writer have not been joined. Earlier failures and stops, including the Cloudflare final audit, remain in the record. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -35,7 +35,7 @@
         <div class="figure-heading"><p class="eyebrow">Two separate studies</p><span class="figure-number" aria-hidden="true">01</span></div>
         <h2 id="two-studies-title">Inside one model.<br> Between different models.</h2>
         <div class="result-lines">
-          <div><div><h3>Inside Granite: writer audit stopped</h3><p>The offline reader remains passed. The separate answer-writer attempt has no valid score. The parts have not been joined or tested with new world rules.</p></div></div>
+          <div><div><h3>Inside Granite: separate parts passed</h3><p>The reader passed offline. The writer passed a retrospective check of saved records. The parts have not been joined or tested with new world rules.</p></div></div>
           <div><div><h3>Cloudflare: final audit stopped</h3><p>The run to test choices between complete models stopped. It has no final scientific grade.</p></div></div>
         </div>
       </aside>
@@ -44,7 +44,7 @@
     <section class="section wrap" id="organs" aria-labelledby="organs-title">
       <div class="section-heading"><p class="eyebrow">Current direction / Different internal parts</p><h2 id="organs-title">A small world model inside a language model.</h2></div>
       <div class="section-body">
-        <p class="lead">The rule modules learned their small worlds. The connected system failed. A new offline reader passed, but the separate writer attempt has no valid result.</p>
+        <p class="lead">The first connected system failed. A new offline reader and a separate answer writer have now passed narrow checks. A working combined system remains untested.</p>
         <p>“Organ” is an analogy for parts with different jobs.</p>
         <p>Our module is trained to score which state should follow an action. It gives each possible next state an energy score: lower means a better match. Here, energy is a learned score, not electrical power. A small connector passes this information into the language model while it processes the question.</p>
         <p>This is an internal connection. It is different from sending a question to one of several separate models. The language model’s existing weights stay fixed while the connector learns.</p>
@@ -57,7 +57,8 @@
             <tr><th scope="row">Second attempt, same learning recipe</th><td>Completed; learning requirement failed</td><td>All four rule modules passed their own check. Both systems missed the required performance on training questions.</td></tr>
             <tr><th scope="row">Force access to one rule</th><td>Controls passed; total score did not improve</td><td>Selecting the relevant rule row gave 10 of 96 correct choices, compared with 16 normally.</td></tr>
             <tr><th scope="row">New address reader</th><td>Passed offline</td><td>16 of 16 fitted combinations and 8 of 8 excluded combinations were correct. All 24 were exposed development questions.</td></tr>
-            <tr><th scope="row">New answer-signal writer</th><td>Audit stopped; no valid result</td><td>A file-location bug stopped the audit. No behavioral pass or fail has been assigned.</td></tr>
+            <tr><th scope="row">Original writer run</th><td>Stopped during audit</td><td>A file-location bug stopped the first audit before scoring. That STOP record remains unchanged.</td></tr>
+            <tr><th scope="row">Separate writer recovery</th><td>Passed retrospective check</td><td>All 1,024 final choices matched the supplied answer code. No training or model calls were repeated.</td></tr>
             <tr><th scope="row">Replace the module with unseen rules</th><td>Not run</td><td>This would test whether a fixed host and connector can use a new module.</td></tr>
           </tbody>
         </table>
@@ -112,12 +113,27 @@
         <p>This used one fixed mathematical fit with 64-bit arithmetic, plus a separate calculation to check it. No new language-model, rule-module or provider calls were made.</p>
         <aside class="plain-note"><strong>This is a narrow development result.</strong>All 24 questions used one wording template and were already known during development. The eight check combinations were excluded only from this new fit. This reader is separate from the old connector and has not been installed in the model. It has not written answers, combined action steps, or used new world rules. The earlier failures remain unchanged.</aside>
         <p class="source-line"><a href="./research-evidence/organ-address-reader-summary.json">Offline reader result, fixed split and independent checks</a></p>
-        <h3 id="organ-writer">The separate writer attempt has no valid result.</h3>
+        <h3 id="organ-writer">The original writer run stopped before grading.</h3>
         <p>This check was designed to train a new connection that makes the fixed language model choose among eight candidate answer labels from a supplied outcome-probability vector. It deliberately supplies the answer code. It does not ask the model to find a rule, plan actions, or use an unseen world.</p>
-        <p>On 5 October at 16:26 UTC, a path-handling bug in our audit rejected normal links in the local model cache. No final result report or study completion record was produced. The saved answer scores have not been graded.</p>
+        <p>On 5 October at 16:26 UTC, a path-handling bug in our audit rejected normal links in the local model cache. The original run produced no final result report or study completion record. At that stop, the saved answer scores had not been graded.</p>
         <p>A separate check of records and file hashes confirmed that the worker logged all 3,168 host evaluations and 2,048 training updates, with no paid model calls. The nine model files matched their registered hashes. This check did not decode answer arrays or validate the predictions.</p>
-        <aside class="plain-note"><strong>This is an audit failure, not a learning result.</strong>The original records remain unchanged, and this attempt will not be rerun. The offline reader result still stands on its own. Joining the parts remains blocked until there is a valid writer assessment.</aside>
-        <p class="source-line"><a href="./research-evidence/organ-writer-summary.json">Writer stop, work accounting and limits</a></p>
+        <aside class="plain-note"><strong>The original STOP remains in place.</strong>It records an audit failure, not a failed learning result. The separate recovery below does not complete or rewrite the original run.</aside>
+        <p class="source-line"><a href="./research-evidence/organ-writer-summary.json">Original writer stop: dated record before recovery</a></p>
+        <h3 id="organ-writer-recovery">A separate review recovered a passing writer result.</h3>
+        <p>At 17:02 UTC, a new retrospective audit completed. We declared an explicit exception to the original rule against grading after a stop. The recovery corrected the model-file path check and used a separate audit process and deadline. It ran the unchanged full numerical checker once, with the original scores, final weights and pass requirements. No model calls, training updates or refits were repeated.</p>
+        <p>The new writer has 8,192 learned weights. It takes eight supplied probabilities and makes the fixed language model rank one of eight candidate answer labels. We deliberately supply the answer code: this checks whether the signal can be read out.</p>
+        <table class="followup-table">
+          <caption>Recovered writer assessment. All final choices passed the original requirements. A separate recount agreed. Ties counted as failures.</caption>
+          <thead><tr><th scope="col">Supplied-code check</th><th scope="col">Correct choices</th><th scope="col">Ties</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Synthetic codes · fitted question contexts</th><td>128 / 128</td><td>0</td></tr>
+            <tr><th scope="row">Synthetic codes · contexts excluded from this fit</th><td>128 / 128</td><td>0</td></tr>
+            <tr><th scope="row">96 saved rule-module vectors × 8 fit-excluded contexts</th><td>768 / 768</td><td>0</td></tr>
+          </tbody>
+        </table>
+        <p>All 448 paired label switches followed both supplied codes. These pairs come from the 128 fit-excluded synthetic choices; they are not extra independent trials. All 72 no-change control comparisons matched exactly.</p>
+        <aside class="plain-note"><strong>This is an engineering recovery, not an organ transplant.</strong>All 24 question contexts and 96 saved probability vectors were already exposed during development. The reader is not installed live or joined to the writer. The writer used cached probabilities; it did not run a replacement energy module. This result does not establish text generation, reasoning, calibrated probabilities, new-world transfer or novelty. It also does not explain why the old joint connector failed: the architecture, supervision and optimization differ.</aside>
+        <p class="source-line"><a href="./research-evidence/organ-writer-recovery-summary.json">Retrospective writer result, declared exception and checks</a> · <a href="./research-evidence/organ-writer-summary.json">Unchanged original stop record</a></p>
         <aside class="plain-note"><strong>The first learning run lost its controller.</strong>The program that supervised the run disappeared after an interruption. We stopped the remaining worker on 5 October at 12:59 UTC. Fourteen of 16 training rounds finished, with 5,652 of 6,144 paired updates complete. No final checkpoint, prediction panel, report, or independent result check was produced. This is an execution failure, not evidence that the model failed to learn.</aside>
         <p class="source-line"><a href="./research-evidence/organ-resource-summary.json">Completed connector check and limits</a> · <a href="./research-evidence/organ-development-stop-summary.json">Why the learning run stopped</a> · <a href="./research-evidence/heterogeneous-organs-context.json">Prior work and the current question</a> · <a href="#next">What comes next</a></p>
       </div>
@@ -257,13 +273,14 @@
 
     <section class="limits-band" id="next" aria-labelledby="next-title">
       <div class="wrap limits-inner">
-        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Resolve the audit stop<br> before joining the parts.</h2></div>
+        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Check the live reader.<br> Then test the joined parts.</h2></div>
         <div class="section-body">
           <p class="lead">A useful explanation must survive a new test.</p>
           <p>The copy-and-format idea around expert 9 remains closed. The language task passed, but its follow-up prediction check failed. That failed plan stays closed. Its rules and results stay unchanged.</p>
           <p>The second attempt completed, but it failed on the short training questions as well as the longer probes. We cannot describe this as only a failure to combine steps. The current evidence does not isolate why learning failed.</p>
           <p>The completed access check did not improve the total number of correct answers when we pointed the frozen connector to the relevant rule. A new offline reader now identifies the requested address on 24 exposed development questions. This is a separate fitted reader, not a repair of the old connection or an explanation of its failure.</p>
-          <p>The separate writer attempt has now stopped because of a model-file path bug in the audit. It has no valid behavioral result. Next, we need to resolve that path handling before any new scientific assessment. The original attempt stays closed; no automatic rerun or next study starts. We cannot join the reader and writer until both have valid separate checks.</p>
+          <p>The writer now has a valid retrospective engineering assessment. The original run still remains stopped. Next, we need a separately reviewed check that the fixed reader works on live language-model signals without changing them. Only if it passes should we test a fixed reader-and-writer connection on one-step rules. No new study starts automatically.</p>
+          <p>The stronger question comes later: after we swap in a module trained on new world rules, can an intermediate state inside the host control the next rule query? If outside code updates the state or supplies the final answer, that is an external solver. Successful answer transfer alone does not show that the host performs the steps.</p>
           <p>A later transplant test would keep the language model and connector fixed, replace only the rule module with one trained on new world rules, and test new action sequences. That test has not run. Even success in four training worlds would not prove transfer to unseen rules.</p>
           <p>We do not yet claim a new mechanism, a broadly reliable repair, or a novel research result.</p>
         </div>
@@ -282,7 +299,8 @@
           <li><a href="./research-evidence/organ-development-summary.json">Completed second attempt<span>Rule modules passed; task learning requirement failed</span></a></li>
           <li><a href="./research-evidence/organ-rule-read-summary.json">Forced rule-access check<span>Controls passed; 10 of 96 correct with the relevant row</span></a></li>
           <li><a href="./research-evidence/organ-address-reader-summary.json">Offline address reader<span>16 fitted and 8 excluded combinations correct; exposed development only</span></a></li>
-          <li><a href="./research-evidence/organ-writer-summary.json">Answer-writer audit stopped<span>File-location bug; no behavioral result</span></a></li>
+          <li><a href="./research-evidence/organ-writer-recovery-summary.json">Recovered writer assessment<span>All fixed choices passed; retrospective engineering only</span></a></li>
+          <li><a href="./research-evidence/organ-writer-summary.json">Original answer-writer stop<span>Unchanged dated record before recovery</span></a></li>
           <li><a href="./research-evidence/heterogeneous-organs-context.json">Established model-composition work<span>Energy models, frozen language models and video guidance</span></a></li>
           <li><a href="./research-evidence/granite-route-compute-summary.json">Direct intervention tool<span>Controls passed on two reused sentences</span></a></li>
         </ul></div>

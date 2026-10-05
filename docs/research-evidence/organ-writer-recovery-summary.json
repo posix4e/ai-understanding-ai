@@ -1,0 +1,140 @@
+{
+  "record_type": "DERIVED_PUBLIC_RETROSPECTIVE_WRITER_RECOVERY_SUMMARY",
+  "created_at_utc": "2026-10-05T17:09:32.595967+00:00",
+  "status": "RECOVERED_ENGINEERING_WRITER_PASS",
+  "completed_at_utc": "2026-10-05T17:02:41.902275+00:00",
+  "plain_result": "A separate retrospective engineering audit recovered a passing supplied-answer writer result. The original run remains STOPPED. The reader and writer have not been joined.",
+  "question": "Can a new probability-only connection make a fixed language host rank the supplied answer first among eight candidate labels?",
+  "method": {
+    "writer_parameters": 8192,
+    "writer": "One bias-free linear map from eight centered supplied probabilities into the final question position before host block 20.",
+    "host": "Frozen language host. The answer code is supplied intentionally.",
+    "endpoint": "Strict unique top rank among eight candidate answer labels; ties fail.",
+    "data_exposure": "All 24 contexts and 96 saved organ probability vectors were exposed development data. Eight contexts were excluded only from this writer fit."
+  },
+  "recovery": {
+    "original_study_completed": false,
+    "original_stop_preserved": true,
+    "exception": "An explicit pre-grading amendment allowed one retrospective audit despite the original STOP prohibition. It changed cache-path validation, live-owner handling, output context, terminal-file allowlist and deadline.",
+    "unchanged": "The complete original numerical checker, scientific thresholds, final checkpoint, question panel and all behavioral gates.",
+    "checker_invocations": 1,
+    "full_archive_host_forwards_checked": 3168,
+    "full_archive_training_updates_checked": 2048,
+    "new_model_calls": 0,
+    "new_training_updates": 0,
+    "new_provider_calls": 0,
+    "elapsed_seconds": 10.23789558300632,
+    "refit_or_checkpoint_selection": false
+  },
+  "groups": {
+    "train_eval": {
+      "n": 128,
+      "correct": 128,
+      "ties": 0,
+      "pass": true
+    },
+    "held_eval": {
+      "n": 128,
+      "correct": 128,
+      "ties": 0,
+      "pass": true
+    },
+    "organ_eval": {
+      "n": 768,
+      "correct": 768,
+      "ties": 0,
+      "pass": true
+    }
+  },
+  "group_meanings": {
+    "train_eval": "128 synthetic-code choices in 16 fitted contexts.",
+    "held_eval": "128 synthetic-code choices in 8 fit-excluded contexts at two fixed strengths.",
+    "organ_eval": "96 unchanged saved organ probability vectors crossed with the 8 fit-excluded contexts. This does not execute an organ or select the requested rule."
+  },
+  "paired_switches": {
+    "n": 448,
+    "both_followed": 448,
+    "derived_from_held_choices": 128,
+    "additional_independent_trials": false
+  },
+  "controls": {
+    "no_change_comparisons": 72,
+    "all_hidden_raw_equal": true,
+    "maximum_full_vocabulary_score_difference": 0.0,
+    "implementation_pass": true,
+    "original_behavioral_gate_pass": true,
+    "separate_parent_recount_agrees": true,
+    "parent_final_choice_rows_recounted": 1024
+  },
+  "limits": [
+    "This is a disclosed retrospective engineering result, not completion of the original registered run or fresh confirmation.",
+    "The eight probabilities explicitly supply an answer code. The writer did not identify the requested rule, perform planning or execute the learned energy module.",
+    "Cached-vector compatibility is not a live energy-module transplant. The reader remains offline and has not been connected to the writer.",
+    "The result establishes no text generation, full-vocabulary top choice, probability calibration, composition, unseen-rule transfer or novelty.",
+    "The successful new writer does not isolate why the earlier joint bridge failed; architecture, supervision and optimization differ.",
+    "The numerical checker verified saved forward arithmetic and weight records; it did not replay backpropagation or the optimizer.",
+    "The earlier learning failures and all original STOP records remain unchanged."
+  ],
+  "next_step": "Prospectively check the fixed reader on live host signals. Only after that separate admission should a fixed one-step assembly be reviewed. No automatic launch.",
+  "later_mechanistic_question": "After a fixed-interface swap to an independently learned new-rule module, does an intermediate host state causally determine the next rule query? An external controller doing the rollout would answer a different question.",
+  "novelty_established": false,
+  "sources": [
+    {
+      "source_path": "research/moe-mechanisms/organ_writer_recovery_v1/AMENDMENT.md",
+      "source_sha256": "ca57266fd7f7d54e8b8adf0a6514b3b4bc45d3b1dbd5da14d9424c147a12eca9"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/DESIGN.json",
+      "source_sha256": "61ee79885963cf961baea08f8f052b2953d1a80e48f0638968bb11aa111e2dfc"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/plan.json",
+      "source_sha256": "7257c155ba3b903fe2273d24d33f0acc43c597f52505759572e49567f2d0a811"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/REGISTRATION.json",
+      "source_sha256": "74748c893c2d0185d02ebe6c53d6f44793003153947b1f6047c19e2fe770c34d"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/PROVENANCE_VALIDATED.json",
+      "source_sha256": "bdd30cdaee908b289aff162af259d978992dfe8e6f6c72b59ca6475d1339d642"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/CHECKER_DISPATCH.json",
+      "source_sha256": "ba04518330adc16bc6358b1cf4e232663cfdb049850eb562bb8454b5c4e2481e"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/RECOVERED_REPORT.json",
+      "source_sha256": "16c8206771c0e8c61d2d22ff78bc964d8ee1b4354909f4735b6f8450bfe4dac2"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/COMPLETE.json",
+      "source_sha256": "f42724f2ba596666474ced30aeb7c2fdb516d6956b6f50662d84b105642a0fe7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+      "source_sha256": "3a2a5cfd0ac95083040a70509816d5f9abcaae6d20dbcd70bd4bb4c1aa7b2822"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/TERMINAL_INTERPRETATION_REVIEW.json",
+      "source_sha256": "57288f335ed5dcc9d83101ce41c93317f37c15abd7ec39b669203f63e0ae89fb"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/plan.json",
+      "source_sha256": "3fff59be6b320911afa015550731a8ee34c9a07b0dc5771b23bf05466971873c"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/STOPPED.json",
+      "source_sha256": "8adb5448ac62a55671db079c61cd65ebe41ab6f143480ebd3fd5f0f8194fdd60"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/AUDIT_FAILURE.json",
+      "source_sha256": "e3867717e41a753faa19b041c63072d71407d2c942e83c0120830f88ac1480f7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1_PREPARATION/STOP_TERMINAL_REVIEW.json",
+      "source_sha256": "5d9ca0da837c57eaa025be8e54a58b9eb005b3f25e96512a125527352360f423"
+    }
+  ],
+  "transformation": "Selected completed aggregate scores, declared recovery departures, control totals and reviewed limits only. No raw scores, probabilities, weights, hidden states, losses, process identifiers, account details or absolute local paths copied. The original public STOP summary remains byte-identical."
+}

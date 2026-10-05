@@ -148,10 +148,50 @@
     {
       "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1_PREPARATION/STOP_TERMINAL_REVIEW.json",
       "source_sha256": "5d9ca0da837c57eaa025be8e54a58b9eb005b3f25e96512a125527352360f423"
+    },
+    {
+      "source_path": "research/moe-mechanisms/organ_writer_recovery_v1/AMENDMENT.md",
+      "source_sha256": "ca57266fd7f7d54e8b8adf0a6514b3b4bc45d3b1dbd5da14d9424c147a12eca9"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/DESIGN.json",
+      "source_sha256": "61ee79885963cf961baea08f8f052b2953d1a80e48f0638968bb11aa111e2dfc"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/plan.json",
+      "source_sha256": "7257c155ba3b903fe2273d24d33f0acc43c597f52505759572e49567f2d0a811"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/REGISTRATION.json",
+      "source_sha256": "74748c893c2d0185d02ebe6c53d6f44793003153947b1f6047c19e2fe770c34d"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/PROVENANCE_VALIDATED.json",
+      "source_sha256": "bdd30cdaee908b289aff162af259d978992dfe8e6f6c72b59ca6475d1339d642"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/CHECKER_DISPATCH.json",
+      "source_sha256": "ba04518330adc16bc6358b1cf4e232663cfdb049850eb562bb8454b5c4e2481e"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/RECOVERED_REPORT.json",
+      "source_sha256": "16c8206771c0e8c61d2d22ff78bc964d8ee1b4354909f4735b6f8450bfe4dac2"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/COMPLETE.json",
+      "source_sha256": "f42724f2ba596666474ced30aeb7c2fdb516d6956b6f50662d84b105642a0fe7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+      "source_sha256": "3a2a5cfd0ac95083040a70509816d5f9abcaae6d20dbcd70bd4bb4c1aa7b2822"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/TERMINAL_INTERPRETATION_REVIEW.json",
+      "source_sha256": "57288f335ed5dcc9d83101ce41c93317f37c15abd7ec39b669203f63e0ae89fb"
     }
   ],
-  "transformation": "Reviewed primary-paper context and terminal development facts, with completed rule-access and offline address-reader results plus the separate writer audit stop. Earlier failures and stops remain unchanged. No raw model outputs copied.",
-  "updated_at_utc": "2026-10-05T16:31:22.126179+00:00",
+  "transformation": "Reviewed primary-paper context and terminal development facts, including the separate retrospective writer recovery. Original stopped-run history and all earlier failures remain preserved. No raw model outputs copied.",
+  "updated_at_utc": "2026-10-05T17:09:32.595967+00:00",
   "external_primary_sources": [
     {
       "url": "https://arxiv.org/html/2601.17094v2",
@@ -167,7 +207,10 @@
   "diagnostic_limit": "The same four training worlds and one-action questions were reused. Whole-row forcing can change signal strength and the kind of input seen during training; earlier positions retain normal memory. No cause of the original learning failure, unseen-rule transfer or novelty is established.",
   "latest_address_reader": "A new offline supervised reader passed on 16 fitted combinations and 8 combinations excluded from the fit, with no state, action or joint address errors or ties. It used saved host vectors and made no new model calls.",
   "address_reader_limit": "All 24 questions use one template and were already exposed during development. Four identical world copies were collapsed before the split. This FP64 reader is separate from the failed connector and has not been installed live. It establishes no answer writing, composition, unseen-rule transfer, original-failure cause or novelty.",
-  "next_step": "Resolve the audit path handling before any new scientific assessment. Joining reader and writer remains blocked pending a valid writer check. No automatic rerun or next study.",
-  "latest_writer_attempt": "The separate answer-writer attempt stopped because of a model-file path bug in the audit. Its saved answer scores remain ungraded; no behavioral pass or fail has been assigned.",
-  "writer_stop_limit": "The worker logged all 3,168 forwards and 2,048 updates, but the independent numerical audit did not complete. A later metadata and hash check did not grade answers or convert the STOP into a result. The separate offline reader remains passed; no joined system or unseen-rule transfer was tested."
+  "next_step": "Prospectively check the fixed reader on live host signals. Only after that separate admission should a fixed one-step assembly be reviewed. No automatic launch.",
+  "latest_writer_attempt": "Historical original attempt: stopped on 5 October at 16:26 UTC because the audit rejected normal model-cache links. No behavioral result existed at that stop. The original STOP and public stop summary remain unchanged.",
+  "writer_stop_limit": "The original run never completed its audit. A metadata follow-up alone did not grade scores. The later result is in a separate disclosed retrospective recovery, not an original-protocol completion.",
+  "latest_writer_recovery": "A separate retrospective audit passed the unchanged complete checker and all original writer gates: 128/128 fitted-context choices, 128/128 fit-excluded-context choices and 768/768 cached-organ-vector compatibility cells, with zero ties. A separate recount agreed. No model calls, updates or refits were repeated.",
+  "writer_recovery_limit": "An 8,192-weight writer ranks an explicitly supplied answer among eight candidates. All data were development-exposed. Its 448 label pairs reuse 128 choices. Cached probabilities are not an executed energy transplant; the offline reader remains uninstalled and unjoined. No generation, calibrated probabilities, reasoning, new rules or novelty is established. Changed architecture, supervision and optimization prevent attributing the old bridge failure to one cause.",
+  "later_mechanistic_question": "After a fixed-interface swap to an independently learned new-rule module, does an intermediate host state causally determine the next rule query? An external controller doing the rollout would answer a different question."
 }

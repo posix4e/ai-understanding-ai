@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T16:31:22.126179+00:00",
+  "at_utc": "2026-10-05T17:09:32.595967+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -301,11 +301,51 @@
         {
           "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1_PREPARATION/STOP_TERMINAL_REVIEW.json",
           "source_sha256": "5d9ca0da837c57eaa025be8e54a58b9eb005b3f25e96512a125527352360f423"
+        },
+        {
+          "source_path": "research/moe-mechanisms/organ_writer_recovery_v1/AMENDMENT.md",
+          "source_sha256": "ca57266fd7f7d54e8b8adf0a6514b3b4bc45d3b1dbd5da14d9424c147a12eca9"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/DESIGN.json",
+          "source_sha256": "61ee79885963cf961baea08f8f052b2953d1a80e48f0638968bb11aa111e2dfc"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/plan.json",
+          "source_sha256": "7257c155ba3b903fe2273d24d33f0acc43c597f52505759572e49567f2d0a811"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/REGISTRATION.json",
+          "source_sha256": "74748c893c2d0185d02ebe6c53d6f44793003153947b1f6047c19e2fe770c34d"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/PROVENANCE_VALIDATED.json",
+          "source_sha256": "bdd30cdaee908b289aff162af259d978992dfe8e6f6c72b59ca6475d1339d642"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/CHECKER_DISPATCH.json",
+          "source_sha256": "ba04518330adc16bc6358b1cf4e232663cfdb049850eb562bb8454b5c4e2481e"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/RECOVERED_REPORT.json",
+          "source_sha256": "16c8206771c0e8c61d2d22ff78bc964d8ee1b4354909f4735b6f8450bfe4dac2"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/COMPLETE.json",
+          "source_sha256": "f42724f2ba596666474ced30aeb7c2fdb516d6956b6f50662d84b105642a0fe7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+          "source_sha256": "3a2a5cfd0ac95083040a70509816d5f9abcaae6d20dbcd70bd4bb4c1aa7b2822"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/TERMINAL_INTERPRETATION_REVIEW.json",
+          "source_sha256": "57288f335ed5dcc9d83101ce41c93317f37c15abd7ec39b669203f63e0ae89fb"
         }
       ],
-      "transformation": "Reviewed primary-paper context and terminal development facts, with completed rule-access and offline address-reader results plus the separate writer audit stop. Earlier failures and stops remain unchanged. No raw model outputs copied.",
-      "sha256": "5cbd65bf064783a3230f53b1c2b5a01158c4adba6b2709f1cf33438b587c9a3e",
-      "bytes": 10631,
+      "transformation": "Reviewed primary-paper context and terminal development facts, including the separate retrospective writer recovery. Original stopped-run history and all earlier failures remain preserved. No raw model outputs copied.",
+      "sha256": "d08a416e4f604c4232e91919558734ccfa61ecfedd40b0b5a35d8360e8e7cea6",
+      "bytes": 13630,
       "external_primary_sources": [
         {
           "url": "https://arxiv.org/html/2601.17094v2",
@@ -470,6 +510,71 @@
       "transformation": "Stopped-run metadata and selected design context only. No answer scores, losses, probability values, weights, hidden states, process identifiers, account details or absolute local paths copied.",
       "sha256": "450d3557b5be35234be610dde0d34b9d576ecbaeb96bc82768a85ff460219be4",
       "bytes": 4607
+    },
+    {
+      "file": "organ-writer-recovery-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "research/moe-mechanisms/organ_writer_recovery_v1/AMENDMENT.md",
+          "source_sha256": "ca57266fd7f7d54e8b8adf0a6514b3b4bc45d3b1dbd5da14d9424c147a12eca9"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/DESIGN.json",
+          "source_sha256": "61ee79885963cf961baea08f8f052b2953d1a80e48f0638968bb11aa111e2dfc"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/plan.json",
+          "source_sha256": "7257c155ba3b903fe2273d24d33f0acc43c597f52505759572e49567f2d0a811"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/REGISTRATION.json",
+          "source_sha256": "74748c893c2d0185d02ebe6c53d6f44793003153947b1f6047c19e2fe770c34d"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/PROVENANCE_VALIDATED.json",
+          "source_sha256": "bdd30cdaee908b289aff162af259d978992dfe8e6f6c72b59ca6475d1339d642"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/CHECKER_DISPATCH.json",
+          "source_sha256": "ba04518330adc16bc6358b1cf4e232663cfdb049850eb562bb8454b5c4e2481e"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/RECOVERED_REPORT.json",
+          "source_sha256": "16c8206771c0e8c61d2d22ff78bc964d8ee1b4354909f4735b6f8450bfe4dac2"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1/COMPLETE.json",
+          "source_sha256": "f42724f2ba596666474ced30aeb7c2fdb516d6956b6f50662d84b105642a0fe7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+          "source_sha256": "3a2a5cfd0ac95083040a70509816d5f9abcaae6d20dbcd70bd4bb4c1aa7b2822"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_RECOVERY_V1_PREPARATION/TERMINAL_INTERPRETATION_REVIEW.json",
+          "source_sha256": "57288f335ed5dcc9d83101ce41c93317f37c15abd7ec39b669203f63e0ae89fb"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/plan.json",
+          "source_sha256": "3fff59be6b320911afa015550731a8ee34c9a07b0dc5771b23bf05466971873c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/STOPPED.json",
+          "source_sha256": "8adb5448ac62a55671db079c61cd65ebe41ab6f143480ebd3fd5f0f8194fdd60"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1/AUDIT_FAILURE.json",
+          "source_sha256": "e3867717e41a753faa19b041c63072d71407d2c942e83c0120830f88ac1480f7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_WRITER_V1_PREPARATION/STOP_TERMINAL_REVIEW.json",
+          "source_sha256": "5d9ca0da837c57eaa025be8e54a58b9eb005b3f25e96512a125527352360f423"
+        }
+      ],
+      "transformation": "Selected completed aggregate scores, declared recovery departures, control totals and reviewed limits only. No raw scores, probabilities, weights, hidden states, losses, process identifiers, account details or absolute local paths copied. The original public STOP summary remains byte-identical.",
+      "sha256": "b5e82d81e36322457e4529754c4d5d76061769f3378bfe99039f190dce4f7912",
+      "bytes": 7521
     }
   ],
   "absolute_local_path_redactions": 0,
