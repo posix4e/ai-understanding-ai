@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A research-in-progress snapshot. Identical expert outputs can combine into different internal values. A fresh copy test failed; a language-agreement check passed. Read the checks and limits.">
+  <meta name="description" content="A research-in-progress snapshot. A language check passed, but a follow-up prediction check failed. Read the evidence, failed tests and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we predict and repair an AI mistake?</h1>
         <p class="hero-deck">We want to understand why a model gives an answer. A useful explanation should predict when it will fail. It should also help us test a specific repair.</p>
-        <p class="scope-line">This is a research draft, not peer reviewed. The numerical checks found a limit on repeatability in this setup. A fresh copy test failed before any expert was changed. A separate language check passed. We have no new cognitive mechanism or demonstrated repair. GPT-2 work is paused.</p>
+        <p class="scope-line">This is a research draft, not peer reviewed. A language check passed, but its follow-up measurement test failed. The larger expert-removal study will not run under that failed plan. Earlier copy and numerical failures remain in the record. We have no new cognitive mechanism or demonstrated repair. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -127,8 +127,29 @@
       </div>
     </section>
 
+    <section class="section wrap" id="controls" aria-labelledby="controls-title">
+      <div class="section-heading"><p class="eyebrow">05 / A prediction check</p><h2 id="controls-title">The measurement test failed.</h2></div>
+      <div class="section-body">
+        <p class="lead">Correct language choices did not make our internal predictions accurate enough.</p>
+        <p>We reused two sentences from the language check. We made small changes to one internal vector and compared the measured effect with a prediction from the model’s local slope, called a gradient. We fixed the rules before the test and repeated it in a fresh program run.</p>
+        <table class="followup-table">
+          <caption>Completed on 5 October 2026 at 03:04 UTC. Each row has two sentences, each tested in two program runs.</caption>
+          <thead><tr><th scope="col">Later routing</th><th scope="col">Prediction checks passed</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Normal expert choices and weights</th><td>0 / 4</td></tr>
+            <tr><th scope="row">Fixed expert choices</th><td>0 / 4</td></tr>
+            <tr><th scope="row">Fixed expert choices and weights</th><td>2 / 4</td></tr>
+          </tbody>
+        </table>
+        <p>The starting values matched. Checks with no internal change kept the original scores. At the tested position, the recorded later expert choices were unchanged across the normal-routing test points. Yet 10 of 12 prediction checks missed the fixed error limit. A separate calculation confirmed the failure. The two passes came from the same sentence, repeated.</p>
+        <aside class="plain-note"><strong>The planned larger test stays closed.</strong>We cannot use this failed measurement check to explain which experts cause grammar behavior. Rounding and nonlinear responses remain possible contributors. This test does not isolate the cause of the mismatch or establish that the gradient code is wrong.</aside>
+        <p>All 44 model evaluations and 12 gradient calculations completed. No expert removal was returned to the model, no fresh discovery sentences were used, and no provider fees were added. The two reused sentences give a narrow implementation check, not 12 independent scientific examples.</p>
+        <p class="source-line"><a href="./research-evidence/granite-agreement-controls-summary.json">Failed measurement check, fixed rules and independent audit</a></p>
+      </div>
+    </section>
+
     <section class="section wrap" id="routing" aria-labelledby="routing-title">
-      <div class="section-heading"><p class="eyebrow">05 / Between complete models</p><h2 id="routing-title">Different models can answer different questions.</h2></div>
+      <div class="section-heading"><p class="eyebrow">06 / Between complete models</p><h2 id="routing-title">Different models can answer different questions.</h2></div>
       <div class="section-body">
         <p class="lead">The training set contains room for a better choice.</p>
         <p>At the <time datetime="2026-10-05T01:30:45Z">5 October 2026, 01:30 UTC</time> snapshot, the selection phase was complete and its scoring had a separate check. Certification was running. This dated snapshot contains no final routing result.</p>
@@ -152,20 +173,19 @@
 
     <section class="limits-band" id="next" aria-labelledby="next-title">
       <div class="wrap limits-inner">
-        <div class="section-heading"><p class="eyebrow">06 / The next goal</p><h2 id="next-title">Check ability.<br> Then test a cause.</h2></div>
+        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Keep the failures.<br> Review a new question.</h2></div>
         <div class="section-body">
           <p class="lead">A useful explanation must survive a new test.</p>
-          <p>The numerical checks are complete. We are retiring the copy-and-format idea around the earlier expert, called expert 9, as the main research path. This failed copy test will remain closed.</p>
-          <p>The fixed language check passed. We can now design a test of what causes that behavior. Expert 9 has no special role in this new question.</p>
-          <p>Next, predict which internal change will damage this behavior, then test that prediction on fresh sentences. One question is whether changing an expert also changes the choices made by later parts of the model. This is a proposal, not a completed causal test. It needs unchanged-model controls before any damage or repair test.</p>
-          <p>The proposed contribution score is an existing research method. A useful finding would explain when it predicts real damage and why it fails. Failed predictions stay in the record. We do not yet claim a new mechanism or a broadly reliable repair.</p>
+          <p>The copy-and-format idea around expert 9 remains closed. The language task passed, but the new measurement check failed. That failed plan stays closed. Its rules and results stay unchanged.</p>
+          <p>We are reviewing a different question: do some experts help one another, or can one replace another? A possible test would compare the direct effects of removing either expert alone and both together. This is only a research direction. It needs a separate plan, reliable controls and a check against existing papers before any new experiment.</p>
+          <p>We do not yet claim a new mechanism, a broadly reliable repair, or a novel research result.</p>
         </div>
       </div>
     </section>
 
     <section class="evidence-section wrap" id="evidence" aria-labelledby="evidence-title">
       <div class="evidence-heading">
-        <div><p class="eyebrow">07 / Check the evidence</p><h2 id="evidence-title">Selected summary records.</h2></div>
+        <div><p class="eyebrow">08 / Check the evidence</p><h2 id="evidence-title">Selected summary records.</h2></div>
         <p>These JSON files contain selected summaries and source references. Derived summaries are labeled. Large audits, raw traces, and partial answers are not included. Separate code checks are part of this project, not an external replication. <a href="./research-evidence/manifest.json">Copy manifest</a>.</p>
       </div>
       <div class="evidence-grid">
@@ -179,6 +199,7 @@
           <li><a href="./research-evidence/granite-combine-replay-summary.json">Saved-input test<span>Combining and rounding limits</span></a></li>
           <li><a href="./research-evidence/granite-competence-summary.json">Basic ability check<span>8 of 24 correct in each run; test stopped</span></a></li>
           <li><a href="./research-evidence/granite-agreement-summary.json">Language ability check<span>96 of 96 comparisons passed in both runs</span></a></li>
+          <li><a href="./research-evidence/granite-agreement-controls-summary.json">Internal prediction check<span>10 of 12 checks failed; larger test closed</span></a></li>
         </ul></div>
         <div class="evidence-group"><h3>External model routing</h3><ul>
           <li><a href="./research-evidence/routing-training-summary.json">Training results<span>Counts across six models</span></a></li>

@@ -1,0 +1,393 @@
+{
+  "study": "GRANITE_AGREEMENT_CONTROLS_V1",
+  "status": "COMPLETE_IMPLEMENTATION_ADMISSION_FAILED",
+  "completed_at_utc": "2026-10-05T03:04:49.375012+00:00",
+  "summary_created_at_utc": "2026-10-05T03:18:59.375746+00:00",
+  "research_status": "Completed negative implementation admission. The larger gradient-based causal proposal is closed by its fixed prerequisite. No mechanism or novelty claim.",
+  "plain_language": "The model kept its original grammar scores when we made no internal change. But small internal changes disagreed with the gradient forecast in10of12 fixed checks, including all normal-routing checks. The two passes used the same plural sentence in separate runs. Later expert choices at the tested position stayed the same across the recorded native test points. This does not isolate the cause of the mismatch.",
+  "model": {
+    "name": "ibm-granite/granite-3.1-1b-a400m-instruct",
+    "revision": "0da7a48b0276d500ce5922fd2b33944091fc6c09",
+    "device": "mps",
+    "dtype": "bfloat16",
+    "source_layer_zero_based": 15,
+    "downstream_layers": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ]
+  },
+  "design": {
+    "fixtures": [
+      {
+        "id": "family-00-singular-opposite",
+        "case_id": "family-00-singular-opposite-grammatical",
+        "family_id": "family-00",
+        "sentence": "The window near the walls is open.",
+        "input_ids": [
+          0,
+          1318,
+          3223,
+          12398,
+          322,
+          45839,
+          438,
+          2156,
+          32
+        ],
+        "verb_input_index": 6,
+        "position": 5,
+        "correct_verb_id": 438,
+        "incorrect_verb_id": 884
+      },
+      {
+        "id": "family-01-plural-opposite",
+        "case_id": "family-01-plural-opposite-grammatical",
+        "family_id": "family-01",
+        "sentence": "The chairs near the sofa are comfortable.",
+        "input_ids": [
+          0,
+          1318,
+          663,
+          22159,
+          12398,
+          322,
+          309,
+          1028,
+          83,
+          884,
+          37836,
+          444,
+          32
+        ],
+        "verb_input_index": 9,
+        "position": 8,
+        "correct_verb_id": 884,
+        "incorrect_verb_id": 438
+      }
+    ],
+    "fresh_processes": 2,
+    "modes": {
+      "N": "Native routing",
+      "S": "Fixed downstream expert membership with recomputed weights",
+      "SG": "Fixed downstream membership and reference weights aligned by expert identity"
+    },
+    "relative_perturbation_amplitude": 0.015625,
+    "scope": "Single source token position predicting is/are; two already-used grammatical screen sentences. No discovery or confirmation families."
+  },
+  "results": {
+    "gate_pass": false,
+    "finite_difference_checks": {
+      "N": {
+        "PASS": 0,
+        "FAIL": 4,
+        "total": 4
+      },
+      "S": {
+        "PASS": 0,
+        "FAIL": 4,
+        "total": 4
+      },
+      "SG": {
+        "PASS": 2,
+        "FAIL": 2,
+        "total": 4
+      }
+    },
+    "finite_difference_failures": 10,
+    "finite_difference_passes": 2,
+    "finite_difference_rows": [
+      {
+        "process": "p00",
+        "fixture": "family-00-singular-opposite",
+        "mode": "N",
+        "gradient_projection": 0.35222910391166806,
+        "observed_margin_difference": 0.25,
+        "absolute_error": 0.10222910391166806,
+        "allowed_error": 0.06647291039116682,
+        "finite_difference_status": "FAIL",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p00",
+        "fixture": "family-00-singular-opposite",
+        "mode": "S",
+        "gradient_projection": 0.3525723237544298,
+        "observed_margin_difference": 0.25,
+        "absolute_error": 0.10257232375442982,
+        "allowed_error": 0.06650723237544298,
+        "finite_difference_status": "FAIL",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p00",
+        "fixture": "family-00-singular-opposite",
+        "mode": "SG",
+        "gradient_projection": 0.3487274453509599,
+        "observed_margin_difference": 0.25,
+        "absolute_error": 0.0987274453509599,
+        "allowed_error": 0.06612274453509599,
+        "finite_difference_status": "FAIL",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p00",
+        "fixture": "family-01-plural-opposite",
+        "mode": "N",
+        "gradient_projection": 0.2921536565554561,
+        "observed_margin_difference": 0.375,
+        "absolute_error": 0.08284634344454389,
+        "allowed_error": 0.06046536565554561,
+        "finite_difference_status": "FAIL",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p00",
+        "fixture": "family-01-plural-opposite",
+        "mode": "S",
+        "gradient_projection": 0.2917113160001463,
+        "observed_margin_difference": 0.125,
+        "absolute_error": 0.16671131600014633,
+        "allowed_error": 0.06042113160001464,
+        "finite_difference_status": "FAIL",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p00",
+        "fixture": "family-01-plural-opposite",
+        "mode": "SG",
+        "gradient_projection": 0.2869017273060308,
+        "observed_margin_difference": 0.25,
+        "absolute_error": 0.03690172730603081,
+        "allowed_error": 0.05994017273060308,
+        "finite_difference_status": "PASS",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p01",
+        "fixture": "family-00-singular-opposite",
+        "mode": "N",
+        "gradient_projection": 0.35253957886015996,
+        "observed_margin_difference": 0.25,
+        "absolute_error": 0.10253957886015996,
+        "allowed_error": 0.066503957886016,
+        "finite_difference_status": "FAIL",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p01",
+        "fixture": "family-00-singular-opposite",
+        "mode": "S",
+        "gradient_projection": 0.3510100175626576,
+        "observed_margin_difference": 0.25,
+        "absolute_error": 0.1010100175626576,
+        "allowed_error": 0.06635100175626577,
+        "finite_difference_status": "FAIL",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p01",
+        "fixture": "family-00-singular-opposite",
+        "mode": "SG",
+        "gradient_projection": 0.34878972824662924,
+        "observed_margin_difference": 0.25,
+        "absolute_error": 0.09878972824662924,
+        "allowed_error": 0.06612897282466293,
+        "finite_difference_status": "FAIL",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p01",
+        "fixture": "family-01-plural-opposite",
+        "mode": "N",
+        "gradient_projection": 0.29183932169689797,
+        "observed_margin_difference": 0.375,
+        "absolute_error": 0.08316067830310203,
+        "allowed_error": 0.0604339321696898,
+        "finite_difference_status": "FAIL",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p01",
+        "fixture": "family-01-plural-opposite",
+        "mode": "S",
+        "gradient_projection": 0.2923112747084815,
+        "observed_margin_difference": 0.5,
+        "absolute_error": 0.2076887252915185,
+        "allowed_error": 0.06048112747084815,
+        "finite_difference_status": "FAIL",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      },
+      {
+        "process": "p01",
+        "fixture": "family-01-plural-opposite",
+        "mode": "SG",
+        "gradient_projection": 0.28708188009113655,
+        "observed_margin_difference": 0.25,
+        "absolute_error": 0.037081880091136554,
+        "allowed_error": 0.05995818800911366,
+        "finite_difference_status": "PASS",
+        "starting_point_valid": true,
+        "native_support_stable": true,
+        "geometry_pass": true,
+        "resolved": true
+      }
+    ],
+    "invalid_starting_points": 0,
+    "native_endpoint_support_crossings": 0,
+    "unchanged_state_and_position_controls_pass": true,
+    "all_unchanged_sham_margins_match_native": true,
+    "native_margins_by_fixture": {
+      "family-00-singular-opposite": 2.5,
+      "family-01-plural-opposite": 5.0
+    },
+    "NS_gradient_checks": [
+      {
+        "process": "p00",
+        "fixture": "family-00-singular-opposite",
+        "left_norm": 1.8743022254881816,
+        "right_norm": 1.874009565309124,
+        "l2": 0.019356204580407394,
+        "relative_l2": 0.010327152322174652,
+        "cosine": 0.9999466788271029,
+        "same_point": true,
+        "pass": false
+      },
+      {
+        "process": "p00",
+        "fixture": "family-01-plural-opposite",
+        "left_norm": 1.462302862096038,
+        "right_norm": 1.4597166068259184,
+        "l2": 0.0142102680939932,
+        "relative_l2": 0.009717732531566315,
+        "cosine": 0.9999542659561099,
+        "same_point": true,
+        "pass": true
+      },
+      {
+        "process": "p01",
+        "fixture": "family-00-singular-opposite",
+        "left_norm": 1.8741993541452817,
+        "right_norm": 1.8756122679371638,
+        "l2": 0.018800146320531053,
+        "relative_l2": 0.010023471610797169,
+        "cosine": 0.9999500110878824,
+        "same_point": true,
+        "pass": false
+      },
+      {
+        "process": "p01",
+        "fixture": "family-01-plural-opposite",
+        "left_norm": 1.4622639028203903,
+        "right_norm": 1.4625002530377302,
+        "l2": 0.012881279654181418,
+        "relative_l2": 0.00880771106016971,
+        "cosine": 0.9999612189040497,
+        "same_point": true,
+        "pass": true
+      }
+    ],
+    "NS_gradient_passes": 2,
+    "NS_gradient_failures": 2,
+    "repeat_gradient_checks_passed": 6,
+    "repeat_gradient_checks_total": 6
+  },
+  "frozen_rules": {
+    "thresholds": {
+      "minimum_margin": 0.0,
+      "maximum_absolute_sham_bias": 0.125,
+      "maximum_absolute_repeat_margin_difference": 0.125,
+      "minimum_gradient_norm": 0.0,
+      "minimum_perturbation_norm_ratio": 0.5,
+      "maximum_perturbation_norm_ratio": 1.5,
+      "minimum_direction_cosine": 0.99,
+      "minimum_abs_gradient_projection": 0.125,
+      "maximum_directional_check_absolute_error": 0.03125,
+      "maximum_directional_check_relative_error": 0.1,
+      "maximum_NS_gradient_relative_l2": 0.01,
+      "minimum_NS_gradient_cosine": 0.9999,
+      "maximum_repeat_gradient_relative_l2": 0.05,
+      "minimum_repeat_gradient_cosine": 0.999,
+      "maximum_softmax_bf16_steps": 1
+    },
+    "finite_difference_error_formula": "abs(observed plus-minus margin difference - gradient dot actual plus-minus displacement) <=0.03125+0.10*abs(prediction)",
+    "failure_action": "Preserve negative result; no amplitude,input,precision,backend,tolerance or retry rescue. Do not run the3456-forward proposal."
+  },
+  "audit": {
+    "independent_numerical_status": "PASS",
+    "independent_gate_matches_failed_primary": true,
+    "numeric_absolute_comparison_tolerance": 1e-09,
+    "terminal_execution_review": "PASS",
+    "source_bindings_verified": 16,
+    "worker_artifacts_hashed": 136,
+    "meaning": "AuditPASS confirms integrity and agreement with the negative result; it is not a scientific admission pass or external replication."
+  },
+  "work": {
+    "forwards": 44,
+    "backwards": 12,
+    "processes": 2,
+    "elapsed_seconds": 55.79193354098243,
+    "returned_expert_lesions": 0,
+    "generated_tokens": 0,
+    "training_updates": 0,
+    "paid_calls": 0,
+    "estimated_provider_fees_usd": 0
+  },
+  "sources": {
+    "outputs/moe-mechanisms/GRANITE_AGREEMENT_CONTROLS_V1/plan.json": "7ca33f10ea04c957f4e1b375289ae205ee600e3c948f753f9c38bc6ca885fa2a",
+    "outputs/moe-mechanisms/GRANITE_AGREEMENT_CONTROLS_V1/REGISTRATION.json": "02e4dc068edd77031edb0550b8fc39fe1ebad27154c083cd639ffec6d3166dd8",
+    "outputs/moe-mechanisms/GRANITE_AGREEMENT_CONTROLS_V1/STARTED.json": "c4328cf120ad7228e914550fbd0d512eab75ada8ae7ff04c3088f8b2290b1042",
+    "outputs/moe-mechanisms/GRANITE_AGREEMENT_CONTROLS_V1/execution.jsonl": "dc3e5868ade740d299f6ab1d7472684ec8c828552d6176933d4d37ee95cdf79e",
+    "outputs/moe-mechanisms/GRANITE_AGREEMENT_CONTROLS_V1/COMPLETE.json": "547f8c5902c5e510d958cb7128032a3598e0f2181cae4729cb7b42b292311314",
+    "outputs/moe-mechanisms/GRANITE_AGREEMENT_CONTROLS_V1/REPORT.json": "5ff1bb80ee6396f4b54cbe5d88f3e71cdfff48681240c8d04a17e111357b9392",
+    "outputs/moe-mechanisms/GRANITE_AGREEMENT_CONTROLS_V1/INDEPENDENT_NUMERICAL_AUDIT.json": "6f51ee55badc5bb9515986930bef42a47b1da25cf035599b20fa0ad594026daf",
+    "outputs/moe-mechanisms/AGREEMENT_CONTROLS_V1_AUDIT_PREPARATION/TERMINAL_EXECUTION_REVIEW.json": "f9a225b505d0475330dc9c2c6bf3d079f86b5e3ec71c0f904ff2e4ed0c502353"
+  },
+  "limitations": [
+    "Only two reused fixtures; modes and repeats are not independent language examples.",
+    "Finite-step disagreement does not establish an incorrect gradient implementation or a routing mechanism. Rounding, finite-step nonlinearity and implementation/backend effects are possible contributors; none was isolated.",
+    "Stable endpoint supports do not establish unchanged membership at every point along the unobserved interpolation path.",
+    "S andSG gradients define different controlled functions; their perturbation directions are mode-specific. Cross-mode differences are not a clean mediation decomposition.",
+    "The local plan was frozen before inference, not externally registered.",
+    "The earlier96/96 grammar-preference screen remains valid within its stated scope. This negative result prevents the planned causal extension."
+  ],
+  "next_step": "Keep the completed failed admission and main gradient proposal closed. Review a distinct forward-only cooperation/backup question against prior work; no new experiment is registered or launched."
+}
