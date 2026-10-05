@@ -60,6 +60,7 @@
         </table>
         <aside class="plain-note"><strong>The resource check used hand-built rules.</strong>It used one short input and a fixed table. No world model was trained. A training update is not evidence of better answers, useful planning, or a successful organ transplant.</aside>
         <p>Other researchers already connect different models. <a href="https://arxiv.org/html/2401.02412v1">CALM</a> connects internal language-model representations through a trained adapter. <a href="https://arxiv.org/html/2506.09985v1">V-JEPA 2</a> predicts future representations and uses them for planning. <a href="https://arxiv.org/html/2608.29904v1">Off-Manifold Refinement</a> uses a world model to guide a video generator through a trained adapter. These are precedents, not evidence that our proposed language-model transplant works.</p>
+        <p><a href="https://arxiv.org/html/2601.17094v2">The Mouth is Not the Brain</a> connects an energy-based model to GPT-2 through a trained connection. GPT-2’s weights stay fixed. The test writes product reviews. Predicting changes over time remains future work. Changing either model needs a newly trained connection.</p>
         <h3 id="organ-development">A completed second attempt failed the learning requirement.</h3>
         <p>The second attempt kept the same worlds, model settings and training budget. It completed on 5 October at 13:41 UTC. Each learned energy module ranked the correct next state first for all 24 transitions in its own training world. That did not make the combined system reliable on the task.</p>
         <p>We scored eight possible next states. A tie for the highest score counted as a failure. The comparison model received the same captured language features and rule information. These counts cover four worlds.</p>
@@ -237,7 +238,7 @@
           <li><a href="./research-evidence/organ-resource-summary.json">Connector and resource check<span>One small input; fixed rules; no learned dynamics</span></a></li>
           <li><a href="./research-evidence/organ-development-stop-summary.json">First learning run stopped<span>Run controller lost; no task grade for this attempt</span></a></li>
           <li><a href="./research-evidence/organ-development-summary.json">Completed second attempt<span>Rule modules passed; task learning requirement failed</span></a></li>
-          <li><a href="./research-evidence/heterogeneous-organs-context.json">Established model-composition work<span>CALM, V-JEPA 2 and video guidance</span></a></li>
+          <li><a href="./research-evidence/heterogeneous-organs-context.json">Established model-composition work<span>Energy models, frozen language models and video guidance</span></a></li>
           <li><a href="./research-evidence/granite-route-compute-summary.json">Direct intervention tool<span>Controls passed on two reused sentences</span></a></li>
         </ul></div>
         <div class="evidence-group"><h3>Inside Granite</h3><ul>

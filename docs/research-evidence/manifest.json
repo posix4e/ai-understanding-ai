@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T13:49:56.871196+00:00",
+  "at_utc": "2026-10-05T14:23:22.343278+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -227,9 +227,20 @@
           "source_sha256": "94f2b56135cb3de13a00c0cd20e32e2e376306bf188e95b06610386f908c9eb4"
         }
       ],
-      "transformation": "Three previously reviewed primary papers summarized in plain language, with current development status bound to V2 completion, report, independent audit and terminal review. The prior V1 stop remains included. No raw learned arrays or partial model outputs copied.",
-      "sha256": "0b02649132218561296aeb791fc678e71aa318b8b5870c26dfc3fcb0adb5b04c",
-      "bytes": 4217
+      "transformation": "Three previously reviewed primary papers plus a directly verified primary paper summarized in plain language, with current development status bound to V2 completion, report, independent audit and terminal review. The prior V1 stop remains included. No raw learned arrays or partial model outputs copied.",
+      "sha256": "66931326c162ad13369e3b1ccb1b18c784211a711141591a268683603594b513",
+      "bytes": 5159,
+      "external_primary_sources": [
+        {
+          "url": "https://arxiv.org/html/2601.17094v2",
+          "version_date": "2026-03-31",
+          "sections": [
+            "3.1–3.3",
+            "7.2–7.3"
+          ],
+          "independently_read_at_utc": "2026-10-05T14:23:22.343278+00:00"
+        }
+      ]
     },
     {
       "file": "organ-development-stop-summary.json",
