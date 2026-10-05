@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A fixed language model used a live energy module to rank next-state answers in four small known worlds. The one-action connection passed. Read the controls, earlier failures and limits.">
+  <meta name="description" content="A live energy connection passed its one-action check. A later native host check copied 192 of 192 states but added one correctly on 147 of 192. Read the fixed requirements and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">The fixed reader, learned energy modules and answer writer now work together for one action in four small known worlds. All 96 requested-rule choices passed. Deliberately changing the queried starting state changed all 96 choices to that rule’s answer. Earlier failures and stops, including the original writer run and Cloudflare final audit, remain in the record. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
+        <p class="scope-line">The fixed reader, energy modules and writer work together for one action in four small known worlds. A later check of the host alone passed copying, but missed the fixed requirement for adding one. That planned hidden-state test is closed. A Jev-style controller is a separate proposed direction. Earlier failures and stops remain in the record. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -35,7 +35,7 @@
         <div class="figure-heading"><p class="eyebrow">Two separate studies</p><span class="figure-number" aria-hidden="true">01</span></div>
         <h2 id="two-studies-title">Inside one model.<br> Between different models.</h2>
         <div class="result-lines">
-          <div><div><h3>Inside Granite: one-action connection passed</h3><p>The joined system ran the selected energy module and followed its one-action rules. It used known worlds and questions. New rules and multiple steps remain untested.</p></div></div>
+          <div><div><h3>Inside Granite: next-step requirement failed</h3><p>The one-action connection passed. In a later host-only check, copying scored 192 / 192 and adding one scored 147 / 192. The planned hidden-state ADD test will not proceed.</p></div></div>
           <div><div><h3>Cloudflare: final audit stopped</h3><p>The run to test choices between complete models stopped. It has no final scientific grade.</p></div></div>
         </div>
       </aside>
@@ -61,6 +61,7 @@
             <tr><th scope="row">Separate writer recovery</th><td>Passed retrospective check</td><td>All 1,024 final choices matched the supplied answer code. No training or model calls were repeated.</td></tr>
             <tr><th scope="row">Fixed reader on live signals</th><td>Passed</td><td>All 24 starting states, actions and addresses were correct. No new fit or training was needed. The writer and rule modules were not run.</td></tr>
             <tr><th scope="row">Live reader → energy module → writer</th><td>Passed one-action check</td><td>All 96 requested-rule answers and all 96 deliberately changed queries were followed. The system ran the energy modules; it did not use stored answer probabilities.</td></tr>
+            <tr><th scope="row">Host alone: copy and add one</th><td>Completed; requirement failed</td><td>Copying passed 192 / 192. Adding one passed 147 / 192, below the fixed 192 / 192 requirement. No organ or connector ran.</td></tr>
             <tr><th scope="row">Replace the module with unseen rules</th><td>Not run</td><td>This would test whether a fixed host and connector can use a new module.</td></tr>
           </tbody>
         </table>
@@ -158,6 +159,20 @@
         <p>The full check took about 69 seconds: 264 language-model evaluations, 192 reader applications, 192 live energy-module evaluations and 216 writer applications. There was no new fit, training update or paid model call. All saved parameters stayed unchanged. Separate numerical checks, a recount and a terminal record review passed.</p>
         <aside class="plain-note"><strong>This is a narrow working connection.</strong>It ranks eight labels for one action in four known toy worlds, using a designed reader and writer. It does not establish free-text generation, planning, transfer to new rules, an advantage from energy-based modeling, or a new scientific mechanism. It also does not explain why the earlier jointly trained connection failed. The same host and connections used all four existing modules; new modules remain untested.</aside>
         <p class="source-line"><a href="./research-evidence/organ-live-energy-summary.json">Live energy connection: completed result, controls and limits</a></p>
+        <h3 id="organ-composition-admission">The host copied a stated number, but adding one missed the requirement.</h3>
+        <p>Before testing whether the host could use a hidden organ signal in another step, we checked the host alone. We wrote a next-state digit into the question, then asked it either to copy that digit or add one. The check used 24 familiar question prefixes, each with all eight digits from 0 to 7 and both instructions.</p>
+        <table class="followup-table">
+          <caption>Completed on 5 October at 18:58 UTC. We ranked all nine labels from 0 to 8. A tied highest score counted as a failure.</caption>
+          <thead><tr><th scope="col">Instruction</th><th scope="col">Correct choices</th><th scope="col">Ties</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Copy the supplied state</th><td>192 / 192</td><td>0</td></tr>
+            <tr><th scope="row">Add one to the supplied state</th><td>147 / 192</td><td>10</td></tr>
+          </tbody>
+        </table>
+        <p>Both instructions had to score 192 / 192. ADD missed that fixed requirement. Its 10 ties are included in the failures. On 26 ADD questions, the model uniquely preferred the supplied digit instead of adding one. The independent audit and a separate recount agreed.</p>
+        <p>All 384 native model evaluations completed in about 110 seconds. No text was generated, no fit or training took place, and no reader, energy module, writer or paid provider was called. The reused contexts make this a fixed set of checks, not 384 independent trials.</p>
+        <aside class="plain-note"><strong>This planned hidden-state ADD test is closed.</strong>We will not rescue this formulation by changing its wording or pass rule. This result does not show that the model cannot add in general, or that energy modules failed. The earlier one-action connection result remains unchanged.</aside>
+        <p class="source-line"><a href="./research-evidence/organ-composition-admission-summary.json">Native copy/add check: fixed requirement, completed result and limits</a></p>
         <aside class="plain-note"><strong>The first learning run lost its controller.</strong>The program that supervised the run disappeared after an interruption. We stopped the remaining worker on 5 October at 12:59 UTC. Fourteen of 16 training rounds finished, with 5,652 of 6,144 paired updates complete. No final checkpoint, prediction panel, report, or independent result check was produced. This is an execution failure, not evidence that the model failed to learn.</aside>
         <p class="source-line"><a href="./research-evidence/organ-resource-summary.json">Completed connector check and limits</a> · <a href="./research-evidence/organ-development-stop-summary.json">Why the learning run stopped</a> · <a href="./research-evidence/heterogeneous-organs-context.json">Prior work and the current question</a> · <a href="#next">What comes next</a></p>
       </div>
@@ -297,15 +312,18 @@
 
     <section class="limits-band" id="next" aria-labelledby="next-title">
       <div class="wrap limits-inner">
-        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Test new rules.<br> Then test who controls the steps.</h2></div>
+        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Test which part should act next.</h2></div>
         <div class="section-body">
           <p class="lead">A useful explanation must survive a new test.</p>
           <p>The copy-and-format idea around expert 9 remains closed. The language task passed, but its follow-up prediction check failed. That failed plan stays closed. Its rules and results stay unchanged.</p>
           <p>The second attempt completed, but it failed on the short training questions as well as the longer probes. We cannot describe this as only a failure to combine steps. The current evidence does not isolate why learning failed.</p>
           <p>The completed access check did not improve the total number of correct answers when we pointed the frozen connector to the relevant rule. A new reader first identified the requested address from saved signals on 24 exposed development questions. It then passed the live check above. This is a separate fitted reader, not a repair of the old connection or an explanation of its failure.</p>
-          <p>The joined one-action system now passed with actual energy-module calls. It used the four existing development worlds and fixed reader and writer. The next separate test should replace only the rule module with one trained on new world rules, while keeping the host and connections fixed. No new study starts automatically.</p>
-          <p>A table or another small predictor can supply the same eight probabilities. A matched substitution would test whether the energy model adds anything beyond a working interface. A stronger test would ask the host to use the module’s output in a further operation that the host can already perform. We would then change the intermediate state to test whether it controls the next query. If outside code performs the action steps, that does not show that the host performs them.</p>
-          <p>New-rule transfer and multi-action control need separate tests. Neither has run. The passing result in four known worlds does not establish either ability.</p>
+          <p>The joined one-action system passed with actual energy-module calls, using four existing development worlds and fixed connections. The later native copy/add check failed its joint requirement. That closes this hidden-state ADD formulation; we will not change its wording or pass rule to rescue it.</p>
+          <p>A table or another small predictor can supply the same eight probabilities. A matched substitution would test whether the energy model adds anything beyond a working interface. Replacing only the rule module with one trained on new world rules is another untested comparison. If outside code performs the action steps, that does not show that the host performs them.</p>
+          <h3 id="jev-controller">A decision organ could choose which part acts next.</h3>
+          <p>A separate idea is a decision “organ” that chooses which computation to request, what to check, or when to stop. A world model would estimate consequences, an energy model would score candidate states, and the language model would explain the result. <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe’s Jev</a> returns decisions from defined options; it is not JEPA. Cloudflare introduced the related <a href="https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/">Clef models on 1 October</a>. Here this is a proposal, separate from the failed ADD check. It does not reopen the stopped Cloudflare study.</p>
+          <p>The modules must have different useful abilities. We would compare a controller with the best fixed module, fixed rules, random choices and using every module, including cost. We would change module names, order and actual behavior to check whether decisions follow capability and feedback. The controller must receive evidence of a changed module; it cannot detect an unseen failure without feedback. A <a href="https://arxiv.org/html/2609.26758v2">study of option names</a> found definition-following failures in Jev and two open-weight models; it did not test Clef. A valid output format does not guarantee a correct decision.</p>
+          <p>New-rule transfer and multi-action control remain untested. No controller study starts automatically, and the passing result in four known worlds does not establish these abilities.</p>
           <p>We do not yet claim a new mechanism, a broadly reliable repair, or a novel research result.</p>
         </div>
       </div>
@@ -325,6 +343,7 @@
           <li><a href="./research-evidence/organ-address-reader-summary.json">Offline address reader<span>16 fitted and 8 excluded combinations correct; exposed development only</span></a></li>
           <li><a href="./research-evidence/organ-live-reader-summary.json">Live reader connection check<span>24 of 24 addresses correct; no new fit or answer writing</span></a></li>
           <li><a href="./research-evidence/organ-live-energy-summary.json">Live energy connection<span>96 requested and 96 changed queries followed; one action in known worlds</span></a></li>
+          <li><a href="./research-evidence/organ-composition-admission-summary.json">Native copy/add requirement<span>Copy 192 / 192; add one 147 / 192; hidden ADD test closed</span></a></li>
           <li><a href="./research-evidence/organ-writer-recovery-summary.json">Recovered writer assessment<span>All fixed choices passed; retrospective engineering only</span></a></li>
           <li><a href="./research-evidence/organ-writer-summary.json">Original answer-writer stop<span>Unchanged dated record before recovery</span></a></li>
           <li><a href="./research-evidence/heterogeneous-organs-context.json">Established model-composition work<span>Energy models, frozen language models and video guidance</span></a></li>

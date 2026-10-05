@@ -31,8 +31,8 @@
       "version_date": "2026-03-31",
       "url": "https://arxiv.org/html/2601.17094v2",
       "sections": [
-        "3.1\u20133.3",
-        "7.2\u20137.3"
+        "3.1–3.3",
+        "7.2–7.3"
       ],
       "summary": "Niimi links a Deep Boltzmann Machine to frozen GPT-2 through a trained soft-prompt adapter. It generates reviews, not temporal state predictions. Replacing either model requires adapter retraining. Time-series modeling remains future work."
     }
@@ -244,33 +244,105 @@
     {
       "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1_PREPARATION/TERMINAL_REVIEW.json",
       "source_sha256": "7cbd144158d4da4e132703989f2f1dcb85f385888abbee1fb781c4c111a100a7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/plan.json",
+      "source_sha256": "2292d26059047d461b81673943ccc7b74eda4a15a5d5007dcf87a35d3f701b57"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/COMPLETE.json",
+      "source_sha256": "37e4d2580d4271d24978ef3e2e4604e6ee413007d5c74e23592b3225052eb0bd"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/REPORT.json",
+      "source_sha256": "8f2286e715a2e9506b1a966b3b012e69828e888dfecdb3c29d1b631c7f00390f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/INDEPENDENT_AUDIT.json",
+      "source_sha256": "7f9d32c708cb2da9e797e7459d1d8ecf1d2d146af113d729ceed8318375c954b"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/WORKER_COMPLETE.json",
+      "source_sha256": "6c80424c217423b612c077d19ff37ba3f4661814b9288f17539d0471dfdd02ee"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+      "source_sha256": "696361d3e428e087ced0162c6b7288dd30b117dd412d95ee69b903f858be06f7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_DECISION_ORGAN_DIRECTION.json",
+      "source_sha256": "a76cf0108eb1f27896848c2113642870781640da44ae907b4feb5095d6f37236"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1_PREPARATION/TERMINAL_REVIEW.json",
+      "source_sha256": "b3ba2911516646771ce9e320f0a359d5d5c6abace212fad3e025b71fa44e86f0"
     }
   ],
   "transformation": "Reviewed primary-paper context and terminal development facts, including the separate writer recovery, live reader check and completed live energy connection. Original stopped-run history and earlier failures remain preserved. No raw model outputs copied.",
-  "updated_at_utc": "2026-10-05T18:21:45.539445+00:00",
+  "updated_at_utc": "2026-10-05T19:00:51.172132+00:00",
   "external_primary_sources": [
     {
       "url": "https://arxiv.org/html/2601.17094v2",
       "version_date": "2026-03-31",
       "sections": [
-        "3.1\u20133.3",
-        "7.2\u20137.3"
+        "3.1–3.3",
+        "7.2–7.3"
       ],
       "independently_read_at_utc": "2026-10-05T14:23:22.343278+00:00"
+    },
+    {
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "version_date": "2026-09-15",
+      "scope": "Official launch; structured decisions, not a task-specific correctness guarantee.",
+      "independently_read_at_utc": "2026-10-05T19:00:51.172132+00:00"
+    },
+    {
+      "url": "https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/",
+      "version_date": "2026-10-01",
+      "scope": "Official Clef release on Workers AI; product precedent, not our test result.",
+      "independently_read_at_utc": "2026-10-05T19:00:51.172132+00:00"
+    },
+    {
+      "url": "https://arxiv.org/html/2609.26758v2",
+      "version_date": "2026-09-23",
+      "sections": [
+        "Abstract",
+        "1",
+        "6–7"
+      ],
+      "scope": "Jev and two open-weight models; not Clef. Name-definition reassignment motivates controller controls.",
+      "independently_read_at_utc": "2026-10-05T19:00:51.172132+00:00"
     }
   ],
   "latest_diagnostic": "A completed fixed-weight check passed all required controls. Forcing access to the relevant whole rule row gave 10 of 96 correct choices, compared with 16 normally. None of 96 pairs followed both selected rules. Every forced setting changed the delivered signal.",
   "diagnostic_limit": "The same four training worlds and one-action questions were reused. Whole-row forcing can change signal strength and the kind of input seen during training; earlier positions retain normal memory. No cause of the original learning failure, unseen-rule transfer or novelty is established.",
   "latest_address_reader": "A new offline supervised reader passed on 16 fitted combinations and 8 combinations excluded from the fit, with no state, action or joint address errors or ties. It used saved host vectors and made no new model calls.",
   "address_reader_limit": "The original offline reader used one template and 24 questions already exposed during development. Four identical world copies were collapsed before its split. The later live connection check is reported separately. The reader remains separate from the failed connector; those reader-only checks establish neither answer writing nor composition. The later live energy connection is separate; new-rule transfer, the original failure cause and novelty remain unestablished.",
-  "next_step": "Review a fixed-interface swap to new world rules and a matched table or predictor substitution. A stronger later test would require the host to combine the organ output with a separately demonstrated host operation, and intervene on the intermediate state. No automatic launch.",
+  "next_step": "Keep the failed hidden-state ADD formulation closed. Separately review a Jev-style decision controller that chooses between useful modules, checks feedback, or stops. Compare it with fixed and random choices and using every module, including call cost. No new study starts automatically.",
   "latest_writer_attempt": "Historical original attempt: stopped on 5 October at 16:26 UTC because the audit rejected normal model-cache links. No behavioral result existed at that stop. The original STOP and public stop summary remain unchanged.",
   "writer_stop_limit": "The original run never completed its audit. A metadata follow-up alone did not grade scores. The later result is in a separate disclosed retrospective recovery, not an original-protocol completion.",
   "latest_writer_recovery": "A separate retrospective audit passed the unchanged complete checker and all original writer gates: 128/128 fitted-context choices, 128/128 fit-excluded-context choices and 768/768 cached-organ-vector compatibility cells, with zero ties. A separate recount agreed. No model calls, updates or refits were repeated.",
   "writer_recovery_limit": "An 8,192-weight writer ranks an explicitly supplied answer among eight candidates. All data were development-exposed. Its 448 label pairs reuse 128 choices. Cached probabilities are not an executed energy transplant. The reader later passed a separate live read-only check, followed by the live energy connection reported separately here. No generation, calibrated probabilities, reasoning, new rules or novelty is established. Changed architecture, supervision and optimization prevent attributing the old bridge failure to one cause.",
-  "later_mechanistic_question": "Can the fixed language host use an organ output in another operation it can independently perform? Compare matched table/predictor substitutions and intervene on intermediate host state to test who controls the next query. External code performing a rollout does not establish host composition.",
+  "later_mechanistic_question": "Does a decision controller follow actual module capability and feedback when names, order or module behavior change? Separately, new-rule swaps and matched table/predictor substitutions remain untested. External code performing action steps does not establish host composition.",
   "latest_live_reader": "The fixed reader passed a prospective live connection check at 17:36 UTC: all 24 starting states, actions and addresses were correct with no ties, using no new fit or training. All 72 bracket comparisons had identical captured hidden vectors and final output scores. A separate arithmetic audit and parent recount passed.",
   "live_reader_limit": "The run used 72 host evaluations and 24 CPU FP64 reader applications on already exposed questions. It observed host signals without changing them. No organ, writer, world-model computation, new rules or multi-step task was run. This is a connection check, not a joined-system or novelty result.",
   "latest_live_energy": "At 18:16 UTC the fixed reader, four learned energy modules and writer completed a live one-action connection. All 96 requested-rule choices and all 96 deliberately changed queries followed the selected rule. All 192 reader addresses and 192 actual organ queries were correct, with no answer ties. No fit or training was performed.",
-  "live_energy_limit": "The 264 host calls used 24 familiar contexts and four development worlds. This is a designed working one-step connection, not new-world transfer, planning, generated text, an energy-specific advantage or novelty. Seventeen of 144 derived world pairs share the same answer. The earlier learning failure and original writer STOP remain unchanged."
+  "live_energy_limit": "The 264 host calls used 24 familiar contexts and four development worlds. This is a designed working one-step connection, not new-world transfer, planning, generated text, an energy-specific advantage or novelty. Seventeen of 144 derived world pairs share the same answer. The earlier learning failure and original writer STOP remain unchanged.",
+  "latest_native_composition_admission": "At 18:58 UTC, the unchanged host completed all 384 explicit-state questions. COPY passed 192/192 with no ties. ADD passed 147/192, with 10 ties counted as failures and 26 unique choices that copied the supplied state. The fixed requirement of 192/192 for both instructions failed; the independent audit and full recount passed.",
+  "native_composition_limit": "This reused 24 development prefixes with eight supplied digits and two instructions. It ranked nine labels without text generation, fitting or component calls. It does not show general inability to add or failure of the energy module. The planned hidden-state ADD test for this formulation is closed, without a wording rescue.",
+  "proposed_decision_controller": {
+    "status": "PROPOSED_NOT_TESTED",
+    "identity": "TypeSafe Jev is a structured decision model, distinct from JEPA/V-JEPA world prediction.",
+    "division_of_work": "A decision model chooses a module or check; a world model supplies predicted outcomes; the language host uses or explains them.",
+    "established_products": "TypeSafe introduced Jev on 15 September 2026. Cloudflare announced Clef, a related decision-model family on Workers AI, on 1 October 2026.",
+    "paper_scope": "The option-name study tested Jev and two open-weight models, not Clef. It found that valid output types do not ensure decisions follow the assigned definitions.",
+    "proposed_controls": [
+      "Use modules with different useful abilities.",
+      "Change names and order while keeping definitions fixed.",
+      "Change actual module behavior while retaining names, and test response to feedback.",
+      "Compare the best fixed module, fixed rules, random selection and using every module, accounting for cost."
+    ],
+    "limit": "This direction is separate from the failed native ADD requirement and does not reopen the stopped Cloudflare audit. Product probability outputs do not establish correctness or calibration on our task.",
+    "feedback_limit": "A controller must receive evidence of a changed module; an unseen failure without feedback cannot support an adaptation claim."
+  }
 }

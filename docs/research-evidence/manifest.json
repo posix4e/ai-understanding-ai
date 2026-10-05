@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T18:21:45.539445+00:00",
+  "at_utc": "2026-10-05T19:00:51.172132+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -397,18 +397,50 @@
         {
           "source_path": "outputs/moe-mechanisms/ORGAN_LIVE_ENERGY_V1_PREPARATION/TERMINAL_REVIEW.json",
           "source_sha256": "7cbd144158d4da4e132703989f2f1dcb85f385888abbee1fb781c4c111a100a7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/plan.json",
+          "source_sha256": "2292d26059047d461b81673943ccc7b74eda4a15a5d5007dcf87a35d3f701b57"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/COMPLETE.json",
+          "source_sha256": "37e4d2580d4271d24978ef3e2e4604e6ee413007d5c74e23592b3225052eb0bd"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/REPORT.json",
+          "source_sha256": "8f2286e715a2e9506b1a966b3b012e69828e888dfecdb3c29d1b631c7f00390f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "7f9d32c708cb2da9e797e7459d1d8ecf1d2d146af113d729ceed8318375c954b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/WORKER_COMPLETE.json",
+          "source_sha256": "6c80424c217423b612c077d19ff37ba3f4661814b9288f17539d0471dfdd02ee"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+          "source_sha256": "696361d3e428e087ced0162c6b7288dd30b117dd412d95ee69b903f858be06f7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_DECISION_ORGAN_DIRECTION.json",
+          "source_sha256": "a76cf0108eb1f27896848c2113642870781640da44ae907b4feb5095d6f37236"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1_PREPARATION/TERMINAL_REVIEW.json",
+          "source_sha256": "b3ba2911516646771ce9e320f0a359d5d5c6abace212fad3e025b71fa44e86f0"
         }
       ],
       "transformation": "Reviewed primary-paper context and terminal development facts, including the separate writer recovery, live reader check and completed live energy connection. Original stopped-run history and earlier failures remain preserved. No raw model outputs copied.",
-      "sha256": "ab73d980866c13d79aff2a553fb573860369c7a6bed5cc90cc1c7a631cd9d594",
-      "bytes": 18168,
+      "sha256": "21650fc0c1b301bd66a9516131e6bd1c4554476ed33b8fe87af777d2b7fe7056",
+      "bytes": 22882,
       "external_primary_sources": [
         {
           "url": "https://arxiv.org/html/2601.17094v2",
           "version_date": "2026-03-31",
           "sections": [
-            "3.1\u20133.3",
-            "7.2\u20137.3"
+            "3.1–3.3",
+            "7.2–7.3"
           ],
           "independently_read_at_utc": "2026-10-05T14:23:22.343278+00:00"
         }
@@ -705,6 +737,43 @@
       "transformation": "Selected completed aggregate counts, fixed method, work totals, controls and reviewed limits only. No raw hidden states, scores, probabilities, model weights, process identifiers, private account details or absolute local paths copied. All earlier dated public summaries remain unchanged.",
       "sha256": "23b901eedb7f1e11dcffac86ff0794a0489e615e82f4cbba0888706e229481b5",
       "bytes": 8196
+    },
+    {
+      "file": "organ-composition-admission-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/plan.json",
+          "source_sha256": "2292d26059047d461b81673943ccc7b74eda4a15a5d5007dcf87a35d3f701b57"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/COMPLETE.json",
+          "source_sha256": "37e4d2580d4271d24978ef3e2e4604e6ee413007d5c74e23592b3225052eb0bd"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/REPORT.json",
+          "source_sha256": "8f2286e715a2e9506b1a966b3b012e69828e888dfecdb3c29d1b631c7f00390f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "7f9d32c708cb2da9e797e7459d1d8ecf1d2d146af113d729ceed8318375c954b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/WORKER_COMPLETE.json",
+          "source_sha256": "6c80424c217423b612c077d19ff37ba3f4661814b9288f17539d0471dfdd02ee"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+          "source_sha256": "696361d3e428e087ced0162c6b7288dd30b117dd412d95ee69b903f858be06f7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1_PREPARATION/TERMINAL_REVIEW.json",
+          "source_sha256": "b3ba2911516646771ce9e320f0a359d5d5c6abace212fad3e025b71fa44e86f0"
+        }
+      ],
+      "transformation": "Selected completed aggregate counts, fixed rules, work totals and reviewed limits only. No raw score arrays, hidden states, model weights, process identifiers, account details or absolute local paths copied. All earlier dated public summaries remain unchanged.",
+      "sha256": "0e68d01fea9bc76a5b611d26188c508a5c7e2815e117f2d0e2e6f1ee09529f4d",
+      "bytes": 4897
     }
   ],
   "absolute_local_path_redactions": 0,

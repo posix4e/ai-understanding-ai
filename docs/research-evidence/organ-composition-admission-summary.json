@@ -1,0 +1,111 @@
+{
+  "record_type": "DERIVED_PUBLIC_COMPLETED_NATIVE_COMPOSITION_ADMISSION_SUMMARY",
+  "created_at_utc": "2026-10-05T19:00:51.172132+00:00",
+  "status": "NATIVE_COMPOSITION_ADMISSION_FAILED",
+  "completed_at_utc": "2026-10-05T18:58:06.818883+00:00",
+  "plain_result": "The unmodified host copied every supplied state correctly, but adding one missed the fixed requirement. The planned hidden-state ADD experiment is closed for this formulation.",
+  "question": "Can the frozen language host copy a stated digit and add one before we test whether it can use an internal organ signal for that operation?",
+  "panel": {
+    "original_contexts": 24,
+    "explicit_states": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "instructions": [
+      "copy",
+      "addone"
+    ],
+    "host_calls": 384,
+    "candidate_labels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "exposure": "All 24 original question prefixes were exposed during development. Each was crossed with eight explicit states and two fixed instructions; these are repeated-context cases, not 384 independent trials."
+  },
+  "method": "The next-state digit was written in the input. We ranked all nine labels 0–8 at the final position, including the supplied digit for ADD. COPY targets the supplied digit; ADD targets that digit plus one, without wraparound. A unique highest-scoring correct label is required. No text was generated and no reader, energy module or writer was used.",
+  "results": {
+    "copy": {
+      "correct": 192,
+      "total": 192,
+      "ties": 0
+    },
+    "addone": {
+      "correct": 147,
+      "total": 192,
+      "ties": 10,
+      "uniquely_copied_supplied_state": 26
+    },
+    "ties_included_in_failures": true,
+    "gate": "Both instructions must score 192/192.",
+    "gate_pass": false,
+    "implementation_pass": true,
+    "independent_audit_status": "PASS",
+    "parent_raw_score_recount_status": "PASS"
+  },
+  "work": {
+    "host_forwards": 384,
+    "elapsed_seconds": 109.50152370799333,
+    "analytical_fits": 0,
+    "training_updates": 0,
+    "reader_applications": 0,
+    "energy_module_calls": 0,
+    "writer_calls": 0,
+    "provider_calls": 0,
+    "generated_tokens": 0
+  },
+  "limits": [
+    "This is a completed negative result for one fixed explicit-state candidate-ranking formulation, not a claim that the model cannot add in general.",
+    "The energy modules and connector were not tested here. The earlier one-action connection result remains unchanged.",
+    "No hidden-state ADD test, prompt rescue or automatic retry follows this failed requirement.",
+    "The fixed repeated-context panel does not establish a population effect, general reasoning ability, planning, new-rule transfer or novelty."
+  ],
+  "next_step": "Keep this hidden-state ADD formulation closed. A Jev-style decision controller is a separate proposed direction, requiring modules with different useful abilities, feedback tests, and matched cost controls.",
+  "scientific_confirmation": false,
+  "hidden_state_composition_tested": false,
+  "novelty_established": false,
+  "automatic_next_study": false,
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/plan.json",
+      "source_sha256": "2292d26059047d461b81673943ccc7b74eda4a15a5d5007dcf87a35d3f701b57"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/COMPLETE.json",
+      "source_sha256": "37e4d2580d4271d24978ef3e2e4604e6ee413007d5c74e23592b3225052eb0bd"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/REPORT.json",
+      "source_sha256": "8f2286e715a2e9506b1a966b3b012e69828e888dfecdb3c29d1b631c7f00390f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/INDEPENDENT_AUDIT.json",
+      "source_sha256": "7f9d32c708cb2da9e797e7459d1d8ecf1d2d146af113d729ceed8318375c954b"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1/WORKER_COMPLETE.json",
+      "source_sha256": "6c80424c217423b612c077d19ff37ba3f4661814b9288f17539d0471dfdd02ee"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1_PREPARATION/PARENT_TERMINAL_RECOUNT.json",
+      "source_sha256": "696361d3e428e087ced0162c6b7288dd30b117dd412d95ee69b903f858be06f7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_COMPOSITION_ADMISSION_V1_PREPARATION/TERMINAL_REVIEW.json",
+      "source_sha256": "b3ba2911516646771ce9e320f0a359d5d5c6abace212fad3e025b71fa44e86f0"
+    }
+  ],
+  "transformation": "Selected completed aggregate counts, fixed rules, work totals and reviewed limits only. No raw score arrays, hidden states, model weights, process identifiers, account details or absolute local paths copied. All earlier dated public summaries remain unchanged."
+}
