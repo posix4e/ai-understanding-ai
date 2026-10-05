@@ -1,0 +1,251 @@
+{
+  "record_type": "DERIVED_PUBLIC_COMPLETED_LAYA_SELECTIVE_ADMISSION_SUMMARY",
+  "created_at_utc": "2026-10-05T21:19:59.980015+00:00",
+  "status": "COMPLETE_VALID_NEGATIVE_DISCOVERY_ADMISSION",
+  "plain_result": "Laya failed the fixed starting accuracy requirement on two exact-rule policies. The planned internal name/fact intervention did not run. This does not test or reject that unexecuted repair, native Jev/Clef, or the wider organ architecture.",
+  "model": {
+    "name": "Laya",
+    "model_revision": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+    "source_revision": "a4a8921afebfd852bba0000475cfb6ab737a124c",
+    "runtime": "Pinned local CPU FP32, SDPA, four threads; no model update."
+  },
+  "question": "Can a fixed rank-one internal change reduce misleading name effects while preserving responses to changed facts?",
+  "design": {
+    "policies": [
+      "Invoice reconciliation under an explicit written rule",
+      "Permission under an explicit active-account and exact-grant rule"
+    ],
+    "references": "Deterministic policy oracle, independently recomputed before any model outcome. These are specified synthetic policies, not general business or legal correctness.",
+    "planned_families": 32,
+    "observed_discovery_families": 16,
+    "observed_families_per_policy": 8,
+    "observed_distinct_records": 64,
+    "observed_native_model_calls": 512,
+    "variations": "Each family has two fact states, two irrelevant record-ID settings, two option orders and four name bindings. Related variants are not independent observations.",
+    "required_baseline": "At least14 of16 family-by-ID pairs must have both true and false cases strictly correct, for aligned words and both neutral number bindings, separately for each policy and each order. Ties fail.",
+    "required_interference": "At least4 pairs with all six baseline endpoints correct and a uniquely wrong reversed-name endpoint; reversed errors must cover both truth classes in each policy/order.",
+    "heldout_calls_executed": 0,
+    "internal_edits_executed": 0,
+    "fitted_directions": 0,
+    "output_corrections_fitted": 0
+  },
+  "discovery_strata": {
+    "invoice:false_true": {
+      "paired_success": {
+        "polar_aligned": 12,
+        "neutral_forward": 8,
+        "neutral_reverse": 12
+      },
+      "conflict_units": [
+        [
+          "discovery-invoice-03",
+          0
+        ],
+        [
+          "discovery-invoice-03",
+          1
+        ],
+        [
+          "discovery-invoice-04",
+          0
+        ],
+        [
+          "discovery-invoice-04",
+          1
+        ],
+        [
+          "discovery-invoice-06",
+          0
+        ],
+        [
+          "discovery-invoice-06",
+          1
+        ],
+        [
+          "discovery-invoice-07",
+          0
+        ],
+        [
+          "discovery-invoice-07",
+          1
+        ]
+      ],
+      "conflict_truth_classes": [
+        false,
+        true
+      ],
+      "F_ref": 0.9534042943269014,
+      "N": 1.5483238825108856,
+      "competence_pass": false,
+      "interference_pass": true,
+      "signal_pass": true,
+      "pass": false
+    },
+    "invoice:true_false": {
+      "paired_success": {
+        "polar_aligned": 10,
+        "neutral_forward": 8,
+        "neutral_reverse": 10
+      },
+      "conflict_units": [
+        [
+          "discovery-invoice-03",
+          0
+        ],
+        [
+          "discovery-invoice-03",
+          1
+        ],
+        [
+          "discovery-invoice-04",
+          0
+        ],
+        [
+          "discovery-invoice-04",
+          1
+        ],
+        [
+          "discovery-invoice-06",
+          0
+        ],
+        [
+          "discovery-invoice-06",
+          1
+        ],
+        [
+          "discovery-invoice-07",
+          0
+        ],
+        [
+          "discovery-invoice-07",
+          1
+        ]
+      ],
+      "conflict_truth_classes": [
+        false,
+        true
+      ],
+      "F_ref": 1.107660984620452,
+      "N": 1.711898822337389,
+      "competence_pass": false,
+      "interference_pass": true,
+      "signal_pass": true,
+      "pass": false
+    },
+    "permission:false_true": {
+      "paired_success": {
+        "polar_aligned": 0,
+        "neutral_forward": 0,
+        "neutral_reverse": 4
+      },
+      "conflict_units": [],
+      "conflict_truth_classes": [],
+      "F_ref": 0.2914999285712838,
+      "N": 1.5107936633285135,
+      "competence_pass": false,
+      "interference_pass": false,
+      "signal_pass": true,
+      "pass": false
+    },
+    "permission:true_false": {
+      "paired_success": {
+        "polar_aligned": 0,
+        "neutral_forward": 0,
+        "neutral_reverse": 5
+      },
+      "conflict_units": [],
+      "conflict_truth_classes": [],
+      "F_ref": 0.18142380309291184,
+      "N": 1.8146216915920377,
+      "competence_pass": false,
+      "interference_pass": false,
+      "signal_pass": true,
+      "pass": false
+    }
+  },
+  "all_four_baseline_competence_strata_failed": true,
+  "primary_selectivity_result": null,
+  "paired_count_warning": "Zero successful pairs means that no pair had both answers correct. It does not mean that every individual answer was wrong. Each stratum contains16 correlated pairs from8 families.",
+  "checks": {
+    "implementation_pass": true,
+    "independent_raw_audit_pass": true,
+    "independent_parent_recount_pass": true,
+    "terminal_metadata_review_pass": true,
+    "invented_implementation_tests_passed": 58,
+    "model_parameters_and_buffers_unchanged": true,
+    "source_model_bindings_verified": 49
+  },
+  "work": {
+    "native_encoder_calls": 512,
+    "head_only_calls": 0,
+    "real_fits": 0,
+    "training_updates": 0,
+    "provider_calls": 0,
+    "provider_fees_usd": 0,
+    "collection_elapsed_seconds": 134.0516161659907
+  },
+  "limits": [
+    "One open checkpoint and two specified policies. Native Jev and Clef were not evaluated.",
+    "The intervention, affine correction and definition-only comparison were conditional on a passing discovery gate and were not executed.",
+    "No prompt, rank, family subset or threshold was changed after seeing the outcome. The study is closed.",
+    "This is an admission failure, not evidence that internal separation is impossible or that energy/world-model modules cannot help.",
+    "Prior work already reports option-name effects and mitigations. No novel mechanism or publishable novelty is established."
+  ],
+  "next_step": "For a separate study, first establish that a controller can use modules with distinct useful abilities. Then test whether actual outcome feedback changes selection appropriately, against fixed selection, rules, feedback-blind selection, simple statistical selection and using every module at matched cost.",
+  "novelty_established": false,
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/plan.json",
+      "source_sha256": "cce3b7f0d522f035f7fc2af173164801d3d379f83fb0633ab121eebd871419db"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/REGISTRATION.json",
+      "source_sha256": "87cf15582b8945672dcb5d7c3042a514715ec13c04ae3b7f96823186ef40d754"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/REPORT.json",
+      "source_sha256": "7421218a6ce05bf3351a7b2033fdf30b3cc300bbfa679d3f5b29550bfe0c876c"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/INDEPENDENT_AUDIT.json",
+      "source_sha256": "46420ceb8a1e732c94171474085ec80d1ac76f12e8a549310e9fc6a31b8b6f1a"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/COMPLETE.json",
+      "source_sha256": "2f8231ab60ddd9710f3d88c3b771c37e3c1f395acc4b5aec79a2129402f72776"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/COLLECTED.json",
+      "source_sha256": "95b548445863aebd8119917d17ae2ea062a6cf10c927708536b362ad4b698ea7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/AUDIT_COLLECTED.json",
+      "source_sha256": "57ebdc4e7736e2e32b427d8de4abef6e2181024050beceef70a0efcd8d0ab05a"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1_PREPARATION/PARENT_RECOUNT.json",
+      "source_sha256": "09f8c5a4b135133c540a0aa76f61350a170e52f15e14fde1f028950efa838131"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1_PREPARATION/TERMINAL_REVIEW.json",
+      "source_sha256": "5e258f24e45036494b9202e84115e4f6d188f4d591eddd588d6dd8c1c9cdd84c"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1_PREPARATION/IMPLEMENTATION_REVIEW.json",
+      "source_sha256": "53e18ad1975276bfa15ac12681e01048b9b885f60d077a1856b960ad5133987e"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1_PREPARATION/PARENT_TEST_RESULTS.json",
+      "source_sha256": "5c59858e0fadd5a25cbef3f086860203988ced3575f7225c55cbdf7bffbf73c7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_NAME_FACT_SEPARATION_PREPARATION/PARENT_IMPLEMENTATION_DECISION.json",
+      "source_sha256": "525d048d78a14d8d120349fe6ae83d148c1e607d31c5fcd86cc91fdf50133eab"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/JEV_NAME_FACT_SEPARATION_PREPARATION/PRIOR_ART_REVIEW.json",
+      "source_sha256": "a4219ae1091fdc85a07b03bbd55ca560bfef26799c3e03d7fd0699fc5df11047"
+    }
+  ],
+  "transformation": "Selected aggregate results from the completed discovery gate and its independent checks. No raw activations, weights, per-case scores, process IDs, absolute paths or credentials copied. Earlier public result files remain unchanged."
+}

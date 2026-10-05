@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T20:19:12.687283+00:00",
+  "at_utc": "2026-10-05T21:19:59.980015+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -843,6 +843,67 @@
       "transformation": "Selected completed aggregate counts, fixed comparisons, operational history and reviewed limits. No raw hidden states, per-case scores, model weights, process identifiers, credentials or absolute local paths copied. Earlier public evidence records remain unchanged.",
       "sha256": "afbb500f1ecbf78262d06b7f9bb61fa5ddaad1dc3d94ca6023e0e8d4065dfaff",
       "bytes": 12330
+    },
+    {
+      "file": "jev-selective-admission-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/plan.json",
+          "source_sha256": "cce3b7f0d522f035f7fc2af173164801d3d379f83fb0633ab121eebd871419db"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/REGISTRATION.json",
+          "source_sha256": "87cf15582b8945672dcb5d7c3042a514715ec13c04ae3b7f96823186ef40d754"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/REPORT.json",
+          "source_sha256": "7421218a6ce05bf3351a7b2033fdf30b3cc300bbfa679d3f5b29550bfe0c876c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "46420ceb8a1e732c94171474085ec80d1ac76f12e8a549310e9fc6a31b8b6f1a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/COMPLETE.json",
+          "source_sha256": "2f8231ab60ddd9710f3d88c3b771c37e3c1f395acc4b5aec79a2129402f72776"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/COLLECTED.json",
+          "source_sha256": "95b548445863aebd8119917d17ae2ea062a6cf10c927708536b362ad4b698ea7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1/AUDIT_COLLECTED.json",
+          "source_sha256": "57ebdc4e7736e2e32b427d8de4abef6e2181024050beceef70a0efcd8d0ab05a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1_PREPARATION/PARENT_RECOUNT.json",
+          "source_sha256": "09f8c5a4b135133c540a0aa76f61350a170e52f15e14fde1f028950efa838131"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1_PREPARATION/TERMINAL_REVIEW.json",
+          "source_sha256": "5e258f24e45036494b9202e84115e4f6d188f4d591eddd588d6dd8c1c9cdd84c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1_PREPARATION/IMPLEMENTATION_REVIEW.json",
+          "source_sha256": "53e18ad1975276bfa15ac12681e01048b9b885f60d077a1856b960ad5133987e"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_LAYA_SELECTIVE_INTERVENTION_V1_PREPARATION/PARENT_TEST_RESULTS.json",
+          "source_sha256": "5c59858e0fadd5a25cbef3f086860203988ced3575f7225c55cbdf7bffbf73c7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_NAME_FACT_SEPARATION_PREPARATION/PARENT_IMPLEMENTATION_DECISION.json",
+          "source_sha256": "525d048d78a14d8d120349fe6ae83d148c1e607d31c5fcd86cc91fdf50133eab"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/JEV_NAME_FACT_SEPARATION_PREPARATION/PRIOR_ART_REVIEW.json",
+          "source_sha256": "a4219ae1091fdc85a07b03bbd55ca560bfef26799c3e03d7fd0699fc5df11047"
+        }
+      ],
+      "transformation": "Selected aggregate results from the completed discovery gate and its independent checks. No raw activations, weights, per-case scores, process IDs, absolute paths or credentials copied. Earlier public result files remain unchanged.",
+      "sha256": "200905f569ced11ff976bfa0ab8fadd35e4634f14d93edc86dd65fc2071d8e24",
+      "bytes": 9740
     }
   ],
   "absolute_local_path_redactions": 0,
