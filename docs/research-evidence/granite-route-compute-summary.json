@@ -1,0 +1,34 @@
+{
+  "record_type": "DERIVED_PUBLIC_COMPLETED_SUMMARY",
+  "created_at_utc": "2026-10-05T12:45:28.817347+00:00",
+  "completed_at_utc": "2026-10-05T11:36:00.219149+00:00",
+  "status": "IMPLEMENTATION_ADMISSION_PASSED",
+  "question": "Does the forward-only intervention instrument preserve unchanged controls and implement the specified routing-by-expert-output comparison?",
+  "inputs": 2,
+  "fresh_processes": 2,
+  "counts": {
+    "full_forwards": 56,
+    "backwards": 0,
+    "auxiliary_expert_token_evaluations": 768,
+    "paid_calls": 0
+  },
+  "control_margin_comparisons": 24,
+  "control_margin_comparisons_passed": 24,
+  "maximum_control_margin_error": 0.0,
+  "independent_numerical_audit": "PASS",
+  "result": "The direct intervention tool passed its fixed controls on two reused sentences.",
+  "limitations": [
+    "No fresh discovery or confirmation inputs were tested.",
+    "The auxiliary combining operation is not numerically identical to the native operation; the fixed behavioral checks passed.",
+    "All observed expert unions had eight members. Differing memberships were covered only by invented tests.",
+    "This does not show backup experts, routing benefit, successful organ transplantation or novelty.",
+    "The failed larger gradient experiment remains closed."
+  ],
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/GRANITE_ROUTE_COMPUTE_CONTROLS_V1/STUDY_SUMMARY.json",
+      "source_sha256": "73a28bb5def46fa1a37ac0146f428c88de2c9954178d932df2219907495f755c"
+    }
+  ],
+  "transformation": "Selected terminal counts and limits; stale next-action text in the earlier summary is omitted."
+}

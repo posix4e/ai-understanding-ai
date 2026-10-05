@@ -1,0 +1,43 @@
+{
+  "record_type": "DERIVED_PUBLIC_EXECUTION_STOP_SUMMARY",
+  "created_at_utc": "2026-10-05T13:01:29.273175+00:00",
+  "stopped_at_utc": "2026-10-05T12:59:47.230822+00:00",
+  "status": "DEVELOPMENT_EXECUTION_STOPPED",
+  "reason": "The original run controller disappeared after an interruption. The remaining worker was stopped after its identity was checked.",
+  "result_type": "Execution incomplete; no learning success or failure grade.",
+  "planned_scope": "Four learned one-step modules for worlds with eight states and three actions; connector and comparison-model training followed by final evaluation.",
+  "completed_work": {
+    "organ_forwards": 1604,
+    "organ_training_updates": 1600,
+    "organ_training_stage_complete": true,
+    "completed_training_rounds": 14,
+    "planned_training_rounds": 16,
+    "completed_paired_updates": 5652,
+    "planned_paired_updates": 6144
+  },
+  "final_trained_checkpoint_present": false,
+  "final_prediction_panel_present": false,
+  "final_report_present": false,
+  "independent_task_audit_present": false,
+  "task_grade_available": false,
+  "scientific_learning_result": false,
+  "partial_task_grading_allowed": false,
+  "rerun_of_original_allowed": false,
+  "limits": [
+    "Completed module training is not evidence that the combined system learned the task.",
+    "Partial training and a separate rule-table calculation cannot replace the missing final evaluation.",
+    "The original interrupted run remains closed. A new run requires a separate fixed and reviewed execution plan.",
+    "No unseen-rule transplant, host advantage or novel mechanism was established."
+  ],
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/STOPPED.json",
+      "source_sha256": "658d920a72059250427ec569da5118592bc7062ba2c739fd046bfd3d3ffc2ad3"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/plan.json",
+      "source_sha256": "3d34bef825581d13f12e60b68fdff91896000654be0d8f5d184949a6e634b50a"
+    }
+  ],
+  "transformation": "Metadata only. Controller and worker identities, local absolute paths, training losses, learned module arrays and partial model outputs are omitted."
+}

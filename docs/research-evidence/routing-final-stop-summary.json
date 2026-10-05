@@ -1,0 +1,29 @@
+{
+  "record_type": "DERIVED_PUBLIC_FINAL_AUDIT_STOP_SUMMARY",
+  "created_at_utc": "2026-10-05T12:45:28.817347+00:00",
+  "stopped_at_utc": "2026-10-05T05:06:56.228Z",
+  "phase": "final audit",
+  "status": "STOPPED_NO_FINAL_SCIENTIFIC_GRADE",
+  "reason": "A frozen collection, accounting or transport check failed.",
+  "final_phase_counts": {
+    "requests_started": 16,
+    "attributable_reconciled_responses": 1,
+    "unknown_outcomes": 15
+  },
+  "interpretation": "One response could be linked to its request. Fifteen outcomes could not be resolved from the saved records. Unknown does not mean a known wrong answer or a free request.",
+  "final_scientific_grade_available": false,
+  "partial_audit_answers_graded": false,
+  "preserved_action": "Keep the stop record and unresolved accounting holds. No retry, substitution or use of partial audit outcomes as scientific evidence.",
+  "history": "The earlier 5 October 01:30 UTC phase snapshot remains dated history. Completed training counts are retained; they do not establish performance on an independent final test.",
+  "sources": [
+    {
+      "source_path": "outputs/routing-research/V4_CONTINUATION/STOPPED.json",
+      "source_sha256": "7e03f78dbb23b72994ee200f152bde0458a460ce66818ec9a091d0b15341bb2a"
+    },
+    {
+      "source_path": "outputs/routing-research/V4_CONTINUATION/AUDIT_TRANSPORT_STOP_REVIEW.json",
+      "source_sha256": "b8ec037739036a377c30678d35c23575cc4d9ee5328bafc7424a0a395bf63759"
+    }
+  ],
+  "transformation": "Metadata-only public summary. Request IDs, accounts, fees, process details and answer text are omitted."
+}

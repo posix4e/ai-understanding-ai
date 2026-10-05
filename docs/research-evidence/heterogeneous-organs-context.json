@@ -1,0 +1,47 @@
+{
+  "record_type": "DERIVED_PUBLIC_PRIOR_WORK_CONTEXT",
+  "created_at_utc": "2026-10-05T13:01:29.273175+00:00",
+  "question": "Can a fixed language host and connector use a separately trained module with different world rules?",
+  "organ_meaning": "An analogy for an internal part with a different job. An energy module scores possible next states; energy here is a learned score, not electrical power.",
+  "established_precedents": [
+    {
+      "title": "LLM Augmented LLMs: Expanding Capabilities through Composition (CALM)",
+      "date": "2024-01-04",
+      "url": "https://arxiv.org/html/2401.02412v1",
+      "summary": "CALM trains a connection between intermediate representations of two frozen language models.",
+      "limit": "This is model composition, not proof that arbitrary modules can be exchanged without further training."
+    },
+    {
+      "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+      "date": "2025-06-11",
+      "url": "https://arxiv.org/html/2506.09985v1",
+      "summary": "V-JEPA 2 predicts future representations and uses them for planning. Its language alignment also uses a trained connection.",
+      "limit": "Predictive video representations do not automatically form a working language-model module."
+    },
+    {
+      "title": "Off-Manifold Refinement: Guiding Video Generators with a Frozen World Model",
+      "date": "2026-08-30",
+      "url": "https://arxiv.org/html/2608.29904v1",
+      "summary": "Off-Manifold Refinement trains an adapter that lets a frozen world model guide a frozen video generator during generation.",
+      "limit": "The demonstration concerns video generation, not a language-model organ transplant."
+    }
+  ],
+  "current_development": "The four-world learned-energy development run stopped before final evaluation after its run controller disappeared. The module-training stage completed, but no final task grade or learning outcome exists.",
+  "development_limit": "The incomplete run cannot establish task learning or compare host and bypass performance. A future unseen-rule transplant still requires a separate fixed plan and has not run.",
+  "novelty_established": false,
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/HETEROGENEOUS_ORGANS_PRIOR_ART.json",
+      "source_sha256": "85b0c8a70a331fac8feddd88ffe5fcea361af1cb5fb51ea68d3435dd4afddcaf"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/STOPPED.json",
+      "source_sha256": "658d920a72059250427ec569da5118592bc7062ba2c739fd046bfd3d3ffc2ad3"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/plan.json",
+      "source_sha256": "3d34bef825581d13f12e60b68fdff91896000654be0d8f5d184949a6e634b50a"
+    }
+  ],
+  "transformation": "Three previously reviewed primary papers summarized in plain language. Development status now comes from the terminal STOP record and registered plan; no training losses or partial model outputs were inspected."
+}

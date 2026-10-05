@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T03:18:59.378755+00:00",
+  "at_utc": "2026-10-05T13:01:29.273175+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -138,6 +138,95 @@
       "source_sha256": "529b5b8bac908893612594d422365a6c68d9609ca3e30cbe034aaf7d01c45e0c",
       "sha256": "529b5b8bac908893612594d422365a6c68d9609ca3e30cbe034aaf7d01c45e0c",
       "bytes": 14783
+    },
+    {
+      "file": "organ-resource-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TRANSPLANT_RESOURCE_V1/COMPLETE.json",
+          "source_sha256": "36a36717d062abafc26671060637ea9678d6507f9adfe5c6af72fce326c43ccb"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TRANSPLANT_RESOURCE_V1/REPORT.json",
+          "source_sha256": "6a32fe56448b40309f8bfedbe900713d9300cdc654889824844853f6f0f3756f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TRANSPLANT_PREPARATION/RESOURCE_TERMINAL_REVIEW.json",
+          "source_sha256": "958c8eb059d0d52c2c028dc6a914f303f46679301a0b0413d313cc6e6a1d0bbe"
+        }
+      ],
+      "transformation": "Selected completed counts and control outcomes; no raw model scores, prompt tokens, parameter values, process IDs or local absolute paths copied.",
+      "sha256": "3bbd2112bd48f250637c315fb8f55fb98d9f637336bb1e828a5857013b14c965",
+      "bytes": 2409
+    },
+    {
+      "file": "granite-route-compute-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/GRANITE_ROUTE_COMPUTE_CONTROLS_V1/STUDY_SUMMARY.json",
+          "source_sha256": "73a28bb5def46fa1a37ac0146f428c88de2c9954178d932df2219907495f755c"
+        }
+      ],
+      "transformation": "Selected terminal counts and limits; stale next-action text in the earlier summary is omitted.",
+      "sha256": "fd2a147a8b2a17590b647cdfda96a006a0ccd09964156447dd6aeeb9054b2ee6",
+      "bytes": 1630
+    },
+    {
+      "file": "routing-final-stop-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/routing-research/V4_CONTINUATION/STOPPED.json",
+          "source_sha256": "7e03f78dbb23b72994ee200f152bde0458a460ce66818ec9a091d0b15341bb2a"
+        },
+        {
+          "source_path": "outputs/routing-research/V4_CONTINUATION/AUDIT_TRANSPORT_STOP_REVIEW.json",
+          "source_sha256": "b8ec037739036a377c30678d35c23575cc4d9ee5328bafc7424a0a395bf63759"
+        }
+      ],
+      "transformation": "Metadata-only public summary. Request IDs, accounts, fees, process details and answer text are omitted.",
+      "sha256": "2d20026e5250eb489aabf6feb84868ee9d426963378dbd20af097085da759d48",
+      "bytes": 1602
+    },
+    {
+      "file": "heterogeneous-organs-context.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/HETEROGENEOUS_ORGANS_PRIOR_ART.json",
+          "source_sha256": "85b0c8a70a331fac8feddd88ffe5fcea361af1cb5fb51ea68d3435dd4afddcaf"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/STOPPED.json",
+          "source_sha256": "658d920a72059250427ec569da5118592bc7062ba2c739fd046bfd3d3ffc2ad3"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/plan.json",
+          "source_sha256": "3d34bef825581d13f12e60b68fdff91896000654be0d8f5d184949a6e634b50a"
+        }
+      ],
+      "transformation": "Three previously reviewed primary papers summarized in plain language. Development status now comes from the terminal STOP record and registered plan; no training losses or partial model outputs were inspected.",
+      "sha256": "1dddd127e9a130b9d50bfd256fc421edead3c6e400e94183598e94f531664f4a",
+      "bytes": 3005
+    },
+    {
+      "file": "organ-development-stop-summary.json",
+      "copy_type": "derived_public_summary",
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/STOPPED.json",
+          "source_sha256": "658d920a72059250427ec569da5118592bc7062ba2c739fd046bfd3d3ffc2ad3"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_DEVELOPMENT_V1/plan.json",
+          "source_sha256": "3d34bef825581d13f12e60b68fdff91896000654be0d8f5d184949a6e634b50a"
+        }
+      ],
+      "transformation": "Metadata only. Controller and worker identities, local absolute paths, training losses, learned module arrays and partial model outputs are omitted.",
+      "sha256": "1446fab8d573df7e5fc15926739d1cacd0ef5f83ed9e6d155a52688760455151",
+      "bytes": 2180
     }
   ],
   "absolute_local_path_redactions": 0,

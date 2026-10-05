@@ -1,0 +1,50 @@
+{
+  "record_type": "DERIVED_PUBLIC_COMPLETED_SUMMARY",
+  "created_at_utc": "2026-10-05T12:45:28.817347+00:00",
+  "completed_at_utc": "2026-10-05T12:09:10.519479+00:00",
+  "status": "RESOURCE_ADMISSION_PASSED",
+  "question": "Can a small trainable connector run inside a frozen language model on this machine?",
+  "result": "The connector ran and received one update. The saved host weight hashes stayed unchanged. This is an implementation and resource check.",
+  "bridge_trainable_weights": 66752,
+  "host": "ibm-granite/granite-3.1-1b-a400m-instruct",
+  "inputs": 1,
+  "input_tokens": 13,
+  "counts": {
+    "full_host_forwards": 5,
+    "full_host_backwards": 1,
+    "connector_updates": 1,
+    "bypass_updates": 1,
+    "organ_training_steps": 0,
+    "scientific_predictions": 0,
+    "paid_calls": 0
+  },
+  "controls": {
+    "initial_connector_final_scores_exactly_preserved": true,
+    "connector_removal_final_scores_exactly_preserved": true,
+    "host_weight_hashes_unchanged": true,
+    "updated_connector_output_hash_changed": true
+  },
+  "scope": "One short input with hand-built rules in a fixed energy table. The optimization label was a mechanics test, not evaluated task truth.",
+  "independent_terminal_review": "PASS_RESOURCE_ONLY",
+  "limitations": [
+    "No learned dynamics module was trained or transplanted.",
+    "One update does not establish better answers, planning, convergence or transfer.",
+    "The resource-only bypass used less prefix information than the host, so it is not a scientific test of host advantage.",
+    "Earlier failed gradient studies and stopped answer studies remain closed."
+  ],
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_TRANSPLANT_RESOURCE_V1/COMPLETE.json",
+      "source_sha256": "36a36717d062abafc26671060637ea9678d6507f9adfe5c6af72fce326c43ccb"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_TRANSPLANT_RESOURCE_V1/REPORT.json",
+      "source_sha256": "6a32fe56448b40309f8bfedbe900713d9300cdc654889824844853f6f0f3756f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/ORGAN_TRANSPLANT_PREPARATION/RESOURCE_TERMINAL_REVIEW.json",
+      "source_sha256": "958c8eb059d0d52c2c028dc6a914f303f46679301a0b0413d313cc6e6a1d0bbe"
+    }
+  ],
+  "transformation": "Selected completed counts and control outcomes; no raw model scores, prompt tokens, parameter values, process IDs or local absolute paths copied."
+}

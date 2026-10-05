@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A research-in-progress snapshot. A language check passed, but a follow-up prediction check failed. Read the evidence, failed tests and limits.">
+  <meta name="description" content="Can a language model use a different internal module? A small connector check passed; the learning run stopped before final evaluation. Read the completed results and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
-  <link rel="stylesheet" href="./styles.css?v=2">
+  <link rel="stylesheet" href="./styles.css?v=3">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
     <a class="wordmark" href="./index.html">AI UNDERSTANDING AI<span class="wordmark-dot" aria-hidden="true">.</span></a>
     <nav aria-label="Main navigation">
-      <a href="#inside">Inside a model</a>
+      <a href="#organs">The organ idea</a>
       <a href="#routing">Model routing</a>
       <a href="#evidence">Evidence</a>
     </nav>
@@ -24,9 +24,9 @@
     <section class="hero wrap" aria-labelledby="page-title">
       <div class="hero-copy">
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
-        <h1 id="page-title">Can we predict and repair an AI mistake?</h1>
-        <p class="hero-deck">We want to understand why a model gives an answer. A useful explanation should predict when it will fail. It should also help us test a specific repair.</p>
-        <p class="scope-line">This is a research draft, not peer reviewed. A language check passed, but its follow-up measurement test failed. The larger expert-removal study will not run under that failed plan. Earlier copy and numerical failures remain in the record. We have no new cognitive mechanism or demonstrated repair. GPT-2 work is paused.</p>
+        <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
+        <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
+        <p class="scope-line">A small connector ran inside a frozen language model and received one training update. That check used hand-built rules. A four-world study with learned energy modules stopped before final evaluation when its run controller was lost. It has no task grade. Earlier failed tests stay closed. The Cloudflare final audit stopped. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -35,10 +35,32 @@
         <div class="figure-heading"><p class="eyebrow">Two separate studies</p><span class="figure-number" aria-hidden="true">01</span></div>
         <h2 id="two-studies-title">Inside one model.<br> Between different models.</h2>
         <div class="result-lines">
-          <div><div><h3>Granite: change an internal part</h3><p>We test wording, internal parts, and the computer arithmetic that combines their outputs.</p></div></div>
-          <div><div><h3>Cloudflare: choose a model</h3><p>Can a router choose which complete model should answer a question?</p></div></div>
+          <div><div><h3>Inside Granite: connect different parts</h3><p>The current question is whether a small module can supply useful world rules through a learned internal connector.</p></div></div>
+          <div><div><h3>Cloudflare: final audit stopped</h3><p>The run to test choices between complete models stopped. It has no final scientific grade.</p></div></div>
         </div>
       </aside>
+    </section>
+
+    <section class="section wrap" id="organs" aria-labelledby="organs-title">
+      <div class="section-heading"><p class="eyebrow">Current direction / Different internal parts</p><h2 id="organs-title">A small world model inside a language model.</h2></div>
+      <div class="section-body">
+        <p class="lead">“Organ” is an analogy for parts with different jobs.</p>
+        <p>Our module is trained to score which state should follow an action. It gives each possible next state an energy score: lower means a better match. Here, energy is a learned score, not electrical power. A small connector passes this information into the language model while it processes the question.</p>
+        <p>This is an internal connection. It is different from sending a question to one of several separate models. The language model’s existing weights stay fixed while the connector learns.</p>
+        <table class="followup-table followup-table--text">
+          <caption>Current evidence. The completed connector check and the stopped learning run have different limits.</caption>
+          <thead><tr><th scope="col">Step</th><th scope="col">Status</th><th scope="col">What it tells us</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Connector and resource check</th><td>Passed</td><td>A connector with 66,752 trainable weights ran inside Granite. One update changed the connector while the host weights stayed unchanged.</td></tr>
+            <tr><th scope="row">Learned rules in four small worlds</th><td>Stopped before final evaluation</td><td>The rule modules finished their training stage. Training of the connector and comparison model did not finish. No task grade exists.</td></tr>
+            <tr><th scope="row">Replace the module with unseen rules</th><td>Not run</td><td>This would test whether a fixed host and connector can use a new module.</td></tr>
+          </tbody>
+        </table>
+        <aside class="plain-note"><strong>The passed check used hand-built rules.</strong>It used one short input and a fixed table. No world model was trained. A training update is not evidence of better answers, useful planning, or a successful organ transplant.</aside>
+        <p>Other researchers already connect different models. <a href="https://arxiv.org/html/2401.02412v1">CALM</a> connects internal language-model representations through a trained adapter. <a href="https://arxiv.org/html/2506.09985v1">V-JEPA 2</a> predicts future representations and uses them for planning. <a href="https://arxiv.org/html/2608.29904v1">Off-Manifold Refinement</a> uses a world model to guide a video generator through a trained adapter. These are precedents, not evidence that our proposed language-model transplant works.</p>
+        <aside class="plain-note"><strong>The learning run lost its controller.</strong>The program that supervised the run disappeared after an interruption. We stopped the remaining worker on 5 October at 12:59 UTC. Fourteen of 16 training rounds finished, with 5,652 of 6,144 paired updates complete. No final checkpoint, prediction panel, report, or independent result check was produced. This is an execution failure, not evidence that the model failed to learn.</aside>
+        <p class="source-line"><a href="./research-evidence/organ-resource-summary.json">Completed connector check and limits</a> · <a href="./research-evidence/organ-development-stop-summary.json">Why the learning run stopped</a> · <a href="./research-evidence/heterogeneous-organs-context.json">Prior work and the current question</a> · <a href="#next">What comes next</a></p>
+      </div>
     </section>
 
     <section class="section wrap" id="inside" aria-labelledby="inside-title">
@@ -145,6 +167,7 @@
         <aside class="plain-note"><strong>The planned larger test stays closed.</strong>We cannot use this failed measurement check to explain which experts cause grammar behavior. Rounding and nonlinear responses remain possible contributors. This test does not isolate the cause of the mismatch or establish that the gradient code is wrong.</aside>
         <p>All 44 model evaluations and 12 gradient calculations completed. No expert removal was returned to the model, no fresh discovery sentences were used, and no provider fees were added. The two reused sentences give a narrow implementation check, not 12 independent scientific examples.</p>
         <p class="source-line"><a href="./research-evidence/granite-agreement-controls-summary.json">Failed measurement check, fixed rules and independent audit</a></p>
+        <p>A later tool that changes internal signals directly passed its fixed controls on two reused sentences. It did not rely on those failed gradient predictions. This is a check of the measuring tool, not evidence of a backup expert or a new mechanism. <a href="./research-evidence/granite-route-compute-summary.json">Read the narrow tool check</a>.</p>
       </div>
     </section>
 
@@ -152,7 +175,8 @@
       <div class="section-heading"><p class="eyebrow">06 / Between complete models</p><h2 id="routing-title">Different models can answer different questions.</h2></div>
       <div class="section-body">
         <p class="lead">The training set contains room for a better choice.</p>
-        <p>At the <time datetime="2026-10-05T01:30:45Z">5 October 2026, 01:30 UTC</time> snapshot, the selection phase was complete and its scoring had a separate check. Certification was running. This dated snapshot contains no final routing result.</p>
+        <aside class="plain-note"><strong>The final audit stopped on 5 October.</strong>At <time datetime="2026-10-05T05:06:56Z">05:06 UTC</time>, a collection or response check failed. Of 16 requests started in this final phase, one had a response that could be linked to its request. Fifteen had unknown outcomes. No final scientific grade exists. We did not retry these requests or use partial audit answers as a result.</aside>
+        <p>The earlier <a href="./research-evidence/routing-status-summary.json">01:30 UTC snapshot</a> is retained as dated history. It is not the current status. The completed training counts below also remain in the record.</p>
         <p>We asked six hosted models the same 200 benchmark questions. These questions were used to fit the router. They are not an independent test of its performance.</p>
         <table class="followup-table">
           <caption>Completed training data. Correct means a pass under the fixed scoring rules.</caption>
@@ -167,17 +191,19 @@
         <p>The 101 count uses all answers after we know their scores. It is a best-case choice made with hindsight. We have not shown that the router can find those answers on new questions.</p>
         <aside class="plain-note"><strong>The output limit matters.</strong>Qwen had no saved final answer on 150 questions. GPT-OSS had none on 83. Each of these responses reached the 1,024-token output limit. Tokens are units of generated text. The records flag these responses as incomplete or cut short. This alone does not tell us what caused the missing final answer, or what a longer reply would contain.</aside>
         <p>These results concern hosted models under one test setup. The counts do not show stable specialties. They do not measure the jobs of experts inside a model.</p>
-        <p class="source-line"><a href="./research-evidence/routing-training-summary.json">Training summary</a> · <a href="./research-evidence/routing-delivery-summary.json">Output-limit records</a> · <a href="./research-evidence/routing-independent-check.json">Separate numerical check</a> · <a href="./research-evidence/routing-status-summary.json">Phase status at this snapshot</a></p>
+        <p class="source-line"><a href="./research-evidence/routing-training-summary.json">Training summary</a> · <a href="./research-evidence/routing-delivery-summary.json">Output-limit records</a> · <a href="./research-evidence/routing-independent-check.json">Separate numerical check</a> · <a href="./research-evidence/routing-final-stop-summary.json">Final audit stop and limits</a> · <a href="./research-evidence/routing-status-summary.json">Earlier dated snapshot</a></p>
       </div>
     </section>
 
     <section class="limits-band" id="next" aria-labelledby="next-title">
       <div class="wrap limits-inner">
-        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Keep the failures.<br> Review a new question.</h2></div>
+        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Make the run reliable.<br> Then test learning.</h2></div>
         <div class="section-body">
           <p class="lead">A useful explanation must survive a new test.</p>
           <p>The copy-and-format idea around expert 9 remains closed. The language task passed, but the new measurement check failed. That failed plan stays closed. Its rules and results stay unchanged.</p>
-          <p>We are reviewing a different question: do some experts help one another, or can one replace another? A possible test would compare the direct effects of removing either expert alone and both together. This is only a research direction. It needs a separate plan, reliable controls and a check against existing papers before any new experiment.</p>
+          <p>The stopped run was designed to test learned rules in four small worlds. A separate model received the same saved language features and rule information. Without the final evaluation, we cannot use this run to compare their task performance.</p>
+          <p>We are checking a controller that can continue when the chat is interrupted. A separately recorded second development attempt will keep the same worlds, model settings and training budget. The first run stays closed and its records stay visible. Partial training cannot replace the missing final test.</p>
+          <p>A later transplant test would keep the language model and connector fixed, replace only the module that holds world rules, and test new action sequences. That test has not run. Even success in four training worlds would not prove transfer to unseen rules.</p>
           <p>We do not yet claim a new mechanism, a broadly reliable repair, or a novel research result.</p>
         </div>
       </div>
@@ -189,6 +215,12 @@
         <p>These JSON files contain selected summaries and source references. Derived summaries are labeled. Large audits, raw traces, and partial answers are not included. Separate code checks are part of this project, not an external replication. <a href="./research-evidence/manifest.json">Copy manifest</a>.</p>
       </div>
       <div class="evidence-grid">
+        <div class="evidence-group"><h3>The organ direction</h3><ul>
+          <li><a href="./research-evidence/organ-resource-summary.json">Connector and resource check<span>One small input; fixed rules; no learned dynamics</span></a></li>
+          <li><a href="./research-evidence/organ-development-stop-summary.json">Learning run stopped<span>Run controller lost; no final task grade</span></a></li>
+          <li><a href="./research-evidence/heterogeneous-organs-context.json">Established model-composition work<span>CALM, V-JEPA 2 and video guidance</span></a></li>
+          <li><a href="./research-evidence/granite-route-compute-summary.json">Direct intervention tool<span>Controls passed on two reused sentences</span></a></li>
+        </ul></div>
         <div class="evidence-group"><h3>Inside Granite</h3><ul>
           <li><a href="./research-evidence/granite-pilot-answer-check.json">Pilot answer check<span>One selected prompt</span></a></li>
           <li><a href="./research-evidence/granite-generalization-summary.json">Broader test<span>Results and failed requirements</span></a></li>
@@ -205,7 +237,8 @@
           <li><a href="./research-evidence/routing-training-summary.json">Training results<span>Counts across six models</span></a></li>
           <li><a href="./research-evidence/routing-delivery-summary.json">Output records<span>Limits and missing final answers</span></a></li>
           <li><a href="./research-evidence/routing-independent-check.json">Independent calculation<span>Training counts checked again</span></a></li>
-          <li><a href="./research-evidence/routing-status-summary.json">Phase snapshot<span>5 Oct, 01:30 UTC · Certification was running</span></a></li>
+          <li><a href="./research-evidence/routing-final-stop-summary.json">Final audit stopped<span>5 Oct, 05:06 UTC · No final scientific grade</span></a></li>
+          <li><a href="./research-evidence/routing-status-summary.json">Earlier phase snapshot<span>Dated history · 5 Oct, 01:30 UTC</span></a></li>
         </ul></div>
       </div>
     </section>
