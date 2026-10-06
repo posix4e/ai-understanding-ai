@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Can different AI organs work together? The latest fixed decision test scored 232 of 464 correct. Repeated outputs matched, but readiness failed. Read the results and limits.">
+  <meta name="description" content="Which parts carry an AI organ’s answer? Two controlled internal edits each kept all 96 supplied answers, with smaller score leads. Read the controls and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-06">6 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">A fixed reader, energy module and writer work together for one action in four small known worlds. In the latest decision test, SmolLM3 got 232 of 464 choices right. Repeated outputs matched exactly, but the model failed the readiness test. <a href="#dependence-native-result">Read the latest result.</a> Earlier failures and stopped runs remain below. This draft is not peer reviewed and establishes no new mechanism. GPT-2 work is paused.</p>
+        <p class="scope-line">A fixed reader, energy module and writer work together for one action in four small known worlds. The latest check changed how its supplied answer reached the output: two internal edits each kept all 96 answers, with smaller average score leads. <a href="#organ-tail-attribution">Read the latest result.</a> This does not establish independent reasoning modules or novelty. Earlier failures and stopped runs remain below. This draft is not peer reviewed. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -61,6 +61,7 @@
             <tr><th scope="row">Separate writer recovery</th><td>Passed retrospective check</td><td>All 1,024 final choices matched the supplied answer code. No training or model calls were repeated.</td></tr>
             <tr><th scope="row">Fixed reader on live signals</th><td>Passed</td><td>All 24 starting states, actions and addresses were correct. No new fit or training was needed. The writer and rule modules were not run.</td></tr>
             <tr><th scope="row">Live reader → energy module → writer</th><td>Passed one-action check</td><td>All 96 requested-rule answers and all 96 deliberately changed queries were followed. The system ran the energy modules; it did not use stored answer probabilities.</td></tr>
+            <tr><th scope="row">Which parts carry the supplied answer?</th><td>Controlled edits completed</td><td>Both edited versions kept all 96 answers, with smaller average score leads. All 192 no-change comparisons matched exactly.</td></tr>
             <tr><th scope="row">Host alone: copy and add one</th><td>Completed; requirement failed</td><td>Copying passed 192 / 192. Adding one passed 147 / 192, below the fixed 192 / 192 requirement. No organ or connector ran.</td></tr>
             <tr><th scope="row">Replace the module with unseen rules</th><td>Not run</td><td>This would test whether a fixed host and connector can use a new module.</td></tr>
           </tbody>
@@ -159,6 +160,22 @@
         <p>The full check took about 69 seconds: 264 language-model evaluations, 192 reader applications, 192 live energy-module evaluations and 216 writer applications. There was no new fit, training update or paid model call. All saved parameters stayed unchanged. Separate numerical checks, a recount and a terminal record review passed.</p>
         <aside class="plain-note"><strong>This is a narrow working connection.</strong>It ranks eight labels for one action in four known toy worlds, using a designed reader and writer. It does not establish free-text generation, planning, transfer to new rules, an advantage from energy-based modeling, or a new scientific mechanism. It also does not explain why the earlier jointly trained connection failed. The same host and connections used all four existing modules; new modules remain untested.</aside>
         <p class="source-line"><a href="./research-evidence/organ-live-energy-summary.json">Live energy connection: completed result, controls and limits</a></p>
+        <h3 id="organ-tail-attribution">Two internal edits kept every supplied answer.</h3>
+        <p>Which parts carry the organ’s answer? We returned to the working connection on all 96 exposed cases: 24 familiar questions across four known worlds. The writer already receives probabilities that identify the next state. This check asked how that supplied answer reaches the output.</p>
+        <p>We changed eight updates in the last four processing blocks, at the final question position. These were the attention and expert outputs in blocks 20–23. One version kept the writer’s direct signal but replaced those outputs with their uniform-baseline values. The other removed the direct signal and replayed outputs recorded with it. Those replayed updates were originally produced using the organ’s probabilities.</p>
+        <table class="followup-table">
+          <caption>Strict ranking among eight answer labels. Score lead is the target’s score minus its strongest competitor’s score, not a probability.</caption>
+          <thead><tr><th scope="col">Condition</th><th scope="col">Correct</th><th scope="col">Ties</th><th scope="col">Mean score lead</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Equal probabilities (baseline)</th><td>10 / 96</td><td>12</td><td>−1.437</td></tr>
+            <tr><th scope="row">Normal organ connection</th><td>96 / 96</td><td>0</td><td>10.008</td></tr>
+            <tr><th scope="row">Organ signal + baseline later updates</th><td>96 / 96</td><td>0</td><td>3.696</td></tr>
+            <tr><th scope="row">Saved later updates; direct signal removed</th><td>96 / 96</td><td>0</td><td>5.806</td></tr>
+          </tbody>
+        </table>
+        <p>Both edited versions kept all 96 answers, with smaller average score leads. All 192 no-change replay comparisons had identical full output scores. The six-condition check used 576 host evaluations in about 152 seconds, with no new fit, training update, generated answer or paid call.</p>
+        <aside class="plain-note"><strong>This does not show two independent modules.</strong>The host blocks still ran, including normalization and the final readout. Replaying updates made with the organ signal is not an independent way to compute its answer. These controlled combinations show two ways to preserve the ranking here; they do not establish planning, new-world transfer, an energy-model advantage or novelty. The 96 reused cases are not independent population trials.</aside>
+        <p class="source-line"><a href="./research-evidence/organ-tail-attribution-summary.json">Completed result, exact controls and limits</a> · <a href="./research-evidence/organ-tail-attribution-sources.zip">Source reading bundle</a> (27 pinned Python files and the plan; not a self-contained reproduction).</p>
         <h3 id="organ-composition-admission">The host copied a stated number, but adding one missed the requirement.</h3>
         <p>Before testing whether the host could use a hidden organ signal in another step, we checked the host alone. We wrote a next-state digit into the question, then asked it either to copy that digit or add one. The check used 24 familiar question prefixes, each with all eight digits from 0 to 7 and both instructions.</p>
         <table class="followup-table">
@@ -312,14 +329,15 @@
 
     <section class="limits-band" id="next" aria-labelledby="next-title">
       <div class="wrap limits-inner">
-        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Test which part should act next.</h2></div>
+        <div class="section-heading"><p class="eyebrow">07 / The next goal</p><h2 id="next-title">Test what each part contributes.</h2></div>
         <div class="section-body">
           <p class="lead">A useful explanation must survive a new test.</p>
           <p>The copy-and-format idea around expert 9 remains closed. The language task passed, but its follow-up prediction check failed. That failed plan stays closed. Its rules and results stay unchanged.</p>
           <p>The second attempt completed, but it failed on the short training questions as well as the longer probes. We cannot describe this as only a failure to combine steps. The current evidence does not isolate why learning failed.</p>
           <p>The completed access check did not improve the total number of correct answers when we pointed the frozen connector to the relevant rule. A new reader first identified the requested address from saved signals on 24 exposed development questions. It then passed the live check above. This is a separate fitted reader, not a repair of the old connection or an explanation of its failure.</p>
           <p>The joined one-action system passed with actual energy-module calls, using four existing development worlds and fixed connections. The later native copy/add check failed its joint requirement. That closes this hidden-state ADD formulation; we will not change its wording or pass rule to rescue it.</p>
-          <p>A table or another small predictor can supply the same eight probabilities. A matched substitution would test whether the energy model adds anything beyond a working interface. Replacing only the rule module with one trained on new world rules is another untested comparison. If outside code performs the action steps, that does not show that the host performs them.</p>
+          <p>A table or another predictor that supplies exactly the same eight probabilities is indistinguishable at this writer boundary by construction. That substitution cannot isolate an energy-model advantage. The <a href="#organ-tail-attribution">new internal replay check</a> instead asks which parts carry the supplied answer. <a href="https://arxiv.org/html/2609.34754v1">Draft-KV</a> is a recent precedent for checking whether correct message content contributes to improved scores.
+          </p><p>A possible next design would supply only partial state information, then test whether the host uses the same message differently across grammatical contexts. This is an unregistered proposal and needs its own fixed ability check. The failed ADD, controller and dependence tests remain closed. If outside code supplies the complete answer or performs the action steps, that does not show host composition.</p>
           <h3 id="jev-controller">Option names affected a decision model. Our explanation did not pass.</h3>
           <p>A decision “organ” could choose which computation to request, what to check, or when to stop. A world model would predict consequences, an energy model would score possible outcomes, and a language model would explain the result. <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe’s Jev</a> and Cloudflare’s <a href="https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/">Clef</a> motivate this direction. We tested the separate open model <a href="https://huggingface.co/convaiinnovations/laya-typed-decisions">Laya</a> locally. We did not run Jev or Clef in these checks. A <a href="https://arxiv.org/html/2609.26758v2">published study already reported option-name effects</a>; our new test asked how such an effect passes through one internal boundary.</p>
           <p>First, Laya selected the right tool on <strong>3 of 8 related inputs</strong>. All 8 pairs with and without internal observation gave identical results. The tool-selection requirement failed.</p>
@@ -407,6 +425,7 @@
       </div>
       <div class="evidence-grid">
         <div class="evidence-group"><h3>The organ direction</h3><ul>
+          <li><a href="./research-evidence/organ-tail-attribution-summary.json">Which parts carry the supplied answer?<span>Both internal edits kept 96 / 96 answers; smaller score leads and 192 exact controls</span></a></li>
           <li><a href="./research-evidence/dependence-native-result.json">Choices about related failures<span>232 / 464 correct; repeats matched, but readiness failed</span></a></li>
           <li><a href="./research-evidence/component-diagnostic-summary.json">Basic controller choices and number format<span>All four task checks failed; this interface is closed as a fault-state test</span></a></li>
           <li><a href="./research-evidence/fault-scope-summary.json">Selective trust after a fault clue<span>Amended development result; original resource stop and limits preserved</span></a></li>

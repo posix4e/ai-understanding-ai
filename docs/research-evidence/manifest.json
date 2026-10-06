@@ -1,6 +1,6 @@
 {
-  "at_utc": "2026-10-06T07:15:58.689586+00:00",
-  "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
+  "at_utc": "2026-10-06T07:57:14.795459+00:00",
+  "scope": "Selected summary records, explicitly labeled derived metadata, and a frozen source/plan bundle for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
       "file": "granite-generalization-summary.json",
@@ -439,8 +439,8 @@
           "url": "https://arxiv.org/html/2601.17094v2",
           "version_date": "2026-03-31",
           "sections": [
-            "3.1–3.3",
-            "7.2–7.3"
+            "3.1\u20133.3",
+            "7.2\u20137.3"
           ],
           "independently_read_at_utc": "2026-10-05T14:23:22.343278+00:00"
         }
@@ -1251,6 +1251,68 @@
         }
       ],
       "transformation": "Projection of the completed independent audit, with arithmetic consistency checks on its already graded fields. No raw score decoding, model calls or scientific regrading. Public file is a byte-exact copy of the approved projection. All 58 cell counts, eight form counts, eight repeats and four original requirements are retained. Failed readiness closes this fixed interface."
+    },
+    {
+      "file": "organ-tail-attribution-summary.json",
+      "copy_type": "derived_public_summary",
+      "sha256": "8e6dc72b55b975c91f935ede36aee36f0d7365813c75ffc35fb175c632b2afdc",
+      "bytes": 359381,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TAIL_ATTRIBUTION_V1/plan.json",
+          "source_sha256": "b03e873cf4aadc83198e6d1a88aff6370b0caf970eac0dab852318dcedcbbdfa"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TAIL_ATTRIBUTION_V1/REGISTRATION.json",
+          "source_sha256": "6dd2d0efdab094c16e5b666a20791a0d7a1f59f1aa8cfd3f04a5126424886acf"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TAIL_ATTRIBUTION_V1/COMPLETE.json",
+          "source_sha256": "627e8690c16b948f047d0da3e4b8b0b4779609422443615ecd724012d661605e"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TAIL_ATTRIBUTION_V1/REPORT.json",
+          "source_sha256": "305ad8c90732092e7b29f41571d4d0748e562477a214c3474044dcc8b5cbe9d9"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TAIL_ATTRIBUTION_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "ac200d16cf5cba2fe0386e49b72fdc1f1e568db6b0b6fc16f6947feac71bee4a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TAIL_ATTRIBUTION_V1/COLLECTED.json",
+          "source_sha256": "95c6dfd1f3f175e5d1a1ad43eb4dbb8d8a2718d4ac636d596d3c00a060bc344d"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TAIL_ATTRIBUTION_V1/WORKER_COMPLETE.json",
+          "source_sha256": "4355cc982bd28565f20ad815af5db5ca996c0b43055a845d5ca835b8fdb76cc2"
+        },
+        {
+          "source_path": "work/organ-tail-attribution-publication-preparation/RECOUNT.json",
+          "source_sha256": "ff6639eb1729a3cbc61018f3e0f42e3e368764bf624d6d54abaccdb69902ff80"
+        },
+        {
+          "source_path": "work/organ-tail-attribution-publication-preparation/CLAIM_REVIEW.json",
+          "source_sha256": "e1a39fb62172cec6566174230741ba5146d2e87f1edd87bb258bb220e414739d"
+        },
+        {
+          "source_path": "outputs/routing-research/BUDGET_AFTER_JEV_FEEDBACK_AMENDED_NEGATIVE.json",
+          "source_sha256": "8ebcaabedb7bd09cfdf63b9ccbe6c6b60cf2d31e9d753d09e9b7ec4d6975ff58"
+        }
+      ],
+      "transformation": "Selected audited scores and complete96-cell factorial; no source answer values changed."
+    },
+    {
+      "file": "organ-tail-attribution-sources.zip",
+      "copy_type": "frozen_source_and_plan_bundle",
+      "sha256": "2062a5f8f6d3586049f455af86e53a43b26000a9d5f945b082c9fa11e5804048",
+      "bytes": 167431,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_TAIL_ATTRIBUTION_V1/plan.json",
+          "source_sha256": "b03e873cf4aadc83198e6d1a88aff6370b0caf970eac0dab852318dcedcbbdfa"
+        }
+      ],
+      "transformation": "ZIP of27 exactly copied frozen Python sources and the locally registered plan. Raw data/weights are not included."
     }
   ],
   "absolute_local_path_redactions": 0,
