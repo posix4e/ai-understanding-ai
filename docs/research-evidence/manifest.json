@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T23:11:44.355882+00:00",
+  "at_utc": "2026-10-06T01:31:31.396525+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -439,8 +439,8 @@
           "url": "https://arxiv.org/html/2601.17094v2",
           "version_date": "2026-03-31",
           "sections": [
-            "3.1–3.3",
-            "7.2–7.3"
+            "3.1\u20133.3",
+            "7.2\u20137.3"
           ],
           "independently_read_at_utc": "2026-10-05T14:23:22.343278+00:00"
         }
@@ -977,6 +977,95 @@
       "transformation": "Selected complete development aggregates, fixed method, disclosed continuation and limits. No raw answers, per-query probabilities, private account data, process identifiers, credentials, or absolute machine paths copied. Earlier public summary records remain unchanged.",
       "sha256": "7f3ac4788107afe63a56b1942908a0ff03fecad58aafed6df25e509a8271175a",
       "bytes": 9202
+    },
+    {
+      "file": "fault-scope-summary.json",
+      "copy_type": "derived_public_summary",
+      "sha256": "eb740ae1dfac2b37050dfbf4715e00906896812900615a4c7a59c948afdf33d8",
+      "bytes": 11958,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/PLAN.json",
+          "source_sha256": "16f8cba1690f2e2a27b56d01036a768c22342b0a9cb6847765d9dd1adcaaf39c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/RUN_STARTED.json",
+          "source_sha256": "f1e1f98f6ad4e4608c24aee8eb8f68794cbd9cfdfcc9118cfa5f570c3d899999"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/COMPLETE.json",
+          "source_sha256": "9be8d3968858c40c4d58dfb93534b67e0fcaa5e93329a7c1c5a1c1cf5580a7ce"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/COMPOSITE_COLLECTION_COMPLETE.json",
+          "source_sha256": "385ffa7553b8deea6645cdd338d30ec8ad417a57a9506418b77e50239fcb7edf"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/COMPOSITE_INPUT_SEAL.json",
+          "source_sha256": "9a8b98fa88fb65eee2a1da58c693ecde2814ddeda5c92fbe90bd9630d76b0773"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/TERMINAL_INVENTORY.json",
+          "source_sha256": "580ca7ca96d14f2e69c66497b6ab4ea4d9e304ea71957237ba9aeb55666e3b3b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/SCIENCE_REPORT.json",
+          "source_sha256": "f3a01d69851606a5b2a950773a920feb20e48c773755285f64e93197ded07537"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/SCIENCE_AUDIT.json",
+          "source_sha256": "deff1ce0b62fea373e80a632a44cf7b8d5cfcdc3fd1c1389483f85ded7d1bf7f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_STUDY_V1/PLAN.json",
+          "source_sha256": "aa276de208e03e91d6ebb983017e924ec809ca42ecad7289cfba5c4cbcc16f5a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_STUDY_V1/STOP.json",
+          "source_sha256": "457bbf398ade227f9cae026f6e1bae7b49005159c9b650d4acb0aa7bf9081aac"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_STUDY_V1/SPECIFICATION.json",
+          "source_sha256": "2e35ff5716730450c52dfcd4a058cdf8e70e4a3386bea0f63daff2c1ddb5eb52"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_STUDY_V1/development/COMMISSION_REPORT.json",
+          "source_sha256": "dc1a013932a83fc78e91d1ff0e79ba8e81ac631bb84e60ebc323e63475603b02"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_STUDY_V1/development/COMMISSION_AUDIT.json",
+          "source_sha256": "acf0fa1759bad47c56a35791fd36705e57320cc8b0d9a41f5491d676a8e45f5f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/RELIABILITY_MEMORY_PREPARATION/ORIGINAL_RESOURCE_STOP_INVENTORY.json",
+          "source_sha256": "e8ed8134ed7b3a086d23cad4296d1bab8269d4c4627c119b82fa7272646e7d03"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/RELIABILITY_MEMORY_PREPARATION/FAULT_SCOPE_RAW_RECOVERABILITY_REVIEW.json",
+          "source_sha256": "7acb2c7f7aceb7e335b453b50463df022231e19879fa7f2ba39fc2207046f64c"
+        },
+        {
+          "source_path": "work/fault-scope-independent-review/FAILURE_PROVENANCE_REVIEW.json",
+          "source_sha256": "d29fa3e232c407f7b005241d99ccbf496d3c3c85531f5d01590d86993bb3d45c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/RELIABILITY_MEMORY_PREPARATION/FAULT_SCOPE_AMENDED_TERMINAL_NUMERICAL_RECOUNT.json",
+          "source_sha256": "84d29a11c528f218d0ca0b278196f48529172748a96c9d2cea17f831d963c735"
+        },
+        {
+          "source_path": "work/fault-scope-independent-review/AMENDED_TERMINAL_PROVENANCE_REVIEW.json",
+          "source_sha256": "92e03dc4b7c62917081cd1438c002c2e3d4a99c69212d9e15183f7e5d2a2aa04"
+        },
+        {
+          "source_path": "research/moe-mechanisms/fault_scope_continuation_v1/CONTINUATION_AMENDMENT.json",
+          "source_sha256": "9223d7bd2cf008f8026a17247d05c20a88d413a626d53103a37d9bee93aa3464"
+        },
+        {
+          "source_path": "work/fault-scope-independent-review/prepare_amended_public_summary.py",
+          "source_sha256": "c570ae207a2bcabdef392e8dc272ca5ed4f8c2db30e01cf946846ab7ed7358b1"
+        }
+      ],
+      "transformation": "Selected completed aggregates and method only. No raw scores, prompts, targets, private filesystem paths or account information. Local source registration is not public preregistration."
     }
   ],
   "absolute_local_path_redactions": 0,

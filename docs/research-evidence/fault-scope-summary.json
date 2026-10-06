@@ -1,0 +1,278 @@
+{
+  "record_type": "DERIVED_PUBLIC_AMENDED_FAULT_SCOPE_SUMMARY",
+  "created_at_utc": "2026-10-06T01:30:47.701867+00:00",
+  "status": "AMENDED_DEVELOPMENT_BEHAVIOR_NEGATIVE",
+  "phase": "amended_development",
+  "question": "Can a controller use a diagnostic clue to change which module it trusts for related abilities while keeping trust in unrelated abilities?",
+  "plain_result": "The amended development panel did not meet every fixed behavioral requirement. Confirmation has not run.",
+  "execution_history": {
+    "original_status": "STOPPED_RESOURCE_LIMIT",
+    "original_study_completed": false,
+    "original_returns_reused_once": 469,
+    "new_native_returns": 363,
+    "unique_logical_cases": 832,
+    "original_resource_failed_return_retained_once": 1,
+    "original_controls_pass_for_that_return": false,
+    "exception": "A complete, finite return saved before the memory guard stopped the original run was admitted under a separate, explicit recovery exception.",
+    "continuation": "Only the 363 never-started fixed cases were collected, with a fresh pinned-model process for each remaining family.",
+    "original_final_parameter_content_hash_available": false,
+    "mixed_process_numerical_history": true,
+    "new_fits": 0,
+    "new_worlds": 0,
+    "new_organ_forecasts": 0,
+    "provider_calls": 0,
+    "new_paid_usd": "0"
+  },
+  "design": {
+    "controller": "Frozen IBM Granite 3.1 1B-A400M Instruct",
+    "revision": "0da7a48b0276d500ce5922fd2b33944091fc6c09",
+    "families": 16,
+    "unit": "World family",
+    "organs": [
+      "Categorical next-state predictor",
+      "Candidate-state energy model"
+    ],
+    "training": "Both use classification cross entropy. Controlled differences in training coverage create the reliability contrast.",
+    "fault": "A shared input adapter or one local branch changes the consumed state. The outcome rule stays fixed.",
+    "graph": "A supplied graph tells which abilities share the adapter; a matched rewiring changes the related target.",
+    "clues": "One probe perfectly identifies the fault in this finite panel; another repeats information already available.",
+    "readout": "Two native candidate-token probabilities, normalized into module-selection weights. No generated answer is used."
+  },
+  "commissioning": {
+    "all_fixed_families_passed": true,
+    "families": 16,
+    "perfect_binary_diagnostic_channels": 16
+  },
+  "metric": {
+    "name": "Expected selected-organ sum Brier loss",
+    "lower_is_better": true,
+    "explanation": "Average each module forecast error using its selection weight and the exact joint fault-and-observation frequencies. This is not the error of an averaged forecast.",
+    "aggregation": "Average graph, module-name and display-order variants within each family, then average families.",
+    "means": {
+      "commissioned_bayes": {
+        "A": {
+          "affected": 1.181273892695395,
+          "unaffected": 1.2876101349638375e-09
+        },
+        "B": {
+          "affected": 0.574444400979558,
+          "unaffected": 1.2876101349638375e-09
+        }
+      },
+      "fixed_energy": {
+        "A": {
+          "affected": 1.2431719268703152,
+          "unaffected": 0.743177850983221
+        },
+        "B": {
+          "affected": 1.2431719268703152,
+          "unaffected": 0.743177850983221
+        }
+      },
+      "fixed_predictor": {
+        "A": {
+          "affected": 0.90569445778012,
+          "unaffected": 0.40571095097589494
+        },
+        "B": {
+          "affected": 0.90569445778012,
+          "unaffected": 0.40571095097589494
+        }
+      },
+      "global_reset": {
+        "A": {
+          "affected": 1.1488888006715057,
+          "unaffected": 1.1488888006715057
+        },
+        "B": {
+          "affected": 1.1488888006715057,
+          "unaffected": 1.1488888006715057
+        }
+      },
+      "native": {
+        "A": {
+          "affected": 1.0517554239289753,
+          "unaffected": 0.3857151242537448
+        },
+        "B": {
+          "affected": 1.0501598620999728,
+          "unaffected": 0.3876971466105562
+        }
+      },
+      "no_reset": {
+        "A": {
+          "affected": 0.9999775839789296,
+          "unaffected": 1.2876101349638375e-09
+        },
+        "B": {
+          "affected": 0.9999775839789296,
+          "unaffected": 1.2876101349638375e-09
+        }
+      },
+      "stale_graph_C": {
+        "A": {
+          "affected": 1.0425926470169586,
+          "unaffected": 0.16761008594529236
+        },
+        "B": {
+          "affected": 0.7418596073850162,
+          "unaffected": 0.24186950152279
+        }
+      },
+      "uniform": {
+        "A": {
+          "affected": 1.0744331923252177,
+          "unaffected": 0.574444400979558
+        },
+        "B": {
+          "affected": 1.0744331923252177,
+          "unaffected": 0.574444400979558
+        }
+      }
+    }
+  },
+  "counts": {
+    "exact_repeat_calls": 64,
+    "families": 16,
+    "primary_native_calls": 768,
+    "target_records": 128
+  },
+  "estimates": {
+    "affected_bayes_excess": 0.4757154611204149,
+    "affected_gain": 0.0015955618290022864,
+    "affected_gain_graph_C": -0.0019356310976948237,
+    "affected_gain_graph_U": 0.005126754755699397,
+    "alias_absolute_difference": 0.3679789080628757,
+    "alias_strict_agreement": 0.46875,
+    "graph_scope_contrast": 0.0025908733673999907,
+    "mean_candidate_mass": 0.9996827676885958,
+    "order_absolute_difference": 0.1887072472872536,
+    "order_strict_agreement": 0.505859375,
+    "unaffected_harm": 0.001982022356811401
+  },
+  "intervals": {},
+  "fixed_requirements": {
+    "results": {
+      "affected_gain_each_graph": false,
+      "affected_gain_magnitude": false,
+      "affected_gain_positive": true,
+      "alias_absolute_difference": false,
+      "alias_strict_agreement": false,
+      "commissioned_bayes_excess": false,
+      "graph_scope_contrast": true,
+      "order_absolute_difference": false,
+      "order_strict_agreement": false,
+      "repeat_exact_stability": false,
+      "unaffected_preservation": true
+    },
+    "passed": 3,
+    "total": 11,
+    "all_pass": false
+  },
+  "repeats": {
+    "total": 64,
+    "raw_logits_equal": 63,
+    "maximum_routing_weight_change": 0.0
+  },
+  "confirmation": {
+    "started": false,
+    "required_if_development_passes": true,
+    "separate_execution_context_required": true
+  },
+  "limits": [
+    "The original run remains stopped. This is a separately registered amended development result, not original completion.",
+    "One historical return failed the original resource check. Its status is preserved even though the amendment admits its intact raw output.",
+    "The original run did not save its final full parameter-content hash. Later model loads cannot supply that missing proof.",
+    "Fresh processes change allocation and numerical history; the combined panel contains both original and new process histories.",
+    "The graph and two possible fault types are supplied. Graph discovery and open-ended diagnosis are not tested.",
+    "Every diagnostic clue perfectly separates the two faults. A successful deterministic rule would suffice; graded uncertainty inference is not established.",
+    "The richer-trained organ has already seen native target transitions. This is not transfer to rules unseen by both organs.",
+    "Probe categories replay a frozen calibration pool; the controller does not learn which probe to request.",
+    "Names, orders and repeated prompts are not independent world families.",
+    "The Bayes baseline uses calibration-pool risk rather than knowing target errors in advance.",
+    "No internal causal mechanism, energy-model advantage, multi-step planning or novelty is established."
+  ],
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/PLAN.json",
+      "source_sha256": "16f8cba1690f2e2a27b56d01036a768c22342b0a9cb6847765d9dd1adcaaf39c"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/RUN_STARTED.json",
+      "source_sha256": "f1e1f98f6ad4e4608c24aee8eb8f68794cbd9cfdfcc9118cfa5f570c3d899999"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/COMPLETE.json",
+      "source_sha256": "9be8d3968858c40c4d58dfb93534b67e0fcaa5e93329a7c1c5a1c1cf5580a7ce"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/COMPOSITE_COLLECTION_COMPLETE.json",
+      "source_sha256": "385ffa7553b8deea6645cdd338d30ec8ad417a57a9506418b77e50239fcb7edf"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/COMPOSITE_INPUT_SEAL.json",
+      "source_sha256": "9a8b98fa88fb65eee2a1da58c693ecde2814ddeda5c92fbe90bd9630d76b0773"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/TERMINAL_INVENTORY.json",
+      "source_sha256": "580ca7ca96d14f2e69c66497b6ab4ea4d9e304ea71957237ba9aeb55666e3b3b"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/SCIENCE_REPORT.json",
+      "source_sha256": "f3a01d69851606a5b2a950773a920feb20e48c773755285f64e93197ded07537"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_CONTINUATION_V1/SCIENCE_AUDIT.json",
+      "source_sha256": "deff1ce0b62fea373e80a632a44cf7b8d5cfcdc3fd1c1389483f85ded7d1bf7f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_STUDY_V1/PLAN.json",
+      "source_sha256": "aa276de208e03e91d6ebb983017e924ec809ca42ecad7289cfba5c4cbcc16f5a"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_STUDY_V1/STOP.json",
+      "source_sha256": "457bbf398ade227f9cae026f6e1bae7b49005159c9b650d4acb0aa7bf9081aac"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_STUDY_V1/SPECIFICATION.json",
+      "source_sha256": "2e35ff5716730450c52dfcd4a058cdf8e70e4a3386bea0f63daff2c1ddb5eb52"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_STUDY_V1/development/COMMISSION_REPORT.json",
+      "source_sha256": "dc1a013932a83fc78e91d1ff0e79ba8e81ac631bb84e60ebc323e63475603b02"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/FAULT_SCOPE_STUDY_V1/development/COMMISSION_AUDIT.json",
+      "source_sha256": "acf0fa1759bad47c56a35791fd36705e57320cc8b0d9a41f5491d676a8e45f5f"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/RELIABILITY_MEMORY_PREPARATION/ORIGINAL_RESOURCE_STOP_INVENTORY.json",
+      "source_sha256": "e8ed8134ed7b3a086d23cad4296d1bab8269d4c4627c119b82fa7272646e7d03"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/RELIABILITY_MEMORY_PREPARATION/FAULT_SCOPE_RAW_RECOVERABILITY_REVIEW.json",
+      "source_sha256": "7acb2c7f7aceb7e335b453b50463df022231e19879fa7f2ba39fc2207046f64c"
+    },
+    {
+      "source_path": "work/fault-scope-independent-review/FAILURE_PROVENANCE_REVIEW.json",
+      "source_sha256": "d29fa3e232c407f7b005241d99ccbf496d3c3c85531f5d01590d86993bb3d45c"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/RELIABILITY_MEMORY_PREPARATION/FAULT_SCOPE_AMENDED_TERMINAL_NUMERICAL_RECOUNT.json",
+      "source_sha256": "84d29a11c528f218d0ca0b278196f48529172748a96c9d2cea17f831d963c735"
+    },
+    {
+      "source_path": "work/fault-scope-independent-review/AMENDED_TERMINAL_PROVENANCE_REVIEW.json",
+      "source_sha256": "92e03dc4b7c62917081cd1438c002c2e3d4a99c69212d9e15183f7e5d2a2aa04"
+    },
+    {
+      "source_path": "research/moe-mechanisms/fault_scope_continuation_v1/CONTINUATION_AMENDMENT.json",
+      "source_sha256": "9223d7bd2cf008f8026a17247d05c20a88d413a626d53103a37d9bee93aa3464"
+    },
+    {
+      "source_path": "work/fault-scope-independent-review/prepare_amended_public_summary.py",
+      "source_sha256": "c570ae207a2bcabdef392e8dc272ca5ed4f8c2db30e01cf946846ab7ed7358b1"
+    }
+  ],
+  "transformation": "Selected completed aggregates and method only. No raw scores, prompts, targets, private filesystem paths or account information. Local source registration is not public preregistration."
+}

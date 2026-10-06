@@ -23,10 +23,10 @@
   <main id="main">
     <section class="hero wrap" aria-labelledby="page-title">
       <div class="hero-copy">
-        <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-05">5 October 2026 · UTC</time></p>
+        <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-06">6 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">The fixed reader, energy modules and writer work together for one action in four small known worlds. A later check of the host alone passed copying, but missed the fixed requirement for adding one. That planned hidden-state test is closed. Small checks of the open Laya decision model are now complete. Our proposed explanation did not pass. A later exact-rule check failed the starting accuracy requirement for a new internal test. A separate Clef test now completed its development panel but failed the requirements for selecting organs from feedback. Its held-out controller test did not run. Earlier failures and stops remain in the record. This draft is not peer reviewed and claims no new mechanism. GPT-2 work is paused.</p>
+        <p class="scope-line">A fixed reader, energy module and writer work together for one action in four small known worlds. The latest controller test missed its requirements for using a fault clue to change trust only where needed. <a href="#fault-scope">Read the latest result.</a> Earlier failures and stopped runs remain below. This draft is not peer reviewed and establishes no new mechanism. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -350,7 +350,20 @@
           <p>We scored each organ’s forecast with sum Brier loss, then weighted that error by the probability of selecting it. This is different from scoring a mixture of the two forecasts. <strong>Only 2 of 8 requirements passed:</strong> improvement over global reliability and the fixed organ. Feedback benefit, the comparison with capability-specific reliability, both attribution-change checks, preservation of the unaffected capability, and consistency across names and order all failed. With true feedback, the preferred organ agreed across the renamed and reordered versions on only <strong>9 of 16 queries</strong>. These changes do not isolate a name-only cause.</p>
           <p>The original attempt stopped after 69 requests when the provider returned an HTTP 529 error: 68 responses were valid. A separately declared amendment preserved those responses once and added 60 requests, completing the unchanged 128-response panel. There were 129 physical attempts in total. The original stop remains in the record. The failed development requirement closed the held-out controller test. A separately implemented recount and a terminal record review agreed with the completed audit; these are project checks, not an external replication.</p>
           <aside class="plain-note"><strong>This is a negative development result.</strong>It does not identify an internal credit-assignment mechanism or show that energy models are superior. It tests neither new rules nor multi-step planning, and it establishes no novelty. The repeated variations are not independent tasks. <a href="./research-evidence/jev-feedback-summary.json">Completed panel, method, continuation and limits</a>.</aside>
-          <p>A useful next candidate is explicit memory of each organ’s reliability for each capability. We would then test where that simple method fails or generalizes when abilities change in fresh settings. This is a proposed next test, not an automatic new experiment or a reopening of the older stopped studies.</p>
+          <h3 id="fault-scope">The controller missed the requirements for using a fault clue.</h3>
+          <p>If abilities A, B and C share a broken input part, a controller should reduce trust in the affected organ for those abilities. It should preserve trust in an independent ability, U. We tested this idea with frozen Granite and two learned organs in each of 16 small worlds: a next-state predictor and an energy model.</p>
+          <p>We supplied a map of the shared parts, two possible faults and calibration data. A diagnostic clue perfectly separated the two faults in the fixed calibration pool. A comparison clue added no information. We also changed which target ability shared the faulty part. We evaluated the choices against saved organ forecasts, which were not supplied to the controller. This was not a new live internal connection.</p>
+          <table class="followup-table"><caption>Mean expected error of the selected organ. Lower is better. Related and independent abilities are scored separately.</caption><thead><tr><th scope="col">Selection method</th><th scope="col">Related ability</th><th scope="col">Independent ability</th></tr></thead><tbody>
+            <tr><th scope="row">Granite, redundant clue</th><td>1.0518</td><td>0.3857</td></tr>
+            <tr><th scope="row">Granite, diagnostic clue</th><td>1.0502</td><td>0.3877</td></tr>
+            <tr><th scope="row">Exact rule using supplied calibration data</th><td>0.5744</td><td>&lt; 0.0001</td></tr>
+          </tbody></table>
+          <p><strong>3 of 11 fixed requirements passed.</strong> The diagnostic clue reduced mean error for related abilities by only 0.0016; the requirement was at least 0.05. The benefit was not positive under both graph wirings. These are development estimates, not confirmed effects. Choices agreed after module renaming in 46.9% of the weighted comparisons, and after reordering in 50.6%. Both required at least 90%.</p>
+          <p>Exact repeats had identical full output scores in 63 of 64 pairs. All 64 repeated selection weights and choices matched, but one full-score mismatch failed the exact-stability rule. This does not explain the sensitivity to names and order.</p>
+          <p>The amended development panel contains 768 main evaluations and 64 fixed repeats across 16 world families. We used the model’s scores for two answer tokens as selection weights; these are not calibrated fault beliefs or generated answers. Error is sum Brier loss, averaged using these selection weights. Separate code checks agreed with the calculations and the records. These are project checks, not external replication.</p>
+          <p>The original run stopped after 469 saved responses when it exceeded its memory cap. A declared continuation kept all 469 once and added only the 363 cases that had never started. One intact response remains marked as failing the original resource check, although the amendment admitted its raw scores. The original stop remains final. Its final full model-state comparison is missing; the new processes cannot supply that missing proof. The combined panel also mixes process histories. No new training or paid model calls were needed for the continuation.</p>
+          <aside class="plain-note"><strong>This is an amended development result.</strong>Confirmation has not run. The supplied graph and perfect clue allow a simple diagnostic rule. This test does not establish graded uncertainty reasoning, an internal causal mechanism, energy-model superiority, new-world transfer or novelty. <a href="./research-evidence/fault-scope-summary.json">Full result, fixed requirements, checks and limits</a>.</aside>
+          <p>Next, one fixed diagnostic panel can test risk-table reading, graph reading and fault identification separately from the combined choice. This would help locate the failure. It would use exposed development cases and would not rescue this result.</p>
           <p>We do not yet claim a new mechanism, a broadly reliable repair, or a novel research result.</p>
         </div>
       </div>
@@ -363,6 +376,7 @@
       </div>
       <div class="evidence-grid">
         <div class="evidence-group"><h3>The organ direction</h3><ul>
+          <li><a href="./research-evidence/fault-scope-summary.json">Selective trust after a fault clue<span>Amended development result; original resource stop and limits preserved</span></a></li>
           <li><a href="./research-evidence/jev-feedback-summary.json">Clef feedback selection check<span>Development requirements failed; held-out controller test not run</span></a></li>
           <li><a href="./research-evidence/jev-selective-admission-summary.json">Laya exact-rule accuracy check<span>All four starting accuracy requirements failed; internal test not run</span></a></li>
           <li><a href="./research-evidence/jev-controller-summary.json">Laya controller checks<span>Option-name effects; planned context-dominance explanation not supported</span></a></li>
@@ -404,7 +418,7 @@
 
   <footer class="site-footer wrap">
     <div><a class="wordmark" href="./index.html">AI UNDERSTANDING AI<span class="wordmark-dot" aria-hidden="true">.</span></a><p>The evidence sets the limits.</p></div>
-    <div class="footer-notes"><p>Research in progress · 5 October 2026, UTC.<br>AI-assisted research and writing. Not peer reviewed.</p><a href="./index.html">Original paper and earlier results</a></div>
+    <div class="footer-notes"><p>Research in progress · 6 October 2026, UTC.<br>AI-assisted research and writing. Not peer reviewed.</p><a href="./index.html">Original paper and earlier results</a></div>
   </footer>
 </body>
 </html>
