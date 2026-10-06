@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Which parts carry an AI organ’s answer? Two controlled internal edits each kept all 96 supplied answers, with smaller score leads. Read the controls and limits.">
+  <meta name="description" content="A native on/off prerequisite scored 7 of 16 and closed before an organ splice. Read this fixed one-token check, its wording limits and the earlier routing result.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-06">6 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">A fixed reader, energy module and writer work together for one action in four small known worlds. The latest test kept all 96 answers correct when we restored the old expert routes. The changed routes increased the answer’s relative score on average. <a href="#organ-route-cross">Read the result and its audit correction.</a> This does not establish independent reasoning modules or novelty. Earlier failures and stopped runs remain below. This draft is not peer reviewed. GPT-2 work is paused.</p>
+        <p class="scope-line">The latest prerequisite failed: the frozen host preferred the correct on/off word in 7 of 16 comparisons. <a href="#organ-private-native">Read the native-only result and its wording limit.</a> No organ splice was attempted. The earlier connection still kept all 96 supplied answers when we restored its old expert routes; <a href="#organ-route-cross">that result remains below.</a> Neither check establishes independent reasoning modules or novelty. Earlier failures and stopped runs remain recorded. This draft is not peer reviewed. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -35,7 +35,7 @@
         <div class="figure-heading"><p class="eyebrow">Two separate studies</p><span class="figure-number" aria-hidden="true">01</span></div>
         <h2 id="two-studies-title">Inside one model.<br> Between different models.</h2>
         <div class="result-lines">
-          <div><div><h3>Inside Granite: next-step requirement failed</h3><p>The one-action connection passed. In a later host-only check, copying scored 192 / 192 and adding one scored 147 / 192. The planned hidden-state ADD test will not proceed.</p></div></div>
+          <div><div><h3>Inside Granite: latest prerequisite failed</h3><p>The host alone scored 7 / 16 on the fixed on/off comparison. All four repeats matched exactly. This interface closes before an organ writer is fitted; the earlier one-action connection result remains unchanged.</p></div></div>
           <div><div><h3>Cloudflare: final audit stopped</h3><p>The run to test choices between complete models stopped. It has no final scientific grade.</p></div></div>
         </div>
       </aside>
@@ -63,6 +63,7 @@
             <tr><th scope="row">Live reader → energy module → writer</th><td>Passed one-action check</td><td>All 96 requested-rule answers and all 96 deliberately changed queries were followed. The system ran the energy modules; it did not use stored answer probabilities.</td></tr>
             <tr><th scope="row">Which parts carry the supplied answer?</th><td>Controlled edits completed</td><td>Both edited versions kept all 96 answers, with smaller average score leads. All 192 no-change comparisons matched exactly.</td></tr>
             <tr><th scope="row">Host alone: copy and add one</th><td>Completed; requirement failed</td><td>Copying passed 192 / 192. Adding one passed 147 / 192, below the fixed 192 / 192 requirement. No organ or connector ran.</td></tr>
+            <tr><th scope="row">Host alone: unchanged or opposite state</th><td>Completed; prerequisite failed</td><td>7 / 16 correct on/off preferences, no ties, and 4 / 4 exact repeats. No organ or connector ran; this fixed interface closes before a splice.</td></tr>
             <tr><th scope="row">Replace the module with unseen rules</th><td>Not run</td><td>This would test whether a fixed host and connector can use a new module.</td></tr>
           </tbody>
         </table>
@@ -176,6 +177,22 @@
         <p>Both edited versions kept all 96 answers, with smaller average score leads. All 192 no-change replay comparisons had identical full output scores. The six-condition check used 576 host evaluations in about 152 seconds, with no new fit, training update, generated answer or paid call.</p>
         <aside class="plain-note"><strong>This does not show two independent modules.</strong>The host blocks still ran, including normalization and the final readout. Replaying updates made with the organ signal is not an independent way to compute its answer. These controlled combinations show two ways to preserve the ranking here; they do not establish planning, new-world transfer, an energy-model advantage or novelty. The 96 reused cases are not independent population trials.</aside>
         <p class="source-line"><a href="./research-evidence/organ-tail-attribution-summary.json">Completed result, exact controls and limits</a> · <a href="./research-evidence/organ-tail-attribution-sources.zip">Source reading bundle</a> (27 pinned Python files and the plan; not a self-contained reproduction).</p>
+        <h3 id="organ-private-native">The host did not pass the small on/off prerequisite.</h3>
+        <p>Before giving the host a state through an internal channel, we checked whether the frozen host alone could use an explicit state and a later instruction. Four words—lamp, light, sign and indicator—each appeared in all four on/off × unchanged/opposite situations. We compared the next-word scores for “on” and “off”.</p>
+        <table class="followup-table">
+          <caption>Native host only: 16 fixed comparisons. Candidate ties counted as incorrect; there were none.</caption>
+          <thead><tr><th scope="col">Carrier</th><th scope="col">Unchanged</th><th scope="col">Opposite</th><th scope="col">Total correct</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Lamp</th><td>1 / 2</td><td>1 / 2</td><td>2 / 4</td></tr>
+            <tr><th scope="row">Light</th><td>1 / 2</td><td>1 / 2</td><td>2 / 4</td></tr>
+            <tr><th scope="row">Sign</th><td>1 / 2</td><td>1 / 2</td><td>2 / 4</td></tr>
+            <tr><th scope="row">Indicator</th><td>0 / 2</td><td>1 / 2</td><td>1 / 4</td></tr>
+          </tbody>
+        </table>
+        <p>The fixed requirement was 16 / 16 correct choices and four exact full-score repeats. The result was <strong>7 / 16</strong>; all four repeats matched exactly. Within the candidate pair, the model preferred “on” in 15 of 16 cases. The evidence audit passed, but the capability requirement failed. This fixed interface closes before fitting an organ writer.</p>
+        <p><strong>A limit of the one-token comparison:</strong> across the full vocabulary, the highest-scoring next word was “turned” in all eight unchanged cases and “switched” in all eight opposite cases. Those words could begin longer state descriptions. Wording may affect this one-token comparison, but no continuation was generated. We cannot infer eventual answer correctness or the reason for this failure, and it does not show a general inability to use the state.</p>
+        <p>The check made 20 native forward passes in about 22 seconds, with no organ, connector, training or paid call. A prefix boundary was corrected before any model call; every complete prompt stayed unchanged. These four lexical quartets are not independent population trials, and the result identifies no internal mechanism or novelty.</p>
+        <p class="source-line"><a href="./research-evidence/organ-private-native-summary.json">All counts, fixed requirements and limits</a> · <a href="./research-evidence/organ-private-native-sources.zip">Source and evidence reading bundle</a> (includes all 20 raw returns; no model weights).</p>
         <h3 id="organ-route-cross">The old expert routes still gave all 96 correct answers.</h3>
         <p>The organ signal changes which experts the larger model selects. We tested whether those changes help. We kept the organ’s signal but restored the baseline routes. Each expert still computed a fresh output from its current input. We also tried the reverse: the baseline signal with routes recorded from the organ connection.</p>
         <p>A route here includes the selected experts and the numbers used to mix their outputs. We exchanged these together across the last four blocks, for the full question. We used all 96 familiar cases, with no new training.</p>
@@ -474,10 +491,11 @@
     <section class="evidence-section wrap" id="evidence" aria-labelledby="evidence-title">
       <div class="evidence-heading">
         <div><p class="eyebrow">08 / Check the evidence</p><h2 id="evidence-title">Selected summary records.</h2></div>
-        <p>These JSON files contain selected summaries and source references. Derived summaries are labeled. The route-census bundle also contains its full report and audit. Raw tensor archives, model weights and stopped partial answers are not included. Separate code checks are part of this project, not an external replication. <a href="./research-evidence/manifest.json">Copy manifest</a>.</p>
+        <p>These JSON files contain selected summaries and source references. Derived summaries are labeled. Reading bundles include their listed reports and audits. The native on/off bundle also includes all 20 raw returns. Model weights and stopped partial answers are not included. Separate code checks are part of this project, not an external replication. <a href="./research-evidence/manifest.json">Copy manifest</a>.</p>
       </div>
       <div class="evidence-grid">
         <div class="evidence-group"><h3>The organ direction</h3><ul>
+          <li><a href="./research-evidence/organ-private-native-summary.json">Native on/off prerequisite<span>7 / 16 correct, no ties and four exact repeats; no organ splice attempted</span></a></li>
           <li><a href="./research-evidence/organ-route-cross-summary.json">Are changed expert routes needed?<span>Old routes kept all 96 answers; changed routes raised relative scores on average, after a disclosed audit correction</span></a></li>
           <li><a href="./research-evidence/organ-route-census-summary.json">Does the organ change expert selection?<span>All 96 cases changed somewhere in the last four blocks; the controlled follow-up is linked above</span></a></li>
           <li><a href="./research-evidence/organ-test-design-review.json">Why we rejected the proposed grammar test<span>Mathematical shortcuts, a stronger test design and its remaining limits; no new model result</span></a></li>

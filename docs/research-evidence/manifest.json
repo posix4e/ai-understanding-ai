@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T09:52:26.822428+00:00",
+  "at_utc": "2026-10-06T10:27:22.412450+00:00",
   "scope": "Selected summary records, derived metadata, a frozen source/plan bundle and runnable mathematical examples for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -439,8 +439,8 @@
           "url": "https://arxiv.org/html/2601.17094v2",
           "version_date": "2026-03-31",
           "sections": [
-            "3.1\u20133.3",
-            "7.2\u20137.3"
+            "3.1–3.3",
+            "7.2–7.3"
           ],
           "independently_read_at_utc": "2026-10-05T14:23:22.343278+00:00"
         }
@@ -1575,10 +1575,232 @@
         }
       ],
       "transformation": "47 copied frozen Python files, original failure records and corrected full report/plan/registration/completion/audit. Raw tensors and model weights excluded."
+    },
+    {
+      "file": "organ-private-native-summary.json",
+      "copy_type": "derived_public_summary",
+      "sha256": "686ee190e53a164e2edc4ca0100f2bc26231f8f7a51fe467e989e6ab41bd0d01",
+      "bytes": 9847,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/plan.json",
+          "source_sha256": "d6fd759810e08bd1ead92681de4d2884e26d849280600488c179144cba5bc3a0"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REGISTRATION.json",
+          "source_sha256": "3827bcecdb0d5b6004956f36621cc3983fb1040e63f865d903dcfca4ee71b09f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COMPLETE.json",
+          "source_sha256": "6f85f676f3a3eaa862f2e5ba0954c8193061c0cb873e1903b51c8e37f3bb9d9c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REPORT.json",
+          "source_sha256": "94f4c5020488071f16728a06a817d269719bee2969c4b11b8ced8bff14c87495"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "2262d0ea2459c949ba140cd0d094af27defa0360704ba8952b8984a6f3fbc8ee"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COLLECTED.json",
+          "source_sha256": "38e23b6a6b1ce2ffafd6f3336a5516e5c4eea55b9831b65edce6736ceae0dcfa"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/WORKER_COMPLETE.json",
+          "source_sha256": "361c839eb557355e6fbfb25cf62fd482a6c122fb2d05f712ccd0d7a9d1255784"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/calls.jsonl",
+          "source_sha256": "08190254a8f1b2a80650cd6ed15f105674a84ca4c51b03f7f01635431dfd98b3"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/tokenizer-v2/STARTED.json",
+          "source_sha256": "8122944d05232549c6560a259ca248fc0390696ecb62a0f72189086753fa310c"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/tokenizer-v2/TOKENS.json",
+          "source_sha256": "4f7e2eee3104052121b98fa8c1ff4746f333c7df40b15a9d1b546befea4edbf8"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/tokenizer-v2/COMPLETE.json",
+          "source_sha256": "db74997b71fef80bbaa740cce8ed268dfa8787bf3640ad87ffc7eb181b614292"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/WORKER_SCHEMA.json",
+          "source_sha256": "2178b9a8d5c3ec20f859bf2b98fd1801e616c7ae256f80b3e2aa804084536cde"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/TOKEN_BOUNDARY_AMENDMENT.json",
+          "source_sha256": "b7835810bdfe0dadbb41406e0b0a1a78960ce9ccc9a3a59fbf14a96338e27967"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/tokenizer-v1/STARTED.json",
+          "source_sha256": "5dd84cd675ddbb2e561a53489e3817fd45a3b6088c67e9ae3c52023663dbb080"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/tokenizer-v1/STOPPED.json",
+          "source_sha256": "c4881153774602dd9777ae4caf8f284d5de122b4bff2415ad5364dedd0905ead"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/TOKEN_BOUNDARY_DIAGNOSIS.json",
+          "source_sha256": "df8f34c5d907fdf128272ccda8b553bd0b9d9cdab98095641c26961cffebd40c"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/IMPLEMENTATION_PREFLIGHT_RESULT.json",
+          "source_sha256": "492def0449e4087d4f10ba4af8a780ef0921b8f7f00604239f59dd2a758224fe"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/MANIFEST.json",
+          "source_sha256": "10adbd09739a92bab597c6a61313118ececaa8d61e9de72a7152d5965a6ecb28"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/audit.py",
+          "source_sha256": "d80c9bc78d8c2ebdcfb9ee461fe40f3b47a1e4eeaa8985f3fa1f018e9d37ee7d"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/owner.py",
+          "source_sha256": "d17bfe968bb050e4a081d5de230ef381e1feec09ff3ffc6b125aaeebd7b9f125"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/protocol.py",
+          "source_sha256": "590b69bd321f36ea10c919f21bc4993de5430237d270f50fccc1ab9ee285f56c"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/test_audit.py",
+          "source_sha256": "a0b3ce7620c30882f74e5a2895bf62289edbb93d9ba8a60f58064c7accaa7326"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/test_native.py",
+          "source_sha256": "71ad021d6b8d74c617867f78da268b2cc9b3683d092aa6646265e7f56506a049"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/worker.py",
+          "source_sha256": "922a28414ccdfb387b5fd0d175641f1bacb90d759c4a9fab7a5df326684a2897"
+        },
+        {
+          "source_path": "work/moe-model-cache/models--ibm-granite--granite-3.1-1b-a400m-instruct/snapshots/0da7a48b0276d500ce5922fd2b33944091fc6c09/tokenizer.json",
+          "source_sha256": "ed944c0b3d71e2d651a5ba0f8e7b350faff30031c8e3353de70b12b9c1bf5654"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/PUBLICATION_READOUT_NOTE.json",
+          "source_sha256": "4c2a0c25f77b73bc50286b0afe4f09495b1e5e09be270743b186310bb43995b7"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/TERMINAL_REVIEW.json",
+          "source_sha256": "8b1fab1ccb780d6bd025282d814f6788f46034cc405086979fd038ca24528032"
+        }
+      ],
+      "transformation": "Audited finite native counts and original gates, with descriptive full-vocabulary token identities from the pinned vocabulary; no raw regrading."
+    },
+    {
+      "file": "organ-private-native-sources.zip",
+      "copy_type": "frozen_source_and_record_bundle",
+      "sha256": "b1c2a0605d89f804c8e4efc96e356812a5e5872c5443dedd5980ded33ea1f60a",
+      "bytes": 3159761,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/plan.json",
+          "source_sha256": "d6fd759810e08bd1ead92681de4d2884e26d849280600488c179144cba5bc3a0"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REGISTRATION.json",
+          "source_sha256": "3827bcecdb0d5b6004956f36621cc3983fb1040e63f865d903dcfca4ee71b09f"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COMPLETE.json",
+          "source_sha256": "6f85f676f3a3eaa862f2e5ba0954c8193061c0cb873e1903b51c8e37f3bb9d9c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REPORT.json",
+          "source_sha256": "94f4c5020488071f16728a06a817d269719bee2969c4b11b8ced8bff14c87495"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "2262d0ea2459c949ba140cd0d094af27defa0360704ba8952b8984a6f3fbc8ee"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COLLECTED.json",
+          "source_sha256": "38e23b6a6b1ce2ffafd6f3336a5516e5c4eea55b9831b65edce6736ceae0dcfa"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/WORKER_COMPLETE.json",
+          "source_sha256": "361c839eb557355e6fbfb25cf62fd482a6c122fb2d05f712ccd0d7a9d1255784"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/calls.jsonl",
+          "source_sha256": "08190254a8f1b2a80650cd6ed15f105674a84ca4c51b03f7f01635431dfd98b3"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/tokenizer-v2/STARTED.json",
+          "source_sha256": "8122944d05232549c6560a259ca248fc0390696ecb62a0f72189086753fa310c"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/tokenizer-v2/TOKENS.json",
+          "source_sha256": "4f7e2eee3104052121b98fa8c1ff4746f333c7df40b15a9d1b546befea4edbf8"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/tokenizer-v2/COMPLETE.json",
+          "source_sha256": "db74997b71fef80bbaa740cce8ed268dfa8787bf3640ad87ffc7eb181b614292"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/WORKER_SCHEMA.json",
+          "source_sha256": "2178b9a8d5c3ec20f859bf2b98fd1801e616c7ae256f80b3e2aa804084536cde"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/TOKEN_BOUNDARY_AMENDMENT.json",
+          "source_sha256": "b7835810bdfe0dadbb41406e0b0a1a78960ce9ccc9a3a59fbf14a96338e27967"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/tokenizer-v1/STARTED.json",
+          "source_sha256": "5dd84cd675ddbb2e561a53489e3817fd45a3b6088c67e9ae3c52023663dbb080"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/tokenizer-v1/STOPPED.json",
+          "source_sha256": "c4881153774602dd9777ae4caf8f284d5de122b4bff2415ad5364dedd0905ead"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/TOKEN_BOUNDARY_DIAGNOSIS.json",
+          "source_sha256": "df8f34c5d907fdf128272ccda8b553bd0b9d9cdab98095641c26961cffebd40c"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/IMPLEMENTATION_PREFLIGHT_RESULT.json",
+          "source_sha256": "492def0449e4087d4f10ba4af8a780ef0921b8f7f00604239f59dd2a758224fe"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/MANIFEST.json",
+          "source_sha256": "10adbd09739a92bab597c6a61313118ececaa8d61e9de72a7152d5965a6ecb28"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/audit.py",
+          "source_sha256": "d80c9bc78d8c2ebdcfb9ee461fe40f3b47a1e4eeaa8985f3fa1f018e9d37ee7d"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/owner.py",
+          "source_sha256": "d17bfe968bb050e4a081d5de230ef381e1feec09ff3ffc6b125aaeebd7b9f125"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/protocol.py",
+          "source_sha256": "590b69bd321f36ea10c919f21bc4993de5430237d270f50fccc1ab9ee285f56c"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/test_audit.py",
+          "source_sha256": "a0b3ce7620c30882f74e5a2895bf62289edbb93d9ba8a60f58064c7accaa7326"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/test_native.py",
+          "source_sha256": "71ad021d6b8d74c617867f78da268b2cc9b3683d092aa6646265e7f56506a049"
+        },
+        {
+          "source_path": "work/organ-private-input-v1/original-preparation-sources/worker.py",
+          "source_sha256": "922a28414ccdfb387b5fd0d175641f1bacb90d759c4a9fab7a5df326684a2897"
+        }
+      ],
+      "transformation": "Six frozen study sources plus six original preparation snapshots, preserved tokenizer failure/amendment, plan/tokenizer proof and full completion/report/audit; optional complete bounded raw return set copied unchanged."
     }
   ],
   "absolute_local_path_redactions": 0,
-  "note": "Verbatim copies retain original source hashes. Derived records identify their sources and transformations. Each reading bundle lists its contents; some include full reports and audit records. Raw tensor archives, model weights and unvalidated partial answers are excluded. Repository-relative provenance paths are not download links.\n",
+  "note": "Verbatim copies retain original source hashes. Derived records identify their sources and transformations. Each reading bundle lists its contents; some include full reports and audit records. The native copy/invert bundle also includes all 20 bounded raw returns. Model weights and unvalidated partial answers are excluded. Repository-relative provenance paths are not download links.\n",
   "document_status": "research_in_progress_draft",
   "internal_identifier_redactions": 1
 }

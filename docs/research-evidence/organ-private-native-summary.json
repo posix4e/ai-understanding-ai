@@ -1,0 +1,219 @@
+{
+  "copy_type": "derived_public_summary",
+  "study_id": "ORGAN_PRIVATE_NATIVE_V1",
+  "status": "NATIVE_PRIVATE_INPUT_SCREEN_COMPLETE",
+  "implementation_audit": "PASS",
+  "gate_pass": false,
+  "primary": {
+    "n": 16,
+    "correct": 7,
+    "ties": 0,
+    "incorrect_including_ties": 9
+  },
+  "per_carrier": {
+    "lamp": {
+      "n": 4,
+      "correct": 2,
+      "ties": 0,
+      "quartet_pass": false,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 1,
+          "ties": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 1,
+          "ties": 0
+        }
+      },
+      "paired_margin_effects": {
+        "copy": -0.5,
+        "invert": -0.375,
+        "required_sign_reversal": false
+      }
+    },
+    "light": {
+      "n": 4,
+      "correct": 2,
+      "ties": 0,
+      "quartet_pass": false,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 1,
+          "ties": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 1,
+          "ties": 0
+        }
+      },
+      "paired_margin_effects": {
+        "copy": -1.125,
+        "invert": -0.5,
+        "required_sign_reversal": false
+      }
+    },
+    "sign": {
+      "n": 4,
+      "correct": 2,
+      "ties": 0,
+      "quartet_pass": false,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 1,
+          "ties": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 1,
+          "ties": 0
+        }
+      },
+      "paired_margin_effects": {
+        "copy": -0.625,
+        "invert": -0.375,
+        "required_sign_reversal": false
+      }
+    },
+    "indicator": {
+      "n": 4,
+      "correct": 1,
+      "ties": 0,
+      "quartet_pass": false,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 0,
+          "ties": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 1,
+          "ties": 0
+        }
+      },
+      "paired_margin_effects": {
+        "copy": -1.125,
+        "invert": -0.375,
+        "required_sign_reversal": false
+      }
+    }
+  },
+  "repeats": {
+    "n": 4,
+    "exact": 4,
+    "pass": true
+  },
+  "question": "Can the frozen host use an explicitly given on/off state with a later same/opposite instruction?",
+  "panel": {
+    "carriers": [
+      "lamp",
+      "light",
+      "sign",
+      "indicator"
+    ],
+    "situations_per_carrier": 4,
+    "primary_calls": 16,
+    "repeat_calls": 4,
+    "independent_population_trials": false
+  },
+  "gate": {
+    "primary_required": 16,
+    "primary_total": 16,
+    "exact_full_logit_repeats_required": 4,
+    "repeat_total": 4
+  },
+  "readout": "Strict on/off candidate preference. Ties count as incorrect and unresolved; no fallback. Full-vocabulary winner/ties and on+off mass are descriptive only and remain in the full report.",
+  "computation": {
+    "native_forwards": 20,
+    "fits": 0,
+    "hooks": 0,
+    "provider_calls": 0,
+    "generated_tokens": 0,
+    "elapsed_seconds": 21.630294458009303
+  },
+  "relevance": "The fixed native prerequisite failed. This interface closes before fitting an organ writer; no passing carrier subset is substituted.",
+  "limits": [
+    "All 16 finite primary comparisons and four fixed repeats are retained; these are not a population reliability estimate.",
+    "Both the initial fact and later instruction were visible to the host. This is not a private-input intervention, an organ composition result or a test of a learned connector.",
+    "Candidate rankings are not generated-answer compliance or calibrated probabilities.",
+    "No internal cause, new reasoning mechanism, energy advantage, novelty or untouched confirmation is claimed. Prior closed studies remain unchanged.",
+    "The highest-scoring full-vocabulary next word was turned in all eight unchanged cases and switched in all eight opposite cases. These could begin longer state descriptions. Wording may affect the fixed one-token comparison, but no continuation was generated; eventual correctness and the reason for failure are unknown."
+  ],
+  "preparation_amendment": {
+    "type": "prefix boundary bookkeeping before model calls",
+    "all_complete_prompts_unchanged": true,
+    "original_tokenizer_status": "TOKENIZER_PREFLIGHT_STOPPED",
+    "new_tokenizer_proof": "tokenizer-v2",
+    "amendment_sha256": "b7835810bdfe0dadbb41406e0b0a1a78960ce9ccc9a3a59fbf14a96338e27967"
+  },
+  "source_scope": "The local plan preceded this collection; this derived publication is not a public preregistration. The bundle is a reading archive, not a self-contained reproduction.",
+  "bundle": {
+    "file": "organ-private-native-sources.zip",
+    "raw_bundles_included": true,
+    "raw_byte_copy_cap": 5242880,
+    "frozen_python_sources": 6,
+    "original_preparation_source_snapshots": 6,
+    "model_weights_included": false
+  },
+  "source_sha256": {
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/plan.json": "d6fd759810e08bd1ead92681de4d2884e26d849280600488c179144cba5bc3a0",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REGISTRATION.json": "3827bcecdb0d5b6004956f36621cc3983fb1040e63f865d903dcfca4ee71b09f",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COMPLETE.json": "6f85f676f3a3eaa862f2e5ba0954c8193061c0cb873e1903b51c8e37f3bb9d9c",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REPORT.json": "94f4c5020488071f16728a06a817d269719bee2969c4b11b8ced8bff14c87495",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/INDEPENDENT_AUDIT.json": "2262d0ea2459c949ba140cd0d094af27defa0360704ba8952b8984a6f3fbc8ee",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COLLECTED.json": "38e23b6a6b1ce2ffafd6f3336a5516e5c4eea55b9831b65edce6736ceae0dcfa",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/WORKER_COMPLETE.json": "361c839eb557355e6fbfb25cf62fd482a6c122fb2d05f712ccd0d7a9d1255784",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/calls.jsonl": "08190254a8f1b2a80650cd6ed15f105674a84ca4c51b03f7f01635431dfd98b3",
+    "work/organ-private-input-v1/tokenizer-v2/STARTED.json": "8122944d05232549c6560a259ca248fc0390696ecb62a0f72189086753fa310c",
+    "work/organ-private-input-v1/tokenizer-v2/TOKENS.json": "4f7e2eee3104052121b98fa8c1ff4746f333c7df40b15a9d1b546befea4edbf8",
+    "work/organ-private-input-v1/tokenizer-v2/COMPLETE.json": "db74997b71fef80bbaa740cce8ed268dfa8787bf3640ad87ffc7eb181b614292",
+    "work/organ-private-input-v1/WORKER_SCHEMA.json": "2178b9a8d5c3ec20f859bf2b98fd1801e616c7ae256f80b3e2aa804084536cde",
+    "work/organ-private-input-v1/TOKEN_BOUNDARY_AMENDMENT.json": "b7835810bdfe0dadbb41406e0b0a1a78960ce9ccc9a3a59fbf14a96338e27967",
+    "work/organ-private-input-v1/tokenizer-v1/STARTED.json": "5dd84cd675ddbb2e561a53489e3817fd45a3b6088c67e9ae3c52023663dbb080",
+    "work/organ-private-input-v1/tokenizer-v1/STOPPED.json": "c4881153774602dd9777ae4caf8f284d5de122b4bff2415ad5364dedd0905ead",
+    "work/organ-private-input-v1/TOKEN_BOUNDARY_DIAGNOSIS.json": "df8f34c5d907fdf128272ccda8b553bd0b9d9cdab98095641c26961cffebd40c",
+    "work/organ-private-input-v1/IMPLEMENTATION_PREFLIGHT_RESULT.json": "492def0449e4087d4f10ba4af8a780ef0921b8f7f00604239f59dd2a758224fe",
+    "work/organ-private-input-v1/original-preparation-sources/MANIFEST.json": "10adbd09739a92bab597c6a61313118ececaa8d61e9de72a7152d5965a6ecb28",
+    "work/organ-private-input-v1/original-preparation-sources/audit.py": "d80c9bc78d8c2ebdcfb9ee461fe40f3b47a1e4eeaa8985f3fa1f018e9d37ee7d",
+    "work/organ-private-input-v1/original-preparation-sources/owner.py": "d17bfe968bb050e4a081d5de230ef381e1feec09ff3ffc6b125aaeebd7b9f125",
+    "work/organ-private-input-v1/original-preparation-sources/protocol.py": "590b69bd321f36ea10c919f21bc4993de5430237d270f50fccc1ab9ee285f56c",
+    "work/organ-private-input-v1/original-preparation-sources/test_audit.py": "a0b3ce7620c30882f74e5a2895bf62289edbb93d9ba8a60f58064c7accaa7326",
+    "work/organ-private-input-v1/original-preparation-sources/test_native.py": "71ad021d6b8d74c617867f78da268b2cc9b3683d092aa6646265e7f56506a049",
+    "work/organ-private-input-v1/original-preparation-sources/worker.py": "922a28414ccdfb387b5fd0d175641f1bacb90d759c4a9fab7a5df326684a2897",
+    "work/moe-model-cache/models--ibm-granite--granite-3.1-1b-a400m-instruct/snapshots/0da7a48b0276d500ce5922fd2b33944091fc6c09/tokenizer.json": "ed944c0b3d71e2d651a5ba0f8e7b350faff30031c8e3353de70b12b9c1bf5654",
+    "work/organ-private-input-v1/PUBLICATION_READOUT_NOTE.json": "4c2a0c25f77b73bc50286b0afe4f09495b1e5e09be270743b186310bb43995b7",
+    "work/organ-private-input-v1/TERMINAL_REVIEW.json": "8b1fab1ccb780d6bd025282d814f6788f46034cc405086979fd038ca24528032"
+  },
+  "novelty_established": false,
+  "scientific_confirmation": false,
+  "descriptive_readout": {
+    "status": "DESCRIPTIVE_READOUT_NOTE_FROM_AUDITED_REPORT",
+    "report_sha256": "94f4c5020488071f16728a06a817d269719bee2969c4b11b8ced8bff14c87495",
+    "tokenizer_path": "work/moe-model-cache/models--ibm-granite--granite-3.1-1b-a400m-instruct/snapshots/0da7a48b0276d500ce5922fd2b33944091fc6c09/tokenizer.json",
+    "tokenizer_sha256": "ed944c0b3d71e2d651a5ba0f8e7b350faff30031c8e3353de70b12b9c1bf5654",
+    "primary_rows": 16,
+    "conditional_on_choices": 15,
+    "full_vocab_top1": {
+      "copy": {
+        "n": 8,
+        "token_id": 21175,
+        "vocabulary_entry": "Ġturned"
+      },
+      "invert": {
+        "n": 8,
+        "token_id": 35464,
+        "vocabulary_entry": "Ġswitched"
+      }
+    },
+    "interpretation": "The highest-scoring words could begin longer state descriptions. Wording may affect the fixed one-token comparison, but no continuation was generated; eventual answer correctness and the reason for failure are unknown.",
+    "raw_arrays_decoded": 0,
+    "new_model_or_tokenizer_calls": 0,
+    "terminal_review_sha256": "8b1fab1ccb780d6bd025282d814f6788f46034cc405086979fd038ca24528032"
+  }
+}
