@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T04:33:56.183066+00:00",
+  "at_utc": "2026-10-06T07:15:58.689586+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -1217,6 +1217,40 @@
         }
       ],
       "transformation": "Selected prospective plan, fixed requirements and separately completed CPU software checks. Plan fixed before task outputs; publication verified separately. Prior result summaries remain unchanged."
+    },
+    {
+      "file": "dependence-native-result.json",
+      "copy_type": "derived_public_summary",
+      "record_kind": "completed_development_result",
+      "bytes": 29040,
+      "sha256": "8ab6c376d0c0b1ff61accb55bb92b9d57364cba859f211af0e09627de77f7469",
+      "sources": [
+        {
+          "source_path": "work/dependence-native-independent-review/NATIVE_TERMINAL_REVIEW.json",
+          "source_sha256": "b72898a188340907e2ed5cfa36aa2950abaaeb35abf80cc13eaf45273bbad094"
+        },
+        {
+          "source_path": "research/moe-mechanisms/dependence_native_v1/PLAN.json",
+          "source_sha256": "3cacb5d5bd4ffae9dce97c98376600c57e4f9aabd8618f51f8f8b8f918345fd7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/DEPENDENCE_NATIVE_V1/COMPLETE.json",
+          "source_sha256": "6c9ed1f69482084a6484fe83f84244f7af8159b030a3ea2cce4fcf0a05fa9407"
+        },
+        {
+          "source_path": "work/dependence-native-result-publication-preparation/project_result.py",
+          "source_sha256": "76a230ff91a8acbc3e4bf1dd508f49ba2d573f97a9202f512489307b0149e701"
+        },
+        {
+          "source_path": "work/dependence-native-independent-review/RESULT_RECOUNT.json",
+          "source_sha256": "523bec7ecdaf115f595c5c0b692c993cb326e8cb09c023574a8c93bdce6b6ded"
+        },
+        {
+          "source_path": "work/dependence-native-result-publication-preparation/RESULT_CLAIM_REVIEW.json",
+          "source_sha256": "e760d0a73fae4a5ce7ec5aa2eb7e4b1443c26daddf17536dcd436433a4751d87"
+        }
+      ],
+      "transformation": "Projection of the completed independent audit, with arithmetic consistency checks on its already graded fields. No raw score decoding, model calls or scientific regrading. Public file is a byte-exact copy of the approved projection. All 58 cell counts, eight form counts, eight repeats and four original requirements are retained. Failed readiness closes this fixed interface."
     }
   ],
   "absolute_local_path_redactions": 0,

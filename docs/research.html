@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Can different AI organs work together? A fixed diagnostic found unreliable basic controller choices. Shorter numbers did not fix them. Read the results, earlier checks and limits.">
+  <meta name="description" content="Can different AI organs work together? The latest fixed decision test scored 232 of 464 correct. Repeated outputs matched, but readiness failed. Read the results and limits.">
   <meta name="theme-color" content="#f7f4ed">
   <link rel="canonical" href="https://posix4e.github.io/ai-understanding-ai/research.html">
   <title>Research in progress | AI Understanding AI</title>
@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-06">6 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">A fixed reader, energy module and writer work together for one action in four small known worlds. The latest diagnostic found unreliable basic controller choices, even with shorter numbers. <a href="#component-diagnostic">Read the latest result.</a> Earlier failures and stopped runs remain below. This draft is not peer reviewed and establishes no new mechanism. GPT-2 work is paused.</p>
+        <p class="scope-line">A fixed reader, energy module and writer work together for one action in four small known worlds. In the latest decision test, SmolLM3 got 232 of 464 choices right. Repeated outputs matched exactly, but the model failed the readiness test. <a href="#dependence-native-result">Read the latest result.</a> Earlier failures and stopped runs remain below. This draft is not peer reviewed and establishes no new mechanism. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -376,12 +376,25 @@
           <p>Decimals reduced strict accuracy by 8.59 percentage points for error comparison and 6.64 points for combined choice. Equal answer scores increased from 1 to 24 of 128 error comparisons, and from 7 to 65 of 256 combined choices. The average preference score assigned to the correct meaning rose slightly—by less than 0.003 on a 0-to-1 scale in each task. This did not establish reliable performance. Formatting also changes text length and the work needed to read it, so this test does not isolate arithmetic as a cause.</p>
           <p>The highest-scoring output tokens were allowed answer tokens in all 960 main calls. These were scores for possible next tokens; we did not generate complete answers. All 64 repeated choices matched. Candidate scores matched exactly in 63 repeats, and all output scores matched exactly in 60. The largest repeated preference change was about 0.052.</p>
           <aside class="plain-note"><strong>This interface is not ready for an internal fault-state test.</strong>Basic component choices already fail, so we cannot isolate a failure to combine otherwise reliable parts. We are closing this controller-and-card setup as a vehicle for that test. The result does not show that an internal belief state is absent or that the organ idea cannot work. The earlier results and closed confirmation sets stay unchanged. No new training, worlds, organ forecasts or paid model calls were used. <a href="./research-evidence/component-diagnostic-summary.json">Complete diagnostic summary, checks and limits</a>.</aside>
-          <h3 id="dependence-native-plan">Next: can a model use how failures relate?</h3>
+          <h3 id="dependence-native-plan">The fixed plan: can a model use how failures relate?</h3>
           <p>Two parts can fail equally often on their own, yet fail together differently. We want to test whether a language model can use that relationship when a diagnostic or its cost changes. First, it must make the relevant choices reliably. No internal state will be transferred in this check.</p>
           <p>The fixed plan uses SmolLM3-3B on the CPU with BF16 weights. It contains <strong>58 decision problems × 8 forms + 8 fixed repeats = 472 calls</strong>. The forms independently change the table row order, which answer code means which option, and the options’ display order. The model’s scores for X and Y determine its choice; we will not generate answers.</p>
           <p><strong>All four requirements must pass:</strong> at least 7 of 8 forms correct for every problem; at least 441 of 464 main choices correct overall; all 58 problems correct in at least 6 of the same eight forms; and all eight repeats having unique choices that match their originals. Equal X/Y scores count as unresolved errors. Every case stays in the report.</p>
           <p>Eight earlier CPU software checks passed in 79.717 seconds on two short inputs. They checked loading and unchanged outputs, not these decisions. Two earlier graphics-processor attempts remain stopped: the first before loading, the second during loading when monitoring became stale. Neither establishes a successful graphics-processor run or a specific hardware fault.</p>
           <aside class="plain-note"><strong>Plan fixed before task outputs; publication verified separately.</strong>At plan freeze, no task answers had been collected. This is a fixed-choice readiness check, not proof of an internal belief, calibrated uncertainty, generated-answer compliance or a new mechanism. Full-vocabulary top choices and X/Y probability mass will be descriptive only. The closed Granite results remain unchanged. <a href="./research-evidence/dependence-native-plan.json">Fixed plan and limits</a> · <a href="https://github.com/posix4e/ai-understanding-ai/blob/main/research/moe-mechanisms/dependence_native_v1/PLAN.json">Source-bound plan</a> · <a href="https://github.com/posix4e/ai-understanding-ai/blob/main/research/moe-mechanisms/dependence_native_v1/run_native.py">Collector source</a>.</aside>
+          <h3 id="dependence-native-result">The model repeated its choices, but got only half right.</h3>
+          <p>SmolLM3-3B completed all <strong>464 main choices and 8 fixed repeats</strong> on 6 October. The saved records passed independent code checks. A separate recount agreed: <strong>232 of 464 choices were correct</strong>. One tied choice counted as an unresolved error and stays in that total. These are scores for two possible next tokens, not generated answers.</p>
+          <table class="followup-table"><caption>All six task groups from the fixed plan. A diagnostic is a check that supplies information about a possible failure.</caption><thead><tr><th scope="col">Task</th><th scope="col">Correct</th><th scope="col">Ties</th></tr></thead><tbody>
+            <tr><th scope="row">Decide whether to buy a perfect diagnostic</th><td>8 / 16</td><td>0</td></tr>
+            <tr><th scope="row">Act after a perfect diagnostic</th><td>16 / 32</td><td>0</td></tr>
+            <tr><th scope="row">Decide when the diagnostic or its cost changes</th><td>32 / 64</td><td>0</td></tr>
+            <tr><th scope="row">Act after a changed diagnostic</th><td>64 / 128</td><td>0</td></tr>
+            <tr><th scope="row">Read individual failure rates</th><td>32 / 64</td><td>0</td></tr>
+            <tr><th scope="row">Respond to changed individual failure rates</th><td>80 / 160</td><td>1</td></tr>
+          </tbody></table>
+          <p><strong>Three of four requirements failed.</strong> None of the 58 problems reached the required 7 correct forms out of 8. The total of 232 correct was below the required 441. None of the eight forms answered all 58 problems correctly; at least six complete forms were required. All eight repeated choices matched, so the repeat requirement passed. Their full output scores also matched exactly.</p>
+          <p>The model’s highest-scoring token was an allowed answer code in 463 of 464 main calls; the remaining call had a tie. Using the expected answer codes and repeating them reliably did not make the choices correct. The simpler failure-rate checks also failed. This test therefore does not isolate a problem with reasoning about related failures.</p>
+          <aside class="plain-note"><strong>This fixed model-and-question setup is closed for the planned internal-state test.</strong>We did not transfer hidden states or fit a new connection. This result does not explain the internal cause, show that beliefs are absent, or reject the organ idea. These were development questions, not independent samples or an unseen confirmation test. All cases remain in the records. <a href="./research-evidence/dependence-native-result.json">All 58 problem counts, eight form counts, repeats, requirements and limits</a>.</aside>
           <p>We do not yet claim a new mechanism, a broadly reliable repair, or a novel research result.</p>
         </div>
       </div>
@@ -394,6 +407,7 @@
       </div>
       <div class="evidence-grid">
         <div class="evidence-group"><h3>The organ direction</h3><ul>
+          <li><a href="./research-evidence/dependence-native-result.json">Choices about related failures<span>232 / 464 correct; repeats matched, but readiness failed</span></a></li>
           <li><a href="./research-evidence/component-diagnostic-summary.json">Basic controller choices and number format<span>All four task checks failed; this interface is closed as a fault-state test</span></a></li>
           <li><a href="./research-evidence/fault-scope-summary.json">Selective trust after a fault clue<span>Amended development result; original resource stop and limits preserved</span></a></li>
           <li><a href="./research-evidence/jev-feedback-summary.json">Clef feedback selection check<span>Development requirements failed; held-out controller test not run</span></a></li>

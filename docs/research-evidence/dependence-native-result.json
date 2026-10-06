@@ -1,0 +1,1191 @@
+{
+  "all_58_cells": [
+    {
+      "block": "donor_first_action",
+      "cell_id": "c00",
+      "condition": {
+        "cost": "1/40",
+        "law": "positive",
+        "sensor": "perfect",
+        "signal": null,
+        "stage": "first",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "donor_first_action",
+      "cell_id": "c01",
+      "condition": {
+        "cost": "1/40",
+        "law": "negative",
+        "sensor": "perfect",
+        "signal": null,
+        "stage": "first",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "donor_forced_post_query",
+      "cell_id": "c02",
+      "condition": {
+        "cost": "1/40",
+        "law": "positive",
+        "sensor": "perfect",
+        "signal": 0,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "donor_forced_post_query",
+      "cell_id": "c03",
+      "condition": {
+        "cost": "1/40",
+        "law": "positive",
+        "sensor": "perfect",
+        "signal": 1,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "donor_forced_post_query",
+      "cell_id": "c04",
+      "condition": {
+        "cost": "1/40",
+        "law": "negative",
+        "sensor": "perfect",
+        "signal": 0,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "donor_forced_post_query",
+      "cell_id": "c05",
+      "condition": {
+        "cost": "1/40",
+        "law": "negative",
+        "sensor": "perfect",
+        "signal": 1,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_first_action",
+      "cell_id": "c06",
+      "condition": {
+        "cost": "1/40",
+        "law": "positive",
+        "sensor": "positive_biased",
+        "signal": null,
+        "stage": "first",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_first_action",
+      "cell_id": "c07",
+      "condition": {
+        "cost": "1/20",
+        "law": "positive",
+        "sensor": "positive_biased",
+        "signal": null,
+        "stage": "first",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_first_action",
+      "cell_id": "c08",
+      "condition": {
+        "cost": "1/40",
+        "law": "positive",
+        "sensor": "negative_biased",
+        "signal": null,
+        "stage": "first",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_first_action",
+      "cell_id": "c09",
+      "condition": {
+        "cost": "1/20",
+        "law": "positive",
+        "sensor": "negative_biased",
+        "signal": null,
+        "stage": "first",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_first_action",
+      "cell_id": "c10",
+      "condition": {
+        "cost": "1/40",
+        "law": "negative",
+        "sensor": "positive_biased",
+        "signal": null,
+        "stage": "first",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_first_action",
+      "cell_id": "c11",
+      "condition": {
+        "cost": "1/20",
+        "law": "negative",
+        "sensor": "positive_biased",
+        "signal": null,
+        "stage": "first",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_first_action",
+      "cell_id": "c12",
+      "condition": {
+        "cost": "1/40",
+        "law": "negative",
+        "sensor": "negative_biased",
+        "signal": null,
+        "stage": "first",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_first_action",
+      "cell_id": "c13",
+      "condition": {
+        "cost": "1/20",
+        "law": "negative",
+        "sensor": "negative_biased",
+        "signal": null,
+        "stage": "first",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c14",
+      "condition": {
+        "cost": "1/40",
+        "law": "positive",
+        "sensor": "positive_biased",
+        "signal": 0,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c15",
+      "condition": {
+        "cost": "1/40",
+        "law": "positive",
+        "sensor": "positive_biased",
+        "signal": 1,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c16",
+      "condition": {
+        "cost": "1/20",
+        "law": "positive",
+        "sensor": "positive_biased",
+        "signal": 0,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c17",
+      "condition": {
+        "cost": "1/20",
+        "law": "positive",
+        "sensor": "positive_biased",
+        "signal": 1,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c18",
+      "condition": {
+        "cost": "1/40",
+        "law": "positive",
+        "sensor": "negative_biased",
+        "signal": 0,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c19",
+      "condition": {
+        "cost": "1/40",
+        "law": "positive",
+        "sensor": "negative_biased",
+        "signal": 1,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c20",
+      "condition": {
+        "cost": "1/20",
+        "law": "positive",
+        "sensor": "negative_biased",
+        "signal": 0,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c21",
+      "condition": {
+        "cost": "1/20",
+        "law": "positive",
+        "sensor": "negative_biased",
+        "signal": 1,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c22",
+      "condition": {
+        "cost": "1/40",
+        "law": "negative",
+        "sensor": "positive_biased",
+        "signal": 0,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c23",
+      "condition": {
+        "cost": "1/40",
+        "law": "negative",
+        "sensor": "positive_biased",
+        "signal": 1,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c24",
+      "condition": {
+        "cost": "1/20",
+        "law": "negative",
+        "sensor": "positive_biased",
+        "signal": 0,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c25",
+      "condition": {
+        "cost": "1/20",
+        "law": "negative",
+        "sensor": "positive_biased",
+        "signal": 1,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c26",
+      "condition": {
+        "cost": "1/40",
+        "law": "negative",
+        "sensor": "negative_biased",
+        "signal": 0,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c27",
+      "condition": {
+        "cost": "1/40",
+        "law": "negative",
+        "sensor": "negative_biased",
+        "signal": 1,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c28",
+      "condition": {
+        "cost": "1/20",
+        "law": "negative",
+        "sensor": "negative_biased",
+        "signal": 0,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "receiver_forced_post_query",
+      "cell_id": "c29",
+      "condition": {
+        "cost": "1/20",
+        "law": "negative",
+        "sensor": "negative_biased",
+        "signal": 1,
+        "stage": "post",
+        "threshold": null,
+        "variable": null
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "main_law_marginal_controls",
+      "cell_id": "c30",
+      "condition": {
+        "cost": null,
+        "law": "positive",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "main_law_marginal_controls",
+      "cell_id": "c31",
+      "condition": {
+        "cost": null,
+        "law": "positive",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "main_law_marginal_controls",
+      "cell_id": "c32",
+      "condition": {
+        "cost": null,
+        "law": "positive",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "main_law_marginal_controls",
+      "cell_id": "c33",
+      "condition": {
+        "cost": null,
+        "law": "positive",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "main_law_marginal_controls",
+      "cell_id": "c34",
+      "condition": {
+        "cost": null,
+        "law": "negative",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "main_law_marginal_controls",
+      "cell_id": "c35",
+      "condition": {
+        "cost": null,
+        "law": "negative",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "main_law_marginal_controls",
+      "cell_id": "c36",
+      "condition": {
+        "cost": null,
+        "law": "negative",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "main_law_marginal_controls",
+      "cell_id": "c37",
+      "condition": {
+        "cost": null,
+        "law": "negative",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c38",
+      "condition": {
+        "cost": null,
+        "law": "baseline_product",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "A"
+      },
+      "correct": 6,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c39",
+      "condition": {
+        "cost": null,
+        "law": "baseline_product",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "A"
+      },
+      "correct": 2,
+      "ties": 1,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c40",
+      "condition": {
+        "cost": null,
+        "law": "baseline_product",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c41",
+      "condition": {
+        "cost": null,
+        "law": "baseline_product",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c42",
+      "condition": {
+        "cost": null,
+        "law": "A_lower_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c43",
+      "condition": {
+        "cost": null,
+        "law": "A_lower_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c44",
+      "condition": {
+        "cost": null,
+        "law": "A_lower_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c45",
+      "condition": {
+        "cost": null,
+        "law": "A_lower_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c46",
+      "condition": {
+        "cost": null,
+        "law": "A_higher_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c47",
+      "condition": {
+        "cost": null,
+        "law": "A_higher_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c48",
+      "condition": {
+        "cost": null,
+        "law": "A_higher_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c49",
+      "condition": {
+        "cost": null,
+        "law": "A_higher_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c50",
+      "condition": {
+        "cost": null,
+        "law": "B_lower_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c51",
+      "condition": {
+        "cost": null,
+        "law": "B_lower_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c52",
+      "condition": {
+        "cost": null,
+        "law": "B_lower_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c53",
+      "condition": {
+        "cost": null,
+        "law": "B_lower_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c54",
+      "condition": {
+        "cost": null,
+        "law": "B_higher_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c55",
+      "condition": {
+        "cost": null,
+        "law": "B_higher_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "A"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c56",
+      "condition": {
+        "cost": null,
+        "law": "B_higher_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "19/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    },
+    {
+      "block": "product_marginal_positive_controls",
+      "cell_id": "c57",
+      "condition": {
+        "cost": null,
+        "law": "B_higher_only",
+        "sensor": null,
+        "signal": null,
+        "stage": "marginal",
+        "threshold": "21/40",
+        "variable": "B"
+      },
+      "correct": 4,
+      "ties": 0,
+      "total": 8
+    }
+  ],
+  "all_8_form_vector_counts": [
+    {
+      "all_correct": false,
+      "correct": 24,
+      "ties": 0,
+      "total": 58,
+      "variant": "r0-m0-o0"
+    },
+    {
+      "all_correct": false,
+      "correct": 24,
+      "ties": 0,
+      "total": 58,
+      "variant": "r0-m0-o1"
+    },
+    {
+      "all_correct": false,
+      "correct": 34,
+      "ties": 0,
+      "total": 58,
+      "variant": "r0-m1-o0"
+    },
+    {
+      "all_correct": false,
+      "correct": 34,
+      "ties": 0,
+      "total": 58,
+      "variant": "r0-m1-o1"
+    },
+    {
+      "all_correct": false,
+      "correct": 24,
+      "ties": 0,
+      "total": 58,
+      "variant": "r1-m0-o0"
+    },
+    {
+      "all_correct": false,
+      "correct": 24,
+      "ties": 1,
+      "total": 58,
+      "variant": "r1-m0-o1"
+    },
+    {
+      "all_correct": false,
+      "correct": 34,
+      "ties": 0,
+      "total": 58,
+      "variant": "r1-m1-o0"
+    },
+    {
+      "all_correct": false,
+      "correct": 34,
+      "ties": 0,
+      "total": 58,
+      "variant": "r1-m1-o1"
+    }
+  ],
+  "all_8_repeats": [
+    {
+      "candidate_margin_X_minus_Y_difference": 0.0,
+      "id": "c00-r0-m0-o0-repeat",
+      "maximum_absolute_full_logit_difference": 0.0,
+      "raw_full_logits_equal": true,
+      "repeat_candidate_tie": false,
+      "repeat_of": "c00-r0-m0-o0",
+      "unique_semantic_agreement": true
+    },
+    {
+      "candidate_margin_X_minus_Y_difference": 0.0,
+      "id": "c05-r0-m0-o0-repeat",
+      "maximum_absolute_full_logit_difference": 0.0,
+      "raw_full_logits_equal": true,
+      "repeat_candidate_tie": false,
+      "repeat_of": "c05-r0-m0-o0",
+      "unique_semantic_agreement": true
+    },
+    {
+      "candidate_margin_X_minus_Y_difference": 0.0,
+      "id": "c06-r0-m0-o0-repeat",
+      "maximum_absolute_full_logit_difference": 0.0,
+      "raw_full_logits_equal": true,
+      "repeat_candidate_tie": false,
+      "repeat_of": "c06-r0-m0-o0",
+      "unique_semantic_agreement": true
+    },
+    {
+      "candidate_margin_X_minus_Y_difference": 0.0,
+      "id": "c07-r0-m0-o0-repeat",
+      "maximum_absolute_full_logit_difference": 0.0,
+      "raw_full_logits_equal": true,
+      "repeat_candidate_tie": false,
+      "repeat_of": "c07-r0-m0-o0",
+      "unique_semantic_agreement": true
+    },
+    {
+      "candidate_margin_X_minus_Y_difference": 0.0,
+      "id": "c12-r0-m0-o0-repeat",
+      "maximum_absolute_full_logit_difference": 0.0,
+      "raw_full_logits_equal": true,
+      "repeat_candidate_tie": false,
+      "repeat_of": "c12-r0-m0-o0",
+      "unique_semantic_agreement": true
+    },
+    {
+      "candidate_margin_X_minus_Y_difference": 0.0,
+      "id": "c16-r0-m0-o0-repeat",
+      "maximum_absolute_full_logit_difference": 0.0,
+      "raw_full_logits_equal": true,
+      "repeat_candidate_tie": false,
+      "repeat_of": "c16-r0-m0-o0",
+      "unique_semantic_agreement": true
+    },
+    {
+      "candidate_margin_X_minus_Y_difference": 0.0,
+      "id": "c30-r0-m0-o0-repeat",
+      "maximum_absolute_full_logit_difference": 0.0,
+      "raw_full_logits_equal": true,
+      "repeat_candidate_tie": false,
+      "repeat_of": "c30-r0-m0-o0",
+      "unique_semantic_agreement": true
+    },
+    {
+      "candidate_margin_X_minus_Y_difference": 0.0,
+      "id": "c52-r0-m0-o0-repeat",
+      "maximum_absolute_full_logit_difference": 0.0,
+      "raw_full_logits_equal": true,
+      "repeat_candidate_tie": false,
+      "repeat_of": "c52-r0-m0-o0",
+      "unique_semantic_agreement": true
+    }
+  ],
+  "by_fixed_block": {
+    "donor_first_action": {
+      "correct": 8,
+      "label": "Choose a query: perfect diagnostic",
+      "ties": 0,
+      "total": 16
+    },
+    "donor_forced_post_query": {
+      "correct": 16,
+      "label": "Act after a perfect diagnostic",
+      "ties": 0,
+      "total": 32
+    },
+    "main_law_marginal_controls": {
+      "correct": 32,
+      "label": "Read individual failure rates",
+      "ties": 0,
+      "total": 64
+    },
+    "product_marginal_positive_controls": {
+      "correct": 80,
+      "label": "Respond to changed individual failure rates",
+      "ties": 1,
+      "total": 160
+    },
+    "receiver_first_action": {
+      "correct": 32,
+      "label": "Choose a query: changed diagnostic or cost",
+      "ties": 0,
+      "total": 64
+    },
+    "receiver_forced_post_query": {
+      "correct": 64,
+      "label": "Act after a changed diagnostic",
+      "ties": 0,
+      "total": 128
+    }
+  },
+  "complete_form_vector_count": 0,
+  "complete_signature_retention": "All eight full 58-choice signatures are retained in the bound independent audit. This selected public summary reports their counts, not all 464 answer choices.",
+  "counts": {
+    "fixed_repeats": 8,
+    "primary": 464,
+    "semantic_cells": 58,
+    "total": 472
+  },
+  "full_vocabulary_descriptive_only": {
+    "interpretation": "Allowed top-one tokens and X/Y mass are descriptive only; no threshold, filtering, calibration or generation claim.",
+    "primary": {
+      "maximum_candidate_mass": 0.9900027580931864,
+      "mean_candidate_mass": 0.9814537984934811,
+      "minimum_candidate_mass": 0.9743157702114739,
+      "n": 464,
+      "tied_full_vocabulary_maxima": 1,
+      "unique_legal_top1": 463
+    },
+    "repeats": {
+      "maximum_candidate_mass": 0.9833856873883522,
+      "mean_candidate_mass": 0.9817137374410498,
+      "minimum_candidate_mass": 0.977174869996667,
+      "n": 8,
+      "tied_full_vocabulary_maxima": 0,
+      "unique_legal_top1": 8
+    }
+  },
+  "gates": {
+    "all8_unique_repeat_choices_match": true,
+    "at_least6_complete_vectors": false,
+    "each_cell_at_least7": false,
+    "pooled_at_least441": false
+  },
+  "history": "The prospective plan and both earlier MPS engineering STOPs remain preserved. CPU engineering success was a separate software check. All earlier closed Granite results and confirmation boundaries remain unchanged.",
+  "limits": [
+    "Strict conditional X/Y ranking after a fixed prefill; not free generation or calibrated confidence.",
+    "All 464 main cases and 8 repeats are retained, including ties and every failed cell. Repeats never replace originals.",
+    "All eight form vectors remain in later comparisons; no successful-subset selection.",
+    "This exposed development panel is not untouched confirmation; forms and repeats are not independent scientific trials.",
+    "Native readiness alone shows no internal causal mechanism, unique belief representation, Bayesian algorithm, organ advantage or novelty.",
+    "A pass only permits separate causal-study design; a failure closes this fixed interface without prompt, model or threshold rescue."
+  ],
+  "model": {
+    "device": "cpu",
+    "dtype": "bfloat16",
+    "id": "HuggingFaceTB/SmolLM3-3B",
+    "revision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  },
+  "original_requirements": {
+    "complete_form_vectors_at_least": 6,
+    "complete_form_vectors_denominator": 8,
+    "per_cell_correct_at_least": 7,
+    "per_cell_denominator": 8,
+    "pooled_correct_at_least": 441,
+    "pooled_denominator": 464,
+    "repeat_unique_semantic_agreements": 8,
+    "structurally_complete_calls": 472
+  },
+  "plain_result": "The complete native panel did not meet all fixed readiness requirements.",
+  "plan_sha256": "3cacb5d5bd4ffae9dce97c98376600c57e4f9aabd8618f51f8f8b8f918345fd7",
+  "pooled": {
+    "correct": 232,
+    "ties": 1,
+    "total": 464
+  },
+  "prepared_utc": "2026-10-06T07:09:33.367214+00:00",
+  "readiness_pass": false,
+  "record_type": "DERIVED_PUBLIC_NATIVE_DEPENDENCE_READINESS_RESULT",
+  "repeat_unique_agreements": 8,
+  "sources": [
+    {
+      "source_path": "work/dependence-native-independent-review/NATIVE_TERMINAL_REVIEW.json",
+      "source_sha256": "b72898a188340907e2ed5cfa36aa2950abaaeb35abf80cc13eaf45273bbad094"
+    },
+    {
+      "source_path": "research/moe-mechanisms/dependence_native_v1/PLAN.json",
+      "source_sha256": "3cacb5d5bd4ffae9dce97c98376600c57e4f9aabd8618f51f8f8b8f918345fd7"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/DEPENDENCE_NATIVE_V1/COMPLETE.json",
+      "source_sha256": "6c9ed1f69482084a6484fe83f84244f7af8159b030a3ea2cce4fcf0a05fa9407"
+    },
+    {
+      "source_path": "work/dependence-native-result-publication-preparation/project_result.py",
+      "source_sha256": "76a230ff91a8acbc3e4bf1dd508f49ba2d573f97a9202f512489307b0149e701"
+    }
+  ],
+  "status": "COMPLETED_AND_INDEPENDENTLY_VALIDATED",
+  "transformation": "Projection of the completed independent audit, with arithmetic consistency checks on its already graded fields. No raw score decoding, model calls or scientific regrading."
+}
