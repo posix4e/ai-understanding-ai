@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T12:49:25.419096+00:00",
+  "at_utc": "2026-10-06T21:32:12.551838+00:00",
   "scope": "Selected summary records, derived metadata, a frozen source/plan bundle and runnable mathematical examples for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -2209,6 +2209,117 @@
       "bytes": 1595849,
       "provider_calls": 0,
       "note": "Includes all six fits and fixed tasks; repairs selected after the pilot."
+    },
+    {
+      "file": "world-model-acquisition-summary.json",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "bdfa74663072062c2c35a22f752811f34be87b25ccefa578a3da11b25bbdbbca",
+      "bytes": 788969,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_00.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "37401de033c7f97de3214381b9761ec839bdd44af027d500da31a0195dc6edec",
+      "bytes": 11663414,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_01.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "9828e2932a013fda8cd558132e489594be9b050dd09959363b345844ef39cab6",
+      "bytes": 11654387,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_02.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "f3b08c847e95be5c4bd40bcb34b0d474c5dd43278db8b3f0819bb9d3299dcb06",
+      "bytes": 11681451,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_03.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "c21a05c4d5f9cd66b5eced36b8ebe4188c2dcece1cdb0f3f2ce3b7dce16f3355",
+      "bytes": 11678374,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_04.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "36ad5bb847eefd69189a8a68f611381c93c1d2e770efc67eab22ef706a904b35",
+      "bytes": 11687469,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_05.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "7f4e47fb217add3cb090f3b95b9eaf1baef543681203b0ccb95f53e3b8eff219",
+      "bytes": 11662874,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_06.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "1100813f5e1ab0a28cb3f056b5198aa5ca1566f5c46524d7c1cffc028920be4e",
+      "bytes": 11632858,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_07.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "390ed62fa06b3ccdf2326e44a2c2c58798ddedd33352986f9966f315ab6f4f72",
+      "bytes": 11670834,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_08.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "d6e844c5087251e2e9d61057cc02f00028fffded51273e6946763aaf61418c58",
+      "bytes": 11686348,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_09.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "3b926ee523282ff30b7242594a6017e51de6401ec31466f6ee40e4e8955608fe",
+      "bytes": 11665045,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_10.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "68673b63afac4e5328ae4bfc91e52c7609cc2d4ad35712cc3d6f1576fe2f7682",
+      "bytes": 11634767,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-map_11.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "5f1e5108b8f1d3078d0d70bf4da4ccb4f9a6b907a999434f2710656a383d374f",
+      "bytes": 11697181,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-shared.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "971718e64ce19db8f57a02b2c0c4813edce314603ce32ab4274851d0bc1d758f",
+      "bytes": 946504,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-diagnostic.zip",
+      "copy_type": "derived_independently_checked_experiment_evidence",
+      "sha256": "b45d6f0a1e12756cdf7b6a9b34f6b9bed48753dddcf8796cd8375646b61496d5",
+      "bytes": 329829,
+      "provenance_index": "world-model-acquisition-hashes.json"
+    },
+    {
+      "file": "world-model-acquisition-hashes.json",
+      "copy_type": "derived_evidence_hash_index",
+      "sha256": "68ca08c44ba482b4701e712feaac54b67359e237eb4afed7878fcf8e7663f421",
+      "bytes": 1086670
     }
   ],
   "absolute_local_path_redactions": 0,
