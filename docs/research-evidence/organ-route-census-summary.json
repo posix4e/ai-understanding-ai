@@ -1,0 +1,1085 @@
+{
+  "at_utc": "2026-10-06T09:03:39.217552+00:00",
+  "copy_type": "derived_public_summary",
+  "study_id": "ORGAN_ROUTE_CENSUS_V1",
+  "status": "ROUTE_CENSUS_COMPLETE",
+  "question": "Under exact replay of the completed B/W tails, how do selected expert identities and mixture weights differ after the external supplied-answer signal?",
+  "source_scope": "Fixed locally before new computation and published after completion. This is not a public preregistration. The linked reading bundle includes the full descriptive report, plan, completion, independent audit and 35 frozen Python files; raw tensor archives and model weights are not included.",
+  "panel": {
+    "contexts": 24,
+    "known_worlds": 4,
+    "cells": 96,
+    "arms": [
+      "B",
+      "W"
+    ],
+    "blocks": [
+      20,
+      21,
+      22,
+      23
+    ],
+    "experts_per_block": 32,
+    "selected_experts_per_token": 8,
+    "all_cells_previously_exposed": true
+  },
+  "methods": "Recompute only native blocks20\u201323, final normalization and vocabulary head from saved full post-writer states. Compare uniform-baseline B with organ-supplied W. Observe actual routing tuples without replacing outputs.",
+  "exact_replay_calls": 192,
+  "historical_full_router_hash_matches": 768,
+  "cells_with_some_expert_set_change": 96,
+  "changed_expert_sets": 315,
+  "total_cell_block_comparisons": 384,
+  "changed_routing_mixture_weight_vectors": 384,
+  "earlier_token_route_or_gate_mismatches": 0,
+  "per_layer": {
+    "20": {
+      "n": 96,
+      "overlap_histogram": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 2,
+        "6": 28,
+        "7": 53,
+        "8": 13
+      },
+      "support_unchanged": 13,
+      "gate_bits_unchanged": 0,
+      "boundary_tied_B": 0,
+      "boundary_tied_W": 1,
+      "gate_rounding_ambiguous": 0,
+      "unavoidable_historical_replacement": 83,
+      "nonfinal_mismatch": 0,
+      "gate_L1": {
+        "mean": 0.4461873372395833,
+        "minimum": 0.1171875,
+        "maximum": 0.76416015625
+      }
+    },
+    "21": {
+      "n": 96,
+      "overlap_histogram": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 13,
+        "5": 11,
+        "6": 27,
+        "7": 24,
+        "8": 21
+      },
+      "support_unchanged": 21,
+      "gate_bits_unchanged": 0,
+      "boundary_tied_B": 0,
+      "boundary_tied_W": 1,
+      "gate_rounding_ambiguous": 0,
+      "unavoidable_historical_replacement": 75,
+      "nonfinal_mismatch": 0,
+      "gate_L1": {
+        "mean": 0.5070851643880209,
+        "minimum": 0.11474609375,
+        "maximum": 1.12646484375
+      }
+    },
+    "22": {
+      "n": 96,
+      "overlap_histogram": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 6,
+        "5": 5,
+        "6": 10,
+        "7": 64,
+        "8": 11
+      },
+      "support_unchanged": 11,
+      "gate_bits_unchanged": 0,
+      "boundary_tied_B": 0,
+      "boundary_tied_W": 2,
+      "gate_rounding_ambiguous": 0,
+      "unavoidable_historical_replacement": 85,
+      "nonfinal_mismatch": 0,
+      "gate_L1": {
+        "mean": 0.4127553304036458,
+        "minimum": 0.10693359375,
+        "maximum": 1.03662109375
+      }
+    },
+    "23": {
+      "n": 96,
+      "overlap_histogram": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 9,
+        "5": 14,
+        "6": 3,
+        "7": 46,
+        "8": 24
+      },
+      "support_unchanged": 24,
+      "gate_bits_unchanged": 0,
+      "boundary_tied_B": 0,
+      "boundary_tied_W": 3,
+      "gate_rounding_ambiguous": 0,
+      "unavoidable_historical_replacement": 72,
+      "nonfinal_mismatch": 0,
+      "gate_L1": {
+        "mean": 0.3722941080729167,
+        "minimum": 0.0478515625,
+        "maximum": 1.07080078125
+      }
+    }
+  },
+  "per_world": {
+    "dev00": {
+      "20": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 7,
+          "7": 11,
+          "8": 5
+        },
+        "support_unchanged": 5,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 0,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 19,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.4497273763020833,
+          "minimum": 0.1171875,
+          "maximum": 0.73828125
+        }
+      },
+      "21": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 4,
+          "6": 6,
+          "7": 6,
+          "8": 6
+        },
+        "support_unchanged": 6,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 0,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 18,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.492919921875,
+          "minimum": 0.11962890625,
+          "maximum": 1.09814453125
+        }
+      },
+      "22": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 2,
+          "6": 2,
+          "7": 15,
+          "8": 4
+        },
+        "support_unchanged": 4,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 1,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 20,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.4034423828125,
+          "minimum": 0.10693359375,
+          "maximum": 1.0361328125
+        }
+      },
+      "23": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 4,
+          "6": 1,
+          "7": 13,
+          "8": 5
+        },
+        "support_unchanged": 5,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 0,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 19,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.3584493001302083,
+          "minimum": 0.05859375,
+          "maximum": 1.04833984375
+        }
+      }
+    },
+    "dev01": {
+      "20": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 6,
+          "7": 15,
+          "8": 3
+        },
+        "support_unchanged": 3,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 0,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 21,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.43170166015625,
+          "minimum": 0.2431640625,
+          "maximum": 0.611328125
+        }
+      },
+      "21": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 4,
+          "5": 2,
+          "6": 6,
+          "7": 8,
+          "8": 4
+        },
+        "support_unchanged": 4,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 1,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 20,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.5107625325520834,
+          "minimum": 0.12109375,
+          "maximum": 1.12646484375
+        }
+      },
+      "22": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 1,
+          "6": 4,
+          "7": 13,
+          "8": 4
+        },
+        "support_unchanged": 4,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 0,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 20,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.4200032552083333,
+          "minimum": 0.107421875,
+          "maximum": 1.03662109375
+        }
+      },
+      "23": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 3,
+          "6": 0,
+          "7": 13,
+          "8": 5
+        },
+        "support_unchanged": 5,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 0,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 19,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.3843892415364583,
+          "minimum": 0.05712890625,
+          "maximum": 1.06396484375
+        }
+      }
+    },
+    "dev02": {
+      "20": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 8,
+          "7": 14,
+          "8": 2
+        },
+        "support_unchanged": 2,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 1,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 22,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.4510498046875,
+          "minimum": 0.26513671875,
+          "maximum": 0.603759765625
+        }
+      },
+      "21": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 3,
+          "6": 8,
+          "7": 4,
+          "8": 6
+        },
+        "support_unchanged": 6,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 0,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 18,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.5093587239583334,
+          "minimum": 0.11767578125,
+          "maximum": 1.09228515625
+        }
+      },
+      "22": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 1,
+          "6": 0,
+          "7": 19,
+          "8": 2
+        },
+        "support_unchanged": 2,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 0,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 22,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.4079182942708333,
+          "minimum": 0.11767578125,
+          "maximum": 1.03466796875
+        }
+      },
+      "23": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 4,
+          "6": 1,
+          "7": 10,
+          "8": 7
+        },
+        "support_unchanged": 7,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 1,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 17,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.3688761393229167,
+          "minimum": 0.0478515625,
+          "maximum": 1.07080078125
+        }
+      }
+    },
+    "dev03": {
+      "20": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 7,
+          "7": 13,
+          "8": 3
+        },
+        "support_unchanged": 3,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 0,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 21,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.4522705078125,
+          "minimum": 0.24755859375,
+          "maximum": 0.76416015625
+        }
+      },
+      "21": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 4,
+          "5": 2,
+          "6": 7,
+          "7": 6,
+          "8": 5
+        },
+        "support_unchanged": 5,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 0,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 19,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.5152994791666666,
+          "minimum": 0.11474609375,
+          "maximum": 1.1044921875
+        }
+      },
+      "22": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 1,
+          "6": 4,
+          "7": 17,
+          "8": 1
+        },
+        "support_unchanged": 1,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 1,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 23,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.4196573893229167,
+          "minimum": 0.1103515625,
+          "maximum": 1.0341796875
+        }
+      },
+      "23": {
+        "n": 24,
+        "overlap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 3,
+          "6": 1,
+          "7": 10,
+          "8": 7
+        },
+        "support_unchanged": 7,
+        "gate_bits_unchanged": 0,
+        "boundary_tied_B": 0,
+        "boundary_tied_W": 2,
+        "gate_rounding_ambiguous": 0,
+        "unavoidable_historical_replacement": 17,
+        "nonfinal_mismatch": 0,
+        "gate_L1": {
+          "mean": 0.3774617513020833,
+          "minimum": 0.0556640625,
+          "maximum": 1.06396484375
+        }
+      }
+    }
+  },
+  "per_cell": [
+    {
+      "cell_id": "s0-a0-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a0-dev01",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a0-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a0-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a1-dev00",
+      "changed_support_layers": 2,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a1-dev01",
+      "changed_support_layers": 1,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a1-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a1-dev03",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a2-dev00",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a2-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a2-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s0-a2-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a0-dev00",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a0-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a0-dev02",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a0-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a1-dev00",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a1-dev01",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a1-dev02",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a1-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a2-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a2-dev01",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a2-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s1-a2-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a0-dev00",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a0-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a0-dev02",
+      "changed_support_layers": 2,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a0-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a1-dev00",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a1-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a1-dev02",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a1-dev03",
+      "changed_support_layers": 2,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a2-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a2-dev01",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a2-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s2-a2-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a0-dev00",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a0-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a0-dev02",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a0-dev03",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a1-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a1-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a1-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a1-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a2-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a2-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a2-dev02",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s3-a2-dev03",
+      "changed_support_layers": 2,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a0-dev00",
+      "changed_support_layers": 1,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a0-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a0-dev02",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a0-dev03",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a1-dev00",
+      "changed_support_layers": 2,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a1-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a1-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a1-dev03",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a2-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a2-dev01",
+      "changed_support_layers": 2,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a2-dev02",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s4-a2-dev03",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a0-dev00",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a0-dev01",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a0-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a0-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a1-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a1-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a1-dev02",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a1-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a2-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a2-dev01",
+      "changed_support_layers": 2,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a2-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s5-a2-dev03",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a0-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a0-dev01",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a0-dev02",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a0-dev03",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a1-dev00",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a1-dev01",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a1-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a1-dev03",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a2-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a2-dev01",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a2-dev02",
+      "changed_support_layers": 2,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s6-a2-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a0-dev00",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a0-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a0-dev02",
+      "changed_support_layers": 2,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a0-dev03",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a1-dev00",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a1-dev01",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a1-dev02",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a1-dev03",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a2-dev00",
+      "changed_support_layers": 2,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a2-dev01",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a2-dev02",
+      "changed_support_layers": 3,
+      "changed_gate_layers": 4
+    },
+    {
+      "cell_id": "s7-a2-dev03",
+      "changed_support_layers": 4,
+      "changed_gate_layers": 4
+    }
+  ],
+  "tie_note": "Seven of384 W final-token layer rows have a tie at the eighth/ninth cutoff. The allowed-set overlap bound still proves at least one expert replacement in all315 changed comparisons. It does not identify every historical tied expert. Saved BF16 mixing weights are unrenormalized replay operands; trained model weights did not change.",
+  "computation": {
+    "suffix_executions": 192,
+    "decoder_block_executions": 768,
+    "full_host_forwards": 0,
+    "organ_forwards": 0,
+    "reader_applications": 0,
+    "writer_forwards": 0,
+    "analytical_fits": 0,
+    "backwards": 0,
+    "optimizer_steps": 0,
+    "provider_calls": 0,
+    "generated_tokens": 0,
+    "elapsed_seconds": 42.73446483298903
+  },
+  "interpretation": "The supplied-answer signal changes expert selection and output mixing in this working toy connection. This observation does not establish that the routing changes help or are necessary.",
+  "next_step": "Proposed, not registered or executed: hold the old expert choices and mixing weights fixed while recomputing their outputs on the organ-modified state. First validate that the intervention and its no-change controls isolate the intended change.",
+  "limits": [
+    "New192 suffix replays exactly match historical full-sequence observations; no original prefix, organ, writer or task scoring was rerun.",
+    "Raw original router logits are hash-matched. Historical support is unique only with positive eighth/ninth gap; boundary ties retain newly observed replay support and admissible-overlap bounds.",
+    "Actual BF16 gates are authoritative and unrenormalized. A fixed2e-7 precast engineering allowance checks reconstructed softmax consistency, not a theorem of exact kernel replay.",
+    "All96 exposed cells over24 repeated contexts and four worlds remain; no population inference, new-world generalization, calibrated probabilities or novelty.",
+    "A descriptive route difference is not evidence of its necessity, utility, semantic specialization or causal mediation.",
+    "Resource maxima are sampled. This auditor validates a live owner-log prefix; the owner verifies stage exits and process-group cleanup, and a later parent terminal review must bind final log/monitor bytes."
+  ],
+  "scientific_confirmation": false,
+  "novelty_established": false,
+  "source_sha256": {
+    "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/plan.json": "133c644bae49d7e0cf30704e5be5f05797ceff022b5763ef358f95335cdfe701",
+    "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/REGISTRATION.json": "2544ff8ca550e38409432514c0e623a13db598b8dc765cda0c3710cc2a7e56e7",
+    "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/COMPLETE.json": "535f5fbfd59c8c3576da4c7ef058713e156c6c4514ab7ab23ae309dda5ba25c7",
+    "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/REPORT.json": "04cb5940073df0ef5c9f2350bc5d80b3d09f48e4b7994a2e98160a6723f45202",
+    "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/INDEPENDENT_AUDIT.json": "edebd3f5fa06867be5cf9d59319aa73376a03d50174b8186b85fab42817120a8",
+    "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/COLLECTED.json": "03c58b8b5d142609bcfa28cfe99e99f47a2dae6435ed4e0d3561e04f4a16206c",
+    "work/organ-route-census-review/CLAIM_REVIEW.json": "fac3f4e9bfcd076884b9d8d1cab352ef7c2f11d00529e6ee5bb529c84bf05526",
+    "work/organ-route-census-review/TERMINAL_REVIEW.json": "aed1c6753f8d4a379256430e7ca8532f87ae423aa6fdb098ff7955a9de9133db"
+  }
+}

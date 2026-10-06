@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T08:26:02.378425+00:00",
+  "at_utc": "2026-10-06T09:03:39.217552+00:00",
   "scope": "Selected summary records, derived metadata, a frozen source/plan bundle and runnable mathematical examples for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -439,8 +439,8 @@
           "url": "https://arxiv.org/html/2601.17094v2",
           "version_date": "2026-03-31",
           "sections": [
-            "3.1–3.3",
-            "7.2–7.3"
+            "3.1\u20133.3",
+            "7.2\u20137.3"
           ],
           "independently_read_at_utc": "2026-10-05T14:23:22.343278+00:00"
         }
@@ -1371,6 +1371,88 @@
         }
       ],
       "transformation": "Two copied standard-library Python sources, expected JSON outputs and run instructions. No primary paper copies, model weights or empirical data."
+    },
+    {
+      "file": "organ-route-census-summary.json",
+      "copy_type": "derived_public_summary",
+      "sha256": "dbfdefdefa15b71c9a4fd99757f0548753b7c362a75587ef0ac3548ca3d0391f",
+      "bytes": 28012,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/plan.json",
+          "source_sha256": "133c644bae49d7e0cf30704e5be5f05797ceff022b5763ef358f95335cdfe701"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/REGISTRATION.json",
+          "source_sha256": "2544ff8ca550e38409432514c0e623a13db598b8dc765cda0c3710cc2a7e56e7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/COMPLETE.json",
+          "source_sha256": "535f5fbfd59c8c3576da4c7ef058713e156c6c4514ab7ab23ae309dda5ba25c7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/REPORT.json",
+          "source_sha256": "04cb5940073df0ef5c9f2350bc5d80b3d09f48e4b7994a2e98160a6723f45202"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "edebd3f5fa06867be5cf9d59319aa73376a03d50174b8186b85fab42817120a8"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/COLLECTED.json",
+          "source_sha256": "03c58b8b5d142609bcfa28cfe99e99f47a2dae6435ed4e0d3561e04f4a16206c"
+        },
+        {
+          "source_path": "work/organ-route-census-review/CLAIM_REVIEW.json",
+          "source_sha256": "fac3f4e9bfcd076884b9d8d1cab352ef7c2f11d00529e6ee5bb529c84bf05526"
+        },
+        {
+          "source_path": "work/organ-route-census-review/TERMINAL_REVIEW.json",
+          "source_sha256": "aed1c6753f8d4a379256430e7ca8532f87ae423aa6fdb098ff7955a9de9133db"
+        }
+      ],
+      "transformation": "Selected complete descriptive census with per-layer, per-world and all96-cell summaries. No answer regrading or model computation."
+    },
+    {
+      "file": "organ-route-census-sources.zip",
+      "copy_type": "frozen_source_and_record_bundle",
+      "sha256": "242ff7f8f133da2d5b09cab1372c179845074ad12d3b22ba217c1518b0ff37b9",
+      "bytes": 888643,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/plan.json",
+          "source_sha256": "133c644bae49d7e0cf30704e5be5f05797ceff022b5763ef358f95335cdfe701"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/REGISTRATION.json",
+          "source_sha256": "2544ff8ca550e38409432514c0e623a13db598b8dc765cda0c3710cc2a7e56e7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/COMPLETE.json",
+          "source_sha256": "535f5fbfd59c8c3576da4c7ef058713e156c6c4514ab7ab23ae309dda5ba25c7"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/REPORT.json",
+          "source_sha256": "04cb5940073df0ef5c9f2350bc5d80b3d09f48e4b7994a2e98160a6723f45202"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "edebd3f5fa06867be5cf9d59319aa73376a03d50174b8186b85fab42817120a8"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/COLLECTED.json",
+          "source_sha256": "03c58b8b5d142609bcfa28cfe99e99f47a2dae6435ed4e0d3561e04f4a16206c"
+        },
+        {
+          "source_path": "work/organ-route-census-review/CLAIM_REVIEW.json",
+          "source_sha256": "fac3f4e9bfcd076884b9d8d1cab352ef7c2f11d00529e6ee5bb529c84bf05526"
+        },
+        {
+          "source_path": "work/organ-route-census-review/TERMINAL_REVIEW.json",
+          "source_sha256": "aed1c6753f8d4a379256430e7ca8532f87ae423aa6fdb098ff7955a9de9133db"
+        }
+      ],
+      "transformation": "35 exactly copied frozen Python files, full descriptive report, plan, registration, completion and independent audit. Raw tensor archives and weights excluded."
     }
   ],
   "absolute_local_path_redactions": 0,
