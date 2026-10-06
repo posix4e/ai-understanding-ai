@@ -1,0 +1,604 @@
+{
+  "confirmation": {
+    "diagnostic_readiness_automatically_opens_confirmation": false,
+    "new_confirmation_started": false,
+    "old_confirmation_remains_closed": true
+  },
+  "controls": {
+    "all_raw_call_controls_pass": true,
+    "before_after_state_entries_per_process": 219,
+    "fresh_model_processes": 16,
+    "independent_provenance_review_pass": true,
+    "independent_raw_numerical_recount_pass": true,
+    "new_cloudflare_reservation_usd": "0",
+    "new_fits": 0,
+    "new_organ_forecasts": 0,
+    "new_worlds": 0,
+    "provider_calls": 0,
+    "registration_to_terminal_seconds": 2303.029022,
+    "restored_original_parameter_flags_per_process": 218,
+    "state_entry_scope": "Full state_dict entries, including buffers."
+  },
+  "counts": {
+    "by_task_primary": {
+      "diagnosis": 128,
+      "graph": 64,
+      "integrated": 512,
+      "risk": 256
+    },
+    "families": 16,
+    "primary": 960,
+    "repeat": 64,
+    "total": 1024
+  },
+  "created_at_utc": "2026-10-06T02:39:56.383026+00:00",
+  "design": {
+    "aggregation": "All fixed conditions retained. Presentation contrasts average within each family before averaging the16 families.",
+    "answer_interface": "P and Q keep fixed evidence identities. The two answer-code meanings and displayed order vary independently.",
+    "controller": "Frozen IBM Granite 3.1 1B-A400M Instruct",
+    "decimal_rule": "Fixed Decimal half-even rounding; exact winning/tie sets verified unchanged before collection.",
+    "families": 16,
+    "independent_unit": "Exposed development family",
+    "number_formats": {
+      "diagnosis": [
+        "Eight-significant-digit decimals"
+      ],
+      "graph": [
+        "Eight-significant-digit decimals"
+      ],
+      "integrated": [
+        "Exact fractions",
+        "Eight-significant-digit decimals"
+      ],
+      "risk": [
+        "Exact fractions",
+        "Eight-significant-digit decimals"
+      ]
+    },
+    "reference": "Only supplied calibration risks, likelihood counts, graph and observations. No target forecast, target outcome or prior controller response.",
+    "revision": "0da7a48b0276d500ce5922fd2b33944091fc6c09",
+    "scope": "Prospectively fixed component and numeric-presentation diagnostic on previously exposed public commissioning cards, motivated by the prior negative result.",
+    "tasks": [
+      "Supplied-risk comparison",
+      "Dependency reachability",
+      "Fault identification",
+      "Integrated commissioned-risk choice"
+    ]
+  },
+  "fixed_thresholds": {
+    "maximum_invariance_mean_absolute_q_difference": 0.05,
+    "minimum_invariance_strict_choice_agreement": 0.9,
+    "minimum_stratum_correct_of_16": 15
+  },
+  "format_contrasts": {
+    "integrated": {
+      "candidate_mass_decimal_minus_fraction": 4.165147957615328e-05,
+      "families": {
+        "family000": {
+          "candidate_mass_decimal_minus_fraction": 5.602130617987644e-05,
+          "reference_q_decimal_minus_fraction": -0.0001944485260914064,
+          "strict_accuracy_decimal_minus_fraction": -0.25
+        },
+        "family001": {
+          "candidate_mass_decimal_minus_fraction": 5.1602399227079765e-05,
+          "reference_q_decimal_minus_fraction": -0.004839021596826032,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        },
+        "family002": {
+          "candidate_mass_decimal_minus_fraction": 3.8800341010558625e-05,
+          "reference_q_decimal_minus_fraction": 0.004411594664563756,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family003": {
+          "candidate_mass_decimal_minus_fraction": 6.74809816362254e-05,
+          "reference_q_decimal_minus_fraction": -0.003604367840051914,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        },
+        "family004": {
+          "candidate_mass_decimal_minus_fraction": 2.77841173382809e-05,
+          "reference_q_decimal_minus_fraction": -0.003675804281648598,
+          "strict_accuracy_decimal_minus_fraction": -0.1875
+        },
+        "family005": {
+          "candidate_mass_decimal_minus_fraction": 1.470756216681579e-05,
+          "reference_q_decimal_minus_fraction": -0.005283262486435625,
+          "strict_accuracy_decimal_minus_fraction": 0.125
+        },
+        "family006": {
+          "candidate_mass_decimal_minus_fraction": 5.23917422720066e-05,
+          "reference_q_decimal_minus_fraction": 0.005970793404756258,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family007": {
+          "candidate_mass_decimal_minus_fraction": 4.5354573925626696e-05,
+          "reference_q_decimal_minus_fraction": -0.003230617867459984,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        },
+        "family008": {
+          "candidate_mass_decimal_minus_fraction": 4.5927242280030534e-05,
+          "reference_q_decimal_minus_fraction": 0.010856272697791769,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family009": {
+          "candidate_mass_decimal_minus_fraction": 2.1345386596482996e-05,
+          "reference_q_decimal_minus_fraction": -0.005833064584637837,
+          "strict_accuracy_decimal_minus_fraction": -0.0625
+        },
+        "family010": {
+          "candidate_mass_decimal_minus_fraction": 4.648813248209205e-05,
+          "reference_q_decimal_minus_fraction": -0.00012168689084046669,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family011": {
+          "candidate_mass_decimal_minus_fraction": 3.9997195172891686e-05,
+          "reference_q_decimal_minus_fraction": -0.007585825452516348,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        },
+        "family012": {
+          "candidate_mass_decimal_minus_fraction": 3.8036252571371776e-05,
+          "reference_q_decimal_minus_fraction": 0.0025466671654535977,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family013": {
+          "candidate_mass_decimal_minus_fraction": 3.1976622581808556e-05,
+          "reference_q_decimal_minus_fraction": 0.002427335958526844,
+          "strict_accuracy_decimal_minus_fraction": 0.0625
+        },
+        "family014": {
+          "candidate_mass_decimal_minus_fraction": 3.5173097627905214e-05,
+          "reference_q_decimal_minus_fraction": 0.01683057583488695,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family015": {
+          "candidate_mass_decimal_minus_fraction": 5.33367201493995e-05,
+          "reference_q_decimal_minus_fraction": 0.002366425564704344,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        }
+      },
+      "reference_q_decimal_minus_fraction": 0.0006900978602609568,
+      "strict_accuracy_decimal_minus_fraction": -0.06640625
+    },
+    "risk": {
+      "candidate_mass_decimal_minus_fraction": 5.690522526810571e-05,
+      "families": {
+        "family000": {
+          "candidate_mass_decimal_minus_fraction": 0.00010112781018523087,
+          "reference_q_decimal_minus_fraction": -0.014257047542551304,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family001": {
+          "candidate_mass_decimal_minus_fraction": 6.784091727940478e-05,
+          "reference_q_decimal_minus_fraction": 0.014861983607417084,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        },
+        "family002": {
+          "candidate_mass_decimal_minus_fraction": 3.764465130995376e-05,
+          "reference_q_decimal_minus_fraction": 0.0035220323948393917,
+          "strict_accuracy_decimal_minus_fraction": -0.25
+        },
+        "family003": {
+          "candidate_mass_decimal_minus_fraction": 6.992242011683025e-05,
+          "reference_q_decimal_minus_fraction": 0.011250041924392162,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        },
+        "family004": {
+          "candidate_mass_decimal_minus_fraction": 6.750115055942363e-05,
+          "reference_q_decimal_minus_fraction": 0.004752219828891069,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        },
+        "family005": {
+          "candidate_mass_decimal_minus_fraction": 1.789443956223824e-05,
+          "reference_q_decimal_minus_fraction": -0.0021909016347690935,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        },
+        "family006": {
+          "candidate_mass_decimal_minus_fraction": 7.94209908875354e-05,
+          "reference_q_decimal_minus_fraction": 0.019421681120918133,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family007": {
+          "candidate_mass_decimal_minus_fraction": 2.3000516132132276e-05,
+          "reference_q_decimal_minus_fraction": -0.010584752047189228,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        },
+        "family008": {
+          "candidate_mass_decimal_minus_fraction": 6.73635962908925e-05,
+          "reference_q_decimal_minus_fraction": -0.022596658097433053,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family009": {
+          "candidate_mass_decimal_minus_fraction": 4.12494890342785e-05,
+          "reference_q_decimal_minus_fraction": 0.013614944436535714,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family010": {
+          "candidate_mass_decimal_minus_fraction": 6.827388823160696e-05,
+          "reference_q_decimal_minus_fraction": 0.0031564555384994697,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family011": {
+          "candidate_mass_decimal_minus_fraction": 3.7682463818189404e-05,
+          "reference_q_decimal_minus_fraction": -0.010415712079394623,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family012": {
+          "candidate_mass_decimal_minus_fraction": 5.691140736951983e-05,
+          "reference_q_decimal_minus_fraction": 0.033912993537759784,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family013": {
+          "candidate_mass_decimal_minus_fraction": 5.436707343708935e-05,
+          "reference_q_decimal_minus_fraction": 0.006937732765727234,
+          "strict_accuracy_decimal_minus_fraction": 0.0
+        },
+        "family014": {
+          "candidate_mass_decimal_minus_fraction": 4.688803891894633e-05,
+          "reference_q_decimal_minus_fraction": -0.011013333103174372,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        },
+        "family015": {
+          "candidate_mass_decimal_minus_fraction": 7.339475115641925e-05,
+          "reference_q_decimal_minus_fraction": 0.0035469244296207347,
+          "strict_accuracy_decimal_minus_fraction": -0.125
+        }
+      },
+      "reference_q_decimal_minus_fraction": 0.002744912817505569,
+      "strict_accuracy_decimal_minus_fraction": -0.0859375
+    }
+  },
+  "format_readiness": {
+    "diagnosis": {
+      "decimal": {
+        "minimum_stratum_correct_of_16": 0,
+        "pass": false,
+        "strata_passed": 4,
+        "strata_total": 8
+      }
+    },
+    "graph": {
+      "decimal": {
+        "minimum_stratum_correct_of_16": 8,
+        "pass": false,
+        "strata_passed": 0,
+        "strata_total": 4
+      }
+    },
+    "integrated": {
+      "decimal": {
+        "minimum_stratum_correct_of_16": 2,
+        "pass": false,
+        "strata_passed": 0,
+        "strata_total": 16
+      },
+      "fraction": {
+        "minimum_stratum_correct_of_16": 5,
+        "pass": false,
+        "strata_passed": 0,
+        "strata_total": 16
+      }
+    },
+    "risk": {
+      "decimal": {
+        "minimum_stratum_correct_of_16": 0,
+        "pass": false,
+        "strata_passed": 1,
+        "strata_total": 8
+      },
+      "fraction": {
+        "minimum_stratum_correct_of_16": 8,
+        "pass": false,
+        "strata_passed": 0,
+        "strata_total": 8
+      }
+    }
+  },
+  "groups": {
+    "diagnosis": {
+      "decimal": {
+        "correct": 64,
+        "legal_argmax_all": 128,
+        "legal_argmax_any": 128,
+        "maximum_candidate_mass": 0.9999181156264499,
+        "mean_candidate_mass": 0.99987657877337,
+        "mean_reference_q": 0.5004045443703411,
+        "minimum_candidate_mass": 0.9998281618002572,
+        "model_ties": 0,
+        "n": 128,
+        "reference_ties": 0,
+        "strict_accuracy": 0.5
+      }
+    },
+    "graph": {
+      "decimal": {
+        "correct": 32,
+        "legal_argmax_all": 64,
+        "legal_argmax_any": 64,
+        "maximum_candidate_mass": 0.9998517626198629,
+        "mean_candidate_mass": 0.9997951236654291,
+        "mean_reference_q": 0.5039828026207831,
+        "minimum_candidate_mass": 0.9997271301704214,
+        "model_ties": 0,
+        "n": 64,
+        "reference_ties": 0,
+        "strict_accuracy": 0.5
+      }
+    },
+    "integrated": {
+      "decimal": {
+        "correct": 107,
+        "legal_argmax_all": 256,
+        "legal_argmax_any": 256,
+        "maximum_candidate_mass": 0.9999057882431239,
+        "mean_candidate_mass": 0.9998622855757626,
+        "mean_reference_q": 0.5051981776134745,
+        "mean_supplied_regret": 0.5430736029630864,
+        "mean_supplied_risk": 0.8442365502600961,
+        "minimum_candidate_mass": 0.9997975668238597,
+        "model_ties": 65,
+        "n": 256,
+        "reference_ties": 0,
+        "strict_accuracy": 0.41796875
+      },
+      "fraction": {
+        "correct": 124,
+        "legal_argmax_all": 256,
+        "legal_argmax_any": 256,
+        "maximum_candidate_mass": 0.999891139103709,
+        "mean_candidate_mass": 0.9998206340961865,
+        "mean_reference_q": 0.5045080797532135,
+        "mean_supplied_regret": 0.5445631176579968,
+        "mean_supplied_risk": 0.8457260649550066,
+        "minimum_candidate_mass": 0.999707315458322,
+        "model_ties": 7,
+        "n": 256,
+        "reference_ties": 0,
+        "strict_accuracy": 0.484375
+      }
+    },
+    "risk": {
+      "decimal": {
+        "correct": 53,
+        "legal_argmax_all": 128,
+        "legal_argmax_any": 128,
+        "maximum_candidate_mass": 0.9998775171267748,
+        "mean_candidate_mass": 0.999827648254231,
+        "mean_reference_q": 0.5035061525540068,
+        "mean_supplied_regret": 0.4914241668053468,
+        "mean_supplied_risk": 1.0937500605227508,
+        "minimum_candidate_mass": 0.9997400455740113,
+        "model_ties": 24,
+        "n": 128,
+        "reference_ties": 0,
+        "strict_accuracy": 0.4140625
+      },
+      "fraction": {
+        "correct": 64,
+        "legal_argmax_all": 128,
+        "legal_argmax_any": 128,
+        "maximum_candidate_mass": 0.9998768524031939,
+        "mean_candidate_mass": 0.999770743028963,
+        "mean_reference_q": 0.5007612397365012,
+        "mean_supplied_regret": 0.49549413739431586,
+        "mean_supplied_risk": 1.0978200311117199,
+        "minimum_candidate_mass": 0.9996268747195727,
+        "model_ties": 1,
+        "n": 128,
+        "reference_ties": 0,
+        "strict_accuracy": 0.5
+      }
+    }
+  },
+  "invariance": {
+    "diagnosis": {
+      "decimal": {
+        "mapping": {
+          "mean_absolute_q_difference": 0.18478247004192827,
+          "pairs": 64,
+          "pass": false,
+          "strict_choice_agreement": 0.0
+        },
+        "order": {
+          "mean_absolute_q_difference": 0.18478247004192827,
+          "pairs": 64,
+          "pass": false,
+          "strict_choice_agreement": 0.0
+        }
+      }
+    },
+    "graph": {
+      "decimal": {
+        "mapping": {
+          "mean_absolute_q_difference": 0.25351899859378796,
+          "pairs": 32,
+          "pass": false,
+          "strict_choice_agreement": 0.0
+        },
+        "order": {
+          "mean_absolute_q_difference": 0.25351899859378796,
+          "pairs": 32,
+          "pass": false,
+          "strict_choice_agreement": 0.0
+        }
+      }
+    },
+    "integrated": {
+      "decimal": {
+        "mapping": {
+          "mean_absolute_q_difference": 0.140893119328617,
+          "pairs": 128,
+          "pass": false,
+          "strict_choice_agreement": 0.0859375
+        },
+        "order": {
+          "mean_absolute_q_difference": 0.12581771510818598,
+          "pairs": 128,
+          "pass": false,
+          "strict_choice_agreement": 0.2421875
+        }
+      },
+      "fraction": {
+        "mapping": {
+          "mean_absolute_q_difference": 0.19568897443149852,
+          "pairs": 128,
+          "pass": false,
+          "strict_choice_agreement": 0.0
+        },
+        "order": {
+          "mean_absolute_q_difference": 0.19568897443149852,
+          "pairs": 128,
+          "pass": false,
+          "strict_choice_agreement": 0.0
+        }
+      }
+    },
+    "risk": {
+      "decimal": {
+        "mapping": {
+          "mean_absolute_q_difference": 0.1900146850752546,
+          "pairs": 64,
+          "pass": false,
+          "strict_choice_agreement": 0.0625
+        },
+        "order": {
+          "mean_absolute_q_difference": 0.17645829692308973,
+          "pairs": 64,
+          "pass": false,
+          "strict_choice_agreement": 0.171875
+        }
+      },
+      "fraction": {
+        "mapping": {
+          "mean_absolute_q_difference": 0.248663741449107,
+          "pairs": 64,
+          "pass": false,
+          "strict_choice_agreement": 0.0
+        },
+        "order": {
+          "mean_absolute_q_difference": 0.248663741449107,
+          "pairs": 64,
+          "pass": false,
+          "strict_choice_agreement": 0.0
+        }
+      }
+    }
+  },
+  "limits": [
+    "The sixteen families are exposed development data, not a fresh confirmatory sample.",
+    "Readiness is a fixed engineering screen, not a significance test. All six tested task/format groups are retained.",
+    "Overall readiness requires every tested format. A decimal component result can be described separately without relabeling the overall result.",
+    "Graph and diagnosis were tested only with decimal cards; no fraction-format result exists for those tasks.",
+    "Numeric formatting changes token length, salience and arithmetic demand together; a gain does not isolate arithmetic as its cause.",
+    "Two-token conditional preference is not calibrated belief, unconstrained generated format adherence or full-vocabulary top-one success.",
+    "Separate component prompts do not prove the same computation was used in integrated calls.",
+    "The supplied finite diagnostic channel is perfect; passing diagnosis does not demonstrate graded uncertainty inference.",
+    "The supplied-risk reference is commissioned-population optimality, not target-optimality or new-rule transfer.",
+    "Answer mapping and display order are separate factors; they do not rename the fixed P/Q evidence modules.",
+    "Finite repeat differences are preserved and reported separately from task readiness; no primary answer is replaced.",
+    "No internal causal mechanism, energy-specific advantage, fresh-world generalization, multi-step planning or novelty is established.",
+    "Local source registration is not public preregistration. Prior stopped and amended studies remain closed and unchanged."
+  ],
+  "metric": {
+    "candidate_mass": "Full-vocabulary probability assigned to the two candidate tokens, separate from their conditional preference.",
+    "numeric_contrast_direction": "Decimal minus fraction, paired within exposed family.",
+    "reference_q": "Conditional preference mass on the exact optimal meaning set; an exactly tied two-meaning reference has mass one but is not strict success.",
+    "strict_accuracy": "A unique candidate choice equals the unique public reference winner; either kind of tie is unresolved.",
+    "supplied_regret": "Conditional-choice-weighted commissioned mean loss minus its minimum; not realized target loss."
+  },
+  "plain_result": "The complete panel did not meet all fixed engineering readiness screens.",
+  "question": "Can the controller read supplied risks, follow a dependency graph, identify a fault, and combine those facts into a module choice?",
+  "readiness_pass": false,
+  "record_type": "DERIVED_PUBLIC_COMPONENT_DIAGNOSTIC_SUMMARY",
+  "registered_research_source_sha256": {
+    "research/moe-mechanisms/component_diagnostic_v1/SPECIFICATION.json": "a9b474dcd00a690bdcac7160cbcfd713932c72b01a76a36ca439499b7d4b04fc",
+    "research/moe-mechanisms/component_diagnostic_v1/cases.py": "4d8abf2c49cb35c47c0df3f9e58eebed1ede8fb38d5d1e13a723827e455a7fa3",
+    "research/moe-mechanisms/component_diagnostic_v1/collector.py": "fff0c3f3e71c5c4b4b90b8898dfb47d56cef868bf096e876a8a50be2b7ad0af1",
+    "research/moe-mechanisms/component_diagnostic_v1/metrics.py": "40763bf6717c3bca483132b60e3425a7c49eb3546ff0321dd95a2e36c35b5782",
+    "research/moe-mechanisms/component_diagnostic_v1/protocol.py": "4ef206b15bb78dd2ae90f01e7aee60e138030921dcaa8b051a7599e852c28f85",
+    "research/moe-mechanisms/component_diagnostic_v1/reference.py": "b1f944b3434be90d6938067010e44ef13e219ed104ce62ff3306f074e8ebbe40",
+    "research/moe-mechanisms/component_diagnostic_v1/run.py": "2c350d602b8ea66b56384e01b559f513ad7995181a322f27d3d6fcbc7e81b480",
+    "research/moe-mechanisms/component_diagnostic_v1/test_cases.py": "9e3ce5e5b604fd0c6e3998bbeae91954cdcd03233c7711887d0d69a186861b91",
+    "research/moe-mechanisms/component_diagnostic_v1/test_collector.py": "22be5957e86ffac476e7a1075c327fb9ed9b26f0169beba8f37e5460e7cd26bb",
+    "research/moe-mechanisms/component_diagnostic_v1/test_metrics.py": "220ecaac524d6269c192a8c1d9482c6dd8d435e241aabe81f0ca1631521fc987",
+    "research/moe-mechanisms/component_diagnostic_v1/test_owner.py": "1394013743d2c0b5124b7fa66d63f4992b013e931f048eaae68a1f640fab82e8",
+    "research/moe-mechanisms/component_diagnostic_v1/test_reference.py": "8ab2e34560351697da47b51cb3ab779b8159787f3a9fd51a7d70814c689c49c0"
+  },
+  "repeat_stability": {
+    "candidate_logits_exact": 63,
+    "choice_equal": 64,
+    "full_logits_raw_equal": 60,
+    "maximum_semantic_q_difference": 0.05187987945461192,
+    "n": 64,
+    "semantic_q_exact": 63,
+    "unique_choice_agreement": 64
+  },
+  "sources": [
+    {
+      "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/PLAN.json",
+      "source_sha256": "e2275d4e084416891a53621147e6cc539109def83d31accf9a29ec86c16c6470"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/RUN_STARTED.json",
+      "source_sha256": "7ffe376dc8f006e9064e86fea98e3276d30c8ac7eaa58235eb0209a0e8a53768"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/COLLECTION_COMPLETE.json",
+      "source_sha256": "497b4ae678777df0f8b2161a9e5e0e6b3396275f31e85893c9e3a8fce466d56e"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/RAW_INPUT_SEAL.json",
+      "source_sha256": "1af3482ce5ec8f8ad7fc48bddd6d6a4eaadc75e92c95020156c4d3a452a1fd84"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/TERMINAL_INVENTORY.json",
+      "source_sha256": "92e514cd146b1385d3d9aef688b146fdc2b36143de0967d24ee0e2e93a215258"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/REPORT.json",
+      "source_sha256": "414223a9952df66d5dae1726499c7c2a30b6145036f0ad427c80e4d89bae84ed"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/DECODED_ROWS.json",
+      "source_sha256": "c201cccba0849eaca1c183bee689bc8f09c1036f18adf74cb2f03ba6dcfefd8b"
+    },
+    {
+      "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/COMPLETE.json",
+      "source_sha256": "51d330f3c6b4d34281d7f2a97f6b6aea112315c63b520b4ffcb7a9c6d9d49913"
+    },
+    {
+      "source_path": "work/fault-scope-independent-review/COMPONENT_DIAGNOSTIC_TERMINAL_NUMERICAL_RECOUNT.json",
+      "source_sha256": "4674021af44faedfe56f3b6be87787f51c90dc205a72da4a49274c84055ecfde"
+    },
+    {
+      "source_path": "work/fault-scope-independent-review/COMPONENT_TERMINAL_PROVENANCE_REVIEW.json",
+      "source_sha256": "9d9359b754824300bd2695e6853a7f01e13361b107b8c8b65d180d9e5d8d5cd3"
+    },
+    {
+      "source_path": "work/fault-scope-independent-review/component_terminal_numeric.py",
+      "source_sha256": "99ef4070320ffc89c2bc895813339fc5ed9a77ebdc0a9685df110f571776adf0"
+    },
+    {
+      "source_path": "work/fault-scope-independent-review/component_terminal_provenance.py",
+      "source_sha256": "9a50ad4b8aa4b871a10128c5aeb135dd62f4522ed3e1b059f26cd0c4096602ad"
+    },
+    {
+      "source_path": "research/moe-mechanisms/component_diagnostic_v1/SPECIFICATION.json",
+      "source_sha256": "a9b474dcd00a690bdcac7160cbcfd713932c72b01a76a36ca439499b7d4b04fc"
+    },
+    {
+      "source_path": "work/fault-scope-independent-review/COMPONENT_DIAGNOSTIC_INTERPRETATION_RULES.json",
+      "source_sha256": "45bb4fec0c6cb75129ae5cf4b402f8336791e9da02bc72db43ef52e3bfa64324"
+    },
+    {
+      "source_path": "work/fault-scope-independent-review/prepare_component_public_summary.py",
+      "source_sha256": "acacd92c7cdeea09766d0ab75e34f848ec9a2d68c240b10bb707eb7cbb040aa1"
+    }
+  ],
+  "status": "COMPLETED_AND_INDEPENDENTLY_REVIEWED",
+  "task_readiness": {
+    "diagnosis": false,
+    "graph": false,
+    "integrated": false,
+    "risk": false
+  },
+  "transformation": "Completed report aggregates only; no raw logits, prompts, input IDs, private target data, account details or actor identifiers are published."
+}

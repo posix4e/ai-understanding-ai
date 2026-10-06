@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T01:31:31.396525+00:00",
+  "at_utc": "2026-10-06T02:41:38.865878+00:00",
   "scope": "Selected summary records and explicitly labeled derived metadata for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -1066,6 +1066,75 @@
         }
       ],
       "transformation": "Selected completed aggregates and method only. No raw scores, prompts, targets, private filesystem paths or account information. Local source registration is not public preregistration."
+    },
+    {
+      "file": "component-diagnostic-summary.json",
+      "copy_type": "derived_public_summary",
+      "sha256": "3ebff1cc94b8bdd473b668439091ae580cec9f868b76aa5bc89bfb999adc0c5f",
+      "bytes": 25188,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/PLAN.json",
+          "source_sha256": "e2275d4e084416891a53621147e6cc539109def83d31accf9a29ec86c16c6470"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/RUN_STARTED.json",
+          "source_sha256": "7ffe376dc8f006e9064e86fea98e3276d30c8ac7eaa58235eb0209a0e8a53768"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/COLLECTION_COMPLETE.json",
+          "source_sha256": "497b4ae678777df0f8b2161a9e5e0e6b3396275f31e85893c9e3a8fce466d56e"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/RAW_INPUT_SEAL.json",
+          "source_sha256": "1af3482ce5ec8f8ad7fc48bddd6d6a4eaadc75e92c95020156c4d3a452a1fd84"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/TERMINAL_INVENTORY.json",
+          "source_sha256": "92e514cd146b1385d3d9aef688b146fdc2b36143de0967d24ee0e2e93a215258"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/REPORT.json",
+          "source_sha256": "414223a9952df66d5dae1726499c7c2a30b6145036f0ad427c80e4d89bae84ed"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/DECODED_ROWS.json",
+          "source_sha256": "c201cccba0849eaca1c183bee689bc8f09c1036f18adf74cb2f03ba6dcfefd8b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/COMPONENT_DIAGNOSTIC_V1/COMPLETE.json",
+          "source_sha256": "51d330f3c6b4d34281d7f2a97f6b6aea112315c63b520b4ffcb7a9c6d9d49913"
+        },
+        {
+          "source_path": "work/fault-scope-independent-review/COMPONENT_DIAGNOSTIC_TERMINAL_NUMERICAL_RECOUNT.json",
+          "source_sha256": "4674021af44faedfe56f3b6be87787f51c90dc205a72da4a49274c84055ecfde"
+        },
+        {
+          "source_path": "work/fault-scope-independent-review/COMPONENT_TERMINAL_PROVENANCE_REVIEW.json",
+          "source_sha256": "9d9359b754824300bd2695e6853a7f01e13361b107b8c8b65d180d9e5d8d5cd3"
+        },
+        {
+          "source_path": "work/fault-scope-independent-review/component_terminal_numeric.py",
+          "source_sha256": "99ef4070320ffc89c2bc895813339fc5ed9a77ebdc0a9685df110f571776adf0"
+        },
+        {
+          "source_path": "work/fault-scope-independent-review/component_terminal_provenance.py",
+          "source_sha256": "9a50ad4b8aa4b871a10128c5aeb135dd62f4522ed3e1b059f26cd0c4096602ad"
+        },
+        {
+          "source_path": "research/moe-mechanisms/component_diagnostic_v1/SPECIFICATION.json",
+          "source_sha256": "a9b474dcd00a690bdcac7160cbcfd713932c72b01a76a36ca439499b7d4b04fc"
+        },
+        {
+          "source_path": "work/fault-scope-independent-review/COMPONENT_DIAGNOSTIC_INTERPRETATION_RULES.json",
+          "source_sha256": "45bb4fec0c6cb75129ae5cf4b402f8336791e9da02bc72db43ef52e3bfa64324"
+        },
+        {
+          "source_path": "work/fault-scope-independent-review/prepare_component_public_summary.py",
+          "source_sha256": "acacd92c7cdeea09766d0ab75e34f848ec9a2d68c240b10bb707eb7cbb040aa1"
+        }
+      ],
+      "transformation": "Completed report aggregates only; no raw logits, prompts, input IDs, private target data, account details or actor identifiers are published. Locally fixed before data collection; not a public preregistration."
     }
   ],
   "absolute_local_path_redactions": 0,
