@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T12:04:33.199594+00:00",
+  "at_utc": "2026-10-06T12:49:25.419096+00:00",
   "scope": "Selected summary records, derived metadata, a frozen source/plan bundle and runnable mathematical examples for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -2193,10 +2193,26 @@
       "bytes": 53816,
       "scientific_execution_count": 0,
       "note": "Prospective design and offline arithmetic only; no model collector or scientific result."
+    },
+    {
+      "file": "world-model-pilot-summary.json",
+      "copy_type": "new_local_pilot_and_separate_exploratory_diagnostic",
+      "sha256": "cbf46a10f64e4a0c2e6a2b03df4e4e4b9114bf7939d653d1bb47ad17d12ffb95",
+      "bytes": 38620,
+      "provider_calls": 0,
+      "note": "Includes all six fits and fixed tasks; repairs selected after the pilot."
+    },
+    {
+      "file": "world-model-pilot.zip",
+      "copy_type": "new_local_pilot_and_separate_exploratory_diagnostic",
+      "sha256": "29ff0dff1979b6d3d1d1bfbc5ef7dfb75624f4b2134d1fa59b74813d6e6d8de0",
+      "bytes": 1595849,
+      "provider_calls": 0,
+      "note": "Includes all six fits and fixed tasks; repairs selected after the pilot."
     }
   ],
   "absolute_local_path_redactions": 0,
-  "note": "Verbatim copies retain original source hashes. Derived records identify their sources and transformations. Each reading bundle lists its contents; some include full reports and audit records. The native copy/invert bundle also includes all 20 bounded raw returns. Model weights and unvalidated partial answers are excluded. Repository-relative provenance paths are not download links.\n The 6 October literature review and route-strength design are preparation only; the original 48 entries are preserved.",
+  "note": "Verbatim copies retain original source hashes. Derived records identify their sources and transformations. Each reading bundle lists its contents; some include full reports and audit records. The native copy/invert bundle also includes all 20 bounded raw returns. Model weights and unvalidated partial answers are excluded. Repository-relative provenance paths are not download links.\n The 6 October literature review and route-strength design are preparation only; the original 48 entries are preserved. World-model pilot and post-hoc repair added; prior51 entries unchanged.",
   "document_status": "research_in_progress_draft",
   "internal_identifier_redactions": 1
 }

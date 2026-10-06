@@ -1,0 +1,1411 @@
+{
+  "status": "COMPLETED_LOCAL_PILOT_AND_EXPLORATORY_REPAIR",
+  "as_of": "2026-10-06",
+  "question": "Does better transition prediction yield better planning, and what happens when a critical prediction is corrected?",
+  "models": {
+    "direct_11": {
+      "one_step": {
+        "native": {
+          "train": {
+            "n": 96,
+            "correct": 96,
+            "ties": 0,
+            "accuracy": 1.0,
+            "capped_nll": 0.00038424574968429714,
+            "zero_true_probability": 0,
+            "true_probability": 0.999615863978408
+          },
+          "test": {
+            "n": 24,
+            "correct": 11,
+            "ties": 0,
+            "accuracy": 0.4583333333333333,
+            "capped_nll": 4.088489357756486,
+            "zero_true_probability": 0,
+            "true_probability": 0.440304557710913
+          }
+        },
+        "wrong_action": {
+          "train": {
+            "n": 96,
+            "correct": 10,
+            "ties": 0,
+            "accuracy": 0.10416666666666667,
+            "capped_nll": 11.158748898866202,
+            "zero_true_probability": 0,
+            "true_probability": 0.10478874945144408
+          },
+          "test": {
+            "n": 24,
+            "correct": 3,
+            "ties": 0,
+            "accuracy": 0.125,
+            "capped_nll": 11.439560567113453,
+            "zero_true_probability": 0,
+            "true_probability": 0.13059872416877302
+          }
+        },
+        "action_average": {
+          "train": {
+            "n": 96,
+            "correct": 36,
+            "ties": 0,
+            "accuracy": 0.375,
+            "capped_nll": 1.1898710009225753,
+            "zero_true_probability": 0,
+            "true_probability": 0.32411435345023426
+          },
+          "test": {
+            "n": 24,
+            "correct": 6,
+            "ties": 0,
+            "accuracy": 0.25,
+            "capped_nll": 4.6878342085825935,
+            "zero_true_probability": 0,
+            "true_probability": 0.16298517409355154
+          }
+        }
+      },
+      "rollout": {
+        "1": {
+          "n": 120,
+          "correct": 110,
+          "ties": 0,
+          "accuracy": 0.9166666666666666,
+          "true_probability": 0.9166095313292464,
+          "capped_nll": 0.6104785284712821,
+          "zero_true_probability": 0
+        },
+        "3": {
+          "n": 120,
+          "correct": 99,
+          "ties": 0,
+          "accuracy": 0.825,
+          "true_probability": 0.8214885485820445,
+          "capped_nll": 1.2601689937023828,
+          "zero_true_probability": 0
+        },
+        "6": {
+          "n": 120,
+          "correct": 83,
+          "ties": 0,
+          "accuracy": 0.6916666666666667,
+          "true_probability": 0.6846688953918373,
+          "capped_nll": 2.062802878943807,
+          "zero_true_probability": 0
+        },
+        "10": {
+          "n": 120,
+          "correct": 74,
+          "ties": 0,
+          "accuracy": 0.6166666666666667,
+          "true_probability": 0.601531268144939,
+          "capped_nll": 2.855160709640474,
+          "zero_true_probability": 0
+        }
+      },
+      "planning": {
+        "1": {
+          "n": 600,
+          "successes": 365,
+          "success_rate": 0.6083333333333333,
+          "cycles": 235,
+          "mean_steps_success": 2.9178082191780823,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 0,
+          "decisions": 1746,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 247
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 109
+            },
+            "7+": {
+              "n": 133,
+              "successes": 9
+            }
+          }
+        },
+        "3": {
+          "n": 600,
+          "successes": 446,
+          "success_rate": 0.7433333333333333,
+          "cycles": 154,
+          "mean_steps_success": 3.437219730941704,
+          "mean_excess_steps_success": 0.17488789237668162,
+          "tied_decisions": 0,
+          "decisions": 1980,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 262
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 165
+            },
+            "7+": {
+              "n": 133,
+              "successes": 19
+            }
+          }
+        },
+        "16": {
+          "n": 600,
+          "successes": 600,
+          "success_rate": 1.0,
+          "cycles": 0,
+          "mean_steps_success": 4.7283333333333335,
+          "mean_excess_steps_success": 0.21666666666666667,
+          "tied_decisions": 0,
+          "decisions": 2837,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 262
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 205
+            },
+            "7+": {
+              "n": 133,
+              "successes": 133
+            }
+          }
+        }
+      }
+    },
+    "energy_11": {
+      "one_step": {
+        "native": {
+          "train": {
+            "n": 96,
+            "correct": 96,
+            "ties": 0,
+            "accuracy": 1.0,
+            "capped_nll": 0.0002101041164687089,
+            "zero_true_probability": 0,
+            "true_probability": 0.9997899368277973
+          },
+          "test": {
+            "n": 24,
+            "correct": 19,
+            "ties": 0,
+            "accuracy": 0.7916666666666666,
+            "capped_nll": 1.4422082753911212,
+            "zero_true_probability": 0,
+            "true_probability": 0.8156072267355623
+          }
+        },
+        "wrong_action": {
+          "train": {
+            "n": 96,
+            "correct": 8,
+            "ties": 0,
+            "accuracy": 0.08333333333333333,
+            "capped_nll": 12.858679799659242,
+            "zero_true_probability": 0,
+            "true_probability": 0.08343465502250093
+          },
+          "test": {
+            "n": 24,
+            "correct": 3,
+            "ties": 0,
+            "accuracy": 0.125,
+            "capped_nll": 12.605417579328394,
+            "zero_true_probability": 0,
+            "true_probability": 0.12558246902635425
+          }
+        },
+        "action_average": {
+          "train": {
+            "n": 96,
+            "correct": 35,
+            "ties": 0,
+            "accuracy": 0.3645833333333333,
+            "capped_nll": 1.2355947121616266,
+            "zero_true_probability": 0,
+            "true_probability": 0.3041834894439572
+          },
+          "test": {
+            "n": 24,
+            "correct": 6,
+            "ties": 0,
+            "accuracy": 0.25,
+            "capped_nll": 2.2790178471326707,
+            "zero_true_probability": 0,
+            "true_probability": 0.25275243459751423
+          }
+        }
+      },
+      "rollout": {
+        "1": {
+          "n": 120,
+          "correct": 116,
+          "ties": 0,
+          "accuracy": 0.9666666666666667,
+          "true_probability": 0.9709224841483116,
+          "capped_nll": 0.09969557315935326,
+          "zero_true_probability": 0
+        },
+        "3": {
+          "n": 120,
+          "correct": 110,
+          "ties": 0,
+          "accuracy": 0.9166666666666666,
+          "true_probability": 0.9268744937427584,
+          "capped_nll": 0.2187046785529762,
+          "zero_true_probability": 0
+        },
+        "6": {
+          "n": 120,
+          "correct": 99,
+          "ties": 0,
+          "accuracy": 0.825,
+          "true_probability": 0.8374616699944742,
+          "capped_nll": 0.9717485691355825,
+          "zero_true_probability": 0
+        },
+        "10": {
+          "n": 120,
+          "correct": 91,
+          "ties": 0,
+          "accuracy": 0.7583333333333333,
+          "true_probability": 0.7709862432226066,
+          "capped_nll": 1.4618174611952959,
+          "zero_true_probability": 0
+        }
+      },
+      "planning": {
+        "1": {
+          "n": 600,
+          "successes": 338,
+          "success_rate": 0.5633333333333334,
+          "cycles": 262,
+          "mean_steps_success": 2.588757396449704,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 0,
+          "decisions": 1686,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 255
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 83
+            },
+            "7+": {
+              "n": 133,
+              "successes": 0
+            }
+          }
+        },
+        "3": {
+          "n": 600,
+          "successes": 382,
+          "success_rate": 0.6366666666666667,
+          "cycles": 218,
+          "mean_steps_success": 3.1047120418848166,
+          "mean_excess_steps_success": 0.04712041884816754,
+          "tied_decisions": 0,
+          "decisions": 1907,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 247
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 119
+            },
+            "7+": {
+              "n": 133,
+              "successes": 16
+            }
+          }
+        },
+        "16": {
+          "n": 600,
+          "successes": 391,
+          "success_rate": 0.6516666666666666,
+          "cycles": 209,
+          "mean_steps_success": 3.1969309462915603,
+          "mean_excess_steps_success": 0.061381074168797956,
+          "tied_decisions": 0,
+          "decisions": 2410,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 247
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 124
+            },
+            "7+": {
+              "n": 133,
+              "successes": 20
+            }
+          }
+        }
+      }
+    },
+    "direct_29": {
+      "one_step": {
+        "native": {
+          "train": {
+            "n": 96,
+            "correct": 96,
+            "ties": 0,
+            "accuracy": 1.0,
+            "capped_nll": 0.000408416239940206,
+            "zero_true_probability": 0,
+            "true_probability": 0.9995916945966415
+          },
+          "test": {
+            "n": 24,
+            "correct": 11,
+            "ties": 0,
+            "accuracy": 0.4583333333333333,
+            "capped_nll": 3.814261352753514,
+            "zero_true_probability": 0,
+            "true_probability": 0.43949188349923807
+          }
+        },
+        "wrong_action": {
+          "train": {
+            "n": 96,
+            "correct": 10,
+            "ties": 0,
+            "accuracy": 0.10416666666666667,
+            "capped_nll": 10.94815004981608,
+            "zero_true_probability": 0,
+            "true_probability": 0.10701949783923707
+          },
+          "test": {
+            "n": 24,
+            "correct": 5,
+            "ties": 0,
+            "accuracy": 0.20833333333333334,
+            "capped_nll": 10.61320155255291,
+            "zero_true_probability": 0,
+            "true_probability": 0.20435595774393214
+          }
+        },
+        "action_average": {
+          "train": {
+            "n": 96,
+            "correct": 36,
+            "ties": 0,
+            "accuracy": 0.375,
+            "capped_nll": 1.19732554498327,
+            "zero_true_probability": 0,
+            "true_probability": 0.3211461671400633
+          },
+          "test": {
+            "n": 24,
+            "correct": 6,
+            "ties": 0,
+            "accuracy": 0.25,
+            "capped_nll": 4.338856253409172,
+            "zero_true_probability": 0,
+            "true_probability": 0.18203727021644509
+          }
+        }
+      },
+      "rollout": {
+        "1": {
+          "n": 120,
+          "correct": 110,
+          "ties": 0,
+          "accuracy": 0.9166666666666666,
+          "true_probability": 0.9105194178892418,
+          "capped_nll": 0.5460223643678928,
+          "zero_true_probability": 0
+        },
+        "3": {
+          "n": 120,
+          "correct": 99,
+          "ties": 0,
+          "accuracy": 0.825,
+          "true_probability": 0.8140956482481589,
+          "capped_nll": 1.2341975453540757,
+          "zero_true_probability": 0
+        },
+        "6": {
+          "n": 120,
+          "correct": 83,
+          "ties": 0,
+          "accuracy": 0.6916666666666667,
+          "true_probability": 0.6687491005597792,
+          "capped_nll": 1.9968726449230563,
+          "zero_true_probability": 0
+        },
+        "10": {
+          "n": 120,
+          "correct": 76,
+          "ties": 0,
+          "accuracy": 0.6333333333333333,
+          "true_probability": 0.6016211508166547,
+          "capped_nll": 3.00792361443593,
+          "zero_true_probability": 0
+        }
+      },
+      "planning": {
+        "1": {
+          "n": 600,
+          "successes": 347,
+          "success_rate": 0.5783333333333334,
+          "cycles": 253,
+          "mean_steps_success": 2.8703170028818445,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 0,
+          "decisions": 1716,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 237
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 104
+            },
+            "7+": {
+              "n": 133,
+              "successes": 6
+            }
+          }
+        },
+        "3": {
+          "n": 600,
+          "successes": 394,
+          "success_rate": 0.6566666666666666,
+          "cycles": 206,
+          "mean_steps_success": 3.4086294416243654,
+          "mean_excess_steps_success": 0.25380710659898476,
+          "tied_decisions": 0,
+          "decisions": 1966,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 246
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 127
+            },
+            "7+": {
+              "n": 133,
+              "successes": 21
+            }
+          }
+        },
+        "16": {
+          "n": 600,
+          "successes": 380,
+          "success_rate": 0.6333333333333333,
+          "cycles": 220,
+          "mean_steps_success": 3.278947368421053,
+          "mean_excess_steps_success": 0.1631578947368421,
+          "tied_decisions": 0,
+          "decisions": 2573,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 243
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 116
+            },
+            "7+": {
+              "n": 133,
+              "successes": 21
+            }
+          }
+        }
+      }
+    },
+    "energy_29": {
+      "one_step": {
+        "native": {
+          "train": {
+            "n": 96,
+            "correct": 96,
+            "ties": 0,
+            "accuracy": 1.0,
+            "capped_nll": 0.00020593854543498488,
+            "zero_true_probability": 0,
+            "true_probability": 0.9997940995241915
+          },
+          "test": {
+            "n": 24,
+            "correct": 22,
+            "ties": 0,
+            "accuracy": 0.9166666666666666,
+            "capped_nll": 1.0925070379803137,
+            "zero_true_probability": 0,
+            "true_probability": 0.9013346616059916
+          }
+        },
+        "wrong_action": {
+          "train": {
+            "n": 96,
+            "correct": 8,
+            "ties": 0,
+            "accuracy": 0.08333333333333333,
+            "capped_nll": 12.74055121362631,
+            "zero_true_probability": 0,
+            "true_probability": 0.08363746782557535
+          },
+          "test": {
+            "n": 24,
+            "correct": 3,
+            "ties": 0,
+            "accuracy": 0.125,
+            "capped_nll": 11.762557388103268,
+            "zero_true_probability": 0,
+            "true_probability": 0.12506391450144227
+          }
+        },
+        "action_average": {
+          "train": {
+            "n": 96,
+            "correct": 35,
+            "ties": 0,
+            "accuracy": 0.3645833333333333,
+            "capped_nll": 1.2415414001591911,
+            "zero_true_probability": 0,
+            "true_probability": 0.30216496801436504
+          },
+          "test": {
+            "n": 24,
+            "correct": 6,
+            "ties": 0,
+            "accuracy": 0.25,
+            "capped_nll": 2.0334810153561076,
+            "zero_true_probability": 0,
+            "true_probability": 0.269980844223049
+          }
+        }
+      },
+      "rollout": {
+        "1": {
+          "n": 120,
+          "correct": 118,
+          "ties": 0,
+          "accuracy": 0.9833333333333333,
+          "true_probability": 0.9802869516637078,
+          "capped_nll": 0.08354518139127595,
+          "zero_true_probability": 0
+        },
+        "3": {
+          "n": 120,
+          "correct": 117,
+          "ties": 0,
+          "accuracy": 0.975,
+          "true_probability": 0.970626833166736,
+          "capped_nll": 0.12463405798222922,
+          "zero_true_probability": 0
+        },
+        "6": {
+          "n": 120,
+          "correct": 111,
+          "ties": 0,
+          "accuracy": 0.925,
+          "true_probability": 0.9163138511999063,
+          "capped_nll": 0.6054177177961547,
+          "zero_true_probability": 0
+        },
+        "10": {
+          "n": 120,
+          "correct": 104,
+          "ties": 0,
+          "accuracy": 0.8666666666666667,
+          "true_probability": 0.8529272694063053,
+          "capped_nll": 0.9351590822858157,
+          "zero_true_probability": 0
+        }
+      },
+      "planning": {
+        "1": {
+          "n": 600,
+          "successes": 377,
+          "success_rate": 0.6283333333333333,
+          "cycles": 223,
+          "mean_steps_success": 2.8461538461538463,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 0,
+          "decisions": 1740,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 260
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 111
+            },
+            "7+": {
+              "n": 133,
+              "successes": 6
+            }
+          }
+        },
+        "3": {
+          "n": 600,
+          "successes": 372,
+          "success_rate": 0.62,
+          "cycles": 228,
+          "mean_steps_success": 2.9623655913978495,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 0,
+          "decisions": 1824,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 247
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 115
+            },
+            "7+": {
+              "n": 133,
+              "successes": 10
+            }
+          }
+        },
+        "16": {
+          "n": 600,
+          "successes": 391,
+          "success_rate": 0.6516666666666666,
+          "cycles": 209,
+          "mean_steps_success": 3.135549872122762,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 0,
+          "decisions": 2084,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 247
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 124
+            },
+            "7+": {
+              "n": 133,
+              "successes": 20
+            }
+          }
+        }
+      }
+    },
+    "direct_47": {
+      "one_step": {
+        "native": {
+          "train": {
+            "n": 96,
+            "correct": 96,
+            "ties": 0,
+            "accuracy": 1.0,
+            "capped_nll": 0.000403138579946703,
+            "zero_true_probability": 0,
+            "true_probability": 0.9995969861874111
+          },
+          "test": {
+            "n": 24,
+            "correct": 10,
+            "ties": 0,
+            "accuracy": 0.4166666666666667,
+            "capped_nll": 4.82982534881332,
+            "zero_true_probability": 0,
+            "true_probability": 0.4185663874666908
+          }
+        },
+        "wrong_action": {
+          "train": {
+            "n": 96,
+            "correct": 11,
+            "ties": 0,
+            "accuracy": 0.11458333333333333,
+            "capped_nll": 10.86147707135379,
+            "zero_true_probability": 0,
+            "true_probability": 0.11318029085211549
+          },
+          "test": {
+            "n": 24,
+            "correct": 5,
+            "ties": 0,
+            "accuracy": 0.20833333333333334,
+            "capped_nll": 9.597823539377336,
+            "zero_true_probability": 0,
+            "true_probability": 0.16489765667248593
+          }
+        },
+        "action_average": {
+          "train": {
+            "n": 96,
+            "correct": 35,
+            "ties": 0,
+            "accuracy": 0.3645833333333333,
+            "capped_nll": 1.2036454924093885,
+            "zero_true_probability": 0,
+            "true_probability": 0.31491283311779306
+          },
+          "test": {
+            "n": 24,
+            "correct": 6,
+            "ties": 0,
+            "accuracy": 0.25,
+            "capped_nll": 4.763618028708955,
+            "zero_true_probability": 0,
+            "true_probability": 0.17205186299475841
+          }
+        }
+      },
+      "rollout": {
+        "1": {
+          "n": 120,
+          "correct": 109,
+          "ties": 0,
+          "accuracy": 0.9083333333333333,
+          "true_probability": 0.9072019764001062,
+          "capped_nll": 0.6695346561261623,
+          "zero_true_probability": 0
+        },
+        "3": {
+          "n": 120,
+          "correct": 99,
+          "ties": 0,
+          "accuracy": 0.825,
+          "true_probability": 0.8067091083131547,
+          "capped_nll": 1.4341714984540208,
+          "zero_true_probability": 0
+        },
+        "6": {
+          "n": 120,
+          "correct": 83,
+          "ties": 0,
+          "accuracy": 0.6916666666666667,
+          "true_probability": 0.6692028685697695,
+          "capped_nll": 2.2621476405681817,
+          "zero_true_probability": 0
+        },
+        "10": {
+          "n": 120,
+          "correct": 74,
+          "ties": 0,
+          "accuracy": 0.6166666666666667,
+          "true_probability": 0.5830348399612016,
+          "capped_nll": 3.3163870221492404,
+          "zero_true_probability": 0
+        }
+      },
+      "planning": {
+        "1": {
+          "n": 600,
+          "successes": 331,
+          "success_rate": 0.5516666666666666,
+          "cycles": 269,
+          "mean_steps_success": 2.782477341389728,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 0,
+          "decisions": 1692,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 234
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 92
+            },
+            "7+": {
+              "n": 133,
+              "successes": 5
+            }
+          }
+        },
+        "3": {
+          "n": 600,
+          "successes": 400,
+          "success_rate": 0.6666666666666666,
+          "cycles": 200,
+          "mean_steps_success": 3.2675,
+          "mean_excess_steps_success": 0.16,
+          "tied_decisions": 0,
+          "decisions": 1978,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 250
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 136
+            },
+            "7+": {
+              "n": 133,
+              "successes": 14
+            }
+          }
+        },
+        "16": {
+          "n": 600,
+          "successes": 380,
+          "success_rate": 0.6333333333333333,
+          "cycles": 220,
+          "mean_steps_success": 3.2552631578947366,
+          "mean_excess_steps_success": 0.11578947368421053,
+          "tied_decisions": 0,
+          "decisions": 2612,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 240
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 120
+            },
+            "7+": {
+              "n": 133,
+              "successes": 20
+            }
+          }
+        }
+      }
+    },
+    "energy_47": {
+      "one_step": {
+        "native": {
+          "train": {
+            "n": 96,
+            "correct": 96,
+            "ties": 0,
+            "accuracy": 1.0,
+            "capped_nll": 0.00016353726575852484,
+            "zero_true_probability": 0,
+            "true_probability": 0.9998364901822564
+          },
+          "test": {
+            "n": 24,
+            "correct": 19,
+            "ties": 0,
+            "accuracy": 0.7916666666666666,
+            "capped_nll": 1.42023035754581,
+            "zero_true_probability": 0,
+            "true_probability": 0.8044381595394591
+          }
+        },
+        "wrong_action": {
+          "train": {
+            "n": 96,
+            "correct": 8,
+            "ties": 0,
+            "accuracy": 0.08333333333333333,
+            "capped_nll": 12.721774268538974,
+            "zero_true_probability": 0,
+            "true_probability": 0.08347596289324578
+          },
+          "test": {
+            "n": 24,
+            "correct": 3,
+            "ties": 0,
+            "accuracy": 0.125,
+            "capped_nll": 12.600929480682723,
+            "zero_true_probability": 0,
+            "true_probability": 0.12507100083638992
+          }
+        },
+        "action_average": {
+          "train": {
+            "n": 96,
+            "correct": 34,
+            "ties": 0,
+            "accuracy": 0.3541666666666667,
+            "capped_nll": 1.2338406358054437,
+            "zero_true_probability": 0,
+            "true_probability": 0.30482665543428195
+          },
+          "test": {
+            "n": 24,
+            "correct": 7,
+            "ties": 0,
+            "accuracy": 0.2916666666666667,
+            "capped_nll": 2.2703570837925935,
+            "zero_true_probability": 0,
+            "true_probability": 0.2593682145801854
+          }
+        }
+      },
+      "rollout": {
+        "1": {
+          "n": 120,
+          "correct": 115,
+          "ties": 0,
+          "accuracy": 0.9583333333333334,
+          "true_probability": 0.9620849229623545,
+          "capped_nll": 0.16392182665898716,
+          "zero_true_probability": 0
+        },
+        "3": {
+          "n": 120,
+          "correct": 110,
+          "ties": 0,
+          "accuracy": 0.9166666666666666,
+          "true_probability": 0.9169040155041562,
+          "capped_nll": 0.27060565123152536,
+          "zero_true_probability": 0
+        },
+        "6": {
+          "n": 120,
+          "correct": 102,
+          "ties": 0,
+          "accuracy": 0.85,
+          "true_probability": 0.8491043227550189,
+          "capped_nll": 0.8834758494533098,
+          "zero_true_probability": 0
+        },
+        "10": {
+          "n": 120,
+          "correct": 94,
+          "ties": 0,
+          "accuracy": 0.7833333333333333,
+          "true_probability": 0.7781459150370973,
+          "capped_nll": 1.2281216900620904,
+          "zero_true_probability": 0
+        }
+      },
+      "planning": {
+        "1": {
+          "n": 600,
+          "successes": 359,
+          "success_rate": 0.5983333333333334,
+          "cycles": 241,
+          "mean_steps_success": 2.7298050139275767,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 0,
+          "decisions": 1716,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 259
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 96
+            },
+            "7+": {
+              "n": 133,
+              "successes": 4
+            }
+          }
+        },
+        "3": {
+          "n": 600,
+          "successes": 378,
+          "success_rate": 0.63,
+          "cycles": 222,
+          "mean_steps_success": 3.0899470899470898,
+          "mean_excess_steps_success": 0.08465608465608465,
+          "tied_decisions": 18,
+          "decisions": 1872,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 247
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 119
+            },
+            "7+": {
+              "n": 133,
+              "successes": 12
+            }
+          }
+        },
+        "16": {
+          "n": 600,
+          "successes": 391,
+          "success_rate": 0.6516666666666666,
+          "cycles": 209,
+          "mean_steps_success": 3.1969309462915603,
+          "mean_excess_steps_success": 0.061381074168797956,
+          "tied_decisions": 0,
+          "decisions": 2493,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 247
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 124
+            },
+            "7+": {
+              "n": 133,
+              "successes": 20
+            }
+          }
+        }
+      }
+    },
+    "oracle": {
+      "one_step": {
+        "native": {
+          "train": {
+            "n": 96,
+            "correct": 96,
+            "ties": 0,
+            "accuracy": 1.0,
+            "capped_nll": -0.0,
+            "zero_true_probability": 0,
+            "true_probability": 1.0
+          },
+          "test": {
+            "n": 24,
+            "correct": 24,
+            "ties": 0,
+            "accuracy": 1.0,
+            "capped_nll": -0.0,
+            "zero_true_probability": 0,
+            "true_probability": 1.0
+          }
+        },
+        "wrong_action": {
+          "train": {
+            "n": 96,
+            "correct": 8,
+            "ties": 0,
+            "accuracy": 0.08333333333333333,
+            "capped_nll": 649.3633836545753,
+            "zero_true_probability": 88,
+            "true_probability": 0.08333333333333333
+          },
+          "test": {
+            "n": 24,
+            "correct": 3,
+            "ties": 0,
+            "accuracy": 0.125,
+            "capped_nll": 619.8468662157311,
+            "zero_true_probability": 21,
+            "true_probability": 0.125
+          }
+        },
+        "action_average": {
+          "train": {
+            "n": 96,
+            "correct": 20,
+            "ties": 55,
+            "accuracy": 0.20833333333333334,
+            "capped_nll": 1.2418886985032354,
+            "zero_true_probability": 0,
+            "true_probability": 0.3020833333333333
+          },
+          "test": {
+            "n": 24,
+            "correct": 4,
+            "ties": 17,
+            "accuracy": 0.16666666666666666,
+            "capped_nll": 1.2707698310265663,
+            "zero_true_probability": 0,
+            "true_probability": 0.2916666666666667
+          }
+        }
+      },
+      "rollout": {
+        "1": {
+          "n": 120,
+          "correct": 120,
+          "ties": 0,
+          "accuracy": 1.0,
+          "true_probability": 1.0,
+          "capped_nll": 0.0,
+          "zero_true_probability": 0
+        },
+        "3": {
+          "n": 120,
+          "correct": 120,
+          "ties": 0,
+          "accuracy": 1.0,
+          "true_probability": 1.0,
+          "capped_nll": 0.0,
+          "zero_true_probability": 0
+        },
+        "6": {
+          "n": 120,
+          "correct": 120,
+          "ties": 0,
+          "accuracy": 1.0,
+          "true_probability": 1.0,
+          "capped_nll": 0.0,
+          "zero_true_probability": 0
+        },
+        "10": {
+          "n": 120,
+          "correct": 120,
+          "ties": 0,
+          "accuracy": 1.0,
+          "true_probability": 1.0,
+          "capped_nll": 0.0,
+          "zero_true_probability": 0
+        }
+      },
+      "planning": {
+        "1": {
+          "n": 600,
+          "successes": 365,
+          "success_rate": 0.6083333333333333,
+          "cycles": 235,
+          "mean_steps_success": 2.7753424657534245,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 581,
+          "decisions": 1722,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 259
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 101
+            },
+            "7+": {
+              "n": 133,
+              "successes": 5
+            }
+          }
+        },
+        "3": {
+          "n": 600,
+          "successes": 451,
+          "success_rate": 0.7516666666666667,
+          "cycles": 149,
+          "mean_steps_success": 3.268292682926829,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 745,
+          "decisions": 1867,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 262
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 171
+            },
+            "7+": {
+              "n": 133,
+              "successes": 18
+            }
+          }
+        },
+        "16": {
+          "n": 600,
+          "successes": 600,
+          "success_rate": 1.0,
+          "cycles": 0,
+          "mean_steps_success": 4.511666666666667,
+          "mean_excess_steps_success": 0.0,
+          "tied_decisions": 795,
+          "decisions": 2707,
+          "by_distance": {
+            "1-3": {
+              "n": 262,
+              "successes": 262
+            },
+            "4-6": {
+              "n": 205,
+              "successes": 205
+            },
+            "7+": {
+              "n": 133,
+              "successes": 133
+            }
+          }
+        }
+      }
+    }
+  },
+  "repair": {
+    "direct_11": {
+      "key": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.7283333333333335
+      },
+      "door": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.7283333333333335
+      },
+      "both": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.7283333333333335
+      },
+      "all_heldout": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.511666666666667
+      }
+    },
+    "energy_11": {
+      "key": {
+        "n": 600,
+        "successes": 391,
+        "cycles": 209,
+        "mean_steps_success": 3.176470588235294
+      },
+      "door": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.718333333333334
+      },
+      "both": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.665
+      },
+      "all_heldout": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.511666666666667
+      }
+    },
+    "direct_29": {
+      "key": {
+        "n": 600,
+        "successes": 398,
+        "cycles": 202,
+        "mean_steps_success": 3.364321608040201
+      },
+      "door": {
+        "n": 600,
+        "successes": 577,
+        "cycles": 23,
+        "mean_steps_success": 4.916811091854419
+      },
+      "both": {
+        "n": 600,
+        "successes": 577,
+        "cycles": 23,
+        "mean_steps_success": 4.764298093587522
+      },
+      "all_heldout": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.511666666666667
+      }
+    },
+    "energy_29": {
+      "key": {
+        "n": 600,
+        "successes": 391,
+        "cycles": 209,
+        "mean_steps_success": 3.135549872122762
+      },
+      "door": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.511666666666667
+      },
+      "both": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.511666666666667
+      },
+      "all_heldout": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.511666666666667
+      }
+    },
+    "direct_47": {
+      "key": {
+        "n": 600,
+        "successes": 380,
+        "cycles": 220,
+        "mean_steps_success": 3.2552631578947366
+      },
+      "door": {
+        "n": 600,
+        "successes": 566,
+        "cycles": 34,
+        "mean_steps_success": 4.636042402826855
+      },
+      "both": {
+        "n": 600,
+        "successes": 566,
+        "cycles": 34,
+        "mean_steps_success": 4.508833922261484
+      },
+      "all_heldout": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.511666666666667
+      }
+    },
+    "energy_47": {
+      "key": {
+        "n": 600,
+        "successes": 391,
+        "cycles": 209,
+        "mean_steps_success": 3.176470588235294
+      },
+      "door": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.825
+      },
+      "both": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.665
+      },
+      "all_heldout": {
+        "n": 600,
+        "successes": 600,
+        "cycles": 0,
+        "mean_steps_success": 4.511666666666667
+      }
+    }
+  },
+  "experimental_scope": "One fully observed symbolic map; three seeds each; same likelihood objective and training examples, approximately matched parameter counts, unequal compute. No language host or JEPA latent model.",
+  "interpretation": "The three energy fits predict more held-out transitions correctly but each solves391/600H16tasks. Replacing one entire door-entry distribution with the exact transition gives600/600for each. A key-pickup repair alone leaves each total391. This is a post-hoc controlled intervention using ground truth, not a learned improvement or independent confirmation.",
+  "next_test": "On new prospectively fixed maps, test whether a model can select useful transition observations itself under a fixed query budget, compared with random observations. The present oracle repair only identifies an opportunity.",
+  "provider_calls": 0,
+  "new_spending_usd": 0,
+  "novelty_established": false,
+  "sources": {
+    "outputs/world-model-planning/V1/plan.json": "858492ca878ca59e4f36c90171f6e56bf93eab0dcf501ab417da43a577f8815a",
+    "outputs/world-model-planning/V1/report.json": "9e6798d5243f260439e18378d909f5af3566ed03c794d17874fd8762aa0f4e1b",
+    "outputs/world-model-planning/V1/INDEPENDENT_AUDIT.json": "06659be81a1998143731cad7e52245f07155f95191e03e2cf7cac7513304e281",
+    "outputs/world-model-planning/REPAIR_V1/plan.json": "bee8d35d3061fbff51cc2c7a7487ed60737f5b32b4472c5ec251c11da0c52e28",
+    "outputs/world-model-planning/REPAIR_V1/summary.json": "c64e60ed20d55f94b12f40c54ed0ca54788e5e8c2396d614fab492a2dd8ce711",
+    "work/world-model-planning-v1/REPAIR_DIAGNOSTIC_REVIEW.json": "93d410b4a263c9d293a74f461fbe7e3353592677a31ad8c688237256a6f0fad4"
+  }
+}
