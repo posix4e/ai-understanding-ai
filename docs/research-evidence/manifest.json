@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T09:03:39.217552+00:00",
+  "at_utc": "2026-10-06T09:52:26.822428+00:00",
   "scope": "Selected summary records, derived metadata, a frozen source/plan bundle and runnable mathematical examples for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -1453,10 +1453,132 @@
         }
       ],
       "transformation": "35 exactly copied frozen Python files, full descriptive report, plan, registration, completion and independent audit. Raw tensor archives and weights excluded."
+    },
+    {
+      "file": "organ-route-cross-summary.json",
+      "copy_type": "derived_public_summary",
+      "sha256": "d1f6a34585c884f5c62e508ebab6c8c37334b0c4cad5a3e2a95865b4740c7c13",
+      "bytes": 1468694,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/plan.json",
+          "source_sha256": "c5d010baefac207c34e0c3edd32da44b35920c6a79b8ff88fcbb2233e1fd7de8"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/REGISTRATION.json",
+          "source_sha256": "35c04104940e3b6f57c4b58f4d05d047645b0d95ec4fe6ce909d8aa4b6757464"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/STOPPED.json",
+          "source_sha256": "36cf67282b391eebb509b954df519fc6ade7e0949ec4974512816de3d1a9965b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/AUDIT_FAILURE.json",
+          "source_sha256": "767dc1cf2dbb1216da75d449577f1254b0dcdb4ec16d6ef2e431f5d55ee92c3e"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/WORKER_COMPLETE.json",
+          "source_sha256": "3a139ef1fe7442fb9b16dd4e95cedb966a2cf95b9a1d8d88c423c9aa6306ac44"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/COLLECTED.json",
+          "source_sha256": "b5474d4452ecfdd31789afd5015bd3f9a38ca58c1dc2ff9f0c38f6a92bd5343a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_RECOVERY_V1/plan.json",
+          "source_sha256": "51114fca3105701128c30ce56761a93fc5bb53deb8be9f0f29c7da22546b3118"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_RECOVERY_V1/REGISTRATION.json",
+          "source_sha256": "fe8c81bdf8c83c31103de3d70267ff562afe93cff6dc025c2a5b35f1948cf077"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_RECOVERY_V1/COMPLETE.json",
+          "source_sha256": "55a4fb495649860464ceaa23eb31b4a1a027cb07534aefaa960a2feb038e6b86"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_RECOVERY_V1/REPORT.json",
+          "source_sha256": "05fca3edfac2b0e84d5bd2add1a7264867433e8d2d99bc7cbf9f9b44c83a0f78"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_RECOVERY_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "c9c46ee7045fcedc1c83145165f1a1b5665b429ef2ca3f7cd9a26b1b2ffd6d27"
+        },
+        {
+          "source_path": "work/organ-route-cross-recovery-v1/TERMINAL_REVIEW.json",
+          "source_sha256": "d12ee8af7da5c5f844b86181d80b0b9bf6c1b4a7e124efeb7e390753942c6d40"
+        },
+        {
+          "source_path": "work/organ-route-cross-recovery-v1/CLAIM_REVIEW.json",
+          "source_sha256": "b1b6670dafc9b3c39c46b49e1320e6b1806b36f992c587807d2367804683d4aa"
+        }
+      ],
+      "transformation": "Complete pooled/world outcomes and all96 cell scores/contrasts. No regrading or model computation."
+    },
+    {
+      "file": "organ-route-cross-sources.zip",
+      "copy_type": "frozen_source_and_record_bundle",
+      "sha256": "86bb5cca3447395908244ce9eeea36c9a10d5a840fa548ec3c6d1d0ee6ff51a2",
+      "bytes": 600452,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/plan.json",
+          "source_sha256": "c5d010baefac207c34e0c3edd32da44b35920c6a79b8ff88fcbb2233e1fd7de8"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/REGISTRATION.json",
+          "source_sha256": "35c04104940e3b6f57c4b58f4d05d047645b0d95ec4fe6ce909d8aa4b6757464"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/STOPPED.json",
+          "source_sha256": "36cf67282b391eebb509b954df519fc6ade7e0949ec4974512816de3d1a9965b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/AUDIT_FAILURE.json",
+          "source_sha256": "767dc1cf2dbb1216da75d449577f1254b0dcdb4ec16d6ef2e431f5d55ee92c3e"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/WORKER_COMPLETE.json",
+          "source_sha256": "3a139ef1fe7442fb9b16dd4e95cedb966a2cf95b9a1d8d88c423c9aa6306ac44"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_V1/COLLECTED.json",
+          "source_sha256": "b5474d4452ecfdd31789afd5015bd3f9a38ca58c1dc2ff9f0c38f6a92bd5343a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_RECOVERY_V1/plan.json",
+          "source_sha256": "51114fca3105701128c30ce56761a93fc5bb53deb8be9f0f29c7da22546b3118"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_RECOVERY_V1/REGISTRATION.json",
+          "source_sha256": "fe8c81bdf8c83c31103de3d70267ff562afe93cff6dc025c2a5b35f1948cf077"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_RECOVERY_V1/COMPLETE.json",
+          "source_sha256": "55a4fb495649860464ceaa23eb31b4a1a027cb07534aefaa960a2feb038e6b86"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_RECOVERY_V1/REPORT.json",
+          "source_sha256": "05fca3edfac2b0e84d5bd2add1a7264867433e8d2d99bc7cbf9f9b44c83a0f78"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_ROUTE_CROSS_RECOVERY_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "c9c46ee7045fcedc1c83145165f1a1b5665b429ef2ca3f7cd9a26b1b2ffd6d27"
+        },
+        {
+          "source_path": "work/organ-route-cross-recovery-v1/TERMINAL_REVIEW.json",
+          "source_sha256": "d12ee8af7da5c5f844b86181d80b0b9bf6c1b4a7e124efeb7e390753942c6d40"
+        },
+        {
+          "source_path": "work/organ-route-cross-recovery-v1/CLAIM_REVIEW.json",
+          "source_sha256": "b1b6670dafc9b3c39c46b49e1320e6b1806b36f992c587807d2367804683d4aa"
+        }
+      ],
+      "transformation": "47 copied frozen Python files, original failure records and corrected full report/plan/registration/completion/audit. Raw tensors and model weights excluded."
     }
   ],
   "absolute_local_path_redactions": 0,
-  "note": "Verbatim copies retain original source hashes. Derived records identify their source records and describe their transformations. Repository-relative evidence references are provenance, not bundled downloads. Large audits, raw traces and partial answers are excluded.",
+  "note": "Verbatim copies retain original source hashes. Derived records identify their sources and transformations. Each reading bundle lists its contents; some include full reports and audit records. Raw tensor archives, model weights and unvalidated partial answers are excluded. Repository-relative provenance paths are not download links.\n",
   "document_status": "research_in_progress_draft",
   "internal_identifier_redactions": 1
 }
