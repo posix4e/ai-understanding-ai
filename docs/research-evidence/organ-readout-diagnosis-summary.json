@@ -1,0 +1,769 @@
+{
+  "copy_type": "derived_public_summary",
+  "study_id": "ORGAN_READOUT_DIAGNOSIS_V1",
+  "status": "READOUT_DIAGNOSIS_COMPLETE",
+  "implementation_audit": "PASS",
+  "outcome_exposed_diagnostic": true,
+  "primary": {
+    "n": 16,
+    "correct": 0,
+    "wrong": 8,
+    "unresolved": 8
+  },
+  "per_carrier": {
+    "lamp": {
+      "n": 4,
+      "correct": 0,
+      "wrong": 2,
+      "unresolved": 2,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 0,
+          "wrong": 2,
+          "unresolved": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 0,
+          "wrong": 0,
+          "unresolved": 2
+        }
+      },
+      "quartet_complete_correct": false
+    },
+    "light": {
+      "n": 4,
+      "correct": 0,
+      "wrong": 2,
+      "unresolved": 2,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 0,
+          "wrong": 2,
+          "unresolved": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 0,
+          "wrong": 0,
+          "unresolved": 2
+        }
+      },
+      "quartet_complete_correct": false
+    },
+    "sign": {
+      "n": 4,
+      "correct": 0,
+      "wrong": 2,
+      "unresolved": 2,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 0,
+          "wrong": 2,
+          "unresolved": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 0,
+          "wrong": 0,
+          "unresolved": 2
+        }
+      },
+      "quartet_complete_correct": false
+    },
+    "indicator": {
+      "n": 4,
+      "correct": 0,
+      "wrong": 2,
+      "unresolved": 2,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 0,
+          "wrong": 2,
+          "unresolved": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 0,
+          "wrong": 0,
+          "unresolved": 2
+        }
+      },
+      "quartet_complete_correct": false
+    }
+  },
+  "operations": {
+    "copy": {
+      "n": 8,
+      "correct": 0,
+      "wrong": 8,
+      "unresolved": 0
+    },
+    "invert": {
+      "n": 8,
+      "correct": 0,
+      "wrong": 0,
+      "unresolved": 8
+    }
+  },
+  "paired_original_vs_continuation": {
+    "original_correct": {
+      "n": 7,
+      "correct": 0,
+      "wrong": 3,
+      "unresolved": 4
+    },
+    "original_wrong": {
+      "n": 9,
+      "correct": 0,
+      "wrong": 5,
+      "unresolved": 4
+    }
+  },
+  "complete_correct_quartets": 0,
+  "repeats": {
+    "n": 4,
+    "exact_matches": 3,
+    "rows": [
+      {
+        "id": "n16",
+        "repeat_of": "n00",
+        "original_raw_exact": true,
+        "new_raw_exact": false,
+        "path_exact": true,
+        "full_raw_exact": false
+      },
+      {
+        "id": "n17",
+        "repeat_of": "n05",
+        "original_raw_exact": true,
+        "new_raw_exact": true,
+        "path_exact": true,
+        "full_raw_exact": true
+      },
+      {
+        "id": "n18",
+        "repeat_of": "n10",
+        "original_raw_exact": true,
+        "new_raw_exact": true,
+        "path_exact": true,
+        "full_raw_exact": true
+      },
+      {
+        "id": "n19",
+        "repeat_of": "n15",
+        "original_raw_exact": true,
+        "new_raw_exact": true,
+        "path_exact": true,
+        "full_raw_exact": true
+      }
+    ]
+  },
+  "repeat_stability_pass": false,
+  "all_20_paths": [
+    {
+      "index": 0,
+      "id": "n00",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "lamp",
+      "a": 0,
+      "b": 0,
+      "target": "off",
+      "parsed_state": "on",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "first_state_token_position": 2,
+      "generated_ids": [
+        21175,
+        544,
+        32
+      ],
+      "decoded_text": " turned on.",
+      "parser_text": " turned on.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 2,
+      "original_candidate_correct": false
+    },
+    {
+      "index": 1,
+      "id": "n01",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "lamp",
+      "a": 0,
+      "b": 1,
+      "target": "on",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_tie",
+      "first_state_token_position": null,
+      "generated_ids": [
+        35464
+      ],
+      "decoded_text": " switched",
+      "parser_text": " switched",
+      "stop_reason": "tie",
+      "new_forward_count": 1,
+      "original_candidate_correct": true
+    },
+    {
+      "index": 2,
+      "id": "n02",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "lamp",
+      "a": 1,
+      "b": 0,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "first_state_token_position": 2,
+      "generated_ids": [
+        21175,
+        2126,
+        32
+      ],
+      "decoded_text": " turned off.",
+      "parser_text": " turned off.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 2,
+      "original_candidate_correct": true
+    },
+    {
+      "index": 3,
+      "id": "n03",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "lamp",
+      "a": 1,
+      "b": 1,
+      "target": "off",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_grammar",
+      "first_state_token_position": null,
+      "generated_ids": [
+        35464,
+        1751,
+        372,
+        322,
+        4707,
+        1603,
+        32
+      ],
+      "decoded_text": " switched back to the original state.",
+      "parser_text": " switched back to the original state.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 6,
+      "original_candidate_correct": false
+    },
+    {
+      "index": 4,
+      "id": "n04",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "light",
+      "a": 0,
+      "b": 0,
+      "target": "off",
+      "parsed_state": "on",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "first_state_token_position": 2,
+      "generated_ids": [
+        21175,
+        544,
+        32
+      ],
+      "decoded_text": " turned on.",
+      "parser_text": " turned on.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 2,
+      "original_candidate_correct": false
+    },
+    {
+      "index": 5,
+      "id": "n05",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "light",
+      "a": 0,
+      "b": 1,
+      "target": "on",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_tie",
+      "first_state_token_position": null,
+      "generated_ids": [
+        35464,
+        1751,
+        372,
+        322
+      ],
+      "decoded_text": " switched back to the",
+      "parser_text": " switched back to the",
+      "stop_reason": "tie",
+      "new_forward_count": 4,
+      "original_candidate_correct": true
+    },
+    {
+      "index": 6,
+      "id": "n06",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "light",
+      "a": 1,
+      "b": 0,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "first_state_token_position": 2,
+      "generated_ids": [
+        21175,
+        2126,
+        32
+      ],
+      "decoded_text": " turned off.",
+      "parser_text": " turned off.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 2,
+      "original_candidate_correct": true
+    },
+    {
+      "index": 7,
+      "id": "n07",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "light",
+      "a": 1,
+      "b": 1,
+      "target": "off",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_tie",
+      "first_state_token_position": null,
+      "generated_ids": [
+        35464,
+        1751,
+        372,
+        322
+      ],
+      "decoded_text": " switched back to the",
+      "parser_text": " switched back to the",
+      "stop_reason": "tie",
+      "new_forward_count": 4,
+      "original_candidate_correct": false
+    },
+    {
+      "index": 8,
+      "id": "n08",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "sign",
+      "a": 0,
+      "b": 0,
+      "target": "off",
+      "parsed_state": "on",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "first_state_token_position": 2,
+      "generated_ids": [
+        21175,
+        544,
+        32
+      ],
+      "decoded_text": " turned on.",
+      "parser_text": " turned on.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 2,
+      "original_candidate_correct": false
+    },
+    {
+      "index": 9,
+      "id": "n09",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "sign",
+      "a": 0,
+      "b": 1,
+      "target": "on",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_grammar",
+      "first_state_token_position": null,
+      "generated_ids": [
+        35464,
+        1751,
+        372,
+        322,
+        4707,
+        1603,
+        32
+      ],
+      "decoded_text": " switched back to the original state.",
+      "parser_text": " switched back to the original state.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 6,
+      "original_candidate_correct": true
+    },
+    {
+      "index": 10,
+      "id": "n10",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "sign",
+      "a": 1,
+      "b": 0,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "first_state_token_position": 2,
+      "generated_ids": [
+        21175,
+        2126,
+        32
+      ],
+      "decoded_text": " turned off.",
+      "parser_text": " turned off.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 2,
+      "original_candidate_correct": true
+    },
+    {
+      "index": 11,
+      "id": "n11",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "sign",
+      "a": 1,
+      "b": 1,
+      "target": "off",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_grammar",
+      "first_state_token_position": null,
+      "generated_ids": [
+        35464,
+        1751,
+        372,
+        322,
+        4707,
+        1603,
+        32
+      ],
+      "decoded_text": " switched back to the original state.",
+      "parser_text": " switched back to the original state.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 6,
+      "original_candidate_correct": false
+    },
+    {
+      "index": 12,
+      "id": "n12",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "indicator",
+      "a": 0,
+      "b": 0,
+      "target": "off",
+      "parsed_state": "on",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "first_state_token_position": 2,
+      "generated_ids": [
+        21175,
+        544,
+        32
+      ],
+      "decoded_text": " turned on.",
+      "parser_text": " turned on.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 2,
+      "original_candidate_correct": false
+    },
+    {
+      "index": 13,
+      "id": "n13",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "indicator",
+      "a": 0,
+      "b": 1,
+      "target": "on",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_tie",
+      "first_state_token_position": null,
+      "generated_ids": [
+        35464,
+        1751,
+        372,
+        322
+      ],
+      "decoded_text": " switched back to the",
+      "parser_text": " switched back to the",
+      "stop_reason": "tie",
+      "new_forward_count": 4,
+      "original_candidate_correct": true
+    },
+    {
+      "index": 14,
+      "id": "n14",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "indicator",
+      "a": 1,
+      "b": 0,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "first_state_token_position": 2,
+      "generated_ids": [
+        21175,
+        2126,
+        32
+      ],
+      "decoded_text": " turned off.",
+      "parser_text": " turned off.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 2,
+      "original_candidate_correct": false
+    },
+    {
+      "index": 15,
+      "id": "n15",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "indicator",
+      "a": 1,
+      "b": 1,
+      "target": "off",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_tie",
+      "first_state_token_position": null,
+      "generated_ids": [
+        35464
+      ],
+      "decoded_text": " switched",
+      "parser_text": " switched",
+      "stop_reason": "tie",
+      "new_forward_count": 1,
+      "original_candidate_correct": false
+    },
+    {
+      "index": 16,
+      "id": "n16",
+      "phase": "repeat",
+      "repeat_of": "n00",
+      "carrier": "lamp",
+      "a": 0,
+      "b": 0,
+      "target": "off",
+      "parsed_state": "on",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "first_state_token_position": 2,
+      "generated_ids": [
+        21175,
+        544,
+        32
+      ],
+      "decoded_text": " turned on.",
+      "parser_text": " turned on.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 2,
+      "original_candidate_correct": false
+    },
+    {
+      "index": 17,
+      "id": "n17",
+      "phase": "repeat",
+      "repeat_of": "n05",
+      "carrier": "light",
+      "a": 0,
+      "b": 1,
+      "target": "on",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_tie",
+      "first_state_token_position": null,
+      "generated_ids": [
+        35464,
+        1751,
+        372,
+        322
+      ],
+      "decoded_text": " switched back to the",
+      "parser_text": " switched back to the",
+      "stop_reason": "tie",
+      "new_forward_count": 4,
+      "original_candidate_correct": true
+    },
+    {
+      "index": 18,
+      "id": "n18",
+      "phase": "repeat",
+      "repeat_of": "n10",
+      "carrier": "sign",
+      "a": 1,
+      "b": 0,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "first_state_token_position": 2,
+      "generated_ids": [
+        21175,
+        2126,
+        32
+      ],
+      "decoded_text": " turned off.",
+      "parser_text": " turned off.",
+      "stop_reason": "text_terminator",
+      "new_forward_count": 2,
+      "original_candidate_correct": true
+    },
+    {
+      "index": 19,
+      "id": "n19",
+      "phase": "repeat",
+      "repeat_of": "n15",
+      "carrier": "indicator",
+      "a": 1,
+      "b": 1,
+      "target": "off",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_tie",
+      "first_state_token_position": null,
+      "generated_ids": [
+        35464
+      ],
+      "decoded_text": " switched",
+      "parser_text": " switched",
+      "stop_reason": "tie",
+      "new_forward_count": 1,
+      "original_candidate_correct": false
+    }
+  ],
+  "stop_reasons": {
+    "eos": 0,
+    "text_terminator": 11,
+    "tie": 5,
+    "cap": 0
+  },
+  "parser_reasons": {
+    "accepted": 8,
+    "unresolved_grammar": 3,
+    "unresolved_tie": 5,
+    "unresolved_cap": 0
+  },
+  "original_native_gate_pass": false,
+  "original_primary": {
+    "n": 16,
+    "correct": 7,
+    "ties": 0
+  },
+  "decoding": {
+    "policy": "unique full-vocabulary greedy maximum",
+    "total_generated_token_cap": 16,
+    "new_forwards_per_path_max": 15,
+    "total_new_forwards_max": 300,
+    "max_new_forward_input_tokens": 59,
+    "max_retained_tokens": 60,
+    "cache": false,
+    "batch_size": 1,
+    "logits_to_keep": 1,
+    "eos_id": 0,
+    "inserted_tokens": 0,
+    "raw_first_rows": "Validate all20 original saved raw rows and sidecars against original sealed inventory, independently decode raw BF16 and select their unique maxima before new generation. No original candidate regrading.",
+    "tie": "Retain full raw row and complete exact-max set, emit no token and stop only this path unresolved. No index fallback.",
+    "termination": "After each selected token, decode entire generated suffix with the pinned tokenizer and skip_special_tokens=False. Stop at actual EOS0, or the first step whose decoded suffix contains period U+002E, exclamation U+0021, or LF U+000A; otherwise stop at16total tokens. Do not stop on a state word alone.",
+    "eos_decoding": "EOS0 is retained in token IDs and counted in cap, but excluded from the text passed to the clause parser. No other special tokens are removed."
+  },
+  "parser": {
+    "horizontal_whitespace": "Strip only leading/trailing ASCII space and tab.",
+    "body_regex": "(?:on|off|(?:turned|switched)(?: to(?: the)?)? (?:on|off)(?: state)?)",
+    "terminal_text": [
+      ".",
+      "!",
+      "\n",
+      "\n\n"
+    ],
+    "text_rule": "For a text-terminated path, after stripping outer space/tab, the entire string must be body followed by exactly one of the four terminal strings. No remaining or preceding extra words, punctuation or newlines. Match the whole string, not a substring.",
+    "eos_rule": "For actual EOS-terminated paths with no earlier text terminator, the entire suffix before EOS, with outer space/tab stripped, must match body. EOS immediately after the saved first verb is unresolved.",
+    "state_rule": "The accepted body has exactly one on/off word; that word is the asserted state.",
+    "unresolved": "Tie, cap without terminal, empty EOS, malformed spacing, negation, hedge, echo, extra text and any unaccepted complete suffix. All remain in primary denominator16.",
+    "freeze": "One parser only. Never expand parser/cap or select a second decoder based on the outputs."
+  },
+  "physical_counts": {
+    "model_load_attempts": 1,
+    "model_load_finished": 1,
+    "original_rows_validated": 20,
+    "paths_started": 20,
+    "paths_finished": 20,
+    "forward_attempts": 57,
+    "forward_finished": 57,
+    "calls_saved": 57,
+    "reused_tokens": 20,
+    "new_tokens_selected": 50,
+    "generated_tokens": 70,
+    "hooks": 0,
+    "fits": 0,
+    "backwards": 0,
+    "optimizer_steps": 0,
+    "provider_calls": 0
+  },
+  "elapsed_seconds": 34.308426874980796,
+  "repeat_sentence": "3 / 4 repeated paths reproduced every saved input and score exactly.",
+  "call_sentence": "Continuing the saved first words required 57 new model evaluations; no training or paid call was used.",
+  "limits": [
+    "All 16 original primary cases and four repeats are retained, including wrong and unresolved outcomes. These are finite exposed cases, not independent population trials.",
+    "The original 7/16 forced one-token gate remains failed. This separately fixed outcome-exposed diagnostic does not approve a transplant or reopen any closed study.",
+    "Whole-clause parser acceptance is narrower than all semantically valid language. Unresolved text is not automatically a wrong state assertion.",
+    "A correct continuation demonstrates a readout difference only; generation adds native computation and token context and does not prove an already-present hidden answer or isolate wording as its cause.",
+    "No internal mechanism, calibrated belief, energy advantage, private-input composition, untouched confirmation or novelty is established."
+  ],
+  "original_raw_first_rows_included": 20,
+  "new_raw_returns_included": 57,
+  "frozen_source_count": 6,
+  "source_sha256": {
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/REGISTRATION.json": "645133bdb0bea39ef75cec0c320f842f4c1f6bfc4e40ca5e3b1dee4f62741faa",
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/plan.json": "8150a619a799b8bdba87f18ee251545f0ead5b2a9a82b7c9e5cee8919661706b",
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COLLECTED.json": "d0ceff5e1056745387bc30dea35ecbbd137957fe0c827569519821330195cd41",
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COMPLETE.json": "73a5efa86c9ea37640b9288115b513460400242b984b9bd6fe6af175e36eb29b",
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/REPORT.json": "94190161b83f6d2a8122055a9f3d03f0b92b889d678d1ee147360e80eaf39c57",
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/INDEPENDENT_AUDIT.json": "7b4dcbc94d669e12c6112ffa7f67eea6e513d31c2bd6096ec20783064fa366ac",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/plan.json": "d6fd759810e08bd1ead92681de4d2884e26d849280600488c179144cba5bc3a0",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COMPLETE.json": "6f85f676f3a3eaa862f2e5ba0954c8193061c0cb873e1903b51c8e37f3bb9d9c",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REPORT.json": "94f4c5020488071f16728a06a817d269719bee2969c4b11b8ced8bff14c87495",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/INDEPENDENT_AUDIT.json": "2262d0ea2459c949ba140cd0d094af27defa0360704ba8952b8984a6f3fbc8ee",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COLLECTED.json": "38e23b6a6b1ce2ffafd6f3336a5516e5c4eea55b9831b65edce6736ceae0dcfa",
+    "work/organ-readout-diagnosis-v1/ROOT_DECISION.json": "52f08e1729927879d913096fb6a18dd6f5de2348b53a686787a966c48bfd66f6",
+    "work/organ-readout-diagnosis-v1/ROOT_DECISION_V2.json": "d71731620321b2fc6068f768efa47aca260e40cda0990483978068b55f37df82",
+    "work/organ-readout-diagnosis-v1/FEASIBILITY.json": "c14a0046d0432eb5e13898de788b93499a720a48181e4d279b9943b46296be36",
+    "work/organ-readout-diagnosis-v1/FEASIBILITY_LENGTH_ADDENDUM.json": "b28cc37e84318b2d683e67824d5ed48707f074aad1f01101e71900ec5daf686d",
+    "work/organ-readout-diagnosis-v1/MEASUREMENT_REVIEW.json": "72abcc922febb750ca3881f1ed6d34efed749e50364503dd4ed1be81e5d69c89",
+    "work/organ-readout-diagnosis-v1/READOUT_PRIOR_ART.json": "cffe797799f1ba0ff410eedcd1a1db146b77e1f70b6509d69d305e3840b5d3a1",
+    "work/organ-readout-diagnosis-v1/SOURCE_REVIEW.json": "aa9e13edd23ecbce1752118774a25b4ddd229c338dc222d3c5c030b861726282",
+    "work/organ-readout-diagnosis-v1/PREPARATION_TESTS.json": "4576b9c7851f3c1938e0c89eb67cf3b412387f82ff98faf83fb3ba7e492c797d"
+  },
+  "reading_bundle": {
+    "file": "organ-readout-diagnosis-sources.zip",
+    "model_weights_included": false,
+    "self_contained_reproduction": false
+  },
+  "automatic_transfer": false,
+  "novelty_established": false,
+  "scientific_confirmation": false
+}

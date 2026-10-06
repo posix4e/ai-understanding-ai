@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T10:27:22.412450+00:00",
+  "at_utc": "2026-10-06T11:02:01.408009+00:00",
   "scope": "Selected summary records, derived metadata, a frozen source/plan bundle and runnable mathematical examples for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -1797,6 +1797,176 @@
         }
       ],
       "transformation": "Six frozen study sources plus six original preparation snapshots, preserved tokenizer failure/amendment, plan/tokenizer proof and full completion/report/audit; optional complete bounded raw return set copied unchanged."
+    },
+    {
+      "file": "organ-readout-diagnosis-summary.json",
+      "copy_type": "derived_public_summary",
+      "sha256": "30b2f7568a91350c33942361c4910009ab9d1f13cea30f06a2f694ecbc97e99c",
+      "bytes": 22293,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/REGISTRATION.json",
+          "source_sha256": "645133bdb0bea39ef75cec0c320f842f4c1f6bfc4e40ca5e3b1dee4f62741faa"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/plan.json",
+          "source_sha256": "8150a619a799b8bdba87f18ee251545f0ead5b2a9a82b7c9e5cee8919661706b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COLLECTED.json",
+          "source_sha256": "d0ceff5e1056745387bc30dea35ecbbd137957fe0c827569519821330195cd41"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COMPLETE.json",
+          "source_sha256": "73a5efa86c9ea37640b9288115b513460400242b984b9bd6fe6af175e36eb29b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/REPORT.json",
+          "source_sha256": "94190161b83f6d2a8122055a9f3d03f0b92b889d678d1ee147360e80eaf39c57"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "7b4dcbc94d669e12c6112ffa7f67eea6e513d31c2bd6096ec20783064fa366ac"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/plan.json",
+          "source_sha256": "d6fd759810e08bd1ead92681de4d2884e26d849280600488c179144cba5bc3a0"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COMPLETE.json",
+          "source_sha256": "6f85f676f3a3eaa862f2e5ba0954c8193061c0cb873e1903b51c8e37f3bb9d9c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REPORT.json",
+          "source_sha256": "94f4c5020488071f16728a06a817d269719bee2969c4b11b8ced8bff14c87495"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "2262d0ea2459c949ba140cd0d094af27defa0360704ba8952b8984a6f3fbc8ee"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COLLECTED.json",
+          "source_sha256": "38e23b6a6b1ce2ffafd6f3336a5516e5c4eea55b9831b65edce6736ceae0dcfa"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/ROOT_DECISION.json",
+          "source_sha256": "52f08e1729927879d913096fb6a18dd6f5de2348b53a686787a966c48bfd66f6"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/ROOT_DECISION_V2.json",
+          "source_sha256": "d71731620321b2fc6068f768efa47aca260e40cda0990483978068b55f37df82"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/FEASIBILITY.json",
+          "source_sha256": "c14a0046d0432eb5e13898de788b93499a720a48181e4d279b9943b46296be36"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/FEASIBILITY_LENGTH_ADDENDUM.json",
+          "source_sha256": "b28cc37e84318b2d683e67824d5ed48707f074aad1f01101e71900ec5daf686d"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/MEASUREMENT_REVIEW.json",
+          "source_sha256": "72abcc922febb750ca3881f1ed6d34efed749e50364503dd4ed1be81e5d69c89"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/READOUT_PRIOR_ART.json",
+          "source_sha256": "cffe797799f1ba0ff410eedcd1a1db146b77e1f70b6509d69d305e3840b5d3a1"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/SOURCE_REVIEW.json",
+          "source_sha256": "aa9e13edd23ecbce1752118774a25b4ddd229c338dc222d3c5c030b861726282"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/PREPARATION_TESTS.json",
+          "source_sha256": "4576b9c7851f3c1938e0c89eb67cf3b412387f82ff98faf83fb3ba7e492c797d"
+        }
+      ],
+      "transformation": "Complete audited same-input continuation diagnosis; original failed gate preserved, no regrading."
+    },
+    {
+      "file": "organ-readout-diagnosis-sources.zip",
+      "copy_type": "frozen_source_and_record_bundle",
+      "sha256": "e5910eb6c2094f6eb6e678a77fd0c504ebf8e2cac0669bd4c1c51bfd0014d961",
+      "bytes": 11850164,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/REGISTRATION.json",
+          "source_sha256": "645133bdb0bea39ef75cec0c320f842f4c1f6bfc4e40ca5e3b1dee4f62741faa"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/plan.json",
+          "source_sha256": "8150a619a799b8bdba87f18ee251545f0ead5b2a9a82b7c9e5cee8919661706b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COLLECTED.json",
+          "source_sha256": "d0ceff5e1056745387bc30dea35ecbbd137957fe0c827569519821330195cd41"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COMPLETE.json",
+          "source_sha256": "73a5efa86c9ea37640b9288115b513460400242b984b9bd6fe6af175e36eb29b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/REPORT.json",
+          "source_sha256": "94190161b83f6d2a8122055a9f3d03f0b92b889d678d1ee147360e80eaf39c57"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "7b4dcbc94d669e12c6112ffa7f67eea6e513d31c2bd6096ec20783064fa366ac"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/plan.json",
+          "source_sha256": "d6fd759810e08bd1ead92681de4d2884e26d849280600488c179144cba5bc3a0"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COMPLETE.json",
+          "source_sha256": "6f85f676f3a3eaa862f2e5ba0954c8193061c0cb873e1903b51c8e37f3bb9d9c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REPORT.json",
+          "source_sha256": "94f4c5020488071f16728a06a817d269719bee2969c4b11b8ced8bff14c87495"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "2262d0ea2459c949ba140cd0d094af27defa0360704ba8952b8984a6f3fbc8ee"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COLLECTED.json",
+          "source_sha256": "38e23b6a6b1ce2ffafd6f3336a5516e5c4eea55b9831b65edce6736ceae0dcfa"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/ROOT_DECISION.json",
+          "source_sha256": "52f08e1729927879d913096fb6a18dd6f5de2348b53a686787a966c48bfd66f6"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/ROOT_DECISION_V2.json",
+          "source_sha256": "d71731620321b2fc6068f768efa47aca260e40cda0990483978068b55f37df82"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/FEASIBILITY.json",
+          "source_sha256": "c14a0046d0432eb5e13898de788b93499a720a48181e4d279b9943b46296be36"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/FEASIBILITY_LENGTH_ADDENDUM.json",
+          "source_sha256": "b28cc37e84318b2d683e67824d5ed48707f074aad1f01101e71900ec5daf686d"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/MEASUREMENT_REVIEW.json",
+          "source_sha256": "72abcc922febb750ca3881f1ed6d34efed749e50364503dd4ed1be81e5d69c89"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/READOUT_PRIOR_ART.json",
+          "source_sha256": "cffe797799f1ba0ff410eedcd1a1db146b77e1f70b6509d69d305e3840b5d3a1"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/SOURCE_REVIEW.json",
+          "source_sha256": "aa9e13edd23ecbce1752118774a25b4ddd229c338dc222d3c5c030b861726282"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/PREPARATION_TESTS.json",
+          "source_sha256": "4576b9c7851f3c1938e0c89eb67cf3b412387f82ff98faf83fb3ba7e492c797d"
+        }
+      ],
+      "transformation": "Frozen diagnostic source/decisions/reviews, original raw first rows, every new raw trace and full terminal evidence; opaque byte copies, no weights."
     }
   ],
   "absolute_local_path_redactions": 0,
