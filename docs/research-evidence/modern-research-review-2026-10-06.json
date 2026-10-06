@@ -1,0 +1,161 @@
+{
+  "schema": "modern-organ-research-review-v1",
+  "as_of": "2026-10-06",
+  "status": "REVIEW_AND_DESIGN_UPDATE_NO_NEW_MODEL_RESULT",
+  "scope": "Focused primary-source review of 12 selected papers and their latest checked versions. Not exhaustive, not proof of novelty. Most recent sources are preprints. Findings, author directions and our adaptations are distinct.",
+  "sources": [
+    {
+      "id": "ninaxander",
+      "title": "NinaXander",
+      "version_date": "29 September 2026 \u00b7 v1",
+      "url": "https://arxiv.org/html/2609.38261v1",
+      "sections": "IV\u2013VII",
+      "status": "Preprint",
+      "finding": "A shared connector joins frozen language models from two different architecture families. No joined model matches the stronger parent. Reconstruction and transfer to another text domain remain weak.",
+      "author_direction": "Choose parents with complementary strengths. Improve reconstruction, train across domains, test repeated switches and repeat across seeds.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "Check that each part adds useful information. A working wire between models is already established prior work."
+    },
+    {
+      "id": "draft-kv",
+      "title": "Draft-KV",
+      "version_date": "28 September 2026 \u00b7 v1",
+      "url": "https://arxiv.org/html/2609.34754v1",
+      "sections": "5.3\u20136",
+      "status": "Preprint",
+      "finding": "In several earlier systems, unrelated messages barely changed accuracy. Draft-KV trains useful communication and also tests models with different private evidence.",
+      "author_direction": "The paper demonstrates matched-message, wrong-message and receiver-alone controls. It separates the benefit of correct messages from the damage caused by wrong ones.",
+      "direction_kind": "Demonstrated method lesson; not a quoted future-work recommendation",
+      "our_experiment_change": "Use both comparisons. A large correct-versus-wrong gap alone can hide a system that gains little from correct messages."
+    },
+    {
+      "id": "wrong-mechanism",
+      "title": "Right Answer, Wrong Mechanism",
+      "version_date": "4 October 2026 \u00b7 v2",
+      "url": "https://arxiv.org/html/2609.39243v2",
+      "sections": "6\u20138; Appendix B",
+      "status": "Preprint",
+      "finding": "An internal patch can get the right answer through a planted alternative pathway. The revision tests models up to 7B parameters. Its tests do not establish how common this is in natural models.",
+      "author_direction": "Detecting alternative pathways whose individual units stay within normal ranges remains open. Broader downstream checks and stricter natural reference sets are needed.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "Call our next result an effect of a controlled intervention. Correct answers and normal-looking signal sizes cannot prove that the native reasoning process was recovered."
+    },
+    {
+      "id": "recovering",
+      "title": "Are We Recovering Mechanisms?",
+      "version_date": "1 October 2026 \u00b7 v1",
+      "url": "https://arxiv.org/html/2610.02098v1",
+      "sections": "6",
+      "status": "Preprint",
+      "finding": "Scores used to judge recovered circuits can disagree with an independently fixed behavior test. Output agreement alone does not identify a unique mechanism.",
+      "author_direction": "Report behavioral deficits alongside circuit scores. Compare multiple measures and interventions, and control circuit size and intervention choices.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "Report answer choices, ties and score changes separately. Keep all cases. Do not select a favorable score after seeing the result."
+    },
+    {
+      "id": "jepa-anything",
+      "title": "JEPA-Anything",
+      "version_date": "17 September 2026 \u00b7 v1",
+      "url": "https://arxiv.org/html/2609.20800v1",
+      "sections": "3.3.4; 4\u20136",
+      "status": "Preprint",
+      "finding": "The model combines predictive factors across several data types. Geometric separation of these factors does not guarantee separate meanings or causes. Gains do not occur in every control environment.",
+      "author_direction": "Use predictive components in systems that choose interventions, compare expected and observed outcomes, and use errors to guide the next experiment.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "For a later world-model organ, use a small environment with known rules and meaningful action changes. Compare a learned energy scorer with an ordinary predictor and an exact simulator."
+    },
+    {
+      "id": "planning",
+      "title": "The Planning Limits of Latent World Models",
+      "version_date": "30 September 2026 \u00b7 v1",
+      "url": "https://arxiv.org/html/2609.39235v1",
+      "sections": "7; Appendices F and P",
+      "status": "Preprint",
+      "finding": "Planning can fail when a goal is much farther away than the model can reliably predict. Even an exact simulator suffers under a short planning horizon. Easy random action comparisons can hide differences.",
+      "author_direction": "Generate useful subgoals without access to an expert rollout. Balance prediction horizon and search budget. Test harder nearby action alternatives; many comparisons still need more seeds.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "Match the prediction and goal horizons. Separate predictor errors from planner errors with an exact-model control. Harder questions must isolate a cause, rather than simply increase difficulty."
+    },
+    {
+      "id": "vjepa21",
+      "title": "V-JEPA 2.1",
+      "version_date": "11 June 2026 \u00b7 v3",
+      "url": "https://arxiv.org/html/2603.14482v3",
+      "sections": "5",
+      "status": "Preprint",
+      "finding": "Dense predictive training improves visual representations. Better representations are a starting point for building a world model; they are not by themselves evidence of a useful language-model organ.",
+      "author_direction": "Scale training and use the new features to build world models, with fine-grained robotics and navigation as directions.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "Test action-conditioned predictions and their use by a receiver separately. We do not need to train a large video model to test the interface question."
+    },
+    {
+      "id": "moe",
+      "title": "Launch-Bound and Substitutable",
+      "version_date": "28 August 2026 \u00b7 v2",
+      "url": "https://arxiv.org/html/2608.26612v2",
+      "sections": "IV\u2013V",
+      "status": "Preprint",
+      "finding": "In the tested OLMoE quantization setting, restoring original routes explains little of the quality loss. Changing fewer routes is not a reliable quality measure. The causal replay result is model-specific.",
+      "author_direction": "Remove a router-quantization confound in DeepSeek, test expert batching, and judge routing interventions by output quality rather than route-change counts alone.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "Measure routing effects at fixed input signals. Our proposed signal-strength comparison is our hypothesis, not an experiment requested by these authors."
+    },
+    {
+      "id": "arora",
+      "title": "Causal and Interpretable Structures in LLM Compositional Tasks",
+      "version_date": "28 September 2026 \u00b7 v1",
+      "url": "https://arxiv.org/html/2609.35970v1",
+      "sections": "4.2; 5\u20137",
+      "status": "Preprint",
+      "finding": "The authors separate an intermediate relation from a final answer and transplant that relation while preserving the recipient context. An orderly representation can still be causally unused.",
+      "author_direction": "Extend beyond cyclic tasks with three variables, examine mixed concepts and investigate neurons. Sampling becomes expensive as the number of variables grows.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "Intermediate transfer already has direct precedent. A private-information test must explain a specific failure or success beyond demonstrating another connection."
+    },
+    {
+      "id": "stitching",
+      "title": "Revisiting Model Stitching in the Foundation Model Era",
+      "version_date": "2 June 2026 \u00b7 v3",
+      "url": "https://arxiv.org/html/2603.12433v3",
+      "sections": "4.1; 5.2\u20135.4; 6.2",
+      "status": "Accepted at CVPR 2026; arXiv version checked",
+      "finding": "In vision models, training a connector to match receiver features can help. Connecting the receiver to itself is an important comparison. A weaker source does not always help a stronger target.",
+      "author_direction": "Develop task-agnostic hybrid vision backbones and extend the resource-conscious stitch-tree design.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "Compare interface-training recipes with matched capacity, examples and compute. Account for different supervision, and include a receiver self-connection. Vision results motivate this test but do not establish language transfer."
+    },
+    {
+      "id": "mouth",
+      "title": "The Mouth is Not the Brain",
+      "version_date": "31 March 2026 \u00b7 v2",
+      "url": "https://arxiv.org/html/2601.17094v2",
+      "sections": "7.2\u20137.3",
+      "status": "ICLR 2026 World Models workshop paper, per arXiv metadata",
+      "finding": "An energy-based model connects to frozen GPT-2 through a trained adapter to generate product reviews. This models structured attributes, rather than changes through time.",
+      "author_direction": "Test time-series data, more stable alternatives such as variational autoencoders, better evaluation, and other domains and languages.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "Energy-plus-language is already prior work. To claim an energy-model benefit, compare matched alternatives on prediction and downstream use. Our GPT-2 work remains paused."
+    },
+    {
+      "id": "answers",
+      "title": "Cross-Model Stitching Transfers Answers, Not Computation",
+      "version_date": "23 August 2026 \u00b7 V1",
+      "url": "https://zenodo.org/records/22072247",
+      "sections": "6\u20137; 9",
+      "status": "Preprint",
+      "finding": "Task-trained linear connectors in the tested same-family language models mainly transfer first-answer information. This is not a theorem that all model composition must fail.",
+      "author_direction": "Cross-family transfer and whether other stitches can transmit missing computation remain open.",
+      "direction_kind": "Explicit author direction or open limitation",
+      "our_experiment_change": "Hide the later question from the sending organ and connector. A reusable state message could then answer several questions, but this would still show information transfer, not transfer of an algorithm."
+    }
+  ],
+  "decision": "First explain routing sensitivity of the working supplied-answer channel. Later test private-state reuse under a query hidden from the sender. Defer a full world-model comparison until both prediction and receiver competence can be tested.",
+  "model_calls_this_update": 0,
+  "paid_model_calls_this_update": 0,
+  "new_estimated_provider_cost_usd": 0,
+  "limitations": [
+    "All 96 existing cells are exposed development data.",
+    "The next routing study is a fixed sensitivity panel, not a recovered native mechanism or a resolved dose-response curve.",
+    "No new experimental result or publication novelty is established."
+  ]
+}

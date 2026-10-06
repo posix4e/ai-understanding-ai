@@ -1,0 +1,36 @@
+{
+  "status": "PASS_DESIGN_TESTS_ONLY",
+  "scientific_execution_count": 0,
+  "model_calls": 0,
+  "provider_calls": 0,
+  "fits": 0,
+  "tokenizer_calls": 0,
+  "raw_scientific_arrays_read": 0,
+  "tests": 15,
+  "test_result": "PASS",
+  "test_output_chunk": "5a49aa",
+  "test_elapsed_seconds": 0.079,
+  "test_runtime_python": "3.14.8",
+  "command": "python3 -B -m unittest discover -s research/moe-mechanisms/organ_route_strength_v1 -p 'test_*.py' -v",
+  "source_sha256": {
+    "research/moe-mechanisms/organ_route_strength_v1/protocol.py": "d996e2807e68f6349a31728c9a1f4af012af61f437d24c604dca935eab0745f7",
+    "research/moe-mechanisms/organ_route_strength_v1/metrics.py": "1d11383ef4c24f4ce9e693f7c4baaad73861bfe9233ad218703427afade0669b",
+    "research/moe-mechanisms/organ_route_strength_v1/test_protocol.py": "aad14ebc9911565f9c428a3992020d45dc517a3f16bbbf874a997b32cadbc93e",
+    "research/moe-mechanisms/organ_route_strength_v1/test_metrics.py": "68af159208ce4a4e3a1f6342b2ba24e832285e8dda179e663fa2e4eb03560e01",
+    "research/moe-mechanisms/organ_route_strength_v1/README.md": "285369905bca22e990204929c4af4a68324722d38a424263c23181f3c1065426"
+  },
+  "plan_sha256": "57b3321da5f11c9da2a5a2095fda693b2098477f4cc29b8283ea674255e58f6e",
+  "source_plan_sha256": {
+    "outputs/moe-mechanisms/ORGAN_ROUTE_CENSUS_V1/plan.json": "133c644bae49d7e0cf30704e5be5f05797ceff022b5763ef358f95335cdfe701",
+    "outputs/moe-mechanisms/ORGAN_TAIL_ATTRIBUTION_V1/plan.json": "b03e873cf4aadc83198e6d1a88aff6370b0caf970eac0dab852318dcedcbbdfa"
+  },
+  "counts": {
+    "cells": 96,
+    "suffixes": 768,
+    "native": 288,
+    "self_shams": 288,
+    "fixed_B_routes": 192
+  },
+  "scope": "Arithmetic and invented complete/malformed schedules only. The generated design uses only existing hash-bound census/tail JSON metadata; no collection, registration, raw-tensor verification or resource preflight occurred.",
+  "runner_implemented": false
+}
