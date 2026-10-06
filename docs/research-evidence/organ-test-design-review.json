@@ -1,0 +1,523 @@
+{
+  "status": "MATHEMATICAL_DESIGN_REVIEW_NO_NEW_MODEL_EXPERIMENT",
+  "at_utc": "2026-10-06T08:26:02.378425+00:00",
+  "plain_language": "We rejected the proposed grammar test because simple answer-score changes can reproduce its desired behavior. A split-information four-case design excludes specific simpler explanations, but has not been run on a model and does not establish novelty.",
+  "decision": "Do not launch the proposed grammar-accuracy test as evidence of semantic organ composition. Do not replace it with a sign-reversed-margin claim. No new empirical experiment is registered.",
+  "grammar_counterexample": {
+    "variables": {
+      "N": "Binary organ-supplied grammatical number,0 singular/1 plural. This is the actual admitted message content, not an evaluator answer fed to the writer.",
+      "R": "Carrier grammatical role,head or attractor.",
+      "H": "Number of the other noun: host-only head when R=attractor, distractor when R=head.",
+      "C": "Original visible number of the carrier before replacement. Independent of desired imported N.",
+      "Y": "Desired verb number after intervention: N when R=head, H when R=attractor.",
+      "M": "A frozen two-code message M(N), byte-identical for the same N across all contexts/roles. Any probability confidence, organ identity or timing side channel is excluded from this narrow model.",
+      "writer": "One frozen role-blind numeric function of M only; it must not receive R,H,C,recipient output scores,answer labels or a role-dependent scale.",
+      "receiver": "Frozen nonlinear language host with recipient context, the fixed insertion operation and M. Its output is not information-theoretically constrained to be a semantic number computation."
+    },
+    "counterexample": {
+      "baseline_margin": "L0=(2C-1)/2 when R=head; L0=2(2H-1) when R=attractor.",
+      "injected_effect": "L=L0+beta(2N-1), with the same beta in every role/context. beta=1 is an exact example.",
+      "all_valid_beta": "1/2 < beta < 2 gives16/16 strict desired choices. At either endpoint some cases tie; ties are retained.",
+      "causal_swaps": "Changing N flips all head-role choices and none of the attractor choices, exactly as the proposed high-level semantic interchange predicts.",
+      "meaning": "No role-aware external writer or organ reasoning is needed. Context-dependent native confidence gates an unconditional output vote. This is a mathematical alternative, not a finding about Granite.",
+      "correction_to_prior_memo": "The earlier statement that a blind verb-vote writer necessarily predicts the wrong attractor effect was too strong. It applies to an external-only decision, not a vote combined with native context scores. The earlier frozen memo is preserved unchanged."
+    },
+    "exact_checks": {
+      "cell_count": 16,
+      "ceilings": {
+        "external_N_only": "3/4",
+        "host_without_N": "3/4",
+        "role_or_patch_address_only": "1/2",
+        "original_carrier_number_only": "1/2"
+      },
+      "external_decision_correct": 12,
+      "native_only_correct": 12,
+      "unconditional_vote_plus_host_correct": 16,
+      "strict_vote_scale_open_interval": {
+        "lower": "1/2",
+        "upper": "2",
+        "endpoints_have_ties": true
+      },
+      "directed_N_swap_counts": {
+        "head": {
+          "changed": 8,
+          "unchanged": 0
+        },
+        "attractor": {
+          "changed": 0,
+          "unchanged": 8
+        }
+      },
+      "answer_matched_donor_control": {
+        "donor_Y": [
+          0,
+          0
+        ],
+        "receiver_Y": [
+          0,
+          1
+        ],
+        "global_vote_also_passes": true
+      },
+      "cells": [
+        {
+          "N": 0,
+          "H": 0,
+          "C": 0,
+          "R": "head",
+          "Y": 0,
+          "native_margin": "-1/2",
+          "N_only_vote": "-1",
+          "combined_margin": "-3/2",
+          "combined_choice": 0
+        },
+        {
+          "N": 0,
+          "H": 0,
+          "C": 0,
+          "R": "attractor",
+          "Y": 0,
+          "native_margin": "-2",
+          "N_only_vote": "-1",
+          "combined_margin": "-3",
+          "combined_choice": 0
+        },
+        {
+          "N": 0,
+          "H": 0,
+          "C": 1,
+          "R": "head",
+          "Y": 0,
+          "native_margin": "1/2",
+          "N_only_vote": "-1",
+          "combined_margin": "-1/2",
+          "combined_choice": 0
+        },
+        {
+          "N": 0,
+          "H": 0,
+          "C": 1,
+          "R": "attractor",
+          "Y": 0,
+          "native_margin": "-2",
+          "N_only_vote": "-1",
+          "combined_margin": "-3",
+          "combined_choice": 0
+        },
+        {
+          "N": 0,
+          "H": 1,
+          "C": 0,
+          "R": "head",
+          "Y": 0,
+          "native_margin": "-1/2",
+          "N_only_vote": "-1",
+          "combined_margin": "-3/2",
+          "combined_choice": 0
+        },
+        {
+          "N": 0,
+          "H": 1,
+          "C": 0,
+          "R": "attractor",
+          "Y": 1,
+          "native_margin": "2",
+          "N_only_vote": "-1",
+          "combined_margin": "1",
+          "combined_choice": 1
+        },
+        {
+          "N": 0,
+          "H": 1,
+          "C": 1,
+          "R": "head",
+          "Y": 0,
+          "native_margin": "1/2",
+          "N_only_vote": "-1",
+          "combined_margin": "-1/2",
+          "combined_choice": 0
+        },
+        {
+          "N": 0,
+          "H": 1,
+          "C": 1,
+          "R": "attractor",
+          "Y": 1,
+          "native_margin": "2",
+          "N_only_vote": "-1",
+          "combined_margin": "1",
+          "combined_choice": 1
+        },
+        {
+          "N": 1,
+          "H": 0,
+          "C": 0,
+          "R": "head",
+          "Y": 1,
+          "native_margin": "-1/2",
+          "N_only_vote": "1",
+          "combined_margin": "1/2",
+          "combined_choice": 1
+        },
+        {
+          "N": 1,
+          "H": 0,
+          "C": 0,
+          "R": "attractor",
+          "Y": 0,
+          "native_margin": "-2",
+          "N_only_vote": "1",
+          "combined_margin": "-1",
+          "combined_choice": 0
+        },
+        {
+          "N": 1,
+          "H": 0,
+          "C": 1,
+          "R": "head",
+          "Y": 1,
+          "native_margin": "1/2",
+          "N_only_vote": "1",
+          "combined_margin": "3/2",
+          "combined_choice": 1
+        },
+        {
+          "N": 1,
+          "H": 0,
+          "C": 1,
+          "R": "attractor",
+          "Y": 0,
+          "native_margin": "-2",
+          "N_only_vote": "1",
+          "combined_margin": "-1",
+          "combined_choice": 0
+        },
+        {
+          "N": 1,
+          "H": 1,
+          "C": 0,
+          "R": "head",
+          "Y": 1,
+          "native_margin": "-1/2",
+          "N_only_vote": "1",
+          "combined_margin": "1/2",
+          "combined_choice": 1
+        },
+        {
+          "N": 1,
+          "H": 1,
+          "C": 0,
+          "R": "attractor",
+          "Y": 1,
+          "native_margin": "2",
+          "N_only_vote": "1",
+          "combined_margin": "3",
+          "combined_choice": 1
+        },
+        {
+          "N": 1,
+          "H": 1,
+          "C": 1,
+          "R": "head",
+          "Y": 1,
+          "native_margin": "1/2",
+          "N_only_vote": "1",
+          "combined_margin": "3/2",
+          "combined_choice": 1
+        },
+        {
+          "N": 1,
+          "H": 1,
+          "C": 1,
+          "R": "attractor",
+          "Y": 1,
+          "native_margin": "2",
+          "N_only_vote": "1",
+          "combined_margin": "3",
+          "combined_choice": 1
+        }
+      ]
+    }
+  },
+  "normalization_and_four_cell_bounds": {
+    "conclusion": "A paired effect with opposite signs across contexts rejects a context-independent additive final-logit vote, but can arise from fixed residual displacement through RMS normalization alone. Full balanced XOR/equality correctness is stronger: it rejects every separable final-score model and its positive-scalar-normalized, zero-differential-bias linear-readout extension. Neither result identifies semantic computation against an unrestricted nonlinear or context-aware codec.",
+    "fixed_output_pair": {
+      "definition": "Use the same physical two output tokens A and B in every cell, with m_NQ=logit(A)-logit(B). Let label1 mean A and label0 mean B everywhere. Do not reverse margin orientation according to the target.",
+      "paired_contrast": "Delta_Q=m_1Q-m_0Q. For equality Y=1[N=Q], all-four strict correctness requires Delta_0<0 and Delta_1>0.",
+      "necessary_not_sufficient": "Opposite paired-effect signs are necessary for all-four equality choices but do not establish them. The zero-bias RMS example has exactly those signs, unchanged decisions, and only2/4 equality choices.",
+      "invalid_substitutes": "Target-oriented margins, a target-versus-best-other maximum, changing candidate pairs, or evaluator answer-code remapping can manufacture sign changes/nonlinearity. They do not test this fixed-output-pair statement."
+    },
+    "balanced_factorial_and_exact_bounds": {
+      "cells": [
+        {
+          "N": 0,
+          "Q": 0,
+          "Y": 1
+        },
+        {
+          "N": 0,
+          "Q": 1,
+          "Y": 0
+        },
+        {
+          "N": 1,
+          "Q": 0,
+          "Y": 0
+        },
+        {
+          "N": 1,
+          "Q": 1,
+          "Y": 1
+        }
+      ],
+      "weights": "Each of the four N x Q cells has weight1/4, with exact ties incorrect/unresolved and no fallback. XOR is the same statement with the two fixed labels exchanged.",
+      "single_party": "For each fixed N, and for each fixed Q, exactly one cell has each label. A decision using only N or only Q is correct at most2/4; independent stochastic choices also have expected accuracy1/2.",
+      "separable_null": "m_NQ=a(N)+b(Q)+c, allowing arbitrary two-level functions a and b and a constant c.",
+      "proof": "m00+m11=m01+m10. Four strict equality decisions require the left sum>0 and right sum<0, a contradiction. Ties do not count as successes. The ceiling is exactly3/4, attained by m=N+Q-3/2 (only00 wrong).",
+      "counting_scope": "This is a complete, deterministic four-cell mathematical census, not a finite-sample significance claim. Repetitions, multiple nuisance families or noisy empirical observations require their own fixed aggregation and numerical rules."
+    },
+    "zero_bias_rms_extension": {
+      "architecture": "v_NQ=h_Q+d_N; fixed RMSNorm(v)=gamma elementwise-multiplied by v / sqrt(mean(v^2)+epsilon), with finite positive denominator; followed by fixed linear two-logit readout with zero differential bias.",
+      "absorb_gamma": "Let wtilde=(w_A-w_B) elementwise-multiplied by fixed learned gamma. Then m_NQ=wtilde dot(h_Q+d_N)/r_NQ. Gamma may vary by coordinate and is absorbed into the fixed readout.",
+      "categorical_proof": "Since r_NQ>0, sign(m_NQ)=sign(wtilde dot h_Q+wtilde dot d_N). Therefore full equality/XOR strict accuracy remains at most3/4 in exact arithmetic. Positive scalar normalization can change effect magnitudes and differences, not these zero-threshold signs.",
+      "scope": "Only this isolated residual-addition/normalization/readout model is bounded. The actual pretrained suffix may contain other nonlinear computations. A common bias on both logits cancels; a nonzero differential bias does not.",
+      "paired_effect_counterexample": {
+        "h_Q": "(1-2Q,0)",
+        "d_0": "(0,0)",
+        "d_1": "(0,1)",
+        "readout": "(1,0), zero bias, gamma=(1,1), epsilon=0",
+        "Q0": "m00=sqrt(2), m10=1, Delta0=1-sqrt(2)<0",
+        "Q1": "m01=-sqrt(2), m11=-1, Delta1=sqrt(2)-1>0",
+        "meaning": "The message has the same fixed residual displacement in both contexts. Only the positive RMS denominator changes; no choice changes. Thus paired-margin sign reversal alone cannot exclude a fixed residual code passing through normalization."
+      }
+    },
+    "fixed_bias_counterexample_outside_the_bound": {
+      "architecture": "h_Q=(1,Q); d_N=(0,N-1); fixed gamma=(1,1); fixed readout difference w=(-1,0); differential head bias5/4. Thus m=5/4-1/sqrt((1+(N+Q-1)^2)/2+epsilon).",
+      "epsilon_zero": "On00 and11, m=1/4>0. On01 and10, m=5/4-sqrt(2)<0, since25/16<2. This gives4/4 equality choices with fixed residual messages and a fixed biased readout.",
+      "nondegenerate_range": "For every0<=epsilon<7/50, diagonal signs remain positive and off-diagonal signs negative. At epsilon=7/50, off-diagonal cells tie and strict4/4 fails.",
+      "mechanism": "Multiplying the positive denominator yields w dot v + bias*r(v); the bias introduces a context/message-dependent threshold in the numerator. This lies outside the separable final-score and zero-differential-bias extensions.",
+      "empirical_limit": "No assertion is made that this head bias or these coordinates occur in any actual model; the example demonstrates a necessary restriction on the mathematical claim."
+    },
+    "other_caveats": [
+      "A fixed additive shift in the normalization layer can likewise create an effective differential readout bias. It must be included in the architecture contract.",
+      "Context-dependent readout directions, coordinatewise gains, or a nonlinear host suffix can invalidate the additive numerator restriction. A positive scalar multiplying an otherwise zero-bias margin still preserves its sign and is not by itself an escape from the bound.",
+      "Finite-precision residual additions, dot products and normalization can introduce context/message-dependent errors or ties. Applying the exact theorem to BF16 or another implementation requires a prospectively justified arithmetic contract and margins robust to that error. No tolerance can be chosen after outcomes to rescue the claim.",
+      "Even with fixed gamma and zero bias, normalized margins need not satisfy the additive parallelogram identity. The unnormalized numerator does; do not mistake normalized interaction or sign-reversed paired effects for a demonstrated semantic operation.",
+      "If the message was previously context-conditioned, contains extra confidence/family information, or is applied at context-dependent positions or doses, the two-factor additive null was not tested. Source allowlists and actual same-message bytes are necessary for that claim.",
+      "Q must be genuine recipient context with a fixed output interpretation. Putting the required operation into a context-specific evaluator mapping instead can make the desired XOR a bookkeeping effect."
+    ],
+    "identification_and_next_action": {
+      "what_full4of4_excludes": "N-only decision, Q-only decision, separable final-score decisions, and the stated fixed-residual plus zero-differential-bias RMS/linear readout class, under their exact assumptions.",
+      "what_it_does_not_exclude": "An arbitrary joint lookup, learned task/output codec, biased-normalization construction, nonlinear decoding of a one-bit message, or any policy-equivalent implementation. Any nonconstant two-code representation is invertibly related to N; the finite census does not identify a unique semantic algorithm.",
+      "recommendation": "Keep the rejection of the original grammar-accuracy identification claim. If a later question is selected, preregister a narrow competing implementation class and controls that actually distinguish it. Do not turn this algebra into another easier-task success campaign or claim the broad organ goal achieved.",
+      "novelty": "Elementary exact algebra and local counterexamples, not a new theorem or literature novelty claim.",
+      "competence": "No pretrained task competence, grammatical rebinding, internal causal variable or energy-specific advantage is established."
+    }
+  },
+  "reference_computations": {
+    "first_script": "identifiability_reference.py",
+    "second_script": "sign_reversal_reference.py",
+    "second_exact_output": {
+      "cells": [
+        {
+          "N": 0,
+          "Q": 0,
+          "Y": 1
+        },
+        {
+          "N": 0,
+          "Q": 1,
+          "Y": 0
+        },
+        {
+          "N": 1,
+          "Q": 0,
+          "Y": 0
+        },
+        {
+          "N": 1,
+          "Q": 1,
+          "Y": 1
+        }
+      ],
+      "single_party_accuracy_ceiling": "1/2",
+      "arbitrary_additive_output_accuracy_ceiling": "3/4",
+      "ceiling_attained_by_margins": [
+        "-3/2",
+        "-1/2",
+        "-1/2",
+        "1/2"
+      ],
+      "zero_bias_rms_paired_change_sign": {
+        "0": -1,
+        "1": 1
+      },
+      "zero_bias_rms_expression": {
+        "Q0": "1-sqrt(2)",
+        "Q1": "sqrt(2)-1"
+      },
+      "zero_bias_rms_decisions_change": false,
+      "zero_bias_rms_equality_correct": 2,
+      "fixed_bias_rms_xnor": [
+        {
+          "N": 0,
+          "Q": 0,
+          "Y": 1,
+          "hidden": [
+            "1",
+            "-1"
+          ],
+          "mean_square": "1",
+          "margin": "1/4",
+          "strict_sign": 1
+        },
+        {
+          "N": 0,
+          "Q": 1,
+          "Y": 0,
+          "hidden": [
+            "1",
+            "0"
+          ],
+          "mean_square": "1/2",
+          "margin": "5/4-sqrt(2)",
+          "strict_sign": -1
+        },
+        {
+          "N": 1,
+          "Q": 0,
+          "Y": 0,
+          "hidden": [
+            "1",
+            "0"
+          ],
+          "mean_square": "1/2",
+          "margin": "5/4-sqrt(2)",
+          "strict_sign": -1
+        },
+        {
+          "N": 1,
+          "Q": 1,
+          "Y": 1,
+          "hidden": [
+            "1",
+            "1"
+          ],
+          "mean_square": "1",
+          "margin": "1/4",
+          "strict_sign": 1
+        }
+      ],
+      "fixed_bias_example_epsilon_range": "0 <= epsilon < 7/50",
+      "fixed_bias_example_at_epsilon_upper_boundary": "off-diagonal ties; not4/4"
+    },
+    "bundle": "organ-test-design-math.zip",
+    "method": "Standard-library Fraction arithmetic plus exact sign arguments. No empirical training or evaluation data."
+  },
+  "existing_host_evidence": "The existing is/are template passed96/96 pairs in two processes. That does not establish an external number interface or ability on the prospective XOR/equality task. Its noun role and position are confounded. All previous closed studies remain closed.",
+  "primary_literature": [
+    {
+      "title": "CausalGym: Benchmarking Causal Interpretability Methods on Linguistic Tasks",
+      "url": "https://arxiv.org/html/2402.12560v1",
+      "relevance": "Direct precedent for grammatical-number interchange; generic grammar interventions are not a new contribution."
+    },
+    {
+      "key": "Thomas2026",
+      "title": "Cross-Model Stitching Transfers Answers, Not Computation",
+      "author": "Rohan Thomas",
+      "date": "2026-08-23",
+      "url": "https://zenodo.org/records/22072247",
+      "doi": "10.5281/zenodo.22072247",
+      "primary_access": "Parent-retrieved primary PDF and extracted text; relevant main-text sections read directly.",
+      "sections": [
+        "3-5",
+        "6.1-6.5",
+        "7.1-7.2",
+        "8.1-8.3",
+        "9",
+        "A.6"
+      ],
+      "reported_evidence": "Task-supervised, mostly single-position stitches connect three same-family model pairs. First-token transfer often exceeds full-answer transfer. Answer-subspace erasure reduces transfer more than matched-rank random erasure. Increasing map capacity does not resolve the tested multi-token failures; sequence supervision helps. Donor probes and transfer covary, but the paper itself notes cases where a linear probe underestimates extraction.",
+      "author_claim_not_adopted_as_theorem": "The author calls donor answer presence necessary for transfer and interprets the experiments as answer transport rather than transferred computation.",
+      "author_stated_next_steps": "Section 9 asks whether any stitch can transfer computation and whether the proposed law extends across model families. These are questions, not demonstrated impossibility results."
+    },
+    {
+      "key": "AroraEtAl2026",
+      "title": "Causal and Interpretable Structures in LLM Compositional Tasks",
+      "date": "2026-09-28",
+      "version": "arXiv:2609.35970v1",
+      "url": "https://arxiv.org/html/2609.35970v1",
+      "metadata_url": "https://arxiv.org/abs/2609.35970v1",
+      "primary_access": "Versioned primary HTML, relevant full-text sections and equations; submission date verified on primary abstract page.",
+      "sections": [
+        "2.2",
+        "4.1-4.2",
+        "5",
+        "6 equations 14-16",
+        "7 Discussion and Limitations"
+      ],
+      "reported_evidence": "Functional ANOVA separates pairwise relation and three-way answer terms for cyclic problems D=C+B-A. Section 6 substitutes a relation component from another domain within the same model; it restores ablation losses and supports shifted-answer steering. The receiver retains other prompt positions and may recompute. Analysis chiefly uses top-three performance; top-one results are also reported.",
+      "author_stated_next_steps": "Section 7 proposes extending beyond three variables from one cyclic concept to different, potentially non-cyclic concepts; it also suggests interaction decomposition as a starting point for neuron-level analysis. Exponential ensemble growth is an explicit limitation.",
+      "not_demonstrated_in_this_paper": "A separately trained heterogeneous donor connected through a frozen cross-model interface with a recipient-only operand."
+    }
+  ],
+  "our_inference_from_literature": "Intermediate reuse and complementary-model computation have precedents. A private organ relationship and receiver-only operand would sharpen the information barrier, but that conjunction alone does not establish novelty. Failed probes are not proofs of absent information; donor-only answer decodability need not bound a recipient with additional private information.",
+  "next_scientific_requirement": "Select a concrete competing computation and a prospective test that separates it. Freeze message access, output meanings, numerical assumptions and controls before empirical work. Native ability for the prospective operation must be established without rescuing old failed formulations. A new donor type or successful four-case demonstration is insufficient to complete the broader research goal.",
+  "limits": [
+    "Mathematical counterexamples, not observations of the pretrained model.",
+    "Elementary algebra and known XOR bounds; no novel theorem claimed.",
+    "An arbitrary nonlinear or lookup implementation can pass the four-case task.",
+    "No energy-model advantage, planning, new-world transfer, unique reasoning mechanism or publishable novelty established.",
+    "Independent code reviews are within this project, not an external replication."
+  ],
+  "new_work_scope": {
+    "model_calls": 0,
+    "tokenizer_calls": 0,
+    "provider_calls": 0,
+    "fits": 0,
+    "study_array_reads": 0,
+    "old_confirmation_access": 0,
+    "empirical_registration": false
+  },
+  "budget": {
+    "new_model_spending_usd": 0,
+    "inclusive_fees_and_reserves_usd": "7.6774551949",
+    "cap_usd": "20",
+    "remaining_unallocated_usd": "12.3225448051",
+    "existing_reserves_released": false
+  },
+  "sources": [
+    {
+      "source_path": "work/organ-partial-state-v1/IDENTIFIABILITY_REVIEW.json",
+      "source_sha256": "8660de8e20b8c08a99c523dfd08165bcbe6b1ca2d66dd770afffbf55eb7e5157"
+    },
+    {
+      "source_path": "work/organ-partial-state-v1/SIGN_REVERSAL_ADDENDUM.json",
+      "source_sha256": "48d0c8754f41acc9ac9101bc58b395c2bc864bca654d6d939c88981f2b85ccda"
+    },
+    {
+      "source_path": "work/organ-partial-state-v1/EXISTING_GRAMMAR_ASSESSMENT.json",
+      "source_sha256": "2ecc93c7640afccde448f2bd6bdd69834452b6dc7da2f90147e33b66f4ab8a4a"
+    },
+    {
+      "source_path": "work/organ-partial-state-v1/PRIOR_ART_ASSESSMENT.json",
+      "source_sha256": "b134c0b82f4120e10591713c4e785b22ad0c310ef2e6261dfdc7fa5072fbf909"
+    },
+    {
+      "source_path": "work/organ-partial-state-v1/SUPPLEMENTAL_PRIMARY_REVIEW.json",
+      "source_sha256": "e5bc56e69af09634f113360158ef8ef4a6d4794eda7e362d38ca79ae6df485a3"
+    },
+    {
+      "source_path": "work/organ-partial-state-v1/PARENT_MATH_CHECK.json",
+      "source_sha256": "2137f9627bd3bedb46652d45f8cdbf9c4b5373b98ec52c1f8611d2f7e84e04fa"
+    },
+    {
+      "source_path": "work/organ-partial-state-v1/identifiability_reference.py",
+      "source_sha256": "93464c9357f400c7728e36ceadbde9cfda1ad68ecf495286a321c5c0e9dbad74"
+    },
+    {
+      "source_path": "work/organ-partial-state-v1/sign_reversal_reference.py",
+      "source_sha256": "ceedc950c330447749a592872919b3b432a787787852eb1020dfc912c3155945"
+    }
+  ]
+}

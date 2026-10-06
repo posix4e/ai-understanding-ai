@@ -1,6 +1,6 @@
 {
-  "at_utc": "2026-10-06T07:57:14.795459+00:00",
-  "scope": "Selected summary records, explicitly labeled derived metadata, and a frozen source/plan bundle for a research-in-progress companion; not full raw evidence or a public registration.",
+  "at_utc": "2026-10-06T08:26:02.378425+00:00",
+  "scope": "Selected summary records, derived metadata, a frozen source/plan bundle and runnable mathematical examples for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
       "file": "granite-generalization-summary.json",
@@ -439,8 +439,8 @@
           "url": "https://arxiv.org/html/2601.17094v2",
           "version_date": "2026-03-31",
           "sections": [
-            "3.1\u20133.3",
-            "7.2\u20137.3"
+            "3.1–3.3",
+            "7.2–7.3"
           ],
           "independently_read_at_utc": "2026-10-05T14:23:22.343278+00:00"
         }
@@ -1313,6 +1313,64 @@
         }
       ],
       "transformation": "ZIP of27 exactly copied frozen Python sources and the locally registered plan. Raw data/weights are not included."
+    },
+    {
+      "file": "organ-test-design-review.json",
+      "copy_type": "derived_design_review",
+      "sha256": "6a61b12d6807921b12f54a2c54656d31e0adab1be4012caa717947f2e5ea050d",
+      "bytes": 24808,
+      "sources": [
+        {
+          "source_path": "work/organ-partial-state-v1/IDENTIFIABILITY_REVIEW.json",
+          "source_sha256": "8660de8e20b8c08a99c523dfd08165bcbe6b1ca2d66dd770afffbf55eb7e5157"
+        },
+        {
+          "source_path": "work/organ-partial-state-v1/SIGN_REVERSAL_ADDENDUM.json",
+          "source_sha256": "48d0c8754f41acc9ac9101bc58b395c2bc864bca654d6d939c88981f2b85ccda"
+        },
+        {
+          "source_path": "work/organ-partial-state-v1/EXISTING_GRAMMAR_ASSESSMENT.json",
+          "source_sha256": "2ecc93c7640afccde448f2bd6bdd69834452b6dc7da2f90147e33b66f4ab8a4a"
+        },
+        {
+          "source_path": "work/organ-partial-state-v1/PRIOR_ART_ASSESSMENT.json",
+          "source_sha256": "b134c0b82f4120e10591713c4e785b22ad0c310ef2e6261dfdc7fa5072fbf909"
+        },
+        {
+          "source_path": "work/organ-partial-state-v1/SUPPLEMENTAL_PRIMARY_REVIEW.json",
+          "source_sha256": "e5bc56e69af09634f113360158ef8ef4a6d4794eda7e362d38ca79ae6df485a3"
+        },
+        {
+          "source_path": "work/organ-partial-state-v1/PARENT_MATH_CHECK.json",
+          "source_sha256": "2137f9627bd3bedb46652d45f8cdbf9c4b5373b98ec52c1f8611d2f7e84e04fa"
+        },
+        {
+          "source_path": "work/organ-partial-state-v1/identifiability_reference.py",
+          "source_sha256": "93464c9357f400c7728e36ceadbde9cfda1ad68ecf495286a321c5c0e9dbad74"
+        },
+        {
+          "source_path": "work/organ-partial-state-v1/sign_reversal_reference.py",
+          "source_sha256": "ceedc950c330447749a592872919b3b432a787787852eb1020dfc912c3155945"
+        }
+      ],
+      "transformation": "Selected source assessments and exact mathematical census; not new model evidence."
+    },
+    {
+      "file": "organ-test-design-math.zip",
+      "copy_type": "mathematical_reference_bundle",
+      "sha256": "e5f45a8d1d2e4dc8db5447bd3c89168fe3fa1e4a174d7266c2244c9bab43e315",
+      "bytes": 4774,
+      "sources": [
+        {
+          "source_path": "work/organ-partial-state-v1/identifiability_reference.py",
+          "source_sha256": "93464c9357f400c7728e36ceadbde9cfda1ad68ecf495286a321c5c0e9dbad74"
+        },
+        {
+          "source_path": "work/organ-partial-state-v1/sign_reversal_reference.py",
+          "source_sha256": "ceedc950c330447749a592872919b3b432a787787852eb1020dfc912c3155945"
+        }
+      ],
+      "transformation": "Two copied standard-library Python sources, expected JSON outputs and run instructions. No primary paper copies, model weights or empirical data."
     }
   ],
   "absolute_local_path_redactions": 0,
