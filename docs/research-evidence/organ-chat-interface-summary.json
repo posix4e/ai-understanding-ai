@@ -1,0 +1,737 @@
+{
+  "copy_type": "derived_public_summary",
+  "study_id": "ORGAN_CHAT_INTERFACE_V1",
+  "status": "CHAT_INTERFACE_COMPLETE",
+  "implementation_audit": "PASS",
+  "outcome_exposed_control": true,
+  "behavioral_success": false,
+  "behavioral_requirement": {
+    "primary_correct": 16,
+    "same_accepted_repeats": 4,
+    "full_raw_exactness_required": false
+  },
+  "primary": {
+    "n": 16,
+    "correct": 6,
+    "wrong": 7,
+    "unresolved": 3
+  },
+  "per_carrier": {
+    "lamp": {
+      "n": 4,
+      "correct": 2,
+      "wrong": 1,
+      "unresolved": 1,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 1,
+          "wrong": 1,
+          "unresolved": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 1,
+          "wrong": 0,
+          "unresolved": 1
+        }
+      },
+      "quartet_complete_correct": false
+    },
+    "light": {
+      "n": 4,
+      "correct": 2,
+      "wrong": 2,
+      "unresolved": 0,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 1,
+          "wrong": 1,
+          "unresolved": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 1,
+          "wrong": 1,
+          "unresolved": 0
+        }
+      },
+      "quartet_complete_correct": false
+    },
+    "sign": {
+      "n": 4,
+      "correct": 2,
+      "wrong": 2,
+      "unresolved": 0,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 1,
+          "wrong": 1,
+          "unresolved": 0
+        },
+        "invert": {
+          "n": 2,
+          "correct": 1,
+          "wrong": 1,
+          "unresolved": 0
+        }
+      },
+      "quartet_complete_correct": false
+    },
+    "indicator": {
+      "n": 4,
+      "correct": 0,
+      "wrong": 2,
+      "unresolved": 2,
+      "operations": {
+        "copy": {
+          "n": 2,
+          "correct": 0,
+          "wrong": 1,
+          "unresolved": 1
+        },
+        "invert": {
+          "n": 2,
+          "correct": 0,
+          "wrong": 1,
+          "unresolved": 1
+        }
+      },
+      "quartet_complete_correct": false
+    }
+  },
+  "operations": {
+    "copy": {
+      "n": 8,
+      "correct": 3,
+      "wrong": 4,
+      "unresolved": 1
+    },
+    "invert": {
+      "n": 8,
+      "correct": 3,
+      "wrong": 3,
+      "unresolved": 2
+    }
+  },
+  "paired_closed_measures": {
+    "native_candidate": {
+      "correct": {
+        "n": 7,
+        "correct": 0,
+        "wrong": 6,
+        "unresolved": 1
+      },
+      "wrong": {
+        "n": 9,
+        "correct": 6,
+        "wrong": 1,
+        "unresolved": 2
+      }
+    },
+    "bounded_continuation": {
+      "correct": {
+        "n": 0,
+        "correct": 0,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "wrong": {
+        "n": 8,
+        "correct": 3,
+        "wrong": 4,
+        "unresolved": 1
+      },
+      "unresolved": {
+        "n": 8,
+        "correct": 3,
+        "wrong": 3,
+        "unresolved": 2
+      }
+    }
+  },
+  "complete_correct_quartets": 0,
+  "repeats": {
+    "n": 4,
+    "same_accepted_states": 3,
+    "full_raw_exact_matches": 4,
+    "full_path_exact_matches": 4,
+    "rows": [
+      {
+        "id": "n16",
+        "repeat_of": "n00",
+        "full_raw_exact": true,
+        "full_path_exact": true,
+        "same_accepted_state": true
+      },
+      {
+        "id": "n17",
+        "repeat_of": "n05",
+        "full_raw_exact": true,
+        "full_path_exact": true,
+        "same_accepted_state": true
+      },
+      {
+        "id": "n18",
+        "repeat_of": "n10",
+        "full_raw_exact": true,
+        "full_path_exact": true,
+        "same_accepted_state": true
+      },
+      {
+        "id": "n19",
+        "repeat_of": "n15",
+        "full_raw_exact": true,
+        "full_path_exact": true,
+        "same_accepted_state": false
+      }
+    ]
+  },
+  "repeat_answer_consistency_pass": false,
+  "repeat_raw_stability_pass": true,
+  "repeat_text_path_pass": true,
+  "all_20_paths": [
+    {
+      "index": 0,
+      "id": "n00",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "lamp",
+      "a": 0,
+      "b": 0,
+      "target": "off",
+      "parsed_state": "off",
+      "outcome": "correct",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 1,
+      "id": "n01",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "lamp",
+      "a": 0,
+      "b": 1,
+      "target": "on",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_tie",
+      "generated_ids": [],
+      "decoded_text": "",
+      "parser_text": "",
+      "stop_reason": "tie",
+      "forward_count": 1
+    },
+    {
+      "index": 2,
+      "id": "n02",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "lamp",
+      "a": 1,
+      "b": 0,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 3,
+      "id": "n03",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "lamp",
+      "a": 1,
+      "b": 1,
+      "target": "off",
+      "parsed_state": "off",
+      "outcome": "correct",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 4,
+      "id": "n04",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "light",
+      "a": 0,
+      "b": 0,
+      "target": "off",
+      "parsed_state": "off",
+      "outcome": "correct",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 5,
+      "id": "n05",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "light",
+      "a": 0,
+      "b": 1,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 6,
+      "id": "n06",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "light",
+      "a": 1,
+      "b": 0,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 7,
+      "id": "n07",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "light",
+      "a": 1,
+      "b": 1,
+      "target": "off",
+      "parsed_state": "off",
+      "outcome": "correct",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 8,
+      "id": "n08",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "sign",
+      "a": 0,
+      "b": 0,
+      "target": "off",
+      "parsed_state": "off",
+      "outcome": "correct",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 9,
+      "id": "n09",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "sign",
+      "a": 0,
+      "b": 1,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 10,
+      "id": "n10",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "sign",
+      "a": 1,
+      "b": 0,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 11,
+      "id": "n11",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "sign",
+      "a": 1,
+      "b": 1,
+      "target": "off",
+      "parsed_state": "off",
+      "outcome": "correct",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 12,
+      "id": "n12",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "indicator",
+      "a": 0,
+      "b": 0,
+      "target": "off",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_tie",
+      "generated_ids": [
+        1719
+      ],
+      "decoded_text": "off",
+      "parser_text": "off",
+      "stop_reason": "tie",
+      "forward_count": 2
+    },
+    {
+      "index": 13,
+      "id": "n13",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "indicator",
+      "a": 0,
+      "b": 1,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 14,
+      "id": "n14",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "indicator",
+      "a": 1,
+      "b": 0,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 15,
+      "id": "n15",
+      "phase": "primary",
+      "repeat_of": null,
+      "carrier": "indicator",
+      "a": 1,
+      "b": 1,
+      "target": "off",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_format",
+      "generated_ids": [
+        1719,
+        32,
+        0
+      ],
+      "decoded_text": "off.<|end_of_text|>",
+      "parser_text": "off.",
+      "stop_reason": "eos",
+      "forward_count": 3
+    },
+    {
+      "index": 16,
+      "id": "n16",
+      "phase": "repeat",
+      "repeat_of": "n00",
+      "carrier": "lamp",
+      "a": 0,
+      "b": 0,
+      "target": "off",
+      "parsed_state": "off",
+      "outcome": "correct",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 17,
+      "id": "n17",
+      "phase": "repeat",
+      "repeat_of": "n05",
+      "carrier": "light",
+      "a": 0,
+      "b": 1,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 18,
+      "id": "n18",
+      "phase": "repeat",
+      "repeat_of": "n10",
+      "carrier": "sign",
+      "a": 1,
+      "b": 0,
+      "target": "on",
+      "parsed_state": "off",
+      "outcome": "wrong",
+      "parser_reason": "accepted",
+      "generated_ids": [
+        1719,
+        0
+      ],
+      "decoded_text": "off<|end_of_text|>",
+      "parser_text": "off",
+      "stop_reason": "eos",
+      "forward_count": 2
+    },
+    {
+      "index": 19,
+      "id": "n19",
+      "phase": "repeat",
+      "repeat_of": "n15",
+      "carrier": "indicator",
+      "a": 1,
+      "b": 1,
+      "target": "off",
+      "parsed_state": null,
+      "outcome": "unresolved",
+      "parser_reason": "unresolved_format",
+      "generated_ids": [
+        1719,
+        32,
+        0
+      ],
+      "decoded_text": "off.<|end_of_text|>",
+      "parser_text": "off.",
+      "stop_reason": "eos",
+      "forward_count": 3
+    }
+  ],
+  "stop_reasons": {
+    "eos": 14,
+    "tie": 2,
+    "cap": 0
+  },
+  "parser_reasons": {
+    "accepted": 13,
+    "unresolved_format": 1,
+    "unresolved_tie": 2,
+    "unresolved_cap": 0
+  },
+  "original_native_gate_pass": false,
+  "old_diagnostic_closed": true,
+  "original_primary": {
+    "n": 16,
+    "correct": 7,
+    "ties": 0
+  },
+  "original_continuation": {
+    "n": 16,
+    "correct": 0,
+    "wrong": 8,
+    "unresolved": 8
+  },
+  "interface_package": {
+    "system_text": "Knowledge Cutoff Date: April 2024.\nToday's Date: October 06, 2026.\nYou are Granite, developed by IBM. You are a helpful AI assistant.",
+    "instruction_prefix": "Complete the final sentence in the passage below. Reply with exactly one lowercase word, on or off, and no punctuation or explanation.\n\n",
+    "user_content": "instruction_prefix + byte-exact original case.input_text",
+    "render": "Pinned AutoTokenizer.apply_chat_template with explicit system/user messages, add_generation_prompt=True, tokenize=True, controls=[]; no tools/documents, manual extra BOS/EOS or assistant prefill."
+  },
+  "decoding": {
+    "policy": "unique full-vocabulary greedy",
+    "eos_id": 0,
+    "max_generated_tokens_per_path": 16,
+    "max_total_forwards": 320,
+    "max_per_path_forwards": 16,
+    "cache": false,
+    "batch_size": 1,
+    "logits_to_keep": 1,
+    "tie": "Retain raw row and entire exact-max set, emit no selected token, mark path unresolved; no index fallback.",
+    "stop": "Actual emitted EOS0, exact top-score tie, or16-token cap only. Do not stop at word/punctuation/newline. EOS counts toward cap.",
+    "text": "Decode all generated IDs with skip_special_tokens=False; remove only an actual terminal EOS0 ID for parsing."
+  },
+  "parser": {
+    "require_eos": true,
+    "strip_characters": [
+      32,
+      9,
+      13,
+      10
+    ],
+    "body_values": [
+      "on",
+      "off"
+    ],
+    "matching": "Remove actual terminal EOS only, strip only outer ASCII space/tab/CR/LF, then require entire string exactly lowercase on or off. Remove no punctuation, internal whitespace, explanation or other special token.",
+    "status": "Accepted wrong state is wrong. Tie/cap/noEOS/nonmatching entire suffix is unresolved. All16 remain denominator.",
+    "prospective_whitespace_reason": "Outer CR/LF does not change a one-word state answer; allowance fixed before any chat tokenization or output."
+  },
+  "physical_counts": {
+    "model_load_attempts": 1,
+    "model_load_finished": 1,
+    "paths_started": 20,
+    "paths_finished": 20,
+    "forward_attempts": 41,
+    "forward_finished": 41,
+    "calls_saved": 41,
+    "generated_tokens": 39,
+    "new_tokens_selected": 39,
+    "hooks": 0,
+    "fits": 0,
+    "backwards": 0,
+    "optimizer_steps": 0,
+    "provider_calls": 0
+  },
+  "elapsed_seconds": 30.29150962497806,
+  "limits": [
+    "All 16 same semantic cases and four fixed repeats are retained, including wrong and unresolved outcomes. These are exposed finite cases, not a population reliability estimate.",
+    "This single interface was fixed after the two earlier outcomes were known. Both original closed results and their original rules remain unchanged.",
+    "The role delimiters, fixed system/date context, completion instruction and answer boundary change together. This cannot identify an isolated formatting cause.",
+    "Only EOS-terminated exact lowercase on/off answers, after allowed outer ASCII whitespace, are accepted. Other text is unresolved under this fixed convention.",
+    "Parsed-answer repeat consistency determines behavioral success; token/text and full raw-score repetition are separately descriptive, as fixed before this collection.",
+    "No organ, private-input composition, hidden-answer interpretation, internal mechanism, general competence, calibration, energy advantage, untouched confirmation or novelty is established. No automatic transfer is approved."
+  ],
+  "fresh_native_paths": 20,
+  "old_logits_reused": false,
+  "new_raw_returns_included": 41,
+  "frozen_source_count": 6,
+  "source_sha256": {
+    "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/REGISTRATION.json": "f479826e887fdc97d02effcfabf39ed9997469b458a0b2b1d53b9ad620969ebb",
+    "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/plan.json": "514d3f774407aea8fa3db484d2e98de66cf7ad7abc6faa60fff2a8c8280d97e1",
+    "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/COLLECTED.json": "42c6fef1bae2f2c7edc24c9b9514caf5ba4e0c655ec1c6f1891daf3335718dce",
+    "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/COMPLETE.json": "53d873fde6a369dcb44d553d77d533ec28cdd4b958d0e337e36295dc091bb6bf",
+    "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/REPORT.json": "376ac08441ee46fa4464e37eeeea91f0cb6036b5fddfe553adce826c065ea3cd",
+    "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/INDEPENDENT_AUDIT.json": "eff30583a92c2a0d852334713b77ff9c611e1b36709039a88ff7aa9b34666e6a",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/plan.json": "d6fd759810e08bd1ead92681de4d2884e26d849280600488c179144cba5bc3a0",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COMPLETE.json": "6f85f676f3a3eaa862f2e5ba0954c8193061c0cb873e1903b51c8e37f3bb9d9c",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REPORT.json": "94f4c5020488071f16728a06a817d269719bee2969c4b11b8ced8bff14c87495",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/INDEPENDENT_AUDIT.json": "2262d0ea2459c949ba140cd0d094af27defa0360704ba8952b8984a6f3fbc8ee",
+    "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COLLECTED.json": "38e23b6a6b1ce2ffafd6f3336a5516e5c4eea55b9831b65edce6736ceae0dcfa",
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/plan.json": "8150a619a799b8bdba87f18ee251545f0ead5b2a9a82b7c9e5cee8919661706b",
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COMPLETE.json": "73a5efa86c9ea37640b9288115b513460400242b984b9bd6fe6af175e36eb29b",
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/REPORT.json": "94190161b83f6d2a8122055a9f3d03f0b92b889d678d1ee147360e80eaf39c57",
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/INDEPENDENT_AUDIT.json": "7b4dcbc94d669e12c6112ffa7f67eea6e513d31c2bd6096ec20783064fa366ac",
+    "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COLLECTED.json": "d0ceff5e1056745387bc30dea35ecbbd137957fe0c827569519821330195cd41",
+    "work/organ-chat-interface-v1/ROOT_DECISION.json": "295bd60d61b1673caeb7ebbcccb0011ad39fed35e3af3e439b0c12f255f703de",
+    "work/organ-readout-diagnosis-v1/CHAT_INTERFACE_SOURCE_NOTE.json": "4d113d429afafb703dbf4a9b9bbaebdbdcd2f20ae7142719bc60f4dd4e1823e4",
+    "work/organ-chat-interface-v1/tokenizer-v1/STARTED.json": "dc713bac1fb6123eb7252ce7f80e74b798095922f10c0246211c10bee0147d94",
+    "work/organ-chat-interface-v1/tokenizer-v1/TOKENS.json": "72efd349055b0b67621045652f0431f529040132a37a02a3a0883d014fea0a40",
+    "work/organ-chat-interface-v1/tokenizer-v1/COMPLETE.json": "3f887f8790a1347cfd0324e279f17bd96d26d26ab92c471c2375c4dfa334d226",
+    "work/organ-chat-interface-v1/SOURCE_REVIEW.json": "06ef4972464ce89add4268f6a7d741945a807140fca767250a474b03764a0d59",
+    "work/organ-chat-interface-v1/PREPARATION_TESTS.json": "64cb79af7c9a0a9b3c67be3c647f31358cb429174a325b487c4e013d11747a3b"
+  },
+  "reading_bundle": {
+    "file": "organ-chat-interface-sources.zip",
+    "model_weights_included": false,
+    "old_raw_arrays_duplicated": false,
+    "self_contained_reproduction": false
+  },
+  "automatic_transfer": false,
+  "novelty_established": false,
+  "scientific_confirmation": false
+}

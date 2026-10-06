@@ -26,7 +26,7 @@
         <p class="eyebrow">Research in progress <span aria-hidden="true">/</span> <time datetime="2026-10-06">6 October 2026 · UTC</time></p>
         <h1 id="page-title">Can we add a different kind of AI “organ”?</h1>
         <p class="hero-deck">A language model handles words. Could a separate internal module supply rules for how a world changes? We want to test what each part contributes.</p>
-        <p class="scope-line">Letting the model finish did not fix the latest test: 8 answers were clearly wrong and 8 remained unresolved under the fixed reading rule. <a href="#organ-readout-diagnosis">See the same-prompt continuation check.</a> The earlier 7 / 16 on/off comparison remains unchanged. No organ splice was attempted in either check. The earlier connection still kept all 96 supplied answers when we restored its old expert routes; <a href="#organ-route-cross">that result remains below.</a> These checks do not establish independent reasoning modules or novelty. Earlier failures and stopped runs remain recorded. This draft is not peer reviewed. GPT-2 work is paused.</p>
+        <p class="scope-line">The model’s standard chat format did not make the small on/off task reliable: 6 answers were correct, 7 wrong and 3 unresolved. Every accepted answer was “off”. <a href="#organ-chat-interface">See the chat-format check.</a> The earlier one-token and continuation results remain unchanged. No organ splice was attempted in these checks. The earlier connection still kept all 96 supplied answers when we restored its old expert routes; <a href="#organ-route-cross">that result remains below.</a> These checks do not establish independent reasoning modules or novelty. Earlier failures and stopped runs remain recorded. This draft is not peer reviewed. GPT-2 work is paused.</p>
         <a class="text-link" href="./index.html">Read the original study and paper <span aria-hidden="true">↗</span></a>
         <p class="status"><span class="status-dot" aria-hidden="true"></span>Dated snapshot · Not peer reviewed</p>
       </div>
@@ -35,7 +35,7 @@
         <div class="figure-heading"><p class="eyebrow">Two separate studies</p><span class="figure-number" aria-hidden="true">01</span></div>
         <h2 id="two-studies-title">Inside one model.<br> Between different models.</h2>
         <div class="result-lines">
-          <div><div><h3>Inside Granite: longer answers did not fix the test</h3><p>The same 16 prompts produced 8 wrong and 8 unresolved answers under the fixed reading rule. All eight “keep the same state” answers named the opposite state. The original 7 / 16 comparison remains unchanged.</p></div></div>
+          <div><div><h3>Inside Granite: chat format still failed the small task</h3><p>The same 16 situations gave 6 correct, 7 wrong and 3 unresolved answers. All 13 answers that met the required format were “off”. All four repeats reproduced the full output exactly.</p></div></div>
           <div><div><h3>Cloudflare: final audit stopped</h3><p>The run to test choices between complete models stopped. It has no final scientific grade.</p></div></div>
         </div>
       </aside>
@@ -65,6 +65,7 @@
             <tr><th scope="row">Host alone: copy and add one</th><td>Completed; requirement failed</td><td>Copying passed 192 / 192. Adding one passed 147 / 192, below the fixed 192 / 192 requirement. No organ or connector ran.</td></tr>
             <tr><th scope="row">Host alone: unchanged or opposite state</th><td>Completed; prerequisite failed</td><td>7 / 16 correct on/off preferences, no ties, and 4 / 4 exact repeats. No organ or connector ran; this fixed interface closes before a splice.</td></tr>
             <tr><th scope="row">Continue the same on/off prompts</th><td>Completed; no clear, correct answer</td><td>8 wrong and 8 unresolved under the fixed rule. All eight keep-same answers named the opposite state. All four repeat texts matched; three full-score traces matched exactly.</td></tr>
+            <tr><th scope="row">Use the official chat format</th><td>Completed; requirement failed</td><td>6 correct, 7 wrong and 3 unresolved. All 13 accepted answers were “off”. All four full-score repeat traces matched exactly.</td></tr>
           <tr><th scope="row">Replace the module with unseen rules</th><td>Not run</td><td>This would test whether a fixed host and connector can use a new module.</td></tr>
           </tbody>
         </table>
@@ -178,6 +179,24 @@
         <p>Both edited versions kept all 96 answers, with smaller average score leads. All 192 no-change replay comparisons had identical full output scores. The six-condition check used 576 host evaluations in about 152 seconds, with no new fit, training update, generated answer or paid call.</p>
         <aside class="plain-note"><strong>This does not show two independent modules.</strong>The host blocks still ran, including normalization and the final readout. Replaying updates made with the organ signal is not an independent way to compute its answer. These controlled combinations show two ways to preserve the ranking here; they do not establish planning, new-world transfer, an energy-model advantage or novelty. The 96 reused cases are not independent population trials.</aside>
         <p class="source-line"><a href="./research-evidence/organ-tail-attribution-summary.json">Completed result, exact controls and limits</a> · <a href="./research-evidence/organ-tail-attribution-sources.zip">Source reading bundle</a> (27 pinned Python files and the plan; not a self-contained reproduction).</p>
+        <h3 id="organ-chat-interface">The fixed chat interface did not pass this small check.</h3>
+        <p>After the two earlier results, we tested the same 16 on/off situations using the frozen model's official chat format. We added one fixed system message and an instruction to finish the passage with exactly “on” or “off”. All 20 paths, including four repeats, started fresh; no earlier output scores were reused.</p>
+        <table class="followup-table">
+          <caption>One fixed chat-interface check. Correct, wrong and unresolved answers all remain in the denominator.</caption>
+          <thead><tr><th scope="col">Object</th><th scope="col">Correct</th><th scope="col">Wrong</th><th scope="col">Unresolved</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Lamp</th><td>2 / 4</td><td>1 / 4</td><td>1 / 4</td></tr>
+            <tr><th scope="row">Light</th><td>2 / 4</td><td>2 / 4</td><td>0 / 4</td></tr>
+            <tr><th scope="row">Sign</th><td>2 / 4</td><td>2 / 4</td><td>0 / 4</td></tr>
+            <tr><th scope="row">Indicator</th><td>0 / 4</td><td>2 / 4</td><td>2 / 4</td></tr>
+          </tbody>
+        </table>
+        <p>The result was <strong>6 / 16 correct</strong>, 7 wrong and 3 unresolved. We always chose the highest-scoring next token, stopping on an end-of-answer token, a tie or the fixed 16-token limit. The reading rule accepted only a complete lowercase “on” or “off” answer followed by the model's end token; outer whitespace was allowed.</p>
+        <p><strong>All 13 accepted answers were “off”.</strong> Two other paths stopped on tied top scores, and one ended with “off.”, which did not meet the fixed one-word rule. No answer met the rule with “on”. The accepted answers did not distinguish the two states.</p>
+        <p>All four repeats reproduced the same text, stopping point and every raw input and output score. Three pairs had accepted answers; the fourth repeated “off.” and remained unresolved. Thus the check failed its fixed requirement of 16 correct answers and four consistent accepted repeats. This was not a repeatability failure.</p>
+        <p>This used 41 fresh model evaluations, with no organ, connector, training or paid call. The evidence audit passed. Neither earlier result changes: the one-token prerequisite scored 7 / 16, and its bounded continuation had zero correct, eight wrong and eight unresolved answers.</p>
+        <p><strong>This tests a combined interface change.</strong> Chat roles, the system message, the completion instruction and the answer starting point changed together. The comparison cannot show which change caused any difference. It was designed after the earlier outcomes were known; it establishes no internal mechanism, novelty or general reliability, and does not automatically approve an organ experiment.</p>
+        <p class="source-line"><a href="./research-evidence/organ-chat-interface-summary.json">All answers, counts and limits</a> · <a href="./research-evidence/organ-chat-interface-sources.zip">Source and raw-trace reading bundle</a> (no model weights).</p>
         <h3 id="organ-readout-diagnosis">What happened when the same prompts continued?</h3>
         <p>The earlier on/off comparison scored 7 / 16. Its most likely first words were “turned” or “switched”, so we ran a separate check after seeing that result. We kept every full prompt unchanged and continued all 16 cases plus the four fixed repeats, always choosing the highest-scoring next word. We started from the saved first word.</p>
         <table class="followup-table">
@@ -195,7 +214,7 @@
         <p><strong>Every “keep the same state” answer named the opposite state.</strong> This happened in all eight such questions. For example, when the lamp started off and stayed the same, the model wrote “turned on.” In the eight change-state questions, five paths stopped because the highest word scores tied. The other three wrote “switched back to the original state.” Our fixed rule required an explicit on/off answer, so those three remain unresolved.</p>
         <p><strong>The original prerequisite remains failed.</strong> This follow-up was designed after its outcome was known. Letting the answer continue did not recover a clear, correct answer in this check. This does not show what the model could do with other wording or another answer rule. Each new token adds computation and context, so this check also cannot tell us what the first hidden state contained. We have not identified an internal cause or shown a novel organ result.</p>
         <p class="source-line"><a href="./research-evidence/organ-readout-diagnosis-summary.json">All continuations, counts and limits</a> · <a href="./research-evidence/organ-readout-diagnosis-sources.zip">Source and raw-trace reading bundle</a> (no model weights).</p>
-        <p><strong>Next control:</strong> test one fixed version of <a href="https://github.com/ibm-granite/granite-3.1-language-models#inference">IBM’s documented chat format</a> with the same model and the same 16 questions. This would test whether presentation matters. It would not by itself explain the internal cause. No such test has run yet.</p>
+        <p>The follow-up using <a href="https://github.com/ibm-granite/granite-3.1-language-models#inference">IBM’s documented chat format</a> is now complete and reported above. That combined interface change also failed to make these cases reliable.</p>
         <h3 id="organ-private-native">The host did not pass the small on/off prerequisite.</h3>
         <p>Before giving the host a state through an internal channel, we checked whether the frozen host alone could use an explicit state and a later instruction. Four words—lamp, light, sign and indicator—each appeared in all four on/off × unchanged/opposite situations. We compared the next-word scores for “on” and “off”.</p>
         <table class="followup-table">
@@ -510,10 +529,11 @@
     <section class="evidence-section wrap" id="evidence" aria-labelledby="evidence-title">
       <div class="evidence-heading">
         <div><p class="eyebrow">08 / Check the evidence</p><h2 id="evidence-title">Selected summary records.</h2></div>
-        <p>These JSON files contain selected summaries and source references. Derived summaries are labeled. Reading bundles include their listed reports and audits. The native on/off bundle includes all 20 raw returns. The continuation bundle includes those 20 saved first returns and all 57 new returns. Model weights and stopped partial answers are not included. Separate code checks are part of this project, not an external replication. <a href="./research-evidence/manifest.json">Copy manifest</a>.</p>
+        <p>These JSON files contain selected summaries and source references. Derived summaries are labeled. Reading bundles include their listed reports and audits. The native on/off bundle includes all 20 raw returns. The continuation bundle includes those 20 saved first returns and all 57 new returns. The chat-format bundle includes all 41 fresh returns plus the earlier reports. Model weights and stopped partial answers are not included. Separate code checks are part of this project, not an external replication. <a href="./research-evidence/manifest.json">Copy manifest</a>.</p>
       </div>
       <div class="evidence-grid">
         <div class="evidence-group"><h3>The organ direction</h3><ul>
+          <li><a href="./research-evidence/organ-chat-interface-summary.json">Does the standard chat format help?<span>6 correct, 7 wrong and 3 unresolved; all accepted answers were “off”</span></a></li>
           <li><a href="./research-evidence/organ-readout-diagnosis-summary.json">What happened when the model continued?<span>8 wrong and 8 unresolved answers; every keep-same answer named the opposite state</span></a></li>
           <li><a href="./research-evidence/organ-private-native-summary.json">Native on/off prerequisite<span>7 / 16 correct, no ties and four exact repeats; no organ splice attempted</span></a></li>
           <li><a href="./research-evidence/organ-route-cross-summary.json">Are changed expert routes needed?<span>Old routes kept all 96 answers; changed routes raised relative scores on average, after a disclosed audit correction</span></a></li>

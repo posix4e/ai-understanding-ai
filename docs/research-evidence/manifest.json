@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T11:02:01.408009+00:00",
+  "at_utc": "2026-10-06T11:30:21.722942+00:00",
   "scope": "Selected summary records, derived metadata, a frozen source/plan bundle and runnable mathematical examples for a research-in-progress companion; not full raw evidence or a public registration.",
   "files": [
     {
@@ -1967,6 +1967,208 @@
         }
       ],
       "transformation": "Frozen diagnostic source/decisions/reviews, original raw first rows, every new raw trace and full terminal evidence; opaque byte copies, no weights."
+    },
+    {
+      "file": "organ-chat-interface-summary.json",
+      "copy_type": "derived_public_summary",
+      "sha256": "ac3b8b4fb988bb768f601992377569bcb42d7f09ae2648b6a9fcd2cdc8d4e7c8",
+      "bytes": 20444,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/REGISTRATION.json",
+          "source_sha256": "f479826e887fdc97d02effcfabf39ed9997469b458a0b2b1d53b9ad620969ebb"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/plan.json",
+          "source_sha256": "514d3f774407aea8fa3db484d2e98de66cf7ad7abc6faa60fff2a8c8280d97e1"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/COLLECTED.json",
+          "source_sha256": "42c6fef1bae2f2c7edc24c9b9514caf5ba4e0c655ec1c6f1891daf3335718dce"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/COMPLETE.json",
+          "source_sha256": "53d873fde6a369dcb44d553d77d533ec28cdd4b958d0e337e36295dc091bb6bf"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/REPORT.json",
+          "source_sha256": "376ac08441ee46fa4464e37eeeea91f0cb6036b5fddfe553adce826c065ea3cd"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "eff30583a92c2a0d852334713b77ff9c611e1b36709039a88ff7aa9b34666e6a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/plan.json",
+          "source_sha256": "d6fd759810e08bd1ead92681de4d2884e26d849280600488c179144cba5bc3a0"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COMPLETE.json",
+          "source_sha256": "6f85f676f3a3eaa862f2e5ba0954c8193061c0cb873e1903b51c8e37f3bb9d9c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REPORT.json",
+          "source_sha256": "94f4c5020488071f16728a06a817d269719bee2969c4b11b8ced8bff14c87495"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "2262d0ea2459c949ba140cd0d094af27defa0360704ba8952b8984a6f3fbc8ee"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COLLECTED.json",
+          "source_sha256": "38e23b6a6b1ce2ffafd6f3336a5516e5c4eea55b9831b65edce6736ceae0dcfa"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/plan.json",
+          "source_sha256": "8150a619a799b8bdba87f18ee251545f0ead5b2a9a82b7c9e5cee8919661706b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COMPLETE.json",
+          "source_sha256": "73a5efa86c9ea37640b9288115b513460400242b984b9bd6fe6af175e36eb29b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/REPORT.json",
+          "source_sha256": "94190161b83f6d2a8122055a9f3d03f0b92b889d678d1ee147360e80eaf39c57"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "7b4dcbc94d669e12c6112ffa7f67eea6e513d31c2bd6096ec20783064fa366ac"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COLLECTED.json",
+          "source_sha256": "d0ceff5e1056745387bc30dea35ecbbd137957fe0c827569519821330195cd41"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/ROOT_DECISION.json",
+          "source_sha256": "295bd60d61b1673caeb7ebbcccb0011ad39fed35e3af3e439b0c12f255f703de"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/CHAT_INTERFACE_SOURCE_NOTE.json",
+          "source_sha256": "4d113d429afafb703dbf4a9b9bbaebdbdcd2f20ae7142719bc60f4dd4e1823e4"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/tokenizer-v1/STARTED.json",
+          "source_sha256": "dc713bac1fb6123eb7252ce7f80e74b798095922f10c0246211c10bee0147d94"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/tokenizer-v1/TOKENS.json",
+          "source_sha256": "72efd349055b0b67621045652f0431f529040132a37a02a3a0883d014fea0a40"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/tokenizer-v1/COMPLETE.json",
+          "source_sha256": "3f887f8790a1347cfd0324e279f17bd96d26d26ab92c471c2375c4dfa334d226"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/SOURCE_REVIEW.json",
+          "source_sha256": "06ef4972464ce89add4268f6a7d741945a807140fca767250a474b03764a0d59"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/PREPARATION_TESTS.json",
+          "source_sha256": "64cb79af7c9a0a9b3c67be3c647f31358cb429174a325b487c4e013d11747a3b"
+        }
+      ],
+      "transformation": "Complete audited official-chat interface control; both original closed measures preserved, no regrading."
+    },
+    {
+      "file": "organ-chat-interface-sources.zip",
+      "copy_type": "frozen_source_and_record_bundle",
+      "sha256": "d19a808be9a87353ed75fd674ed585c8ec7b7760a84503177a28bf5cda206111",
+      "bytes": 6657315,
+      "sources": [
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/REGISTRATION.json",
+          "source_sha256": "f479826e887fdc97d02effcfabf39ed9997469b458a0b2b1d53b9ad620969ebb"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/plan.json",
+          "source_sha256": "514d3f774407aea8fa3db484d2e98de66cf7ad7abc6faa60fff2a8c8280d97e1"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/COLLECTED.json",
+          "source_sha256": "42c6fef1bae2f2c7edc24c9b9514caf5ba4e0c655ec1c6f1891daf3335718dce"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/COMPLETE.json",
+          "source_sha256": "53d873fde6a369dcb44d553d77d533ec28cdd4b958d0e337e36295dc091bb6bf"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/REPORT.json",
+          "source_sha256": "376ac08441ee46fa4464e37eeeea91f0cb6036b5fddfe553adce826c065ea3cd"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_CHAT_INTERFACE_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "eff30583a92c2a0d852334713b77ff9c611e1b36709039a88ff7aa9b34666e6a"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/plan.json",
+          "source_sha256": "d6fd759810e08bd1ead92681de4d2884e26d849280600488c179144cba5bc3a0"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COMPLETE.json",
+          "source_sha256": "6f85f676f3a3eaa862f2e5ba0954c8193061c0cb873e1903b51c8e37f3bb9d9c"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/REPORT.json",
+          "source_sha256": "94f4c5020488071f16728a06a817d269719bee2969c4b11b8ced8bff14c87495"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "2262d0ea2459c949ba140cd0d094af27defa0360704ba8952b8984a6f3fbc8ee"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_PRIVATE_NATIVE_V1/COLLECTED.json",
+          "source_sha256": "38e23b6a6b1ce2ffafd6f3336a5516e5c4eea55b9831b65edce6736ceae0dcfa"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/plan.json",
+          "source_sha256": "8150a619a799b8bdba87f18ee251545f0ead5b2a9a82b7c9e5cee8919661706b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COMPLETE.json",
+          "source_sha256": "73a5efa86c9ea37640b9288115b513460400242b984b9bd6fe6af175e36eb29b"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/REPORT.json",
+          "source_sha256": "94190161b83f6d2a8122055a9f3d03f0b92b889d678d1ee147360e80eaf39c57"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/INDEPENDENT_AUDIT.json",
+          "source_sha256": "7b4dcbc94d669e12c6112ffa7f67eea6e513d31c2bd6096ec20783064fa366ac"
+        },
+        {
+          "source_path": "outputs/moe-mechanisms/ORGAN_READOUT_DIAGNOSIS_V1/COLLECTED.json",
+          "source_sha256": "d0ceff5e1056745387bc30dea35ecbbd137957fe0c827569519821330195cd41"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/ROOT_DECISION.json",
+          "source_sha256": "295bd60d61b1673caeb7ebbcccb0011ad39fed35e3af3e439b0c12f255f703de"
+        },
+        {
+          "source_path": "work/organ-readout-diagnosis-v1/CHAT_INTERFACE_SOURCE_NOTE.json",
+          "source_sha256": "4d113d429afafb703dbf4a9b9bbaebdbdcd2f20ae7142719bc60f4dd4e1823e4"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/tokenizer-v1/STARTED.json",
+          "source_sha256": "dc713bac1fb6123eb7252ce7f80e74b798095922f10c0246211c10bee0147d94"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/tokenizer-v1/TOKENS.json",
+          "source_sha256": "72efd349055b0b67621045652f0431f529040132a37a02a3a0883d014fea0a40"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/tokenizer-v1/COMPLETE.json",
+          "source_sha256": "3f887f8790a1347cfd0324e279f17bd96d26d26ab92c471c2375c4dfa334d226"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/SOURCE_REVIEW.json",
+          "source_sha256": "06ef4972464ce89add4268f6a7d741945a807140fca767250a474b03764a0d59"
+        },
+        {
+          "source_path": "work/organ-chat-interface-v1/PREPARATION_TESTS.json",
+          "source_sha256": "64cb79af7c9a0a9b3c67be3c647f31358cb429174a325b487c4e013d11747a3b"
+        }
+      ],
+      "transformation": "Frozen chat-control source/decision/reviews/tokenizer proof, every new raw trace, full terminal evidence and prior reports; opaque copies, no old raw duplication or weights."
     }
   ],
   "absolute_local_path_redactions": 0,
