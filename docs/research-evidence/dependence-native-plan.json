@@ -1,0 +1,166 @@
+{
+  "after_collection": "An independent auditor may grade only the complete fixed panel after lifecycle and raw-evidence validation. Technical STOP leaves no task grade. A readiness pass would justify designing a later separately reviewed intervention, not performing one automatically.",
+  "closed_history": "The prior Granite fault-scope and component diagnostic results remain closed negatives. This separate subject/interface does not revise them or open old confirmation data.",
+  "document_status": "FIXED_PROSPECTIVE_PLAN_NO_TASK_RESULTS",
+  "engineering_completed": {
+    "elapsed_seconds": 79.717,
+    "no_task_competence_established": true,
+    "prior_mps_stops_preserved": "First attempt stopped before worker dispatch on the file inventory guard; second had one load attempt but no recorded load return or forward, and stopped on stale resource monitoring. Neither MPS attempt passed. A specific hardware cause was not established.",
+    "scope": "Eight loading/no-op software checks only, on archived 77- and 222-token inputs",
+    "status": "Separately audited CPU engineering PASS"
+  },
+  "final_collector_sha256": "e420f68c5db2a74a1a63641884331725a06a11d3cf8a1557ba0a5def47da9363",
+  "final_plan_sha256": "3cacb5d5bd4ffae9dce97c98376600c57e4f9aabd8618f51f8f8b8f918345fd7",
+  "measurement": {
+    "descriptive_only": [
+      "Whether the unique full-vocabulary top token is an allowed answer code",
+      "Full-vocabulary tie set",
+      "Total softmax probability mass assigned to the two code tokens"
+    ],
+    "not_claimed": [
+      "Free-form answer generation or output compliance",
+      "Calibrated posterior beliefs or confidence",
+      "An internal mechanism or successful state transfer",
+      "Novelty or general controller competence"
+    ],
+    "primary": "Strict conditional X/Y native logit ranking with fixed assistant prefill Answer: and fixed one-token completions space+X/space+Y."
+  },
+  "planned_bounds": {
+    "free_disk_floor_gib": 6,
+    "inclusive_deadline_seconds": 14400,
+    "maximum_task_input_tokens": 357,
+    "new_evidence_mib": 512,
+    "process_tree_rss_gib": 8,
+    "scope": "Prospective collection bounds, not proof of capacity; all 472 task inputs were checked by tokenization only."
+  },
+  "planned_panel": {
+    "exposure": "The complete panel is development readiness evidence, not an untouched confirmation set. Forms and repeated calls are not independent scientific trials.",
+    "fixed_repeats": 8,
+    "forms": "Two joint-table row orders \u00d7 two X/Y code-to-option mappings \u00d7 two option display orders. Variables A/B keep their definitions.",
+    "forms_per_problem": 8,
+    "main_calls": 464,
+    "semantic_problems": 58,
+    "tasks": "Choose whether to query; choose after a forced diagnostic result with its cost already paid; read individual failure rates at fixed decision thresholds.",
+    "total_calls": 472
+  },
+  "prepared_utc": "2026-10-06T04:33:56.183066+00:00",
+  "prospective_readiness_all_required": {
+    "complete_58_problem_form_vectors_minimum": 6,
+    "form_vectors_denominator": 8,
+    "overall_correct_minimum": 441,
+    "overall_denominator": 464,
+    "per_problem_correct_minimum": 7,
+    "per_problem_denominator": 8,
+    "repeat_unique_semantic_agreement_required": 8,
+    "retention": "Every fixed case and all eight complete form vectors remain in every relevant denominator. No easy-subset selection or outcome-based threshold/prompt changes.",
+    "tie_rule": "Equal X/Y scores are unresolved and incorrect. Repeats never replace or rescue primary choices."
+  },
+  "publication_scope": "Publish only selected plan facts and approved repository source links. No account information, absolute local paths, model weights, raw prior outputs or scientific answers.",
+  "question": "Two parts can have the same individual failure rates but different dependence. Before any internal-state transfer, can SmolLM3-3B reliably choose diagnostics and actions from supplied joint probabilities, diagnostic rules and costs?",
+  "record_kind": "prospective_plan",
+  "repository_sources": [
+    {
+      "path": "research/moe-mechanisms/dependence_native_v1/PLAN.json",
+      "sha256": "3cacb5d5bd4ffae9dce97c98376600c57e4f9aabd8618f51f8f8b8f918345fd7",
+      "url": "https://github.com/posix4e/ai-understanding-ai/blob/main/research/moe-mechanisms/dependence_native_v1/PLAN.json"
+    },
+    {
+      "path": "research/moe-mechanisms/dependence_native_v1/cases.py",
+      "sha256": "34c04f74bbd2b9a7462ad9f4c5bd71473a141f0be6f302384d74d8725fa7a747",
+      "url": "https://github.com/posix4e/ai-understanding-ai/blob/main/research/moe-mechanisms/dependence_native_v1/cases.py"
+    },
+    {
+      "path": "research/moe-mechanisms/dependence_native_v1/prepare_inputs.py",
+      "sha256": "8b331067b3124a977716ba863fc78c8b049d9d5af8c53c9c4ea7f1e4d340d033",
+      "url": "https://github.com/posix4e/ai-understanding-ai/blob/main/research/moe-mechanisms/dependence_native_v1/prepare_inputs.py"
+    },
+    {
+      "path": "research/moe-mechanisms/dependence_native_v1/run_native.py",
+      "sha256": "e420f68c5db2a74a1a63641884331725a06a11d3cf8a1557ba0a5def47da9363",
+      "url": "https://github.com/posix4e/ai-understanding-ai/blob/main/research/moe-mechanisms/dependence_native_v1/run_native.py"
+    }
+  ],
+  "sources": [
+    {
+      "source_path": "docs/research-evidence/component-diagnostic-summary.json",
+      "source_sha256": "3ebff1cc94b8bdd473b668439091ae580cec9f868b76aa5bc89bfb999adc0c5f"
+    },
+    {
+      "source_path": "research/moe-mechanisms/dependence_native_v1/PLAN.json",
+      "source_sha256": "3cacb5d5bd4ffae9dce97c98376600c57e4f9aabd8618f51f8f8b8f918345fd7"
+    },
+    {
+      "source_path": "research/moe-mechanisms/dependence_native_v1/cases.py",
+      "source_sha256": "34c04f74bbd2b9a7462ad9f4c5bd71473a141f0be6f302384d74d8725fa7a747"
+    },
+    {
+      "source_path": "research/moe-mechanisms/dependence_native_v1/prepare_inputs.py",
+      "source_sha256": "8b331067b3124a977716ba863fc78c8b049d9d5af8c53c9c4ea7f1e4d340d033"
+    },
+    {
+      "source_path": "research/moe-mechanisms/dependence_native_v1/run_native.py",
+      "source_sha256": "e420f68c5db2a74a1a63641884331725a06a11d3cf8a1557ba0a5def47da9363"
+    },
+    {
+      "source_path": "work/dependence-controller-cpu-runtime-admission-v1/COMPLETE.json",
+      "source_sha256": "e448e12d4e114d2208f56848560c145cf36983e66352b11ff943bbf699a4b717"
+    },
+    {
+      "source_path": "work/dependence-controller-runtime-admission-v1/STOPPED.json",
+      "source_sha256": "6d5fdcca0917b5351eaa796f590ca166742753395212f2c5745fbb8188a67d3f"
+    },
+    {
+      "source_path": "work/dependence-controller-runtime-admission-v2/STOPPED.json",
+      "source_sha256": "e8afba73cf71ca006dbdf3ff00353586f75a12a059d5de0b23a1b7719ed5edf2"
+    },
+    {
+      "source_path": "work/dependence-cpu-runtime-independent-review/CPU_TERMINAL_REVIEW.json",
+      "source_sha256": "7edb808bb09c085dd07a56f11208dee918c8ae2a94069d05e92373b847fdae5f"
+    },
+    {
+      "source_path": "work/dependence-cpu-runtime-independent-review/PARENT_TERMINAL_REVIEW.json",
+      "source_sha256": "7ce96ecf800e15c0c8a4e26e53694a5d839f970db83834b0f8c61fc3e5bda298"
+    },
+    {
+      "source_path": "work/dependence-native-panel-inputs/tokenizer-v1/COMPLETE.json",
+      "source_sha256": "6135b413c3270c31d13504216a0442a5ef7a83be9801b00a072f0c56a4c5ed68"
+    },
+    {
+      "source_path": "work/dependence-native-panel-inputs/tokenizer-v1/INPUTS.jsonl",
+      "source_sha256": "4732ee9b6022c39304178c3f65e9e35e63e0a3a066b699ed5ed99a2c8faa1118"
+    },
+    {
+      "source_path": "work/dependence-native-panel-preparation/COLLECTOR_SCHEMA.json",
+      "source_sha256": "588d7d31c449939e8fb36b8f6debf50b2b927e5a9c6d6eb780892bcfedcd5057"
+    },
+    {
+      "source_path": "work/dependence-native-panel-preparation/GUARD_TESTS.json",
+      "source_sha256": "c02029587ba78238240258e449bbbf8f50229ddbf14d6a380789720780ff2a98"
+    },
+    {
+      "source_path": "work/dependence-native-panel-preparation/NATIVE_COMPETENCE_PANEL_OUTLINE.json",
+      "source_sha256": "59af357a81ad88804a752e97d9d44d177e0a334c411df597715006b2ddff54a2"
+    },
+    {
+      "source_path": "work/dependence-native-panel-preparation/PARENT_RULE_DECISION.json",
+      "source_sha256": "b8dd031c7b8f8960fba6f915de76354db57c937bdbeda7ed0fe6b55164746b79"
+    },
+    {
+      "source_path": "work/dependence-native-panel-preparation/SCORE_CONTRACT.json",
+      "source_sha256": "d730df43db53254c53f76e26d30b7cc22b87dc40d9fc58249cf5e824b300b997"
+    },
+    {
+      "source_path": "work/dependence-native-panel-preparation/SOURCE_REVIEW.json",
+      "source_sha256": "fb20e4b3da2273859cd598ed8e5a0b9bc36f36e36230b3631386739c490394fc"
+    }
+  ],
+  "subject": {
+    "execution": "One frozen native CPU BF16 model, eager attention, no KV cache, four CPU threads; no fitting or provider calls.",
+    "model": "HuggingFaceTB/SmolLM3-3B",
+    "revision": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+  },
+  "task_output_status": "At plan freeze and preparation of this prospective public record, no task collection had begun. This describes that fixed-plan time, not a continuously updated run status.",
+  "timing": "Plan fixed before task outputs; publication verified separately.",
+  "title": "Can a language model use how failures relate?",
+  "tokenized_inputs_sha256": "4732ee9b6022c39304178c3f65e9e35e63e0a3a066b699ed5ed99a2c8faa1118"
+}

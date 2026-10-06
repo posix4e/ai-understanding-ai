@@ -1,0 +1,2123 @@
+{
+  "addon_path": "work/dependence-controller-runtime-addons/site-packages",
+  "base_site_packages": "work/acquisition-representation-venv/lib/python3.12/site-packages",
+  "bindings": [
+    {
+      "bytes": 2256,
+      "path": "outputs/routing-research/BUDGET_AFTER_JEV_FEEDBACK_AMENDED_NEGATIVE.json",
+      "sha256": "8ebcaabedb7bd09cfdf63b9ccbe6c6b60cf2d31e9d753d09e9b7ec4d6975ff58"
+    },
+    {
+      "bytes": 12592,
+      "path": "research/moe-mechanisms/dependence_native_v1/cases.py",
+      "sha256": "34c04f74bbd2b9a7462ad9f4c5bd71473a141f0be6f302384d74d8725fa7a747"
+    },
+    {
+      "bytes": 12503,
+      "path": "research/moe-mechanisms/dependence_native_v1/prepare_inputs.py",
+      "sha256": "8b331067b3124a977716ba863fc78c8b049d9d5af8c53c9c4ea7f1e4d340d033"
+    },
+    {
+      "bytes": 39838,
+      "path": "research/moe-mechanisms/dependence_native_v1/run_native.py",
+      "sha256": "e420f68c5db2a74a1a63641884331725a06a11d3cf8a1557ba0a5def47da9363"
+    },
+    {
+      "bytes": 25226,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/numpy/__init__.py",
+      "sha256": "8236a753805db34c29ef9cd03694e0af883b6325eb4fd246cc83d2be0b847e89"
+    },
+    {
+      "bytes": 210,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/safetensors/__init__.py",
+      "sha256": "92c988289b8c225a92f25e487ad5d7a1eb7e326eec0fedfc6b75e6f04d85e32f"
+    },
+    {
+      "bytes": 9663,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/safetensors/__init__.pyi",
+      "sha256": "88467818dfbb7a6e4e2d1c085efb1d07cee365d87350ebe85d1d76f9ced6325d"
+    },
+    {
+      "bytes": 102960,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/torch/__init__.py",
+      "sha256": "2f0deb66d5dff6b9c02a62832c3bf3824c2ee031c462a3afeb9ca170466da5bf"
+    },
+    {
+      "bytes": 6281,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/torch/mps/__init__.py",
+      "sha256": "2fffa2ecc27a2ceb014acdcf6ec3d4058dcf2e809b6cd9c7cfe91d764ef63531"
+    },
+    {
+      "bytes": 126775,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/torch/nn/modules/module.py",
+      "sha256": "0cb24956454199a46e8fc37a7cce4fc1cff52130f25fb6eb052745e9eca89067"
+    },
+    {
+      "bytes": 7197,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/torch/random.py",
+      "sha256": "eb448c131beccaf865b52927bdb620bafccaf765f65912e1f46f7f30cc433ceb"
+    },
+    {
+      "bytes": 46645,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/__init__.py",
+      "sha256": "2f92b5a7b85d2cbce640da83b48c032d1bf6b383963a779a1458c94f2f4ae89d"
+    },
+    {
+      "bytes": 3872,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/dependency_versions_table.py",
+      "sha256": "0d736e22741ee564d0120b694e2088de87ebb315bd9346cb4baf21e710db0ab4"
+    },
+    {
+      "bytes": 7351,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/integrations/accelerate.py",
+      "sha256": "9c443e4cc385697a269ee28ca20af353f2783cd09933e06ce863dd74f19bb96d"
+    },
+    {
+      "bytes": 59975,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/masking_utils.py",
+      "sha256": "5d883a0191406510008219e75b4c9c35ca36a534507286879525a0586f0eb9f8"
+    },
+    {
+      "bytes": 314691,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/modeling_utils.py",
+      "sha256": "fde37eeec1333d2022b9f925907f707503d4199b7946a890adbd170b9c3a307f"
+    },
+    {
+      "bytes": 47212,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py",
+      "sha256": "04c0b61097c533459ecf74ee8b9d730abd4febbbfa4a9f73841fb7ff49c8eee2"
+    },
+    {
+      "bytes": 53343,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py",
+      "sha256": "5ae3551d7ba745e899af5664286e5f3ca2346a415f6390153cc112984f23c6e7"
+    },
+    {
+      "bytes": 96469,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/models/auto/modeling_auto.py",
+      "sha256": "a25d5b7c28aa8f2b79a4334323f8759416b4afb8ad0271a8c87bf3f2360de8d5"
+    },
+    {
+      "bytes": 13350,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/models/smollm3/configuration_smollm3.py",
+      "sha256": "f963e22a0267c2987c7950006050fba861e58cb21e0f3ef0fe512f4e64c8fe5a"
+    },
+    {
+      "bytes": 22491,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/models/smollm3/modeling_smollm3.py",
+      "sha256": "06816c41869a75e66dc78468987c75f64349450c44c980b786a20b22041596ec"
+    },
+    {
+      "bytes": 108460,
+      "path": "work/acquisition-representation-venv/lib/python3.12/site-packages/transformers/utils/import_utils.py",
+      "sha256": "8ce812a2fdc29d51351701e4e1d4f1ecc632af89b9463a46d1bf6ff3b103a64e"
+    },
+    {
+      "bytes": 2210,
+      "path": "work/dependence-controller-acquisition/COMPLETE.json",
+      "sha256": "6cfc04ce0a46a539c27c25769e5dbaf72961f04c36ad0f36fd3550d91596db96"
+    },
+    {
+      "bytes": 1,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/.gitignore",
+      "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/chat_template.jinja.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 101,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/chat_template.jinja.metadata",
+      "sha256": "59c0c08089b348dfee497fa27a4e8faaac2a2ad3e6f67ec4ea85207aaf8547a1"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/config.json.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 100,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/config.json.metadata",
+      "sha256": "af20ffe9a975dd9d8b876b7d6a473cf893b1f2097d9689aa968c95bb9f1f6fe6"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/generation_config.json.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 100,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/generation_config.json.metadata",
+      "sha256": "ab9be4316fc1c2c8e2b382bb81dae25a156750b8313b0f035bd14c6cd564f98a"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model-00001-of-00002.safetensors.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 125,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model-00001-of-00002.safetensors.metadata",
+      "sha256": "bc58dfa5763a044a90df9a6653d6a7e72a20b583436a6e57e4814cc29dafa0da"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model-00002-of-00002.safetensors.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 123,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model-00002-of-00002.safetensors.metadata",
+      "sha256": "2bb7b2302d4f5e1fc1ebb6387d12f61b02951567de4d3eba074804795d7ecc50"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model.safetensors.index.json.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 100,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model.safetensors.index.json.metadata",
+      "sha256": "0fb44032f6afea24345b927c5a644a3c015713cf9b188355cfe5ead7266d372a"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/special_tokens_map.json.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 100,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/special_tokens_map.json.metadata",
+      "sha256": "a6da9b3feca1ff7f7b5c744a9822ece83d43a3483deddf8f400892ef568e3bb4"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/tokenizer.json.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 125,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/tokenizer.json.metadata",
+      "sha256": "ecf4d5e886d36b9f839a8444a3257275440446b3e237c4652d35a97a7a1abb34"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/tokenizer_config.json.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 100,
+      "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/tokenizer_config.json.metadata",
+      "sha256": "f10222de8bb03967f1436fad081593671098ba608fa15ef9fb4b0ee6cfcf52b3"
+    },
+    {
+      "bytes": 5598,
+      "path": "work/dependence-controller-acquisition/model/chat_template.jinja",
+      "sha256": "3e0e275a527f249670056e0078e474eadbdd007c134b4fdfae5a7b3089702814"
+    },
+    {
+      "bytes": 1915,
+      "path": "work/dependence-controller-acquisition/model/config.json",
+      "sha256": "c72b1031274ff4626e434d0019e88e95a767460135db9ee492eb80652b786af1"
+    },
+    {
+      "bytes": 182,
+      "path": "work/dependence-controller-acquisition/model/generation_config.json",
+      "sha256": "3458d62b3f9654f4bbe285223b0f4e5a1e67cae61c92bb6aeaadf04468bf9e01"
+    },
+    {
+      "bytes": 4966315264,
+      "path": "work/dependence-controller-acquisition/model/model-00001-of-00002.safetensors",
+      "sha256": "e5eed4113a925264c33e3cdf76cd9f547c06a207ef2270914a7274a2bf685ffd"
+    },
+    {
+      "bytes": 1183919744,
+      "path": "work/dependence-controller-acquisition/model/model-00002-of-00002.safetensors",
+      "sha256": "6c3ad90646457295723e4da5ee8afac47006e20407b122df5174693dd8d68a43"
+    },
+    {
+      "bytes": 26899,
+      "path": "work/dependence-controller-acquisition/model/model.safetensors.index.json",
+      "sha256": "e3a7254c086c4a78f95ad5864f435d165ffed1ed8998326ce5107b4423c15b76"
+    },
+    {
+      "bytes": 289,
+      "path": "work/dependence-controller-acquisition/model/special_tokens_map.json",
+      "sha256": "12403efb970f069ba62ddf3b66166a27254be4a198166b61ad1ee604bd3a4515"
+    },
+    {
+      "bytes": 17208819,
+      "path": "work/dependence-controller-acquisition/model/tokenizer.json",
+      "sha256": "7b6a500b662a34eb3f0374db856ba4ad7de4c81040571d78dc0d357238930005"
+    },
+    {
+      "bytes": 50387,
+      "path": "work/dependence-controller-acquisition/model/tokenizer_config.json",
+      "sha256": "59a64b39f05ee0acf7479bbccf99a44d9e481c1a4a494eb03838ae3c35eb29be"
+    },
+    {
+      "bytes": 14623,
+      "path": "work/dependence-controller-cpu-runtime-admission-v1/COMPLETE.json",
+      "sha256": "e448e12d4e114d2208f56848560c145cf36983e66352b11ff943bbf699a4b717"
+    },
+    {
+      "bytes": 593,
+      "path": "work/dependence-controller-runtime-addons/INSTALLATION_COMPLETE.json",
+      "sha256": "6df0296c60ef3d6e3bd12ee9fa9cead0b864734bd3b11cdb5f63c4d90ce0b2ea"
+    },
+    {
+      "bytes": 5082,
+      "path": "work/dependence-controller-runtime-addons/WHEEL_BINDING.json",
+      "sha256": "a3db51df1a8f2903d7fa2d9ef4252f7cd94152c9c485df0c183ac8cc5e9590fc"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-runtime-addons/site-packages/.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate-1.10.1.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9"
+    },
+    {
+      "bytes": 19867,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate-1.10.1.dist-info/METADATA",
+      "sha256": "229d2a029a6aa80a61cbde4b0377a30d86e65d6d1b603a7a64d1b25c20529121"
+    },
+    {
+      "bytes": 8908,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate-1.10.1.dist-info/RECORD",
+      "sha256": "14719f21f9c1af8538d91da2d85a31f66bae6d94fa36173a8d324482ab428062"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate-1.10.1.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 91,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate-1.10.1.dist-info/WHEEL",
+      "sha256": "95353a07a7887d8a224094d935cf9fc9a47a0692fa7a14f3537c466319f69fc9"
+    },
+    {
+      "bytes": 180,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate-1.10.1.dist-info/direct_url.json",
+      "sha256": "9c18c6f6e55fbcb1285db62362ec15ff9dc0ef07e5a6c30a886993001f741484"
+    },
+    {
+      "bytes": 296,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate-1.10.1.dist-info/entry_points.txt",
+      "sha256": "569cbc81419f67ed559ccdb6dbd7dbf02a4934b05d307ff0b49f4f43b6ffdad4"
+    },
+    {
+      "bytes": 11357,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate-1.10.1.dist-info/licenses/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "bytes": 11,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate-1.10.1.dist-info/top_level.txt",
+      "sha256": "7ac55f7714e276c8d0f74cec37facfa632c52788a3465c789a72eb1b4f6196de"
+    },
+    {
+      "bytes": 127,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate-1.10.1.dist-info/uv_cache.json",
+      "sha256": "85a62d4147262284aa04e5ac2b04304c06bbfb33f60db4ebf295f9e970989ec4"
+    },
+    {
+      "bytes": 1555,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/__init__.py",
+      "sha256": "68f56baac9b078db4735567649441ef28932a946b400bf8d8c2519b0a5b94b89"
+    },
+    {
+      "bytes": 190652,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/accelerator.py",
+      "sha256": "9005e9a74cd819701578ea9a86e8cd71c16152f0e2308ed1b6f447c0797837f9"
+    },
+    {
+      "bytes": 36891,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/big_modeling.py",
+      "sha256": "ba10386cfa94924e05e2d49efbc2496962db8e3b1c6b048e1c673186b9c3899e"
+    },
+    {
+      "bytes": 13957,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/checkpointing.py",
+      "sha256": "0118bc64d1652d05b6bb3f617760f9fb9ad150da18db32fb0527bc1d0281163b"
+    },
+    {
+      "bytes": 606,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/__init__.py",
+      "sha256": "9b53cf4c34f8ce2200bccd3e1434a020c219ebd2a89e7d76eace8bc2ecc7eaff"
+    },
+    {
+      "bytes": 1972,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/accelerate_cli.py",
+      "sha256": "4a4c0569de99d59b068ed9bb4e25c5abc8def9a92c869ff45b15ffeab192070f"
+    },
+    {
+      "bytes": 1645,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/config/__init__.py",
+      "sha256": "8892bc7608f7a5ce5576bd44ed4b86a05bbe065c9bc972f1603a1383d8179e01"
+    },
+    {
+      "bytes": 39376,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/config/cluster.py",
+      "sha256": "6879642f8a36047de1db0e5108bdc8502287dfb7ef97dbc65b1d35ba9fe5b6f1"
+    },
+    {
+      "bytes": 3035,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/config/config.py",
+      "sha256": "16e46542f3a38004c4b72a8e4ac183f8a12d382bc008e1e3b360be92baed95d9"
+    },
+    {
+      "bytes": 10125,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/config/config_args.py",
+      "sha256": "41f3b3733365c313b6b82c98a53fb71d44edf28df46a4a72633a72bacf0b5bb8"
+    },
+    {
+      "bytes": 3299,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/config/config_utils.py",
+      "sha256": "95b57d88a015485e5b5324031a9cc576e847e4910d62002294fa512cb94212af"
+    },
+    {
+      "bytes": 6213,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/config/default.py",
+      "sha256": "518d1d43bc35a5e06441ef100c29b75c9ad39ec45c9bf1befe17f8e0dccd01b5"
+    },
+    {
+      "bytes": 10636,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/config/sagemaker.py",
+      "sha256": "4912eea7d5eb57f67edb703777c8196e4a9ba270dcb1c3030e66e99b2b42cdb6"
+    },
+    {
+      "bytes": 2395,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/config/update.py",
+      "sha256": "3575b527b1a4507a60ef5425217b26301ff4cfc4bc219a361566b1e4f3b0ae17"
+    },
+    {
+      "bytes": 4336,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/env.py",
+      "sha256": "8111b0b4f84c316999e4d4cc68cae01d768ecc157a4af02d3fbf13bae26f0ba8"
+    },
+    {
+      "bytes": 12585,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/estimate.py",
+      "sha256": "41dbaae31b9d57221e75edfb04c11ed6b3615dffab7d6f8c1d5d8ab70c5d7c40"
+    },
+    {
+      "bytes": 48389,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/launch.py",
+      "sha256": "9dd1ec747b087b623fd76c09b4a7c78eafa5c0f134fddb71a0d8cb5bd17956d3"
+    },
+    {
+      "bytes": 645,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/menu/__init__.py",
+      "sha256": "baa4a504cd13147070cddbf7a774977e9024d65645a788756bb99b05db1c3c7b"
+    },
+    {
+      "bytes": 2028,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/menu/cursor.py",
+      "sha256": "fa59a9255033bcd73473710eb52b8ba0a079f73ab295509b63258b3e7ace9af4"
+    },
+    {
+      "bytes": 1483,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/menu/helpers.py",
+      "sha256": "2ab481e5f2631f831411401027a6d868dd7a01872797d51a943acf0f70d879e8"
+    },
+    {
+      "bytes": 2512,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/menu/input.py",
+      "sha256": "4fc31d77e63f394460a9f0d5f6a661e167fa8664f6d809de36d2738f8240d519"
+    },
+    {
+      "bytes": 4086,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/menu/keymap.py",
+      "sha256": "7978feb2ec98b359b97441e850a37898a00c2dcf035879f084fe86e89494d234"
+    },
+    {
+      "bytes": 4921,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/menu/selection_menu.py",
+      "sha256": "6f1cbe0c768a282e92093a0e94c06fe7fcf431d533ca5120e928a8f4eb95dc63"
+    },
+    {
+      "bytes": 2387,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/merge.py",
+      "sha256": "dd4a35e0b003be4f1127067f8ba908b06c16077525e72f14ab8ee81e40d8a8a5"
+    },
+    {
+      "bytes": 2149,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/test.py",
+      "sha256": "62b3d811a00008e199e9bb67d8c57a35b31211d05470c5800cb6d059a6521ed9"
+    },
+    {
+      "bytes": 5991,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/to_fsdp2.py",
+      "sha256": "81f6e1a144f8a850772d50cc36672412580b1b4c969bc6a3fdaa1fb337a22663"
+    },
+    {
+      "bytes": 5548,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/tpu.py",
+      "sha256": "2b2c433fb22ebde89d66b6d6e2bc76b3c2aede8fe9b48eadcf0aff47b724d28b"
+    },
+    {
+      "bytes": 4150,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/commands/utils.py",
+      "sha256": "693f315027b6a42905208ef267171f6a88448e0040ccc50ced6883e14b9648e6"
+    },
+    {
+      "bytes": 65596,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/data_loader.py",
+      "sha256": "21a3edfdd4bb5b85bdc291a5ef5405729496fb9ca2cf8c9ddf8d2d9598ded8d0"
+    },
+    {
+      "bytes": 33845,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/hooks.py",
+      "sha256": "2353c22f7e9ea25b3b4c1d8eeb4ff29326f3fadcc5d132784841f263a620bd7f"
+    },
+    {
+      "bytes": 7668,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/inference.py",
+      "sha256": "34b00d7735e6e4fc260d66cf624166a11a1048b2efba17ef206df7c5fa5aa53d"
+    },
+    {
+      "bytes": 14176,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/launchers.py",
+      "sha256": "80a07cb07e58c15fa138cf29b5bcc7826d7aef6f57ebceb8bca74b3a5b387946"
+    },
+    {
+      "bytes": 4160,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/local_sgd.py",
+      "sha256": "6828ffcaa5cafc5861651584a735c89205c11111fa7c2dc7cab0b79ec3a3d6e0"
+    },
+    {
+      "bytes": 5042,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/logging.py",
+      "sha256": "e1772063f055ed09ff7a7876b59fbc7cdb6e684ff79fe2ec6096e0c21471fcf2"
+    },
+    {
+      "bytes": 862,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/memory_utils.py",
+      "sha256": "dd1e4ba1e1e5e8681367e20c3eb0d931d6847a159aac674fa8e0eeb216feea98"
+    },
+    {
+      "bytes": 8158,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/optimizer.py",
+      "sha256": "a79a9f08e322f03023bf1e9e102ca9a387a3de9be643f53f6e09ab10029ce216"
+    },
+    {
+      "bytes": 13250,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/parallelism_config.py",
+      "sha256": "3202f88255b85b0f2013144088aaca289eea1390ad8eed78e731dfbdb88a445e"
+    },
+    {
+      "bytes": 4238,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/scheduler.py",
+      "sha256": "75eb3fe0cfd3b755bc80261965b2e56b41870448096375b1d8418140f4f37a26"
+    },
+    {
+      "bytes": 57976,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/state.py",
+      "sha256": "dfa76df4d4205babb1f8c1ce87206d359168f28d551b8851b64f159a4911537a"
+    },
+    {
+      "bytes": 1809,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/__init__.py",
+      "sha256": "44e9776ef06a9ae23ab9e4653d1364342fbcdf26fabbacff145ceb1c9b6af2b3"
+    },
+    {
+      "bytes": 7257,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/examples.py",
+      "sha256": "08edd296492b391523ae8adea0f7c13f07dc3420e51d280d588b7cd62cf6a10f"
+    },
+    {
+      "bytes": 606,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/__init__.py",
+      "sha256": "9b53cf4c34f8ce2200bccd3e1434a020c219ebd2a89e7d76eace8bc2ecc7eaff"
+    },
+    {
+      "bytes": 606,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/external_deps/__init__.py",
+      "sha256": "9b53cf4c34f8ce2200bccd3e1434a020c219ebd2a89e7d76eace8bc2ecc7eaff"
+    },
+    {
+      "bytes": 10699,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/external_deps/test_checkpointing.py",
+      "sha256": "5c768d4669eb0117758b35c58d61a2e548d819ab3ee2fa9ac96e758c01c13c20"
+    },
+    {
+      "bytes": 13790,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/external_deps/test_ds_multiple_model.py",
+      "sha256": "0a0e3e87407851c390e42c578c876bb0f551e5f16c582bf6e03a991a35c4c16f"
+    },
+    {
+      "bytes": 12168,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/external_deps/test_metrics.py",
+      "sha256": "12fd9729a8b09b39e8c4aba3b24000b884860a15bae3a30e8b27f409710f6fd6"
+    },
+    {
+      "bytes": 12498,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/external_deps/test_peak_memory_usage.py",
+      "sha256": "f589fd45ceddfb25abd5f53445a80048f1b997cbeb29e1d561bb980016c0f9f5"
+    },
+    {
+      "bytes": 11749,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/external_deps/test_performance.py",
+      "sha256": "cbbeced98f49a5c0de3f6201853d24d05831add718227ebcccc3c297ba9fa3c8"
+    },
+    {
+      "bytes": 4789,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/external_deps/test_pippy.py",
+      "sha256": "ad81796ea4827bfa5fca5c43bf6ff643b4b698721bf7fe9f1a7b3e21c2e013f1"
+    },
+    {
+      "bytes": 1665,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/external_deps/test_zero3_integration.py",
+      "sha256": "3fd6a504e1d9f4b7eab392e844fedb09b5e5fad9ec36b064bc9646b1e89b05e0"
+    },
+    {
+      "bytes": 1081,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/test_cli.py",
+      "sha256": "fa9efc35326029d793343ab2ad0b8611966a3299f37541cfc96674e45325e442"
+    },
+    {
+      "bytes": 3566,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/test_ddp_comm_hook.py",
+      "sha256": "93ffb63018cb28d74c1887277936ee19df382b4e56a75184417e8351517d501c"
+    },
+    {
+      "bytes": 15137,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/test_distributed_data_loop.py",
+      "sha256": "454593c1dec3229af67e5ec9b4a3acbd38cc8898a84f13bc15d4abd8bc3fe6e2"
+    },
+    {
+      "bytes": 5982,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/test_merge_weights.py",
+      "sha256": "af5a2a3ce30ea8b7b9cd67a75964f297d7036db90525a76934d88f341960475f"
+    },
+    {
+      "bytes": 3894,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/test_notebook.py",
+      "sha256": "a9f232dc8bc7ef8fa41a7f2769d067fe4eeaaef8aabecc72e628ec9d486e63aa"
+    },
+    {
+      "bytes": 6265,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/test_ops.py",
+      "sha256": "05cb3e87c10c27050b4df6e2ce514de6a92fdc9ada584a6849958c9fe1ecc222"
+    },
+    {
+      "bytes": 36446,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/test_script.py",
+      "sha256": "ce7b39f98363e61dd81c193bf578ac8aa0d07d7da797d50bf0afcd4b9228a858"
+    },
+    {
+      "bytes": 18817,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/scripts/test_sync.py",
+      "sha256": "3c37bcb1864b08bd8b2a38ff2fd6fe061d818c08de8a2f4467cb1935fb98c79b"
+    },
+    {
+      "bytes": 29698,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/testing.py",
+      "sha256": "e5c6fba0c4a7e32e6fbdc59a4c5fb5ad643a601ea1fd768a2b139df354fca0ce"
+    },
+    {
+      "bytes": 6456,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/test_utils/training.py",
+      "sha256": "8cee58108af7e2301c9c9ffd58da7fc77cee1f349a9bf23a22032f99c1a6ef22"
+    },
+    {
+      "bytes": 51450,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/tracking.py",
+      "sha256": "18d25183ec85ac33f90f8fd1bb53f0248dee050770fc5b921f5ff77c416b970c"
+    },
+    {
+      "bytes": 8143,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/__init__.py",
+      "sha256": "27ba8b914e6fc32ee1ce4459861d81da5b24fb77f56a222089e0ab3b8a5404a1"
+    },
+    {
+      "bytes": 4777,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/ao.py",
+      "sha256": "c9f8bce32c0da57b0a67a762e236e6b5de9b22f462f5b9b282bde088df76fcf8"
+    },
+    {
+      "bytes": 20651,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/bnb.py",
+      "sha256": "3dd81d5f08e14384a0f68ae3e2195488c4253f14ac76c88d7c556ae3206d97e8"
+    },
+    {
+      "bytes": 3561,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/constants.py",
+      "sha256": "58fc361288cf1a8bfc54542d1789a996b87fc4348e6f83b5ae230c59c6526cd2"
+    },
+    {
+      "bytes": 136505,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/dataclasses.py",
+      "sha256": "f3d73cd3fe0f314b429ab79680888d7e4ea973be579ed30430c09c4433de22ff"
+    },
+    {
+      "bytes": 14796,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/deepspeed.py",
+      "sha256": "82dfa3c0ea4eb51b3a378b2886e48ed88df1d6a2e83bab986239cfacaa7a664e"
+    },
+    {
+      "bytes": 15257,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/environment.py",
+      "sha256": "874cda71b064029f6cce5b537f9f9a4ebe4d71b56c429ef097a0c55a9f1736e2"
+    },
+    {
+      "bytes": 36771,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/fsdp_utils.py",
+      "sha256": "91b874fb8629eb3f4b4d1940baf55b434952f4ba87a6c31670da8ec2a2810873"
+    },
+    {
+      "bytes": 16715,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/imports.py",
+      "sha256": "efff154707b0703d8ef4c96942347b175ad9bd9b3c3f96f6aebf54d1e0f5fb35"
+    },
+    {
+      "bytes": 34274,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/launch.py",
+      "sha256": "d58342604ebbac571a78c88cce78409074809eb437ded75181e9f3395c361782"
+    },
+    {
+      "bytes": 58054,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/megatron_lm.py",
+      "sha256": "64cc5c6007469cc5a56b63ed074e1cb5bf6684c7ca50ff2a2d8bac18d8f249c5"
+    },
+    {
+      "bytes": 7213,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/memory.py",
+      "sha256": "37b40603ac1dc7c5f0ec5d15fb44c5b2124b8975ad467a1781eccd65eb2f8a7c"
+    },
+    {
+      "bytes": 95815,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/modeling.py",
+      "sha256": "35cbf0f316b086f599bf54babf4d7691ca66fd675ef1dfcfb10821bd5e983a02"
+    },
+    {
+      "bytes": 7825,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/offload.py",
+      "sha256": "54568bf28489cea67fe3b56e510ebdc598bd6c5da1791485a0e4a79cec5b1977"
+    },
+    {
+      "bytes": 31266,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/operations.py",
+      "sha256": "f384a95f02ac6cd1c778f6e82fd814a8ae9b039be8d24c87fe02c07709f313fb"
+    },
+    {
+      "bytes": 20283,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/other.py",
+      "sha256": "7c05317916e1b37cb7f36ef1469a955aa8023e313542de15c5fd4d31d36259a9"
+    },
+    {
+      "bytes": 6220,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/random.py",
+      "sha256": "5effd9266f5e682d90eeb819cbd3a93ae9cab938a780c8834021f4d2a84d5711"
+    },
+    {
+      "bytes": 847,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/rich.py",
+      "sha256": "f09657fee18c417f81b9f757c49a5d9deec159dd4ac8b1d281b886c6b0cc62bf"
+    },
+    {
+      "bytes": 1908,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/torch_xla.py",
+      "sha256": "3ead6dbaa3745ffa560d5cdae988237cee39ba825da11551168acb78b43316eb"
+    },
+    {
+      "bytes": 1657,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/tqdm.py",
+      "sha256": "93c7bd26789e4c44070823416a2072b3b84fc569446f244049d2266beab2fd7f"
+    },
+    {
+      "bytes": 6594,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/transformer_engine.py",
+      "sha256": "3c436ad73843cc43671457d5e212f38598a22e8dbcb5016f9ae86940f95cdd2d"
+    },
+    {
+      "bytes": 2149,
+      "path": "work/dependence-controller-runtime-addons/site-packages/accelerate/utils/versions.py",
+      "sha256": "52099c6e3066fbee82231d596a648032300afc1ff6978f0b6de68dca0a9e8fc3"
+    },
+    {
+      "bytes": 409,
+      "path": "work/dependence-controller-runtime-addons/site-packages/bin/accelerate",
+      "sha256": "594699aa50993b444a56fe13923fb2104638bfd9a21f59d9964fd2be4c0b6ea4"
+    },
+    {
+      "bytes": 401,
+      "path": "work/dependence-controller-runtime-addons/site-packages/bin/accelerate-config",
+      "sha256": "e769d239a3e89431cc97973b084c90a028d973f14c5b2295921a4b96159ad34a"
+    },
+    {
+      "bytes": 403,
+      "path": "work/dependence-controller-runtime-addons/site-packages/bin/accelerate-estimate-memory",
+      "sha256": "c11c9189174b69f58482aa3c794a7bed3b208c8df6fac8e8e52126f6a0051c8c"
+    },
+    {
+      "bytes": 401,
+      "path": "work/dependence-controller-runtime-addons/site-packages/bin/accelerate-launch",
+      "sha256": "e70c99012367ddef0eb2278bc5bd824a29f12d8b5a8b274f221e329987b58b1f"
+    },
+    {
+      "bytes": 400,
+      "path": "work/dependence-controller-runtime-addons/site-packages/bin/accelerate-merge-weights",
+      "sha256": "24ef06821fe46e9984e394cdfdb8d554018859fe2160600204de5020cf23f7fb"
+    },
+    {
+      "bytes": 2,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil-7.0.0.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9"
+    },
+    {
+      "bytes": 1548,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil-7.0.0.dist-info/LICENSE",
+      "sha256": "b89c063b3786e28e0c0a38f1931db61fed35e69dd2a2966fbecffee0f46c8d10"
+    },
+    {
+      "bytes": 22311,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil-7.0.0.dist-info/METADATA",
+      "sha256": "65f64bcd26d7284f4f07568c343ced6641bf8235c8c5a09a4986dd2ec5f68de7"
+    },
+    {
+      "bytes": 3199,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil-7.0.0.dist-info/RECORD",
+      "sha256": "81efff9f6016a184e45f64884b649d2b06ecf877e8ba76a2da0ee8d1b217b717"
+    },
+    {
+      "bytes": 0,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil-7.0.0.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 107,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil-7.0.0.dist-info/WHEEL",
+      "sha256": "497cad753565090a0dad98a007352dc48045781bc7fb2e513c80fd2715f34c1d"
+    },
+    {
+      "bytes": 190,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil-7.0.0.dist-info/direct_url.json",
+      "sha256": "58f6b03ccea46dd5620a23ec7c02fb36dff21704e6a1b4fb99802a0a09f18944"
+    },
+    {
+      "bytes": 7,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil-7.0.0.dist-info/top_level.txt",
+      "sha256": "8023619f9ef0ce4b038d20084a680c2746a25f342e964d062616f6f81032620c"
+    },
+    {
+      "bytes": 127,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil-7.0.0.dist-info/uv_cache.json",
+      "sha256": "8e0d8db9654a80a12170822da8a1229247234a84c7ed15c7265b9f1358a53219"
+    },
+    {
+      "bytes": 86668,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/__init__.py",
+      "sha256": "b4f4a4154a17f441adbca883cd17123188546c79487456c2c39edae32b0dccb1"
+    },
+    {
+      "bytes": 28642,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/_common.py",
+      "sha256": "d15ea993fe9daa4688301d9f6dd971111595d2322df26d722f130f0aab15cc0a"
+    },
+    {
+      "bytes": 18252,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/_psaix.py",
+      "sha256": "e6168ae48b2aa201fbc2cfae8a46e1ecb272c2ab104cbe22855f8a4f7089f9ff"
+    },
+    {
+      "bytes": 31756,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/_psbsd.py",
+      "sha256": "de97636b3f5054f8f639e0914125d75c67fcf62b3d1628eddf6f1d3488bc2678"
+    },
+    {
+      "bytes": 86028,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/_pslinux.py",
+      "sha256": "dbdb17ee0c3ab4b5f0a7c7922d9fcd715a9ae368259199461a89dc9165a54eb7"
+    },
+    {
+      "bytes": 15877,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/_psosx.py",
+      "sha256": "3b41c0e7c58c40c7ccc3a4ab8f20a7d90de83771a94330bae812bdf36eb0d37f"
+    },
+    {
+      "bytes": 7142,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/_psposix.py",
+      "sha256": "907c08549d09dda2efb4d26b72ce21d0e14c45514a46d56618c52f0616706915"
+    },
+    {
+      "bytes": 24920,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/_pssunos.py",
+      "sha256": "fcdd2dd2f28fbf8865fab6d59113a27805a058ffe93d406c34edbd99eef181ce"
+    },
+    {
+      "bytes": 83008,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/_psutil_osx.abi3.so",
+      "sha256": "4d03a4d73b090d70efe0ed4be51463a4cb3b06bc009cec3bbda6e9ca5f201073"
+    },
+    {
+      "bytes": 55368,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/_psutil_posix.abi3.so",
+      "sha256": "eda6bb2484bef5e27c21228bec1c8c5c77acfe1242d37ae60e9e5c7dd0bf84cc"
+    },
+    {
+      "bytes": 35949,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/_pswindows.py",
+      "sha256": "d767d4c4eed7c701ced3e2150ac59f95cd825db5e0f0dcdfbe01e9b604ebe272"
+    },
+    {
+      "bytes": 64104,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/__init__.py",
+      "sha256": "9da537838938c55081a9765e97d9c724432826440a96dc5b2b27e30c4fba1f03"
+    },
+    {
+      "bytes": 309,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/__main__.py",
+      "sha256": "1984fe865327583b726e427be83a907235cfaf48e72de6434ded255557836fba"
+    },
+    {
+      "bytes": 4408,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_aix.py",
+      "sha256": "3b922a300537ab0d4d5ef23e9e135bf6fd4b6cd1dbd6ade21517b93a4aa0a682"
+    },
+    {
+      "bytes": 20191,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_bsd.py",
+      "sha256": "c002edd8a06cbfc2e6b926c00c69d7c7787700bedd4e178298f041f7f8b0137f"
+    },
+    {
+      "bytes": 21157,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_connections.py",
+      "sha256": "9cbf3aef9301a0f2e859cdf9ba347b42f306456b598e1eaedc29a7c0b4e6b6cf"
+    },
+    {
+      "bytes": 12001,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_contracts.py",
+      "sha256": "7df3cd399d672b8c55ee0298c49b359ce8ce46433458bf8f492c4f42fabca672"
+    },
+    {
+      "bytes": 88895,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_linux.py",
+      "sha256": "570d61c329f69865d0d4361292c056cdf0410329da8b25a15ca44c585ffedd28"
+    },
+    {
+      "bytes": 15121,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_memleaks.py",
+      "sha256": "842d116babf767084c98bb89a024de2d4089ba1e706b4111f14bc7552553b22a"
+    },
+    {
+      "bytes": 29672,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_misc.py",
+      "sha256": "3d37a513ee5f75c98bff8f64cf8ebdeba24d97c541dfe3e8c309a4c1c232a1d7"
+    },
+    {
+      "bytes": 6315,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_osx.py",
+      "sha256": "cac6f7752c097f3a34ec49671494e1a092a6c2abaa42852c68a78bd6ccfccdff"
+    },
+    {
+      "bytes": 17187,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_posix.py",
+      "sha256": "6cd4057c8ae02d83521716dea7d42ca9e8f8e841bbcb31faf7fb656e9cf7a1d6"
+    },
+    {
+      "bytes": 59881,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_process.py",
+      "sha256": "ee0d2f2ebe597488ffb04cd691d488a5d0654657314c623652d5036ba2ae7d41"
+    },
+    {
+      "bytes": 18347,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_process_all.py",
+      "sha256": "91b7ba1ead14346b870b1d13f632e893c3be13b443422e512c1672094ff07b94"
+    },
+    {
+      "bytes": 7725,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_scripts.py",
+      "sha256": "2befb1419adc36fe0006d6b1efa003054fc38d62b5edc71e4cf83e8c5a06a5b2"
+    },
+    {
+      "bytes": 1190,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_sunos.py",
+      "sha256": "efc9d4abfe08d802e27562e238646380fef29058869bc78657724d022228395b"
+    },
+    {
+      "bytes": 36107,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_system.py",
+      "sha256": "521983c34a6c4dd98081f366952d7be87bfb84ec1497b175e3cbdceea1f5f461"
+    },
+    {
+      "bytes": 18338,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_testutils.py",
+      "sha256": "d9e9c7895f2631aa70acbc1a7488f4e15dd9e0cd4eb321f8f47860e5b7f75715"
+    },
+    {
+      "bytes": 10392,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_unicode.py",
+      "sha256": "0afda9a7da92e62409f1130f291a30f7ef90a07b0fd50f6783a68abdb267496b"
+    },
+    {
+      "bytes": 33214,
+      "path": "work/dependence-controller-runtime-addons/site-packages/psutil/tests/test_windows.py",
+      "sha256": "3844a61c136c602c1fa5ca9e96816692f45f03325ffa757be5ad1bd33b4f51c1"
+    },
+    {
+      "bytes": 374909,
+      "path": "work/dependence-controller-runtime-addons/wheels/accelerate-1.10.1-py3-none-any.whl",
+      "sha256": "3621cff60b9a27ce798857ece05e2b9f56fcc71631cfb31ccf71f0359c311f11"
+    },
+    {
+      "bytes": 239535,
+      "path": "work/dependence-controller-runtime-addons/wheels/psutil-7.0.0-cp36-abi3-macosx_11_0_arm64.whl",
+      "sha256": "39db632f6bb862eeccf56660871433e111b6ea58f2caea825571951d4b6aa3da"
+    },
+    {
+      "bytes": 343,
+      "path": "work/dependence-controller-runtime-admission-v1/STARTED.json",
+      "sha256": "9a277e6c1c39f3b4c680f51f084587d8a1b01b0106fb50af7304df3b5cb0cb81"
+    },
+    {
+      "bytes": 1583,
+      "path": "work/dependence-controller-runtime-admission-v1/STOPPED.json",
+      "sha256": "6d5fdcca0917b5351eaa796f590ca166742753395212f2c5745fbb8188a67d3f"
+    },
+    {
+      "bytes": 221,
+      "path": "work/dependence-controller-runtime-admission-v2/CONFIGURED_RUNTIME.json",
+      "sha256": "36980ec06d377423c8a0d9a0242f089debc9cd79966ddf100a2f994661a149c4"
+    },
+    {
+      "bytes": 242,
+      "path": "work/dependence-controller-runtime-admission-v2/RESOURCE_LATEST.json",
+      "sha256": "f6bb836519fba43cb3991d265dd22ed7cd84104126848ccec0126815e7a2bea6"
+    },
+    {
+      "bytes": 3243,
+      "path": "work/dependence-controller-runtime-admission-v2/RUNTIME.json",
+      "sha256": "1193f853c40c7fb32541eed43e2f173d24180ef39dd959c0fb1cf5a0c1eba4bf"
+    },
+    {
+      "bytes": 343,
+      "path": "work/dependence-controller-runtime-admission-v2/STARTED.json",
+      "sha256": "76f4fd10f847e40783e34509fef4c57ddee0f912647f63c374319235ba1e2288"
+    },
+    {
+      "bytes": 2509,
+      "path": "work/dependence-controller-runtime-admission-v2/STOPPED.json",
+      "sha256": "e8afba73cf71ca006dbdf3ff00353586f75a12a059d5de0b23a1b7719ed5edf2"
+    },
+    {
+      "bytes": 587,
+      "path": "work/dependence-controller-runtime-admission-v2/WORKER_PID.json",
+      "sha256": "6fd8c9fb2ea3a5c9c19580f0f20f479fa06c50be4f402c54ce8d4c300cf636c8"
+    },
+    {
+      "bytes": 10108,
+      "path": "work/dependence-controller-runtime-admission-v2/mps-resources.jsonl",
+      "sha256": "2791fce94b5e6fb8c0a98ef027c3d6aafcd2cce334675547bd78e31cb42f2db6"
+    },
+    {
+      "bytes": 25521,
+      "path": "work/dependence-controller-runtime-admission-v2/owner-resources.jsonl",
+      "sha256": "7d9a7ba4fbca0bfae29c8d1b9e82e4d688260223c43a25315f03fb15beb51f26"
+    },
+    {
+      "bytes": 476,
+      "path": "work/dependence-controller-runtime-admission-v2/worker-events.jsonl",
+      "sha256": "252e40e59eda83e24a49b538701f0f7f43e7f5dd13d9dcc04b43ee7de5c56c89"
+    },
+    {
+      "bytes": 634,
+      "path": "work/dependence-controller-runtime-admission-v2/worker.log",
+      "sha256": "4d3f93ac2631e9d756a1838ef641334075b8cd0f24d3d143257473e60b2d30ef"
+    },
+    {
+      "bytes": 10030,
+      "path": "work/dependence-controller-runtime-inputs/TOKENIZER_PREFLIGHT.json",
+      "sha256": "98990bf56d23e018c5eb14255f1e5ea04108554a095f9d02ae25d75bb55fbc5d"
+    },
+    {
+      "bytes": 963,
+      "path": "work/dependence-controller-runtime-inputs/long.txt",
+      "sha256": "fa1833b32eacfcbc11e3bd43f75f75c5edbcc5110e6925e1ecfada491badf3a7"
+    },
+    {
+      "bytes": 322,
+      "path": "work/dependence-controller-runtime-inputs/short.txt",
+      "sha256": "4d14f37381f95466a2e91fae43caadadde3cfa1ee46b4782781e1eb7f94bea83"
+    },
+    {
+      "bytes": 5927,
+      "path": "work/dependence-cpu-runtime-admission-preparation/DEVICE_AMENDMENT.json",
+      "sha256": "bd530ed35fd8aed8cf9ad06243a6e7f65d9c5675517cc6b470603d9312221d27"
+    },
+    {
+      "bytes": 61432,
+      "path": "work/dependence-cpu-runtime-admission-preparation/DRAFT_PLAN.json",
+      "sha256": "bd3aef005856a306ec2d784c1cfd2f7d15ce0e5cbde69da0decdd9acaa0ba116"
+    },
+    {
+      "bytes": 1368,
+      "path": "work/dependence-cpu-runtime-admission-preparation/GUARD_TESTS.json",
+      "sha256": "5b64ea4c5ea736e2c929d6b650d51837c17a1f88f110da9177ebb6e5db240bad"
+    },
+    {
+      "bytes": 933,
+      "path": "work/dependence-cpu-runtime-admission-preparation/REGISTRATION.json",
+      "sha256": "1f722b2b972d00919656e34736eb09fb5b624dc1ca1d758d37a93f19bd01da91"
+    },
+    {
+      "bytes": 7040,
+      "path": "work/dependence-cpu-runtime-admission-preparation/SOURCE_REVIEW.json",
+      "sha256": "1696465098060839e49f58feb2c9ac243230522078475c3eb899034706c29f6d"
+    },
+    {
+      "bytes": 37077,
+      "path": "work/dependence-cpu-runtime-admission-preparation/runner.py",
+      "sha256": "4bed1c7faf77b6b215095216a3566f6b77222e409cddaf73f345a747ff591a38"
+    },
+    {
+      "bytes": 2187,
+      "path": "work/dependence-cpu-runtime-independent-review/CPU_TERMINAL_REVIEW.json",
+      "sha256": "7edb808bb09c085dd07a56f11208dee918c8ae2a94069d05e92373b847fdae5f"
+    },
+    {
+      "bytes": 5084,
+      "path": "work/dependence-cpu-runtime-independent-review/PARENT_TERMINAL_REVIEW.json",
+      "sha256": "7ce96ecf800e15c0c8a4e26e53694a5d839f970db83834b0f8c61fc3e5bda298"
+    },
+    {
+      "bytes": 12252,
+      "path": "work/dependence-mechanism-contract/ACCELERATE_DISPATCH_REVIEW.json",
+      "sha256": "5d8bb95c9a40b551f44d3ef68c36ac1204daa2c7dfe0b09458dbeff334082bb6"
+    },
+    {
+      "bytes": 10180,
+      "path": "work/dependence-mechanism-contract/BOUNDED_PRIOR_ART_CHALLENGE.json",
+      "sha256": "e4d734e03b484a79a7f310e57096ebc03fa5e107a7615544293926034cbacb78"
+    },
+    {
+      "bytes": 5903,
+      "path": "work/dependence-mechanism-contract/MECHANISM_QUESTION_CONTRACT.json",
+      "sha256": "61b58da6f564fcede20d6378c140aa67ac6fbb4f5b641fc74b09c8a2f763738c"
+    },
+    {
+      "bytes": 16419,
+      "path": "work/dependence-mechanism-contract/OPEN_CONTROLLER_METADATA_REVIEW.json",
+      "sha256": "b68e3e7f056197f2130baea0b8970f5c669614ecaa49805faaed37c7a46d7cb3"
+    },
+    {
+      "bytes": 15173,
+      "path": "work/dependence-mechanism-contract/SOURCE_LOADING_REVIEW.json",
+      "sha256": "064508cfb176b544749712f70dfa7544cbf1101bb18df34c8e5389797867242c"
+    },
+    {
+      "bytes": 3850,
+      "path": "work/dependence-mechanism-contract/prepare_runtime_inputs.py",
+      "sha256": "a8bb58ba13d64534b75993bebf6985a53f79e99890d3b70b180ab63e164d23cd"
+    },
+    {
+      "bytes": 1915,
+      "path": "work/dependence-mechanism-contract/smollm3-official-metadata/config.json",
+      "sha256": "c72b1031274ff4626e434d0019e88e95a767460135db9ee492eb80652b786af1"
+    },
+    {
+      "bytes": 26899,
+      "path": "work/dependence-mechanism-contract/smollm3-official-metadata/model.safetensors.index.json",
+      "sha256": "e3a7254c086c4a78f95ad5864f435d165ffed1ed8998326ce5107b4423c15b76"
+    },
+    {
+      "bytes": 3500,
+      "path": "work/dependence-native-independent-review/AUDITOR_PREPARATION.json",
+      "sha256": "dd8b617a49260110441f86ed971dabb0f2b8aa9a35c530f406cbcf4d3948484a"
+    },
+    {
+      "bytes": 2693,
+      "path": "work/dependence-native-independent-review/INPUT_REFERENCE_REVIEW.json",
+      "sha256": "93e565e2ddd90bb61257c0aeec0200adb102ee41496d457e922a9a01c5993858"
+    },
+    {
+      "bytes": 4244,
+      "path": "work/dependence-native-independent-review/TERMINAL_AUDITOR_PREPARATION.json",
+      "sha256": "f9166b3fd1d00834ea4f6f2bdf4787e5654da82f134cfedb9da8bf1eca08a457"
+    },
+    {
+      "bytes": 20913,
+      "path": "work/dependence-native-independent-review/audit.py",
+      "sha256": "2f94d1a3bd3abe6b1f32e412878552390edc778114edc406205a097578937563"
+    },
+    {
+      "bytes": 31285,
+      "path": "work/dependence-native-independent-review/terminal_audit.py",
+      "sha256": "15e876fa693dee440badf34455060e292e14502d93dd5eb2e71e99ec47c6a8b2"
+    },
+    {
+      "bytes": 10706,
+      "path": "work/dependence-native-independent-review/test_audit.py",
+      "sha256": "d85524bd19931204502e2cec28668274721aee3b33cb51c062a47593315bba7c"
+    },
+    {
+      "bytes": 21695,
+      "path": "work/dependence-native-independent-review/test_terminal_audit.py",
+      "sha256": "2134911a2010626a321ea4af2c211e52976631b8a4c6088f8a246c520faf9a67"
+    },
+    {
+      "bytes": 935,
+      "path": "work/dependence-native-panel-inputs/BUILD_MANIFEST.json",
+      "sha256": "82de3f997dfc98594de54bbb7c08091cbd8624131b22f1b79591ef28cb096556"
+    },
+    {
+      "bytes": 1201797,
+      "path": "work/dependence-native-panel-inputs/CASES.json",
+      "sha256": "ce91caf6cfcea7f936f71a4c4e974e4bb976c822eeb5fb5bdd60a87829addf69"
+    },
+    {
+      "bytes": 367346,
+      "path": "work/dependence-native-panel-inputs/REFERENCES.json",
+      "sha256": "737798d3fc8ee0046999009242c7369bba6c5a1d252b48f25fcd899b21885e33"
+    },
+    {
+      "bytes": 1902,
+      "path": "work/dependence-native-panel-inputs/tokenizer-v1/COMPLETE.json",
+      "sha256": "6135b413c3270c31d13504216a0442a5ef7a83be9801b00a072f0c56a4c5ed68"
+    },
+    {
+      "bytes": 1751864,
+      "path": "work/dependence-native-panel-inputs/tokenizer-v1/INPUTS.jsonl",
+      "sha256": "4732ee9b6022c39304178c3f65e9e35e63e0a3a066b699ed5ed99a2c8faa1118"
+    },
+    {
+      "bytes": 490230,
+      "path": "work/dependence-native-panel-inputs/tokenizer-v1/RENDERED.jsonl",
+      "sha256": "c0f6993994575bf8317d051b75fffc38b2985d2613259efa5a891371b2b506bc"
+    },
+    {
+      "bytes": 333,
+      "path": "work/dependence-native-panel-inputs/tokenizer-v1/STARTED.json",
+      "sha256": "969b305084c3a7f9ab976d27c0a4f1ba261d12d0bbd58de707967a2936337170"
+    },
+    {
+      "bytes": 7520,
+      "path": "work/dependence-native-panel-preparation/COLLECTOR_SCHEMA.json",
+      "sha256": "588d7d31c449939e8fb36b8f6debf50b2b927e5a9c6d6eb780892bcfedcd5057"
+    },
+    {
+      "bytes": 2511,
+      "path": "work/dependence-native-panel-preparation/GUARD_TESTS.json",
+      "sha256": "c02029587ba78238240258e449bbbf8f50229ddbf14d6a380789720780ff2a98"
+    },
+    {
+      "bytes": 6668,
+      "path": "work/dependence-native-panel-preparation/INDEPENDENT_DESIGN_REVIEW.json",
+      "sha256": "722b599c2131b7c43e317edd955a54c72056ca609f364a064332d290b0b415b4"
+    },
+    {
+      "bytes": 17608,
+      "path": "work/dependence-native-panel-preparation/NATIVE_COMPETENCE_PANEL_OUTLINE.json",
+      "sha256": "59af357a81ad88804a752e97d9d44d177e0a334c411df597715006b2ddff54a2"
+    },
+    {
+      "bytes": 3285,
+      "path": "work/dependence-native-panel-preparation/PARENT_RULE_DECISION.json",
+      "sha256": "b8dd031c7b8f8960fba6f915de76354db57c937bdbeda7ed0fe6b55164746b79"
+    },
+    {
+      "bytes": 6547,
+      "path": "work/dependence-native-panel-preparation/PROMPT_SCORING_OPERATIONAL_REVIEW.json",
+      "sha256": "10ff2df1d3481ee56fc236f175a1c6506744ce4a59d287e9cff660f2876d4c74"
+    },
+    {
+      "bytes": 731,
+      "path": "work/dependence-native-panel-preparation/REFERENCE_BASELINES.json",
+      "sha256": "03df64cde29e5a30f40993b505515a39a811a54cb2bd4e57922e6fc792422a60"
+    },
+    {
+      "bytes": 67563,
+      "path": "work/dependence-native-panel-preparation/RENDERER_SCHEMA_REFERENCE.json",
+      "sha256": "865f6135982c2bc2c9c53be7c92960375aa6f4dac666641b4eadaf918a847699"
+    },
+    {
+      "bytes": 1303,
+      "path": "work/dependence-native-panel-preparation/RENDERER_TESTS.json",
+      "sha256": "35a3c9ebbef7882509c4a2ce2c5e23744a60ae93862bc50823ad47289f3b7667"
+    },
+    {
+      "bytes": 3564,
+      "path": "work/dependence-native-panel-preparation/SCORE_CONTRACT.json",
+      "sha256": "d730df43db53254c53f76e26d30b7cc22b87dc40d9fc58249cf5e824b300b997"
+    },
+    {
+      "bytes": 1592,
+      "path": "work/dependence-native-panel-preparation/TOKENIZER_LAUNCH_RESULT.json",
+      "sha256": "8e3ccb983c5a865ae07051004510d2c5f13ec07978cf0d60474368b3b246626b"
+    },
+    {
+      "bytes": 1190,
+      "path": "work/dependence-native-panel-preparation/TOKENIZER_LAUNCH_STARTED.json",
+      "sha256": "7ecaecb8735969003265da57d698c605f6a8c3438747eefe785b9b612247f381"
+    },
+    {
+      "bytes": 4251,
+      "path": "work/dependence-native-panel-preparation/TOKENIZER_PREPARER_SOURCE_REVIEW.json",
+      "sha256": "7a6fb8da475b51e37fd4d5a4846f767f02527709af23033f77ccbc8a57364ad6"
+    },
+    {
+      "bytes": 7571,
+      "path": "work/dependence-native-panel-preparation/assemble_plan.py",
+      "sha256": "b029800d24faea6849c23a8cea95652a143dea7958d7a124e207ba1635018481"
+    },
+    {
+      "bytes": 9243,
+      "path": "work/dependence-native-panel-preparation/test_cases.py",
+      "sha256": "67efb2eb196f127b8554d05510aceaad71f14d0323c72819be810eca355d861d"
+    },
+    {
+      "bytes": 30720,
+      "path": "work/dependence-native-panel-preparation/test_native_guards.py",
+      "sha256": "d59bcf9e27a542c82b39c93e267f534fc9922d7a761c3ed2daf3e23bc0f2b344"
+    },
+    {
+      "bytes": 44028,
+      "path": "work/dependence-runtime-admission-preparation/DRAFT_PLAN.json",
+      "sha256": "1af8863d57d1ed72e0cb11eb03883d9097e15b5d89f2a3ddb32a47b0b6f37c11"
+    },
+    {
+      "bytes": 925,
+      "path": "work/dependence-runtime-admission-preparation/REGISTRATION.json",
+      "sha256": "ce3dfc829f0dc74c8129ed6473b44dfa270d6eae7755b228f4e56501f154b901"
+    },
+    {
+      "bytes": 5039,
+      "path": "work/dependence-runtime-admission-preparation/SOURCE_REVIEW.json",
+      "sha256": "1bb26abcfa00163c53c4cbad9fbe699dfe4342cf23813bd183378f9322f1fedc"
+    },
+    {
+      "bytes": 38389,
+      "path": "work/dependence-runtime-admission-preparation/runner.py",
+      "sha256": "26ad0e5fc4e03188c0638b3d4eab3935f772bfc9a08c6ce3b981b95c2f3bda00"
+    },
+    {
+      "bytes": 2168,
+      "path": "work/dependence-runtime-admission-v2-preparation/CONTINUATION_AMENDMENT.json",
+      "sha256": "8705ef9422225e6e4dc93f2179e3865abe028a5b81f7a525b0fb150341a6be7e"
+    },
+    {
+      "bytes": 53577,
+      "path": "work/dependence-runtime-admission-v2-preparation/DRAFT_PLAN.json",
+      "sha256": "3d3f1a97094742595e4c71499af1b0d26bea888e6f7bca01575898a43765f16e"
+    },
+    {
+      "bytes": 924,
+      "path": "work/dependence-runtime-admission-v2-preparation/REGISTRATION.json",
+      "sha256": "973a88398b6168f97f34b15e7a6b5d2d5ae8368f602674dceb2d281835d8b4a4"
+    },
+    {
+      "bytes": 5257,
+      "path": "work/dependence-runtime-admission-v2-preparation/SOURCE_REVIEW.json",
+      "sha256": "ed165682b60275c5c101cf9f76fa23916105fbfb337175cae05ea8c6c5da5f61"
+    },
+    {
+      "bytes": 38410,
+      "path": "work/dependence-runtime-admission-v2-preparation/runner.py",
+      "sha256": "9ecd181eb22a203c29c068eea036af65e3b957b67b418f13b98a56ebe502fedd"
+    },
+    {
+      "bytes": 15409,
+      "path": "work/dependence-runtime-feasibility-review/CPU_BF16_SOURCE_FEASIBILITY_REVIEW.json",
+      "sha256": "cbef18bda832db1706f1a63becd7e1f8cdde9afe34d7b432d8a4f20e867b2afa"
+    },
+    {
+      "bytes": 897,
+      "path": "work/dependence-runtime-independent-review/V1_TERMINAL_REVIEW.json",
+      "sha256": "de4bcd2c797985306cc735fa043e09e25764bc2cd2946b2ee07a4269a3416c37"
+    },
+    {
+      "bytes": 7351,
+      "path": "work/dependence-runtime-v2-independent-review/V2_RESOURCE_POSTMORTEM.json",
+      "sha256": "c230187015045de6a8803b1937d60677ff32071865b57292addc8dc341f61a25"
+    },
+    {
+      "bytes": 897,
+      "path": "work/dependence-runtime-v2-independent-review/V2_TERMINAL_REVIEW.json",
+      "sha256": "3caa2f6c065010a1d38b62f96df4017cdce9e6c8ee303494cd0a57590db06dcb"
+    }
+  ],
+  "bounds_reason": "Fixed before task outputs, after complete tokenizer-only length preflight. Eight earlier engineering calls covered 77 and 222 tokens only. Linear timing arithmetic suggests about two hours, but does not prove task throughput or memory capacity; four hours is a hard inclusive stop. Full FP32 vocabulary evidence alone requires 242147328 bytes, so the evidence ceiling is 512 MiB.",
+  "candidate_token_ids": {
+    "X": 1630,
+    "Y": 816
+  },
+  "created_at_utc": "2026-10-06T04:31:55.303645+00:00",
+  "forward_count": 472,
+  "inference": {
+    "assistant_prefill": "Answer:",
+    "attention": "eager",
+    "cpu_generator_seed": 42,
+    "cpu_threads": 4,
+    "device": "cpu",
+    "dtype": "torch.bfloat16",
+    "hidden_state_extraction": false,
+    "hooks": 0,
+    "logits_to_keep": 1,
+    "thinking": false,
+    "use_cache": false
+  },
+  "input_jsonl": "work/dependence-native-panel-inputs/tokenizer-v1/INPUTS.jsonl",
+  "input_lengths": [
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    355,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    320,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    357,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    322,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    222,
+    355,
+    320,
+    357,
+    357,
+    357,
+    322,
+    222,
+    222
+  ],
+  "interpretation": "A pass supports only this checkpoint/device/fixed conditional X/Y interface. It does not show generated answer compliance, calibrated uncertainty, unique Bayesian representations, an energy/world-model advantage, an internal causal mechanism, broad competence or novelty. Failure closes this model/interface without output-based tuning.",
+  "later_causal_rule": "A readiness pass only admits separate causal-study design. All native errors and all eight form vectors remain in later matched recipient comparisons. This development panel is exposed and cannot be claimed as untouched confirmation. No intervention or fitting is authorized by this collection plan.",
+  "limits": {
+    "deadline_seconds": 14400,
+    "emergency_reserve_bytes": 1048576,
+    "maximum_new_evidence_bytes": 536870912,
+    "maximum_rss_bytes": 8589934592,
+    "minimum_free_disk_bytes": 6442450944,
+    "sample_interval_seconds": 0.2
+  },
+  "maximum_input_tokens": 357,
+  "model_id": "HuggingFaceTB/SmolLM3-3B",
+  "model_inventory": {
+    "download_record_files": 19,
+    "download_records": [
+      {
+        "bytes": 1,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/.gitignore",
+        "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+      },
+      {
+        "bytes": 0,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/chat_template.jinja.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 101,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/chat_template.jinja.metadata",
+        "sha256": "59c0c08089b348dfee497fa27a4e8faaac2a2ad3e6f67ec4ea85207aaf8547a1"
+      },
+      {
+        "bytes": 0,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/config.json.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 100,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/config.json.metadata",
+        "sha256": "af20ffe9a975dd9d8b876b7d6a473cf893b1f2097d9689aa968c95bb9f1f6fe6"
+      },
+      {
+        "bytes": 0,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/generation_config.json.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 100,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/generation_config.json.metadata",
+        "sha256": "ab9be4316fc1c2c8e2b382bb81dae25a156750b8313b0f035bd14c6cd564f98a"
+      },
+      {
+        "bytes": 0,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model-00001-of-00002.safetensors.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 125,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model-00001-of-00002.safetensors.metadata",
+        "sha256": "bc58dfa5763a044a90df9a6653d6a7e72a20b583436a6e57e4814cc29dafa0da"
+      },
+      {
+        "bytes": 0,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model-00002-of-00002.safetensors.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 123,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model-00002-of-00002.safetensors.metadata",
+        "sha256": "2bb7b2302d4f5e1fc1ebb6387d12f61b02951567de4d3eba074804795d7ecc50"
+      },
+      {
+        "bytes": 0,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model.safetensors.index.json.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 100,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/model.safetensors.index.json.metadata",
+        "sha256": "0fb44032f6afea24345b927c5a644a3c015713cf9b188355cfe5ead7266d372a"
+      },
+      {
+        "bytes": 0,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/special_tokens_map.json.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 100,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/special_tokens_map.json.metadata",
+        "sha256": "a6da9b3feca1ff7f7b5c744a9822ece83d43a3483deddf8f400892ef568e3bb4"
+      },
+      {
+        "bytes": 0,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/tokenizer.json.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 125,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/tokenizer.json.metadata",
+        "sha256": "ecf4d5e886d36b9f839a8444a3257275440446b3e237c4652d35a97a7a1abb34"
+      },
+      {
+        "bytes": 0,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/tokenizer_config.json.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 100,
+        "path": "work/dependence-controller-acquisition/model/.cache/huggingface/download/tokenizer_config.json.metadata",
+        "sha256": "f10222de8bb03967f1436fad081593671098ba608fa15ef9fb4b0ee6cfcf52b3"
+      }
+    ],
+    "payload_files": 9,
+    "total_files": 28
+  },
+  "model_path": "work/dependence-controller-acquisition/model",
+  "operation_counts": {
+    "backwards": 0,
+    "fits": 0,
+    "forward_calls": 472,
+    "generated_tokens": 0,
+    "native_model_loads": 1,
+    "provider_calls": 0,
+    "scoring_calls": 0,
+    "tokenizer_calls": 0,
+    "updates": 0
+  },
+  "output": "outputs/moe-mechanisms/DEPENDENCE_NATIVE_V1",
+  "panel": {
+    "fixed_repeats": 8,
+    "nuisance_forms": 8,
+    "primary_calls": 464,
+    "repeat_cells": [
+      "c00",
+      "c05",
+      "c06",
+      "c07",
+      "c12",
+      "c16",
+      "c30",
+      "c52"
+    ],
+    "schedule": "c00 through c57, then row-order / answer-mapping / option-order triples; finally the eight predetermined r0-m0-o0 repeats.",
+    "semantic_cells": 58
+  },
+  "parameter_evidence": "326 unique native CPU BF16 tensors;327 named entries with exact tied head/embedding alias. All buffers stay native on CPU. Full before/after raw hashes one unique parameter at a time, runtime configuration/buffer/method/hook/training/grad identities restored to as-loaded. No whole state_dict clone.",
+  "partial_failure_scope": "Attempt/return counts and available raw evidence retained. LIFETIME_STOP.json is failure-only watchdog metadata where storage remains available. Original parent loss or deadline sends worker SIGTERM; owner handles ordinary signals, externally enforces caps/deadline, cleans/reaps owned group. Force kill can leave missing final hashes/restoration. No restart/resume/fallback.",
+  "phase_order": "Freeze sources, complete independent review, publish prospective plan, register once, collect once, seal terminal archive, independently validate complete provenance and raw records, then grade every fixed row. STOP remains ungraded. No partial peeking or adaptive rescue.",
+  "preservation": "All old studies, engineering STOPs, closed negatives, heldout boundaries, original fees/reserves and the GPT-2 pause are preserved. No Cloudflare calls or charges. Mutable continuity, logs and public presentation files are not collection dependencies.",
+  "prior_stopped_runs": [
+    {
+      "inventory": {
+        "STARTED.json": {
+          "bytes": 343,
+          "sha256": "9a277e6c1c39f3b4c680f51f084587d8a1b01b0106fb50af7304df3b5cb0cb81"
+        },
+        "STOPPED.json": {
+          "bytes": 1583,
+          "sha256": "6d5fdcca0917b5351eaa796f590ca166742753395212f2c5745fbb8188a67d3f"
+        }
+      },
+      "output": "work/dependence-controller-runtime-admission-v1",
+      "plan_sha256": "1af8863d57d1ed72e0cb11eb03883d9097e15b5d89f2a3ddb32a47b0b6f37c11",
+      "status": "NATIVE_NOOP_ADMISSION_STOPPED",
+      "version": "v1"
+    },
+    {
+      "inventory": {
+        "CONFIGURED_RUNTIME.json": {
+          "bytes": 221,
+          "sha256": "36980ec06d377423c8a0d9a0242f089debc9cd79966ddf100a2f994661a149c4"
+        },
+        "RESOURCE_LATEST.json": {
+          "bytes": 242,
+          "sha256": "f6bb836519fba43cb3991d265dd22ed7cd84104126848ccec0126815e7a2bea6"
+        },
+        "RUNTIME.json": {
+          "bytes": 3243,
+          "sha256": "1193f853c40c7fb32541eed43e2f173d24180ef39dd959c0fb1cf5a0c1eba4bf"
+        },
+        "STARTED.json": {
+          "bytes": 343,
+          "sha256": "76f4fd10f847e40783e34509fef4c57ddee0f912647f63c374319235ba1e2288"
+        },
+        "STOPPED.json": {
+          "bytes": 2509,
+          "sha256": "e8afba73cf71ca006dbdf3ff00353586f75a12a059d5de0b23a1b7719ed5edf2"
+        },
+        "WORKER_PID.json": {
+          "bytes": 587,
+          "sha256": "6fd8c9fb2ea3a5c9c19580f0f20f479fa06c50be4f402c54ce8d4c300cf636c8"
+        },
+        "mps-resources.jsonl": {
+          "bytes": 10108,
+          "sha256": "2791fce94b5e6fb8c0a98ef027c3d6aafcd2cce334675547bd78e31cb42f2db6"
+        },
+        "owner-resources.jsonl": {
+          "bytes": 25521,
+          "sha256": "7d9a7ba4fbca0bfae29c8d1b9e82e4d688260223c43a25315f03fb15beb51f26"
+        },
+        "worker-events.jsonl": {
+          "bytes": 476,
+          "sha256": "252e40e59eda83e24a49b538701f0f7f43e7f5dd13d9dcc04b43ee7de5c56c89"
+        },
+        "worker.log": {
+          "bytes": 634,
+          "sha256": "4d3f93ac2631e9d756a1838ef641334075b8cd0f24d3d143257473e60b2d30ef"
+        }
+      },
+      "output": "work/dependence-controller-runtime-admission-v2",
+      "plan_sha256": "3d3f1a97094742595e4c71499af1b0d26bea888e6f7bca01575898a43765f16e",
+      "status": "NATIVE_NOOP_ADMISSION_STOPPED",
+      "version": "v2"
+    }
+  ],
+  "python": "work/acquisition-representation-venv/bin/python",
+  "raw_evidence": "All 472 native final-position full-vocabulary tensors retained as actual raw dtype bytes, with exact raw int64 inputs and masks, call identity, source binding, full parameter hashes and lifecycle evidence. The collector never decodes or grades choices.",
+  "readiness_all_required": {
+    "complete_form_vectors_at_least": 6,
+    "complete_form_vectors_denominator": 8,
+    "per_cell_correct_at_least": 7,
+    "per_cell_denominator": 8,
+    "pooled_correct_at_least": 441,
+    "pooled_denominator": 464,
+    "repeat_unique_semantic_agreements": 8,
+    "structurally_complete_calls": 472
+  },
+  "resource_measurement_limits": "Owner samples its entire live process tree RSS using bounded external ps calls at target0.2s, retaining gaps. No MPS or GPU counter APIs or placeholder readings. Worker stdlib watchdog checks original parent and monotonic deadline only; no worker RSS series/freshness gate. Sampling is not continuous peak proof; GIL/OS-stalled watchdog and force-kill may leave incomplete evidence.",
+  "revision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "schema": "smollm3-dependence-native-collection-v1",
+  "scientific_question": "Can this fixed conditional choice readout use joint dependence, diagnostic rules and costs coherently when individual failure rates stay fixed?",
+  "scoring_contract": {
+    "assistant_prefill": "Answer:",
+    "at_utc": "2026-10-06T04:12:18.922944+00:00",
+    "candidate_texts": [
+      " X",
+      " Y"
+    ],
+    "correct": "Gold is the unique exact Fraction loss minimizer. A unique higher candidate logit mapped to gold is correct. A unique wrong code is incorrect; exact candidate ties are incorrect/unresolved and have no fallback.",
+    "descriptive_only": [
+      "Full-vocabulary unique maximum is one of the two candidate tokens.",
+      "Full-vocabulary tied maximum and whether either candidate belongs to its maximizer set.",
+      "Stable softmax total probability assigned to the two candidate tokens; no confidence threshold or filtering.",
+      "Raw repeat equality and score/margin changes; choice agreement gate only."
+    ],
+    "fits": 0,
+    "independent_recommendations": [
+      "scoring_independence",
+      "fresh_protocol_review"
+    ],
+    "parent_rule_sha256": "b8dd031c7b8f8960fba6f915de76354db57c937bdbeda7ed0fe6b55164746b79",
+    "pass_scope": "This particular conditional two-choice readout is usable for a later activation contrast at the named checkpoint/device/interface. It does not show spontaneous legal generation, autonomous controller performance, calibrated posterior belief, a unique inference algorithm, or novelty.",
+    "primary": "Strict relative preference of the two fixed candidate response codes X and Y in one final-position vocabulary row. Decode the winning code with that case late mapping.",
+    "provider_calls": 0,
+    "readiness_rule": {
+      "calibration": "These are prospective finite-interface engineering thresholds, not confidence bounds, population accuracy or a data-estimated optimum.",
+      "cell_floor": "For EACH of58 semantic cells, at least7 of8 decoded strict choices correct; ties count incorrect/unresolved.",
+      "common_vector_floor": "For at least6 of the8 nuisance triples (joint-table row order, answer mapping, option order), ALL58 primary semantic choices are correct. This means the same variant jointly passes the10 first-action cells,20 forced-post-query cells and28 marginal/sensitivity cells.",
+      "denominators": "Retain all464 primary cases and8 repeats. Report all eight full vectors. Passing variants are not selected for later fitting or causal evaluation; later endpoints must retain native errors and compare matched recipient baselines.",
+      "pooled_floor": "At least441 of464 primary choices correct.",
+      "repeat_gate": "All8 fixed repeats have unique winners and match the original semantic winner; never replace an original or rescue its error.",
+      "structural": "Complete valid464 primary plus8 fixed repeats; no missing cells, invalid outputs or extra calls."
+    },
+    "repeat_gate": "All8 repeats must have unique candidate winners matching their original semantic winner. Repeats never replace, average with or rescue originals.",
+    "required_data": "All464primary+8fixedrepeats complete once and sealed before scoring. Everycase and all8nuisancevectors retained; no successfulsubset chosen.",
+    "status": "SCORING_SEMANTICS_FIXED_BEFORE_TASK_OUTPUTS",
+    "structural_failure": "Wrong shape/dtype/count/provenance or any nonfinite raw logit is a structural failure and ungradedSTOP, after retaining raw evidence. No partial or selective task grading.",
+    "task_forward_calls_to_date": 0,
+    "tokenization_requirement": "Both literal candidate extensions must be exactly one next token after every complete prompt+fixedprefill, with the preceding token sequence unchanged. Prove by tokenizer-only preflight before modeltaskinference; no output-based code/prefill search."
+  },
+  "source_registration": "Parent must exclusively create REGISTRATION.json with status REGISTERED_APPROVED, exact DRAFT_PLAN hash, runner hash, and independent review path/hash. Independent review must status PASS and match runner_sha256/plan_sha256. This file does not register or execute anything.",
+  "status": "FIXED_PROSPECTIVE_PLAN_REQUIRES_SEPARATE_SOURCE_REVIEW_AND_REGISTRATION",
+  "target_device": "cpu",
+  "terminal_publication": "Write/fsync a pending receipt, check the final serialized bytes and deadline/resources, exclusively link COMPLETE only after success; known write/publication overrun preserves pending evidence and writes STOP instead. No execution in this preparation.",
+  "tokenizer_receipt": "work/dependence-native-panel-inputs/tokenizer-v1/COMPLETE.json",
+  "versions": {
+    "accelerate": "1.10.1",
+    "numpy": "2.3.3",
+    "psutil": "7.0.0",
+    "safetensors": "0.8.0",
+    "torch": "2.8.0",
+    "transformers": "4.56.2"
+  }
+}
